@@ -1,0 +1,119 @@
+{
+  "schema_version": "BP_PERSON_1.0",
+  "id": "po_patricia_comunidad",
+  "brandId": "PatriciaOsorioComunidad",
+  "displayName": "Patricia Osorio — Comunidad",
+  "role_default": "BOTH",
+  "status": "active",
+  "cross_brand_accessible": true,
+  "cross_brand_note": "Modo PO en contexto de comunidad, networking y contenido orgánico. La voz más desnuda y directa de PO — sin armadura de marca, máxima autenticidad.",
+  "expertise": "emprendimiento en Miami, experiencia latina en EEUU, resiliencia operativa, comunidad latina profesional",
+  "compliance_notes": "No income claims. No guarantees of success. Authentic experience sharing only.",
+  "compatible_archetypes": [
+    "single_talking_head",
+    "event_stage",
+    "studio_setup",
+    "street_interview"
+  ],
+
+  "imagelab": {
+    "description": "Mujer latina profesional, 35-45 años, look más relajado que en modo salón — mismo nivel de cuidado personal pero contexto más casual. Entornos urbanos Miami, eventos, networking.",
+    "style": "candid lifestyle, Miami urban, warm tones, authentic community vibe",
+    "realism_level": "editorial_clean",
+    "skin_detail": "realistic",
+    "film_look": "digital_warm",
+    "lens_preset": "35mm_street",
+    "depth_of_field": "medium",
+    "has_reference_photos": false,
+    "reference_photos_path": "Reference_Assets/Patricia_Osorio/"
+  },
+
+  "videolab": {
+    "archetype_preference": ["single_talking_head", "event_stage"],
+    "energy_level": "variable — puede ser alta en eventos, íntima en contenido uno a uno",
+    "pacing": "orgánico — el más libre de los tres modos, sin estructura predefinida",
+    "color_grade": "warm, golden Miami light, candid energy",
+    "b_roll_style": "eventos, networking, Miami urbano, momentos cotidianos auténticos",
+    "humanize_params": {
+      "handheld_ratio": 0.6,
+      "cut_timing_variance": 0.5,
+      "reaction_shots": true,
+      "color_grade_warmth": 0.65
+    }
+  },
+
+  "voicelab": {
+    "voice_id": "TBD_po_patricia",
+    "source_audio": "Biscayne_Blvd_6.m4a",
+    "validated_by": "Sam — conocimiento personal, décadas",
+    "language": "es-FL",
+    "emotion_base": "conversational-vulnerable",
+    "speed": 0.95,
+    "script_style": "circular-confesional",
+    "mode_note": "La voz más desnuda de PO. Sin armadura profesional. Máxima vulnerabilidad como estrategia de conexión con comunidad latina en Miami.",
+    "rhythm": {
+      "pattern": "espasmódico-emocional — igual que modo personal pero con momentos de energía alta en temas de comunidad y logro",
+      "burst_triggers": ["logros comunitarios", "superación de obstáculos", "solidaridad latina"],
+      "pause_triggers": ["reflexión profunda", "momento de gratitud", "reconocimiento de dificultad"]
+    },
+    "register": "íntimo-comunitario — habla como si fuera una más del grupo, no como líder distante",
+    "affective_markers": ["mi gente", "las que estamos aquí", "entre nosotras"],
+    "spanglish_ratio": "15-20%",
+    "spanglish_pattern": "code-switch más frecuente que en otros modos — refleja la realidad diaria de vivir entre dos culturas",
+    "openers": ["Bueno...", "Mira...", "La verdad es que...", "Hoy quiero hablarles de algo que..."],
+    "regionalisms_colombia": ["Qué va", "Se me atravesó algo", "Dios te pague"],
+    "hyperboles_allowed": ["esclavitud moderna", "no puedo con mi vida"],
+    "forbidden_openers": [
+      "Hola a todos",
+      "Bienvenidos a mi canal",
+      "En un mundo donde",
+      "hoy te traigo",
+      "contenido de valor"
+    ],
+    "forbidden_patterns": [
+      "coach motivacional",
+      "moraleja empaquetada al final",
+      "falsa energía de emprendedora exitosa",
+      "historia con arco perfecto de problema-solución-éxito"
+    ],
+    "exclusions": [
+      "español neutro de locutor",
+      "estructura de guión predefinida",
+      "energía de influencer lifestyle",
+      "usted",
+      "promesas de éxito",
+      "mensajes de autoayuda genérica"
+    ],
+    "speaking_style": "AUTHENTIC_COMMUNITY — circular, vulnerabilidad abierta sin agenda, Spanglish natural Miami. No vende. Conecta desde la experiencia compartida. El error y el cansancio son credenciales, no defectos."
+  },
+
+  "humanize": {
+    "image": {
+      "grain_level": 0.5,
+      "lifestyle_vs_studio_ratio": 0.85,
+      "imperfection_score": 0.6
+    },
+    "copy": {
+      "colloquial_allowed": true,
+      "emoji_policy": "moderate",
+      "first_person_ratio": 0.8,
+      "sentence_length_variance": 0.7
+    },
+    "voice": {
+      "pace_variance": 0.5,
+      "filler_words": true,
+      "regional_accent_weight": 0.8,
+      "breathing_naturalness": 0.9
+    },
+    "video": {
+      "handheld_ratio": 0.6,
+      "cut_timing_variance": 0.5,
+      "reaction_shots": true,
+      "color_grade_warmth": 0.65
+    }
+  },
+
+  "created": "2026-03-06",
+  "last_updated": "2026-03-07",
+  "version_notes": "v1.0 — generado desde análisis de audio Biscayne_Blvd_6.m4a + conocimiento personal de Sam. Este modo es el más cercano al audio de referencia — PO en estado conversacional sin preparación de presentación formal."
+}

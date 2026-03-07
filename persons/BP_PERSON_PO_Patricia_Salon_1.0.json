@@ -1,0 +1,103 @@
+{
+  "schema_version": "BP_PERSON_1.0",
+  "id": "po_patricia_salon",
+  "brandId": "PatriciaOsorioVizosSalon",
+  "displayName": "Patricia Osorio — Vizos Salón Miami",
+  "role_default": "BOTH",
+  "status": "active",
+  "cross_brand_accessible": true,
+  "cross_brand_note": "Modo PO en contexto profesional activo. Consumible por NeuroneCosmetics cuando PO presenta productos en entorno de salón.",
+  "expertise": "colorimetría premium, balayage, tratamientos capilares, experiencia luxury salon Miami",
+  "compliance_notes": "No medical claims. No guaranteed results.",
+  "compatible_archetypes": [
+    "salon_workshop",
+    "studio_setup",
+    "single_talking_head"
+  ],
+
+  "imagelab": {
+    "description": "Mujer latina profesional, 35-45 años, cabello rubio/castaño impecablemente trabajado. Contexto Vizos Salón Miami — sillones blancos, espejos iluminados, ambiente premium.",
+    "style": "editorial_clean, Miami daylight, warm tones, beauty professional, luxury salon",
+    "realism_level": "editorial_clean",
+    "skin_detail": "realistic",
+    "film_look": "digital_clean",
+    "lens_preset": "50mm_lifestyle",
+    "depth_of_field": "shallow",
+    "has_reference_photos": false,
+    "reference_photos_path": "Reference_Assets/Patricia_Osorio/",
+    "location_preferred": "loc_vizos_salon_miami"
+  },
+
+  "videolab": {
+    "archetype_preference": ["salon_workshop", "single_talking_head"],
+    "energy_level": "medium-high",
+    "pacing": "profesional con calidez — más directo que modo personal, mismo nivel de autenticidad",
+    "color_grade": "warm, golden Miami light, luxury salon ambient",
+    "b_roll_style": "proceso técnico — manos aplicando color, antes/después, productos Neurone en uso",
+    "humanize_params": {
+      "handheld_ratio": 0.3,
+      "cut_timing_variance": 0.25,
+      "reaction_shots": true,
+      "color_grade_warmth": 0.75
+    }
+  },
+
+  "voicelab": {
+    "voice_id": "TBD_po_patricia",
+    "source_audio": "Biscayne_Blvd_6.m4a",
+    "validated_by": "Sam — conocimiento personal, décadas",
+    "language": "es-FL",
+    "emotion_base": "authoritative-warm",
+    "speed": 1.0,
+    "script_style": "conversacional-experto",
+    "mode_note": "Este es el modo PO en contexto profesional activo — más energía y dirección que el modo personal, misma autenticidad base. Segunda muestra de audio pendiente (~3 min modo salón activo) para calibrar con mayor precisión.",
+    "rhythm": {
+      "pattern": "flujo más constante que modo personal — énfasis técnico en momentos clave",
+      "burst_triggers": ["explicación técnica", "resultado visible", "proceso de colorimetría"],
+      "pause_triggers": ["momento de impacto", "resultado antes/después", "recomendación importante"]
+    },
+    "register": "experta cálida — autoridad sin distancia, luxury sin frialdad",
+    "spanglish_ratio": "10-15%_técnico",
+    "spanglish_pattern": "términos de industria beauty en inglés insertados naturalmente (balayage, highlights, toning, gloss)",
+    "openers": ["Bueno...", "Mira...", "La verdad es que...", "Hoy les voy a mostrar..."],
+    "regionalisms_colombia": ["Qué va", "Dios te pague"],
+    "exclusions": [
+      "español neutro corporativo",
+      "energía artificial de vendedora",
+      "usted",
+      "promesas absolutas de resultado",
+      "presión de ventas directa"
+    ],
+    "speaking_style": "LUXURY_EXPERT — didáctica, explica el proceso con orgullo técnico. Spanglish beauty natural. Calor humano que no sacrifica autoridad. El salón es su territorio."
+  },
+
+  "humanize": {
+    "image": {
+      "grain_level": 0.2,
+      "lifestyle_vs_studio_ratio": 0.5,
+      "imperfection_score": 0.3
+    },
+    "copy": {
+      "colloquial_allowed": true,
+      "emoji_policy": "selective",
+      "first_person_ratio": 0.6,
+      "sentence_length_variance": 0.5
+    },
+    "voice": {
+      "pace_variance": 0.3,
+      "filler_words": false,
+      "regional_accent_weight": 0.6,
+      "breathing_naturalness": 0.7
+    },
+    "video": {
+      "handheld_ratio": 0.3,
+      "cut_timing_variance": 0.25,
+      "reaction_shots": true,
+      "color_grade_warmth": 0.75
+    }
+  },
+
+  "created": "2026-03-06",
+  "last_updated": "2026-03-07",
+  "version_notes": "v1.0 — generado desde análisis de audio Biscayne_Blvd_6.m4a + conocimiento personal de Sam. PENDIENTE: nueva muestra de audio en modo profesional activo (~3 min) para calibrar voicelab con mayor precisión. Audio actual refleja modo personal-íntimo, no modo salón."
+}

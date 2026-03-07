@@ -1,0 +1,112 @@
+{
+  "schema_version": "BP_PERSON_1.0",
+  "id": "po_patricia_personal",
+  "brandId": "PatriciaOsorioPersonal",
+  "displayName": "Patricia Osorio — Marca Personal",
+  "role_default": "BOTH",
+  "status": "active",
+  "cross_brand_accessible": true,
+  "cross_brand_note": "Este blueprint es consumible por cualquier marca del ecosistema donde PO aparezca como experta, embajadora o rostro: D7Herbal, VivoseMask, VizosCosmetics, NeuroneCosmetics.",
+  "expertise": "colorimetría, balayage, salud capilar, estilismo profesional Miami",
+  "compliance_notes": "No medical claims. No guaranteed results.",
+  "compatible_archetypes": [
+    "studio_setup",
+    "salon_workshop",
+    "single_talking_head",
+    "event_stage"
+  ],
+
+  "imagelab": {
+    "description": "Mujer latina profesional, 35-45 años, cabello rubio/castaño impecablemente trabajado, estilo Miami premium. Presencia de autoridad cálida.",
+    "style": "editorial_clean, Miami daylight, warm tones, beauty professional",
+    "realism_level": "editorial_clean",
+    "skin_detail": "realistic",
+    "film_look": "digital_clean",
+    "lens_preset": "50mm_lifestyle",
+    "depth_of_field": "shallow",
+    "has_reference_photos": false,
+    "reference_photos_path": "Reference_Assets/Patricia_Osorio/"
+  },
+
+  "videolab": {
+    "archetype_preference": ["studio_setup", "single_talking_head"],
+    "energy_level": "medium",
+    "pacing": "conversational — pausas naturales, no acelerado",
+    "color_grade": "warm, golden Miami light",
+    "b_roll_style": "lifestyle candid — salón, productos, manos trabajando",
+    "humanize_params": {
+      "handheld_ratio": 0.4,
+      "cut_timing_variance": 0.3,
+      "reaction_shots": true,
+      "color_grade_warmth": 0.7
+    }
+  },
+
+  "voicelab": {
+    "voice_id": "TBD_po_patricia",
+    "source_audio": "Biscayne_Blvd_6.m4a",
+    "validated_by": "Sam — conocimiento personal, décadas",
+    "language": "es-FL",
+    "emotion_base": "conversational-vulnerable",
+    "speed": 0.95,
+    "script_style": "circular-explicativo",
+    "rhythm": {
+      "pattern": "espasmódico-emocional",
+      "description": "Alterna entre ráfagas de velocidad cuando explica logística/estrés, y pausas dramáticas cargadas de cansancio.",
+      "burst_triggers": ["logística", "tareas pendientes", "estrés operativo"],
+      "pause_triggers": ["agotamiento", "disculpa", "resignación"],
+      "vocal_elongation": "sílabas finales alargadas en frases de resignación o disculpa",
+      "example": "es un poquito complicaaado"
+    },
+    "register": "conversacional-íntimo — colega cercana, nunca subordinada ni formal",
+    "affective_markers": ["hola Sam", "gracias corazón", "Dios te pague"],
+    "spanglish_ratio": "10-15%_técnico",
+    "spanglish_pattern": "inglés solo en términos de workflow ya establecidos — code-switch natural sin esfuerzo",
+    "openers": ["Bueno...", "Mira...", "Resulta que...", "La verdad es que..."],
+    "regionalisms_colombia": ["Qué va", "Se me atravesó algo", "Dios te pague"],
+    "hyperboles_allowed": ["esclavitud moderna", "no puedo con mi vida", "Estados Esclavos de América"],
+    "repetition_pattern": "repite ideas por carga emocional, no por síntesis — válido y auténtico",
+    "mic_attitude": "conexión emocional y validación — no vende, fideliza desde vulnerabilidad",
+    "exclusions": [
+      "español neutro de locutor",
+      "estructura lineal de guión",
+      "falso optimismo o energía de coach motivacional",
+      "usted o fórmulas corporativas",
+      "síntesis forzada",
+      "cierre con atentamente o equivalente",
+      "moraleja empaquetada al final",
+      "historia con arco perfecto de problema-solución-éxito"
+    ],
+    "speaking_style": "AUTHORITY_EDU — circular, vulnerabilidad como herramienta de conexión, Spanglish técnico natural. Explica el por qué antes del qué. El cansancio real es el activo, no un defecto."
+  },
+
+  "humanize": {
+    "image": {
+      "grain_level": 0.3,
+      "lifestyle_vs_studio_ratio": 0.7,
+      "imperfection_score": 0.4
+    },
+    "copy": {
+      "colloquial_allowed": true,
+      "emoji_policy": "selective",
+      "first_person_ratio": 0.7,
+      "sentence_length_variance": 0.6
+    },
+    "voice": {
+      "pace_variance": 0.4,
+      "filler_words": true,
+      "regional_accent_weight": 0.7,
+      "breathing_naturalness": 0.8
+    },
+    "video": {
+      "handheld_ratio": 0.4,
+      "cut_timing_variance": 0.3,
+      "reaction_shots": true,
+      "color_grade_warmth": 0.7
+    }
+  },
+
+  "created": "2026-03-06",
+  "last_updated": "2026-03-07",
+  "version_notes": "v1.0 — generado desde análisis de audio Biscayne_Blvd_6.m4a + conocimiento personal de Sam. VoiceBlueprint enriquecido post-análisis. Pendiente: nueva muestra de audio en modo profesional activo para calibrar mejor."
+}
