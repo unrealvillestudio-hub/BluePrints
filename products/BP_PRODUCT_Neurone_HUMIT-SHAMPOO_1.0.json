@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "public",
-  "image_filename": "NLSHUM-1-1.webp",
+  "image_filename": "HUMIT_SH_1L.png",
   "description": {
     "en": "High Moisturizing Shampoo. Dry and Damaged Hair.",
     "es": "Champú Acondicionador Pro-Humectación. Cabello Seco y Maltratado."
@@ -74,5 +74,7 @@
     "neurone_dy_fazza"
   ],
   "created": "2026-03-08",
-  "version": "1.0"
+  "version": "1.0",
+  "image_style": "studio_dark_background",
+  "image_size_shown": "1L"
 }

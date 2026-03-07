@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "public",
-  "image_filename": "NSERCPT-4.webp",
+  "image_filename": "DYFENSOR_25ML_WEB.png",
   "description": {
     "en": "Hair Restructuring Serum. Color Protector.",
     "es": "Suero Pro-Reestructuración. Protector De Color."
@@ -65,5 +65,6 @@
     "neurone_plattina_shampoo"
   ],
   "created": "2026-03-07",
-  "version": "1.0"
+  "version": "1.0",
+  "image_style": "studio_dark_background"
 }

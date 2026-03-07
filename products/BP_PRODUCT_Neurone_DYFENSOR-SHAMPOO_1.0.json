@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "public",
-  "image_filename": "NLSDYLS-1-1.webp",
+  "image_filename": "dyfensorsh_400_web.png",
   "description": {
     "en": "Sulfate Free Shampoo. Color Protection for Dyed Hair.",
     "es": "Champú Libre de Sulfatos. Protección de Color para Cabello Teñido."
@@ -76,5 +76,6 @@
     "neurone_total_violet_mask"
   ],
   "created": "2026-03-08",
-  "version": "1.0"
+  "version": "1.0",
+  "image_style": "studio_dark_background"
 }

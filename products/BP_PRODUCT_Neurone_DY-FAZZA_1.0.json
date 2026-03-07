@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "public",
-  "image_filename": "NTDYFZ-1-1.webp",
+  "image_filename": "dyfazza_400_web.png",
   "description": {
     "en": "2 Phase Nutritive Moisturizing Hair Treatment. Leave In.",
     "es": "Tratamiento Hidratante Nutritivo de 2 Fases. Sin Enjuague."
@@ -77,5 +77,6 @@
     "neurone_hyaloneurine"
   ],
   "created": "2026-03-07",
-  "version": "1.0"
+  "version": "1.0",
+  "image_style": "studio_dark_background"
 }

@@ -1,0 +1,89 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_dy_fazza_color",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T062",
+  "barcode": "7502296180310",
+  "display_name": "DY Fazza Color",
+  "product_type": "leave_in_treatment",
+  "category": "Color Rescue",
+  "line": "DY Fazza",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "spray_bottle",
+  "packaging_color": "gradient pink to deep pink-purple",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "dyfazzacolor_400_web.png",
+  "image_style": "studio_dark_background",
+  "description": {
+    "en": "2 Phase Nutritive Moisturizing Treatment for Colored Hair. Leave In.",
+    "es": "Tratamiento Hidratante Nutritivo de 2 Fases para Cabello Teñido. Sin Enjuague."
+  },
+  "key_ingredients": [
+    "2-phase formula"
+  ],
+  "hair_type": [
+    "color-treated",
+    "dyed",
+    "bleached",
+    "colored hair"
+  ],
+  "benefit_claims": [
+    "hidrata el cabello teñido sin enjuague",
+    "nutre la hebra coloreada",
+    "contribuye a prolongar la viveza del color"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic hydration + color care claims. Variante específica de DY Fazza para cabello teñido."
+  },
+  "imagelab": {
+    "packaging_style": "spray_bottle",
+    "dominant_hex": "#E8A0C8",
+    "accent_hex": "#9A3A7A",
+    "lifestyle_context": [
+      "post-color routine",
+      "color maintenance ritual",
+      "paired with Dyfensor line"
+    ],
+    "ugc_scenarios": [
+      "shake-before-use 2-phase visual",
+      "application on color-treated hair",
+      "color longevity before/after",
+      "Color Rescue line pairing"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "pink gradient luxury, color protection, vibrant color-care"
+  },
+  "line_relationship": {
+    "parent_line": "DY Fazza",
+    "sibling": "neurone_dy_fazza",
+    "differentiation": "DY Fazza original = Moisture / DY Fazza Color = Color Rescue (cabello teñido)"
+  },
+  "related_skus": [
+    {
+      "sku": "T064",
+      "size": "50ml",
+      "barcode": "7502296183090"
+    },
+    {
+      "sku": "T061",
+      "size": "200ml",
+      "barcode": "7502296180327"
+    },
+    {
+      "sku": "T062",
+      "size": "400ml",
+      "barcode": "7502296180310"
+    }
+  ],
+  "cross_sell": [
+    "neurone_dyfensor_shampoo",
+    "neurone_dyfensor_serum",
+    "neurone_total_violet_mask"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

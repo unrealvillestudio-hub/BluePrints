@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "public",
-  "image_filename": "NLSKHB-1-1.webp",
+  "image_filename": "kerasinsh_400_web.png",
   "description": {
     "en": "Repair Shampoo for Damaged Hair. Keratin + Hyaluronic Acid + Biotin.",
     "es": "Champú Reparador para Cabello Dañado. Keratina + Ácido Hialurónico + Biotina."
@@ -79,5 +79,6 @@
     "neurone_kerasin_hb_leave_in"
   ],
   "created": "2026-03-07",
-  "version": "1.0"
+  "version": "1.0",
+  "image_style": "studio_dark_background"
 }

@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "public",
-  "image_filename": "NTHUMA-1-1.webp",
+  "image_filename": "humitmask_400_web.png",
   "description": {
     "en": "High Moisturizing Conditioning Mask. Dry and Damaged Hair.",
     "es": "Mascarilla Acondicionadora Pro-Humectación. Cabello Seco y Maltratado."
@@ -75,5 +75,6 @@
     "neurone_hyaloneurine"
   ],
   "created": "2026-03-07",
-  "version": "1.0"
+  "version": "1.0",
+  "image_style": "studio_dark_background"
 }

@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "pending",
-  "image_filename": "NACSHA-1-1.webp",
+  "image_filename": "CAPISSEN_400_WEB.png",
   "description": {
     "en": "Hair Shampoo for Hair Loss Prevention.",
     "es": "Champú Capilar. Prevención Caída del Cabello."
@@ -62,5 +62,6 @@
     "neurone_capissen_lotion"
   ],
   "created": "2026-03-08",
-  "version": "1.0"
+  "version": "1.0",
+  "image_style": "studio_dark_background"
 }
