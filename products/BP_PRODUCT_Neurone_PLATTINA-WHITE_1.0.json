@@ -1,0 +1,67 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_plattina_white",
+  "brandId": "NeuroneCosmetics",
+  "sku": "D003",
+  "barcode": "7502296181461",
+  "display_name": "Plattina White",
+  "product_type": "bleaching_powder",
+  "category": "Pro Salon / Bleaching",
+  "line": "Plattina White",
+  "size": "400g",
+  "net_weight": "14.10 oz / 400 g",
+  "format": "jar_with_lid",
+  "packaging_color": "white",
+  "status": "active",
+  "b2b_only": true,
+  "shopify_visibility": "pending",
+  "image_filename": "NCPLWT.webp",
+  "description": {
+    "en": "Hair Bleaching Powder. Non-Volatile. Capillary Nanotribology. Formula 1+3.",
+    "es": "Polvo Decolorante para el Cabello. No Volátil. Nanotribología Capilar. Fórmula 1+3."
+  },
+  "key_ingredients": [
+    "bleaching agents",
+    "nanotribology complex"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "PRO SALON — b2bOnly. Decolorante profesional. Producto oxidativo regulado. Uso exclusivo profesional. shopify_visibility: pending hasta confirmar Locksmith."
+  },
+  "imagelab": {
+    "packaging_style": "professional_jar",
+    "dominant_hex": "#F5F5F5",
+    "accent_hex": "#2C3E6B",
+    "lifestyle_context": [
+      "salon coloring station",
+      "professional bleaching setup",
+      "B2B showcase"
+    ],
+    "ugc_scenarios": [
+      "product display",
+      "professional bleaching process",
+      "before/after blonde"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "clean white professional, salon-grade precision"
+  },
+  "related_skus": [
+    {
+      "sku": "D003",
+      "size": "400g",
+      "barcode": "7502296181461"
+    },
+    {
+      "sku": "D004",
+      "size": "800g",
+      "barcode": "7502296181485"
+    }
+  ],
+  "cross_sell": [
+    "neurone_neuroxide",
+    "neurone_density_proff"
+  ],
+  "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith.",
+  "created": "2026-03-08",
+  "version": "1.0"
+}

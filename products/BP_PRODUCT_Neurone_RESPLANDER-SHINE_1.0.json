@@ -1,0 +1,66 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_resplander_shine",
+  "brandId": "NeuroneCosmetics",
+  "sku": "E017",
+  "barcode": "7502296183366",
+  "display_name": "Resplander Shine",
+  "product_type": "shine_spray",
+  "category": "Styling",
+  "line": "Styling",
+  "size": "100ml",
+  "net_weight": "3.38 fl oz / 100 mL",
+  "format": "spray_bottle",
+  "packaging_color": "metallic gunmetal silver",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NERESPSH.webp",
+  "description": {
+    "en": "Conditioning and Shine Spray for Hair.",
+    "es": "Spray de Brillo y Acondicionamiento para el Cabello."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "all hair types"
+  ],
+  "benefit_claims": [
+    "brillo instantáneo",
+    "acondiciona el cabello",
+    "acabado luminoso"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic shine/conditioning claims only."
+  },
+  "imagelab": {
+    "packaging_style": "spray_bottle_metallic",
+    "dominant_hex": "#6A6A6A",
+    "accent_hex": "#C8C8C8",
+    "lifestyle_context": [
+      "finishing touch",
+      "salon finishing station",
+      "photo shoot prep"
+    ],
+    "ugc_scenarios": [
+      "shine spray in action",
+      "luminous hair close-up",
+      "editorial gloss"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "gunmetal editorial, instant luminosity, photo-ready finish"
+  },
+  "related_skus": [
+    {
+      "sku": "E017",
+      "size": "100ml",
+      "barcode": "7502296183366"
+    }
+  ],
+  "cross_sell": [
+    "neurone_neurona_gloss",
+    "neurone_thermo_dual"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

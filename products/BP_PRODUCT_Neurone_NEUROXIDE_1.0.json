@@ -1,0 +1,78 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_neuroxide",
+  "brandId": "NeuroneCosmetics",
+  "sku_family": "P006-P010",
+  "display_name": "Neuroxide Cream Developer",
+  "product_type": "cream_developer",
+  "category": "Pro Salon / Peroxide",
+  "line": "Neuroxide",
+  "size": "1L",
+  "net_weight": "33.8 fl oz / 1 L",
+  "format": "squeeze_bottle",
+  "packaging_color": "white with blue accents",
+  "status": "active",
+  "b2b_only": true,
+  "shopify_visibility": "pending",
+  "image_filename": "NCNEU-6.webp",
+  "family_note": "Familia de 5 volúmenes. Imagen muestra los 5 vol juntos (5, 10, 20, 30, 40).",
+  "description": {
+    "en": "Cream Developer. Available in 5, 10, 20, 30 and 40 volumes.",
+    "es": "Peróxido en Crema. Disponible en 5, 10, 20, 30 y 40 volúmenes."
+  },
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "PRO SALON — b2bOnly. Peróxido de hidrógeno en crema. Producto oxidativo de uso profesional. Solo visible en Portal Pro. shopify_visibility: pending hasta Locksmith."
+  },
+  "variants": [
+    {
+      "name": "5 VOL",
+      "sku": "P006",
+      "barcode": "7502296181379"
+    },
+    {
+      "name": "10 VOL",
+      "sku": "P007",
+      "barcode": "7502296181386"
+    },
+    {
+      "name": "20 VOL",
+      "sku": "P008",
+      "barcode": "7502296181393"
+    },
+    {
+      "name": "30 VOL",
+      "sku": "P009",
+      "barcode": "7502296181409"
+    },
+    {
+      "name": "40 VOL",
+      "sku": "P010",
+      "barcode": "7502296181416"
+    }
+  ],
+  "imagelab": {
+    "packaging_style": "squeeze_bottle_family",
+    "dominant_hex": "#F5F5F5",
+    "accent_hex": "#2C3E6B",
+    "lifestyle_context": [
+      "salon coloring station",
+      "professional developer",
+      "B2B product lineup"
+    ],
+    "ugc_scenarios": [
+      "vol selector visual",
+      "professional mixing",
+      "salon application"
+    ],
+    "hero_angle": "family_lineup",
+    "mood": "clean white professional, salon precision, oxidative authority"
+  },
+  "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith.",
+  "cross_sell": [
+    "neurone_neurone_color",
+    "neurone_plattina_white"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

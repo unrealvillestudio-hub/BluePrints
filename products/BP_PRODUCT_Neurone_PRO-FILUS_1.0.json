@@ -1,0 +1,61 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_pro_filus",
+  "brandId": "NeuroneCosmetics",
+  "sku": "D006",
+  "barcode": "7502296181607",
+  "display_name": "Pro Filus",
+  "product_type": "bleaching_protector",
+  "category": "Pro Salon / Bleaching",
+  "line": "Pro Filus",
+  "size": "200g",
+  "net_weight": "7.05 oz / 200 g",
+  "format": "large_jar",
+  "packaging_color": "matte black",
+  "status": "active",
+  "b2b_only": true,
+  "shopify_visibility": "pending",
+  "image_filename": "NCPROF.webp",
+  "description": {
+    "en": "Hair Bleaching Powder Protector. Highly Processed Hair.",
+    "es": "Polvo Protector para Decoloraciones. Cabello Altamente Procesado."
+  },
+  "key_ingredients": [
+    "protective complex for bleaching"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "PRO SALON — b2bOnly. Protector para decoloración en cabello muy procesado. Diferenciador técnico del catálogo Pro. Solo Portal Pro. shopify_visibility: pending hasta Locksmith."
+  },
+  "imagelab": {
+    "packaging_style": "large_matte_black_jar",
+    "dominant_hex": "#1A1A1A",
+    "accent_hex": "#C47C30",
+    "lifestyle_context": [
+      "bleaching station",
+      "professional colorist setup",
+      "B2B showcase"
+    ],
+    "ugc_scenarios": [
+      "product display",
+      "professional bleaching protection context",
+      "before/after highly processed hair"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "matte black authority, professional protection, salon-exclusive premium"
+  },
+  "related_skus": [
+    {
+      "sku": "D006",
+      "size": "200g",
+      "barcode": "7502296181607"
+    }
+  ],
+  "cross_sell": [
+    "neurone_plattina_white",
+    "neurone_neuroxide"
+  ],
+  "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith.",
+  "created": "2026-03-08",
+  "version": "1.0"
+}

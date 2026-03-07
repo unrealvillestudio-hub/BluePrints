@@ -1,0 +1,66 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_capissen_shampoo",
+  "brandId": "NeuroneCosmetics",
+  "sku": "L033",
+  "barcode": "7502296183526",
+  "display_name": "Capissen Shampoo",
+  "product_type": "shampoo",
+  "category": "Scalp",
+  "line": "Anti-Caída / Capissen",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "white",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "pending",
+  "image_filename": "NACSHA-1-1.webp",
+  "description": {
+    "en": "Hair Shampoo for Hair Loss Prevention.",
+    "es": "Champú Capilar. Prevención Caída del Cabello."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "thinning",
+    "hair loss concern",
+    "fine hair"
+  ],
+  "benefit_claims": [
+    "contribuye al aspecto de densidad",
+    "cuida el cuero cabelludo",
+    "fortalece la hebra capilar"
+  ],
+  "compliance_flags": {
+    "category_risk": "critical",
+    "notes": "⚠️ CRÍTICO — HAIR LOSS PREVENTION es un DRUG CLAIM bajo FDA 21 CFR 310.545. En USA, solo productos aprobados como OTC drug (ej: minoxidil) pueden hacer claims de 'prevención de caída del cabello'. El claim actual del packaging ('For Hair Loss Prevention') NO es admisible para venta como cosmético en USA sin reformulación de claims. ACCIONES REQUERIDAS: (1) Reescribir claims para la tienda US: 'contribuye al aspecto de fortaleza', 'fórmula que cuida el cuero cabelludo', NUNCA 'previene la caída'; (2) NO mostrar packaging original con claim 'Hair Loss Prevention' en tienda B2C USA; (3) Consultar con attorney antes de activar. shopify_visibility: pending hasta validar claims para mercado US."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#F5F5F5",
+    "accent_hex": "#1A1A1A",
+    "lifestyle_context": [
+      "scalp care routine",
+      "anti-hair-loss ritual"
+    ],
+    "ugc_scenarios": [
+      "scalp application",
+      "healthy scalp aesthetic",
+      "hair density visual"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "clean white, clinical scalp care, professional"
+  },
+  "related_skus": [
+    {
+      "sku": "L033",
+      "size": "400ml",
+      "barcode": "7502296183526"
+    }
+  ],
+  "cross_sell": [
+    "neurone_capissen_lotion"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

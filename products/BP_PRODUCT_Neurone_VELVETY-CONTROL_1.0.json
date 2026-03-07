@@ -1,0 +1,79 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_velvety_control",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T026",
+  "barcode": "7502296180037",
+  "display_name": "Velvety Control",
+  "product_type": "leave_in_treatment",
+  "category": "Restore",
+  "line": "Velvety Control",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "metallic bronze-copper",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTVELCO-1-1.webp",
+  "description": {
+    "en": "Deep Nourishing Hair Treatment. Leave In.",
+    "es": "Tratamiento Pro Hidratación y Reparación. Sin Enjuague."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "damaged",
+    "dry",
+    "frizzy",
+    "over-processed"
+  ],
+  "benefit_claims": [
+    "hidratación profunda sin enjuague",
+    "pro reparación",
+    "control del frizz y suavidad"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic leave-in treatment claims."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#8B5A2B",
+    "accent_hex": "#C47C30",
+    "lifestyle_context": [
+      "post-wash routine",
+      "styling station",
+      "repair ritual"
+    ],
+    "ugc_scenarios": [
+      "leave-in application",
+      "velvet smooth hair result",
+      "before/after damaged hair"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "warm bronze luxury, deep repair, velvety smooth finish"
+  },
+  "related_skus": [
+    {
+      "sku": "T025",
+      "size": "50ml",
+      "barcode": "7502296180495"
+    },
+    {
+      "sku": "T026",
+      "size": "400ml",
+      "barcode": "7502296180037"
+    },
+    {
+      "sku": "T027",
+      "size": "1L",
+      "barcode": "7502296180266"
+    }
+  ],
+  "cross_sell": [
+    "neurone_kerasin_hb_mask",
+    "neurone_green_100"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_dyfensor_shampoo",
+  "brandId": "NeuroneCosmetics",
+  "sku": "L024",
+  "barcode": "7502296180235",
+  "display_name": "Dyfensor Sulfate Free Shampoo",
+  "product_type": "shampoo",
+  "category": "Color Rescue",
+  "line": "Dyfensor",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "deep burgundy-plum",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NLSDYLS-1-1.webp",
+  "description": {
+    "en": "Sulfate Free Shampoo. Color Protection for Dyed Hair.",
+    "es": "Champú Libre de Sulfatos. Protección de Color para Cabello Teñido."
+  },
+  "key_ingredients": [
+    "sulfate-free cleansing agents"
+  ],
+  "hair_type": [
+    "color-treated",
+    "dyed",
+    "bleached"
+  ],
+  "benefit_claims": [
+    "libre de sulfatos",
+    "protege el color del cabello teñido",
+    "limpieza suave que prolonga el color"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "'Sulfate Free' claim verificable — confirmar formulación con fabricante para respaldar claim en tienda US."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#4A1942",
+    "accent_hex": "#8B1A4A",
+    "lifestyle_context": [
+      "color-care routine",
+      "salon color maintenance",
+      "paired with Dyfensor Serum"
+    ],
+    "ugc_scenarios": [
+      "sulfate-free lather",
+      "color longevity before/after",
+      "color-treated hair care"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "deep plum luxury, color protection, sulfate-free clean"
+  },
+  "related_skus": [
+    {
+      "sku": "L023",
+      "size": "50ml",
+      "barcode": "7502296180471"
+    },
+    {
+      "sku": "L024",
+      "size": "400ml",
+      "barcode": "7502296180235"
+    },
+    {
+      "sku": "L025",
+      "size": "1L",
+      "barcode": "7502296180280"
+    }
+  ],
+  "cross_sell": [
+    "neurone_dyfensor_serum",
+    "neurone_total_violet_mask"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

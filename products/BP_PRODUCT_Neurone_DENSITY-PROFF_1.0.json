@@ -1,0 +1,66 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_density_proff",
+  "brandId": "NeuroneCosmetics",
+  "sku_family": "P013-P014",
+  "display_name": "Density Proff",
+  "product_type": "cream_developer",
+  "category": "Pro Salon / Peroxide",
+  "line": "Density Proff",
+  "size": "1L",
+  "net_weight": "33.8 fl oz / 1 L",
+  "format": "squeeze_bottle",
+  "packaging_color": "white with blue accents",
+  "status": "active",
+  "b2b_only": true,
+  "shopify_visibility": "pending",
+  "image_filename": "NCPLWT-2-1.webp",
+  "description": {
+    "en": "Cream Developer. High Density Formula. Available in 20 and 30 volumes.",
+    "es": "Peróxido en Crema. Fórmula de Alta Densidad. Disponible en 20 y 30 volúmenes."
+  },
+  "key_ingredients": [
+    "hydrogen peroxide",
+    "high density formula"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "PRO SALON — b2bOnly. Alta densidad para uso profesional. Diferenciador frente a Neuroxide estándar. Solo Portal Pro. shopify_visibility: pending hasta Locksmith."
+  },
+  "variants": [
+    {
+      "name": "20 VOL",
+      "sku": "P013",
+      "barcode": "7502296183342"
+    },
+    {
+      "name": "30 VOL",
+      "sku": "P014",
+      "barcode": "7502296183359"
+    }
+  ],
+  "imagelab": {
+    "packaging_style": "squeeze_bottle",
+    "dominant_hex": "#F5F5F5",
+    "accent_hex": "#2C8FBF",
+    "lifestyle_context": [
+      "salon coloring station",
+      "professional developer",
+      "B2B context"
+    ],
+    "ugc_scenarios": [
+      "high density texture",
+      "professional mixing",
+      "paired with Neurone Color"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "clean white, high density professional, salon precision"
+  },
+  "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith.",
+  "cross_sell": [
+    "neurone_neurone_color",
+    "neurone_plattina_white"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

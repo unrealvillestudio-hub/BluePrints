@@ -1,0 +1,66 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_capissen_lotion",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T067",
+  "barcode": "7502296183533",
+  "display_name": "Capissen Lotion",
+  "product_type": "scalp_lotion",
+  "category": "Scalp",
+  "line": "Anti-Caída / Capissen",
+  "size": "100ml",
+  "net_weight": "3.38 fl oz / 100 mL",
+  "format": "spray_applicator_bottle",
+  "packaging_color": "frosted white/silver",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "pending",
+  "image_filename": "NACLOT.webp",
+  "description": {
+    "en": "Hair Lotion for Hair Loss Prevention.",
+    "es": "Loción Capilar. Prevención Caída del Cabello."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "thinning",
+    "hair loss concern"
+  ],
+  "benefit_claims": [
+    "contribuye al aspecto de densidad y fortaleza del cabello",
+    "cuidado del cuero cabelludo"
+  ],
+  "compliance_flags": {
+    "category_risk": "critical",
+    "notes": "⚠️ CRÍTICO — mismo riesgo que Capissen Shampoo. 'Hair Loss Prevention' es drug claim bajo FDA. Misma acción requerida: reescribir claims para US, no mostrar packaging original en tienda B2C. shopify_visibility: pending hasta validar claims."
+  },
+  "imagelab": {
+    "packaging_style": "spray_applicator_scalp",
+    "dominant_hex": "#E8E8E8",
+    "accent_hex": "#2A2A2A",
+    "lifestyle_context": [
+      "scalp treatment routine",
+      "hairline application",
+      "anti-loss ritual"
+    ],
+    "ugc_scenarios": [
+      "scalp applicator use",
+      "healthy scalp result",
+      "professional recommendation context"
+    ],
+    "hero_angle": "three_quarter_with_applicator",
+    "mood": "clinical, scalp care authority, prevention ritual"
+  },
+  "related_skus": [
+    {
+      "sku": "T067",
+      "size": "100ml",
+      "barcode": "7502296183533"
+    }
+  ],
+  "cross_sell": [
+    "neurone_capissen_shampoo",
+    "neurone_melanin_anti_g"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

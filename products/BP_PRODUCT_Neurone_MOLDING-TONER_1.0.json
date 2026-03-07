@@ -1,0 +1,71 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_molding_toner",
+  "brandId": "NeuroneCosmetics",
+  "sku": "E007",
+  "barcode": "7502296180075",
+  "display_name": "Molding Toner",
+  "product_type": "styling_gel_cream",
+  "category": "Styling",
+  "line": "Styling",
+  "size": "300g",
+  "net_weight": "10.58 oz / 300 g",
+  "format": "jar_with_lid",
+  "packaging_color": "matte black",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NEMOLON-3.webp",
+  "description": {
+    "en": "Styling Gel Cream. Platinum Hair Nuance.",
+    "es": "Crema Gel. Matizante Platinado."
+  },
+  "key_ingredients": [
+    "platinum toning pigments"
+  ],
+  "hair_type": [
+    "platinum",
+    "silver",
+    "blonde",
+    "gray"
+  ],
+  "benefit_claims": [
+    "moldea y estiliza",
+    "matiza tonos no deseados en cabello platinado",
+    "fijación con efecto matizante"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Doble función: styling + matizante. Cosmetic claims. Posicionar como 'gel matizante' — nicho diferenciador."
+  },
+  "imagelab": {
+    "packaging_style": "matte_black_jar",
+    "dominant_hex": "#1A1A1A",
+    "accent_hex": "#C8C8D4",
+    "lifestyle_context": [
+      "platinum hair styling",
+      "barbershop premium",
+      "silver hair model"
+    ],
+    "ugc_scenarios": [
+      "platinum hair application",
+      "toning while styling",
+      "paired with Plattina line"
+    ],
+    "hero_angle": "top_and_front_duo",
+    "mood": "matte black luxury, silver nuance, platinum editorial"
+  },
+  "related_skus": [
+    {
+      "sku": "E007",
+      "size": "300g",
+      "barcode": "7502296180075"
+    }
+  ],
+  "cross_sell": [
+    "neurone_plattina_shampoo",
+    "neurone_controller"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

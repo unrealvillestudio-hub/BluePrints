@@ -1,0 +1,66 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_controller",
+  "brandId": "NeuroneCosmetics",
+  "sku": "E006",
+  "barcode": "7502296180068",
+  "display_name": "Controller",
+  "product_type": "styling_gel_wax",
+  "category": "Styling",
+  "line": "Styling",
+  "size": "300g",
+  "net_weight": "10.58 oz / 300 g",
+  "format": "jar_with_lid",
+  "packaging_color": "matte black",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NECONTR-3.webp",
+  "description": {
+    "en": "Styling Gel Wax. Wet Look. Extreme Hold.",
+    "es": "Cera Gel. Aspecto Húmedo. Extrema Fijación."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "all hair types",
+    "medium to short styles"
+  ],
+  "benefit_claims": [
+    "fijación extrema",
+    "efecto wet look",
+    "control total del peinado"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic styling claims only. 'Extreme Hold' con asterisco en packaging — verificar si hay nota aclaratoria."
+  },
+  "imagelab": {
+    "packaging_style": "matte_black_jar",
+    "dominant_hex": "#1A1A1A",
+    "accent_hex": "#9A9A9A",
+    "lifestyle_context": [
+      "barbershop",
+      "men's grooming",
+      "editorial fashion"
+    ],
+    "ugc_scenarios": [
+      "wet look application",
+      "extreme hold demonstration",
+      "before/after slick style"
+    ],
+    "hero_angle": "top_and_front_duo",
+    "mood": "matte black authority, extreme hold, urban grooming"
+  },
+  "related_skus": [
+    {
+      "sku": "E006",
+      "size": "300g",
+      "barcode": "7502296180068"
+    }
+  ],
+  "cross_sell": [
+    "neurone_molding_toner"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

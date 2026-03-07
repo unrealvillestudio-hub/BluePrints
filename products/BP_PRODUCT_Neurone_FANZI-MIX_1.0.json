@@ -1,0 +1,127 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_fanzi_mix",
+  "brandId": "NeuroneCosmetics",
+  "sku_family": "C166-C178",
+  "display_name": "Fanzi Mix",
+  "product_type": "semi_permanent_fantasy_color",
+  "category": "Pro Salon / Colour",
+  "line": "Fanzi Mix",
+  "size": "200ml",
+  "net_weight": "6.76 fl oz / 200 mL",
+  "format": "squeeze_bottle",
+  "status": "active",
+  "b2b_only": true,
+  "shopify_visibility": "pending",
+  "image_filename": "NCFAMIX.webp",
+  "family_note": "Familia de 12 variantes de color fantasía semi-permanente + 1 diluyente (Tone Down). Imagen muestra la familia completa.",
+  "description": {
+    "en": "Semi-Permanent Fantasy Color.",
+    "es": "Color de Fantasía Semi-Permanente."
+  },
+  "key_ingredients": [
+    "direct dyes / pigments"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "PRO SALON — b2bOnly. Colorante semi-permanente profesional. En USA los colorantes capilares son cosméticos regulados (FD&C Act). Los pigmentos directos deben estar en la lista de colorantes aprobados FDA. Confirmar con fabricante que pigmentos cumplen 21 CFR Part 73/74/82. PROHIBIDO: claims de permanencia si no es permanente. shopify_visibility: pending hasta confirmar arquitectura Locksmith."
+  },
+  "variants": [
+    {
+      "name": "Tone Down (diluyente)",
+      "sku": "C166",
+      "size": "200ml",
+      "barcode": "7502296180440"
+    },
+    {
+      "name": "Tone Down 400ml",
+      "sku": "C167",
+      "size": "400ml",
+      "barcode": "7502296181454"
+    },
+    {
+      "name": "African Violet",
+      "sku": "C168",
+      "size": "200ml",
+      "barcode": "7502296180358"
+    },
+    {
+      "name": "Lavanda Violet",
+      "sku": "C169",
+      "size": "200ml",
+      "barcode": "7502296180365"
+    },
+    {
+      "name": "Passion Magenta",
+      "sku": "C170",
+      "size": "200ml",
+      "barcode": "7502296180372"
+    },
+    {
+      "name": "Natural Orchid",
+      "sku": "C171",
+      "size": "200ml",
+      "barcode": "7502296180389"
+    },
+    {
+      "name": "Ocean Blue",
+      "sku": "C172",
+      "size": "200ml",
+      "barcode": "7502296180341"
+    },
+    {
+      "name": "Moonlight Blue",
+      "sku": "C173",
+      "size": "200ml",
+      "barcode": "7502296180334"
+    },
+    {
+      "name": "Citrus Green",
+      "sku": "C174",
+      "size": "200ml",
+      "barcode": "7502296180433"
+    },
+    {
+      "name": "Sunflower Yellow",
+      "sku": "C175",
+      "size": "200ml",
+      "barcode": "7502296180426"
+    },
+    {
+      "name": "Maple Orange",
+      "sku": "C176",
+      "size": "200ml",
+      "barcode": "7502296180419"
+    },
+    {
+      "name": "Cherry Red",
+      "sku": "C177",
+      "size": "200ml",
+      "barcode": "7502296180396"
+    },
+    {
+      "name": "Fire Red",
+      "sku": "C178",
+      "size": "200ml",
+      "barcode": "7502296180402"
+    }
+  ],
+  "imagelab": {
+    "packaging_style": "squeeze_bottle_family",
+    "lifestyle_context": [
+      "colorist station",
+      "salon fantasy color",
+      "rainbow display"
+    ],
+    "ugc_scenarios": [
+      "color mixing",
+      "fantasy color application",
+      "vibrant hair result"
+    ],
+    "hero_angle": "family_grid",
+    "mood": "vibrant, fantasy, professional colorist, salon exclusive"
+  },
+  "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith.",
+  "created": "2026-03-08",
+  "version": "1.0"
+}

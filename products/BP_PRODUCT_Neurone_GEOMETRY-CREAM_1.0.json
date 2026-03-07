@@ -1,0 +1,67 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_geometry_cream",
+  "brandId": "NeuroneCosmetics",
+  "sku": "E012",
+  "barcode": "7502296183052",
+  "display_name": "Geometry Cream",
+  "product_type": "styling_cream",
+  "category": "Styling",
+  "line": "Geometry",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "metallic silver-gray",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NGEOMC-1.webp",
+  "description": {
+    "en": "Curls Definition Cream. Elasticity. Anti-Frizz.",
+    "es": "Definición de Rizos. Elasticidad. Efecto Anti-Frizz."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "curly",
+    "wavy",
+    "coily"
+  ],
+  "benefit_claims": [
+    "define los rizos con textura cremosa",
+    "aporta elasticidad",
+    "control del frizz"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic styling claims only."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#9A9A9A",
+    "accent_hex": "#4A4A4A",
+    "lifestyle_context": [
+      "curl styling routine",
+      "wash-and-go",
+      "curly hair model"
+    ],
+    "ugc_scenarios": [
+      "cream application texture",
+      "defined curls result",
+      "paired with Geometry Gel"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "sleek silver, curl care, sister product to Geometry Gel"
+  },
+  "related_skus": [
+    {
+      "sku": "E012",
+      "size": "400ml",
+      "barcode": "7502296183052"
+    }
+  ],
+  "cross_sell": [
+    "neurone_geometry_gel"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

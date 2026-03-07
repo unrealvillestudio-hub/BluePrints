@@ -1,0 +1,78 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_humit_shampoo",
+  "brandId": "NeuroneCosmetics",
+  "sku": "L013",
+  "barcode": "7502296180013",
+  "display_name": "Humit Shampoo",
+  "product_type": "shampoo",
+  "category": "Moisture",
+  "line": "Humit",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "deep teal-blue",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NLSHUM-1-1.webp",
+  "description": {
+    "en": "High Moisturizing Shampoo. Dry and Damaged Hair.",
+    "es": "Champú Acondicionador Pro-Humectación. Cabello Seco y Maltratado."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "dry",
+    "damaged",
+    "dehydrated"
+  ],
+  "benefit_claims": [
+    "humectación intensa",
+    "acondiciona mientras limpia",
+    "suaviza la hebra seca"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic moisturizing claims only."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#1A5F7A",
+    "accent_hex": "#2C3E6B",
+    "lifestyle_context": [
+      "shower",
+      "hydration routine",
+      "paired with Humit Mask"
+    ],
+    "ugc_scenarios": [
+      "creamy lather",
+      "hydrated hair result",
+      "dry to moisturized transformation"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "deep teal, moisture immersion, spa hydration"
+  },
+  "related_skus": [
+    {
+      "sku": "L017",
+      "size": "50ml",
+      "barcode": "7502296180464"
+    },
+    {
+      "sku": "L013",
+      "size": "400ml",
+      "barcode": "7502296180013"
+    },
+    {
+      "sku": "L019",
+      "size": "1L",
+      "barcode": "7502296180297"
+    }
+  ],
+  "cross_sell": [
+    "neurone_humit_mask",
+    "neurone_dy_fazza"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

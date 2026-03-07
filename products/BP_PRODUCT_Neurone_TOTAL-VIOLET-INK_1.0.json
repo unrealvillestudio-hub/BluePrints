@@ -1,0 +1,61 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_total_violet_ink",
+  "brandId": "NeuroneCosmetics",
+  "sku": "C180",
+  "barcode": "7502296181539",
+  "display_name": "Total Violet Ink",
+  "product_type": "pigment_concentrate",
+  "category": "Pro Salon / Colour",
+  "line": "Total Violet",
+  "size": "100ml",
+  "net_weight": "3.38 fl oz / 100 mL",
+  "format": "pump_bottle",
+  "packaging_color": "white",
+  "status": "active",
+  "b2b_only": true,
+  "shopify_visibility": "pending",
+  "image_filename": "NCTOVIOK.webp",
+  "description": {
+    "en": "Pure Violet Pigment Concentrate.",
+    "es": "Concentrado de Pigmento Violeta."
+  },
+  "key_ingredients": [
+    "pure violet pigment concentrate"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "PRO SALON — b2bOnly. Concentrado de pigmento profesional. Confirmar que pigmentos están en lista aprobada FDA (21 CFR 73/74/82). shopify_visibility: pending hasta Locksmith."
+  },
+  "imagelab": {
+    "packaging_style": "pump_bottle_compact",
+    "dominant_hex": "#F5F5F5",
+    "accent_hex": "#2C3E6B",
+    "lifestyle_context": [
+      "colorist station",
+      "professional toning",
+      "B2B context"
+    ],
+    "ugc_scenarios": [
+      "pigment dropper technique",
+      "professional toning result",
+      "salon application"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "clinical white, concentrated pigment, professional colorist tool"
+  },
+  "related_skus": [
+    {
+      "sku": "C180",
+      "size": "100ml",
+      "barcode": "7502296181539"
+    }
+  ],
+  "cross_sell": [
+    "neurone_fanzi_mix",
+    "neurone_plattina_shampoo"
+  ],
+  "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith.",
+  "created": "2026-03-08",
+  "version": "1.0"
+}

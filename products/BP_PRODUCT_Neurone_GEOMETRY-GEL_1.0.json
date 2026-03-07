@@ -1,0 +1,77 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_geometry_gel",
+  "brandId": "NeuroneCosmetics",
+  "sku": "E008",
+  "barcode": "7502296180624",
+  "display_name": "Geometry Gel",
+  "product_type": "styling_gel",
+  "category": "Styling",
+  "line": "Geometry",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "metallic silver-gray",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NEGEOGE-1-1.webp",
+  "description": {
+    "en": "Curls Definition Gel. Elasticity. Anti-Frizz.",
+    "es": "Gel Definición de Rizos para el Cabello. Elasticidad. Efecto Anti-Frizz."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "curly",
+    "wavy",
+    "coily"
+  ],
+  "benefit_claims": [
+    "define los rizos",
+    "aporta elasticidad",
+    "efecto anti-frizz"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic styling claims only."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#9A9A9A",
+    "accent_hex": "#4A4A4A",
+    "lifestyle_context": [
+      "curl styling routine",
+      "shower to style",
+      "editorial curly hair"
+    ],
+    "ugc_scenarios": [
+      "curl definition result",
+      "application on wet hair",
+      "before/after frizz"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "sleek silver, curl authority, anti-frizz precision"
+  },
+  "related_skus": [
+    {
+      "sku": "E010",
+      "size": "50ml",
+      "barcode": "7502296181478"
+    },
+    {
+      "sku": "E008",
+      "size": "400ml",
+      "barcode": "7502296180624"
+    },
+    {
+      "sku": "E009",
+      "size": "1L",
+      "barcode": "7502296181447"
+    }
+  ],
+  "cross_sell": [
+    "neurone_geometry_cream"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_depura_shampoo",
+  "brandId": "NeuroneCosmetics",
+  "sku": "L021",
+  "barcode": "7502296180242",
+  "display_name": "Depura Shampoo",
+  "product_type": "shampoo",
+  "category": "Scalp",
+  "line": "Depura",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "white",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NLSDEP-1-1.webp",
+  "description": {
+    "en": "Deep Cleaning Shampoo. Purify & Detox.",
+    "es": "Champú de Limpieza Profunda. Efecto Purificante."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "all hair types",
+    "oily scalp",
+    "product buildup"
+  ],
+  "benefit_claims": [
+    "limpieza profunda",
+    "efecto purificante",
+    "elimina residuos de producto"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "SCALP — compliance ALTO. 'Detox' es un término vigilado por FTC. PERMITIDO: 'efecto purificante', 'limpieza profunda', 'elimina residuos'. PROHIBIDO: 'desintoxica el cuero cabelludo', cualquier claim médico sobre tratamiento de condiciones del cuero cabelludo."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#F5F5F5",
+    "accent_hex": "#1A1A1A",
+    "lifestyle_context": [
+      "shower",
+      "clean routine",
+      "clarifying treatment"
+    ],
+    "ugc_scenarios": [
+      "product buildup before/after",
+      "scalp clarifying routine",
+      "clean minimal aesthetic"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "white clean minimalism, purifying, detox aesthetic"
+  },
+  "related_skus": [
+    {
+      "sku": "L020",
+      "size": "50ml",
+      "barcode": "7502296180488"
+    },
+    {
+      "sku": "L021",
+      "size": "400ml",
+      "barcode": "7502296180242"
+    },
+    {
+      "sku": "L022",
+      "size": "1L",
+      "barcode": "7502296180273"
+    }
+  ],
+  "cross_sell": [
+    "neurone_menthol_ice_shampoo"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

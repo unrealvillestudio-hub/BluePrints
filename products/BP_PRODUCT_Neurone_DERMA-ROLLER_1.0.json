@@ -1,0 +1,68 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_derma_roller",
+  "brandId": "NeuroneCosmetics",
+  "sku": "PR041",
+  "barcode": "7502296183632",
+  "display_name": "Derma Roller",
+  "product_type": "device",
+  "category": "Scalp",
+  "line": "Anti-Caída",
+  "size": "1 pieza",
+  "net_weight": "1 piece",
+  "format": "box_with_device",
+  "packaging_color": "white and navy blue",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "pending",
+  "image_filename": "NACDR.webp",
+  "description": {
+    "en": "Titanium Microneedle Roller. Auxiliary for scalp care.",
+    "es": "Rodillo de Microagujas de Titanio. Auxiliar para tratar el adelgazamiento capilar."
+  },
+  "key_ingredients": [
+    "titanium microneedles"
+  ],
+  "hair_type": [
+    "thinning hair",
+    "hair loss concern"
+  ],
+  "benefit_claims": [
+    "auxiliar para el cuidado del cuero cabelludo",
+    "contribuye al aspecto del cabello"
+  ],
+  "compliance_flags": {
+    "category_risk": "critical",
+    "notes": "⚠️ CRÍTICO — DEVICE + HAIR LOSS CLAIM. El Derma Roller con microagujas puede ser clasificado como DISPOSITIVO MÉDICO por la FDA (Class II), NO como cosmético. El claim original en packaging ('auxiliar para tratar el adelgazamiento capilar, contribuyendo a la disminución de la caída del cabello') es un claim DRUG/DEVICE bajo 21 CFR. ACCIONES REQUERIDAS ANTES DE VENDER EN USA: (1) Consultar si aplica 510(k) clearance; (2) Revisar si puede venderse como herramienta cosmética auxiliar con claims reescritos; (3) Consultar attorney regulatorio FDA. PROHIBIDO vender como producto cosmético estándar con el claim actual. shopify_visibility: pending hasta resolución legal."
+  },
+  "imagelab": {
+    "packaging_style": "box_with_device",
+    "dominant_hex": "#1A2F5A",
+    "accent_hex": "#FFFFFF",
+    "lifestyle_context": [
+      "scalp care routine",
+      "professional treatment context",
+      "B2B/salon preferred"
+    ],
+    "ugc_scenarios": [
+      "packaging display",
+      "device detail",
+      "salon professional use"
+    ],
+    "hero_angle": "product_and_packaging_duo",
+    "mood": "clinical, professional, scalp authority"
+  },
+  "related_skus": [
+    {
+      "sku": "PR041",
+      "size": "1 pieza",
+      "barcode": "7502296183632"
+    }
+  ],
+  "cross_sell": [
+    "neurone_capissen_lotion",
+    "neurone_melanin_anti_g"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}

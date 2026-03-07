@@ -1,0 +1,56 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_neurone_color",
+  "brandId": "NeuroneCosmetics",
+  "sku_family": "C090-C179",
+  "display_name": "Neurone Color",
+  "product_type": "permanent_hair_color",
+  "category": "Pro Salon / Colour",
+  "line": "Neurone Color",
+  "size": "90ml",
+  "net_weight": "3 fl oz / 90 mL",
+  "format": "tube_in_box",
+  "packaging_color": "navy blue box with metallic lettering",
+  "status": "active",
+  "b2b_only": true,
+  "shopify_visibility": "pending",
+  "image_filename": "NCOLOR.webp",
+  "family_note": "Línea de tinte permanente profesional. ~80+ tonos organizados en familias: Naturales, Cenizos, Cenizos Nacarados, Cenizos Intensos, Dorados, Caobas, Nacarados Intensos, y más. Imagen muestra el packaging genérico de la línea.",
+  "description": {
+    "en": "Permanent Hair Color Cream. Quinoa Protein. Nano Tribology. Formula 1+1½.",
+    "es": "Tinte Permanente para el Cabello en Crema. Proteína de Quinoa. Nano Tribología Capilar. Fórmula 1+1½."
+  },
+  "key_ingredients": [
+    "quinoa protein",
+    "nano tribology complex",
+    "oxidative dyes"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "PRO SALON — b2bOnly. Tinte permanente profesional con oxidantes. Colorantes oxidativos regulados por FDA (21 CFR Part 73/74/82). Los colorantes para cabello permanentes son cosméticos de alta supervisión en USA. Confirmar con fabricante que todos los pigmentos de la gama están en lista aprobada FDA antes de activar en Portal Pro US. shopify_visibility: pending hasta Locksmith y validación de pigmentos."
+  },
+  "imagelab": {
+    "packaging_style": "tube_in_premium_box",
+    "dominant_hex": "#1A2F5A",
+    "accent_hex": "#C8C8A0",
+    "lifestyle_context": [
+      "salon coloring station",
+      "professional color tray",
+      "B2B showcase"
+    ],
+    "ugc_scenarios": [
+      "shade family display",
+      "professional application",
+      "before/after color result"
+    ],
+    "hero_angle": "box_front_portrait",
+    "mood": "navy premium, professional colorist authority, permanent color precision"
+  },
+  "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith.",
+  "cross_sell": [
+    "neurone_neuroxide",
+    "neurone_density_proff"
+  ],
+  "created": "2026-03-08",
+  "version": "1.0"
+}
