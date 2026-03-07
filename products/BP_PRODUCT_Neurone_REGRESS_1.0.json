@@ -1,0 +1,63 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_regress",
+  "brandId": "NeuroneCosmetics",
+  "sku": "D008",
+  "barcode": "7502296183106",
+  "display_name": "Regress Color Remover Kit",
+  "product_type": "color_remover_kit",
+  "category": "Pro Salon",
+  "line": "Pro Salon",
+  "size": "200ml x2 pieces",
+  "net_weight": "6.76 fl oz each / 200 mL each",
+  "format": "box_kit_2_pieces",
+  "packaging_color": "navy blue",
+  "status": "active",
+  "b2b_only": true,
+  "shopify_visibility": "pending",
+  "image_filename": "NREGRE.webp",
+  "description": {
+    "en": "Color Remover for Permanent Haircolor.",
+    "es": "Extractor de Color para Tinte de Oxidación."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "all hair types with permanent color"
+  ],
+  "benefit_claims": [
+    "extrae el color de oxidación",
+    "prepara para recoloración"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "PRO SALON — b2bOnly. Solo visible en Portal Pro (Locksmith). No claims de 'daña menos' sin respaldo técnico. Uso profesional exclusivo."
+  },
+  "imagelab": {
+    "packaging_style": "premium_box_kit",
+    "dominant_hex": "#1A2F5A",
+    "accent_hex": "#FFFFFF",
+    "lifestyle_context": [
+      "salon professional station",
+      "colorist toolkit",
+      "B2B product showcase"
+    ],
+    "ugc_scenarios": [
+      "professional application",
+      "before/after color removal",
+      "salon context only"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "professional, authoritative, navy precision, salon-exclusive"
+  },
+  "related_skus": [
+    {
+      "sku": "D008",
+      "size": "200ml x2",
+      "barcode": "7502296183106"
+    }
+  ],
+  "cross_sell": [],
+  "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith. No mostrar en tienda B2C.",
+  "created": "2026-03-07",
+  "version": "1.0"
+}

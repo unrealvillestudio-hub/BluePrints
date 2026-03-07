@@ -1,0 +1,79 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_neurona_gloss",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T032",
+  "barcode": "7502296181492",
+  "display_name": "Neurona Gloss",
+  "product_type": "shine_serum",
+  "category": "Styling",
+  "line": "Styling",
+  "size": "100ml",
+  "net_weight": "3.38 fl oz / 100 mL",
+  "format": "pump_bottle",
+  "packaging_color": "frosted clear with gray label",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTTHERM.webp",
+  "filename_note": "Filename NTTHERM.webp puede ser un error de naming en los assets originales. El producto es Neurona Gloss, no Thermo.",
+  "description": {
+    "en": "Hair Shine Serum. Thermal Protection. Shine. Flexibility. Silkness.",
+    "es": "Suero de Brillo para Cabello. Protección Térmica. Luminosidad. Flexibilidad. Sedosidad."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "all hair types",
+    "dull hair",
+    "frizzy hair"
+  ],
+  "benefit_claims": [
+    "brillo instantáneo",
+    "protección térmica",
+    "flexibilidad y sedosidad"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic shine and finish claims only."
+  },
+  "imagelab": {
+    "packaging_style": "pump_bottle_compact",
+    "dominant_hex": "#E8E8E8",
+    "accent_hex": "#9A9A9A",
+    "lifestyle_context": [
+      "vanity finish",
+      "salon finishing station",
+      "bright studio light"
+    ],
+    "ugc_scenarios": [
+      "gloss application",
+      "shine result on dark hair",
+      "finishing touch"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "glossy, luminous, clean minimal, finishing luxury"
+  },
+  "related_skus": [
+    {
+      "sku": "T031",
+      "size": "50ml",
+      "barcode": "7502296180518"
+    },
+    {
+      "sku": "T032",
+      "size": "100ml",
+      "barcode": "7502296181492"
+    },
+    {
+      "sku": "T033",
+      "size": "200ml",
+      "barcode": "7502296180112"
+    }
+  ],
+  "cross_sell": [
+    "neurone_thermo_dual",
+    "neurone_lisothermic"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

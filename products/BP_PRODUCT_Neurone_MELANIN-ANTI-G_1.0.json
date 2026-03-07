@@ -1,0 +1,69 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_melanin_anti_g",
+  "brandId": "NeuroneCosmetics",
+  "sku": "A003",
+  "barcode": "7502296183557",
+  "display_name": "Melanin Anti G",
+  "product_type": "scalp_lotion",
+  "category": "Scalp",
+  "line": "Melanin",
+  "size": "100ml",
+  "net_weight": "3.38 fl oz / 100 mL",
+  "format": "spray_applicator_bottle",
+  "packaging_color": "frosted clear with gray label",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTMELA.webp",
+  "description": {
+    "en": "Hair Lotion for Hair. Peptide Technology. Anti Gray Effect.",
+    "es": "Loción Capilar para el Cabello. Tecnología de Péptidos. Efecto Anti-Canas."
+  },
+  "key_ingredients": [
+    "peptides"
+  ],
+  "hair_type": [
+    "gray hair",
+    "premature gray",
+    "all hair types for prevention"
+  ],
+  "benefit_claims": [
+    "efecto anti-canas",
+    "tecnología de péptidos",
+    "favorece el aspecto más joven del cabello"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "SCALP + ANTI-GRAY — compliance CRÍTICO. 'Anti Gray Effect' es el claim más arriesgado del catálogo. PROHIBIDO: 'revierte las canas', 'recupera el pigmento natural', 'cura las canas'. PERMITIDO: 'efecto anti-canas', 'favorece el aspecto del cabello', 'con tecnología de péptidos'. Nunca afirmar que actúa sobre el folículo o la melanina a nivel biológico."
+  },
+  "imagelab": {
+    "packaging_style": "spray_applicator_scalp",
+    "dominant_hex": "#E0E0E0",
+    "accent_hex": "#2A2A2A",
+    "lifestyle_context": [
+      "scalp treatment routine",
+      "mirror application",
+      "hairline focus"
+    ],
+    "ugc_scenarios": [
+      "scalp applicator in use",
+      "before/after gray reduction visual",
+      "peptide technology graphic"
+    ],
+    "hero_angle": "three_quarter_with_applicator",
+    "mood": "clinical precision, anti-aging authority, scalp science"
+  },
+  "related_skus": [
+    {
+      "sku": "A003",
+      "size": "100ml",
+      "barcode": "7502296183557"
+    }
+  ],
+  "cross_sell": [
+    "neurone_menthol_ice_shampoo"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

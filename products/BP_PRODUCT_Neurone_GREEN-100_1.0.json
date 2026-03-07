@@ -1,0 +1,72 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_green_100",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T109",
+  "barcode": "7502296183434",
+  "display_name": "Green 100",
+  "product_type": "serum",
+  "category": "Restore",
+  "line": "Green 100",
+  "size": "25ml",
+  "net_weight": "0.84 fl oz / 25 mL",
+  "format": "spray_serum_bottle",
+  "packaging_color": "deep green",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTGREEN-2.webp",
+  "description": {
+    "en": "Vegetable Serum for Hair Extremely Dry, Porous and Chemically Processed. Green Product.",
+    "es": "Serum Vegetal para Cabello Extremadamente Reseco, Poroso y Químicamente Procesado. Producto Verde."
+  },
+  "key_ingredients": [
+    "vegetable extracts"
+  ],
+  "hair_type": [
+    "extremely dry",
+    "porous",
+    "chemically processed",
+    "bleached"
+  ],
+  "benefit_claims": [
+    "restaura la hebra seca y porosa",
+    "nutre con activos vegetales",
+    "favorece la suavidad y flexibilidad"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic restoration claims. Green/natural positioning."
+  },
+  "imagelab": {
+    "packaging_style": "slim_spray_serum",
+    "dominant_hex": "#2A7A3A",
+    "accent_hex": "#8BC34A",
+    "lifestyle_context": [
+      "natural/organic flatlay",
+      "dry hair treatment",
+      "green aesthetic"
+    ],
+    "ugc_scenarios": [
+      "extremely dry hair before/after",
+      "application",
+      "natural ingredients visual"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "natural, green, botanical rescue, clean ingredients"
+  },
+  "retail_format_note": "Se vende en estuche de 4 piezas x 25ml (T109).",
+  "related_skus": [
+    {
+      "sku": "T109",
+      "size": "EST 4 PZAS/25ml",
+      "barcode": "7502296183434"
+    }
+  ],
+  "cross_sell": [
+    "neurone_kerasin_hb_mask",
+    "neurone_kerasin_hb_leave_in"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

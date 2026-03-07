@@ -1,0 +1,74 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_menthol_ice_shampoo",
+  "brandId": "NeuroneCosmetics",
+  "sku": "L026",
+  "barcode": "7502296181546",
+  "display_name": "Menthol Ice Shampoo",
+  "product_type": "shampoo",
+  "category": "Scalp",
+  "line": "Menthol Ice",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "white with black accents",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NLSMICE-1-1.webp",
+  "description": {
+    "en": "Refreshing Hair Shampoo. Strengthens, Voluminizing.",
+    "es": "Champú Refrescante. Fortalecedor, Voluminizador."
+  },
+  "key_ingredients": [
+    "menthol"
+  ],
+  "hair_type": [
+    "all hair types",
+    "oily scalp",
+    "fine hair needing volume"
+  ],
+  "benefit_claims": [
+    "refresca el cuero cabelludo",
+    "fortalece",
+    "contribuye al volumen"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "SCALP category — compliance ALTO. No claims sobre salud del cuero cabelludo, no 'trata' caspa u otras condiciones. Solo 'refresca', 'fortalece', 'contribuye al volumen'."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#F5F5F5",
+    "accent_hex": "#1A1A1A",
+    "lifestyle_context": [
+      "shower",
+      "salon",
+      "clean minimal flatlay"
+    ],
+    "ugc_scenarios": [
+      "scalp massage application",
+      "clean hair result",
+      "mint/ice visual metaphor"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "clean, fresh, crisp, minimalist"
+  },
+  "related_skus": [
+    {
+      "sku": "L026",
+      "size": "400ml",
+      "barcode": "7502296181546"
+    },
+    {
+      "sku": "L010",
+      "size": "1L",
+      "barcode": "7502296182239"
+    }
+  ],
+  "cross_sell": [
+    "neurone_melanin_anti_g"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_lisothermic",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T040",
+  "barcode": "7502296180105",
+  "display_name": "Lisothermic",
+  "product_type": "styling_cream",
+  "category": "Styling",
+  "line": "Styling",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "metallic silver-gray",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTLISOTH-1-1.webp",
+  "description": {
+    "en": "Thermal Protective Cream for Temporary Hair Straightening.",
+    "es": "Crema Protectora Térmica para Alaciado Temporal."
+  },
+  "key_ingredients": [
+    "thermal protective complex"
+  ],
+  "hair_type": [
+    "all hair types",
+    "wavy",
+    "curly hair seeking temporary straightening"
+  ],
+  "benefit_claims": [
+    "protege del calor",
+    "favorece el alaciado temporal",
+    "suaviza la hebra"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Thermal styling claims. No claims of permanent change."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#A8A8A8",
+    "accent_hex": "#5A5A5A",
+    "lifestyle_context": [
+      "styling station",
+      "blowdry setup",
+      "flat iron routine"
+    ],
+    "ugc_scenarios": [
+      "heat protection application",
+      "smooth blowout result",
+      "before/after frizzy to smooth"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "sleek silver, professional thermal care, salon-grade precision"
+  },
+  "related_skus": [
+    {
+      "sku": "T039",
+      "size": "50ml",
+      "barcode": "7502296180549"
+    },
+    {
+      "sku": "T040",
+      "size": "400ml",
+      "barcode": "7502296180105"
+    },
+    {
+      "sku": "T041",
+      "size": "1L",
+      "barcode": "7502296181669"
+    }
+  ],
+  "cross_sell": [
+    "neurone_thermo_dual",
+    "neurone_neurona_gloss"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

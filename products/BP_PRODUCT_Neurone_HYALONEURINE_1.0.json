@@ -1,0 +1,75 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_hyaloneurine",
+  "brandId": "NeuroneCosmetics",
+  "sku": "S005",
+  "barcode": "7502296183137",
+  "display_name": "Hyaloneurine Face & Hair Serum",
+  "product_type": "serum",
+  "category": "Moisture",
+  "line": "Hyaloneurine",
+  "size": "50ml",
+  "net_weight": "1.69 fl oz / 50 mL",
+  "format": "pump_serum_bottle",
+  "packaging_color": "frosted gray-blue",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NSERHYA.webp",
+  "outlier_note": "ÚNICO producto Face+Hair del catálogo. Lógica de copy propia — beneficia cara Y cabello. No encasillarlo solo en categoría capilar.",
+  "description": {
+    "en": "Anti-Aging Serum. Hyaluronic Acid & Elastin. Face & Hair.",
+    "es": "Suero Antiedad. Ácido Hialurónico & Elastina. Cara y Cabello."
+  },
+  "key_ingredients": [
+    "hyaluronic acid",
+    "elastin"
+  ],
+  "hair_type": [
+    "all hair types",
+    "mature hair",
+    "dry hair"
+  ],
+  "skin_use": true,
+  "benefit_claims": [
+    "hidrata cara y cabello",
+    "favorece la elasticidad",
+    "contribuye al aspecto antiedad de la piel",
+    "nutre y suaviza la hebra capilar"
+  ],
+  "compliance_flags": {
+    "category_risk": "high",
+    "notes": "CRÍTICO — producto con claims antiedad para piel. FDA considera antiaging skincare como cosmético de alta supervisión. PROHIBIDO: 'elimina arrugas', 'regenera la piel', 'trata el envejecimiento'. PERMITIDO: 'favorece la elasticidad', 'contribuye al aspecto más joven', 'hidrata profundamente'."
+  },
+  "imagelab": {
+    "packaging_style": "slim_pump_serum",
+    "dominant_hex": "#C8D0DC",
+    "accent_hex": "#2C3E6B",
+    "lifestyle_context": [
+      "vanity with skincare",
+      "face + hair dual use",
+      "clean beauty flatlay"
+    ],
+    "ugc_scenarios": [
+      "face application",
+      "hair serum use",
+      "dual-use demonstration"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "clean, scientific, hydration luxury, dual-purpose premium"
+  },
+  "retail_format_note": "Se vende en estuche de 6 piezas x 50ml (S005).",
+  "related_skus": [
+    {
+      "sku": "S005",
+      "size": "EST 6 PZAS/50ml",
+      "barcode": "7502296183137"
+    }
+  ],
+  "cross_sell": [
+    "neurone_humit_mask",
+    "neurone_dy_fazza"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

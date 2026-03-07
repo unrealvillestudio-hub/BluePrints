@@ -1,0 +1,81 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_dy_fazza",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T029",
+  "barcode": "7502296180044",
+  "display_name": "DY Fazza",
+  "product_type": "leave_in_treatment",
+  "category": "Moisture",
+  "line": "DY Fazza",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "spray_bottle",
+  "packaging_color": "gradient light blue to deep blue",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTDYFZ-1-1.webp",
+  "description": {
+    "en": "2 Phase Nutritive Moisturizing Hair Treatment. Leave In.",
+    "es": "Tratamiento Hidratante Nutritivo de 2 Fases. Sin Enjuague."
+  },
+  "key_ingredients": [
+    "2-phase formula"
+  ],
+  "hair_type": [
+    "dry",
+    "dehydrated",
+    "curly",
+    "coarse"
+  ],
+  "benefit_claims": [
+    "hidrata en profundidad",
+    "nutre la hebra",
+    "sin enjuague — fácil de aplicar"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic hydration claims only."
+  },
+  "imagelab": {
+    "packaging_style": "spray_bottle",
+    "dominant_hex": "#5BB8E8",
+    "accent_hex": "#1A4F9A",
+    "lifestyle_context": [
+      "shower",
+      "bathroom counter",
+      "post-wash routine"
+    ],
+    "ugc_scenarios": [
+      "shake before use",
+      "spray application",
+      "hydration result on hair"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "fresh, hydrating, blue ocean energy"
+  },
+  "related_skus": [
+    {
+      "sku": "T028",
+      "size": "50ml",
+      "barcode": "7502296180501"
+    },
+    {
+      "sku": "T029",
+      "size": "400ml",
+      "barcode": "7502296180044"
+    },
+    {
+      "sku": "T030",
+      "size": "200ml",
+      "barcode": "7502296180129"
+    }
+  ],
+  "cross_sell": [
+    "neurone_humit_mask",
+    "neurone_hyaloneurine"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

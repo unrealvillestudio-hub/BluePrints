@@ -1,0 +1,69 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_thermo_dual",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T042",
+  "barcode": "7502296181515",
+  "display_name": "Thermo Dual",
+  "product_type": "thermal_protector",
+  "category": "Styling",
+  "line": "Styling",
+  "size": "200ml",
+  "net_weight": "6.76 fl oz / 200 mL",
+  "format": "spray_bottle",
+  "packaging_color": "metallic dark silver-gray",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTTHERM__1_.webp",
+  "description": {
+    "en": "Thermal Protector and Repair Treatment.",
+    "es": "Protector Térmico. Tratamiento que ayuda a Reparar el Cabello."
+  },
+  "key_ingredients": [
+    "thermal protective complex"
+  ],
+  "hair_type": [
+    "all hair types",
+    "heat-styled hair"
+  ],
+  "benefit_claims": [
+    "protege del calor",
+    "ayuda a reparar",
+    "dual action: protector + tratamiento"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Thermal protection claims. 'Ayuda a reparar' — verbo permitido."
+  },
+  "imagelab": {
+    "packaging_style": "spray_bottle_premium",
+    "dominant_hex": "#5A5A5A",
+    "accent_hex": "#9A9A9A",
+    "lifestyle_context": [
+      "styling station",
+      "flat iron setup",
+      "blowdry routine"
+    ],
+    "ugc_scenarios": [
+      "spray before heat",
+      "heat tool + protector",
+      "damage prevention concept"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "dark metallic, heat precision, dual-function professional"
+  },
+  "related_skus": [
+    {
+      "sku": "T042",
+      "size": "200ml",
+      "barcode": "7502296181515"
+    }
+  ],
+  "cross_sell": [
+    "neurone_lisothermic",
+    "neurone_neurona_gloss"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

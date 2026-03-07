@@ -1,0 +1,111 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_revenant_color",
+  "brandId": "NeuroneCosmetics",
+  "sku_family": "T043-T057",
+  "display_name": "Revenant Color",
+  "product_type": "color_intensifier_mask",
+  "category": "Color Rescue",
+  "line": "Revenant Color",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTREVCO-1-1.webp",
+  "family_note": "Familia de 8 variantes de color. Cada variante es un SKU independiente. La imagen muestra todas las variantes juntas.",
+  "description": {
+    "en": "Nourishing and Color Intensifier Mask that helps to Repair and Nourish Hair.",
+    "es": "Mascarilla Intensificadora de Color que Ayuda a Reparar el Cabello."
+  },
+  "key_ingredients": [
+    "color pigments",
+    "nourishing complex"
+  ],
+  "hair_type": [
+    "color-treated",
+    "bleached",
+    "all hair types needing color refresh"
+  ],
+  "benefit_claims": [
+    "intensifica el color",
+    "nutre la hebra",
+    "ayuda a reparar el cabello"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Color enhancement claims. 'Ayuda a reparar' — verbo permitido."
+  },
+  "variants": [
+    {
+      "name": "Platino",
+      "sku": "T044",
+      "barcode": "7502296180228",
+      "hex": "#C8C8D4"
+    },
+    {
+      "name": "Black",
+      "sku": "T056",
+      "barcode": "7502296180174",
+      "hex": "#1A1A1A"
+    },
+    {
+      "name": "Mogano",
+      "sku": "T052",
+      "barcode": "7502296180181",
+      "hex": "#6B2A1A"
+    },
+    {
+      "name": "Cacao",
+      "sku": "T050",
+      "barcode": "7502296180143",
+      "hex": "#5C3317"
+    },
+    {
+      "name": "Copper",
+      "sku": "T048",
+      "barcode": "7502296180150",
+      "hex": "#C47A3A"
+    },
+    {
+      "name": "Cherry",
+      "sku": "T054",
+      "barcode": "7502296180198",
+      "hex": "#8B1A2A"
+    },
+    {
+      "name": "Violet",
+      "sku": "T057",
+      "barcode": "7502296180211",
+      "hex": "#5A1A7A"
+    },
+    {
+      "name": "Champagne",
+      "sku": "T046",
+      "barcode": "7502296180204",
+      "hex": "#E8D5B0"
+    }
+  ],
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle_family",
+    "lifestyle_context": [
+      "color studio",
+      "salon station",
+      "rainbow lineup display"
+    ],
+    "ugc_scenarios": [
+      "variant selector",
+      "color intensity before/after",
+      "shade match consultation"
+    ],
+    "hero_angle": "family_lineup",
+    "mood": "rich color spectrum, salon professional, color artistry"
+  },
+  "cross_sell": [
+    "neurone_total_violet_shampoo",
+    "neurone_plattina_shampoo"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

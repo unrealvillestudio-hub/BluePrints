@@ -1,0 +1,83 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_kerasin_hb_shampoo",
+  "brandId": "NeuroneCosmetics",
+  "sku": "L029",
+  "barcode": "7502296181553",
+  "display_name": "Kerasin HB Shampoo",
+  "product_type": "shampoo",
+  "category": "Restore",
+  "line": "Kerasin HB",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "metallic bronze-copper",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NLSKHB-1-1.webp",
+  "description": {
+    "en": "Repair Shampoo for Damaged Hair. Keratin + Hyaluronic Acid + Biotin.",
+    "es": "Champú Reparador para Cabello Dañado. Keratina + Ácido Hialurónico + Biotina."
+  },
+  "key_ingredients": [
+    "keratin",
+    "hyaluronic acid",
+    "biotin"
+  ],
+  "hair_type": [
+    "damaged",
+    "chemically treated",
+    "brittle",
+    "porous"
+  ],
+  "benefit_claims": [
+    "repara",
+    "fortalece",
+    "nutre la hebra capilar"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic repair claims. No medical territory."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#8B5A2B",
+    "accent_hex": "#C47C30",
+    "lifestyle_context": [
+      "shower shelf",
+      "salon station",
+      "product lineup"
+    ],
+    "ugc_scenarios": [
+      "application lather",
+      "damaged-to-healthy transformation",
+      "ingredient highlight"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "warm, restorative, professional repair"
+  },
+  "related_skus": [
+    {
+      "sku": "L050",
+      "size": "50ml",
+      "barcode": "7502296183502"
+    },
+    {
+      "sku": "L029",
+      "size": "400ml",
+      "barcode": "7502296181553"
+    },
+    {
+      "sku": "L030",
+      "size": "1L",
+      "barcode": "7502296182963"
+    }
+  ],
+  "cross_sell": [
+    "neurone_kerasin_hb_mask",
+    "neurone_kerasin_hb_leave_in"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

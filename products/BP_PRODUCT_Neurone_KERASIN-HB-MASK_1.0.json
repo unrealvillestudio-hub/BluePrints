@@ -1,0 +1,83 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_kerasin_hb_mask",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T058",
+  "barcode": "7502296182956",
+  "display_name": "Kerasin HB Mask",
+  "product_type": "mask",
+  "category": "Restore",
+  "line": "Kerasin HB",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "white with bronze Kerasin HB branding",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTKHBMK-1-1.webp",
+  "description": {
+    "en": "Repair Mask for Damaged Hair. Keratin + Hyaluronic Acid + Biotin.",
+    "es": "Mascarilla Pro-Reparación para Cabello Dañado. Keratina + Ácido Hialurónico + Biotina."
+  },
+  "key_ingredients": [
+    "keratin",
+    "hyaluronic acid",
+    "biotin"
+  ],
+  "hair_type": [
+    "damaged",
+    "brittle",
+    "porous",
+    "chemically processed"
+  ],
+  "benefit_claims": [
+    "repara intensamente",
+    "aporta keratina y biotina",
+    "restaura la hebra maltratada"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic repair claims."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#F5F0E8",
+    "accent_hex": "#8B5A2B",
+    "lifestyle_context": [
+      "shower",
+      "treatment ritual",
+      "salon station"
+    ],
+    "ugc_scenarios": [
+      "deep treatment application",
+      "before/after damaged hair",
+      "salon mask ritual"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "warm bronze on white, premium repair, before/after transformation"
+  },
+  "related_skus": [
+    {
+      "sku": "T065",
+      "size": "50ml",
+      "barcode": "7502296183519"
+    },
+    {
+      "sku": "T058",
+      "size": "400ml",
+      "barcode": "7502296182956"
+    },
+    {
+      "sku": "T060",
+      "size": "1L",
+      "barcode": "7502296183243"
+    }
+  ],
+  "cross_sell": [
+    "neurone_kerasin_hb_shampoo",
+    "neurone_kerasin_hb_leave_in"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

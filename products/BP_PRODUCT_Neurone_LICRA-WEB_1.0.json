@@ -1,0 +1,67 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_licra_web",
+  "brandId": "NeuroneCosmetics",
+  "sku": "E016",
+  "barcode": "7502296183069",
+  "display_name": "Licra Web",
+  "product_type": "styling_paste",
+  "category": "Styling",
+  "line": "Styling",
+  "size": "70g",
+  "net_weight": "2.47 oz / 70 g",
+  "format": "jar_with_lid",
+  "packaging_color": "white/transparent with gray label",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NLYCW.webp",
+  "description": {
+    "en": "Web Effect Paste. Light Hold.",
+    "es": "Pasta Efecto Telaraña. Fijación Ligera."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "all hair types",
+    "medium to short hair"
+  ],
+  "benefit_claims": [
+    "fijación ligera",
+    "efecto telaraña",
+    "define y da textura"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Styling claims only."
+  },
+  "imagelab": {
+    "packaging_style": "round_jar",
+    "dominant_hex": "#E8E8E8",
+    "accent_hex": "#9A9A9A",
+    "lifestyle_context": [
+      "vanity countertop",
+      "barbershop aesthetic",
+      "men/women styling"
+    ],
+    "ugc_scenarios": [
+      "texture application between fingers",
+      "before/after texture effect",
+      "web effect demonstration"
+    ],
+    "hero_angle": "top_and_front_duo",
+    "mood": "textured, editorial, minimal, unisex"
+  },
+  "related_skus": [
+    {
+      "sku": "E016",
+      "size": "70g",
+      "barcode": "7502296183069"
+    }
+  ],
+  "cross_sell": [
+    "neurone_lisothermic",
+    "neurone_thermo_dual"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

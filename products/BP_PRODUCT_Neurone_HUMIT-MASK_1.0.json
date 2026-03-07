@@ -1,0 +1,79 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_humit_mask",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T035",
+  "barcode": "7502296180099",
+  "display_name": "Humit Mask",
+  "product_type": "mask",
+  "category": "Moisture",
+  "line": "Humit",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "cream/ivory",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTHUMA-1-1.webp",
+  "description": {
+    "en": "High Moisturizing Conditioning Mask. Dry and Damaged Hair.",
+    "es": "Mascarilla Acondicionadora Pro-Humectación. Cabello Seco y Maltratado."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "dry",
+    "damaged",
+    "dehydrated",
+    "over-processed"
+  ],
+  "benefit_claims": [
+    "hidratación intensa",
+    "acondiciona",
+    "suaviza y aporta brillo"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic moisturizing claims only."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#F5EDD5",
+    "accent_hex": "#2C3E6B",
+    "lifestyle_context": [
+      "bathroom counter",
+      "spa treatment aesthetic",
+      "shower shelf"
+    ],
+    "ugc_scenarios": [
+      "mask application",
+      "hydrated hair result",
+      "before/after dry to moisturized"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "warm, creamy, luxurious hydration, spa-like"
+  },
+  "related_skus": [
+    {
+      "sku": "T034",
+      "size": "50ml",
+      "barcode": "7502296180532"
+    },
+    {
+      "sku": "T035",
+      "size": "400ml",
+      "barcode": "7502296180099"
+    },
+    {
+      "sku": "T036",
+      "size": "1L",
+      "barcode": "7502296180303"
+    }
+  ],
+  "cross_sell": [
+    "neurone_dy_fazza",
+    "neurone_hyaloneurine"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

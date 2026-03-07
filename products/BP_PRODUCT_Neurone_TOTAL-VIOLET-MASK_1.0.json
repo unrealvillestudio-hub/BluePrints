@@ -1,0 +1,76 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_total_violet_mask",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T038",
+  "barcode": "7502296180082",
+  "display_name": "Total Violet Mask",
+  "product_type": "mask",
+  "category": "Color Rescue",
+  "line": "Total Violet",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "lavender-blue gradient",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTTVIMA-1-1.webp",
+  "description": {
+    "en": "Nuancing Conditioning Mask. Yellow Hair Tones Neutralizer.",
+    "es": "Mascarilla Acondicionadora Matizante. Neutralizante de Visos Amarillos."
+  },
+  "key_ingredients": [
+    "violet pigments"
+  ],
+  "hair_type": [
+    "bleached",
+    "highlighted",
+    "platinum",
+    "gray"
+  ],
+  "benefit_claims": [
+    "neutraliza tonos amarillos",
+    "acondiciona",
+    "matiza"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic claims only. No scalp/medical territory."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#8B8AC8",
+    "accent_hex": "#8B1A4A",
+    "lifestyle_context": [
+      "salon counter",
+      "bathroom vanity",
+      "flatlay with blonde hair"
+    ],
+    "ugc_scenarios": [
+      "before/after toning",
+      "application on wet hair",
+      "texture close-up"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "cool, sophisticated, violet luxury"
+  },
+  "related_skus": [
+    {
+      "sku": "T037",
+      "size": "50ml",
+      "barcode": "7502296180525"
+    },
+    {
+      "sku": "T038",
+      "size": "400ml",
+      "barcode": "7502296180082"
+    }
+  ],
+  "cross_sell": [
+    "neurone_total_violet_shampoo",
+    "neurone_plattina_shampoo"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

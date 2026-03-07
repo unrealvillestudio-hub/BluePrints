@@ -1,0 +1,72 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_kerasin_hb_leave_in",
+  "brandId": "NeuroneCosmetics",
+  "sku": "T059",
+  "barcode": "7502296183021",
+  "display_name": "Kerasin HB Leave-In",
+  "product_type": "leave_in_treatment",
+  "category": "Restore",
+  "line": "Kerasin HB",
+  "size": "100ml",
+  "net_weight": "3.38 fl oz / 100 mL",
+  "format": "pump_bottle",
+  "packaging_color": "metallic bronze-copper",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NTKHBLN.webp",
+  "description": {
+    "en": "Leave-in Repair Treatment for Damaged Hair. Keratin + Hyaluronic Acid + Biotin.",
+    "es": "Tratamiento Pro-Reparación sin Enjuague para Cabello Dañado. Keratina + Ácido Hialurónico + Biotina."
+  },
+  "key_ingredients": [
+    "keratin",
+    "hyaluronic acid",
+    "biotin"
+  ],
+  "hair_type": [
+    "damaged",
+    "brittle",
+    "chemically treated"
+  ],
+  "benefit_claims": [
+    "repara sin enjuague",
+    "fortalece la hebra",
+    "nutre con keratina y biotina"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic repair and leave-in claims."
+  },
+  "imagelab": {
+    "packaging_style": "pump_bottle_compact",
+    "dominant_hex": "#8B5A2B",
+    "accent_hex": "#C47C30",
+    "lifestyle_context": [
+      "post-wash routine",
+      "styling station",
+      "travel kit"
+    ],
+    "ugc_scenarios": [
+      "application on damp hair",
+      "no-rinse step in routine",
+      "before/after repair"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "warm bronze, professional repair, salon quality at home"
+  },
+  "related_skus": [
+    {
+      "sku": "T059",
+      "size": "100ml",
+      "barcode": "7502296183021"
+    }
+  ],
+  "cross_sell": [
+    "neurone_kerasin_hb_shampoo",
+    "neurone_kerasin_hb_mask"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_plattina_shampoo",
+  "brandId": "NeuroneCosmetics",
+  "sku": "L028",
+  "barcode": "7502296181560",
+  "display_name": "Plattina Shampoo",
+  "product_type": "shampoo",
+  "category": "Color Rescue",
+  "line": "Plattina",
+  "size": "400ml",
+  "net_weight": "13.53 fl oz / 400 mL",
+  "format": "pump_bottle",
+  "packaging_color": "deep burgundy-plum",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NLSPLAT-1-1.webp",
+  "description": {
+    "en": "Nuancing Shampoo. Platinum Hair.",
+    "es": "Champú Matizador. Cabello Platinado."
+  },
+  "key_ingredients": [
+    "platinum toning pigments"
+  ],
+  "hair_type": [
+    "platinum",
+    "silver",
+    "very light blonde",
+    "gray"
+  ],
+  "benefit_claims": [
+    "matiza tonos no deseados",
+    "mantiene el platino brillante",
+    "limpia sin dañar el color"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Cosmetic color maintenance claims."
+  },
+  "imagelab": {
+    "packaging_style": "premium_pump_bottle",
+    "dominant_hex": "#4A1942",
+    "accent_hex": "#8B1A4A",
+    "lifestyle_context": [
+      "salon vanity",
+      "platinum hair model",
+      "luxury flatlay"
+    ],
+    "ugc_scenarios": [
+      "before/after platinum maintenance",
+      "application",
+      "color comparison"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "luxurious, deep purple, salon-grade exclusivity"
+  },
+  "related_skus": [
+    {
+      "sku": "L028",
+      "size": "400ml",
+      "barcode": "7502296181560"
+    },
+    {
+      "sku": "L031",
+      "size": "1L",
+      "barcode": "7502296182734"
+    }
+  ],
+  "cross_sell": [
+    "neurone_total_violet_mask",
+    "neurone_total_violet_shampoo"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}

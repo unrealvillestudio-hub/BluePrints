@@ -1,0 +1,69 @@
+{
+  "schema_version": "BP_PRODUCT_1.0",
+  "id": "neurone_dyfensor_serum",
+  "brandId": "NeuroneCosmetics",
+  "sku": "S006",
+  "barcode": "7502296183144",
+  "display_name": "Dyfensor Hair Restructuring Serum",
+  "product_type": "serum",
+  "category": "Color Rescue",
+  "line": "Dyfensor",
+  "size": "25ml",
+  "net_weight": "0.84 fl oz / 25 mL",
+  "format": "pump_serum_bottle",
+  "packaging_color": "white/transparent",
+  "status": "active",
+  "b2b_only": false,
+  "shopify_visibility": "public",
+  "image_filename": "NSERCPT-4.webp",
+  "description": {
+    "en": "Hair Restructuring Serum. Color Protector.",
+    "es": "Suero Pro-Reestructuración. Protector De Color."
+  },
+  "key_ingredients": [],
+  "hair_type": [
+    "color-treated",
+    "bleached",
+    "damaged"
+  ],
+  "benefit_claims": [
+    "reestructura la hebra",
+    "protege el color",
+    "sella la cutícula"
+  ],
+  "compliance_flags": {
+    "category_risk": "low",
+    "notes": "Color protection claims. No medical."
+  },
+  "imagelab": {
+    "packaging_style": "slim_pump_serum",
+    "dominant_hex": "#F0F0F0",
+    "accent_hex": "#8B1A4A",
+    "lifestyle_context": [
+      "vanity flatlay",
+      "post-color treatment",
+      "salon finishing"
+    ],
+    "ugc_scenarios": [
+      "drop application",
+      "shine result",
+      "serum texture close-up"
+    ],
+    "hero_angle": "front_portrait",
+    "mood": "minimal, clinical-luxury, color protection"
+  },
+  "retail_format_note": "Se vende en estuche de 6 piezas x 25ml (S006). Puede venderse unitario en B2C.",
+  "related_skus": [
+    {
+      "sku": "S006",
+      "size": "EST 6 PZAS/25ml",
+      "barcode": "7502296183144"
+    }
+  ],
+  "cross_sell": [
+    "neurone_total_violet_shampoo",
+    "neurone_plattina_shampoo"
+  ],
+  "created": "2026-03-07",
+  "version": "1.0"
+}
