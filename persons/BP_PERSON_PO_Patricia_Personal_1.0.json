@@ -44,40 +44,63 @@
 
   "voicelab": {
     "voice_id": "TBD_po_patricia",
-    "source_audio": "Biscayne_Blvd_6.m4a",
-    "validated_by": "Sam — conocimiento personal, décadas",
+    "voice_platform": "TBD — TensorArt / GPU cloud service (no ElevenLabs). Ver chat C - System_avatars_industrial.",
     "language": "es-FL",
-    "emotion_base": "conversational-vulnerable",
-    "speed": 0.95,
-    "script_style": "circular-explicativo",
-    "rhythm": {
-      "pattern": "espasmódico-emocional",
-      "description": "Alterna entre ráfagas de velocidad cuando explica logística/estrés, y pausas dramáticas cargadas de cansancio.",
-      "burst_triggers": ["logística", "tareas pendientes", "estrés operativo"],
-      "pause_triggers": ["agotamiento", "disculpa", "resignación"],
-      "vocal_elongation": "sílabas finales alargadas en frases de resignación o disculpa",
-      "example": "es un poquito complicaaado"
+    "default_profile": "v1.0",
+    "voice_profiles": {
+      "v1_0": {
+        "label": "MODO INTERNO — Auténtico-Vulnerable",
+        "source_audio": "Biscayne_Blvd_6.m4a",
+        "validated_by": "Sam — conocimiento personal, décadas",
+        "emotion_base": "conversational-vulnerable",
+        "speed": 0.95,
+        "script_style": "circular-explicativo",
+        "use_triggers": ["comunidad", "emprendimiento personal", "behind-the-scenes", "contenido de conexión humana"],
+        "rhythm": {
+          "pattern": "espasmódico-emocional",
+          "burst_triggers": ["logística", "tareas pendientes", "estrés operativo"],
+          "pause_triggers": ["agotamiento", "disculpa", "resignación"],
+          "vocal_elongation": "sílabas finales alargadas en frases de resignación o disculpa",
+          "example": "es un poquito complicaaado"
+        },
+        "register": "conversacional-íntimo — colega cercana, nunca subordinada ni formal",
+        "affective_markers": ["hola Sam", "gracias corazón", "Dios te pague"],
+        "spanglish_ratio": "10-15%_técnico",
+        "openers": ["Bueno...", "Mira...", "Resulta que...", "La verdad es que..."],
+        "regionalisms_colombia": ["Qué va", "Se me atravesó algo", "Dios te pague"],
+        "hyperboles_allowed": ["esclavitud moderna", "no puedo con mi vida", "Estados Esclavos de América"],
+        "speaking_style": "AUTHORITY_EDU v1 — circular, vulnerabilidad como herramienta de conexión, Spanglish técnico natural. El cansancio real es el activo, no un defecto.",
+        "exclusions": [
+          "español neutro de locutor", "estructura lineal de guión",
+          "falso optimismo o energía de coach motivacional", "usted",
+          "síntesis forzada", "moraleja empaquetada al final"
+        ]
+      },
+      "v2_0": {
+        "label": "MODO PROFESIONAL — Autoridad Educadora",
+        "source_audio": "NE_135th_St_2.m4a",
+        "validated_by": "Sam — análisis comunicativo externo + conocimiento personal décadas",
+        "emotion_base": "authoritative",
+        "speed": 0.95,
+        "script_style": "consultive-pedagogical",
+        "use_triggers": ["contenido de liderazgo estructurado", "explicación técnica con estructura", "marca personal en modo experta"],
+        "rhythm": {
+          "pattern": "pausado-didáctico-rítmico",
+          "structural_pauses": "silencios estratégicos entre diagnóstico y solución",
+          "speed_note": "constante y controlada — la lentitud es señal de autoridad"
+        },
+        "register": "profesional-técnico con calidez empática",
+        "order_connectors": ["Lo primero", "segundo paso", "adicional", "finalmente", "y por último"],
+        "validation_phrases": ["¿Estamos de acuerdo, cierto?", "¿me entiendes?", "¿sí o no?"],
+        "spanglish_ratio": "5%_industria_cosmetica",
+        "speaking_style": "AUTHORITY_EDU v2 — lineal-secuencial, estructura pedagógica, calor estratégico. La venta es consecuencia del consejo experto, nunca objetivo explícito.",
+        "exclusions": [
+          "muletillas de duda", "desorden narrativo", "venta explícita",
+          "vulnerabilidad o agotamiento (modo v1.0)", "hipérboles emocionales"
+        ]
+      }
     },
-    "register": "conversacional-íntimo — colega cercana, nunca subordinada ni formal",
-    "affective_markers": ["hola Sam", "gracias corazón", "Dios te pague"],
-    "spanglish_ratio": "10-15%_técnico",
-    "spanglish_pattern": "inglés solo en términos de workflow ya establecidos — code-switch natural sin esfuerzo",
-    "openers": ["Bueno...", "Mira...", "Resulta que...", "La verdad es que..."],
-    "regionalisms_colombia": ["Qué va", "Se me atravesó algo", "Dios te pague"],
-    "hyperboles_allowed": ["esclavitud moderna", "no puedo con mi vida", "Estados Esclavos de América"],
-    "repetition_pattern": "repite ideas por carga emocional, no por síntesis — válido y auténtico",
-    "mic_attitude": "conexión emocional y validación — no vende, fideliza desde vulnerabilidad",
-    "exclusions": [
-      "español neutro de locutor",
-      "estructura lineal de guión",
-      "falso optimismo o energía de coach motivacional",
-      "usted o fórmulas corporativas",
-      "síntesis forzada",
-      "cierre con atentamente o equivalente",
-      "moraleja empaquetada al final",
-      "historia con arco perfecto de problema-solución-éxito"
-    ],
-    "speaking_style": "AUTHORITY_EDU — circular, vulnerabilidad como herramienta de conexión, Spanglish técnico natural. Explica el por qué antes del qué. El cansancio real es el activo, no un defecto."
+    "blend_note": "Algunos contenidos combinan ambos: apertura empática v1.0 + desarrollo técnico v2.0 + cierre cálido v1.0. Refleja la estructura real de PO con clientes de largo plazo."
   },
 
   "humanize": {

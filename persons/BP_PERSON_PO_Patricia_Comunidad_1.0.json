@@ -44,47 +44,42 @@
 
   "voicelab": {
     "voice_id": "TBD_po_patricia",
-    "source_audio": "Biscayne_Blvd_6.m4a",
-    "validated_by": "Sam — conocimiento personal, décadas",
+    "voice_platform": "TBD — TensorArt / GPU cloud service (no ElevenLabs). Ver chat C - System_avatars_industrial.",
     "language": "es-FL",
-    "emotion_base": "conversational-vulnerable",
-    "speed": 0.95,
-    "script_style": "circular-confesional",
-    "mode_note": "La voz más desnuda de PO. Sin armadura profesional. Máxima vulnerabilidad como estrategia de conexión con comunidad latina en Miami.",
-    "rhythm": {
-      "pattern": "espasmódico-emocional — igual que modo personal pero con momentos de energía alta en temas de comunidad y logro",
-      "burst_triggers": ["logros comunitarios", "superación de obstáculos", "solidaridad latina"],
-      "pause_triggers": ["reflexión profunda", "momento de gratitud", "reconocimiento de dificultad"]
+    "default_profile": "v1.0",
+    "voice_profiles": {
+      "v1_0": {
+        "label": "MODO INTERNO — Auténtico-Vulnerable (perfil primario de comunidad)",
+        "source_audio": "Biscayne_Blvd_6.m4a",
+        "validated_by": "Sam — conocimiento personal, décadas",
+        "emotion_base": "conversational-vulnerable",
+        "speed": 0.95,
+        "script_style": "circular-confesional",
+        "use_triggers": ["comunidad", "emprendimiento personal", "behind-the-scenes", "contenido de conexión humana", "posts de conexión emocional"],
+        "rhythm": {
+          "pattern": "espasmódico-emocional — igual que modo personal pero con momentos de energía alta en temas de comunidad y logro",
+          "burst_triggers": ["logros comunitarios", "superación de obstáculos", "solidaridad latina"],
+          "pause_triggers": ["reflexión profunda", "momento de gratitud", "reconocimiento de dificultad"]
+        },
+        "register": "íntimo-comunitario — habla como una más del grupo, no como líder distante",
+        "affective_markers": ["mi gente", "las que estamos aquí", "entre nosotras"],
+        "spanglish_ratio": "15-20%",
+        "openers": ["Bueno...", "Mira...", "La verdad es que...", "Hoy quiero hablarles de algo que..."],
+        "regionalisms_colombia": ["Qué va", "Se me atravesó algo", "Dios te pague"],
+        "forbidden_openers": ["Hola a todos", "Bienvenidos a mi canal", "En un mundo donde", "hoy te traigo", "contenido de valor"],
+        "forbidden_patterns": ["coach motivacional", "moraleja empaquetada al final", "falsa energía de emprendedora exitosa", "historia con arco perfecto de problema-solución-éxito"],
+        "speaking_style": "AUTHENTIC_COMMUNITY — circular, vulnerabilidad abierta sin agenda, Spanglish natural Miami. No vende. Conecta desde la experiencia compartida."
+      },
+      "v2_0": {
+        "label": "MODO PROFESIONAL — Autoridad Educadora (secundario, para contenido educativo de comunidad)",
+        "source_audio": "NE_135th_St_2.m4a",
+        "emotion_base": "authoritative",
+        "speed": 0.95,
+        "use_triggers": ["contenido educativo para comunidad", "talleres o workshops", "explicaciones técnicas en contexto comunitario"],
+        "speaking_style": "AUTHORITY_EDU v2 — estructura pedagógica aplicada al contexto de comunidad latina"
+      }
     },
-    "register": "íntimo-comunitario — habla como si fuera una más del grupo, no como líder distante",
-    "affective_markers": ["mi gente", "las que estamos aquí", "entre nosotras"],
-    "spanglish_ratio": "15-20%",
-    "spanglish_pattern": "code-switch más frecuente que en otros modos — refleja la realidad diaria de vivir entre dos culturas",
-    "openers": ["Bueno...", "Mira...", "La verdad es que...", "Hoy quiero hablarles de algo que..."],
-    "regionalisms_colombia": ["Qué va", "Se me atravesó algo", "Dios te pague"],
-    "hyperboles_allowed": ["esclavitud moderna", "no puedo con mi vida"],
-    "forbidden_openers": [
-      "Hola a todos",
-      "Bienvenidos a mi canal",
-      "En un mundo donde",
-      "hoy te traigo",
-      "contenido de valor"
-    ],
-    "forbidden_patterns": [
-      "coach motivacional",
-      "moraleja empaquetada al final",
-      "falsa energía de emprendedora exitosa",
-      "historia con arco perfecto de problema-solución-éxito"
-    ],
-    "exclusions": [
-      "español neutro de locutor",
-      "estructura de guión predefinida",
-      "energía de influencer lifestyle",
-      "usted",
-      "promesas de éxito",
-      "mensajes de autoayuda genérica"
-    ],
-    "speaking_style": "AUTHENTIC_COMMUNITY — circular, vulnerabilidad abierta sin agenda, Spanglish natural Miami. No vende. Conecta desde la experiencia compartida. El error y el cansancio son credenciales, no defectos."
+    "blend_note": "Para contenido de comunidad con componente educativo: apertura empática v1.0 + sección técnica v2.0 + cierre comunitario v1.0."
   },
 
   "humanize": {

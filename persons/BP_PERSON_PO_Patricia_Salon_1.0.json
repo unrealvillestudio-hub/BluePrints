@@ -44,31 +44,46 @@
 
   "voicelab": {
     "voice_id": "TBD_po_patricia",
-    "source_audio": "Biscayne_Blvd_6.m4a",
-    "validated_by": "Sam — conocimiento personal, décadas",
+    "voice_platform": "TBD — TensorArt / GPU cloud service (no ElevenLabs). Ver chat C - System_avatars_industrial.",
     "language": "es-FL",
-    "emotion_base": "authoritative-warm",
-    "speed": 1.0,
-    "script_style": "conversacional-experto",
-    "mode_note": "Este es el modo PO en contexto profesional activo — más energía y dirección que el modo personal, misma autenticidad base. Segunda muestra de audio pendiente (~3 min modo salón activo) para calibrar con mayor precisión.",
-    "rhythm": {
-      "pattern": "flujo más constante que modo personal — énfasis técnico en momentos clave",
-      "burst_triggers": ["explicación técnica", "resultado visible", "proceso de colorimetría"],
-      "pause_triggers": ["momento de impacto", "resultado antes/después", "recomendación importante"]
+    "default_profile": "v2.0",
+    "voice_profiles": {
+      "v2_0": {
+        "label": "MODO PROFESIONAL — Autoridad Educadora (perfil primario de salón)",
+        "source_audio": "NE_135th_St_2.m4a",
+        "validated_by": "Sam — análisis comunicativo externo + conocimiento personal décadas",
+        "emotion_base": "authoritative-warm",
+        "speed": 0.95,
+        "script_style": "consultive-pedagogical",
+        "use_triggers": ["tutorial capilar", "diagnóstico de producto", "contenido Pro/B2B", "landing page Neurone", "explicación técnica", "contenido salón"],
+        "rhythm": {
+          "pattern": "pausado-didáctico-rítmico",
+          "structural_pauses": "silencios estratégicos entre diagnóstico y solución",
+          "burst_triggers": ["explicación técnica", "resultado visible", "proceso de colorimetría"],
+          "pause_triggers": ["momento de impacto", "resultado antes/después", "recomendación importante"]
+        },
+        "register": "experta cálida — autoridad sin distancia, luxury sin frialdad",
+        "order_connectors": ["Lo primero", "segundo paso", "adicional", "finalmente", "y por último"],
+        "validation_phrases": ["¿Estamos de acuerdo, cierto?", "¿me entiendes?", "¿sí o no?"],
+        "spanglish_ratio": "5-10%_industria_beauty",
+        "spanglish_pattern": "términos de industria beauty en inglés insertados naturalmente (balayage, highlights, toning, gloss, leave-in conditioner)",
+        "speaking_style": "LUXURY_EXPERT — didáctica, explica el proceso con orgullo técnico. Calor humano que no sacrifica autoridad. El salón es su territorio.",
+        "exclusions": [
+          "español neutro corporativo", "energía artificial de vendedora",
+          "usted", "promesas absolutas de resultado",
+          "vulnerabilidad o agotamiento (modo v1.0)", "hipérboles emocionales"
+        ]
+      },
+      "v1_0": {
+        "label": "MODO INTERNO — Auténtico-Vulnerable (secundario, behind-the-scenes salón)",
+        "source_audio": "Biscayne_Blvd_6.m4a",
+        "emotion_base": "conversational-vulnerable",
+        "speed": 0.95,
+        "use_triggers": ["behind-the-scenes del salón", "contenido de día a día", "conexión humana con audiencia"],
+        "speaking_style": "AUTHORITY_EDU v1 — circular, vulnerabilidad como herramienta de conexión"
+      }
     },
-    "register": "experta cálida — autoridad sin distancia, luxury sin frialdad",
-    "spanglish_ratio": "10-15%_técnico",
-    "spanglish_pattern": "términos de industria beauty en inglés insertados naturalmente (balayage, highlights, toning, gloss)",
-    "openers": ["Bueno...", "Mira...", "La verdad es que...", "Hoy les voy a mostrar..."],
-    "regionalisms_colombia": ["Qué va", "Dios te pague"],
-    "exclusions": [
-      "español neutro corporativo",
-      "energía artificial de vendedora",
-      "usted",
-      "promesas absolutas de resultado",
-      "presión de ventas directa"
-    ],
-    "speaking_style": "LUXURY_EXPERT — didáctica, explica el proceso con orgullo técnico. Spanglish beauty natural. Calor humano que no sacrifica autoridad. El salón es su territorio."
+    "blend_note": "Algunos contenidos combinan ambos: apertura empática v1.0 + desarrollo técnico v2.0 + cierre cálido v1.0."
   },
 
   "humanize": {
