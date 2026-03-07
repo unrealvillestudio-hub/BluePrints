@@ -1,0 +1,339 @@
+{
+  "schema": "BP_LOCATION_1.0",
+  "location_id": "MBEACH_001",
+  "name": "Miami Beach",
+  "display_name": "Miami Beach — South FL",
+  "version": "1.0",
+  "created": "2026-03-07",
+  "status": "active",
+  "lab_compat": ["ImageLab", "VideoLab", "CopyLab", "WebLab"],
+
+  "geo": {
+    "city": "Miami Beach",
+    "state": "FL",
+    "country": "US",
+    "market": "Miami-Dade",
+    "neighborhoods": ["South Beach", "Mid-Beach", "North Beach"],
+    "primary_zone": "South Beach / Ocean Drive"
+  },
+
+  "zones": [
+
+    {
+      "zone_id": "MBEACH_Z1",
+      "zone_name": "Beach & Shoreline",
+      "description": "Playa abierta con arena blanca, agua turquesa cristalina y torres residenciales de lujo de fondo. Playa ancha, sin rocas, con oleaje suave. Gaviotas frecuentes. Ambiente relajado de día, muy fotogénico con luz natural.",
+      "subtype": "beach_coastal",
+
+      "lighting": {
+        "natural": {
+          "midday": {
+            "quality": "dura, directa, contrastes altos",
+            "color_temp": "5500–6000K — luz blanca neutra a fría",
+            "shadows": "cortas, directas bajo objetos",
+            "sky": "azul intenso, pocas nubes",
+            "notes": "Ideal para producto con packaging brillante o colores saturados. Evitar piel sin fill light."
+          },
+          "golden_hour": {
+            "quality": "suave, envolvente, cálida",
+            "color_temp": "3200–4000K — naranja a dorado",
+            "shadows": "largas, suaves",
+            "notes": "Ventana óptima para beauty y cabello. Luz lateral al amanecer."
+          }
+        },
+        "artificial": "No aplica en zona abierta de playa."
+      },
+
+      "color_palette": {
+        "dominant": ["#00B4D8 (turquesa)", "#F5F0E8 (arena)", "#FFFFFF (espuma)", "#87CEEB (cielo)"],
+        "accent": ["#FF6B6B (sombrillas)", "#2C3E50 (sombras agua)", "#E8D5B7 (arena húmeda)"],
+        "mood_tags": ["limpio", "luminoso", "aspiracional", "resort", "premium coastal"]
+      },
+
+      "visual_references": [
+        {
+          "ref_id": "Z1_001",
+          "source_file": "PHOTO-2026-03-07-00-20-45.jpg",
+          "description": "Playa mirando al norte: agua turquesa intenso, arena blanca, skyline de torres residenciales de lujo al fondo izquierda. Gaviotas en la orilla. Cielo azul despejado. Luz de mediodía. Perspectiva desde nivel de playa.",
+          "time_of_day": "midday",
+          "orientation": "horizontal",
+          "best_use": ["hero image", "lifestyle background", "product sobre arena"]
+        },
+        {
+          "ref_id": "Z1_002",
+          "source_file": "PHOTO-2026-03-07-00-22-29.jpg",
+          "description": "Playa mirando al sur: primer plano de gaviotas en arena, edificios residenciales de altura como backdrop. Día nublado, luz difusa. Arena con rastros de sargazo. Más urbano que turístico.",
+          "time_of_day": "midday_overcast",
+          "orientation": "horizontal",
+          "best_use": ["contexto urbano-costero", "plano medio-largo", "fondo neutro para copy overlay"]
+        }
+      ],
+
+      "shooting_notes": {
+        "best_angles": ["nivel de playa hacia el horizonte", "desde el agua mirando a las torres", "plano cenital sobre arena húmeda"],
+        "avoid": ["mediodía sin fill para beauty close-up", "sargazo en primer plano si producto es premium"],
+        "permit_required": false,
+        "crowd_level": "moderado en semana, alto en fines de semana",
+        "best_time": "6:30–9:00 AM (luz dorada, poca gente) / 5:30–7:00 PM (golden hour)"
+      }
+    },
+
+    {
+      "zone_id": "MBEACH_Z2",
+      "zone_name": "Intracoastal Aerial / Bay View",
+      "description": "Vista aérea desde edificio de altura en Miami Beach mirando hacia el oeste: islas residenciales del Intracoastal Waterway, vegetación tropical densa, casas con muelles privados, y el skyline completo del Downtown Miami al fondo sobre la bahía. Perspectiva premium, exclusiva, sin acceso directo a pie.",
+      "subtype": "aerial_urban_luxury",
+
+      "lighting": {
+        "natural": {
+          "midday": {
+            "quality": "brillante, alto contraste, saturación máxima del agua",
+            "color_temp": "5500K",
+            "color_water": "#1B6CA8 a #0D4F8C — azul profundo del canal",
+            "sky": "azul intenso con cumulonimbus al fondo",
+            "notes": "Agua del Intracoastal refleja el cielo perfectamente. Vegetación verde intensa."
+          }
+        }
+      },
+
+      "color_palette": {
+        "dominant": ["#0D4F8C (agua canal)", "#1A7A34 (vegetación)", "#F5F5F0 (edificios blancos)", "#B8D4E8 (cielo)"],
+        "accent": ["#C97B2A (techos terracotas)", "#4A90D9 (reflejos)", "#2D5A1B (palmeras)"],
+        "mood_tags": ["lujo", "exclusivo", "premium real estate", "aspiracional alto nivel", "panorámico"]
+      },
+
+      "visual_references": [
+        {
+          "ref_id": "Z2_001",
+          "source_file": "PHOTO-2026-03-07-00-28-00.jpg",
+          "description": "Vista aérea desde ~piso 15-20 mirando hacia el oeste. Primer plano: cancha de tenis y palmeras. Plano medio: canal del Intracoastal con casas de lujo en Indian Creek Island y muelles privados. Fondo: skyline completo de Downtown/Brickell de Miami bajo nubes cúmulos. Luz de mediodía, saturación alta.",
+          "time_of_day": "midday",
+          "orientation": "vertical",
+          "best_use": ["portada premium", "hero aspiracional", "fondo para claims de calidad/presencia en Miami"]
+        }
+      ],
+
+      "shooting_notes": {
+        "best_angles": ["desde terraza o ventana alta mirando west-northwest"],
+        "access": "requiere acceso a edificio alto en Collins Ave o Collins Ct, Mid-Beach",
+        "crowd_level": "no aplica (vista desde interior/terraza)",
+        "best_time": "10:00 AM – 2:00 PM para máxima saturación del agua"
+      }
+    },
+
+    {
+      "zone_id": "MBEACH_Z3",
+      "zone_name": "Ocean Drive — Art Deco District",
+      "description": "El corazón visual de Miami Beach. Avenida paralela a la playa con arquitectura Art Deco de los años 30-40: fachadas blancas, crema y amarillo con detalles en teal, coral y rosa. Restaurantes en acera, coches de lujo, turistas, ciclistas. Noche: neón dominante, ambiente festivo. La calle más fotografiada de Florida.",
+      "subtype": "urban_street_artdeco",
+
+      "landmarks_visible": [
+        "Hotel Victor (neón naranja/coral)",
+        "Clevelander Hotel (fachada rosa/neon pink)",
+        "Barbizon Hotel (fachada verde menta / Barbizon teal-green stripe)",
+        "Lummus Park entrance sign",
+        "Villa Casa Casuarina — Versace Mansion (esquina 11 St)",
+        "Miami Beach welcome sign / termómetro",
+        "Ocean Drive restaurant row (Señor Frog's, Mango's, Havana)"
+      ],
+
+      "lighting": {
+        "natural": {
+          "golden_hour_dusk": {
+            "quality": "suave, cálida, lateral baja",
+            "color_temp": "2800–3500K, gradiente naranja a azul en cielo",
+            "sky_color": "azul pálido a gris plata — el 'blue hour' de Ocean Drive es excepcional",
+            "notes": "Las fachadas Art Deco capturan luz dorada de forma espectacular. 30–40 min antes del sunset = ventana óptima."
+          }
+        },
+        "artificial": {
+          "neon_night": {
+            "quality": "neón multicolor dominante",
+            "colors": ["naranja (Hotel Victor)", "rosa/magenta (Clevelander)", "teal/verde (Barbizon trim)", "blanco cálido (street lamps)", "rojo/verde (señales, Señor Frog's)"],
+            "color_temp_mix": "2200–3200K con picos de neón saturado",
+            "notes": "Contraste alto entre negros de cielo nocturno y neón. Ideal para mood energético/festivo. ISO alto necesario, motion blur de coches añade dinamismo."
+          },
+          "dawn_artificial": {
+            "quality": "ambar-naranja de lámparas de sodio en el boardwalk",
+            "notes": "Poca gente, muy cinematográfico. Palmeras retroiluminadas con ambar."
+          }
+        }
+      },
+
+      "color_palette": {
+        "artdeco_day": {
+          "dominant": ["#F5F0DC (crema fachadas)", "#E8D5A3 (amarillo Art Deco)", "#A8D5C2 (teal trim)", "#87CEEB (cielo azul)"],
+          "accent": ["#D4A853 (detalles dorados)", "#FF6B35 (sombrillas terracota)", "#2E8B57 (palmeras)"],
+          "mood_tags": ["clásico", "heritage", "Florida vintage", "cálido", "turístico premium"]
+        },
+        "neon_night": {
+          "dominant": ["#FF4500 (naranja Hotel Victor)", "#FF1493 (rosa Clevelander)", "#00CED1 (teal neon)", "#1A1A2E (negro noche)"],
+          "accent": ["#FFA500 (ambar lámparas)", "#FFFFFF (halos)", "#FF6347 (neón rojo)"],
+          "mood_tags": ["festivo", "energético", "nocturno", "Miami vibe", "aspiracional urbano", "sexy"]
+        }
+      },
+
+      "visual_references": [
+        {
+          "ref_id": "Z3_001",
+          "source_file": "PHOTO-2026-03-07-00-47-37.jpg",
+          "description": "Intersección 11 St en Ocean Drive. Blue hour. Versace Mansion visible izquierda (arquitectura española blanca). A la derecha edificio con neón naranja. Palmas altas, peatones, carros. Señal de tráfico '11 ST / Leonard Horowitz Pl'. Cielo azul-gris. Ambiente tranquilo aún.",
+          "time_of_day": "blue_hour_dusk",
+          "orientation": "horizontal"
+        },
+        {
+          "ref_id": "Z3_002",
+          "source_file": "PHOTO-2026-03-07-00-47-37_1_.jpg",
+          "description": "Misma intersección, ángulo contrario. Más oscuro. Hotel neon naranja más visible. Tráfico iniciando. Palmas en silueta.",
+          "time_of_day": "blue_hour_dusk",
+          "orientation": "horizontal"
+        },
+        {
+          "ref_id": "Z3_003",
+          "source_file": "PHOTO-2026-03-07-00-47-37_2_.jpg",
+          "description": "Ocean Drive clásico: fachadas Art Deco amarillo-crema con bandera americana, terrazas llenas de comensales, coches de lujo (Lexus, etc). Cielo azul-gris de blue hour. Ambiente sofisticado al comienzo de la noche.",
+          "time_of_day": "blue_hour_early_evening",
+          "orientation": "horizontal",
+          "best_use": ["lifestyle premium", "setting Florida aspiracional", "fondo para copy 'vida en Miami'"]
+        },
+        {
+          "ref_id": "Z3_004",
+          "source_file": "PHOTO-2026-03-07-00-47-37_3_.jpg",
+          "description": "Lummus Park sign en granito beige al atardecer. Cielo rosa-lila al fondo sobre las palmeras. Cartel institucional. Bajo las palmeras, ambiente tranquilo.",
+          "time_of_day": "golden_hour_dusk",
+          "orientation": "vertical",
+          "best_use": ["establishing shot Miami Beach", "contexto geográfico", "opener de contenido social"]
+        },
+        {
+          "ref_id": "Z3_005",
+          "source_file": "PHOTO-2026-03-07-00-47-37_4_.jpg",
+          "description": "Hotel Victor en pleno neón naranja-coral. Dusk. Terraza activa, coches, peatones. Letras verticales 'VICTOR' en blanco. El neón tiñe toda la fachada.",
+          "time_of_day": "dusk_neon_on",
+          "orientation": "horizontal",
+          "best_use": ["mood energético", "opening de contenido nocturno", "referencia de color naranja signature"]
+        },
+        {
+          "ref_id": "Z3_006",
+          "source_file": "PHOTO-2026-03-07-00-47-38.jpg",
+          "description": "Night boardwalk desde el parque. Camino curvo con luz ambar, palmeras altas, edificio clásico blanco al fondo con iluminación cálida, torre moderna detrás con cúpula azul neón. Escena cinematográfica y íntima.",
+          "time_of_day": "night",
+          "orientation": "horizontal",
+          "best_use": ["opening cinematográfico", "mood íntimo nocturno", "contenido de estilo de vida tranquilo"]
+        },
+        {
+          "ref_id": "Z3_007",
+          "source_file": "PHOTO-2026-03-07-00-47-38_1_.jpg",
+          "description": "Miami Beach welcome sign (muro ladrillo con letras metálicas 'MIAMI BEACH' y termómetro de Fahrenheit mostrando ~80°F). Bajo palmeras. Icónico como establishing shot.",
+          "time_of_day": "overcast_day",
+          "orientation": "vertical",
+          "best_use": ["establishing shot ciudad", "contexto clima cálido", "apertura de série de contenidos Miami"]
+        },
+        {
+          "ref_id": "Z3_008",
+          "source_file": "PHOTO-2026-03-07-00-47-38_2_.jpg",
+          "description": "Ocean Drive golden hour: Barbizon Hotel (verde menta con stripes azul) en primer plano. Taxi amarillo. Ciclovía naranja a la derecha. Fachadas Art Deco en degradé de luz dorada. Ambiente tranquilo de tarde.",
+          "time_of_day": "golden_hour",
+          "orientation": "horizontal",
+          "best_use": ["lifestyle Florida clásico", "fondo para producto premium", "copy sobre Miami heritage"]
+        },
+        {
+          "ref_id": "Z3_009",
+          "source_file": "PHOTO-2026-03-07-00-47-38_3_.jpg",
+          "description": "Clevelander Hotel: fachada totalmente rosa/blanca con neón magenta. Terraza delantera muy concurrida. Pantalla LED visible. Ambiente festivo-nocturno. Palmas con luces verdes en la copa.",
+          "time_of_day": "dusk_neon_on",
+          "orientation": "horizontal",
+          "best_use": ["mood festivo", "energía nocturna", "AGGRO content energy", "Neurone energético"]
+        },
+        {
+          "ref_id": "Z3_010",
+          "source_file": "PHOTO-2026-03-07-00-47-38_4_.jpg",
+          "description": "Clevelander terraza en operación plena. Vista frontal. Gente sentada, pantalla LED con contenido, palmeras con luces, neón rosa dominante. Ambiente de bar/restaurante vibrante.",
+          "time_of_day": "evening",
+          "orientation": "horizontal"
+        },
+        {
+          "ref_id": "Z3_011",
+          "source_file": "PHOTO-2026-03-07-00-47-38_5_.jpg",
+          "description": "Ocean Drive neon dusk: Señor Frog's y restaurantes con neón rojo-verde. Coches de lujo moviéndose. Gente en acera. Palmas con luces navideñas. Ambiente popular y festivo. Rolls Royce visible.",
+          "time_of_day": "dusk_neon_on",
+          "orientation": "horizontal",
+          "best_use": ["contenido social de vida nocturna Miami", "energy shot", "ES-FL audience connection"]
+        },
+        {
+          "ref_id": "Z3_012",
+          "source_file": "PHOTO-2026-03-07-00-47-38_6_.jpg",
+          "description": "Night shot: edificio Art Deco amarillo-verdoso con iluminación cálida en ángulo, palmeras en silueta, torre moderna con corona azul neón al fondo. Calle vacía. Muy cinematográfico, silencioso.",
+          "time_of_day": "late_night",
+          "orientation": "horizontal",
+          "best_use": ["mood cinematográfico", "opening dramático", "thumbnail de alto contraste"]
+        }
+      ],
+
+      "shooting_notes": {
+        "best_angles": [
+          "desde acera este mirando al oeste (edificios como fondo, playa detrás del camarógrafo)",
+          "esquinas de calle (11, 12, 14 St) para captura de perspectiva",
+          "low angle desde calzada para hacer palmas más altas",
+          "desde el boardwalk/parque mirando a los edificios"
+        ],
+        "avoid": [
+          "mediodía — luz dura mata el detalle de las fachadas Art Deco",
+          "encuadres con turistas muy en primer plano si el producto es premium",
+          "zona de Señor Frog's para contenido aspiracional alto nivel"
+        ],
+        "permit_required": false,
+        "crowd_level": "alto a partir de las 7 PM, máximo sábados",
+        "best_time": {
+          "photo": "6:00–8:00 PM (blue hour a neon-on) — ventana de 45 min de oro",
+          "video": "5:30–7:00 PM para mezcla natural/artificial",
+          "early_morning": "6:00–8:00 AM para playa vacía y Ocean Drive sin tráfico"
+        }
+      }
+    },
+
+    {
+      "zone_id": "MBEACH_Z4",
+      "zone_name": "Causeways & City Approach",
+      "description": "Vista desde los puentes/causeways que conectan Miami Beach con el continente. Perfil del skyline de Miami Beach desde la bahía. Marina visible, mezcla de arquitectura modernista y Art Deco. Bandera americana frecuente. Útil como establishing shot de 'llegando a Miami'.",
+      "subtype": "urban_transition",
+
+      "visual_references": [
+        {
+          "ref_id": "Z4_001",
+          "source_file": "PHOTO-2026-03-07-00-39-14.jpg",
+          "description": "Vista desde causeway (posiblemente MacArthur/Venetian). Centro de Miami Beach: torre circular de vidrio dominante, Holiday Inn visible, marina con yates, mosaico en antepecho del puente. Cielo azul despejado. Luz de mediodía.",
+          "time_of_day": "midday",
+          "orientation": "horizontal",
+          "best_use": ["establishing shot Miami Beach", "apertura de contenido institucional", "setting para claims de presencia en Miami"]
+        }
+      ]
+    }
+
+  ],
+
+  "meta_tags": [
+    "miami_beach", "south_beach", "ocean_drive", "art_deco", "florida",
+    "playa", "lifestyle", "aspiracional", "nocturno", "neon", "ES-FL",
+    "neurone_cosmetics_compatible", "vizos_compatible"
+  ],
+
+  "brand_compatibility": {
+    "neurone_cosmetics": {
+      "zones": ["Z1", "Z3"],
+      "recommended_time": ["golden_hour", "blue_hour_dusk", "neon_night"],
+      "tone_match": "Energético — zona Z3 noche / Lifestyle aspiracional — zona Z1 playa",
+      "copy_anchors": ["vida en Miami", "el calor que cuida tu cabello", "born in Miami, made for you"],
+      "avoid": "Z2 (muy luxury real estate — no conecta con buyer persona B2C Neurone)"
+    },
+    "vizos_cosmetics": {
+      "zones": ["Z2", "Z4"],
+      "recommended_time": ["midday", "golden_hour"],
+      "tone_match": "Premium institucional — Z2 panorámica / Establecimiento — Z4 causeways",
+      "copy_anchors": ["distribuidor de confianza en Miami", "donde viven los que saben"]
+    }
+  },
+
+  "flag": {
+    "image_4_excluded": "PHOTO-2026-03-07-00-43-21.jpg — foto de bombillo fotográfico 'Top Lighting PB 120V 45W'. No corresponde a esta locación. Parece envío accidental. No incluida en ninguna zona."
+  }
+}
