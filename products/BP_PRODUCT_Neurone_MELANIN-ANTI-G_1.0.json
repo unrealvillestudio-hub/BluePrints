@@ -52,7 +52,31 @@
       "peptide technology graphic"
     ],
     "hero_angle": "three_quarter_with_applicator",
-    "mood": "clinical precision, anti-aging authority, scalp science"
+    "mood": "clinical precision, anti-aging authority, scalp science",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "NTMELA.webp",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "white",
+        "filename": "NTMELA.webp",
+        "notes": "Sin versión dark disponible — usar imagen estándar hasta nueva sesión de fotos."
+      },
+      "dark_available": false
+    }
   },
   "related_skus": [
     {

@@ -50,7 +50,31 @@
       "paired with Geometry Gel"
     ],
     "hero_angle": "front_portrait",
-    "mood": "sleek silver, curl care, sister product to Geometry Gel"
+    "mood": "sleek silver, curl care, sister product to Geometry Gel",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "NGEOMC-1.webp",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "white",
+        "filename": "NGEOMC-1.webp",
+        "notes": "Sin versión dark disponible — usar imagen estándar hasta nueva sesión de fotos."
+      },
+      "dark_available": false
+    }
   },
   "related_skus": [
     {

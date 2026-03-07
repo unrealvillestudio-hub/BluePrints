@@ -100,7 +100,31 @@
       "shade match consultation"
     ],
     "hero_angle": "family_lineup",
-    "mood": "rich color spectrum, salon professional, color artistry"
+    "mood": "rich color spectrum, salon professional, color artistry",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "NTREVCO-1-1.webp",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "white",
+        "filename": "NTREVCO-1-1.webp",
+        "notes": "Sin versión dark disponible — usar imagen estándar hasta nueva sesión de fotos."
+      },
+      "dark_available": false
+    }
   },
   "cross_sell": [
     "neurone_total_violet_shampoo",

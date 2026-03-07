@@ -50,7 +50,31 @@
       "serum texture close-up"
     ],
     "hero_angle": "front_portrait",
-    "mood": "minimal, clinical-luxury, color protection"
+    "mood": "minimal, clinical-luxury, color protection",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "DYFENSOR_25ML_WEB.png",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "dark",
+        "filename": "DYFENSOR_25ML_WEB.png",
+        "notes": "Fondo negro de estudio para landings, redes y campañas."
+      },
+      "dark_available": true
+    }
   },
   "retail_format_note": "Se vende en estuche de 6 piezas x 25ml (S006). Puede venderse unitario en B2C.",
   "related_skus": [
@@ -65,6 +89,5 @@
     "neurone_plattina_shampoo"
   ],
   "created": "2026-03-07",
-  "version": "1.0",
-  "image_style": "studio_dark_background"
+  "version": "1.0"
 }

@@ -53,7 +53,31 @@
       "paired with Plattina line"
     ],
     "hero_angle": "top_and_front_duo",
-    "mood": "matte black luxury, silver nuance, platinum editorial"
+    "mood": "matte black luxury, silver nuance, platinum editorial",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "NEMOLON-3.webp",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "white",
+        "filename": "NEMOLON-3.webp",
+        "notes": "Sin versión dark disponible — usar imagen estándar hasta nueva sesión de fotos."
+      },
+      "dark_available": false
+    }
   },
   "related_skus": [
     {

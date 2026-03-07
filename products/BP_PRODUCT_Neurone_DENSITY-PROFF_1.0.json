@@ -54,7 +54,31 @@
       "paired with Neurone Color"
     ],
     "hero_angle": "front_portrait",
-    "mood": "clean white, high density professional, salon precision"
+    "mood": "clean white, high density professional, salon precision",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "NCPLWT-2-1.webp",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "white",
+        "filename": "NCPLWT-2-1.webp",
+        "notes": "Sin versión dark disponible — usar imagen estándar hasta nueva sesión de fotos."
+      },
+      "dark_available": false
+    }
   },
   "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith.",
   "cross_sell": [

@@ -52,7 +52,31 @@
       "color-treated hair care"
     ],
     "hero_angle": "front_portrait",
-    "mood": "deep plum luxury, color protection, sulfate-free clean"
+    "mood": "deep plum luxury, color protection, sulfate-free clean",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "dyfensorsh_400_web.png",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "dark",
+        "filename": "dyfensorsh_400_web.png",
+        "notes": "Fondo negro de estudio para landings, redes y campañas."
+      },
+      "dark_available": true
+    }
   },
   "related_skus": [
     {
@@ -76,6 +100,5 @@
     "neurone_total_violet_mask"
   ],
   "created": "2026-03-08",
-  "version": "1.0",
-  "image_style": "studio_dark_background"
+  "version": "1.0"
 }

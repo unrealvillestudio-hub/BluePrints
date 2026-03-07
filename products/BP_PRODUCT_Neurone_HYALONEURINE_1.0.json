@@ -56,7 +56,31 @@
       "dual-use demonstration"
     ],
     "hero_angle": "front_portrait",
-    "mood": "clean, scientific, hydration luxury, dual-purpose premium"
+    "mood": "clean, scientific, hydration luxury, dual-purpose premium",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "NSERHYA.webp",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "white",
+        "filename": "NSERHYA.webp",
+        "notes": "Sin versión dark disponible — usar imagen estándar hasta nueva sesión de fotos."
+      },
+      "dark_available": false
+    }
   },
   "retail_format_note": "Se vende en estuche de 6 piezas x 50ml (S005).",
   "related_skus": [

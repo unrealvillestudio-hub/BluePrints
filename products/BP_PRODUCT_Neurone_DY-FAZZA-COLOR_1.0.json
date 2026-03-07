@@ -16,7 +16,6 @@
   "b2b_only": false,
   "shopify_visibility": "public",
   "image_filename": "dyfazzacolor_400_web.png",
-  "image_style": "studio_dark_background",
   "description": {
     "en": "2 Phase Nutritive Moisturizing Treatment for Colored Hair. Leave In.",
     "es": "Tratamiento Hidratante Nutritivo de 2 Fases para Cabello Teñido. Sin Enjuague."
@@ -55,7 +54,31 @@
       "Color Rescue line pairing"
     ],
     "hero_angle": "front_portrait",
-    "mood": "pink gradient luxury, color protection, vibrant color-care"
+    "mood": "pink gradient luxury, color protection, vibrant color-care",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "dyfazzacolor_400_web.png",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "dark",
+        "filename": "dyfazzacolor_400_web.png",
+        "notes": "Fondo negro de estudio para landings, redes y campañas."
+      },
+      "dark_available": true
+    }
   },
   "line_relationship": {
     "parent_line": "DY Fazza",

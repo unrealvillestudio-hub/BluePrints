@@ -50,7 +50,31 @@
       "dry to moisturized transformation"
     ],
     "hero_angle": "front_portrait",
-    "mood": "deep teal, moisture immersion, spa hydration"
+    "mood": "deep teal, moisture immersion, spa hydration",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "HUMIT_SH_1L.png",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "dark",
+        "filename": "HUMIT_SH_1L.png",
+        "notes": "Fondo negro de estudio para landings, redes y campañas."
+      },
+      "dark_available": true
+    }
   },
   "related_skus": [
     {
@@ -74,7 +98,5 @@
     "neurone_dy_fazza"
   ],
   "created": "2026-03-08",
-  "version": "1.0",
-  "image_style": "studio_dark_background",
-  "image_size_shown": "1L"
+  "version": "1.0"
 }

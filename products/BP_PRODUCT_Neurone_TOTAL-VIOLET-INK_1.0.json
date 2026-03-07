@@ -42,7 +42,31 @@
       "salon application"
     ],
     "hero_angle": "front_portrait",
-    "mood": "clinical white, concentrated pigment, professional colorist tool"
+    "mood": "clinical white, concentrated pigment, professional colorist tool",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "NCTOVIOK.webp",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "white",
+        "filename": "NCTOVIOK.webp",
+        "notes": "Sin versión dark disponible — usar imagen estándar hasta nueva sesión de fotos."
+      },
+      "dark_available": false
+    }
   },
   "related_skus": [
     {

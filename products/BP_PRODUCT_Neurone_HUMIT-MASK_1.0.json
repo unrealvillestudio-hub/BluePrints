@@ -51,7 +51,31 @@
       "before/after dry to moisturized"
     ],
     "hero_angle": "front_portrait",
-    "mood": "warm, creamy, luxurious hydration, spa-like"
+    "mood": "warm, creamy, luxurious hydration, spa-like",
+    "image_usage": {
+      "standard": {
+        "context": [
+          "shopify_product_page",
+          "shopify_collection",
+          "shopify_cart"
+        ],
+        "background": "white",
+        "filename": "humitmask_400_web.png",
+        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+      },
+      "campaign": {
+        "context": [
+          "landing_page",
+          "social_media",
+          "ads",
+          "email_header"
+        ],
+        "background": "dark",
+        "filename": "humitmask_400_web.png",
+        "notes": "Fondo negro de estudio para landings, redes y campañas."
+      },
+      "dark_available": true
+    }
   },
   "related_skus": [
     {
@@ -75,6 +99,5 @@
     "neurone_hyaloneurine"
   ],
   "created": "2026-03-07",
-  "version": "1.0",
-  "image_style": "studio_dark_background"
+  "version": "1.0"
 }
