@@ -1,0 +1,225 @@
+{
+  "id": "brand_neurone_scf",
+  "schema_version": "BP_BRAND_1.0",
+  "brandId": "NeuroneSCFlorida",
+  "displayName": "Neurone South & Central Florida",
+  "tagline": "La ciencia capilar que Miami necesitaba.",
+  "created": "2026-03-09",
+  "status": "active",
+
+  "brand_identity": {
+    "type": "distributor_authorized",
+    "parent_brand": "NeuroneCosmetics",
+    "territory": "South & Central Florida",
+    "domain_placeholder": "neuronesycflorida.com",
+    "domain_status": "pending_confirmation",
+    "face": "PatriciaOsorioVizosSalon",
+    "language_primary": "es-FL",
+    "language_secondary": "en",
+    "model": ["B2C", "B2B"],
+    "distributor_disclaimer": "Distribuidor Autorizado — South & Central Florida",
+    "legal_note": "Patricia Osorio opera como distribuidora exclusiva autorizada. No es Neurone Cosmética global. Infraestructura de marketing, e-commerce y RRSS es independiente."
+  },
+
+  "palette": {
+    "primary": {
+      "hex": "#000000",
+      "name": "Negro Neurone",
+      "pantone": "Negro",
+      "use": "Fondos principales, headers, textos sobre claro",
+      "origin": "neurone_global"
+    },
+    "accent_blue": {
+      "hex": "#0076A8",
+      "name": "Azul Neurone",
+      "pantone": "7546",
+      "use": "CTAs principales, links, elementos de acción, acento de marca",
+      "origin": "neurone_global"
+    },
+    "pro_navy": {
+      "hex": "#003A70",
+      "name": "Navy Pro Salon",
+      "use": "Portal B2B, contexto profesional, autoridad técnica",
+      "origin": "neurone_global_pro_line"
+    },
+    "editorial_warm": {
+      "hex": "#C27D5B",
+      "name": "Terracota Editorial",
+      "use": "Acento de voz de PO, calidez humana, énfasis editorial, slogan highlight",
+      "origin": "neurone_restore_line",
+      "note": "Color de la línea Restore de Neurone — dentro del sistema oficial pero usado como acento editorial de la distribuidora"
+    },
+    "white": {
+      "hex": "#FAFAFA",
+      "name": "Blanco Neurone",
+      "use": "Fondos claros, espacio negativo, texto sobre oscuro secundario",
+      "origin": "neurone_global"
+    }
+  },
+
+  "palette_lines": {
+    "Restore":      "#C27D5B",
+    "Scalp":        "#FAFAFA",
+    "Moisture":     "#0076A8",
+    "Styling":      "#3F3E3F",
+    "Pro_Salon":    "#003A70",
+    "Color_Rescue": "#41273B"
+  },
+
+  "typography": {
+    "headline": {
+      "family": "PT Sans Narrow",
+      "weight": "Bold",
+      "transform": "uppercase",
+      "use": "H1, H2, nombre de marca, CTAs principales, nombre de líneas de producto",
+      "fallback": "Arial Narrow, sans-serif"
+    },
+    "body": {
+      "family": "Montserrat",
+      "weight": "Light / Regular / SemiBold",
+      "use": "Cuerpo de texto, descripciones de producto, emails, slogan",
+      "fallback": "Helvetica Neue, sans-serif"
+    },
+    "rules": [
+      "Nunca usar tipografías fuera de PT Sans Narrow + Montserrat en materiales de marca",
+      "PT Sans Narrow Bold para todos los títulos — siempre uppercase en contexto de marca",
+      "Montserrat Italic para slogan y pulls editoriales",
+      "Monospace solo para referencias técnicas internas (IDs, SKUs)"
+    ]
+  },
+
+  "voice": {
+    "archetype": "EXPERT_EDUCATOR_LOCAL",
+    "positioning": "Autoridad técnica capilar con raíces en la comunidad hispana de Miami",
+    "tone_pillars": [
+      "Educativo — explicamos la ciencia antes de vender",
+      "Cercano — somos tu colorista de confianza en Miami, no una corporación",
+      "Experto — 20+ años de experiencia respaldan cada recomendación",
+      "Bilingüe natural — Spanglish Miami cuando corresponde, sin forzar"
+    ],
+    "voice_b2c": {
+      "tone": "Cálido, educativo, aspiracional",
+      "persona": "La experta del salón que te explica el porqué detrás de cada producto",
+      "example": "¿Sabes por qué tu tinte se desvanece antes de tiempo? La respuesta está en la porosidad del cabello — y Neurone Moisture tiene exactamente lo que necesitas para sellarlo.",
+      "channels": ["redes_sociales", "blog", "paginas_de_producto", "email_b2c"]
+    },
+    "voice_b2b": {
+      "tone": "Experto, directo, orientado a resultados de negocio",
+      "persona": "Colega profesional que entiende el negocio del salón",
+      "example": "Neurone Pro Salon tiene uno de los mejores márgenes del segmento en Florida. Formación gratuita, soporte técnico directo y reposición en 48h desde el 3PL local.",
+      "channels": ["portal_pro", "email_b2b", "onboarding_profesional", "whatsapp_b2b"]
+    },
+    "prohibited": [
+      "Promesas sin respaldo técnico o claims médicos sobre el cabello",
+      "Tono corporativo frío — eso es Neurone global, no la distribuidora local",
+      "Lenguaje de venta agresivo: últimas unidades, oferta limitada, no te lo pierdas",
+      "Adjetivos vacíos: revolucionario, innovador, transformador, sinérgico",
+      "Párrafos perfectamente simétricos — tres puntos idénticos en longitud",
+      "Comparaciones directas con competidores por nombre",
+      "En conclusión, es importante destacar, ciertamente",
+      "Claims de crecimiento de cabello o tratamiento de enfermedades capilares"
+    ],
+    "signature_phrases": [
+      "la ciencia capilar",
+      "en manos expertas",
+      "tu colorista de confianza",
+      "Neurone en Miami",
+      "resultado que se queda"
+    ],
+    "language_notes": "Español Miami es el idioma principal. Inglés secundario. Spanglish natural y no forzado en redes. Siempre bilingüe en emails B2B."
+  },
+
+  "content_strategy": {
+    "b2c_split": {
+      "educational": "35%",
+      "inspirational": "25%",
+      "commercial": "25%",
+      "testimonial": "15%"
+    },
+    "b2b_split": {
+      "educational": "40%",
+      "commercial": "30%",
+      "authority": "20%",
+      "community": "10%"
+    },
+    "content_pillars": [
+      "Ciencia capilar explicada — ingredientes, técnicas, Nano Tribología accesible",
+      "Resultados reales en Miami — transformaciones, antes y después auténticos",
+      "Comunidad profesional — tips para el salón, tendencias de colorimetría",
+      "Detrás del producto — origen Neurone, control de calidad, líneas especializadas"
+    ]
+  },
+
+  "imagelab": {
+    "style": "warm_editorial_miami",
+    "color_grade": "Contraste navy/negro con tonos de piel cálidos. Ni plastificado ni crudo — editorial limpio.",
+    "lighting": "Natural warm + estudio controlado con dirección lateral. Nunca luz blanca plana.",
+    "talent": "Mujeres latinas, afrolatinas, caribeñas y anglosajona Miami. 25-55 años. Cabello con textura real.",
+    "hair_treatment": "Cabello hidratado, brillante pero con textura auténtica. Sin flyaways excesivos pero tampoco plastificado.",
+    "prohibited": [
+      "Fondos blancos estériles para contenido de lifestyle — reservar solo para e-commerce de producto",
+      "Piel plástica o excesivamente retocada",
+      "Poses de stock fotográfico genérico",
+      "Paletas de color que se alejen del sistema Neurone sin justificación"
+    ],
+    "preferred": [
+      "Talent multicultural auténtico de Miami",
+      "Entornos de salón real o estudio editorial Miami",
+      "Micro-expresiones naturales, no sonrisa congelada",
+      "Ropa con arrugas naturales de movimiento"
+    ],
+    "dark_bg_contexts": "Redes sociales, landings, ads, hero sections",
+    "white_bg_contexts": "Fichas de producto Shopify, emails comerciales"
+  },
+
+  "compliance": {
+    "inherit_from_neurone": true,
+    "fda_cosmetic_only": true,
+    "prohibited_claims": [
+      "Crecimiento de cabello",
+      "Tratamiento de alopecia o enfermedades capilares",
+      "Efectos permanentes sin respaldo clínico",
+      "Drug claims de cualquier tipo"
+    ],
+    "required_disclaimer": "Distribuidor autorizado Neurone Cosmética — South & Central Florida",
+    "attorney_review_pending": ["Pro Salon line claims", "B2B portal terms"]
+  },
+
+  "ecommerce": {
+    "platform": "Shopify",
+    "domain": "neuronesycflorida.com",
+    "domain_status": "pending",
+    "myshopify_name": "TBD",
+    "channels": {
+      "b2c": {
+        "url": "neuronesycflorida.com",
+        "access": "público",
+        "checkout": "libre"
+      },
+      "b2b": {
+        "url": "pro.neuronesycflorida.com",
+        "access": "verificado",
+        "gating": "Locksmith",
+        "entry_cta": "Soy profesional / Acceso Pro"
+      }
+    },
+    "3pl": "local Florida — logística e inventario no gestionados por PO directamente"
+  },
+
+  "brand_rules": {
+    "inherited_from_neurone_immutable": [
+      "Paleta de colores corporativos — Negro, Azul Pantone 7546, Blanco",
+      "Nombre de marca NEURONE — tipografía, casing y proporción del logo",
+      "Claims de producto aprobados por Neurone global",
+      "Nomenclatura oficial de líneas (Restore, Moisture, Styling, Scalp, Color Rescue, Pro Salon)"
+    ],
+    "owned_by_scf": [
+      "Voz editorial — tono, Spanglish Miami, calidez de PO",
+      "Experiencia de tienda — UX, copy de producto, FAQ, flujo de compra",
+      "Contenido educativo — blog, videos, tutoriales bajo criterio de PO",
+      "Gestión del canal B2B — verificación, onboarding, relación con profesionales",
+      "Selección de talent para contenido local",
+      "Estrategia de redes sociales y community management"
+    ]
+  }
+}
