@@ -1,12 +1,11 @@
 {
   "id": "brand_neurone_scf",
-  "schema_version": "BP_BRAND_1.0",
+  "schema_version": "BP_BRAND_1.1",
   "brandId": "NeuroneSCFlorida",
   "displayName": "Neurone South & Central Florida",
   "tagline": "La ciencia capilar que Miami necesitaba.",
   "created": "2026-03-09",
   "status": "active",
-
   "brand_identity": {
     "type": "distributor_authorized",
     "parent_brand": "NeuroneCosmetics",
@@ -16,11 +15,13 @@
     "face": "PatriciaOsorioVizosSalon",
     "language_primary": "es-FL",
     "language_secondary": "en",
-    "model": ["B2C", "B2B"],
+    "model": [
+      "B2C",
+      "B2B"
+    ],
     "distributor_disclaimer": "Distribuidor Autorizado — South & Central Florida",
     "legal_note": "Patricia Osorio opera como distribuidora exclusiva autorizada. No es Neurone Cosmética global. Infraestructura de marketing, e-commerce y RRSS es independiente."
   },
-
   "palette": {
     "primary": {
       "hex": "#000000",
@@ -56,16 +57,14 @@
       "origin": "neurone_global"
     }
   },
-
   "palette_lines": {
-    "Restore":      "#C27D5B",
-    "Scalp":        "#FAFAFA",
-    "Moisture":     "#0076A8",
-    "Styling":      "#3F3E3F",
-    "Pro_Salon":    "#003A70",
+    "Restore": "#C27D5B",
+    "Scalp": "#FAFAFA",
+    "Moisture": "#0076A8",
+    "Styling": "#3F3E3F",
+    "Pro_Salon": "#003A70",
     "Color_Rescue": "#41273B"
   },
-
   "typography": {
     "headline": {
       "family": "PT Sans Narrow",
@@ -87,7 +86,6 @@
       "Monospace solo para referencias técnicas internas (IDs, SKUs)"
     ]
   },
-
   "voice": {
     "archetype": "EXPERT_EDUCATOR_LOCAL",
     "positioning": "Autoridad técnica capilar con raíces en la comunidad hispana de Miami",
@@ -101,13 +99,23 @@
       "tone": "Cálido, educativo, aspiracional",
       "persona": "La experta del salón que te explica el porqué detrás de cada producto",
       "example": "¿Sabes por qué tu tinte se desvanece antes de tiempo? La respuesta está en la porosidad del cabello — y Neurone Moisture tiene exactamente lo que necesitas para sellarlo.",
-      "channels": ["redes_sociales", "blog", "paginas_de_producto", "email_b2c"]
+      "channels": [
+        "redes_sociales",
+        "blog",
+        "paginas_de_producto",
+        "email_b2c"
+      ]
     },
     "voice_b2b": {
       "tone": "Experto, directo, orientado a resultados de negocio",
       "persona": "Colega profesional que entiende el negocio del salón",
       "example": "Neurone Pro Salon tiene uno de los mejores márgenes del segmento en Florida. Formación gratuita, soporte técnico directo y reposición en 48h desde el 3PL local.",
-      "channels": ["portal_pro", "email_b2b", "onboarding_profesional", "whatsapp_b2b"]
+      "channels": [
+        "portal_pro",
+        "email_b2b",
+        "onboarding_profesional",
+        "whatsapp_b2b"
+      ]
     },
     "prohibited": [
       "Promesas sin respaldo técnico o claims médicos sobre el cabello",
@@ -128,7 +136,6 @@
     ],
     "language_notes": "Español Miami es el idioma principal. Inglés secundario. Spanglish natural y no forzado en redes. Siempre bilingüe en emails B2B."
   },
-
   "content_strategy": {
     "b2c_split": {
       "educational": "35%",
@@ -149,7 +156,6 @@
       "Detrás del producto — origen Neurone, control de calidad, líneas especializadas"
     ]
   },
-
   "imagelab": {
     "style": "warm_editorial_miami",
     "color_grade": "Contraste navy/negro con tonos de piel cálidos. Ni plastificado ni crudo — editorial limpio.",
@@ -171,7 +177,6 @@
     "dark_bg_contexts": "Redes sociales, landings, ads, hero sections",
     "white_bg_contexts": "Fichas de producto Shopify, emails comerciales"
   },
-
   "compliance": {
     "inherit_from_neurone": true,
     "fda_cosmetic_only": true,
@@ -182,9 +187,11 @@
       "Drug claims de cualquier tipo"
     ],
     "required_disclaimer": "Distribuidor autorizado Neurone Cosmética — South & Central Florida",
-    "attorney_review_pending": ["Pro Salon line claims", "B2B portal terms"]
+    "attorney_review_pending": [
+      "Pro Salon line claims",
+      "B2B portal terms"
+    ]
   },
-
   "ecommerce": {
     "platform": "Shopify",
     "domain": "neuronesycflorida.com",
@@ -205,7 +212,6 @@
     },
     "3pl": "local Florida — logística e inventario no gestionados por PO directamente"
   },
-
   "brand_rules": {
     "inherited_from_neurone_immutable": [
       "Paleta de colores corporativos — Negro, Azul Pantone 7546, Blanco",
@@ -221,5 +227,70 @@
       "Selección de talent para contenido local",
       "Estrategia de redes sociales y community management"
     ]
+  },
+  "assets": {
+    "_comment": "URLs de assets visuales de marca. Almacenados en bucket de storage (Supabase Storage o Cloudflare R2). Pending: PO debe proveer assets formales.",
+    "storage_bucket": "pending",
+    "logo": {
+      "primary": {
+        "url": null,
+        "format": "SVG / PNG",
+        "background": "dark",
+        "description": "Logo principal Neurone — versión sobre fondo oscuro",
+        "status": "pending_assets_from_PO"
+      },
+      "reversed": {
+        "url": null,
+        "format": "SVG / PNG",
+        "background": "light",
+        "description": "Logo Neurone — versión sobre fondo claro",
+        "status": "pending_assets_from_PO"
+      },
+      "wordmark": {
+        "url": null,
+        "format": "SVG",
+        "description": "Wordmark tipográfico solo, sin isotipo",
+        "status": "pending_assets_from_PO"
+      },
+      "distributor_badge": {
+        "url": null,
+        "format": "PNG / SVG",
+        "description": "Badge 'Distribuidora Exclusiva South & Central Miami' para uso en materiales PO",
+        "status": "pending_creation"
+      }
+    },
+    "brand_colors_reference": {
+      "primary_hex": "#0076A8",
+      "obsidian_hex": "#000000",
+      "white_hex": "#FAFAFA"
+    },
+    "fonts": {
+      "primary": {
+        "family": "PT Sans Narrow",
+        "url_google": "https://fonts.google.com/specimen/PT+Sans+Narrow",
+        "cdn": null
+      },
+      "secondary": {
+        "family": "Montserrat",
+        "url_google": "https://fonts.google.com/specimen/Montserrat",
+        "cdn": null
+      }
+    },
+    "social_avatars": {
+      "instagram": {
+        "url": null,
+        "status": "pending"
+      },
+      "facebook": {
+        "url": null,
+        "status": "pending"
+      },
+      "whatsapp_business": {
+        "url": null,
+        "status": "pending"
+      }
+    },
+    "last_updated": "2026-03-10",
+    "updated_by": "UNRLVL AgentLab — sesión 2026-03-10"
   }
 }
