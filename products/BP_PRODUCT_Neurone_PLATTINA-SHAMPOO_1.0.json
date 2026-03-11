@@ -96,5 +96,10 @@
     "neurone_total_violet_shampoo"
   ],
   "created": "2026-03-07",
-  "version": "1.0"
+  "version": "1.0",
+  "collection": "Color Rescue",
+  "subcollection": "Plattina",
+  "price": "0.00",
+  "msrp": "0.00",
+  "description_enhanced": null
 }

@@ -83,5 +83,10 @@
   "cross_sell": [],
   "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith. No mostrar en tienda B2C.",
   "created": "2026-03-07",
-  "version": "1.0"
+  "version": "1.0",
+  "collection": "Pro Salon",
+  "subcollection": "Pro Salon",
+  "price": "0.00",
+  "msrp": "0.00",
+  "description_enhanced": null
 }

@@ -99,5 +99,10 @@
     "neurone_hyaloneurine"
   ],
   "created": "2026-03-07",
-  "version": "1.0"
+  "version": "1.0",
+  "collection": "Moisture",
+  "subcollection": "Humit",
+  "price": "0.00",
+  "msrp": "0.00",
+  "description_enhanced": null
 }

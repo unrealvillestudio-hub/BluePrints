@@ -81,5 +81,10 @@
   ],
   "b2b_portal_note": "Solo visible en pro.neuronescmiami.com via Locksmith.",
   "created": "2026-03-08",
-  "version": "1.0"
+  "version": "1.0",
+  "collection": "Pro Salon / Colour",
+  "subcollection": "Total Violet",
+  "price": "0.00",
+  "msrp": "0.00",
+  "description_enhanced": null
 }
