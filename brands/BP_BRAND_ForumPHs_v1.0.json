@@ -1,0 +1,316 @@
+{
+  "id": "brand_forumphs",
+  "schema_version": "BP_BRAND_1.1",
+  "brandId": "forumPhs",
+  "displayName": "ForumPHs",
+  "shortName": "FPHs",
+  "formerName": "PHAS",
+  "tagline": "Administración de Propiedad Horizontal · Panamá · Desde 2015",
+  "slogan": "Construiste tu patrimonio. Nosotros le construimos un sistema.",
+  "slogan_parts": {
+    "part1": "Construiste tu patrimonio.",
+    "part2": "Nosotros le construimos un sistema.",
+    "emphasized": "part2",
+    "rule": "invariable — no acortar, no parafrasear"
+  },
+  "created": "2026-03-11",
+  "status": "active",
+
+  "brand_identity": {
+    "type": "service_brand",
+    "industry": "Administración de Propiedad Horizontal",
+    "descriptor": "ADMINISTRACIÓN DE PROPIEDAD HORIZONTAL",
+    "territory": "Panamá",
+    "domain": "forumphs.com",
+    "email_pattern": "[name]@forumphs.com",
+    "founded": 2015,
+    "legal_framework": "Ley No. 284 de 14 de febrero de 2022 (Propiedad Horizontal, Panamá)",
+    "language_primary": "es-PA",
+    "language_secondary": "es",
+    "model": ["B2B", "B2G"],
+    "portfolio": {
+      "units": "~1500",
+      "properties": 7
+    },
+    "gm": {
+      "name": "Ivette Flores",
+      "role": "Abogada · General Manager",
+      "role_short": "General Manager",
+      "email": "ivette@forumphs.com",
+      "initials": "IF",
+      "note": "Única GM activa. Roberto González ya no forma parte de la empresa."
+    },
+    "positioning": "ForumPHs no vende administración de edificios. Vende gestión patrimonial sistémica. Diferenciador: estándar único de calidad para todos los clientes, pricing value-based, SLAs auditables.",
+    "former_positioning": "PHAS — 'Administramos tu PH'",
+    "current_positioning": "ForumPHs — 'Construimos el sistema que protege y hace crecer tu patrimonio'"
+  },
+
+  "palette": {
+    "_id": "amatista-carbon",
+    "_note": "Paleta Amatista Carbon — versión definitiva, no hay paletas alternativas activas.",
+    "am": {
+      "hex": "#5C3472",
+      "name": "Amatista",
+      "role": "institutional-primary",
+      "use": "CTAs principales, avatares, botones, KPI números"
+    },
+    "am_d": {
+      "hex": "#3A1F4A",
+      "name": "Amatista Dark",
+      "role": "premium-bg, footer",
+      "use": "Fondos premium, posters, footer, email sidebar"
+    },
+    "am_l": {
+      "hex": "#EAD9F5",
+      "name": "Amatista Light",
+      "role": "signature, letterhead, light-bg",
+      "use": "Firma de email, papelería, fondos claros, KPI backgrounds"
+    },
+    "terra": {
+      "hex": "#C4622D",
+      "name": "Terra",
+      "role": "accent, wordmark-PH, slogan-emphasis, rule",
+      "use": "Acento, 'PHs' en wordmark, énfasis slogan, reglas decorativas"
+    },
+    "carbon": {
+      "hex": "#1C2233",
+      "name": "Carbon",
+      "role": "ui-surface, email-header",
+      "use": "Superficies UI, email header, cards"
+    },
+    "carbon_d": {
+      "hex": "#0E1018",
+      "name": "Carbon Dark",
+      "role": "hero-bg, main-dark, portadas",
+      "use": "Hero backgrounds, portadas, pantalla principal"
+    },
+    "ink": {
+      "hex": "#1A1612",
+      "name": "Ink",
+      "role": "body-text-on-light",
+      "use": "Texto principal sobre parchment y fondos claros"
+    },
+    "stone": {
+      "hex": "#6B6460",
+      "name": "Stone",
+      "role": "secondary-text, metadata, contact",
+      "use": "Texto secundario, metadatos, contacto en firma"
+    },
+    "parch": {
+      "hex": "#F0EDE8",
+      "name": "Parchment",
+      "role": "documents, actas, contracts, letters",
+      "use": "Documentos, actas, cartas, contratos"
+    }
+  },
+
+  "palette_css_block": ":root {\n  --fphs-am:        #5C3472;\n  --fphs-am-d:      #3A1F4A;\n  --fphs-am-l:      #EAD9F5;\n  --fphs-terra:     #C4622D;\n  --fphs-carbon:    #1C2233;\n  --fphs-carbon-d:  #0E1018;\n  --fphs-ink:       #1A1612;\n  --fphs-stone:     #6B6460;\n  --fphs-parch:     #F0EDE8;\n}",
+
+  "palette_combinations": {
+    "hero_portada": { "bg": "carbon_d", "text": "#ffffff", "accent": "terra" },
+    "premium_propuesta": { "bg": "am", "text": "rgba(255,255,255,0.65)", "accent": "#ffffff" },
+    "fondos_claros": { "bg": "am_l", "text": "am_d", "accent": "terra" },
+    "documentos_actas": { "bg": "parch", "text": "ink", "accent": "terra" },
+    "email_body": { "bg": "#F8F5F2", "text": "ink / #4A4440", "accent": "am" },
+    "kpis_metricas": { "bg": "am_l", "number_color": "am", "label_color": "stone" }
+  },
+
+  "typography": {
+    "_google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cinzel:wght@400;600&family=DM+Sans:wght@300;400;500;600;700&display=swap",
+    "display": {
+      "family": "EB Garamond",
+      "weights": [400, 500],
+      "italic": true,
+      "css_var": "--fphs-font-display",
+      "role": "Wordmark 'Forum', slogan, email subject, headlines, títulos principales"
+    },
+    "editorial": {
+      "family": "Cormorant Garamond",
+      "weights": [300, 400, 500],
+      "italic": true,
+      "css_var": "--fphs-font-editorial",
+      "role": "Nombre del PH en portadas, eyebrows, texto decorativo, pie decorativo"
+    },
+    "utility": {
+      "family": "Cinzel",
+      "weights": [400, 600],
+      "italic": false,
+      "css_var": "--fphs-font-utility",
+      "role": "Section labels, tags, eyebrow caps, card tags, FORUMPHS en contexto de label"
+    },
+    "body": {
+      "family": "DM Sans",
+      "weights": [300, 400, 500, 600, 700],
+      "italic": false,
+      "css_var": "--fphs-font-body",
+      "role": "Cuerpo, UI, 'PHs' en wordmark, botones, datos numéricos"
+    }
+  },
+
+  "wordmark": {
+    "rule": "Siempre construido como HTML/CSS — nunca como imagen",
+    "parts": {
+      "forum": { "text": "Forum", "font": "EB Garamond", "weight": 400, "color_dark_bg": "#ffffff", "color_light_bg": "#3A1F4A" },
+      "ph": { "text": "PH", "font": "DM Sans", "weight": 700, "color": "#C4622D", "letter_spacing": "0.06em" },
+      "s": { "text": "s", "font": "DM Sans", "weight": 700, "color": "#C4622D", "letter_spacing": "0.04em" }
+    },
+    "sizes": {
+      "xl": "58px",
+      "lg": "38px",
+      "md": "26px",
+      "sm": "18px",
+      "xs": "12px"
+    },
+    "html_dark": "<span style=\"font-family:'EB Garamond',serif;font-weight:400;\">Forum</span><span style=\"font-family:'DM Sans',sans-serif;font-weight:700;color:#C4622D;letter-spacing:0.06em;\">PH</span><span style=\"font-family:'DM Sans',sans-serif;font-weight:700;color:#C4622D;letter-spacing:0.04em;\">s</span>",
+    "html_light": "<span style=\"font-family:'EB Garamond',serif;font-weight:400;color:#3A1F4A;\">Forum</span><span style=\"font-family:'DM Sans',sans-serif;font-weight:700;color:#C4622D;letter-spacing:0.06em;\">PH</span><span style=\"font-family:'DM Sans',sans-serif;font-weight:700;color:#C4622D;letter-spacing:0.04em;\">s</span>"
+  },
+
+  "voice": {
+    "archetype": "TRUSTED_PROFESSIONAL_AUTHORITY",
+    "positioning": "Gestión patrimonial sistémica — el sistema que protege y hace crecer tu patrimonio",
+    "tone_pillars": [
+      "Profesional-formal — comunicación ejecutiva de alto nivel",
+      "Patrimonial — habla al propietario como dueño de un activo, no como residente",
+      "Sistémico — la promesa es un sistema auditable, no un servicio reactivo",
+      "Cercano-experto — Ivette Flores como cara humana de la autoridad legal/administrativa"
+    ],
+    "primary_audience": "Juntas Directivas y propietarios de Propiedades Horizontales en Panamá",
+    "language": "Español formal panameño",
+    "do": [
+      "Escribir siempre ForumPHs (capital F, PH en caps, s minúscula)",
+      "Usar FPHs como sigla",
+      "Mantener el slogan completo e invariable",
+      "Usar Terra para énfasis de la segunda parte del slogan",
+      "Hablar de 'patrimonio', 'gestión sistémica', 'SLAs auditables'",
+      "Tercera persona formal en Actas"
+    ],
+    "dont": [
+      "No escribir FORUMPHS excepto en contextos Cinzel (label, tag)",
+      "No acortar o parafrasear el slogan",
+      "No referir a Roberto González como representante activo",
+      "No usar colores fuera de la paleta Amatista Carbon",
+      "No usar el posicionamiento antiguo 'OS of your PH'"
+    ]
+  },
+
+  "services": {
+    "core": [
+      "Gestión administrativa ordinaria",
+      "Servicio jurídico (Ivette Flores, Abogada GM)",
+      "Gestión contable y financiera",
+      "Generación de Actas de Asamblea (Ordinaria / Extraordinaria)",
+      "Document Factory — sistema interno de generación de documentos",
+      "Reportes SLA mensuales",
+      "Gestión de morosidad / cuotas de mantenimiento"
+    ],
+    "sla_categories": {
+      "urgente": "Respuesta inmediata — emergencias, seguridad",
+      "prioritario": "Respuesta en horas — mantenimiento crítico, legal",
+      "regular": "Respuesta en días hábiles — gestión ordinaria"
+    },
+    "availability": "Agente de servicio 24/7",
+    "kpis_standard": ["Morosidad %", "SLA Cumplido %", "Resoluciones del período"]
+  },
+
+  "pricing_model": {
+    "type": "value-based",
+    "variables": ["Metros cuadrados del PH", "Cantidad de unidades", "Score de complejidad operativa", "Tasa de morosidad (delinquency rate)"],
+    "rules": "Clientes actuales: precio actual mantenido. Nuevos contratos: modelo value-based. Migración voluntaria basada en méritos.",
+    "growth_strategy": "Crecimiento orgánico por reputación — no incentivos económicos. Referidos ligados a solución de pain points."
+  },
+
+  "documents": {
+    "actas": {
+      "types": ["Ordinaria", "Extraordinaria"],
+      "legal_framework": "Ley No. 284 de 14 de febrero de 2022 de Propiedad Horizontal",
+      "format": "docx",
+      "language": "es",
+      "number_format": "words-then-digits",
+      "example_number_format": "'sesenta y siete (67) propietarios'",
+      "example_percentage_format": "'cincuenta y uno coma cincuenta y tres por ciento (51.53%)'",
+      "voice": "third-person-formal",
+      "section_format": "UPPERCASE-UNDERLINE",
+      "signatories": ["Presidente/a", "Secretario/a"],
+      "quorum_rule": "Más del 50% de propietarios (Art. 67 Ley 284)",
+      "second_call_delay": "1 hora después del primer llamado",
+      "forumphs_signature_block": "Por la administración del P.H. [NOMBRE PH]: [staff names including Ivette Flores]",
+      "rules": [
+        "Siempre en tercera persona formal",
+        "Números primero en letras, luego en paréntesis",
+        "Porcentajes completos con coma decimal",
+        "Sin resúmenes — intervenciones completas y consolidadas"
+      ],
+      "structure": [
+        "1. ENCABEZADO — datos del PH (Finca, Código, Folio Real)",
+        "2. CONVOCATORIA — texto literal si aplica",
+        "3. JUNTA DIRECTIVA PRESENTE",
+        "4. ADMINISTRACIÓN PRESENTE (ForumPHs aparece aquí)",
+        "5. PUNTOS DEL ORDEN DEL DÍA (números en letras + dígitos)",
+        "6. VOTACIONES — X votos a favor / Y en contra / Z abstenciones + porcentaje",
+        "7. CIERRE CON HORA",
+        "8. FIRMAS — Presidente + Secretario/a"
+      ]
+    },
+    "document_factory_types": [
+      "Actas de Asamblea (Ordinaria / Extraordinaria)",
+      "Convocatorias",
+      "Reportes financieros",
+      "Cartas y comunicaciones a propietarios",
+      "Contratos de administración"
+    ]
+  },
+
+  "email_signature_html": "<div style=\"background:#EAD9F5;padding:20px 30px;border-top:1px solid rgba(92,52,114,0.1);\"><div style=\"display:flex;align-items:flex-start;gap:12px;\"><div style=\"width:3px;border-radius:2px;background:#C4622D;flex-shrink:0;align-self:stretch;\"></div><div><div style=\"font-size:13px;font-weight:600;color:#5C3472;margin-bottom:1px;\">Ivette Flores</div><div style=\"font-size:10px;color:#6B6460;margin-bottom:8px;\">Abogada · General Manager · ForumPHs</div><div style=\"font-size:10px;color:#6B6460;\">forumphs.com <span style=\"margin:0 5px;\">·</span> ivette@forumphs.com <span style=\"margin:0 5px;\">·</span> +507</div></div></div></div><div style=\"background:#E4D6F0;padding:14px 30px;display:flex;justify-content:space-between;align-items:center;\"><div style=\"font-family:'EB Garamond',serif;font-size:9.5px;font-style:italic;color:rgba(92,52,114,0.4);\">Construiste tu patrimonio. Nosotros le construimos un sistema.</div><div style=\"font-size:8.5px;color:rgba(144,128,160,0.7);letter-spacing:0.04em;\">forumphs.com</div></div>",
+
+  "compliance": {
+    "legal_framework": "Ley No. 284 de 14 de febrero de 2022 (Propiedad Horizontal, Panamá)",
+    "territory": "Panamá",
+    "regulated_industry": true,
+    "prohibited": [
+      "No referir a Roberto González como representante activo",
+      "No usar posicionamiento antiguo 'PHAS' o 'OS of your PH' en materiales nuevos"
+    ]
+  },
+
+  "brand_rules": {
+    "casing": "ForumPHs — capital F, PH en caps, s minúscula",
+    "sigla": "FPHs",
+    "exceptions": "FORUMPHS permitido solo en contextos Cinzel: labels de tarjeta, tags, eyebrow-caps",
+    "slogan_rule": "Invariable — no acortar, no parafrasear en ningún material de marca",
+    "former_name_rule": "PHAS solo como contexto histórico — nunca como identificador activo",
+    "gm_rule": "Ivette Flores es la única cara pública y firmante oficial"
+  },
+
+  "assets": {
+    "storage_bucket": "BluePrints/brands/assets/ForumPHs",
+    "logo": {
+      "white_on_dark": {
+        "file": "FPHS_logo_wt.png",
+        "path": "brands/assets/ForumPHs/FPHS_logo_wt.png",
+        "background": "dark",
+        "use": "Fondos carbon-d, carbon, am, am-d — cualquier fondo oscuro",
+        "description": "Wordmark Forum (blanco) + PHs (terra) sobre fondo oscuro",
+        "status": "active"
+      },
+      "dark_on_light": {
+        "file": "FPHS_logo_deep.png",
+        "path": "brands/assets/ForumPHs/FPHS_logo_deep.png",
+        "background": "light",
+        "use": "Fondos parch, am-l, fondos claros, documentos",
+        "description": "Wordmark Forum (am-d) + PHs (terra) sobre fondo claro",
+        "status": "active"
+      }
+    },
+    "note": "El wordmark también existe como HTML/CSS puro — preferir HTML cuando sea posible para escalabilidad"
+  },
+
+  "weblab_context": {
+    "module_compatibility": ["web", "landing"],
+    "primary_packs": ["web_corporate", "web_personal_brand", "landing_lead", "landing_appointment"],
+    "content_language": "es",
+    "target_audience": "Juntas Directivas y propietarios de PHs en Panamá",
+    "content_focus": "Gestión patrimonial sistémica — autoridad profesional, confianza, sistema",
+    "no_ecommerce": true,
+    "note": "ForumPHs es marca de servicios — no usa packs de e-commerce ni product selector"
+  }
+}
