@@ -10,8 +10,8 @@
     "type": "distributor_authorized",
     "parent_brand": "NeuroneCosmetics",
     "territory": "South & Central Florida",
-    "domain_placeholder": "neuronesycflorida.com",
-    "domain_status": "pending_confirmation",
+    "domain_placeholder": "neuronescflorida.com",
+    "domain_status": "confirmed",
     "face": "PatriciaOsorioVizosSalon",
     "language_primary": "es-FL",
     "language_secondary": "en",
@@ -20,7 +20,8 @@
       "B2B"
     ],
     "distributor_disclaimer": "Distribuidor Autorizado — South & Central Florida",
-    "legal_note": "Patricia Osorio opera como distribuidora exclusiva autorizada. No es Neurone Cosmética global. Infraestructura de marketing, e-commerce y RRSS es independiente."
+    "legal_note": "Patricia Osorio opera como distribuidora exclusiva autorizada. No es Neurone Cosmética global. Infraestructura de marketing, e-commerce y RRSS es independiente.",
+    "domain": "neuronescflorida.com"
   },
   "palette": {
     "primary": {
@@ -290,7 +291,7 @@
         "status": "pending"
       }
     },
-    "last_updated": "2026-03-10",
+    "last_updated": "2026-03-11",
     "updated_by": "UNRLVL AgentLab — sesión 2026-03-10"
   }
 }
