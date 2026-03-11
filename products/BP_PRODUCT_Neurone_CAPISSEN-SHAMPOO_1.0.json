@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "pending",
-  "image_filename": "CAPISSEN_400_WEB.png",
+  "image_filename": "NACSHA-1-1.webp",
   "description": {
     "en": "Daily use shampoo to help prevent hair loss. Its advanced PEPTIDE TECHNOLOGY contributes to optimizing hair growth cycles, improving density, thickening, and strengthening hair.",
     "es": "Shampoo de uso diario, auxiliar en la prevención de la caída del cabello. Su avanzada TECNOLOGÍA DE PÉPTIDOS contribuye a optimizar los ciclos de crecimiento capilar, mejorar la densidad, engrosar y fortalecer el cabello."
@@ -58,7 +58,7 @@
           "shopify_cart"
         ],
         "background": "white",
-        "filename": "CAPISSEN_400_WEB.png",
+        "filename": "NACSHA-1-1.webp",
         "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
       },
       "campaign": {
@@ -72,7 +72,7 @@
         "filename": "CAPISSEN_400_WEB.png",
         "notes": "Fondo negro de estudio para landings, redes y campañas."
       },
-      "dark_available": true
+      "dark_available": false
     }
   },
   "related_skus": [

@@ -47,14 +47,8 @@
     "mood": "navy premium, professional colorist authority, permanent color precision",
     "image_usage": {
       "standard": {
-        "context": [
-          "shopify_product_page",
-          "shopify_collection",
-          "shopify_cart"
-        ],
-        "background": "white",
         "filename": "NCOLOR.webp",
-        "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
+        "background": "white"
       },
       "campaign": {
         "context": [

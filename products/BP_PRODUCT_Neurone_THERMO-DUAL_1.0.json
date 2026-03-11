@@ -70,11 +70,11 @@
           "ads",
           "email_header"
         ],
-        "background": "white",
-        "filename": "NTTHERM__1_.webp",
+        "background": "dark",
+        "filename": "NTTHERM.webp",
         "notes": "Sin versión dark disponible — usar imagen estándar hasta nueva sesión de fotos."
       },
-      "dark_available": false
+      "dark_available": true
     }
   },
   "related_skus": [

@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "public",
-  "image_filename": "humitmask_400_web.png",
+  "image_filename": "NTHUMA-1-1.webp",
   "description": {
     "en": "High moisturizing conditioning mask. Provides long-lasting, effective hair restoration and intense conditioning, reducing frizz for shiny, smooth, and controlled hair.",
     "es": "Mascarilla acondicionadora de alta humectación. Brinda una prolongada y eficaz restauración capilar e intenso acondicionamiento, reduciendo el frizz para una cabellera brillante, suave y controlada."
@@ -60,7 +60,7 @@
           "shopify_cart"
         ],
         "background": "white",
-        "filename": "humitmask_400_web.png",
+        "filename": "NTHUMA-1-1.webp",
         "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
       },
       "campaign": {

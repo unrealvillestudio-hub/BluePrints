@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "public",
-  "image_filename": "kerasinsh_400_web.png",
+  "image_filename": "NLSKHB-1-1.webp",
   "description": {
     "en": "With Hyaluronic Acid, Keratin and Biotin that help repair damaged and over-processed hair internally to keep the hair surface strong, lubricated and protected, reducing damage caused by chemical treatments, environmental factors, or the use of styling tools.",
     "es": "Con Ácido Hialurónico, Queratina y Biotina que ayudan a reparar el daño del cabello maltratado y sobreprocesado desde su interior, para mantener fuerte, lubricada y protegida la superficie del cabello, reduciendo el daño causado por tratamientos químicos, factores ambientales o el uso de herramientas de estilizado."
@@ -64,7 +64,7 @@
           "shopify_cart"
         ],
         "background": "white",
-        "filename": "kerasinsh_400_web.png",
+        "filename": "NLSKHB-1-1.webp",
         "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
       },
       "campaign": {

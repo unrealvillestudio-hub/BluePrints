@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": true,
   "shopify_visibility": "pending",
-  "image_filename": "NCPROF.webp",
+  "image_filename": "NCPLWT-2-1.webp",
   "description": {
     "en": "Hair strand powder protector for bleaching procedures in highly processed hair. Its formula helps fight the damage that the hair suffers during these processes, reducing its breakage, repairing it, and maintaining its integrity.",
     "es": "Polvo protector de la hebra capilar para decoloraciones en el cabello altamente procesado. Su fórmula ayuda a combatir los daños que el cabello sufre durante estos procesos, reduciendo la rotura, reparándolo y manteniendo su integridad."
@@ -51,7 +51,7 @@
           "shopify_cart"
         ],
         "background": "white",
-        "filename": "NCPROF.webp",
+        "filename": "NCPLWT-2-1.webp",
         "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
       },
       "campaign": {

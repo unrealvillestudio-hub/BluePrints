@@ -15,7 +15,7 @@
   "status": "active",
   "b2b_only": false,
   "shopify_visibility": "public",
-  "image_filename": "NTTHERM.webp",
+  "image_filename": "NCNEU-6.webp",
   "filename_note": "Filename NTTHERM.webp puede ser un error de naming en los assets originales. El producto es Neurona Gloss, no Thermo.",
   "description": {
     "en": "Serum treatment that acts by forming a protective layer on the hair, preventing the formation of split ends, controlling frizz, and providing silkiness, softness, manageability and intense shine.",
@@ -60,7 +60,7 @@
           "shopify_cart"
         ],
         "background": "white",
-        "filename": "NTTHERM.webp",
+        "filename": "NCNEU-6.webp",
         "notes": "Fondo blanco. Estándar para tienda B2C y Portal Pro."
       },
       "campaign": {
