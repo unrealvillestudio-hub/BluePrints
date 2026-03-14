@@ -39,7 +39,10 @@
         "persons/assets/PO/po_face_front_smiling_03_alpha.png",
         "persons/assets/PO/po_face_front_smiling_04_alpha.png",
         "persons/assets/PO/po_face_front_smiling_05_alpha.png",
-        "persons/assets/PO/po_face_profile_left_01_alpha.png"
+        "persons/assets/PO/po_face_profile_left_01_alpha.png",
+        "persons/assets/PO/po_salon_face_smiling_01_alpha.png",
+        "persons/assets/PO/po_salon_face_smiling_02_alpha.png",
+        "persons/assets/PO/po_salon_face_smiling_03_alpha.png"
       ],
       "hair_salon_showcase": [
         "persons/assets/PO/po_hair_back_01_alpha.png",
@@ -52,11 +55,47 @@
         "persons/assets/PO/po_hair_side_03_alpha.png",
         "persons/assets/PO/po_hair_side_04_alpha.png"
       ],
-      "total_count": 22,
+      "salon_full_body": [
+        "persons/assets/PO/po_salon_full_pose_01_alpha.png",
+        "persons/assets/PO/po_salon_full_pose_02_alpha.png",
+        "persons/assets/PO/po_salon_full_pose_03_alpha.png",
+        "persons/assets/PO/po_salon_full_pose_04_alpha.png",
+        "persons/assets/PO/po_salon_full_pose_05_alpha.png",
+        "persons/assets/PO/po_salon_full_pose_06_alpha.png",
+        "persons/assets/PO/po_salon_full_standing_01_alpha.png",
+        "persons/assets/PO/po_salon_full_standing_02_alpha.png"
+      ],
+      "salon_bust": [
+        "persons/assets/PO/po_salon_bust_3q_right_01_alpha.png",
+        "persons/assets/PO/po_salon_bust_front_01_alpha.png",
+        "persons/assets/PO/po_salon_bust_front_smiling_01_alpha.png",
+        "persons/assets/PO/po_salon_bust_front_smiling_02_alpha.png",
+        "persons/assets/PO/po_salon_bust_front_smiling_03_alpha.png"
+      ],
+      "salon_profile": [
+        "persons/assets/PO/po_salon_profile_back_01_alpha.png",
+        "persons/assets/PO/po_salon_profile_left_01_alpha.png",
+        "persons/assets/PO/po_salon_profile_right_01_alpha.png",
+        "persons/assets/PO/po_salon_profile_right_02_alpha.png"
+      ],
+      "salon_face": [
+        "persons/assets/PO/po_salon_face_smiling_01_alpha.png",
+        "persons/assets/PO/po_salon_face_smiling_02_alpha.png",
+        "persons/assets/PO/po_salon_face_smiling_03_alpha.png"
+      ],
+      "salon_back": [
+        "persons/assets/PO/po_salon_back_full_01_alpha.png",
+        "persons/assets/PO/po_salon_back_full_02_alpha.png"
+      ],
+      "total_originals": 44,
+      "total_alpha_pngs": 44,
       "lora_training_ready": true,
       "alpha_processed": true,
       "processing_method": "flood-fill from edges, sigma=2.5 feather",
-      "note": "13 face references (frontal, 3/4, profile, closeup) + 9 hair/salon showcase. Suitable for LoRA/TensorArt training."
+      "sessions": {
+        "session_1_grey_bg": "22 fotos fondo gris neutro — retratos y cabello showcas",
+        "session_2_salon": "22 fotos en salón Vizos — full body, poses, perfiles, contexto real"
+      }
     }
   },
   "videolab": {
