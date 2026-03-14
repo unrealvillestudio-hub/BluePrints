@@ -305,33 +305,11 @@
         "PO (alpha) + vs_int_corridor_05 — de pie en el pasillo mirando hacia la entrada",
         "PO (alpha) + vs_int_wide_01 — de pie en el salón completo, profesional en su territorio"
       ]
-    },
-    {
-      "zone_id": "VSS_Z5",
-      "zone_name": "Yod Threading Spa — Espacio Adyacente",
-      "description": "El Yod Threading Spa (12951) ocupa el local adyacente al salón de PO en el mismo strip. Espacio más amplio y de otra estética: sillas de pedicura grises en fila larga (8+ posiciones), pared de esmaltes de colores (toda la pared), pared textura ondulada crema, iluminación LED rosa/morada en el techo, recepción azul claro geométrica, zona de manicura con mesas blancas. Estética más commercial/franchise vs el boutique del salón de PO. NOTA: relación operativa entre PO y Yod pendiente de confirmar — documentado como contexto adyacente.",
-      "subtype": "adjacent_commercial_beauty",
-      "status": "context_only — relationship with PO to confirm",
-      "reference_photos": {
-        "path": "locations/assets/VizosSalon/adjacent_yod/",
-        "total": 9,
-        "files": [
-          "yod_int_entrance_wide_01.jpeg",
-          "yod_int_manicure_area_01.jpeg",
-          "yod_int_nails_wall_01.jpeg",
-          "yod_int_pedicure_wide_01.jpeg",
-          "yod_int_pedicure_wide_02.jpeg",
-          "yod_int_pedicure_wide_03.jpeg",
-          "yod_int_pedicure_wide_04.jpeg",
-          "yod_int_pedicure_wide_05.jpeg",
-          "yod_int_reception_01.jpeg"
-        ]
-      }
     }
   ],
   "reference_photos": {
     "path": "locations/assets/VizosSalon/",
-    "total": 45,
+    "total": 36,
     "files": [
       "vs_exterior_wide_01.jpeg",
       "vs_exterior_facade_01.jpeg",
@@ -344,8 +322,7 @@
     ],
     "alpha_processed": false,
     "note": "Fotos de locación/ambiente — alpha removal no aplica. Se usan como referencias de escena para composición o como fondos directos.",
-    "interior_files": 28,
-    "adjacent_yod_files": 9
+    "interior_files": 28
   },
   "meta_tags": [
     "vizos_salon",
@@ -407,5 +384,6 @@
     "weather": "despejado, cielo azul Florida, nubes cúmulo esporádicas",
     "equipment": "smartphone (WhatsApp source)",
     "notes": "Tomas en mano desde la acera y el parking. Luz de tarde-mediodía directa. Sin tripié. Útil para composición directa o como referencias de escena. No requieren recorte de fondo."
-  }
+  },
+  "notes": "Zona Yod eliminada: letrero no corresponde al salón de PO (letrero anterior no reemplazado aún por Vizos)"
 }
