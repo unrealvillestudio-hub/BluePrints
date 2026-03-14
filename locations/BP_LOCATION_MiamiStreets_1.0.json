@@ -214,6 +214,72 @@
           "best_use": [
             "geo-anchor Downtown cultural",
             "b-roll de ciudad navegándose"
+          ],
+          "asset_path": "locations/assets/MiamiStreets/ms_boulevard_palms_wall_01.jpeg"
+        },
+        {
+          "ref_id": "Z1_014",
+          "source_file": "IMG_1057.jpeg",
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_parkmiami_sign_01.jpeg",
+          "description": "I-95 urbana con señal verde 'Park Miami / Miami Beach' overhead. Edificio residencial alto con mural a la derecha. Tráfico liviano. Cielo nublado parcial.",
+          "time_of_day": "afternoon",
+          "orientation": "vertical",
+          "best_use": [
+            "establishing shot Miami highway",
+            "señalética urbana",
+            "motion content dirección Miami Beach"
+          ]
+        },
+        {
+          "ref_id": "Z1_015",
+          "source_file": "IMG_1049.jpeg",
+          "asset_path": "locations/assets/MiamiStreets/ms_boulevard_led_sign_01.jpeg",
+          "description": "Bulevar amplio con palmeras reales y muro de piedra (Coral Gables corridor). Panel LED overhead con información de tráfico. Vegetación mixta: palmas + árboles tropicales. Hora dorada.",
+          "time_of_day": "golden_hour",
+          "orientation": "vertical",
+          "best_use": [
+            "contexto residencial premium Miami",
+            "bulevar con infraestructura",
+            "fondo para producto lifestyle"
+          ]
+        },
+        {
+          "ref_id": "Z1_016",
+          "source_file": "IMG_1052.jpeg",
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_skyline_downtown_01.jpeg",
+          "description": "I-95 con skyline completo de Downtown Miami al fondo: torre en construcción prominente, múltiples highrise. Cielo azul con nubes cúmulo. Vista panorámica desde el interior del carro.",
+          "time_of_day": "afternoon",
+          "orientation": "vertical",
+          "best_use": [
+            "establishing shot ciudad Miami",
+            "poder económico y crecimiento",
+            "fondo panorámico para claims"
+          ]
+        },
+        {
+          "ref_id": "Z1_017",
+          "source_file": "IMG_1054.jpeg",
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_led_ramp_closure_01.jpeg",
+          "description": "I-95 con panel electrónico LED overhead (naranja sobre negro). Tráfico fluido, dos carriles visibles. Torre circular al fondo derecha (Edgewater/Wynwood). Cielo nublado parcial.",
+          "time_of_day": "afternoon",
+          "orientation": "vertical",
+          "best_use": [
+            "signage urbano LED",
+            "infraestructura vial Miami",
+            "b-roll highway con elemento gráfico fuerte"
+          ]
+        },
+        {
+          "ref_id": "Z1_018",
+          "source_file": "IMG_1055.jpeg",
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_biscayne_tower_01.jpeg",
+          "description": "I-95 con señal verde 'Biscayne Blvd / Downtown'. Torre cilíndrica residencial dominando el frame derecha (Edgewater). Tráfico múltiple carriles. Cielo dramático con nubes.",
+          "time_of_day": "afternoon",
+          "orientation": "vertical",
+          "best_use": [
+            "Downtown exit shot",
+            "iconografía Biscayne corridor",
+            "establishing shot Edgewater/Wynwood"
           ]
         }
       ],
@@ -366,7 +432,8 @@
             "túnel natural para transiciones de video",
             "mood íntimo y fresco",
             "beauty content con luz filtrada natural"
-          ]
+          ],
+          "asset_path": "locations/assets/MiamiStreets/ms_coconutgrove_oak_tunnel_01.jpeg"
         },
         {
           "ref_id": "Z3_004",
@@ -512,5 +579,7 @@
     "source": "iPhone, desde interior de vehículo + a pie en Coconut Grove",
     "alpha_processed": false,
     "note": "Fotos de locación/escena — alpha removal no aplica"
-  }
+  },
+  "last_updated": "2026-03-15",
+  "asset_coverage": "partial — Z1 14/18 assets, Z3 3/7 assets"
 }
