@@ -14,7 +14,6 @@
     "studio_setup",
     "single_talking_head"
   ],
-
   "imagelab": {
     "description": "Mujer latina profesional, 35-45 años, cabello rubio/castaño impecablemente trabajado. Contexto Vizos Salón Miami — sillones blancos, espejos iluminados, ambiente premium.",
     "style": "editorial_clean, Miami daylight, warm tones, beauty professional, luxury salon",
@@ -23,13 +22,48 @@
     "film_look": "digital_clean",
     "lens_preset": "50mm_lifestyle",
     "depth_of_field": "shallow",
-    "has_reference_photos": false,
-    "reference_photos_path": "Reference_Assets/Patricia_Osorio/",
-    "location_preferred": "loc_vizos_salon_miami"
+    "has_reference_photos": true,
+    "reference_photos_path": "persons/assets/PO/",
+    "location_preferred": "loc_vizos_salon_miami",
+    "photo_index": {
+      "face_references": [
+        "persons/assets/PO/po_face_3q_left_01_alpha.png",
+        "persons/assets/PO/po_face_3q_right_01_alpha.png",
+        "persons/assets/PO/po_face_3q_right_02_alpha.png",
+        "persons/assets/PO/po_face_back_01_alpha.png",
+        "persons/assets/PO/po_face_closeup_serious_01_alpha.png",
+        "persons/assets/PO/po_face_front_neutral_01_alpha.png",
+        "persons/assets/PO/po_face_front_serious_01_alpha.png",
+        "persons/assets/PO/po_face_front_smiling_01_alpha.png",
+        "persons/assets/PO/po_face_front_smiling_02_alpha.png",
+        "persons/assets/PO/po_face_front_smiling_03_alpha.png",
+        "persons/assets/PO/po_face_front_smiling_04_alpha.png",
+        "persons/assets/PO/po_face_front_smiling_05_alpha.png",
+        "persons/assets/PO/po_face_profile_left_01_alpha.png"
+      ],
+      "hair_salon_showcase": [
+        "persons/assets/PO/po_hair_back_01_alpha.png",
+        "persons/assets/PO/po_hair_back_02_alpha.png",
+        "persons/assets/PO/po_hair_front_01_alpha.png",
+        "persons/assets/PO/po_hair_front_02_alpha.png",
+        "persons/assets/PO/po_hair_front_03_alpha.png",
+        "persons/assets/PO/po_hair_side_01_alpha.png",
+        "persons/assets/PO/po_hair_side_02_alpha.png",
+        "persons/assets/PO/po_hair_side_03_alpha.png",
+        "persons/assets/PO/po_hair_side_04_alpha.png"
+      ],
+      "total_count": 22,
+      "lora_training_ready": true,
+      "alpha_processed": true,
+      "processing_method": "flood-fill from edges, sigma=2.5 feather",
+      "note": "13 face references (frontal, 3/4, profile, closeup) + 9 hair/salon showcase. Suitable for LoRA/TensorArt training."
+    }
   },
-
   "videolab": {
-    "archetype_preference": ["salon_workshop", "single_talking_head"],
+    "archetype_preference": [
+      "salon_workshop",
+      "single_talking_head"
+    ],
     "energy_level": "medium-high",
     "pacing": "profesional con calidez — más directo que modo personal, mismo nivel de autenticidad",
     "color_grade": "warm, golden Miami light, luxury salon ambient",
@@ -41,7 +75,6 @@
       "color_grade_warmth": 0.75
     }
   },
-
   "voicelab": {
     "voice_id": "TBD_po_patricia",
     "voice_platform": "TBD — TensorArt / GPU cloud service (no ElevenLabs). Ver chat C - System_avatars_industrial.",
@@ -55,23 +88,51 @@
         "emotion_base": "authoritative-warm",
         "speed": 0.95,
         "script_style": "consultive-pedagogical",
-        "use_triggers": ["tutorial capilar", "diagnóstico de producto", "contenido Pro/B2B", "landing page Neurone", "explicación técnica", "contenido salón"],
+        "use_triggers": [
+          "tutorial capilar",
+          "diagnóstico de producto",
+          "contenido Pro/B2B",
+          "landing page Neurone",
+          "explicación técnica",
+          "contenido salón"
+        ],
         "rhythm": {
           "pattern": "pausado-didáctico-rítmico",
           "structural_pauses": "silencios estratégicos entre diagnóstico y solución",
-          "burst_triggers": ["explicación técnica", "resultado visible", "proceso de colorimetría"],
-          "pause_triggers": ["momento de impacto", "resultado antes/después", "recomendación importante"]
+          "burst_triggers": [
+            "explicación técnica",
+            "resultado visible",
+            "proceso de colorimetría"
+          ],
+          "pause_triggers": [
+            "momento de impacto",
+            "resultado antes/después",
+            "recomendación importante"
+          ]
         },
         "register": "experta cálida — autoridad sin distancia, luxury sin frialdad",
-        "order_connectors": ["Lo primero", "segundo paso", "adicional", "finalmente", "y por último"],
-        "validation_phrases": ["¿Estamos de acuerdo, cierto?", "¿me entiendes?", "¿sí o no?"],
+        "order_connectors": [
+          "Lo primero",
+          "segundo paso",
+          "adicional",
+          "finalmente",
+          "y por último"
+        ],
+        "validation_phrases": [
+          "¿Estamos de acuerdo, cierto?",
+          "¿me entiendes?",
+          "¿sí o no?"
+        ],
         "spanglish_ratio": "5-10%_industria_beauty",
         "spanglish_pattern": "términos de industria beauty en inglés insertados naturalmente (balayage, highlights, toning, gloss, leave-in conditioner)",
         "speaking_style": "LUXURY_EXPERT — didáctica, explica el proceso con orgullo técnico. Calor humano que no sacrifica autoridad. El salón es su territorio.",
         "exclusions": [
-          "español neutro corporativo", "energía artificial de vendedora",
-          "usted", "promesas absolutas de resultado",
-          "vulnerabilidad o agotamiento (modo v1.0)", "hipérboles emocionales"
+          "español neutro corporativo",
+          "energía artificial de vendedora",
+          "usted",
+          "promesas absolutas de resultado",
+          "vulnerabilidad o agotamiento (modo v1.0)",
+          "hipérboles emocionales"
         ]
       },
       "v1_0": {
@@ -79,13 +140,16 @@
         "source_audio": "Biscayne_Blvd_6.m4a",
         "emotion_base": "conversational-vulnerable",
         "speed": 0.95,
-        "use_triggers": ["behind-the-scenes del salón", "contenido de día a día", "conexión humana con audiencia"],
+        "use_triggers": [
+          "behind-the-scenes del salón",
+          "contenido de día a día",
+          "conexión humana con audiencia"
+        ],
         "speaking_style": "AUTHORITY_EDU v1 — circular, vulnerabilidad como herramienta de conexión"
       }
     },
     "blend_note": "Algunos contenidos combinan ambos: apertura empática v1.0 + desarrollo técnico v2.0 + cierre cálido v1.0."
   },
-
   "humanize": {
     "image": {
       "grain_level": 0.2,
@@ -111,7 +175,6 @@
       "color_grade_warmth": 0.75
     }
   },
-
   "created": "2026-03-06",
   "last_updated": "2026-03-07",
   "version_notes": "v1.0 — generado desde análisis de audio Biscayne_Blvd_6.m4a + conocimiento personal de Sam. PENDIENTE: nueva muestra de audio en modo profesional activo (~3 min) para calibrar voicelab con mayor precisión. Audio actual refleja modo personal-íntimo, no modo salón."

@@ -15,7 +15,6 @@
     "studio_setup",
     "street_interview"
   ],
-
   "imagelab": {
     "description": "Mujer latina profesional, 35-45 años, look más relajado que en modo salón — mismo nivel de cuidado personal pero contexto más casual. Entornos urbanos Miami, eventos, networking.",
     "style": "candid lifestyle, Miami urban, warm tones, authentic community vibe",
@@ -24,12 +23,47 @@
     "film_look": "digital_warm",
     "lens_preset": "35mm_street",
     "depth_of_field": "medium",
-    "has_reference_photos": false,
-    "reference_photos_path": "Reference_Assets/Patricia_Osorio/"
+    "has_reference_photos": true,
+    "reference_photos_path": "persons/assets/PO/",
+    "photo_index": {
+      "face_references": [
+        "persons/assets/PO/po_face_3q_left_01_alpha.png",
+        "persons/assets/PO/po_face_3q_right_01_alpha.png",
+        "persons/assets/PO/po_face_3q_right_02_alpha.png",
+        "persons/assets/PO/po_face_back_01_alpha.png",
+        "persons/assets/PO/po_face_closeup_serious_01_alpha.png",
+        "persons/assets/PO/po_face_front_neutral_01_alpha.png",
+        "persons/assets/PO/po_face_front_serious_01_alpha.png",
+        "persons/assets/PO/po_face_front_smiling_01_alpha.png",
+        "persons/assets/PO/po_face_front_smiling_02_alpha.png",
+        "persons/assets/PO/po_face_front_smiling_03_alpha.png",
+        "persons/assets/PO/po_face_front_smiling_04_alpha.png",
+        "persons/assets/PO/po_face_front_smiling_05_alpha.png",
+        "persons/assets/PO/po_face_profile_left_01_alpha.png"
+      ],
+      "hair_salon_showcase": [
+        "persons/assets/PO/po_hair_back_01_alpha.png",
+        "persons/assets/PO/po_hair_back_02_alpha.png",
+        "persons/assets/PO/po_hair_front_01_alpha.png",
+        "persons/assets/PO/po_hair_front_02_alpha.png",
+        "persons/assets/PO/po_hair_front_03_alpha.png",
+        "persons/assets/PO/po_hair_side_01_alpha.png",
+        "persons/assets/PO/po_hair_side_02_alpha.png",
+        "persons/assets/PO/po_hair_side_03_alpha.png",
+        "persons/assets/PO/po_hair_side_04_alpha.png"
+      ],
+      "total_count": 22,
+      "lora_training_ready": true,
+      "alpha_processed": true,
+      "processing_method": "flood-fill from edges, sigma=2.5 feather",
+      "note": "13 face references (frontal, 3/4, profile, closeup) + 9 hair/salon showcase. Suitable for LoRA/TensorArt training."
+    }
   },
-
   "videolab": {
-    "archetype_preference": ["single_talking_head", "event_stage"],
+    "archetype_preference": [
+      "single_talking_head",
+      "event_stage"
+    ],
     "energy_level": "variable — puede ser alta en eventos, íntima en contenido uno a uno",
     "pacing": "orgánico — el más libre de los tres modos, sin estructura predefinida",
     "color_grade": "warm, golden Miami light, candid energy",
@@ -41,7 +75,6 @@
       "color_grade_warmth": 0.65
     }
   },
-
   "voicelab": {
     "voice_id": "TBD_po_patricia",
     "voice_platform": "TBD — TensorArt / GPU cloud service (no ElevenLabs). Ver chat C - System_avatars_industrial.",
@@ -55,19 +88,57 @@
         "emotion_base": "conversational-vulnerable",
         "speed": 0.95,
         "script_style": "circular-confesional",
-        "use_triggers": ["comunidad", "emprendimiento personal", "behind-the-scenes", "contenido de conexión humana", "posts de conexión emocional"],
+        "use_triggers": [
+          "comunidad",
+          "emprendimiento personal",
+          "behind-the-scenes",
+          "contenido de conexión humana",
+          "posts de conexión emocional"
+        ],
         "rhythm": {
           "pattern": "espasmódico-emocional — igual que modo personal pero con momentos de energía alta en temas de comunidad y logro",
-          "burst_triggers": ["logros comunitarios", "superación de obstáculos", "solidaridad latina"],
-          "pause_triggers": ["reflexión profunda", "momento de gratitud", "reconocimiento de dificultad"]
+          "burst_triggers": [
+            "logros comunitarios",
+            "superación de obstáculos",
+            "solidaridad latina"
+          ],
+          "pause_triggers": [
+            "reflexión profunda",
+            "momento de gratitud",
+            "reconocimiento de dificultad"
+          ]
         },
         "register": "íntimo-comunitario — habla como una más del grupo, no como líder distante",
-        "affective_markers": ["mi gente", "las que estamos aquí", "entre nosotras"],
+        "affective_markers": [
+          "mi gente",
+          "las que estamos aquí",
+          "entre nosotras"
+        ],
         "spanglish_ratio": "15-20%",
-        "openers": ["Bueno...", "Mira...", "La verdad es que...", "Hoy quiero hablarles de algo que..."],
-        "regionalisms_colombia": ["Qué va", "Se me atravesó algo", "Dios te pague"],
-        "forbidden_openers": ["Hola a todos", "Bienvenidos a mi canal", "En un mundo donde", "hoy te traigo", "contenido de valor"],
-        "forbidden_patterns": ["coach motivacional", "moraleja empaquetada al final", "falsa energía de emprendedora exitosa", "historia con arco perfecto de problema-solución-éxito"],
+        "openers": [
+          "Bueno...",
+          "Mira...",
+          "La verdad es que...",
+          "Hoy quiero hablarles de algo que..."
+        ],
+        "regionalisms_colombia": [
+          "Qué va",
+          "Se me atravesó algo",
+          "Dios te pague"
+        ],
+        "forbidden_openers": [
+          "Hola a todos",
+          "Bienvenidos a mi canal",
+          "En un mundo donde",
+          "hoy te traigo",
+          "contenido de valor"
+        ],
+        "forbidden_patterns": [
+          "coach motivacional",
+          "moraleja empaquetada al final",
+          "falsa energía de emprendedora exitosa",
+          "historia con arco perfecto de problema-solución-éxito"
+        ],
         "speaking_style": "AUTHENTIC_COMMUNITY — circular, vulnerabilidad abierta sin agenda, Spanglish natural Miami. No vende. Conecta desde la experiencia compartida."
       },
       "v2_0": {
@@ -75,13 +146,16 @@
         "source_audio": "NE_135th_St_2.m4a",
         "emotion_base": "authoritative",
         "speed": 0.95,
-        "use_triggers": ["contenido educativo para comunidad", "talleres o workshops", "explicaciones técnicas en contexto comunitario"],
+        "use_triggers": [
+          "contenido educativo para comunidad",
+          "talleres o workshops",
+          "explicaciones técnicas en contexto comunitario"
+        ],
         "speaking_style": "AUTHORITY_EDU v2 — estructura pedagógica aplicada al contexto de comunidad latina"
       }
     },
     "blend_note": "Para contenido de comunidad con componente educativo: apertura empática v1.0 + sección técnica v2.0 + cierre comunitario v1.0."
   },
-
   "humanize": {
     "image": {
       "grain_level": 0.5,
@@ -107,7 +181,6 @@
       "color_grade_warmth": 0.65
     }
   },
-
   "created": "2026-03-06",
   "last_updated": "2026-03-07",
   "version_notes": "v1.0 — generado desde análisis de audio Biscayne_Blvd_6.m4a + conocimiento personal de Sam. Este modo es el más cercano al audio de referencia — PO en estado conversacional sin preparación de presentación formal."
