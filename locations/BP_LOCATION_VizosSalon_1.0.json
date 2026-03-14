@@ -1,0 +1,218 @@
+{
+  "schema": "BP_LOCATION_1.0",
+  "location_id": "VZSSALON_001",
+  "name": "Vizos Salon — Entorno",
+  "display_name": "Vizos Salón Miami — Strip Mall & Neighborhood Context",
+  "version": "1.0",
+  "created": "2026-03-14",
+  "status": "active",
+  "lab_compat": ["ImageLab", "VideoLab", "CopyLab", "WebLab"],
+
+  "geo": {
+    "city": "Miami",
+    "state": "FL",
+    "country": "US",
+    "market": "Miami-Dade / South Miami",
+    "address_range": "12949–12955 SW area, South Miami",
+    "primary_zone": "Strip mall comercial suburbano South Florida — bulevar con palmeras, negocios locales, cielo Florida"
+  },
+
+  "zones": [
+    {
+      "zone_id": "VSS_Z1",
+      "zone_name": "Fachada del Local — Exterior Vizos",
+      "description": "El strip mall donde opera Vizos Salón. Fachada marrón oscuro con toldilla. Letreros visibles: 'Yod Threading Spa / The Eyebrow Place', 'Alex Chiong Tattoo Studio', 'Emma & Lorenzo Trattoria'. Vitrinas con vinil de servicios (BROWS, NAILS, HAIR, WAXING). Estética comercial típica de strip mall South Florida. Cielo azul intenso, luz de mediodía. Parking en primer plano.",
+      "subtype": "commercial_strip_exterior",
+
+      "landmarks_visible": [
+        "Yod Threading Spa — The Eyebrow Place (12951)",
+        "Alex Chiong Tattoo Studio (12949)",
+        "Emma & Lorenzo Trattoria (left anchor)",
+        "Edificio de oficinas 12955 (adyacente)",
+        "Vitrinas con servicios: BROWS · NAILS · HAIR · WAXING",
+        "Parking con espacio de accesibilidad"
+      ],
+
+      "lighting": {
+        "natural": {
+          "midday": {
+            "quality": "luz directa dura, cielo azul despejado Florida",
+            "color_temp": "5600–6000K",
+            "notes": "Las tomas son de mediodía con sol alto. Sombras cortas bajo la toldilla. Fachada oscura del strip absorbe luz y da contraste con el cielo."
+          }
+        }
+      },
+
+      "color_palette": {
+        "dominant": ["#3D2B1F (fachada marrón oscuro strip)", "#87CEEB (cielo Florida azul)", "#F0F0F0 (concreto parking)", "#FFFFFF (marcos de vidrio)"],
+        "accent": ["#FF69B4 (letrero Yod rosa neón)", "#FFFFFF (letrero Alex Chiong)", "#CC0000 (letrero Emma & Lorenzo rojo)"],
+        "mood_tags": ["comercial local", "South Florida vibes", "barrio de servicios", "cotidiano auténtico", "Miami suburbano"]
+      },
+
+      "visual_references": [
+        {
+          "ref_id": "Z1_001",
+          "source_file": "locations/assets/VizosSalon/vs_exterior_wide_01.jpeg",
+          "description": "Vista completa del strip mall: toldilla marrón oscura, tres negocios visibles (trattoria, threading spa, tattoo studio). Parking vacío en primer plano. Cielo azul intenso. Árbol a la derecha. Ángulo amplio desde la acera.",
+          "orientation": "landscape",
+          "best_use": ["establishing shot de negocio local", "contexto real del salón", "contenido 'detrás del salón'", "social content de comunidad local"]
+        },
+        {
+          "ref_id": "Z1_002",
+          "source_file": "locations/assets/VizosSalon/vs_exterior_facade_01.jpeg",
+          "description": "Zoom en fachada: letrero 'Yod Threading Spa / The Eyebrow Place' en rosa cursiva y 'Alex Chiong Tattoo' prominente. Vitrinas con vinil de servicios. Número 12951 visible. Sin toldilla completa — más plano.",
+          "orientation": "landscape",
+          "best_use": ["detalle de vecindario del salón", "contexto de strip comercial activo"]
+        },
+        {
+          "ref_id": "Z1_003",
+          "source_file": "locations/assets/VizosSalon/vs_exterior_facade_02.jpeg",
+          "description": "Vista idéntica a Z1_001 pero ángulo ligeramente diferente — más espacio en el parking izquierdo, sin coche negro. Mejor composición para overlay de texto.",
+          "orientation": "landscape",
+          "best_use": ["fondo para copy de localización", "geo-anchor visual del negocio"]
+        },
+        {
+          "ref_id": "Z1_004",
+          "source_file": "locations/assets/VizosSalon/vs_exterior_facade_03.jpeg",
+          "description": "Similar a Z1_002 — primer plano de la fachada del strip con los tres negocios. Leve cambio en el ángulo.",
+          "orientation": "landscape",
+          "best_use": ["variante de Z1_002 para A/B en contenido"]
+        }
+      ]
+    },
+
+    {
+      "zone_id": "VSS_Z2",
+      "zone_name": "Bulevar y Entorno Inmediato",
+      "description": "El bulevar frente al salón: avenida ancha de South Florida con acera de ladrillo rojo, carril bici, palmeras reales en la mediana y en los márgenes, semáforos. Enfrente: McDonald's moderno con palmeras alrededor. A la derecha: edificio de oficinas 12955 (blanco, estilo años 70, parking cubierto bajo el edificio). El carácter visual es 100% suburban South Florida — palmeras, asfalto, bajo nivel de densidad, cielo azul.",
+      "subtype": "suburban_boulevard_south_florida",
+
+      "landmarks_visible": [
+        "McDonald's enfrente (con palmeras)",
+        "Edificio de oficinas 12955 (blanco, pilotes, 4 plantas)",
+        "Acera de ladrillo rojo — característica de corredores comerciales de Miami-Dade",
+        "Palmeras reales en mediana y bordes",
+        "Bandera de señalización TATTOO (pendón rojo oscuro)",
+        "Postes de luz clásicos de bulevar"
+      ],
+
+      "color_palette": {
+        "dominant": ["#87CEEB (cielo Florida)", "#4A7C59 (palmeras verdes)", "#F5F0E8 (fachada edificio 12955)", "#8B4513 (acera ladrillo rojo)"],
+        "accent": ["#FFCC00 (arcos McDonald's)", "#A0AEC0 (asfalto)"],
+        "mood_tags": ["suburban Florida", "bulevar comercial", "auténtico barrio de servicios", "lifestyle cotidiano Miami"]
+      },
+
+      "visual_references": [
+        {
+          "ref_id": "Z2_001",
+          "source_file": "locations/assets/VizosSalon/vs_context_street_01.jpeg",
+          "description": "Vista del bulevar desde la acera del salón mirando al frente: McDonald's y palmeras al fondo, señal TATTOO pendón a la derecha, edificio 12955. Muy típico South Florida commercial boulevard. Acera de ladrillo en primer plano.",
+          "orientation": "landscape",
+          "best_use": ["establishing shot barrio", "b-roll de contexto 'estamos en Miami'", "contenido de negocio local auténtico"]
+        },
+        {
+          "ref_id": "Z2_002",
+          "source_file": "locations/assets/VizosSalon/vs_context_boulevard_01.jpeg",
+          "description": "Vista lateral del bulevar con palmeras en perspectiva: McDonald's a la izquierda, edificio 12955 a la derecha, acera ladrillo rojo y carril bici. Sensación de corredor comercial suburban Miami.",
+          "orientation": "landscape",
+          "best_use": ["perspectiva del bulevar", "b-roll de llegada al negocio"]
+        },
+        {
+          "ref_id": "Z2_003",
+          "source_file": "locations/assets/VizosSalon/vs_context_building_01.jpeg",
+          "description": "Edificio de oficinas 12955: fachada blanca con pilastras verticales, planta baja en pilotes con parking. Árbol en primer plano. Señal TATTOO pendón izquierda. Cielo azul. Arquitectura comercial 1970s Florida.",
+          "orientation": "landscape",
+          "best_use": ["contexto edificio de oficinas adyacente", "referencia de zona de clientes profesionales"]
+        },
+        {
+          "ref_id": "Z2_004",
+          "source_file": "locations/assets/VizosSalon/vs_context_building_02.jpeg",
+          "description": "Edificio 12955 desde ángulo opuesto: se ve la Trattoria en el strip a la derecha. Árbol frondoso a la izquierda. Vista más amplia del conjunto strip + edificio.",
+          "orientation": "landscape",
+          "best_use": ["establishing shot completo del bloque comercial", "contexto inmobiliario del área"]
+        }
+      ]
+    },
+
+    {
+      "zone_id": "VSS_Z3",
+      "zone_name": "Contexto McDonald's / Cruce de Bulevar",
+      "description": "El McDonald's moderno frente al salón con palmeras altas rodeándolo. Mediana verde con agaves y arbustos bajos. Vista desde la acera del salón. Dos variantes: desde el suelo y con tráfico de carro en primer plano. Cielo azul con nubes esponjosas típicas de Florida. El contexto de 'cruce de bulevar activo' da escala al entorno.",
+      "subtype": "boulevard_crossing_context",
+
+      "visual_references": [
+        {
+          "ref_id": "Z3_001",
+          "source_file": "locations/assets/VizosSalon/vs_context_street_01.jpeg",
+          "description": "McDonald's desde la acera: palmas altas, mediana con agaves, cielo con nubes. Vista tranquila sin tráfico.",
+          "orientation": "landscape",
+          "best_use": ["fondo neutro South Florida suburban", "contexto de actividad comercial sin protagonismo"]
+        }
+      ]
+    }
+  ],
+
+  "reference_photos": {
+    "path": "locations/assets/VizosSalon/",
+    "total": 8,
+    "files": [
+      "vs_exterior_wide_01.jpeg",
+      "vs_exterior_facade_01.jpeg",
+      "vs_exterior_facade_02.jpeg",
+      "vs_exterior_facade_03.jpeg",
+      "vs_context_street_01.jpeg",
+      "vs_context_building_01.jpeg",
+      "vs_context_boulevard_01.jpeg",
+      "vs_context_building_02.jpeg"
+    ],
+    "alpha_processed": false,
+    "note": "Fotos de locación/ambiente — alpha removal no aplica. Se usan como referencias de escena para composición o como fondos directos."
+  },
+
+  "meta_tags": [
+    "vizos_salon", "south_miami", "miami_dade", "strip_mall",
+    "suburban_florida", "commercial_boulevard", "palm_trees",
+    "south_florida_vibes", "salon_context", "po_patricia",
+    "neurone_cosmetics_compatible", "vizos_compatible",
+    "b2b_professional_context", "local_business"
+  ],
+
+  "brand_compatibility": {
+    "vizos_salon": {
+      "zones": ["VSS_Z1", "VSS_Z2"],
+      "recommended_use": "Establece el contexto real del negocio — útil para contenido de 'detrás del salón', geo-tagging, stories de 'estamos aquí', y material de PO en su entorno laboral.",
+      "copy_anchors": [
+        "Tu salón de cabello en South Florida",
+        "Donde los profesionales trabajan",
+        "South & Central Miami — esto es lo nuestro",
+        "El vecindario que nos eligió"
+      ]
+    },
+    "neurone_cosmetics": {
+      "zones": ["VSS_Z1"],
+      "recommended_use": "Contexto distribuidor — establece que Neurone opera en esta zona de Miami. Útil para contenido B2B de distribución y presencia de marca.",
+      "copy_anchors": [
+        "Distribución exclusiva South & Central Florida",
+        "Donde los salones top de Miami se abastecen"
+      ]
+    },
+    "po_patricia_personal": {
+      "zones": ["VSS_Z1", "VSS_Z2"],
+      "recommended_use": "Entorno real de PO — composiciones ImageLab con PO de pie frente al salón o en el bulevar.",
+      "suggested_compositions": [
+        "PO (alpha) + fachada salón (vs_exterior_wide_01) — presentación del espacio",
+        "PO (alpha) + bulevar palmas (vs_context_boulevard_01) — lifestyle local",
+        "PO (alpha) + edificio 12955 (vs_context_building_01) — contexto profesional"
+      ]
+    }
+  },
+
+  "shooting_context": {
+    "collection_date": "2026-03-04",
+    "collection_type": "exterior walkabout",
+    "time_of_day": "midday — aprox. 3:46 PM",
+    "weather": "despejado, cielo azul Florida, nubes cúmulo esporádicas",
+    "equipment": "smartphone (WhatsApp source)",
+    "notes": "Tomas en mano desde la acera y el parking. Luz de tarde-mediodía directa. Sin tripié. Útil para composición directa o como referencias de escena. No requieren recorte de fondo."
+  }
+}
