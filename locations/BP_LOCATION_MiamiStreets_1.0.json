@@ -79,83 +79,104 @@
       "visual_references": [
         {
           "ref_id": "Z1_001",
-          "source_file": "IMG_0957.jpeg",
-          "description": "Bajo viaducto de I-95: múltiples niveles de rampas de hormigón sobre la autopista. Señal verde 'Overtown / Historic Village' visible a la derecha. Cielo azul entre las estructuras. Vista desde el interior del carro.",
+          "source_file": "IMG_0988.jpeg",
+          "description": "Bajo múltiples viaductos de I-95: hormigón estratificado en capas, rampas superpuestas. Señal verde 'Overtown / Historic Village' al fondo derecha. Vista desde el interior del carro, cielo azul entre las estructuras.",
           "time_of_day": "midday",
           "orientation": "vertical",
           "best_use": [
-            "motion content",
-            "intro de contenido urbano Miami",
-            "b-roll dinámico"
-          ]
+            "b-roll infraestructura urbana",
+            "intro contenido Miami underground",
+            "textura arquitectónica industrial"
+          ],
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_overtown_viaduct_01.jpeg"
         },
         {
           "ref_id": "Z1_002",
-          "source_file": "IMG_0959.jpeg",
-          "description": "I-95 acercándose a Downtown: skyline completo al fondo izquierda (edificios en construcción). Tesla blanco y camión en la vía. Cielo azul despejado.",
+          "source_file": "IMG_0991.jpeg",
+          "description": "I-95 aproximándose a Downtown Brickell: skyline completo con múltiples torres y grúas de construcción. Cielo azul despejado. Tesla blanco + camión en la vía. Perspectiva de llegada a la ciudad.",
           "time_of_day": "midday",
           "orientation": "vertical",
           "best_use": [
-            "establishing shot ciudad moderna",
-            "fondo para claims de presencia en Miami"
-          ]
+            "establishing shot ciudad en expansión",
+            "claims de presencia Miami",
+            "fondo para contenido aspiracional"
+          ],
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_brickell_skyline_approach_01.jpeg"
         },
         {
           "ref_id": "Z1_003",
           "source_file": "IMG_0965.jpeg",
-          "description": "Vista desde highway: señales verdes 'Miami Ave / Downtown', 'Biscayne Blvd', '95 South / SW 7th St / Brickell Ave'. Skyline a ambos lados. Muy identificable como Miami central.",
+          "description": "Bifurcación icónica de I-95: señales verdes 'I-95 South / Downtown' + 'Miami Beach / Airport'. Infraestructura de rampas múltiples. Cielo azul con nubes. El cruce que define el sur de la Florida.",
           "time_of_day": "midday",
           "orientation": "vertical",
           "best_use": [
-            "establishing shot con texto de ciudad legible",
-            "geo-tag visual",
-            "contexto Miami B2B"
-          ]
+            "señalética urbana identificadora",
+            "destino Miami Beach",
+            "motion content dirección downtown"
+          ],
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_downtown_miamibeach_split_01.jpeg"
         },
         {
           "ref_id": "Z1_004",
           "source_file": "IMG_0966.jpeg",
-          "description": "Highway vacío con skyline incipiente al fondo. Tesla blanco modelo 3 y pickup. Nubes dispersas sobre azul.",
+          "description": "Paso bajo el Metromover azul elevado sobre I-95. Vista close-up de la estructura azul metálica. Cielo y skyline visible al fondo entre los pilares. Textura urbana intensa.",
           "time_of_day": "midday",
-          "orientation": "vertical"
+          "orientation": "vertical",
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_metromover_underpass_01.jpeg",
+          "best_use": [
+            "textura urbana industrial",
+            "Metromover como elemento gráfico",
+            "b-roll dinámico Miami"
+          ]
         },
         {
           "ref_id": "Z1_005",
           "source_file": "IMG_0982.jpeg",
-          "description": "Brickell/Downtown desde highway: múltiples torres de lujo (>30 pisos) y grúas de construcción. Metromover azul elevado en plano medio. Cielo azul intenso.",
+          "description": "I-95 con skyline Brickell/Downtown al fondo: múltiples rampas y viaductos en primer plano. Carro azul en vía. Vista panorámica de la infraestructura + ciudad. Cielo azul con pocas nubes.",
           "time_of_day": "midday",
           "orientation": "vertical",
           "best_use": [
-            "Brickell como símbolo de crecimiento y poder económico",
-            "contexto Neurone B2B",
-            "Vizos presencia institucional"
-          ]
+            "establishing shot ciudad moderna",
+            "infraestructura + skyline simultáneos",
+            "poder urbano Miami"
+          ],
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_skyline_ramps_wide_01.jpeg"
         },
         {
           "ref_id": "Z1_006",
           "source_file": "IMG_0986.jpeg",
-          "description": "Similar al anterior. Mano con anillo visible en esquina (reflejo en vidrio). Mismo tramo de Brickell desde highway.",
+          "description": "I-95 con señales 'Exit 3B / NW 8th St / Stadium / Arena / Next Right' + 'I-95 South'. Múltiples rampas superpuestas al fondo. Infraestructura compleja. Señalética verde iconic de Miami highways.",
           "time_of_day": "midday",
           "orientation": "vertical",
-          "note": "Mano con anillo visible — excluir si se usa como fondo limpio"
+          "note": "Mano con anillo visible — excluir si se usa como fondo limpio",
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_stadium_arena_exit_01.jpeg",
+          "best_use": [
+            "señalética highway urbana",
+            "referencia cultural Stadium/Arena Miami",
+            "b-roll infraestructura"
+          ]
         },
         {
           "ref_id": "Z1_007",
-          "source_file": "IMG_0988.jpeg",
-          "description": "Highway con billboard publicitario visible (azul, parcialmente legible). Grúas y torres en construcción al fondo. Nubes dramáticas.",
+          "source_file": "IMG_0982.jpeg",
+          "description": "Ver Z1_005 — mismo asset, ángulo complementario.",
           "time_of_day": "midday",
           "orientation": "vertical",
           "best_use": [
-            "referencia de entorno OOH/billboard",
-            "contenido sobre presencia de marca en ciudad"
-          ]
+            "ver Z1_005"
+          ],
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_skyline_ramps_wide_01.jpeg"
         },
         {
           "ref_id": "Z1_008",
           "source_file": "IMG_0991.jpeg",
-          "description": "Highway hacia norte con skyline disperso a la derecha. Nubes cúmulo voluminosas. Señal verde de salida visible. Tráfico ligero.",
+          "description": "Ver Z1_002 — mismo tramo I-95, ángulo complementario skyline Brickell.",
           "time_of_day": "midday",
-          "orientation": "vertical"
+          "orientation": "vertical",
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_brickell_skyline_approach_01.jpeg",
+          "best_use": [
+            "ver Z1_002"
+          ]
         },
         {
           "ref_id": "Z1_009",
@@ -172,13 +193,15 @@
         {
           "ref_id": "Z1_010",
           "source_file": "IMG_0996.jpeg",
-          "description": "Carretera elevada con señales 'I-95 South/Downtown' y split hacia 'East Miami Beach / West Airport'. Infraestructura multi-nivel. Camión en vía.",
+          "description": "I-95 con cluster de señales: 'Miami Ave / Downtown', 'Biscayne Blvd / Key Biscayne', 'I-95 South', 'SW 7th St / Brickell Ave'. Skyline al fondo. La señalética más completa del corredor I-95.",
           "time_of_day": "midday",
           "orientation": "vertical",
           "best_use": [
-            "Miami Beach vs mainland — narrativa geográfica",
-            "opening de serie de contenido"
-          ]
+            "señalética completa I-95 corridor",
+            "Brickell + Downtown + Biscayne simultáneos",
+            "establishing Miami market"
+          ],
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_biscayne_brickell_exits_01.jpeg"
         },
         {
           "ref_id": "Z1_011",
@@ -463,13 +486,16 @@
         },
         {
           "ref_id": "Z3_006",
-          "source_file": "IMG_1013_marina.jpeg",
-          "description": "Misma marina desde ángulo más abierto. Rack de botes visible, palmeras altas, edificio blanco de fondo, jardinería. Césped bien mantenido. Más composición de parque que marina.",
+          "source_file": "IMG_0957.jpeg",
+          "description": "Marina Coconut Grove: rack de almacenamiento en seco de botes, múltiples niveles. Vegetación tropical. Vista frontal de la estructura metálica. Textura náutica y aire lifestyle South FL.",
           "time_of_day": "midday",
           "orientation": "vertical",
           "best_use": [
-            "establishing shot lifestyle premium Miami waterfront"
-          ]
+            "contexto náutico Miami",
+            "lifestyle coastal South Florida",
+            "fondo para productos premium"
+          ],
+          "asset_path": "locations/assets/MiamiStreets/ms_coconutgrove_marina_drystorage_01.jpeg"
         },
         {
           "ref_id": "Z3_007",
@@ -482,6 +508,19 @@
             "contexto barrio premium en construcción",
             "Coconut Grove como zona en evolución",
             "establishing shot para contenido aspiracional"
+          ]
+        },
+        {
+          "ref_id": "Z3_008",
+          "source_file": "IMG_0959.jpeg",
+          "asset_path": "locations/assets/MiamiStreets/ms_coconutgrove_marina_drystorage_02.jpeg",
+          "description": "Marina Coconut Grove, segundo ángulo: rack de botes en seco con palmeras reales y edificio residencial al fondo. Césped verde. Vista más abierta que Z3_006.",
+          "time_of_day": "midday",
+          "orientation": "vertical",
+          "best_use": [
+            "marina lifestyle amplio",
+            "Coconut Grove náutico",
+            "fondo para producto con vegetación tropical"
           ]
         }
       ],
@@ -499,6 +538,88 @@
         "permit_required": false,
         "crowd_level": "bajo entre semana, moderado fin de semana"
       }
+    },
+    {
+      "zone_id": "MSTR_Z4",
+      "zone_name": "Residential — Coconut Grove / Coral Gables Neighborhoods",
+      "description": "Calles residenciales de Coconut Grove y límite con Coral Gables. Casas de estilo mediterráneo y moderno, céspedes cuidados, banquetas limpias. Ambiente tranquilo, clase media-alta a alta. Lejos del highway — Miami cotidiano y real.",
+      "subtype": "residential_upscale",
+      "landmarks_visible": [
+        "Casas unifamiliares estilo moderno/mediterráneo",
+        "Medianas arboladas con señal Keep Off Median",
+        "Edificio moderno glass corner (transición Grove→Brickell)",
+        "Carros premium estacionados (Porsche Cayenne, Model Y)"
+      ],
+      "lighting": {
+        "natural": {
+          "afternoon": {
+            "quality": "suave, cielo azul parcialmente nublado, sombras largas de árboles",
+            "color_temp": "5000–5500K",
+            "notes": "Vegetación filtra la luz — suave y difusa en la calle."
+          }
+        }
+      },
+      "color_palette": {
+        "dominant": [
+          "#FFFFFF (fachadas blancas)",
+          "#4CAF50 (césped)",
+          "#87CEEB (cielo Florida)",
+          "#D4C9B8 (banqueta/acera)"
+        ],
+        "accent": [
+          "#2E7D32 (vegetación densa)",
+          "#1565C0 (señales azules)"
+        ],
+        "mood_tags": [
+          "residencial",
+          "tranquilo",
+          "Miami real",
+          "clase media-alta",
+          "Grove",
+          "Coral Gables"
+        ]
+      },
+      "visual_references": [
+        {
+          "ref_id": "Z4_001",
+          "source_file": "IMG_0948.jpeg",
+          "asset_path": "locations/assets/MiamiStreets/ms_residential_suburban_houses_01.jpeg",
+          "description": "Calle residencial Coconut Grove: casas blancas unifamiliares con césped cuidado. Porsche Cayenne blanco + Tesla negro estacionados. Sol de tarde, cielo azul con nubes. Espejo retrovisor visible en esquina inferior derecha.",
+          "time_of_day": "afternoon",
+          "orientation": "vertical",
+          "best_use": [
+            "contexto vecindario Miami real",
+            "lifestyle aspiracional sin lujo excesivo",
+            "fondo neutro para producto familiar"
+          ]
+        },
+        {
+          "ref_id": "Z4_002",
+          "source_file": "IMG_0950.jpeg",
+          "asset_path": "locations/assets/MiamiStreets/ms_residential_median_park_01.jpeg",
+          "description": "Mediana arbolada con señal 'Keep Off Median'. Árboles tropicales de follaje otoñal (marrón-dorado). Banqueta limpia, contenedor azul. Casas mediterráneas al fondo. Cielo azul intenso, sin nubes.",
+          "time_of_day": "midday",
+          "orientation": "vertical",
+          "best_use": [
+            "textura barrio tranquilo",
+            "verde urbano Miami",
+            "fondo para copy de bienestar o lifestyle"
+          ]
+        },
+        {
+          "ref_id": "Z4_003",
+          "source_file": "IMG_0952.jpeg",
+          "asset_path": "locations/assets/MiamiStreets/ms_residential_modern_corner_01.jpeg",
+          "description": "Esquina con edificio moderno de vidrio (posiblemente Coconut Grove/Edgewater límite). Fachada glass reflectante + base de hormigón. Rotonda con césped y árbol. Calle vacía, cielo luminoso.",
+          "time_of_day": "midday",
+          "orientation": "vertical",
+          "best_use": [
+            "transición barrio a ciudad",
+            "arquitectura moderna Miami",
+            "fondo para marca premium urbana"
+          ]
+        }
+      ]
     }
   ],
   "meta_tags": [
@@ -581,5 +702,6 @@
     "note": "Fotos de locación/escena — alpha removal no aplica"
   },
   "last_updated": "2026-03-15",
-  "asset_coverage": "partial — Z1 14/18 assets, Z3 3/7 assets"
+  "asset_coverage": "complete — all refs have asset_path",
+  "total_assets": 28
 }
