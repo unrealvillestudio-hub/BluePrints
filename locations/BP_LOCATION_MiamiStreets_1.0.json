@@ -158,24 +158,28 @@
         },
         {
           "ref_id": "Z1_007",
-          "source_file": "IMG_0982.jpeg",
-          "description": "Ver Z1_005 — mismo asset, ángulo complementario.",
+          "source_file": "IMG_0988.jpeg",
+          "description": "I-95 bajo múltiples niveles de viaductos en construcción: estructura de hormigón en primer plano dominando el frame, señal verde Overtown/Historic Village visible al fondo. Cielo azul entre las estructuras. Escena de infraestructura urbana densa.",
           "time_of_day": "midday",
           "orientation": "vertical",
           "best_use": [
-            "ver Z1_005"
+            "infraestructura urbana dramática",
+            "b-roll I-95 bajo estructura",
+            "contexto ciudad en expansión"
           ],
-          "asset_path": "locations/assets/MiamiStreets/ms_i95_skyline_ramps_wide_01.jpeg"
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_downtown_multilevel_01.jpeg"
         },
         {
           "ref_id": "Z1_008",
-          "source_file": "IMG_0991.jpeg",
-          "description": "Ver Z1_002 — mismo tramo I-95, ángulo complementario skyline Brickell.",
-          "time_of_day": "midday",
+          "source_file": "IMG_0999.jpeg",
+          "description": "I-95 aproximación Brickell con skyline al fondo: Tesla blanco y pickup blanca en carretera, skyline con torre en construcción prominente. Cielo dramático con nubes cúmulo. Luz lateral cálida. Composición limpia con líneas de perspectiva de la autopista.",
+          "time_of_day": "afternoon",
           "orientation": "vertical",
-          "asset_path": "locations/assets/MiamiStreets/ms_i95_brickell_skyline_approach_01.jpeg",
+          "asset_path": "locations/assets/MiamiStreets/ms_i95_brickell_tesla_approach_01.jpeg",
           "best_use": [
-            "ver Z1_002"
+            "establishing shot Miami moderno",
+            "fondo para claims de presencia",
+            "skyline Brickell con movimiento"
           ]
         },
         {
@@ -702,6 +706,6 @@
     "note": "Fotos de locación/escena — alpha removal no aplica"
   },
   "last_updated": "2026-03-15",
-  "asset_coverage": "complete — all refs have asset_path",
+  "asset_coverage": "completo — 30/30 refs con asset_path único",
   "total_assets": 28
 }
