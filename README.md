@@ -1,22 +1,48 @@
-# UNRLVL — BluePrints
+# BluePrints — Unreal>ille Studio
 
-Repositorio de custodia de todos los Blueprints exportados desde **BlueprintLab**.
+Repositorio de custodia de todos los Blueprints y assets del ecosistema Unreal>ille Studio.
 
-Los blueprints son **datos de entrada** del ecosistema UNRLVL Studio — no son outputs ni están atados a ninguna plataforma de destino (Shopify, WordPress, etc.). Son consumidos por cualquier Lab que los necesite: ImageLab para generación de avatares y escenas, VideoLab para storyboards, VoiceLab para calibración de voz, CopyLab para voz de marca, WebLab para contexto de producto, AgentLab para orchestración local.
+**Contexto completo del ecosistema:** [`CoreProject/CONTEXT.md`](https://github.com/unrealvillestudio-hub/CoreProject/blob/main/CONTEXT.md)
+
+---
+
+## Rol en el ecosistema
+
+BluePrints es la **fuente de verdad de assets y datos maestros** del ecosistema. No produce outputs — almacena y versiona los inputs que todos los Labs consumen. Cuando el ecosistema migre a VPS + MySQL, este repo pasará a ser exclusivo de assets binarios (imágenes, logos).
+
+```
+BlueprintLab (crea BPs) ──→ BluePrints/ (custodia) ──→ Todos los Labs
+```
 
 ---
 
 ## Estructura
 
 ```
-BluePrints/
-├── persons/          ← BP_PERSON: voz, tono, compliance, humanize overrides
-│   └── [id].blueprint.json
-├── locations/        ← BP_LOCATION: atributos visuales de locaciones
-│   └── [id].blueprint.json
-└── products/         ← BP_PRODUCT: catálogo por categoría y marca
-    └── [id].blueprint.json
+brands/
+  BP_BRAND_ForumPHs_v1.0.json       ← Identidad Amatista Carbon
+  BP_BRAND_NeuroneSCF_v1.0.json     ← Identidad Neurone
+  assets/
+    ForumPHs/                        ← FPHS_logo_wt.png · FPHS_logo_deep.png
+    NeuroneSCF/
+      brand/                         ← logos (blue/dark/white, aro)
+      products/                      ← 44 product images + dark_versions/ + alpha_dark/
+    VizosCosmetics/                  ← vizos_logo_*.png
+locations/
+  BP_LOCATION_MiamiBeach_1.0.json
+  BP_LOCATION_MiamiStreets_1.0.json
+  BP_LOCATION_VizosSalon_1.0.json
+  assets/[Location]/                 ← fotos de locación
+persons/
+  BP_PERSON_PO_*.json               ← Patricia Osorio (Personal/Comunidad/Salón)
+  assets/PO/                         ← fotos con alpha channel
+products/
+  BP_PRODUCT_Neurone_*.json         ← 39 productos Neurone SCF
+assets/
+  MANIFEST.json                      ← índice de assets con paths canónicos
 ```
+
+**Regla:** Para buscar assets nunca usar paths hardcodeados — consultar `assets/MANIFEST.json`.
 
 ---
 
@@ -24,60 +50,35 @@ BluePrints/
 
 | Schema | Versión | Compatible con |
 |--------|---------|----------------|
+| BP_BRAND | 1.1 | BlueprintLab, WebLab, CoreProject |
 | BP_PERSON | 1.0 | ImageLab, VideoLab, VoiceLab, AgentLab |
-| BP_LOCATION | 1.0 | ImageLab (SceneGenerator), VideoLab |
-| BP_PRODUCT | 1.0 | ImageLab (E-Commerce / UGC), WebLab |
+| BP_LOCATION | 1.0 | ImageLab, VideoLab |
+| BP_PRODUCT | 1.0 | ImageLab, WebLab, AgentLab |
 
 ---
 
-## Flujo de trabajo
+## Marcas con BPs activos
 
-```
-BlueprintLab (AI Studio)
-    ↓ crea, edita, valida
-    ↓ Export tab → JSON
-    ↓
-BluePrints/ (este repo) ← custodia y versioning
-    ↓
-Labs consumen el blueprint pegando el JSON
-manualmente en el panel de cada Lab (fase AI Studio)
-
-FUTURO (VPS + MySQL):
-Labs hacen query directo → BlueprintLab es la UI admin
-Este repo desaparece como necesidad operativa
-```
+| Marca | BP_BRAND | BP_PRODUCT | Assets |
+|-------|----------|------------|--------|
+| ForumPHs | ✅ v1.0 | — | ✅ logos |
+| Neurone SCF | ✅ v1.0 | ✅ 39 productos | ✅ completo |
+| Vizos Cosmetics | — | — | ✅ logos |
+| Patricia Osorio | — | — | ✅ fotos completas |
 
 ---
 
-## Convención de nombres
+## Pendiente
 
-```
-BP_{TIPO}_{Identificador}_{versión}.json
-
-Ejemplos:
-  persons/BP_PERSON_PO_Patricia_1.0.json
-  locations/BP_LOCATION_MiamiBeach_1.0.json
-  products/BP_PRODUCT_Neurone_Colorimetria_1.0.json
-```
+- BP_BRAND para Vizos Cosmetics
+- BP_BRAND para D7Herbal
+- Logos PNG en curvas + alpha para Unreal>ille Studio (Sam pendiente)
 
 ---
 
-## Marcas activas
+## Changelog
 
-| Marca | BrandId | Blueprints disponibles |
-|-------|---------|----------------------|
-| D7Herbal | `D7Herbal` | products (pendiente) |
-| Vivosé Mask | `VivoseMask` | products (pendiente) |
-| Diamond Details | `DiamondDetails` | — |
-| Vizos Cosmetics | `VizosCosmetics` | — |
-| PO Personal | `PatriciaOsorioPersonal` | persons (pendiente export desde BlueprintLab) |
-| PO Comunidad | `PatriciaOsorioComunidad` | persons (pendiente export) |
-| PO Vizos Salón | `PatriciaOsorioVizosSalon` | persons (pendiente export) |
-| Neurone Cosmética | `NeuroneCosmetics` | products (pendiente — llega en fase e-commerce) |
-
-**Locations activas:** Miami Beach, Miami Streets (ver `/locations`)
-
----
-
-*Fuente de verdad en runtime: BlueprintLab (AI Studio) / MySQL (futuro VPS)*
-*Este repo es custodia y versioning — no CDN de datos en runtime*
+| Fecha | Cambio |
+|---|---|
+| 2026-03-20 | Assets reorganizados bajo `brands/assets/[Brand]/` · MANIFEST v1.1 · README actualizado |
+| 2026-03-09 | BP_BRAND_ForumPHs_v1.0 añadido |
