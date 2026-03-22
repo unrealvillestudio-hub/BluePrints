@@ -1,0 +1,164 @@
+{
+  "id": "brand_unrlvl_studio",
+  "schema_version": "BP_BRAND_1.1",
+  "brandId": "UNRLVL",
+  "displayName": "Unreal>ille Studio",
+  "tagline": "Built different.",
+  "created": "2026-03-22",
+  "status": "active",
+  "brand_identity": {
+    "type": "agency_inhouse",
+    "territory": "Miami, FL (operated remotely from Spain/Panama)",
+    "language_primary": "es",
+    "language_secondary": "en",
+    "model": [
+      "B2B_inhouse"
+    ],
+    "audience": "Internal — Sam + PO + operators",
+    "public_facing": false
+  },
+  "logotype": {
+    "format": "css_pure",
+    "implementation": "HTML/CSS only — no image file required",
+    "font_family": "Bebas Neue",
+    "font_source": "https://fonts.googleapis.com/css2?family=Bebas+Neue",
+    "markup": "<span class=\"logotype\"><span class=\"lt-un\">UNREAL</span><span class=\"lt-chevron\">></span><span class=\"lt-ille\">ILLE</span><span class=\"lt-studio\">STUDIO</span></span>",
+    "css_tokens": {
+      "lt-un": "color: var(--chalk, #F2F0EC)",
+      "lt-chevron": "color: var(--cyan, #00FFD1); transform: scaleY(1.45) scaleX(0.72); transform-origin: center; display: inline-block; letter-spacing: 0; margin: 0 -0.01em",
+      "lt-ille": "color: var(--chalk, #F2F0EC)",
+      "lt-studio": "color: rgba(242,240,236,0.42); margin-left: 0.18em"
+    },
+    "sizes": {
+      "nav": "font-size: 20px (lt-studio: 14px)",
+      "footer": "font-size: 28px (lt-studio: 20px)",
+      "inline": "font-size: 16px (lt-studio: 11px)"
+    },
+    "letter_spacing": "0.04em on .logotype wrapper"
+  },
+  "color_palette": {
+    "primary": {
+      "void": {
+        "hex": "#080808",
+        "role": "page background"
+      },
+      "carbon": {
+        "hex": "#0F0F0F",
+        "role": "surface default"
+      },
+      "graphite": {
+        "hex": "#1A1A1A",
+        "role": "surface elevated"
+      }
+    },
+    "text": {
+      "chalk": {
+        "hex": "#F2F0EC",
+        "role": "primary text"
+      },
+      "chalk_72": {
+        "rgba": "rgba(242,240,236,0.72)",
+        "role": "secondary text"
+      },
+      "chalk_42": {
+        "rgba": "rgba(242,240,236,0.42)",
+        "role": "muted / STUDIO label"
+      },
+      "chalk_12": {
+        "rgba": "rgba(242,240,236,0.12)",
+        "role": "borders light"
+      },
+      "chalk_06": {
+        "rgba": "rgba(242,240,236,0.06)",
+        "role": "borders subtle / nav separator"
+      }
+    },
+    "accent": {
+      "cyan": {
+        "hex": "#00FFD1",
+        "role": "primary accent — chevron, CTAs, highlights"
+      },
+      "cyan_20": {
+        "rgba": "rgba(0,255,209,0.20)",
+        "role": "hover states, badge borders"
+      },
+      "cyan_08": {
+        "rgba": "rgba(0,255,209,0.08)",
+        "role": "badge backgrounds, subtle fills"
+      }
+    }
+  },
+  "typography": {
+    "display": {
+      "family": "Bebas Neue",
+      "source": "Google Fonts",
+      "usage": "Logotype, section headers, hero titles"
+    },
+    "mono": {
+      "family": "Space Mono",
+      "weights": [
+        "400",
+        "700"
+      ],
+      "usage": "Labels, metadata, tags, badges, code, nav metadata, footer credits"
+    },
+    "body": {
+      "family": "Libre Baskerville",
+      "weights": [
+        "400 regular",
+        "400 italic"
+      ],
+      "usage": "Long-form body copy, editorial text"
+    },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap"
+  },
+  "document_composition": {
+    "standard_html_doc": {
+      "nav": {
+        "position": "top",
+        "left": "logotype (font-size 20px)",
+        "right": "document title + metadata in Space Mono",
+        "border": "1px solid chalk_06",
+        "bg": "rgba(8,8,8,0.96)"
+      },
+      "footer": {
+        "position": "bottom",
+        "left": "logotype large (font-size 28px) + ICR badge below",
+        "right": "credits block in Space Mono uppercase chalk_42 with cyan highlight",
+        "border_top": "1px solid chalk_06"
+      }
+    },
+    "icr_badge": {
+      "markup": "<span class=\"icr-badge\"><span class=\"icr-dot\"></span>ICR Standard Active</span>",
+      "description": "Animated pulse dot + Space Mono label. Applied to all ICR-compliant document footers."
+    }
+  },
+  "assets": {
+    "favicon": {
+      "file": "UNRLVL_favicon.svg",
+      "status": "pending_creation",
+      "spec": "32x32 SVG — chevron '>' glyph in #00FFD1 on transparent background, Bebas Neue",
+      "path_target": "brands/assets/UnrealilleStudio/UNRLVL_favicon.svg"
+    },
+    "png_assets_note": {
+      "warning": "PNGs in brands/assets/UnrealilleStudio/ (favicon_cyan, logotype_bk, logotype_chrk) do NOT have alpha channel — black background visible. Do NOT embed in HTML documents.",
+      "files": [
+        "UNRLVL_favicon_cyan.png",
+        "UNRLVL_logotype_bk.png",
+        "UNRLVL_logotype_chrk.png"
+      ],
+      "valid_use": "Print, social media, external tools that accept PNG with known background"
+    }
+  },
+  "reference_implementations": [
+    {
+      "file": "docs/reports/neurone_pricing_analysis_v1.html",
+      "repo": "unrealvillestudio-hub/BluePrints",
+      "description": "Standard document — nav + footer composition reference"
+    },
+    {
+      "file": "unrealville-studio_checkpoint_fixed.html",
+      "description": "Website/landing — full UNRLVL brand identity reference"
+    }
+  ]
+}
