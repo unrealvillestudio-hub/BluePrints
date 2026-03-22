@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurone SC Florida — Análisis de Pricing | UNRLVL</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --surface: #111111;
+    --surface2: #181818;
+    --surface3: #222222;
+    --border: #2a2a2a;
+    --border2: #333333;
+    --white: #f0ede8;
+    --white-dim: #9a9690;
+    --white-dimmer: #555550;
+    --cyan: #00b4ad;
+    --cyan-dim: rgba(0,180,173,0.15);
+    --cyan-glow: rgba(0,180,173,0.06);
+    --red: #e05252;
+    --red-dim: rgba(224,82,82,0.12);
+    --amber: #e0a94e;
+    --amber-dim: rgba(224,169,78,0.12);
+    --green: #5abf8a;
+    --green-dim: rgba(90,191,138,0.12);
+    --mono: 'Space Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    border-bottom: 1px solid var(--border);
+    padding: 28px 48px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .header-left { display: flex; flex-direction: column; gap: 6px; }
+  .brand-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--cyan);
+    text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .header h1 span { color: var(--cyan); }
+  .header-meta {
+    font-size: 12px;
+    color: var(--white-dim);
+    font-style: italic;
+  }
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--white-dimmer);
+    white-space: nowrap;
+  }
+  .header-right .date { color: var(--white-dim); }
+
+  /* ── BODY ── */
+  .page { max-width: 1100px; margin: 0 auto; padding: 40px 48px 80px; }
+
+  /* ── EXEC SUMMARY ── */
+  .exec-summary {
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    border-left: 3px solid var(--cyan);
+    padding: 24px 28px;
+    margin-bottom: 48px;
+  }
+  .exec-summary p {
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  .exec-summary strong { color: var(--cyan); font-weight: 600; }
+
+  /* ── SCORECARD ── */
+  .scorecard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-bottom: 48px;
+  }
+  .score-cell {
+    background: var(--surface);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .score-cell .num {
+    font-family: var(--mono);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .score-cell .label {
+    font-size: 11px;
+    color: var(--white-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .score-cell .sub {
+    font-size: 11px;
+    color: var(--white-dimmer);
+    font-style: italic;
+  }
+  .num-cyan { color: var(--cyan); }
+  .num-red { color: var(--red); }
+  .num-amber { color: var(--amber); }
+  .num-green { color: var(--green); }
+
+  /* ── SECTION ── */
+  .section { margin-bottom: 52px; }
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--white-dimmer);
+    padding: 3px 7px;
+    border: 1px solid var(--border2);
+    letter-spacing: 0.05em;
+  }
+  .section-title h2 {
+    font-family: var(--mono);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--white);
+  }
+  .section-badge {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    padding: 3px 8px;
+  }
+  .badge-ok { background: var(--green-dim); color: var(--green); }
+  .badge-warn { background: var(--amber-dim); color: var(--amber); }
+  .badge-critical { background: var(--red-dim); color: var(--red); }
+  .badge-info { background: var(--cyan-dim); color: var(--cyan); }
+
+  /* ── FINDING CARDS ── */
+  .findings { display: flex; flex-direction: column; gap: 12px; }
+  .finding {
+    display: grid;
+    grid-template-columns: 32px 1fr auto;
+    gap: 16px;
+    align-items: start;
+    padding: 16px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .finding-icon {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 700;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .icon-ok { color: var(--green); border: 1px solid var(--green); }
+  .icon-warn { color: var(--amber); border: 1px solid var(--amber); }
+  .icon-crit { color: var(--red); border: 1px solid var(--red); }
+  .icon-info { color: var(--cyan); border: 1px solid var(--cyan); }
+  .finding-body h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--white);
+  }
+  .finding-body p {
+    font-size: 13px;
+    color: var(--white-dim);
+    line-height: 1.6;
+  }
+  .finding-body p strong { color: var(--white); font-weight: 600; }
+  .finding-body code {
+    font-family: var(--mono);
+    font-size: 11px;
+    background: var(--surface3);
+    padding: 1px 5px;
+    color: var(--cyan);
+  }
+  .finding-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 3px 7px;
+    white-space: nowrap;
+    height: fit-content;
+  }
+  .tag-confirm { background: var(--green-dim); color: var(--green); }
+  .tag-action { background: var(--red-dim); color: var(--red); }
+  .tag-pending { background: var(--amber-dim); color: var(--amber); }
+  .tag-info { background: var(--cyan-dim); color: var(--cyan); }
+
+  /* ── TABLE ── */
+  .data-table-wrap { overflow-x: auto; }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .data-table th {
+    background: var(--surface3);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white-dim);
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border2);
+    white-space: nowrap;
+  }
+  .data-table td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+    color: var(--white-dim);
+  }
+  .data-table tr:hover td { background: var(--surface2); }
+  .data-table td.mono {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--cyan);
+  }
+  .data-table td.name { color: var(--white); }
+  .data-table td.price { font-family: var(--mono); font-size: 12px; color: var(--green); }
+  .data-table td.mismatch { color: var(--amber); font-family: var(--mono); font-size: 11px; }
+  .pill {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 9px;
+    padding: 2px 6px;
+    letter-spacing: 0.08em;
+  }
+  .pill-zero { background: var(--red-dim); color: var(--red); }
+  .pill-ok { background: var(--green-dim); color: var(--green); }
+  .pill-pending { background: var(--amber-dim); color: var(--amber); }
+
+  /* ── COST BREAKDOWN ── */
+  .cost-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+    margin-bottom: 12px;
+  }
+  .cost-block h3 {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white-dimmer);
+    margin-bottom: 16px;
+  }
+  .cost-rows { display: flex; flex-direction: column; gap: 0; }
+  .cost-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .cost-row:last-child { border-bottom: none; }
+  .cost-row .cr-label { font-size: 13px; color: var(--white-dim); }
+  .cost-row .cr-sub { font-size: 11px; color: var(--white-dimmer); font-style: italic; }
+  .cost-row .cr-val {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .cost-row.total-row { padding-top: 14px; margin-top: 4px; border-top: 1px solid var(--border2); }
+  .cost-row.total-row .cr-label { color: var(--white); font-weight: 600; }
+  .cost-row.total-row .cr-val { color: var(--amber); font-size: 16px; }
+  
+  .cost-note {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: var(--amber-dim);
+    border-left: 2px solid var(--amber);
+    font-size: 12px;
+    color: var(--amber);
+    font-style: italic;
+  }
+
+  /* ── PRICE SCENARIO TABLE ── */
+  .scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .scenario-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 18px 20px;
+  }
+  .scenario-card.highlight { border-color: var(--cyan); background: var(--cyan-glow); }
+  .scenario-card .sc-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--white-dimmer);
+    margin-bottom: 8px;
+  }
+  .scenario-card .sc-price {
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+  .scenario-card.highlight .sc-price { color: var(--cyan); }
+  .scenario-card .sc-margin { font-size: 12px; color: var(--white-dimmer); }
+  .scenario-card .sc-factor { font-family: var(--mono); font-size: 11px; color: var(--white-dimmer); }
+
+  .example-note {
+    padding: 12px 16px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--white-dimmer);
+    font-style: italic;
+  }
+  .example-note strong { color: var(--white-dim); font-style: normal; }
+
+  /* ── ACTION LIST ── */
+  .action-list { display: flex; flex-direction: column; gap: 8px; }
+  .action-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .action-item.urgent { border-left: 3px solid var(--red); }
+  .action-item.medium { border-left: 3px solid var(--amber); }
+  .action-item.low { border-left: 3px solid var(--green); }
+  .action-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--white-dimmer);
+    white-space: nowrap;
+    padding-top: 2px;
+    min-width: 30px;
+  }
+  .action-content h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+  .action-content p {
+    font-size: 12px;
+    color: var(--white-dim);
+    line-height: 1.55;
+  }
+  .action-owner {
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 3px 7px;
+    white-space: nowrap;
+    height: fit-content;
+    margin-left: auto;
+  }
+  .owner-po { background: rgba(90,191,138,0.1); color: var(--green); }
+  .owner-sam { background: var(--cyan-dim); color: var(--cyan); }
+
+  /* ── FOOTER ── */
+  .footer {
+    border-top: 1px solid var(--border);
+    padding: 20px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-brand {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--white-dimmer);
+    letter-spacing: 0.1em;
+  }
+  .footer-brand span { color: var(--cyan); }
+  .footer-right {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--white-dimmer);
+  }
+
+  /* ── DIVIDER ── */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 32px 0 24px;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+  .divider span {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--white-dimmer);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    .header, .page, .footer { padding-left: 20px; padding-right: 20px; }
+    .scorecard { grid-template-columns: repeat(2, 1fr); }
+    .scenario-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-left">
+    <span class="brand-tag">UNRLVL Studio · Neurone SC Florida</span>
+    <h1>Análisis de <span>Pricing</span> &amp; Inventario</h1>
+    <p class="header-meta">Preparado para reunión con Patricia Osorio · Modelo v5 · Inventario FINAL.pdf</p>
+  </div>
+  <div class="header-right">
+    <span class="date">22 Mar 2026</span>
+    <span>brand_id: UNRLVL</span>
+    <span>Confidencial</span>
+  </div>
+</header>
+
+<div class="page">
+
+  <!-- EXEC SUMMARY -->
+  <div class="exec-summary">
+    <p>
+      Este documento consolida el análisis del modelo de pricing <strong>Neurone Pricing v5</strong> cruzado con el inventario físico <strong>INVENTARIO FINAL.pdf</strong> subido al repositorio. El objetivo es confirmar qué datos son correctos, identificar discrepancias y definir qué decisiones necesita tomar PO antes de activar la tienda Shopify. <strong>Hay 3 hallazgos críticos y 6 acciones bloqueantes</strong> antes del lanzamiento.
+    </p>
+  </div>
+
+  <!-- SCORECARD -->
+  <div class="scorecard">
+    <div class="score-cell">
+      <span class="num num-cyan">87</span>
+      <span class="label">SKUs en catálogo</span>
+      <span class="sub">29 B2C · 58 B2B</span>
+    </div>
+    <div class="score-cell">
+      <span class="num num-red">17+</span>
+      <span class="label">Sin stock actual</span>
+      <span class="sub">No pueden ir a Shopify</span>
+    </div>
+    <div class="score-cell">
+      <span class="num num-amber">$82</span>
+      <span class="label">Costo compartido/unidad</span>
+      <span class="sub">A 1,000 unidades/mes</span>
+    </div>
+    <div class="score-cell">
+      <span class="num num-green">✓</span>
+      <span class="label">Precios de compra</span>
+      <span class="sub">Confirmados vs FCE-269</span>
+    </div>
+  </div>
+
+  <!-- ── SECTION 1: CONFIRMACIONES ── -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">01</span>
+      <h2>CONFIRMACIONES — Lo que está correcto</h2>
+      <span class="section-badge badge-ok">VERIFICADO</span>
+    </div>
+    <div class="findings">
+      <div class="finding">
+        <div class="finding-icon icon-ok">✓</div>
+        <div class="finding-body">
+          <h3>Precios de compra confirmados contra factura FCE-269</h3>
+          <p>La columna <strong>"Precio Compra ($)"</strong> del CATALOGO PRODUCTO fue cruzada con el PDF de inventario.
+          Columna <code>IMP 20% X PIEZA</code> del PDF = precio LATAM × 1.20 — coincide exactamente con los valores del modelo.
+          Ejemplos verificados: SHAMPOO HUMIT 50ml <strong>$1.02</strong> ✓ · VELVETY CONTROL 400ml <strong>$4.62</strong> ✓ · NEURONA GLOSS 50ml <strong>$3.60</strong> ✓ · KERASIN HB MASK 400ml <strong>$6.84</strong> ✓</p>
+        </div>
+        <span class="finding-tag tag-confirm">CONFIRMADO</span>
+      </div>
+
+      <div class="finding">
+        <div class="finding-icon icon-ok">✓</div>
+        <div class="finding-body">
+          <h3>El factor 2.5 del inventario es el multiplicador LATAM de Neurone, no aplica en USA</h3>
+          <p>El PDF usa la fórmula interna de Neurone Colombia:
+          <strong>(Precio_compra + $0.13 logística + $0.42 margen interno) × 2.5 = Precio Salón LATAM</strong>.
+          El modelo de pricing USA que construimos es <strong>independiente y correcto</strong> — calcula el factor mínimo real en base a costos operativos de Florida. Los precios sugeridos del PDF ($7.85, $21.95, etc.) son referencia de piso LATAM, no el precio objetivo para Miami.</p>
+        </div>
+        <span class="finding-tag tag-confirm">CONFIRMADO</span>
+      </div>
+
+      <div class="finding">
+        <div class="finding-icon icon-ok">✓</div>
+        <div class="finding-body">
+          <h3>Estructura del modelo de costos correcta</h3>
+          <p>Las 4 categorías de costo (Logística, Transacción, Marketing, Operativos) están correctamente definidas y calculadas. El modelo usa fórmulas dinámicas — cuando PO confirme volúmenes reales, los costos por unidad se recalculan automáticamente. La corrección del impuesto de FL (7% = estado 6% + Miami-Dade 1%) está aplicada.</p>
+        </div>
+        <span class="finding-tag tag-confirm">CONFIRMADO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 2: CRITICAL ISSUES ── -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">02</span>
+      <h2>HALLAZGOS CRÍTICOS — Problemas que bloquean el lanzamiento</h2>
+      <span class="section-badge badge-critical">3 CRÍTICOS</span>
+    </div>
+    <div class="findings">
+
+      <div class="finding">
+        <div class="finding-icon icon-crit">!</div>
+        <div class="finding-body">
+          <h3>Costo compartido de $82/unidad requiere revisión de volumen</h3>
+          <p>El modelo está configurado sobre <strong>1,000 unidades/mes</strong>. A ese volumen, el costo operativo prorrateado es <strong>$82.04/unidad</strong>. El único producto que sostendrá margen positivo con precios de mercado a ese overhead son los de precio de compra alto (serums, químicos). Los 50ml a $1.02 requieren un factor de ~68x para alcanzar 40% de margen — lo que equivale a precios de venta de ~$70, invendibles competitivamente. <strong>PO necesita confirmar el volumen mensual estimado real</strong> — si son 100 unidades el primer mes, el overhead sube a $820/unidad.</p>
+        </div>
+        <span class="finding-tag tag-action">BLOQUEANTE</span>
+      </div>
+
+      <div class="finding">
+        <div class="finding-icon icon-crit">!</div>
+        <div class="finding-body">
+          <h3>17+ SKUs con stock = 0 no pueden activarse en Shopify</h3>
+          <p>El inventario FINAL confirma que los siguientes productos tienen <strong>cero unidades disponibles</strong> actualmente: todos los shampoós en 50ml (Total Violet, Humit, Depura, Dyfensor SF, Kerasin HB), todas las máscaras en 50ml, Lisothermic 50ml y 400ml, Dyfensor SF 400ml, Menthol Ice 400ml, toda la línea <strong>Revenant Color</strong> (5 SKUs), Geometry Cream, Lycra Web, Dyfensor Serum, Alizzanti. Activarlos en Shopify generaría órdenes que no se pueden surtir.</p>
+        </div>
+        <span class="finding-tag tag-action">BLOQUEANTE</span>
+      </div>
+
+      <div class="finding">
+        <div class="finding-icon icon-crit">!</div>
+        <div class="finding-body">
+          <h3>Mismatch de SKUs entre inventario del proveedor y catálogo del modelo</h3>
+          <p>Los códigos que usa Neurone en sus facturas/inventarios (ej: <code>L014</code>, <code>T025</code>, <code>T026</code>) son distintos a los que cargamos en el modelo (ej: <code>L034</code>, <code>T068</code>, <code>RS009</code>). Esto genera un riesgo operativo: cuando PO haga pedidos de reposición con los SKU del proveedor, no cruzarán automáticamente con los SKU del sistema. Necesita definirse <strong>cuál sistema de SKU es el definitivo</strong> antes de activar Shopify.</p>
+        </div>
+        <span class="finding-tag tag-action">BLOQUEANTE</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── SECTION 3: SKU MISMATCH TABLE ── -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">03</span>
+      <h2>TABLA DE MISMATCH — SKU Proveedor vs SKU Modelo</h2>
+      <span class="section-badge badge-warn">REQUIERE DECISIÓN</span>
+    </div>
+    <p style="font-size:12px; color:var(--white-dimmer); margin-bottom:16px; font-style:italic;">
+      Muestra representativa. El patrón se repite en todo el catálogo.
+    </p>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>SKU PROVEEDOR (PDF)</th>
+            <th>SKU MODELO (Shopify)</th>
+            <th>Producto</th>
+            <th>Presentación</th>
+            <th>Precio Compra</th>
+            <th>Stock Actual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="mono">L014</td><td class="mismatch">L034</td><td class="name">SHAMPOO TOTAL VIOLET</td><td>50 ml</td><td class="price">$1.02</td><td><span class="pill pill-zero">0 uds</span></td></tr>
+          <tr><td class="mono">L015</td><td class="mismatch">CR008</td><td class="name">SHAMPOO TOTAL VIOLET</td><td>400 ml</td><td class="price">$3.84</td><td><span class="pill pill-ok">300 uds</span></td></tr>
+          <tr><td class="mono">L016</td><td class="mismatch">L036</td><td class="name">SHAMPOO TOTAL VIOLET</td><td>1 L</td><td class="price">$7.80</td><td><span class="pill pill-ok">11 uds</span></td></tr>
+          <tr><td class="mono">L013</td><td class="mismatch">L038</td><td class="name">SHAMPOO HUMIT</td><td>400 ml</td><td class="price">$4.32</td><td><span class="pill pill-ok">576 uds</span></td></tr>
+          <tr><td class="mono">T025</td><td class="mismatch">T068</td><td class="name">VELVETY CONTROL</td><td>50 ml</td><td class="price">$1.02</td><td><span class="pill pill-ok">390 uds</span></td></tr>
+          <tr><td class="mono">T026</td><td class="mismatch">RS009</td><td class="name">VELVETY CONTROL</td><td>400 ml</td><td class="price">$4.62</td><td><span class="pill pill-ok">300 uds</span></td></tr>
+          <tr><td class="mono">T028</td><td class="mismatch">T071</td><td class="name">DY FAZZA</td><td>50 ml</td><td class="price">$1.02</td><td><span class="pill pill-ok">390 uds</span></td></tr>
+          <tr><td class="mono">T030</td><td class="mismatch">MS008</td><td class="name">DY FAZZA</td><td>200 ml</td><td class="price">$4.50</td><td><span class="pill pill-ok">288 uds</span></td></tr>
+          <tr><td class="mono">T044</td><td class="mismatch">T093</td><td class="name">REVENANT PLATINO</td><td>400 ml</td><td class="price">$6.60</td><td><span class="pill pill-zero">0 uds</span></td></tr>
+          <tr><td class="mono">D004</td><td class="mismatch">D014</td><td class="name">PLATTINA WHITE BLEACH</td><td>800 g</td><td class="price">$16.80</td><td><span class="pill pill-ok">5 uds</span></td></tr>
+          <tr><td class="mono">D006</td><td class="mismatch">D015</td><td class="name">PRO FILUS</td><td>200 g</td><td class="price">$42.00</td><td><span class="pill pill-zero">0 uds</span></td></tr>
+          <tr><td class="mono">S005</td><td class="mismatch">S008</td><td class="name">HYALONEURINE F&H</td><td>6 pzas/50ml</td><td class="price">$13.44</td><td><span class="pill pill-ok">66 uds</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── SECTION 4: STOCK STATUS ── -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">04</span>
+      <h2>ESTADO DE STOCK — SKUs disponibles vs agotados</h2>
+      <span class="section-badge badge-warn">17 SIN STOCK</span>
+    </div>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Categoría</th>
+            <th>Producto</th>
+            <th>Presentación</th>
+            <th>Stock en Bodega</th>
+            <th>Shopify</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>CLEANSING</td><td class="name">Shampoo Total Violet</td><td>50 ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>CLEANSING</td><td class="name">Shampoo Total Violet</td><td>400 ml</td><td><span class="pill pill-ok">276 uds</span></td><td><span class="pill pill-ok">ACTIVO</span></td></tr>
+          <tr><td>CLEANSING</td><td class="name">Shampoo Humit</td><td>50 ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>CLEANSING</td><td class="name">Shampoo Humit</td><td>400 ml</td><td><span class="pill pill-ok">576 uds</span></td><td><span class="pill pill-ok">ACTIVO</span></td></tr>
+          <tr><td>CLEANSING</td><td class="name">Shampoo Depura</td><td>50 ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>CLEANSING</td><td class="name">Shampoo Dyfensor SF</td><td>50 ml y 400 ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>CLEANSING</td><td class="name">Shampoo Menthol Ice</td><td>400 ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>CLEANSING</td><td class="name">Shampoo Kerasin HB</td><td>50 ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>TREATMENTS</td><td class="name">Humit Mask</td><td>50 ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>TREATMENTS</td><td class="name">Total Violet Mask</td><td>50 ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>TREATMENTS</td><td class="name">Lisothermic</td><td>50 ml y 400 ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>TREATMENTS</td><td class="name">Revenant Color (todos)</td><td>400 ml × 5 SKUs</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>SERUMS</td><td class="name">Dyfensor Serum</td><td>6 pzas/25ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>STYLING</td><td class="name">Geometry Cream</td><td>400 ml</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>STYLING</td><td class="name">Lycra Web</td><td>70 gr</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+          <tr><td>BLEACHING</td><td class="name">Pro Filus</td><td>200 g</td><td><span class="pill pill-zero">0 (salió todo bodega)</span></td><td><span class="pill pill-pending">B2B SOLO</span></td></tr>
+          <tr><td>BLEACHING</td><td class="name">Alizzanti</td><td>1L</td><td><span class="pill pill-zero">0</span></td><td><span class="pill pill-zero">BLOQUEAR</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── SECTION 5: COST STRUCTURE ── -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">05</span>
+      <h2>ESTRUCTURA DE COSTOS — Desglose por unidad vendida</h2>
+      <span class="section-badge badge-info">BASE: 1,000 uds/mes</span>
+    </div>
+
+    <div class="cost-block">
+      <h3>Costos compartidos por unidad · Configuración actual</h3>
+      <div class="cost-rows">
+        <div class="cost-row">
+          <div><div class="cr-label">Logística</div><div class="cr-sub">Embalaje + envío USPS + 3PL + devoluciones</div></div>
+          <span class="cr-val" style="color:var(--white)">$31.70</span>
+        </div>
+        <div class="cost-row">
+          <div><div class="cr-label">Transacción</div><div class="cr-sub">Shopify Payments 2.9% + $0.30 + chargebacks</div></div>
+          <span class="cr-val" style="color:var(--white)">$1.29</span>
+        </div>
+        <div class="cost-row">
+          <div><div class="cr-label">Marketing</div><div class="cr-sub">CAC $35 + Meta + TikTok + Email + APIs + UNRLVL fee</div></div>
+          <span class="cr-val" style="color:var(--white)">$46.29</span>
+        </div>
+        <div class="cost-row">
+          <div><div class="cr-label">Operativos</div><div class="cr-sub">Renta + nómina + software + equipo (prorrateado)</div></div>
+          <span class="cr-val" style="color:var(--white)">$2.77</span>
+        </div>
+        <div class="cost-row total-row">
+          <div><div class="cr-label">TOTAL COSTO COMPARTIDO / UNIDAD</div><div class="cr-sub">A 1,000 unidades/mes — varía inversamente al volumen</div></div>
+          <span class="cr-val">$82.04</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cost-note">
+      ⚠ Este overhead de $82/unidad es la razón por la que los productos de 50ml con precio de compra de $1.02 arrojan factores de 60x+. No es un error del modelo — es la realidad del costo operativo para volumen bajo. La solución es (a) confirmar volúmenes reales con PO y ajustar, o (b) estructurar los 50ml como muestras/kits en lugar de producto principal.
+    </div>
+
+    <div class="divider"><span>Escenarios de precio — SKU ejemplo: SHAMPOO HUMIT 400ml · Precio compra $4.32</span></div>
+
+    <div class="scenario-grid">
+      <div class="scenario-card">
+        <div class="sc-label">Margen mínimo (20%)</div>
+        <div class="sc-price">$108</div>
+        <div class="sc-margin">20% margen después de tax FL</div>
+        <div class="sc-factor">Factor: 25x sobre compra</div>
+      </div>
+      <div class="scenario-card highlight">
+        <div class="sc-label">Target B2C (40%) ← usar este</div>
+        <div class="sc-price">$143</div>
+        <div class="sc-margin">40% margen · $57 utilidad/unidad</div>
+        <div class="sc-factor">Factor: 33x sobre compra</div>
+      </div>
+      <div class="scenario-card">
+        <div class="sc-label">Target B2B (30%)</div>
+        <div class="sc-price">$122</div>
+        <div class="sc-margin">30% margen · $37 utilidad/unidad</div>
+        <div class="sc-factor">Factor: 28x sobre compra</div>
+      </div>
+    </div>
+
+    <div class="example-note">
+      <strong>Nota importante:</strong> estos precios son matemáticamente correctos para el overhead actual de 1,000 unidades/mes. Cuando PO confirme el volumen real de arranque (probablemente 100-200 unidades), el costo compartido sube proporcionalmente y los precios suben aún más. El modelo recalcula automáticamente — solo hay que actualizar CONFIG!B27.
+    </div>
+  </div>
+
+  <!-- ── SECTION 6: FALTANTES EN CATÁLOGO ── -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">06</span>
+      <h2>PRODUCTOS EN INVENTARIO NO INCLUIDOS EN CATÁLOGO</h2>
+      <span class="section-badge badge-warn">DECISIÓN PENDIENTE</span>
+    </div>
+    <div class="findings">
+      <div class="finding">
+        <div class="finding-icon icon-warn">?</div>
+        <div class="finding-body">
+          <h3>Línea Color: ~40 tonos individuales agrupados en referencias genéricas</h3>
+          <p>El inventario tiene <strong>tonos individuales con SKU propio</strong> (C090 a C183: Naturales, Cenizos, Dorados, Cobres, Chocolates, Violetas, etc.). En el catálogo los agrupamos en referencias genéricas (<code>COLOR-NAT</code>, <code>COLOR-ASH</code>, etc.). Decisión necesaria: ¿van como SKUs individuales en Shopify (más preciso, más complejo) o como familias con variante de tono?</p>
+        </div>
+        <span class="finding-tag tag-pending">DECIDIR CON PO</span>
+      </div>
+
+      <div class="finding">
+        <div class="finding-icon icon-warn">?</div>
+        <div class="finding-body">
+          <h3>Línea Promocionales — accesorios de salón</h3>
+          <p>El inventario incluye brochas, capas, mandiles, toallas, tazones y catálogos Neurone. No están en el catálogo B2C (correcto) pero deberían estar disponibles en el <strong>Pro Portal B2B</strong> como accesorios para salones. Precios de compra: brochas $1.80 · capas $21.60 · mandiles $18.00 · toallas $4.80.</p>
+        </div>
+        <span class="finding-tag tag-pending">PRO PORTAL B2B</span>
+      </div>
+
+      <div class="finding">
+        <div class="finding-icon icon-info">i</div>
+        <div class="finding-body">
+          <h3>Geometry GEL 50ml — nunca llegó al inventario</h3>
+          <p>El PDF registra <code>E010 GEOMETRY GEL 50ml</code> con entrada en factura de <strong>0 unidades facturadas</strong> y 90 unidades adicionales sin precio (posiblemente muestras). La presentación 400ml sí está disponible. No hay impacto en el modelo actual.</p>
+        </div>
+        <span class="finding-tag tag-info">INFORMATIVO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 7: ACCIONES ── -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">07</span>
+      <h2>ACCIONES ANTES DEL LANZAMIENTO</h2>
+      <span class="section-badge badge-critical">6 BLOQUEANTES</span>
+    </div>
+    <div class="action-list">
+
+      <div class="action-item urgent">
+        <span class="action-num">A-01</span>
+        <div class="action-content">
+          <h4>Confirmar volumen mensual de unidades esperado (mes 1)</h4>
+          <p>El modelo de costo por unidad cambia radicalmente según el volumen. PO debe dar un número realista de unidades que espera vender el primer mes para que el modelo refleje precios correctos.</p>
+        </div>
+        <span class="action-owner owner-po">PO</span>
+      </div>
+
+      <div class="action-item urgent">
+        <span class="action-num">A-02</span>
+        <div class="action-content">
+          <h4>Definir sistema de SKU definitivo — ¿proveedor o interno?</h4>
+          <p>Decidir si los SKU de Shopify serán los códigos del proveedor Neurone (L014, T025...) o los internos del modelo (L034, T068...). Recomendación: usar códigos del proveedor como <code>supplier_sku</code> y mantener los internos como ID de sistema.</p>
+        </div>
+        <span class="action-owner owner-sam">SAM + PO</span>
+      </div>
+
+      <div class="action-item urgent">
+        <span class="action-num">A-03</span>
+        <div class="action-content">
+          <h4>Marcar 17+ SKUs como out_of_stock antes de activar Shopify</h4>
+          <p>Todos los 50ml con stock cero, Revenant Color completo, Dyfensor Serum, Lycra Web, Geometry Cream, Alizzanti, Dyfensor SF 400ml, Menthol Ice 400ml deben estar en Draft o con stock 0 hasta reposición.</p>
+        </div>
+        <span class="action-owner owner-sam">SAM</span>
+      </div>
+
+      <div class="action-item medium">
+        <span class="action-num">A-04</span>
+        <div class="action-content">
+          <h4>Confirmar precios de venta reales de Shopify con PO</h4>
+          <p>Todos los precios en Shopify están en $0.00 placeholder. Una vez definido el volumen (A-01), el modelo genera los precios sugeridos. PO debe revisarlos y confirmarlos antes de activar la tienda.</p>
+        </div>
+        <span class="action-owner owner-po">PO</span>
+      </div>
+
+      <div class="action-item medium">
+        <span class="action-num">A-05</span>
+        <div class="action-content">
+          <h4>Decidir estructura de Línea Color en Shopify</h4>
+          <p>¿SKUs individuales por tono o familias con variantes? Esta decisión afecta la arquitectura del catálogo, la experiencia de compra B2B y el inventario en Shopify.</p>
+        </div>
+        <span class="action-owner owner-po">PO</span>
+      </div>
+
+      <div class="action-item medium">
+        <span class="action-num">A-06</span>
+        <div class="action-content">
+          <h4>Confirmar autorización formal de marca Neurone para dominio US</h4>
+          <p>Pendiente de sesiones anteriores. Ningún lanzamiento puede proceder sin autorización formal de Neurone para operar el dominio <code>neuronescmiami.com</code> en Estados Unidos.</p>
+        </div>
+        <span class="action-owner owner-po">PO</span>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">
+    <span>UNRLVL</span> Studio · Neurone SC Florida · Pricing Analysis v1
+  </div>
+  <div class="footer-right">
+    Generado: 22 Mar 2026 · Confidencial · Solo uso interno
+  </div>
+</footer>
+
+</body>
+</html>
