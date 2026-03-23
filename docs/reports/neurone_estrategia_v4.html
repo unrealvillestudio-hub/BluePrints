@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurone SC Florida — Estrategia Comercial B2C v4</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMiAzMic+PHN0eWxlPkBrZXlmcmFtZXMgYmxpbmt7MCUsNDkle29wYWNpdHk6MX01MCUsMTAwJXtvcGFjaXR5OjB9fS5jaHthbmltYXRpb246YmxpbmsgMXMgc3RlcC1zdGFydCBpbmZpbml0ZX08L3N0eWxlPjxyZWN0IHdpZHRoPSczMicgaGVpZ2h0PSczMicgZmlsbD0nIzA3MDgwOScvPjx0ZXh0IGNsYXNzPSdjaCcgeD0nMycgeT0nMjYnIGZvbnQtZmFtaWx5PSdBcmlhbCBCbGFjayxzYW5zLXNlcmlmJyBmb250LXNpemU9JzI2JyBmb250LXdlaWdodD0nOTAwJyBmaWxsPScjMDBFOEQwJz4mIzYyOzwvdGV4dD48L3N2Zz4=">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne+Mono&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+/* ── UNRLVL CHEVRON BLINK ── */
+@keyframes chevron-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+:root {
+  --bg: #06080A;
+  --s1: #0B0E13;
+  --s2: #10141C;
+  --b1: #182030;
+  --b2: #1E2A3A;
+  --text: #C8D4E0;
+  --muted: #4A5E70;
+  --muted2: #6E88A0;
+  --accent: #00B4AD;
+  --cyan: #00E8D0;
+  --red: #E84040;
+  --orange: #D97020;
+  --yellow: #C8980C;
+  --green: #10B060;
+  --blue: #2878D8;
+  --gold: #C8A830;
+  --purple: #8855CC;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'Syne',sans-serif;
+  font-size:13px;line-height:1.65;
+  max-width:1040px;margin:0 auto;padding:52px 38px;
+}
+
+/* ── HEADER ── */
+.hdr{display:flex;justify-content:space-between;align-items:flex-start;
+  padding-bottom:22px;border-bottom:1px solid var(--b2);margin-bottom:52px}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.08em}
+.logo em{color:var(--cyan);font-style:normal}
+.hdr-right{text-align:right}
+.hdr-brand{font-family:'Syne Mono',monospace;font-size:12px;color:var(--accent);
+  letter-spacing:.06em;font-weight:600;margin-bottom:6px}
+.hdr-meta{font-family:'Syne Mono',monospace;font-size:10px;color:var(--muted);line-height:1.9}
+.recipients{display:flex;gap:6px;margin-top:8px;justify-content:flex-end;flex-wrap:wrap}
+.rec{font-family:'Syne Mono',monospace;font-size:9.5px;letter-spacing:.06em;
+  padding:2px 9px;border:1px solid var(--b2);border-radius:3px;
+  color:var(--muted2);text-transform:uppercase}
+
+/* ── TITLE ── */
+.title{margin-bottom:64px}
+.title h1{font-family:'Bebas Neue',sans-serif;font-size:72px;line-height:.88;
+  letter-spacing:.01em;color:var(--text);margin-bottom:20px}
+.title h1 .ac{color:var(--accent)}
+.title h1 .dim{opacity:.18}
+.tagline{font-family:'Syne Mono',monospace;font-size:11px;color:var(--muted2);
+  letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-family:'Syne Mono',monospace;font-size:9.5px;letter-spacing:.06em;
+  padding:3px 10px;border:1px solid var(--b2);border-radius:3px;
+  color:var(--muted2);text-transform:uppercase}
+.tag.hi{border-color:var(--accent);color:var(--accent)}
+
+/* ── SECTION ── */
+section{margin-bottom:72px}
+.sec{font-family:'Syne Mono',monospace;font-size:9px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent);display:flex;align-items:center;
+  gap:12px;margin-bottom:20px}
+.sec::after{content:'';flex:1;height:1px;background:var(--b1)}
+h2{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:.03em;
+  color:var(--text);margin-bottom:10px}
+.intro{color:var(--muted2);font-size:13px;line-height:1.78;margin-bottom:28px;max-width:760px}
+
+/* ── COST CARDS ── */
+.cost-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px}
+.cost-card{border:1px solid var(--b1);border-radius:8px;padding:20px}
+.cost-card.featured{border-color:var(--accent)}
+.cc-label{font-family:'Syne Mono',monospace;font-size:9px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.cc-name{font-size:12.5px;font-weight:600;color:var(--text);margin-bottom:14px}
+.cc-items{border-top:1px solid var(--b1);padding-top:12px}
+.cc-item{display:flex;justify-content:space-between;font-size:11.5px;
+  color:var(--muted2);margin-bottom:6px}
+.cc-item span:last-child{font-family:'Syne Mono',monospace;font-size:11px;color:var(--text)}
+.cc-item.changed span{color:var(--yellow)}
+.cc-item.total{margin-top:10px;padding-top:10px;border-top:1px solid var(--b1);
+  font-weight:600;font-size:13px}
+.cc-item.total span{color:var(--text)}
+.sc-row{display:flex;flex-direction:column;gap:6px;margin-top:12px;
+  padding-top:12px;border-top:1px solid var(--b1)}
+.sc-line{display:flex;justify-content:space-between;font-size:12px}
+.sc-line .sc-tag{font-family:'Syne Mono',monospace;font-size:10px;padding:1px 7px;
+  border-radius:3px;font-weight:600}
+.scA{background:rgba(16,176,96,.12);color:var(--green)}
+.scB{background:rgba(200,152,12,.12);color:var(--yellow)}
+.scC{background:rgba(217,112,32,.12);color:var(--orange)}
+.scVal{font-family:'Syne Mono',monospace;font-size:12px}
+
+/* ── KITS ── */
+.kits-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.kit-card{border:1px solid var(--b1);border-radius:8px;overflow:hidden}
+.kit-card.hero{border-color:var(--gold)}
+.kit-head{padding:16px 20px;border-bottom:1px solid var(--b1);
+  display:flex;align-items:flex-start}
+.kit-num{font-family:'Bebas Neue',sans-serif;font-size:38px;line-height:1;
+  color:var(--b2);margin-right:14px}
+.kit-card.hero .kit-num{color:rgba(200,168,48,.3)}
+.kit-info h3{font-size:13.5px;font-weight:700;color:var(--text);margin-bottom:3px}
+.kit-info .ritual{font-family:'Syne Mono',monospace;font-size:9px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.kit-card.hero .kit-info .ritual{color:var(--gold)}
+.kit-body{padding:16px 20px}
+.kit-products{margin-bottom:14px}
+.kit-prod{font-size:12px;color:var(--muted2);padding:4px 0;
+  border-bottom:1px dashed var(--b1)}
+.kit-prod:last-child{border-bottom:none}
+.kit-nums{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;
+  padding-top:12px;border-top:1px solid var(--b1)}
+.kit-num-block{text-align:center}
+.kn-label{font-family:'Syne Mono',monospace;font-size:8.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.kn-val{font-family:'Syne Mono',monospace;font-size:13px;font-weight:600}
+
+/* ── SHIPPING ── */
+.ship-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.ship-card{border-radius:8px;padding:24px;position:relative;overflow:hidden}
+.ship-card.pay{border:1px solid var(--b1);background:var(--s1)}
+.ship-card.free{border:2px solid var(--accent);background:rgba(0,180,173,.04)}
+.ship-card-label{font-family:'Syne Mono',monospace;font-size:9px;letter-spacing:.16em;
+  text-transform:uppercase;margin-bottom:10px}
+.ship-card.pay .ship-card-label{color:var(--muted)}
+.ship-card.free .ship-card-label{color:var(--accent)}
+.ship-card h3{font-size:16px;font-weight:700;color:var(--text);margin-bottom:6px}
+.ship-price{font-family:'Bebas Neue',sans-serif;font-size:42px;line-height:1;
+  color:var(--text);margin-bottom:12px}
+.ship-card.free .ship-price{color:var(--cyan)}
+.ship-desc{font-size:12.5px;color:var(--muted2);line-height:1.7;margin-bottom:14px}
+.ship-impact{border-top:1px solid var(--b1);padding-top:12px;margin-top:4px}
+.si-row{display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px}
+.si-row span:last-child{font-family:'Syne Mono',monospace;font-size:11px}
+
+/* ── PROMOS ── */
+.promos-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:24px}
+.promo-card{border:1px solid var(--b1);border-radius:8px;overflow:hidden}
+.promo-card.primary{border-color:var(--gold)}
+.promo-card.featured{border-color:var(--accent)}
+.promo-head{padding:18px 20px;border-bottom:1px solid var(--b1);background:var(--s1)}
+.promo-num{font-family:'Bebas Neue',sans-serif;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.promo-name{font-size:13.5px;font-weight:700;color:var(--text);margin-bottom:3px}
+.promo-tag{font-family:'Syne Mono',monospace;font-size:9px;letter-spacing:.08em;
+  text-transform:uppercase;margin-top:4px}
+.promo-body{padding:16px 20px}
+.promo-mech{font-size:12.5px;color:var(--text);font-weight:600;margin-bottom:8px}
+.promo-desc{font-size:12px;color:var(--muted2);line-height:1.7;margin-bottom:12px}
+.promo-nums{border-top:1px solid var(--b1);padding-top:12px;
+  display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pn-block .pn-label{font-family:'Syne Mono',monospace;font-size:8.5px;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.pn-block .pn-val{font-family:'Syne Mono',monospace;font-size:13px;font-weight:600}
+
+/* ── MATRIX / TABLES ── */
+.matrix-wrap{border:1px solid var(--b1);border-radius:8px;overflow:hidden;margin-bottom:20px}
+.matrix-wrap table{width:100%;border-collapse:collapse}
+.matrix-wrap th{background:var(--s2);font-family:'Syne Mono',monospace;font-size:9.5px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  padding:10px 13px;text-align:right;border-bottom:1px solid var(--b1);white-space:nowrap}
+.matrix-wrap th:first-child,.matrix-wrap th:nth-child(2){text-align:left}
+.matrix-wrap td{padding:9px 13px;border-bottom:1px solid var(--b1);
+  font-family:'Syne Mono',monospace;font-size:11.5px;text-align:right;color:var(--muted2)}
+.matrix-wrap tr:last-child td{border-bottom:none}
+.matrix-wrap td:first-child{text-align:left;font-family:'Syne',sans-serif;
+  font-size:12.5px;font-weight:500;color:var(--text)}
+.matrix-wrap td:nth-child(2){text-align:left;font-size:11px;color:var(--muted2)}
+.matrix-wrap tr.grp-head td{background:var(--s1);font-family:'Syne Mono',monospace;
+  font-size:9px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);border-top:1px solid var(--b2);padding:7px 13px}
+.matrix-wrap tr.sc-A td{background:rgba(16,176,96,.025)}
+.matrix-wrap tr.sc-B td{background:rgba(200,152,12,.025)}
+.matrix-wrap tr.sc-C td{background:rgba(217,112,32,.025)}
+
+/* ── PHASES / P&L ── */
+.phases{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:24px}
+.phase-card{border:1px solid var(--b1);border-radius:8px;overflow:hidden}
+.phase-card.breakeven{border-color:var(--green)}
+.phase-head{padding:18px 20px;border-bottom:1px solid var(--b1);background:var(--s1)}
+.ph-period{font-family:'Syne Mono',monospace;font-size:9px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.ph-name{font-size:13.5px;font-weight:700;color:var(--text);margin-bottom:2px}
+.ph-orders{font-family:'Syne Mono',monospace;font-size:10px;color:var(--muted)}
+.phase-body{padding:16px 20px}
+.ph-line{display:flex;justify-content:space-between;font-size:12px;
+  color:var(--muted2);margin-bottom:7px}
+.ph-line span:last-child{font-family:'Syne Mono',monospace;font-size:11.5px;color:var(--text)}
+.ph-line.gp span:last-child{color:var(--cyan)}
+.ph-div{border:none;border-top:1px solid var(--b1);margin:10px 0}
+.ph-result{display:flex;justify-content:space-between;font-size:14px;font-weight:700;margin-top:10px}
+.ph-loss{color:var(--red)}
+.ph-profit{color:var(--green)}
+.ph-note{margin-top:12px;padding-top:12px;border-top:1px solid var(--b1);
+  font-size:11.5px;color:var(--muted);line-height:1.65}
+
+/* ── ADS ── */
+.ads-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:20px}
+.ads-card{border:1px solid var(--b1);border-radius:8px;padding:20px}
+.ads-phase{font-family:'Syne Mono',monospace;font-size:9px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.ads-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:14px}
+.ads-ch{border:1px solid var(--b1);border-radius:5px;padding:12px 14px;margin-bottom:10px}
+.ads-ch:last-of-type{margin-bottom:0}
+.ads-ch-name{font-size:10.5px;color:var(--muted2);margin-bottom:6px;font-weight:500}
+.ads-amount{font-family:'Syne Mono',monospace;font-size:18px;font-weight:700;
+  color:var(--text);margin-bottom:2px}
+.ads-sub{font-family:'Syne Mono',monospace;font-size:10px;color:var(--muted);line-height:1.6}
+.ads-total{margin-top:12px;padding-top:12px;border-top:1px solid var(--b1);
+  display:flex;justify-content:space-between;align-items:center}
+.ads-total-label{font-size:11px;color:var(--muted2)}
+.ads-total-val{font-family:'Syne Mono',monospace;font-size:13px;font-weight:700;color:var(--text)}
+.ads-cac{margin-top:8px;font-family:'Syne Mono',monospace;font-size:10px;color:var(--muted);
+  border-top:1px dashed var(--b1);padding-top:8px;line-height:1.7}
+
+/* ── RUNWAY ── */
+.runway-table{border:1px solid var(--b1);border-radius:8px;overflow:hidden;margin-bottom:20px}
+.runway-table table{width:100%;border-collapse:collapse}
+.runway-table th{background:var(--s2);font-family:'Syne Mono',monospace;font-size:9.5px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  padding:10px 14px;border-bottom:1px solid var(--b1);text-align:right}
+.runway-table th:first-child{text-align:left}
+.runway-table td{padding:9px 14px;border-bottom:1px solid var(--b1);
+  font-family:'Syne Mono',monospace;font-size:12px;text-align:right;color:var(--muted2)}
+.runway-table tr:last-child td{border-bottom:none}
+.runway-table td:first-child{text-align:left;font-family:'Syne',sans-serif;
+  font-size:12.5px;color:var(--text);font-weight:500}
+.runway-table tr.be-row td{background:rgba(16,176,96,.06);color:var(--green)}
+.runway-table tr.be-row td:first-child{color:var(--green);font-weight:600}
+
+/* ── STRATEGY TABLE ── */
+.strat-table{border:1px solid var(--b1);border-radius:8px;overflow:hidden;margin-bottom:20px}
+.strat-table table{width:100%;border-collapse:collapse}
+.strat-table th{background:var(--s2);font-family:'Syne Mono',monospace;font-size:9.5px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  padding:10px 14px;border-bottom:1px solid var(--b1);text-align:left}
+.strat-table td{padding:10px 14px;border-bottom:1px solid var(--b1);
+  font-size:12.5px;color:var(--muted2);vertical-align:top}
+.strat-table tr:last-child td{border-bottom:none}
+.strat-table td:first-child{color:var(--text);font-weight:500}
+
+/* ── CALLOUT ── */
+.callout{border-left:3px solid var(--yellow);background:rgba(200,152,12,.05);
+  border-radius:0 5px 5px 0;padding:14px 20px;margin-bottom:20px;
+  font-size:13px;color:var(--muted2);line-height:1.72}
+.callout strong{color:var(--yellow)}
+.callout.cg{border-color:var(--green);background:rgba(16,176,96,.05)}
+.callout.cg strong{color:var(--green)}
+.callout.ca{border-color:var(--accent);background:rgba(0,180,173,.05)}
+.callout.ca strong{color:var(--accent)}
+.callout.cr{border-color:var(--red);background:rgba(232,64,64,.05)}
+.callout.cr strong{color:var(--red)}
+.callout.gold{border-color:var(--gold);background:rgba(200,168,48,.05)}
+.callout.gold strong{color:var(--gold)}
+.callout.purple{border-color:var(--purple);background:rgba(136,85,204,.05)}
+.callout.purple strong{color:var(--purple)}
+
+/* ── VERDICT ── */
+.verdict{background:var(--s1);border:1px solid var(--accent);
+  border-radius:8px;padding:32px;margin-bottom:24px}
+.vt{font-family:'Syne Mono',monospace;font-size:9px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.verdict h3{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:.03em;
+  color:var(--text);margin-bottom:16px}
+.verdict p{font-size:13.5px;color:var(--muted2);line-height:1.78;margin-bottom:12px}
+.verdict p:last-child{margin-bottom:0}
+.verdict strong{color:var(--text)}
+
+/* ── BADGES ── */
+.badge{display:inline-block;font-family:'Syne Mono',monospace;font-size:9px;
+  letter-spacing:.05em;padding:2px 7px;border-radius:3px;text-transform:uppercase;font-weight:700}
+.bh{background:rgba(200,168,48,.15);color:var(--gold)}
+.bc{background:rgba(40,120,216,.15);color:var(--blue)}
+.bg{background:rgba(255,255,255,.06);color:var(--muted)}
+.ba{background:rgba(0,180,173,.12);color:var(--cyan)}
+.br{background:rgba(232,64,64,.12);color:var(--red)}
+.bge{background:rgba(16,176,96,.12);color:var(--green)}
+.bp{background:rgba(136,85,204,.12);color:var(--purple)}
+
+/* ── COLORS ── */
+.c-green{color:var(--green)}
+.c-yellow{color:var(--yellow)}
+.c-orange{color:var(--orange)}
+.c-red{color:var(--red)}
+.c-cyan{color:var(--cyan)}
+.c-gold{color:var(--gold)}
+.c-text{color:var(--text)}
+.c-muted{color:var(--muted)}
+
+/* ── FOOTER ── */
+.footer{display:flex;justify-content:space-between;align-items:center;
+  padding-top:36px;border-top:1px solid var(--b1);margin-top:60px}
+.footer-badge{font-family:'Syne Mono',monospace;font-size:9px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);border:1px solid var(--b1);
+  padding:4px 10px;border-radius:3px}
+.footer-meta{font-family:'Syne Mono',monospace;font-size:10px;color:var(--muted);
+  text-align:right;line-height:1.9}
+
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-family:'Syne Mono',monospace;
+  font-size:10px;color:var(--muted);margin-top:12px}
+
+@media(max-width:700px){
+  .cost-row,.kits-grid,.phases,.ads-grid,.promos-grid,.ship-grid{grid-template-columns:1fr}
+  body{padding:28px 18px}
+  .title h1{font-size:46px}
+}
+
+.chevron {
+  color: #00E8D0 !important;
+  animation: chevron-blink 1s step-start infinite;
+  display: inline-block;
+  font-style: normal;
+}
+.logo-studio {
+  color: rgba(205,213,224,0.30) !important;
+  font-size: 0.72em;
+  letter-spacing: 0.14em;
+}
+.icr-badge {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--b1);
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="hdr">
+  <div class="logo">UNREAL<span class="chevron">></span>ILLE <span class="logo-studio">STUDIO</span></div>
+  <div class="hdr-right">
+    <div class="hdr-brand">Neurone SC Florida</div>
+    <div class="hdr-meta">Estrategia Comercial B2C · 23 marzo 2026 · Uso interno</div>
+    <div class="recipients">
+      <span class="rec">Sam</span>
+      <span class="rec">Patricia Osorio</span>
+      <span class="rec">Laura</span>
+    </div>
+  </div>
+</div>
+
+<!-- TITLE -->
+<div class="title">
+  <h1>RITUALES<br><span class="ac">+</span> ESTRATEGIA<br><span class="dim">COMERCIAL</span></h1>
+  <div class="tagline">Kits · Envío · Promociones · Escenarios · Inversión</div>
+  <div class="tags">
+    <span class="tag hi">Canal B2C exclusivo — fase 1</span>
+    <span class="tag">4 Rituales PO</span>
+    <span class="tag">Envío gratis en kits</span>
+    <span class="tag">5 mecanismos de impulso</span>
+    <span class="tag">Breakeven mes 6</span>
+  </div>
+</div>
+
+<!-- SECTION 0: COSTOS -->
+<section>
+  <div class="sec">00 — Base de cálculo</div>
+  <h2>ESTRUCTURA DE COSTOS</h2>
+  <p class="intro">Los costos variables son fijos por orden. Los costos fijos se distribuyen entre las órdenes vendidas y determinan el breakeven. Tres escenarios de activación operativa progresiva.</p>
+
+  <div class="cost-row">
+    <div class="cost-card">
+      <div class="cc-label">Variable · Por orden</div>
+      <div class="cc-name">Independientes del volumen</div>
+      <div class="cc-items">
+        <div class="cc-item"><span>3PL orden 1 producto (≤1lb)</span><span>$10.97</span></div>
+        <div class="cc-item"><span>3PL orden 2+ productos (>1lb)</span><span>$20.97</span></div>
+        <div class="cc-item" style="margin-top:6px;font-size:11px;color:var(--muted)">
+          <span>Incluye: envío + packaging + labeling + transacción Shopify</span></div>
+      </div>
+    </div>
+    <div class="cost-card featured">
+      <div class="cc-label">Fijo mensual · Marketing</div>
+      <div class="cc-name">Stack completo</div>
+      <div class="cc-items">
+        <div class="cc-item"><span>Meta Ads (base)</span><span>$500</span></div>
+        <div class="cc-item"><span>TikTok Ads (base)</span><span>$500</span></div>
+        <div class="cc-item"><span>Tech stack + dominios</span><span>$143</span></div>
+        <div class="cc-item"><span>AI APIs</span><span>$250</span></div>
+        <div class="cc-item"><span>Email/CRM + mensajería</span><span>$105</span></div>
+        <div class="cc-item"><span>Descuentos/promo</span><span>$136</span></div>
+        <div class="cc-item changed"><span>UNRLVL fee de agencia</span><span>$1,500</span></div>
+        <div class="cc-item total"><span>Total marketing</span><span>$3,134/mes</span></div>
+      </div>
+    </div>
+    <div class="cost-card">
+      <div class="cc-label">Fijo mensual · Operativos</div>
+      <div class="cc-name">3 escenarios</div>
+      <div class="cc-items">
+        <div class="cc-item"><span>Activos base</span><span>$2,766</span></div>
+        <div class="cc-item" style="font-size:11px;color:var(--muted)">
+          <span>Renta · salarios · software · servicios · equipos · legal · varios</span></div>
+      </div>
+      <div class="sc-row">
+        <div class="sc-line"><span class="sc-tag scA">Sc.A</span><span class="scVal c-green">$5,840/mes</span></div>
+        <div class="sc-line" style="font-size:11px;color:var(--muted);margin-left:4px;margin-bottom:6px"><span>Solo operativos activos</span></div>
+        <div class="sc-line"><span class="sc-tag scB">Sc.B</span><span class="scVal c-yellow">$7,840/mes</span></div>
+        <div class="sc-line" style="font-size:11px;color:var(--muted);margin-left:4px;margin-bottom:6px"><span>+ Contador + Seguro</span></div>
+        <div class="sc-line"><span class="sc-tag scC">Sc.C</span><span class="scVal c-orange">$9,240/mes</span></div>
+        <div class="sc-line" style="font-size:11px;color:var(--muted);margin-left:4px"><span>Operación completa</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: KITS -->
+<section>
+  <div class="sec">01 — Los 4 Rituales</div>
+  <h2>KITS PO — NÚCLEO DEL CATÁLOGO</h2>
+  <p class="intro">Patricia Osorio estructuró cuatro kits desde su experiencia clínica y comprensión directa del mercado. Estos kits son la unidad comercial del negocio: resuelven el problema logístico de los 50ml individuales, elevan el AOV a $52 blended, y permiten a PO vender una solución completa en lugar de un producto aislado.</p>
+
+  <div class="kits-grid">
+    <div class="kit-card">
+      <div class="kit-head">
+        <span class="kit-num">01</span>
+        <div class="kit-info">
+          <h3>HUMIT — Deep Moisturizing</h3>
+          <div class="ritual">Hidratación Profunda</div>
+        </div>
+      </div>
+      <div class="kit-body">
+        <div class="kit-products">
+          <div class="kit-prod">Shampoo HUMIT 50ml</div>
+          <div class="kit-prod">HUMIT MASK 50ml</div>
+          <div class="kit-prod">DY FAZZA 50ml</div>
+        </div>
+        <div class="kit-nums">
+          <div class="kit-num-block"><div class="kn-label">Costo</div><div class="kn-val c-text">$24.03</div></div>
+          <div class="kit-num-block"><div class="kn-label">Precio</div><div class="kn-val c-text">$45</div></div>
+          <div class="kit-num-block"><div class="kn-label">Contrib.</div><div class="kn-val c-yellow">$18.03</div></div>
+          <div class="kit-num-block"><div class="kn-label">Margen</div><div class="kn-val c-green">42.9%</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kit-card">
+      <div class="kit-head">
+        <span class="kit-num">02</span>
+        <div class="kit-info">
+          <h3>KERASIN HB + VELVETY — Intensive Repair</h3>
+          <div class="ritual">Reparación Intensa</div>
+        </div>
+      </div>
+      <div class="kit-body">
+        <div class="kit-products">
+          <div class="kit-prod">Shampoo KERASIN HB 50ml</div>
+          <div class="kit-prod">KERASIN HB MASK 50ml</div>
+          <div class="kit-prod">DY FAZZA COLOR 50ml</div>
+        </div>
+        <div class="kit-nums">
+          <div class="kit-num-block"><div class="kn-label">Costo</div><div class="kn-val c-text">$24.03</div></div>
+          <div class="kit-num-block"><div class="kn-label">Precio</div><div class="kn-val c-text">$48</div></div>
+          <div class="kit-num-block"><div class="kn-label">Contrib.</div><div class="kn-val c-yellow">$20.83</div></div>
+          <div class="kit-num-block"><div class="kn-label">Margen</div><div class="kn-val c-green">46.4%</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kit-card">
+      <div class="kit-head">
+        <span class="kit-num">03</span>
+        <div class="kit-info">
+          <h3>TOTAL VIOLET — Color Guard</h3>
+          <div class="ritual">Protección Color</div>
+        </div>
+      </div>
+      <div class="kit-body">
+        <div class="kit-products">
+          <div class="kit-prod">Shampoo TOTAL VIOLET 50ml</div>
+          <div class="kit-prod">TOTAL VIOLET MASK 50ml</div>
+          <div class="kit-prod">DY FAZZA 50ml</div>
+          <div class="kit-prod">VELVETY CONTROL 50ml</div>
+        </div>
+        <div class="kit-nums">
+          <div class="kit-num-block"><div class="kn-label">Costo</div><div class="kn-val c-text">$25.05</div></div>
+          <div class="kit-num-block"><div class="kn-label">Precio</div><div class="kn-val c-text">$55</div></div>
+          <div class="kit-num-block"><div class="kn-label">Contrib.</div><div class="kn-val c-yellow">$26.35</div></div>
+          <div class="kit-num-block"><div class="kn-label">Margen</div><div class="kn-val c-green">51.3%</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kit-card hero">
+      <div class="kit-head">
+        <span class="kit-num">SOS</span>
+        <div class="kit-info">
+          <h3>DYFENSOR + SERUM — Rescue Treatment</h3>
+          <div class="ritual">⭐ Rescate Premium · Mayor margen</div>
+        </div>
+      </div>
+      <div class="kit-body">
+        <div class="kit-products">
+          <div class="kit-prod">Shampoo DYFENSOR Sulfate Free 50ml</div>
+          <div class="kit-prod">DYFENSOR SERUM S007 (kit 25ml)</div>
+          <div class="kit-prod">DY FAZZA 50ml</div>
+        </div>
+        <div class="kit-nums">
+          <div class="kit-num-block"><div class="kn-label">Costo</div><div class="kn-val c-text">$29.73</div></div>
+          <div class="kit-num-block"><div class="kn-label">Precio</div><div class="kn-val c-gold">$79</div></div>
+          <div class="kit-num-block"><div class="kn-label">Contrib.</div><div class="kn-val c-gold">$44.10</div></div>
+          <div class="kit-num-block"><div class="kn-label">Margen</div><div class="kn-val c-gold">59.7%</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout gold">
+    <strong>El Kit SOS financia la operación:</strong> Con 59.7% de margen y $44.10 de contribución por venta, cada Kit SOS equivale en peso financiero a 2.4 ventas del Kit #1. Es el producto ancla de las campañas de ads y el argumento más sólido del catálogo cuando PO lo recomienda con su autoridad profesional.
+  </div>
+</section>
+
+<!-- SECTION 2: ENVÍO -->
+<section>
+  <div class="sec">02 — Política de envío</div>
+  <h2>ENVÍO: GRATIS EN KITS, PAGADO EN INDIVIDUALES</h2>
+  <p class="intro">El consumidor floridano está acostumbrado a pagar el envío — no es fricción, es la norma. Eso convierte el "envío gratis en kits" en un incentivo real de conversión, no en un descuento genérico. El 3PL ya está absorbido en el precio de los kits, por lo que la promesa de envío gratis no cuesta nada adicional.</p>
+
+  <div class="ship-grid">
+    <div class="ship-card pay">
+      <div class="ship-card-label">Productos individuales</div>
+      <h3>Envío estándar</h3>
+      <div class="ship-price">$9.99</div>
+      <div class="ship-desc">Aplica a cualquier compra de producto individual (serums, treatments 200ml, styling). Es el precio esperado por el mercado floridano. No genera fricción — genera oportunidad de upsell hacia el kit.</div>
+      <div class="ship-impact">
+        <div class="si-row"><span>Costo 3PL (ya en precio)</span><span class="c-muted">$10.97</span></div>
+        <div class="si-row"><span>Cobro al cliente</span><span class="c-yellow">+$9.99</span></div>
+        <div class="si-row"><span>Mejora de contribución</span><span class="c-green">+$9.34/orden</span></div>
+      </div>
+    </div>
+    <div class="ship-card free">
+      <div class="ship-card-label">Cualquier kit · Ritual completo</div>
+      <h3>Envío GRATIS</h3>
+      <div class="ship-price">$0</div>
+      <div class="ship-desc">El 3PL ya está absorbido en el precio del kit. "Envío gratis" es una etiqueta sin costo adicional que convierte la lógica de precio en argumento de venta. PO puede decirlo en 5 segundos: <em style="color:var(--text)">"compra el kit y el envío es gratis."</em></div>
+      <div class="ship-impact">
+        <div class="si-row"><span>Costo 3PL (incluido en precio kit)</span><span class="c-muted">$20.97</span></div>
+        <div class="si-row"><span>Cobro al cliente</span><span class="c-cyan">$0 adicional</span></div>
+        <div class="si-row"><span>Impacto en margen</span><span class="c-green">Sin cambio</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout cg">
+    <strong>Impacto en el breakeven:</strong> Cobrar $9.99 de envío en órdenes individuales (40% del mix estimado) mejora la contribución blended en ~$3.73/orden, bajando el breakeven de Sc.B de 298 a <strong>~270 órdenes/mes</strong>. Son 28 órdenes menos que separan la pérdida de la rentabilidad — aproximadamente 1 semana de ventas menos en la curva de ramp-up.
+  </div>
+</section>
+
+<!-- SECTION 3: PROMOCIONES -->
+<section>
+  <div class="sec">03 — Impulso de volumen</div>
+  <h2>5 MECANISMOS PROMOCIONALES</h2>
+  <p class="intro">Cada mecanismo tiene un objetivo específico, un costo real calculado y un rol en la curva de crecimiento. No son descuentos genéricos — son palancas con impacto medible en conversión, AOV o retención.</p>
+
+  <div class="promos-grid">
+    <!-- CÓDIGO PO -->
+    <div class="promo-card primary">
+      <div class="promo-head">
+        <div class="promo-num">Promo 01 · CAC más bajo posible</div>
+        <div class="promo-name">Código Referido PO</div>
+        <div class="promo-tag" style="color:var(--gold)">Activar desde día 1</div>
+      </div>
+      <div class="promo-body">
+        <div class="promo-mech">PATRICIA15 — 15% primera compra</div>
+        <div class="promo-desc">PO comparte su código personal con su red de clientes, colegas y contactos profesionales. Convierte la confianza acumulada en 20 años en un canal de adquisición de costo mínimo.</div>
+        <div class="promo-nums">
+          <div class="pn-block">
+            <div class="pn-label">Costo/venta Kit#1</div>
+            <div class="pn-val c-yellow">$6.31</div>
+          </div>
+          <div class="pn-block">
+            <div class="pn-label">Vs CAC ads</div>
+            <div class="pn-val c-green">vs $25–35</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EARLY BIRD -->
+    <div class="promo-card">
+      <div class="promo-head">
+        <div class="promo-num">Promo 02 · Primeras 50 órdenes</div>
+        <div class="promo-name">Early Bird — 50ml gratis</div>
+        <div class="promo-tag" style="color:var(--accent)">Mes 1 · Genera reseñas</div>
+      </div>
+      <div class="promo-body">
+        <div class="promo-mech">+1 miniatura 50ml a elegir en cada kit</div>
+        <div class="promo-desc">Las primeras 50 órdenes reciben un 50ml de regalo. Sin reseñas no hay conversión paid en fase 2. Costo mínimo, retorno en credibilidad y UGC real.</div>
+        <div class="promo-nums">
+          <div class="pn-block">
+            <div class="pn-label">Costo/orden</div>
+            <div class="pn-val c-green">$1.02</div>
+          </div>
+          <div class="pn-block">
+            <div class="pn-label">Total 50 órdenes</div>
+            <div class="pn-val c-green">$51</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADD-ON $12 -->
+    <div class="promo-card featured">
+      <div class="promo-head">
+        <div class="promo-num">Promo 03 · Aumenta AOV permanente</div>
+        <div class="promo-name">Add-on 50ml en Checkout</div>
+        <div class="promo-tag" style="color:var(--cyan)">Siempre activo · Sin costo de envío</div>
+      </div>
+      <div class="promo-body">
+        <div class="promo-mech">"Añade una miniatura por $12"</div>
+        <div class="promo-desc">Al momento del checkout, ofrecer cualquier 50ml por $12. El envío ya está pagado por el producto principal. Contribución neta casi pura sobre producto de $1.02.</div>
+        <div class="promo-nums">
+          <div class="pn-block">
+            <div class="pn-label">Contrib. adicional</div>
+            <div class="pn-val c-cyan">$10.19</div>
+          </div>
+          <div class="pn-block">
+            <div class="pn-label">Costo logístico</div>
+            <div class="pn-val c-green">$0 extra</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUSCRIPCIÓN -->
+    <div class="promo-card">
+      <div class="promo-head">
+        <div class="promo-num">Promo 04 · Retención + LTV</div>
+        <div class="promo-name">Suscripción Mensual</div>
+        <div class="promo-tag" style="color:var(--purple)">Activar mes 2+ · Shopify nativo</div>
+      </div>
+      <div class="promo-body">
+        <div class="promo-mech">Cualquier kit mensual con 10% off</div>
+        <div class="promo-desc">Shopify tiene suscripciones nativas. Un cliente que suscribe el Kit SOS a $71.10/mes genera $441 de contribución anual con el CAC ya pagado. La tasa de churn en hair care por suscripción es baja si el producto funciona.</div>
+        <div class="promo-nums">
+          <div class="pn-block">
+            <div class="pn-label">Kit SOS suscrito</div>
+            <div class="pn-val c-gold">$71.10/mes</div>
+          </div>
+          <div class="pn-block">
+            <div class="pn-label">LTV contrib. 12m</div>
+            <div class="pn-val c-gold">$441</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KIT DEL MES -->
+    <div class="promo-card">
+      <div class="promo-head">
+        <div class="promo-num">Promo 05 · Contenido + urgencia</div>
+        <div class="promo-name">Kit del Mes — Recomendado por PO</div>
+        <div class="promo-tag" style="color:var(--accent)">Mensual · Genera contenido fresco</div>
+      </div>
+      <div class="promo-body">
+        <div class="promo-mech">$5 off en el kit elegido ese mes</div>
+        <div class="promo-desc">Cada mes PO nombra un kit como su recomendación personal con un video corto explicando por qué. Crea urgencia temporal, rota el catálogo, genera contenido para ads, y mantiene activo el rol de PO en el storefront.</div>
+        <div class="promo-nums">
+          <div class="pn-block">
+            <div class="pn-label">Costo del descuento</div>
+            <div class="pn-val c-yellow">~$4.67/kit</div>
+          </div>
+          <div class="pn-block">
+            <div class="pn-label">Contenido generado</div>
+            <div class="pn-val c-green">1 video/mes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout purple">
+    <strong>El activo más subestimado: Patricia Osorio en cámara.</strong> Un Reel de PO recomendando el Kit SOS desde su experiencia como estilista profesional supera en conversión cualquier creatividad producida externamente. Costo de producción: $0. Ese video activado como Spark Ad en TikTok puede ser el activo de mayor ROAS de toda la campaña. Es la primera pieza de contenido que hay que conseguir antes de escalar el presupuesto de ads.
+  </div>
+</section>
+
+<!-- SECTION 4: ESCENARIOS P&L -->
+<section>
+  <div class="sec">04 — Escenarios de lanzamiento</div>
+  <h2>TRES FASES · P&L PROYECTADO</h2>
+  <p class="intro">Proyección usando Sc.B como referencia ($7,840/mes base). Mix de órdenes: 60% kits / 40% individuales. Presupuesto de ads escalonado por fase — lo adicional al $1,000 base del modelo se suma a los costos fijos.</p>
+
+  <div class="phases">
+    <div class="phase-card">
+      <div class="phase-head">
+        <div class="ph-period">Mes 1–2 · Arranque</div>
+        <div class="ph-name">Validación</div>
+        <div class="ph-orders">40 órdenes · AOV $52 · Meta+TikTok $1,000</div>
+      </div>
+      <div class="phase-body">
+        <div class="ph-line"><span>Revenue</span><span>$2,116</span></div>
+        <div class="ph-line"><span>Costos variables</span><span>−$974</span></div>
+        <div class="ph-line gp"><span>Gross profit (54%)</span><span>$1,142</span></div>
+        <hr class="ph-div">
+        <div class="ph-line"><span>Costos fijos Sc.B</span><span>−$7,840</span></div>
+        <div class="ph-result"><span>Resultado</span><span class="ph-loss">−$6,698</span></div>
+        <div class="ph-note">Pérdida deliberada. El objetivo es data: qué kit convierte mejor, qué dice la audiencia, cómo responde la red de PO. Esos datos valen más que los $6,700.</div>
+      </div>
+    </div>
+
+    <div class="phase-card">
+      <div class="phase-head">
+        <div class="ph-period">Mes 3–5 · Tracción</div>
+        <div class="ph-name">Crecimiento</div>
+        <div class="ph-orders">150 órdenes · AOV $53 · Meta $900 + TikTok $600</div>
+      </div>
+      <div class="phase-body">
+        <div class="ph-line"><span>Revenue</span><span>$8,015</span></div>
+        <div class="ph-line"><span>Costos variables</span><span>−$3,631</span></div>
+        <div class="ph-line gp"><span>Gross profit (54.7%)</span><span>$4,384</span></div>
+        <hr class="ph-div">
+        <div class="ph-line"><span>Fijos Sc.B + $500 ads extra</span><span>−$8,340</span></div>
+        <div class="ph-result"><span>Resultado</span><span class="ph-loss">−$3,956</span></div>
+        <div class="ph-note">Pérdida reduciéndose. Con código PO activo y Spark Ads del video PO, el crecimiento de órdenes puede ser más rápido que la proyección conservadora.</div>
+      </div>
+    </div>
+
+    <div class="phase-card breakeven">
+      <div class="phase-head">
+        <div class="ph-period">Mes 6 · Equilibrio</div>
+        <div class="ph-name">Breakeven</div>
+        <div class="ph-orders">270–380 órdenes · Meta $1,500 + TikTok $1,000</div>
+      </div>
+      <div class="phase-body">
+        <div class="ph-line"><span>Revenue</span><span>$14,000–19,800</span></div>
+        <div class="ph-line"><span>Costos variables</span><span>−$6,300–8,900</span></div>
+        <div class="ph-line gp"><span>Gross profit (55%)</span><span>$7,700–10,900</span></div>
+        <hr class="ph-div">
+        <div class="ph-line"><span>Fijos Sc.B + $1,500 ads extra</span><span>−$9,340</span></div>
+        <div class="ph-result"><span>Resultado</span><span class="ph-profit">±$0 → +$1,560</span></div>
+        <div class="ph-note">Zona de equilibrio. El cobro de envío en individuales reduce el breakeven a ~270 órdenes. A 380 órdenes el negocio genera utilidad real por primera vez.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: CURVA MENSUAL -->
+<section>
+  <div class="sec">05 — Proyección mes a mes</div>
+  <h2>CURVA DE RAMP-UP</h2>
+  <p class="intro">Crecimiento orgánico conservador + ads escalonados. La columna "Acumulado" es el capital total consumido — ese es el runway mínimo que debe estar disponible antes del lanzamiento.</p>
+
+  <div class="runway-table">
+    <table>
+      <thead><tr>
+        <th>Mes</th>
+        <th>Órdenes</th>
+        <th>Revenue</th>
+        <th>Gross profit</th>
+        <th>Meta</th>
+        <th>TikTok</th>
+        <th>Fijos totales</th>
+        <th>Neto mes</th>
+        <th>Acumulado</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>1</td><td>35</td><td>$1,823</td><td>$887</td><td>$500</td><td>$500</td><td>$7,840</td><td class="c-red">−$6,953</td><td class="c-red">−$6,953</td></tr>
+        <tr><td>2</td><td>65</td><td>$3,385</td><td>$1,648</td><td>$500</td><td>$500</td><td>$7,840</td><td class="c-red">−$6,192</td><td class="c-red">−$13,145</td></tr>
+        <tr><td>3</td><td>120</td><td>$6,250</td><td>$3,042</td><td>$900</td><td>$600</td><td>$8,340</td><td class="c-orange">−$5,298</td><td class="c-orange">−$18,443</td></tr>
+        <tr><td>4</td><td>200</td><td>$10,416</td><td>$5,070</td><td>$1,100</td><td>$700</td><td>$8,640</td><td class="c-yellow">−$3,570</td><td class="c-yellow">−$22,013</td></tr>
+        <tr><td>5</td><td>290</td><td>$15,103</td><td>$7,351</td><td>$1,400</td><td>$900</td><td>$9,140</td><td class="c-yellow">−$1,789</td><td class="c-yellow">−$23,802</td></tr>
+        <tr class="be-row"><td>6 ★</td><td>380</td><td>$19,790</td><td>$9,633</td><td>$1,500</td><td>$1,000</td><td>$9,340</td><td>+$293</td><td>−$23,509</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout cr">
+    <strong>Capital necesario antes del lanzamiento:</strong> la curva consume ~$23,500 antes del primer mes rentable. Sumando inventario inicial ($4,000–6,000), el capital total necesario es <strong>$27,000–30,000</strong>. Este número no lo resuelve el pricing ni las promociones — requiere estar disponible antes del día 1.
+  </div>
+</section>
+
+<!-- SECTION 6: ADS -->
+<section>
+  <div class="sec">06 — Inversión publicitaria</div>
+  <h2>META + TIKTOK — MÍNIMOS POR FASE</h2>
+  <p class="intro">El CAC baja con el tiempo a medida que el algoritmo aprende, la red de PO genera referidos orgánicos y el código PATRICIA15 trabaja de forma independiente. El modelo base incluye $500+$500 — los adicionales se cargan como costo extra mensual.</p>
+
+  <div class="ads-grid">
+    <div class="ads-card">
+      <div class="ads-phase">Mes 1–2 · Audiencia fría</div>
+      <div class="ads-name">Validación</div>
+      <div class="ads-ch">
+        <div class="ads-ch-name">Meta (Facebook / Instagram)</div>
+        <div class="ads-amount">$500<span style="font-size:12px;font-weight:400;color:var(--muted)">/mes</span></div>
+        <div class="ads-sub">Reels + Stories · presentación de kits<br>Segm: mujeres 25–50 · South Florida</div>
+      </div>
+      <div class="ads-ch">
+        <div class="ads-ch-name">TikTok Ads</div>
+        <div class="ads-amount">$500<span style="font-size:12px;font-weight:400;color:var(--muted)">/mes</span></div>
+        <div class="ads-sub">In-Feed Ads · contenido de resultados<br>Activar Spark Ad con video de PO</div>
+      </div>
+      <div class="ads-total">
+        <span class="ads-total-label">Total mensual</span>
+        <span class="ads-total-val">$1,000</span>
+      </div>
+      <div class="ads-cac">CAC estimado: $25–35/cliente<br>Incluido en modelo base · sin adicional</div>
+    </div>
+
+    <div class="ads-card">
+      <div class="ads-phase">Mes 3–5 · Retargeting + lookalike</div>
+      <div class="ads-name">Tracción</div>
+      <div class="ads-ch">
+        <div class="ads-ch-name">Meta (Facebook / Instagram)</div>
+        <div class="ads-amount">$900<span style="font-size:12px;font-weight:400;color:var(--muted)">/mes</span></div>
+        <div class="ads-sub">Lookalike red PO · retargeting<br>Kit SOS como ancla de campaña</div>
+      </div>
+      <div class="ads-ch">
+        <div class="ads-ch-name">TikTok Ads</div>
+        <div class="ads-amount">$600<span style="font-size:12px;font-weight:400;color:var(--muted)">/mes</span></div>
+        <div class="ads-sub">Spark Ads desde contenido orgánico PO<br>Hashtag Rituales · micro-influencers FL</div>
+      </div>
+      <div class="ads-total">
+        <span class="ads-total-label">Total mensual</span>
+        <span class="ads-total-val">$1,500</span>
+      </div>
+      <div class="ads-cac">CAC estimado: $15–22/cliente<br>Adicional al modelo: +$500/mes</div>
+    </div>
+
+    <div class="ads-card">
+      <div class="ads-phase">Mes 6+ · Audiencia establecida</div>
+      <div class="ads-name">Breakeven</div>
+      <div class="ads-ch">
+        <div class="ads-ch-name">Meta (Facebook / Instagram)</div>
+        <div class="ads-amount">$1,500<span style="font-size:12px;font-weight:400;color:var(--muted)">/mes</span></div>
+        <div class="ads-sub">Campañas de conversión CBO<br>Catálogo dinámico de kits</div>
+      </div>
+      <div class="ads-ch">
+        <div class="ads-ch-name">TikTok Ads</div>
+        <div class="ads-amount">$1,000<span style="font-size:12px;font-weight:400;color:var(--muted)">/mes</span></div>
+        <div class="ads-sub">Video Shopping Ads<br>Colaboraciones micro-influencers FL</div>
+      </div>
+      <div class="ads-total">
+        <span class="ads-total-label">Total mensual</span>
+        <span class="ads-total-val">$2,500</span>
+      </div>
+      <div class="ads-cac">CAC estimado: $10–18/cliente<br>Adicional al modelo: +$1,500/mes</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <strong>ROAS objetivos por fase:</strong> Validación 2.1x · Tracción 4.4x · Breakeven 6.0x. Si el ROAS de Meta baja de 2.5x en fase 1, revisar creativos antes de incrementar presupuesto — el problema es el mensaje, no el volumen de inversión.
+  </div>
+</section>
+
+<!-- SECTION 7: FOCO POR KIT -->
+<section>
+  <div class="sec">07 — Distribución del presupuesto</div>
+  <h2>FOCO PUBLICITARIO POR RITUAL</h2>
+
+  <div class="strat-table">
+    <table>
+      <thead><tr>
+        <th>Kit</th><th>Precio</th><th>Margen</th><th>Rol en ads</th><th>Formato recomendado</th><th>% presupuesto</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="badge bh">SOS</span> &nbsp;Dyfensor + Serum</td>
+          <td style="font-family:'Syne Mono',monospace;color:var(--gold)">$79</td>
+          <td style="font-family:'Syne Mono',monospace;color:var(--green)">59.7%</td>
+          <td><strong>ANCLA</strong> — financia la campaña completa</td>
+          <td>Reel "transformación" PO en cámara · Spark Ad</td>
+          <td style="font-family:'Syne Mono',monospace">40%</td>
+        </tr>
+        <tr>
+          <td><span class="badge bc">K3</span> &nbsp;Total Violet</td>
+          <td style="font-family:'Syne Mono',monospace">$55</td>
+          <td style="font-family:'Syne Mono',monospace;color:var(--green)">51.3%</td>
+          <td><strong>PREMIUM MID</strong> — cabello teñido, alta retención</td>
+          <td>Carousel · resultados antes/después</td>
+          <td style="font-family:'Syne Mono',monospace">25%</td>
+        </tr>
+        <tr>
+          <td><span class="badge bc">K2</span> &nbsp;Kerasin + Velvety</td>
+          <td style="font-family:'Syne Mono',monospace">$48</td>
+          <td style="font-family:'Syne Mono',monospace;color:var(--yellow)">46.4%</td>
+          <td><strong>VOLUMEN</strong> — reparación · audiencia amplia</td>
+          <td>Stories con CTA · retargeting visitantes</td>
+          <td style="font-family:'Syne Mono',monospace">20%</td>
+        </tr>
+        <tr>
+          <td><span class="badge bg">K1</span> &nbsp;Humit</td>
+          <td style="font-family:'Syne Mono',monospace">$45</td>
+          <td style="font-family:'Syne Mono',monospace;color:var(--yellow)">42.9%</td>
+          <td><strong>ENTRADA</strong> — primer contacto · precio accesible</td>
+          <td>Awareness · top of funnel · audiencias frías</td>
+          <td style="font-family:'Syne Mono',monospace">15%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- VERDICT -->
+<section>
+  <div class="sec">08 — Conclusión</div>
+  <div class="verdict">
+    <div class="vt">Veredicto estratégico · v4</div>
+    <h3>LOS RITUALES DE PO + EL ENVÍO GRATIS + LAS PROMOCIONES CORRECTAS FORMAN UNA SOLA ESTRATEGIA</h3>
+    <p>Los cuatro rituales de Patricia Osorio resuelven el problema estructural del catálogo, elevan el AOV a $52, y le dan a PO un argumento de venta que ningún e-commerce genérico puede replicar. La política de envío gratis en kits añade una promesa de valor sin costo real. Las cinco promociones atacan cada etapa de la curva: código PO activa la red existente, early bird genera las primeras reseñas, add-on de checkout sube el ticket sin fricción, suscripción convierte compradores en base recurrente, y kit del mes mantiene vivo el ciclo de contenido.</p>
+    <p><strong>El breakeven se mueve de 298 a ~270 órdenes</strong> solo con cobrar envío en individuales — sin cambiar ningún precio ni añadir ninguna promoción. Esas 28 órdenes equivalen a aproximadamente 1 semana menos de quema de capital en la curva de ramp-up.</p>
+    <p><strong>El número que no cambia:</strong> el runway necesario es $27,000–30,000 disponibles antes del día 1. Todo lo demás — pricing, kits, promociones, ads — optimiza la velocidad a la que se llega al breakeven. Pero si el capital no está, no hay estrategia que lo sustituya.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="logo">UNREAL<span class="chevron">></span>ILLE <span class="logo-studio">STUDIO</span></div>
+  <div class="footer-badge icr-badge">ICR · Confidencial</div>
+  <div class="footer-meta">
+    Neurone SC Florida · Estrategia Comercial B2C v4<br>
+    23 mar 2026 · Sam · Patricia Osorio · Laura
+  </div>
+</div>
+
+</body>
+</html>
