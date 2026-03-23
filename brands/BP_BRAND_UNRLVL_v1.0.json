@@ -1,6 +1,6 @@
 {
   "id": "brand_unrlvl_studio",
-  "schema_version": "BP_BRAND_1.2",
+  "schema_version": "BP_BRAND_1.3",
   "brandId": "UNRLVL",
   "displayName": "Unreal>ille Studio",
   "tagline": "Built different.",
@@ -19,31 +19,31 @@
   },
   "logotype": {
     "format": "css_pure",
-    "implementation": "HTML/CSS only — no image file required",
     "font_family": "Bebas Neue",
-    "font_source": "https://fonts.googleapis.com/css2?family=Bebas+Neue",
-    "markup": "<span class=\"logotype\"><span class=\"lt-un\">UNREAL</span><span class=\"lt-chevron\">></span><span class=\"lt-ille\">ILLE</span><span class=\"lt-studio\">STUDIO</span></span>",
-    "css_tokens": {
-      "lt-un": "color: var(--chalk, #F2F0EC)",
-      "lt-chevron": "color: var(--cyan, #00FFD1); transform: scaleY(1.45) scaleX(0.72); transform-origin: center; display: inline-block; letter-spacing: 0; margin: 0 -0.01em",
-      "lt-ille": "color: var(--chalk, #F2F0EC)",
-      "lt-studio": "color: rgba(242,240,236,0.32); margin-left: 0.18em; font-size: 0.72em; letter-spacing: 0.14em"
-    },
-    "sizes": {
-      "nav": "font-size: 20px (lt-studio: 14px)",
-      "footer": "font-size: 28px (lt-studio: 20px)",
-      "inline": "font-size: 16px (lt-studio: 11px)"
-    },
-    "letter_spacing": "0.04em on .logotype wrapper",
-    "chevron_animation": {
-      "required": true,
-      "rule": "ALWAYS blinking — no exceptions in any context including favicon",
-      "css_keyframes": "@keyframes chevron-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }",
-      "css_animation": "animation: chevron-blink 1s step-start infinite",
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap",
+    "markup": "<span class=\"lt-logotype\"><span class=\"lt-un\">UNREAL</span><span class=\"lt-chevron\">></span><span class=\"lt-ille\">ILLE</span> <span class=\"lt-studio\">STUDIO</span></span>",
+    "chevron": {
+      "character": ">",
+      "color": "#00FFD1",
       "class": "lt-chevron",
-      "note": "step-start for hard cut blink, not fade"
+      "blink": true,
+      "blink_rule": "ALWAYS blinking in every context — no exceptions. Not on hover, not on active — permanently blinking.",
+      "animation_method": "CSS keyframes (HTML/CSS context) + SMIL animate (SVG favicon)",
+      "css_keyframes": "@keyframes chevron-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }",
+      "css_class_rule": ".lt-chevron { color: #00FFD1; animation: chevron-blink 1s step-start infinite; display: inline-block; }",
+      "transform": "scaleY(1.45) scaleX(0.72)",
+      "transform_origin": "center"
     },
-    "studio_note": "STUDIO must be visually much darker than UNREAL>ILLE — not same weight. Use 0.32 opacity max. Never use same color/weight as main logotype text."
+    "studio_suffix": {
+      "text": "STUDIO",
+      "class": "lt-studio",
+      "color": "rgba(242,240,236,0.32)",
+      "rule": "MUST be visually much darker/dimmer than UNREAL>ILLE — never same weight or color. 0.32 opacity max.",
+      "font_size": "0.72em of logotype wrapper",
+      "letter_spacing": "0.14em",
+      "margin_left": "0.18em"
+    },
+    "css_complete": "\n/* ── UNRLVL Logotype — copy this block exactly ── */\n@keyframes chevron-blink {\n  0%, 49% { opacity: 1; }\n  50%, 100% { opacity: 0; }\n}\n.lt-logotype {\n  font-family: 'Bebas Neue', sans-serif;\n  letter-spacing: 0.04em;\n  line-height: 1;\n  white-space: nowrap;\n}\n.lt-un, .lt-ille {\n  color: #F2F0EC;\n}\n.lt-chevron {\n  color: #00FFD1;\n  animation: chevron-blink 1s step-start infinite;\n  display: inline-block;\n  transform: scaleY(1.45) scaleX(0.72);\n  transform-origin: center;\n  letter-spacing: 0;\n  margin: 0 -0.01em;\n}\n.lt-studio {\n  color: rgba(242,240,236,0.32);\n  font-size: 0.72em;\n  letter-spacing: 0.14em;\n  margin-left: 0.18em;\n}\n/* Sizes */\n.lt-logotype.size-nav    { font-size: 20px; }\n.lt-logotype.size-footer { font-size: 28px; }\n.lt-logotype.size-inline { font-size: 16px; }\n"
   },
   "color_palette": {
     "primary": {
@@ -182,18 +182,66 @@
     {
       "file": "docs/reports/neurone_pricing_analysis_v1.html",
       "repo": "unrealvillestudio-hub/BluePrints",
-      "description": "Standard document — nav + footer composition reference"
-    },
-    {
-      "file": "unrealville-studio_checkpoint_fixed.html",
-      "description": "Website/landing — full UNRLVL brand identity reference"
+      "note": "Legacy — pre-blinking chevron, do not use as reference"
     },
     {
       "file": "docs/reports/neurone_estrategia_v4.html",
       "repo": "unrealvillestudio-hub/BluePrints",
-      "description": "Neurone SC Florida — Estrategia Comercial B2C v4. First implementation of blinking chevron + correct STUDIO opacity + ICR badge + favicon.",
-      "status": "checkpoint — pending PO approval"
+      "status": "CURRENT REFERENCE — blinking chevron, ICR badge, STUDIO dimmed, favicon embedded",
+      "date": "2026-03-23"
     }
   ],
-  "updated": "2026-03-23"
+  "updated": "2026-03-23",
+  "favicon": {
+    "spec": "32×32 SVG — chevron polygon in #00FFD1 blinking, transparent background",
+    "animation_method": "SMIL <animate> — works in Chrome/Edge/Firefox without CSS support in favicon context",
+    "svg_file": "brands/assets/UnrealilleStudio/UNRLVL_favicon.svg",
+    "embed_rule": "MANDATORY in <head> of EVERY HTML output — no exceptions",
+    "embed_tag": "<link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiLz4KICA8cG9seWdvbiBwb2ludHM9IjYsMyAyMiwxNiA2LDI5IDEwLDI5IDI2LDE2IDEwLDMiIGZpbGw9IiMwMEZGRDEiPgogICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ib3BhY2l0eSIKICAgICAgdmFsdWVzPSIxOzE7MDswOzEiCiAgICAgIGtleVRpbWVzPSIwOzAuNDk7MC41OzAuOTk7MSIKICAgICAgZHVyPSIxcyIKICAgICAgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz4KICA8L3BvbHlnb24+Cjwvc3ZnPg==\">",
+    "embed_position": "First tag in <head>, before any stylesheet links",
+    "svg_source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" width=\"32\" height=\"32\">\n  <rect width=\"32\" height=\"32\" fill=\"none\"/>\n  <polygon points=\"6,3 22,16 6,29 10,29 26,16 10,3\" fill=\"#00FFD1\">\n    <animate attributeName=\"opacity\"\n      values=\"1;1;0;0;1\"\n      keyTimes=\"0;0.49;0.5;0.99;1\"\n      dur=\"1s\"\n      repeatCount=\"indefinite\"/>\n  </polygon>\n</svg>",
+    "safari_note": "Safari does not support SVG favicon animation — static chevron shown. Acceptable trade-off."
+  },
+  "signatures": {
+    "_rule": "Two versions of the signature. Claude must apply the correct one based on output type. No improvisation.",
+    "version_A_web_outputs": {
+      "use_for": "HTML reports, landing pages, web documents, any browser-rendered output",
+      "header_html": "<!-- UNRLVL Header — Web Output -->\n<header class=\"unrlvl-header\">\n  <span class=\"lt-logotype size-nav\">\n    <span class=\"lt-un\">UNREAL</span><span class=\"lt-chevron\">></span><span class=\"lt-ille\">ILLE</span> <span class=\"lt-studio\">STUDIO</span>\n  </span>\n  <div class=\"unrlvl-header-meta\">\n    <!-- document title + date + recipients in Space Mono -->\n  </div>\n</header>",
+      "footer_html": "<!-- UNRLVL Footer — Web Output -->\n<footer class=\"unrlvl-footer\">\n  <span class=\"lt-logotype size-footer\">\n    <span class=\"lt-un\">UNREAL</span><span class=\"lt-chevron\">></span><span class=\"lt-ille\">ILLE</span> <span class=\"lt-studio\">STUDIO</span>\n  </span>\n  <span class=\"icr-badge\">ICR</span>\n  <div class=\"unrlvl-footer-credits\">\n    <!-- Brand · Document name · Date · Claude model in Space Mono -->\n  </div>\n</footer>",
+      "icr_badge_css": ".icr-badge {\n  font-family: 'Space Mono', monospace;\n  font-size: 9px;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n  color: rgba(242,240,236,0.42);\n  border: 1px solid rgba(242,240,236,0.10);\n  padding: 4px 10px;\n  border-radius: 3px;\n}",
+      "layout": "header: logotype izq + metadata der | footer: logotype grande izq + ICR badge centro + créditos mono der",
+      "icr_position": "footer always — center or alongside footer credits"
+    },
+    "version_B_internal_documents": {
+      "use_for": "Internal PDFs, client proposals, xlsx, printed reports, docx",
+      "description": "Compact signature block — logotype + tagline + ICR on same line or stacked",
+      "header_pattern": "UNREAL>ILLE STUDIO  |  [Document Title]  |  [Date]",
+      "footer_pattern": "UNREAL>ILLE STUDIO  ·  ICR  ·  Confidencial · Uso Interno  ·  [Date]",
+      "logotype_text": "UNREAL>ILLE STUDIO",
+      "chevron_note": "In plain text contexts (xlsx cells, docx): use literal > character. No animation possible — acceptable.",
+      "studio_note": "In xlsx/docx: use gray text color (R:100 G:100 B:100) for STUDIO to approximate opacity effect",
+      "icr_note": "Always include ICR label — even in plain text: 'ICR Standard Active'",
+      "example_footer_text": "UNREAL>ILLE STUDIO  ·  ICR Standard Active  ·  Confidencial  ·  23 Mar 2026"
+    }
+  },
+  "output_standards": {
+    "_mandatory_checklist": "Claude MUST verify all items before delivering any output",
+    "every_html_output": [
+      "favicon_link_tag in <head> — first element, before stylesheets",
+      "@keyframes chevron-blink in <style>",
+      "lt-chevron class with animation applied",
+      "lt-studio class with opacity 0.32 or lower — visually much dimmer than main logotype",
+      "ICR badge visible in footer",
+      "lt-logotype.size-nav in header (20px)",
+      "lt-logotype.size-footer in footer (28px)",
+      "Recipients listed in header (Sam / PO / Laura as applicable)"
+    ],
+    "every_xlsx_output": [
+      "Header row: UNREAL>ILLE STUDIO | [Doc Name] | [Date]",
+      "Footer note or separate tab: 'UNREAL>ILLE STUDIO · ICR Standard Active · [Date]'",
+      "STUDIO in gray text to differentiate from main logotype text"
+    ],
+    "icr_rule": "ICR appears in EVERY output — web, xlsx, docx, pdf. No exceptions. ICR = Industrial Consistency Ready.",
+    "favicon_rule": "Favicon appears in EVERY HTML output. Use embed_tag from favicon section. No exceptions."
+  }
 }

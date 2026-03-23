@@ -1,11 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <!-- Transparent background -->
   <rect width="32" height="32" fill="none"/>
-  <!-- Chevron > — two strokes, slightly compressed horizontally like Bebas Neue -->
-  <!-- Top arm: from left-top to right-middle -->
-  <!-- Bottom arm: from right-middle to left-bottom -->
-  <polygon
-    points="6,3 22,16 6,29 10,29 26,16 10,3"
-    fill="#00FFD1"
-  />
+  <polygon points="6,3 22,16 6,29 10,29 26,16 10,3" fill="#00FFD1">
+    <animate attributeName="opacity"
+      values="1;1;0;0;1"
+      keyTimes="0;0.49;0.5;0.99;1"
+      dur="1s"
+      repeatCount="indefinite"/>
+  </polygon>
 </svg>
