@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estrategia de Kits — Neurone SCF × Unrealville Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0A0A08;
+    --white: #F5F2EC;
+    --cream: #EDE8DF;
+    --neurone-gold: #C4962A;
+    --neurone-gold-light: #E8C56A;
+    --neurone-dark: #1A1208;
+    --unrlvl-accent: #3B5BDB;
+    --unrlvl-dim: #1E2E6B;
+    --green-ok: #2D6A4F;
+    --green-light: #D8F3DC;
+    --orange-kit: #C55A11;
+    --orange-light: #FCE4D6;
+    --gray-mid: #6B6B5A;
+    --gray-light: #D4D0C8;
+    --border: rgba(196,150,42,0.18);
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body: 'Manrope', sans-serif;
+    --font-mono: 'DM Mono', monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ─── NOISE TEXTURE OVERLAY ─── */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 999; opacity: 0.4;
+  }
+
+  /* ─── MASTHEAD ─── */
+  .masthead {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 6vw 7vh;
+    overflow: hidden;
+  }
+
+  .masthead-bg {
+    position: absolute; inset: 0;
+    background: 
+      radial-gradient(ellipse 80% 60% at 70% 30%, rgba(196,150,42,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 80% at 10% 80%, rgba(59,91,219,0.07) 0%, transparent 55%),
+      linear-gradient(175deg, #0A0A08 0%, #131009 50%, #0A0A08 100%);
+  }
+
+  .masthead-grid {
+    position: absolute; inset: 0;
+    background-image: 
+      linear-gradient(rgba(196,150,42,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(196,150,42,0.04) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+
+  .brand-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: 28px 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+    z-index: 2;
+  }
+
+  .brand-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .brand-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gray-mid);
+  }
+
+  .separator { color: var(--neurone-gold); opacity: 0.4; }
+
+  .unrlvl-badge {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--unrlvl-accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border: 1px solid rgba(59,91,219,0.3);
+    border-radius: 2px;
+  }
+
+  .doc-meta {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--gray-mid);
+    letter-spacing: 0.08em;
+  }
+
+  .masthead-content {
+    position: relative; z-index: 2;
+    max-width: 900px;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--neurone-gold);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    display: block;
+    width: 32px; height: 1px;
+    background: var(--neurone-gold);
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(52px, 7vw, 96px);
+    font-weight: 300;
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    margin-bottom: 32px;
+    color: var(--white);
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--neurone-gold-light);
+  }
+
+  .masthead-sub {
+    font-size: 16px;
+    color: var(--gray-mid);
+    max-width: 620px;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  .masthead-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 48px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+
+  .stat { display: flex; flex-direction: column; gap: 4px; }
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--neurone-gold-light);
+    line-height: 1;
+  }
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gray-mid);
+  }
+
+  /* ─── SECTION STRUCTURE ─── */
+  section {
+    padding: 100px 6vw;
+    border-top: 1px solid var(--border);
+  }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--neurone-gold);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 24px; height: 1px;
+    background: var(--neurone-gold);
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: var(--white);
+  }
+  h2 em { font-style: italic; color: var(--neurone-gold-light); }
+
+  .section-intro {
+    font-size: 16px;
+    color: var(--gray-mid);
+    max-width: 680px;
+    line-height: 1.8;
+    margin-bottom: 56px;
+    font-weight: 300;
+  }
+
+  /* ─── PREMISE ─── */
+  .premise-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin-top: 48px;
+    background: var(--border);
+  }
+
+  .premise-card {
+    background: #0E0E0B;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .premise-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--neurone-gold), transparent);
+    opacity: 0.6;
+  }
+
+  .premise-icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .premise-card h3 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+
+  .premise-card p {
+    font-size: 14px;
+    color: var(--gray-mid);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  .premise-card .premise-num {
+    position: absolute;
+    top: 32px; right: 32px;
+    font-family: var(--font-display);
+    font-size: 64px;
+    font-weight: 300;
+    color: rgba(196,150,42,0.06);
+    line-height: 1;
+  }
+
+  /* ─── KIT CARDS ─── */
+  .kits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .kits-grid.cols-2 {
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+  }
+
+  .kit-card {
+    background: #0D0D0A;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    cursor: default;
+  }
+
+  .kit-card:hover {
+    border-color: rgba(196,150,42,0.4);
+    transform: translateY(-2px);
+  }
+
+  .kit-card.derived {
+    border-color: rgba(197,90,17,0.35);
+    background: #0F0C09;
+  }
+
+  .kit-card.derived:hover {
+    border-color: rgba(197,90,17,0.65);
+  }
+
+  .kit-card.highlight-sos {
+    border-color: rgba(196,150,42,0.5);
+    background: #0F0D08;
+  }
+
+  .kit-tier {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .tier-base { background: rgba(196,150,42,0.12); color: var(--neurone-gold); }
+  .tier-derived { background: rgba(197,90,17,0.12); color: var(--orange-kit); }
+  .tier-premium { background: rgba(196,150,42,0.2); color: var(--neurone-gold-light); border: 1px solid rgba(196,150,42,0.3); }
+
+  .kit-sku {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--gray-mid);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+
+  .kit-name {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .kit-composition {
+    font-size: 12px;
+    color: var(--gray-mid);
+    line-height: 1.9;
+    margin-bottom: 24px;
+    padding: 16px;
+    background: rgba(255,255,255,0.025);
+    border-left: 2px solid var(--border);
+  }
+
+  .kit-composition strong {
+    color: rgba(245,242,236,0.7);
+    font-weight: 500;
+  }
+
+  .kit-composition .added-product {
+    color: var(--orange-kit);
+    font-weight: 600;
+  }
+
+  .kit-rationale {
+    font-size: 13px;
+    color: rgba(196,150,42,0.8);
+    font-style: italic;
+    font-family: var(--font-display);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .kit-pricing {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .price-tag {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--neurone-gold-light);
+  }
+
+  .price-label {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--gray-mid);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .price-prev {
+    font-size: 13px;
+    color: var(--gray-mid);
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+  .kit-metrics {
+    display: flex;
+    gap: 16px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+
+  .metric {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+  }
+
+  .metric-val {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green-ok);
+  }
+
+  .metric-val.warning { color: #C4962A; }
+
+  .metric-label {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--gray-mid);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .derived-from {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--orange-kit);
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    opacity: 0.8;
+  }
+  .derived-from::before { content: '↳'; }
+
+  /* ─── ECONOMICS TABLE ─── */
+  .econ-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 40px;
+  }
+
+  .econ-table thead tr {
+    border-bottom: 1px solid var(--neurone-gold);
+  }
+
+  .econ-table th {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--neurone-gold);
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .econ-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(196,150,42,0.07);
+    color: var(--gray-mid);
+    font-weight: 300;
+  }
+
+  .econ-table tr:hover td { background: rgba(196,150,42,0.025); }
+
+  .econ-table td.sku-col {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--white);
+    letter-spacing: 0.05em;
+  }
+
+  .econ-table td.name-col {
+    font-family: var(--font-display);
+    font-size: 15px;
+    color: rgba(245,242,236,0.85);
+  }
+
+  .econ-table td.price-col {
+    font-family: var(--font-display);
+    font-size: 18px;
+    color: var(--neurone-gold-light);
+  }
+
+  .margin-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .margin-excellent { background: rgba(45,106,79,0.2); color: #52B788; }
+  .margin-good { background: rgba(196,150,42,0.12); color: var(--neurone-gold); }
+  .margin-ok { background: rgba(197,90,17,0.12); color: #E07B4A; }
+
+  .derived-row td { border-left: 2px solid rgba(197,90,17,0.4); }
+  .derived-row td.sku-col { color: var(--orange-kit); }
+
+  /* ─── STRATEGY RATIONALE ─── */
+  .rationale-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .rationale-card {
+    padding: 32px;
+    background: #0D0D0A;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+  }
+
+  .rationale-num {
+    font-family: var(--font-display);
+    font-size: 56px;
+    font-weight: 300;
+    color: rgba(196,150,42,0.12);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .rationale-card h4 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .rationale-card p {
+    font-size: 13px;
+    color: var(--gray-mid);
+    line-height: 1.85;
+    font-weight: 300;
+  }
+
+  /* ─── PRICING LOGIC ─── */
+  .pricing-logic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 40px;
+  }
+
+  .logic-block {
+    padding: 36px;
+    border: 1px solid var(--border);
+    background: #0D0D0A;
+    border-radius: 2px;
+  }
+
+  .logic-block h4 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+
+  .logic-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(196,150,42,0.07);
+    font-size: 13px;
+  }
+
+  .logic-item-label { color: var(--gray-mid); font-weight: 300; }
+  .logic-item-val { font-family: var(--font-mono); font-size: 13px; color: var(--white); }
+  .logic-item-val.positive { color: #52B788; }
+  .logic-item-val.negative { color: #E07B4A; }
+
+  /* ─── FOOTER ─── */
+  .doc-footer {
+    padding: 48px 6vw;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-brand {
+    font-family: var(--font-display);
+    font-size: 18px;
+    color: var(--gray-mid);
+    font-style: italic;
+  }
+
+  .footer-meta {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--gray-mid);
+    letter-spacing: 0.12em;
+    text-align: right;
+    line-height: 1.8;
+  }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .masthead-content { animation: fadeUp 1s cubic-bezier(0.16,1,0.3,1) both; }
+  .masthead-stats { animation: fadeUp 1s cubic-bezier(0.16,1,0.3,1) 0.2s both; }
+  .brand-bar { animation: fadeUp 0.6s ease both; }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    .kits-grid { grid-template-columns: 1fr 1fr; }
+    .kits-grid.cols-2 { grid-template-columns: 1fr; }
+    .premise-grid { grid-template-columns: 1fr; }
+    .rationale-grid { grid-template-columns: 1fr; }
+    .pricing-logic { grid-template-columns: 1fr; }
+    .econ-table { font-size: 12px; }
+  }
+
+  @media (max-width: 600px) {
+    .kits-grid { grid-template-columns: 1fr; }
+    section { padding: 64px 5vw; }
+    .masthead-stats { flex-wrap: wrap; gap: 24px; }
+  }
+
+  /* ─── CALLOUT ─── */
+  .callout {
+    margin: 32px 0;
+    padding: 24px 28px;
+    background: rgba(196,150,42,0.05);
+    border-left: 3px solid var(--neurone-gold);
+    border-radius: 0 2px 2px 0;
+  }
+  .callout p {
+    font-size: 14px;
+    color: rgba(245,242,236,0.75);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+  .callout strong { color: var(--neurone-gold-light); font-weight: 500; }
+
+  .tier-divider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 48px 0 32px;
+  }
+  .tier-divider-line { flex: 1; height: 1px; background: var(--border); }
+  .tier-divider-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gray-mid);
+    white-space: nowrap;
+  }
+
+  .value-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    background: rgba(45,106,79,0.15);
+    border: 1px solid rgba(45,106,79,0.25);
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: #52B788;
+    letter-spacing: 0.1em;
+    margin-top: 8px;
+    margin-right: 6px;
+    text-transform: uppercase;
+  }
+
+  /* ─── UNRLVL STANDARD FOOTER v1.2 — mandatory on all client outputs ─── */
+  @keyframes chev-listen{0%,45%{opacity:1;}50%,92%{opacity:0;}97%,100%{opacity:1;}}
+  .f-chev{
+    color:#00FFD1;display:inline-block;
+    animation:chev-listen 0.9s ease-in-out infinite;
+    font-family:'Bebas Neue',sans-serif;font-size:11px;
+  }
+  footer.unrlvl-standard{
+    background:#0F0F0F;
+    border-top:2px solid #00FFD1;
+    padding:14px 6vw;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    align-items:center;
+    gap:1rem;
+    margin-top:80px;
+  }
+  .fc-left{display:flex;flex-direction:column;align-items:flex-start;gap:4px;}
+  .fc-center{text-align:center;display:flex;flex-direction:column;align-items:center;gap:3px;}
+  .fc-right{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:3px;}
+  .fc-brand-name{
+    font-family:'Bebas Neue',sans-serif;font-size:15px;
+    letter-spacing:0.1em;color:rgba(242,240,236,0.65);
+    display:flex;align-items:baseline;gap:0;
+  }
+  .fc-brand-sub{
+    font-family:'Space Mono',monospace;
+    font-size:7px;letter-spacing:0.18em;text-transform:uppercase;
+    color:rgba(242,240,236,0.3);margin-top:2px;
+  }
+  .fc-rights{
+    font-family:'Space Mono',monospace;
+    font-size:8px;letter-spacing:0.12em;text-transform:uppercase;
+    color:rgba(242,240,236,0.35);line-height:1.8;
+  }
+  .fc-sig{
+    display:flex;align-items:baseline;flex-wrap:wrap;
+    justify-content:flex-end;gap:0.1em;
+  }
+  .fc-by{
+    font-family:'Space Mono',monospace;
+    font-size:7px;letter-spacing:0.12em;text-transform:uppercase;
+    color:rgba(242,240,236,0.25);
+  }
+  .fc-name{
+    font-family:'Bebas Neue',sans-serif;font-size:11px;
+    letter-spacing:0.08em;color:rgba(242,240,236,0.6);
+  }
+  .fc-studio{
+    font-family:'Bebas Neue',sans-serif;font-size:8px;
+    letter-spacing:0.24em;color:#1A1A1A;
+    margin-left:5px;vertical-align:baseline;
+  }
+  .fc-addr{
+    font-family:'Space Mono',monospace;
+    font-size:7px;letter-spacing:0.11em;text-transform:uppercase;
+    color:rgba(242,240,236,0.18);
+  }
+  @media(max-width:700px){
+    footer.unrlvl-standard{grid-template-columns:1fr;padding:14px 5vw;}
+    .fc-left,.fc-center,.fc-right{align-items:center;text-align:center;}
+    .fc-sig{justify-content:center;}
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ─── MASTHEAD ─── -->
+<header class="masthead">
+  <div class="masthead-bg"></div>
+  <div class="masthead-grid"></div>
+
+  <div class="brand-bar">
+    <div class="brand-bar-left">
+      <span class="brand-tag">Neurone SCF</span>
+      <span class="separator">×</span>
+      <span class="unrlvl-badge">Unrealville Studio</span>
+    </div>
+    <div class="doc-meta">CONFIDENTIAL · BP-KITS-001 · 2026-04-08</div>
+  </div>
+
+  <div class="masthead-content">
+    <div class="eyebrow">Estrategia de Producto</div>
+    <h1>La nueva<br>arquitectura<br>de <em>kits</em></h1>
+    <p class="masthead-sub">
+      12 rituales diseñados para maximizar el valor percibido, 
+      optimizar el margen real, y convertir cada producto 
+      en un argumento de compra irresistible.
+    </p>
+
+    <div class="masthead-stats">
+      <div class="stat">
+        <span class="stat-num">12</span>
+        <span class="stat-label">Kits totales</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">9</span>
+        <span class="stat-label">Diseñados por PO</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Kits derivados nuevos</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">48–55%</span>
+        <span class="stat-label">Rango de margen real</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ─── SECCIÓN 1: EL PORQUÉ ─── -->
+<section>
+  <div class="section-label">01 — La premisa</div>
+  <h2>Por qué <em>kits,</em> no productos sueltos</h2>
+  <p class="section-intro">
+    Vender un shampoo de 400ml a $47 en Shopify compite con Amazon y Ulta. 
+    Vender el mismo shampoo dentro de un ritual de cabello diseñado por una experta 
+    en colorimetría de Miami, a $99.99, no tiene competidor directo.
+  </p>
+
+  <div class="premise-grid">
+    <div class="premise-card">
+      <div class="premise-num">01</div>
+      <div class="premise-icon">⚡</div>
+      <h3>El problema del producto suelto</h3>
+      <p>Un shampoo de 400ml vendido individualmente carga $29.33 de costos operacionales (3PL + marketing + operativos) sobre un producto de $5.40 de costo. El precio de venta resultante es de $47–$73, compitiendo en un mercado donde el cliente compara con Ulta, Sephora y Amazon. No hay diferenciación posible a ese nivel.</p>
+    </div>
+    <div class="premise-card">
+      <div class="premise-num">02</div>
+      <div class="premise-icon">✦</div>
+      <h3>La solución del kit</h3>
+      <p>Tres productos complementarios en un ritual curado, donde el costo de 3PL se distribuye, el precio se fija por propuesta de valor y no por coste, y el AOV sube a $85–$110. El cliente no está comprando tres productos. Está comprando un resultado — el mismo que Patricia Osorio logra en el salón.</p>
+    </div>
+    <div class="premise-card">
+      <div class="premise-num">03</div>
+      <div class="premise-icon">◆</div>
+      <h3>La paradoja del precio</h3>
+      <p>El Kit 1 HUMIT contiene tres productos que vendidos por separado suman $214 a precio Óptimo. El kit se vende a $99.99. El cliente percibe un ahorro de $114. NSCF opera con 55.5% de margen real. Ambos ganan. Esto es diseño de oferta, no descuento.</p>
+    </div>
+    <div class="premise-card">
+      <div class="premise-num">04</div>
+      <div class="premise-icon">◎</div>
+      <h3>Los kits derivados</h3>
+      <p>Tres productos (Resplander Shine, Thermo Dual, Licra Web) tienen un precio individual inviable para venta standalone online a $48–$72. La solución no es descartarlos — es añadirlos a kits existentes donde tienen relevancia técnica y narrativa, creando versiones "Plus" a $95–$110 con margen superior al 48%.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SECCIÓN 2: LOS 9 KITS BASE ─── -->
+<section>
+  <div class="section-label">02 — Kits diseñados por Patricia Osorio</div>
+  <h2>Los <em>9 rituales</em> originales</h2>
+  <p class="section-intro">
+    Patricia Osorio diseñó estas combinaciones basadas en su expertise en colorimetría y 
+    el conocimiento profundo del mercado de hair care en South & Central Florida. 
+    Todos operan a precio Óptimo por decisión de PO — la economía lo justifica.
+  </p>
+
+  <div class="callout">
+    <p><strong>Decisión de precio:</strong> Todos los kits 1–3.3 se venden al precio Óptimo ($84.99–$109.99). 
+    El Kit SOS opera a precio Deseado ($179.99) con activación controlada desde el mes 3, 
+    por recomendación directa de PO — no en campañas de adquisición masiva.</p>
+  </div>
+
+  <!-- Moisture Line -->
+  <div class="tier-divider">
+    <div class="tier-divider-line"></div>
+    <div class="tier-divider-label">Línea Moisture — Hydration</div>
+    <div class="tier-divider-line"></div>
+  </div>
+
+  <div class="kits-grid">
+
+    <div class="kit-card">
+      <span class="kit-tier tier-base">Kit base</span>
+      <div class="kit-sku">NSCF-KT-101</div>
+      <div class="kit-name">HUMIT Hydration Ritual</div>
+      <div class="kit-composition">
+        <strong>Shampoo HUMIT</strong> 400ml<br>
+        <strong>HUMIT Mask</strong> 400ml<br>
+        <strong>DY Fazza</strong> 200ml
+      </div>
+      <p class="kit-rationale">"Para el cabello que necesita beber agua. Tres pasos, una transformación."</p>
+      <div class="kit-pricing">
+        <span class="price-tag">$99.99</span>
+        <span class="price-label">Óptimo · decisión PO</span>
+      </div>
+      <div class="kit-metrics">
+        <div class="metric">
+          <span class="metric-val">55.5%</span>
+          <span class="metric-label">Margen real</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val">$55.48</span>
+          <span class="metric-label">Contribución</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val">$44.51</span>
+          <span class="metric-label">Costo total</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="kit-card">
+      <span class="kit-tier tier-base">Kit base</span>
+      <div class="kit-sku">NSCF-KT-101P</div>
+      <div class="kit-name">HUMIT Hydration Ritual Plus</div>
+      <div class="kit-composition">
+        <strong>Shampoo HUMIT</strong> 400ml<br>
+        <strong>HUMIT Mask</strong> 400ml<br>
+        <strong>DY Fazza</strong> 200ml<br>
+        <strong>Neurona Gloss</strong> 50ml
+      </div>
+      <p class="kit-rationale">"Hidratación máxima con acabado de espejo. El gloss es la firma."</p>
+      <div class="kit-pricing">
+        <span class="price-tag">$99.99</span>
+        <span class="price-label">Óptimo · decisión PO</span>
+      </div>
+      <div class="kit-metrics">
+        <div class="metric">
+          <span class="metric-val">51.9%</span>
+          <span class="metric-label">Margen real</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val">$51.88</span>
+          <span class="metric-label">Contribución</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val">$48.11</span>
+          <span class="metric-label">Costo total</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Restore Line -->
+  <div class="tier-divider">
+    <div class="tier-divider-line"></div>
+    <div class="tier-divider-label">Línea Restore — Repair</div>
+    <div class="tier-divider-line"></div>
+  </div>
+
+  <div class="kits-grid">
+    <div class="kit-card">
+      <span class="kit-tier tier-base">Kit base</span>
+      <div class="kit-sku">NSCF-KT-102</div>
+      <div class="kit-name">KERASIN Repair Ritual</div>
+      <div class="kit-composition">
+        <strong>Kerasin HB Shampoo</strong> 400ml<br>
+        <strong>Kerasin HB Mask</strong> 400ml<br>
+        <strong>DY Fazza Color</strong> 200ml
+      </div>
+      <p class="kit-rationale">"Ácido Hialurónico, Keratina y Biotina. Repara desde adentro."</p>
+      <div class="kit-pricing">
+        <span class="price-tag">$99.99</span>
+        <span class="price-label">Óptimo · decisión PO</span>
+      </div>
+      <div class="kit-metrics">
+        <div class="metric"><span class="metric-val">53.3%</span><span class="metric-label">Margen real</span></div>
+        <div class="metric"><span class="metric-val">$53.26</span><span class="metric-label">Contribución</span></div>
+        <div class="metric"><span class="metric-val">$46.73</span><span class="metric-label">Costo total</span></div>
+      </div>
+    </div>
+
+    <div class="kit-card">
+      <span class="kit-tier tier-base">Kit base</span>
+      <div class="kit-sku">NSCF-KT-102P</div>
+      <div class="kit-name">KERASIN Repair Ritual Plus</div>
+      <div class="kit-composition">
+        <strong>Kerasin HB Shampoo</strong> 400ml<br>
+        <strong>Kerasin HB Mask</strong> 400ml<br>
+        <strong>DY Fazza Color</strong> 200ml<br>
+        <strong>Neurona Gloss</strong> 50ml
+      </div>
+      <p class="kit-rationale">"Reparación completa con acabado sedoso. El gloss sella el ritual."</p>
+      <div class="kit-pricing">
+        <span class="price-tag">$109.99</span>
+        <span class="price-label">Óptimo · decisión PO</span>
+      </div>
+      <div class="kit-metrics">
+        <div class="metric"><span class="metric-val">54.2%</span><span class="metric-label">Margen real</span></div>
+        <div class="metric"><span class="metric-val">$59.66</span><span class="metric-label">Contribución</span></div>
+        <div class="metric"><span class="metric-val">$50.33</span><span class="metric-label">Costo total</span></div>
+      </div>
+    </div>
+
+    <div class="kit-card">
+      <span class="kit-tier tier-base">Kit base</span>
+      <div class="kit-sku">NSCF-KT-103V</div>
+      <div class="kit-name">TOTAL VIOLET Control Ritual</div>
+      <div class="kit-composition">
+        <strong>Total Violet Shampoo</strong> 400ml<br>
+        <strong>Total Violet Mask</strong> 400ml<br>
+        <strong>Velvety Control</strong> 400ml
+      </div>
+      <p class="kit-rationale">"Neutraliza el amarillo, controla el frizz. Platino que dura."</p>
+      <div class="kit-pricing">
+        <span class="price-tag">$84.99</span>
+        <span class="price-label">Óptimo · decisión PO</span>
+      </div>
+      <div class="kit-metrics">
+        <div class="metric"><span class="metric-val warning">48.0%</span><span class="metric-label">Margen real</span></div>
+        <div class="metric"><span class="metric-val">$40.84</span><span class="metric-label">Contribución</span></div>
+        <div class="metric"><span class="metric-val">$44.15</span><span class="metric-label">Costo total</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Color Rescue Line -->
+  <div class="tier-divider">
+    <div class="tier-divider-line"></div>
+    <div class="tier-divider-label">Línea Color Rescue</div>
+    <div class="tier-divider-line"></div>
+  </div>
+
+  <div class="kits-grid">
+    <div class="kit-card">
+      <span class="kit-tier tier-base">Kit base</span>
+      <div class="kit-sku">NSCF-KT-103</div>
+      <div class="kit-name">TOTAL VIOLET Color Ritual</div>
+      <div class="kit-composition">
+        <strong>Total Violet Shampoo</strong> 400ml<br>
+        <strong>Total Violet Mask</strong> 400ml<br>
+        <strong>DY Fazza Color</strong> 400ml
+      </div>
+      <p class="kit-rationale">"Protección del color de extremo a extremo. Rubio luminoso, más tiempo."</p>
+      <div class="kit-pricing"><span class="price-tag">$99.99</span><span class="price-label">Óptimo</span></div>
+      <div class="kit-metrics">
+        <div class="metric"><span class="metric-val">53.3%</span><span class="metric-label">Margen real</span></div>
+        <div class="metric"><span class="metric-val">$53.26</span><span class="metric-label">Contribución</span></div>
+        <div class="metric"><span class="metric-val">$46.73</span><span class="metric-label">Costo total</span></div>
+      </div>
+    </div>
+
+    <div class="kit-card">
+      <span class="kit-tier tier-base">Kit base</span>
+      <div class="kit-sku">NSCF-KT-103P</div>
+      <div class="kit-name">TOTAL VIOLET Color Ritual Plus</div>
+      <div class="kit-composition">
+        <strong>Total Violet Shampoo</strong> 400ml<br>
+        <strong>Total Violet Mask</strong> 400ml<br>
+        <strong>DY Fazza Color</strong> 400ml<br>
+        <strong>Neurona Gloss</strong> 50ml
+      </div>
+      <p class="kit-rationale">"Color protegido, brillo multiplicado. El plus que hace la diferencia."</p>
+      <div class="kit-pricing"><span class="price-tag">$109.99</span><span class="price-label">Óptimo</span></div>
+      <div class="kit-metrics">
+        <div class="metric"><span class="metric-val">54.2%</span><span class="metric-label">Margen real</span></div>
+        <div class="metric"><span class="metric-val">$59.66</span><span class="metric-label">Contribución</span></div>
+        <div class="metric"><span class="metric-val">$50.33</span><span class="metric-label">Costo total</span></div>
+      </div>
+    </div>
+
+    <div class="kit-card">
+      <span class="kit-tier tier-base">Kit base</span>
+      <div class="kit-sku">NSCF-KT-103VP</div>
+      <div class="kit-name">TOTAL VIOLET Control Ritual Plus</div>
+      <div class="kit-composition">
+        <strong>Total Violet Shampoo</strong> 400ml<br>
+        <strong>Total Violet Mask</strong> 400ml<br>
+        <strong>Velvety Control</strong> 400ml<br>
+        <strong>Neurona Gloss</strong> 50ml
+      </div>
+      <p class="kit-rationale">"El ritual completo del platino: neutraliza, controla y sella."</p>
+      <div class="kit-pricing"><span class="price-tag">$99.99</span><span class="price-label">Óptimo</span></div>
+      <div class="kit-metrics">
+        <div class="metric"><span class="metric-val">52.2%</span><span class="metric-label">Margen real</span></div>
+        <div class="metric"><span class="metric-val">$52.24</span><span class="metric-label">Contribución</span></div>
+        <div class="metric"><span class="metric-val">$47.75</span><span class="metric-label">Costo total</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOS Kit -->
+  <div class="tier-divider">
+    <div class="tier-divider-line"></div>
+    <div class="tier-divider-label">Programa Premium — Solo por recomendación PO</div>
+    <div class="tier-divider-line"></div>
+  </div>
+
+  <div class="kits-grid cols-2">
+    <div class="kit-card highlight-sos">
+      <span class="kit-tier tier-premium">★ Programa Signature</span>
+      <div class="kit-sku">NSCF-KT-104</div>
+      <div class="kit-name">SOS Signature Treatment Program</div>
+      <div class="kit-composition">
+        <strong>Dyfensor SF Shampoo</strong> 400ml<br>
+        <strong>Kerasin HB Mask</strong> 400ml<br>
+        <strong>Dyfensor Serum</strong> kit 6×25ml<br>
+        <strong>Hyaloneurine F&H Serum</strong> kit 6×50ml<br>
+        <strong>Green 100</strong> kit 4×25ml<br>
+        <strong>DY Fazza</strong> 400ml<br>
+        <strong>Neurona Gloss</strong> 100ml
+      </div>
+      <p class="kit-rationale">"Para el cabello que ha sido sometido a todo. El protocolo que Patricia usa en el salón, ahora en casa."</p>
+      <div class="kit-pricing">
+        <span class="price-tag">$179.99</span>
+        <span class="price-label">Deseado · activación Mes 3+</span>
+      </div>
+      <div class="kit-metrics">
+        <div class="metric"><span class="metric-val">47.0%</span><span class="metric-label">Margen real</span></div>
+        <div class="metric"><span class="metric-val">$84.66</span><span class="metric-label">Contribución</span></div>
+        <div class="metric"><span class="metric-val">$95.33</span><span class="metric-label">Costo total</span></div>
+      </div>
+      <div style="margin-top:16px">
+        <span class="value-badge">Canal controlado</span>
+        <span class="value-badge">No en ads generales</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SECCIÓN 3: KITS DERIVADOS ─── -->
+<section>
+  <div class="section-label">03 — Kits derivados Unrealville Studio</div>
+  <h2>Los <em>3 kits nuevos</em> — derivados, no inventados</h2>
+  <p class="section-intro">
+    Tres productos con precio individual inviable online (Resplander Shine, Thermo Dual, Licra Web) 
+    se integran en kits existentes donde tienen relevancia técnica real. 
+    No es un hack de inventario — es diseño de oferta con lógica de beneficio.
+  </p>
+
+  <div class="callout">
+    <p><strong>Principio:</strong> cada kit derivado toma un kit base probado y añade 
+    <strong>un solo producto Tier 3</strong> que extiende la narrativa del ritual de forma coherente. 
+    El cliente ya conocía el kit base. El nuevo producto no interrumpe — completa.</p>
+  </div>
+
+  <div class="kits-grid">
+
+    <div class="kit-card derived">
+      <div class="derived-from">Deriva de NSCF-KT-101</div>
+      <span class="kit-tier tier-derived">Kit derivado</span>
+      <div class="kit-sku">NSCF-KT-101T</div>
+      <div class="kit-name">HUMIT Hydration + Finish Ritual</div>
+      <div class="kit-composition">
+        <strong>Shampoo HUMIT</strong> 400ml<br>
+        <strong>HUMIT Mask</strong> 400ml<br>
+        <strong>DY Fazza</strong> 200ml<br>
+        <span class="added-product">+ Resplander Shine 100ml ← NUEVO</span>
+      </div>
+      <p class="kit-rationale">"La hidratación profunda prepara la hebra para el brillo. Resplander sella y da el acabado luminoso que lo hace visible."</p>
+      <div class="kit-pricing">
+        <span class="price-tag">$109.99</span>
+        <span class="price-label">Óptimo</span>
+        <span class="price-prev">Kit base $99.99</span>
+      </div>
+      <div class="kit-metrics">
+        <div class="metric"><span class="metric-val">55.5%</span><span class="metric-label">Margen real</span></div>
+        <div class="metric"><span class="metric-val">$61.04</span><span class="metric-label">Contribución</span></div>
+        <div class="metric"><span class="metric-val">$48.95</span><span class="metric-label">Costo total</span></div>
+      </div>
+    </div>
+
+    <div class="kit-card derived">
+      <div class="derived-from">Deriva de NSCF-KT-102</div>
+      <span class="kit-tier tier-derived">Kit derivado</span>
+      <div class="kit-sku">NSCF-KT-102T</div>
+      <div class="kit-name">KERASIN Repair + Shield Ritual</div>
+      <div class="kit-composition">
+        <strong>Kerasin HB Shampoo</strong> 400ml<br>
+        <strong>Kerasin HB Mask</strong> 400ml<br>
+        <strong>DY Fazza Color</strong> 200ml<br>
+        <span class="added-product">+ Thermo Dual 200ml ← NUEVO</span>
+      </div>
+      <p class="kit-rationale">"El cabello que se está reparando es el que más necesita protección térmica. Thermo Dual evita que el calor deshaga el trabajo de reparación."</p>
+      <div class="kit-pricing">
+        <span class="price-tag">$109.99</span>
+        <span class="price-label">Óptimo</span>
+        <span class="price-prev">Kit base $99.99</span>
+      </div>
+      <div class="kit-metrics">
+        <div class="metric"><span class="metric-val">53.1%</span><span class="metric-label">Margen real</span></div>
+        <div class="metric"><span class="metric-val">$58.46</span><span class="metric-label">Contribución</span></div>
+        <div class="metric"><span class="metric-val">$51.53</span><span class="metric-label">Costo total</span></div>
+      </div>
+    </div>
+
+    <div class="kit-card derived">
+      <div class="derived-from">Deriva de NSCF-KT-103V</div>
+      <span class="kit-tier tier-derived">Kit derivado</span>
+      <div class="kit-sku">NSCF-KT-103VT</div>
+      <div class="kit-name">TOTAL VIOLET Control + Definition Ritual</div>
+      <div class="kit-composition">
+        <strong>Total Violet Shampoo</strong> 400ml<br>
+        <strong>Total Violet Mask</strong> 400ml<br>
+        <strong>Velvety Control</strong> 400ml<br>
+        <span class="added-product">+ Licra Web 70g ← NUEVO</span>
+      </div>
+      <p class="kit-rationale">"El color neutralizado y el frizz controlado merecen un acabado con definición. Licra Web añade textura y estilo al ritual — resultado de salón en casa."</p>
+      <div class="kit-pricing">
+        <span class="price-tag">$94.99</span>
+        <span class="price-label">Óptimo</span>
+        <span class="price-prev">Kit base $84.99</span>
+      </div>
+      <div class="kit-metrics">
+        <div class="metric"><span class="metric-val warning">49.0%</span><span class="metric-label">Margen real</span></div>
+        <div class="metric"><span class="metric-val">$46.52</span><span class="metric-label">Contribución</span></div>
+        <div class="metric"><span class="metric-val">$48.47</span><span class="metric-label">Costo total</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── SECCIÓN 4: TABLA COMPLETA ─── -->
+<section>
+  <div class="section-label">04 — Resumen económico</div>
+  <h2>Los <em>12 kits</em> y su economía real</h2>
+  <p class="section-intro">
+    Todos los márgenes incluyen: Costo Producto + 3PL ($20.97) + Marketing ($6.74) + Operativos ($1.62). 
+    No hay costos ocultos. El mínimo aceptable es 40%. El objetivo es 50%+.
+  </p>
+
+  <table class="econ-table">
+    <thead>
+      <tr>
+        <th>SKU</th>
+        <th>Nombre</th>
+        <th>Composición</th>
+        <th>Precio PO</th>
+        <th>Costo Real</th>
+        <th>Margen Real</th>
+        <th>Contribución</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="sku-col">KT-101</td>
+        <td class="name-col">HUMIT Hydration</td>
+        <td>3 productos</td>
+        <td class="price-col">$99.99</td>
+        <td>$44.51</td>
+        <td><span class="margin-pill margin-excellent">55.5%</span></td>
+        <td>$55.48</td>
+      </tr>
+      <tr>
+        <td class="sku-col">KT-101P</td>
+        <td class="name-col">HUMIT Hydration Plus</td>
+        <td>4 productos</td>
+        <td class="price-col">$99.99</td>
+        <td>$48.11</td>
+        <td><span class="margin-pill margin-excellent">51.9%</span></td>
+        <td>$51.88</td>
+      </tr>
+      <tr>
+        <td class="sku-col">KT-102</td>
+        <td class="name-col">KERASIN Repair</td>
+        <td>3 productos</td>
+        <td class="price-col">$99.99</td>
+        <td>$46.73</td>
+        <td><span class="margin-pill margin-excellent">53.3%</span></td>
+        <td>$53.26</td>
+      </tr>
+      <tr>
+        <td class="sku-col">KT-102P</td>
+        <td class="name-col">KERASIN Repair Plus</td>
+        <td>4 productos</td>
+        <td class="price-col">$109.99</td>
+        <td>$50.33</td>
+        <td><span class="margin-pill margin-excellent">54.2%</span></td>
+        <td>$59.66</td>
+      </tr>
+      <tr>
+        <td class="sku-col">KT-103</td>
+        <td class="name-col">TOTAL VIOLET Color</td>
+        <td>3 productos</td>
+        <td class="price-col">$99.99</td>
+        <td>$46.73</td>
+        <td><span class="margin-pill margin-excellent">53.3%</span></td>
+        <td>$53.26</td>
+      </tr>
+      <tr>
+        <td class="sku-col">KT-103P</td>
+        <td class="name-col">TOTAL VIOLET Color Plus</td>
+        <td>4 productos</td>
+        <td class="price-col">$109.99</td>
+        <td>$50.33</td>
+        <td><span class="margin-pill margin-excellent">54.2%</span></td>
+        <td>$59.66</td>
+      </tr>
+      <tr>
+        <td class="sku-col">KT-103V</td>
+        <td class="name-col">TOTAL VIOLET Control</td>
+        <td>3 productos</td>
+        <td class="price-col">$84.99</td>
+        <td>$44.15</td>
+        <td><span class="margin-pill margin-good">48.0%</span></td>
+        <td>$40.84</td>
+      </tr>
+      <tr>
+        <td class="sku-col">KT-103VP</td>
+        <td class="name-col">TOTAL VIOLET Control Plus</td>
+        <td>4 productos</td>
+        <td class="price-col">$99.99</td>
+        <td>$47.75</td>
+        <td><span class="margin-pill margin-excellent">52.2%</span></td>
+        <td>$52.24</td>
+      </tr>
+      <tr>
+        <td class="sku-col">KT-104</td>
+        <td class="name-col">SOS Signature Program</td>
+        <td>7 productos</td>
+        <td class="price-col">$179.99</td>
+        <td>$95.33</td>
+        <td><span class="margin-pill margin-good">47.0%</span></td>
+        <td>$84.66</td>
+      </tr>
+      <tr class="derived-row">
+        <td class="sku-col">KT-101T</td>
+        <td class="name-col">HUMIT Hydration + Finish</td>
+        <td>4 productos ↳ KT-101 + Resplander</td>
+        <td class="price-col">$109.99</td>
+        <td>$48.95</td>
+        <td><span class="margin-pill margin-excellent">55.5%</span></td>
+        <td>$61.04</td>
+      </tr>
+      <tr class="derived-row">
+        <td class="sku-col">KT-102T</td>
+        <td class="name-col">KERASIN Repair + Shield</td>
+        <td>4 productos ↳ KT-102 + Thermo Dual</td>
+        <td class="price-col">$109.99</td>
+        <td>$51.53</td>
+        <td><span class="margin-pill margin-excellent">53.1%</span></td>
+        <td>$58.46</td>
+      </tr>
+      <tr class="derived-row">
+        <td class="sku-col">KT-103VT</td>
+        <td class="name-col">VIOLET Control + Definition</td>
+        <td>4 productos ↳ KT-103V + Licra Web</td>
+        <td class="price-col">$94.99</td>
+        <td>$48.47</td>
+        <td><span class="margin-pill margin-good">49.0%</span></td>
+        <td>$46.52</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ─── SECCIÓN 5: LÓGICA ESTRATÉGICA ─── -->
+<section>
+  <div class="section-label">05 — La lógica detrás</div>
+  <h2>Por qué <em>funciona</em> este modelo</h2>
+  <p class="section-intro">
+    No es solo una decisión de rentabilidad. Es un diseño de experiencia de compra 
+    que resuelve simultáneamente el problema del cliente y el del negocio.
+  </p>
+
+  <div class="rationale-grid">
+    <div class="rationale-card">
+      <div class="rationale-num">01</div>
+      <h4>Propuesta de valor indefendible</h4>
+      <p>El Kit 1 contiene productos cuyo valor individual es $214. Se vende a $99.99. El cliente no necesita comparar precios con Amazon — no existe esa comparación. La propuesta es el ahorro de $114, no el precio del kit.</p>
+    </div>
+    <div class="rationale-card">
+      <div class="rationale-num">02</div>
+      <h4>Autoridad de PO como argumento</h4>
+      <p>Patricia Osorio diseñó estas combinaciones. Es una experta en colorimetría que conoce el mercado de Miami desde adentro. El kit no es un bundle genérico — es un protocolo de salón. Ese contexto justifica el precio y elimina la fricción de compra.</p>
+    </div>
+    <div class="rationale-card">
+      <div class="rationale-num">03</div>
+      <h4>BNPL convierte el precio en accesible</h4>
+      <p>Con Shop Pay Installments (Afterpay), un kit de $99.99 se convierte en 4 pagos de $25. Ese es el precio de una sesión de salon. El cliente paga cuotas de salón y recibe un ritual de salón — en casa, para siempre.</p>
+    </div>
+    <div class="rationale-card">
+      <div class="rationale-num">04</div>
+      <h4>Los kits derivados no son forzados</h4>
+      <p>El Resplander Shine tiene sentido en el kit de hidratación porque el brillo es el resultado visible de la hidratación. El Thermo Dual tiene sentido en el kit de reparación porque el calor es el principal enemigo del cabello que se está reparando. No hay creatividad artificiosa — hay lógica capilar.</p>
+    </div>
+    <div class="rationale-card">
+      <div class="rationale-num">05</div>
+      <h4>Estructura de precios escalonada</h4>
+      <p>$84.99 → $94.99 → $99.99 → $109.99 → $179.99. El cliente siempre puede elegir entre el kit base y su versión extendida. El delta de $10–$25 para pasar al "Plus" es una decisión obvia cuando se explica qué añade el producto adicional.</p>
+    </div>
+    <div class="rationale-card">
+      <div class="rationale-num">06</div>
+      <h4>Recompra natural</h4>
+      <p>El cliente que compra el Kit 1 eventualmente se queda sin shampoo. Vuelve a comprar. Pero ahora ya conoce la Humit Mask y el DY Fazza — puede comprarlos por separado. Los kits son el punto de entrada. Los productos individuales son la fidelización.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── UNRLVL STANDARD FOOTER v1.2 ─── -->
+<footer class="unrlvl-standard">
+
+  <!-- Col 1: Client logo -->
+  <div class="fc-left">
+    <div class="fc-brand-name">NEURONE&nbsp;<span style="font-family:'Bebas Neue',sans-serif;font-size:9px;letter-spacing:0.28em;color:#1A1A1A;vertical-align:baseline;">SCF</span></div>
+    <div class="fc-brand-sub">South &amp; Central Florida · Exclusive Distribution</div>
+  </div>
+
+  <!-- Col 2: Rights -->
+  <div class="fc-center">
+    <div class="fc-rights">KIT-ARCH-001 · Kit Architecture · Product Strategy</div>
+    <div class="fc-rights">© 2026 Neurone SCF — Confidential · Internal use only</div>
+  </div>
+
+  <!-- Col 3: UNRLVL signature -->
+  <div class="fc-right">
+    <div class="fc-sig">
+      <span class="fc-by">Designed &amp; Developed by&nbsp;</span>
+      <span class="fc-name">Unreal</span><span class="f-chev">&gt;</span><span class="fc-name">ille</span>
+      <span class="fc-studio">Studio</span>
+    </div>
+    <div class="fc-addr">unrealvillestudio.com &nbsp;·&nbsp; Hollywood, FL 33021</div>
+  </div>
+
+</footer>
+
+</body>
+</html>
