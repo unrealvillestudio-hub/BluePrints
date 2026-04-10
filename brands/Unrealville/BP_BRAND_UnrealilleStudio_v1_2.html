@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BP_BRAND · UnrealilleStudio · v1.2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --void:#080808;--carbon:#0F0F0F;--graphite:#1A1A1A;
+  --chalk:#F2F0EC;--chalk-72:rgba(242,240,236,0.72);--chalk-42:rgba(242,240,236,0.42);
+  --chalk-12:rgba(242,240,236,0.12);--chalk-06:rgba(242,240,236,0.06);
+  --cyan:#00FFD1;--cyan-20:rgba(0,255,209,0.20);--cyan-08:rgba(0,255,209,0.08);
+  --font-d:'Bebas Neue',sans-serif;--font-m:'Space Mono',monospace;--font-b:'Libre Baskerville',serif;
+}
+body{background:var(--void);color:var(--chalk);font-family:var(--font-m);font-size:13px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:1100px;margin:0 auto;padding:64px 48px;}
+.schema-tag{font-size:9px;letter-spacing:0.22em;color:rgba(0,255,209,0.5);text-transform:uppercase;display:block;margin-bottom:32px;}
+.header{border-bottom:1px solid var(--chalk-06);padding-bottom:40px;margin-bottom:48px;}
+.meta-row{display:flex;gap:32px;flex-wrap:wrap;margin-top:20px;}
+.meta-item{display:flex;flex-direction:column;gap:3px;}
+.meta-label{font-size:8px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(0,255,209,0.5);}
+.meta-value{font-size:11px;color:var(--chalk-72);}
+.section{margin-bottom:48px;}
+.section-title{font-family:var(--font-d);font-size:13px;letter-spacing:0.3em;color:var(--cyan);margin-bottom:24px;padding-bottom:8px;border-bottom:1px solid var(--chalk-06);}
+.palette-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin-bottom:24px;}
+.swatch{height:80px;display:flex;flex-direction:column;justify-content:flex-end;padding:8px;}
+.swatch-name{font-size:8px;letter-spacing:0.1em;text-transform:uppercase;}
+.swatch-hex{font-family:var(--font-m);font-size:8px;opacity:0.7;margin-top:2px;}
+.type-row{display:flex;flex-direction:column;gap:16px;}
+.type-item{display:grid;grid-template-columns:100px 1fr;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--chalk-06);}
+.type-var{font-size:8px;letter-spacing:0.12em;color:rgba(0,255,209,0.5);}
+.dos-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;}
+.do-card{background:#0A1A12;padding:16px;border-left:2px solid var(--cyan);}
+.dont-card{background:#1A0A0A;padding:16px;border-left:2px solid #FF4444;}
+.do-label{font-size:8px;letter-spacing:0.2em;color:var(--cyan);margin-bottom:10px;}
+.dont-label{font-size:8px;letter-spacing:0.2em;color:#FF4444;margin-bottom:10px;}
+.do-item,.dont-item{font-size:11px;color:var(--chalk-42);margin-bottom:6px;padding-left:14px;position:relative;}
+.do-item::before{content:'✓';position:absolute;left:0;color:var(--cyan);font-size:9px;}
+.dont-item::before{content:'✗';position:absolute;left:0;color:#FF4444;font-size:9px;}
+
+/* CHEVRON BLINK — PERMANENT RULE v1.2 */
+@keyframes prompt-blink{
+  0%,49%{opacity:1;}50%,100%{opacity:0;}
+}
+.chev,.sig-chev,.f-chev,.fp-chev{
+  color:var(--cyan);display:inline-block;
+  animation:prompt-blink 1.1s step-end infinite;
+}
+.sig-chev{font-family:var(--font-d);font-size:12px;}
+.f-chev{font-family:var(--font-d);font-size:11px;}
+
+/* LOGOTYPE — STUDIO rule */
+/* STUDIO: Bebas Neue · #1A1A1A · baseline-aligned · always smaller */
+
+/* 7 INTELLIGENCE LAYERS */
+.layers-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin:24px 0 16px;}
+.layer-card{background:var(--graphite);padding:14px 10px;}
+.layer-num{font-size:7px;letter-spacing:0.18em;color:rgba(0,255,209,0.35);margin-bottom:6px;}
+.layer-name{font-family:var(--font-d);font-size:10px;letter-spacing:0.12em;color:var(--cyan);margin-bottom:6px;line-height:1.2;}
+.layer-desc{font-size:9px;color:var(--chalk-42);line-height:1.6;}
+.layer-tools{margin-top:8px;font-size:8px;color:rgba(0,255,209,0.3);line-height:1.6;}
+.layers-note{font-size:9px;color:rgba(0,255,209,0.35);letter-spacing:0.1em;padding:10px 14px;border:1px solid rgba(0,255,209,0.1);line-height:1.7;}
+
+/* ICR v1.2 */
+@keyframes icr-pulse{0%,35%{opacity:1;}45%,55%{opacity:0.12;}65%,100%{opacity:1;}}
+@keyframes icr-flash{0%,40%{opacity:1;}50%,90%{opacity:0;}100%{opacity:1;}}
+.icr-v2-eyebrow{font-size:8px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(0,255,209,0.35);margin-bottom:10px;}
+.icr-v2-title{font-family:var(--font-d);font-size:26px;letter-spacing:0.22em;color:var(--cyan);animation:icr-pulse 2.4s ease-in-out infinite;margin-bottom:14px;line-height:1;}
+.icr-v2-desc{font-size:12px;color:var(--chalk-42);line-height:1.8;max-width:620px;margin-bottom:18px;}
+.icr-v2-desc strong{color:var(--chalk-72);}
+.icr-v2-desc em{color:var(--cyan);font-style:normal;font-weight:700;}
+.icr-v2-tags{display:flex;gap:10px;flex-wrap:wrap;}
+.icr-v2-tag{font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--cyan);border:1px solid rgba(0,255,209,0.22);padding:5px 9px;animation:icr-flash 2.4s ease-in-out infinite;}
+.icr-v2-tag:nth-child(2){animation-delay:0.3s;}
+.icr-v2-tag:nth-child(3){animation-delay:0.6s;}
+.icr-v2-rule{margin-top:18px;padding-top:14px;border-top:1px solid var(--chalk-06);font-size:9px;color:rgba(0,255,209,0.3);letter-spacing:0.1em;line-height:1.7;}
+
+/* CLIENTS */
+.clients-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+.client-card{background:var(--graphite);padding:16px;}
+.client-card.more{background:rgba(242,240,236,0.02);border:1px dashed rgba(242,240,236,0.07);display:flex;align-items:center;justify-content:center;}
+.client-label{font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(0,255,209,0.45);margin-bottom:6px;}
+.client-name{font-size:13px;color:var(--chalk-72);margin-bottom:3px;line-height:1.3;}
+.client-loc{font-size:9px;color:var(--chalk-42);}
+.client-more-text{font-size:10px;color:rgba(242,240,236,0.18);letter-spacing:0.1em;font-style:italic;}
+
+/* FOOTER STANDARD */
+.footer-spec{background:var(--graphite);padding:24px;margin-bottom:32px;border-left:2px solid var(--cyan);}
+.footer-spec-label{font-size:8px;letter-spacing:0.22em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;}
+.footer-spec-note{font-size:11px;color:var(--chalk-42);margin-bottom:18px;line-height:1.7;}
+.footer-spec-note strong{color:var(--chalk);}
+.footer-preview{background:var(--carbon);border-top:2px solid var(--cyan);padding:14px 28px;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:1rem;margin-bottom:16px;}
+.fp-brand{display:flex;flex-direction:column;align-items:flex-start;gap:4px;}
+.fp-brand-name{font-family:var(--font-d);font-size:14px;letter-spacing:0.1em;color:var(--chalk-72);}
+.fp-brand-sub{font-size:7px;letter-spacing:0.18em;text-transform:uppercase;color:var(--chalk-42);}
+.fp-copy{text-align:center;display:flex;flex-direction:column;align-items:center;gap:3px;}
+.fp-copy-line{font-size:7px;letter-spacing:0.13em;text-transform:uppercase;color:var(--chalk-42);line-height:1.8;}
+.fp-credit{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:3px;}
+.fp-sig{display:flex;align-items:baseline;flex-wrap:wrap;justify-content:flex-end;gap:0.1em;}
+.fp-sig .sig-prefix{font-size:6px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(242,240,236,0.28);}
+.fp-sig .sig-name{font-family:var(--font-d);font-size:12px;letter-spacing:0.08em;color:rgba(242,240,236,0.62);}
+.fp-addr{font-size:6px;letter-spacing:0.11em;text-transform:uppercase;color:rgba(242,240,236,0.2);}
+.footer-spec-rules{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;}
+.footer-rule{background:rgba(0,255,209,0.03);padding:10px 12px;border:1px solid var(--cyan-20);}
+.footer-rule-label{font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(0,255,209,0.5);margin-bottom:5px;}
+.footer-rule-val{font-size:10px;color:var(--chalk-42);line-height:1.6;}
+.footer-rule-val code{color:var(--cyan);font-family:var(--font-m);font-size:9px;}
+
+footer.standard{background:var(--carbon);border-top:2px solid var(--cyan);padding:14px 48px;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:1rem;margin-top:80px;}
+.footer-col-left{display:flex;flex-direction:column;align-items:flex-start;gap:4px;}
+.footer-col-center{text-align:center;display:flex;flex-direction:column;align-items:center;gap:3px;}
+.footer-col-right{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:3px;}
+.f-rights{font-size:8px;letter-spacing:0.13em;text-transform:uppercase;color:var(--chalk-42);}
+.f-sig{display:flex;align-items:baseline;flex-wrap:wrap;justify-content:flex-end;gap:0.1em;}
+.f-sig .f-by{font-size:7px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(242,240,236,0.28);}
+.f-sig .f-name{font-family:var(--font-d);font-size:11px;letter-spacing:0.08em;color:rgba(242,240,236,0.62);}
+.f-addr{font-size:7px;letter-spacing:0.11em;text-transform:uppercase;color:rgba(242,240,236,0.2);}
+
+@media(max-width:1000px){.layers-grid{grid-template-columns:repeat(4,1fr);}}
+@media(max-width:700px){
+  .page{padding:40px 24px;}.palette-grid{grid-template-columns:repeat(3,1fr);}
+  .dos-grid,.layers-grid,.clients-grid{grid-template-columns:1fr;}
+  footer.standard{grid-template-columns:1fr;padding:14px 24px;}
+  .footer-col-left,.footer-col-center,.footer-col-right{align-items:center;text-align:center;}
+  .f-sig,.fp-sig{justify-content:center;}
+  .footer-preview{grid-template-columns:1fr;}
+  .fp-brand,.fp-credit{align-items:center;text-align:center;}
+}
+
+/* ── LOGOTYPE lt-* — CANONICAL v1.2 ── */
+.lt-logotype{font-family:'Bebas Neue',sans-serif;letter-spacing:0.04em;line-height:1;white-space:nowrap;}
+.lt-un,.lt-ille{color:#F2F0EC;}
+.lt-chevron{color:#00FFD1;animation:prompt-blink 1.1s step-end infinite;display:inline-block;transform:scaleY(1.45) scaleX(0.72);transform-origin:center;letter-spacing:0;margin:0 -0.01em;}
+.lt-studio{color:rgba(242,240,236,0.32);font-size:0.72em;letter-spacing:0.14em;margin-left:0.18em;}
+.lt-logotype.size-nav{font-size:20px;}
+.lt-logotype.size-footer{font-size:28px;}
+.lt-logotype.size-inline{font-size:16px;}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div class="header">
+  <span class="schema-tag">BP_BRAND · schema_version: 1.2 · brandId: unrlvlStudio · updated: 2026-03-31 · lang: es/FL</span>
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:64px;letter-spacing:0.1em;color:var(--chalk);line-height:1;margin-bottom:8px;display:flex;align-items:baseline;">
+    <span class="lt-logotype size-nav"><span class="lt-un">UNREAL</span><span class="lt-chevron">&gt;</span><span class="lt-ille">ILLE</span><span class="lt-studio">STUDIO</span></span>
+  </div>
+  <div class="meta-row">
+    <div class="meta-item"><span class="meta-label">Categoría</span><span class="meta-value">Brand Intelligence Infrastructure</span></div>
+    <div class="meta-item"><span class="meta-label">HQ</span><span class="meta-value">North Miami, FL 33181</span></div>
+    <div class="meta-item"><span class="meta-label">Operación</span><span class="meta-value">Florida · LATAM · España</span></div>
+    <div class="meta-item"><span class="meta-label">Language</span><span class="meta-value">en/FL · es/FL</span></div>
+    <div class="meta-item"><span class="meta-label">Tagline</span><span class="meta-value" style="font-family:var(--font-b);font-style:italic;color:var(--chalk);">Not for everyone.</span></div>
+    <div class="meta-item"><span class="meta-label">Versión BP</span><span class="meta-value">v1.2 · 2026-03-31</span></div>
+  </div>
+</div>
+
+<!-- 01 — POSICIONAMIENTO -->
+<div class="section">
+  <div class="section-title">01 — POSICIONAMIENTO · BRAND INTELLIGENCE INFRASTRUCTURE</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:32px;">
+    <div>
+      <div class="meta-label" style="margin-bottom:10px;">Definición</div>
+      <p style="font-family:var(--font-b);font-style:italic;font-size:15px;color:var(--chalk-72);line-height:1.8;">Unrealville Studio es una Brand Intelligence Infrastructure — un ecosistema propietario de inteligencia y producción construido para transformar el ADN de una marca en ventaja competitiva real y operación autónoma.</p>
+    </div>
+    <div>
+      <div class="meta-label" style="margin-bottom:8px;">Tagline</div>
+      <p style="font-family:var(--font-b);font-style:italic;font-size:18px;color:var(--chalk);margin-bottom:16px;">"Not for everyone."</p>
+      <div class="meta-label" style="margin-bottom:6px;">Diferenciador base</div>
+      <p style="font-size:11px;color:var(--chalk-42);line-height:1.8;">Siete capas de inteligencia, un ecosistema integrado, el ADN de tu marca en el centro. Lo que las agencias producen en semanas, Unrealville lo genera en horas — con consistencia industrial y sin perder el alma de la marca.</p>
+    </div>
+  </div>
+  <div class="meta-label" style="margin-bottom:14px;">Las 7 capas de inteligencia</div>
+  <div class="layers-grid">
+    <div class="layer-card">
+      <div class="layer-num">01</div>
+      <div class="layer-name">BRAND INTELLIGENCE</div>
+      <div class="layer-desc">ADN, Blueprint, voz, identidad y consistencia de marca.</div>
+      <div class="layer-tools">Blueprint · CopyLab · Onboarding</div>
+    </div>
+    <div class="layer-card">
+      <div class="layer-num">02</div>
+      <div class="layer-name">MARKETING INTELLIGENCE</div>
+      <div class="layer-desc">Copy, contenido, campañas, canales y agentes activos.</div>
+      <div class="layer-tools">CopyLab · SocialLab · AgentLab</div>
+    </div>
+    <div class="layer-card">
+      <div class="layer-num">03</div>
+      <div class="layer-name">BUSINESS INTELLIGENCE</div>
+      <div class="layer-desc">Señales de mercado, datos, analytics y retroalimentación continua.</div>
+      <div class="layer-tools">SignalLab · Supabase · OPS</div>
+    </div>
+    <div class="layer-card">
+      <div class="layer-num">04</div>
+      <div class="layer-name">MEDIA INTELLIGENCE</div>
+      <div class="layer-desc">Producción visual, audiovisual y de voz con ADN de marca.</div>
+      <div class="layer-tools">ImageLab · VideoLab · VoiceLab</div>
+    </div>
+    <div class="layer-card">
+      <div class="layer-num">05</div>
+      <div class="layer-name">FINANCE INTELLIGENCE</div>
+      <div class="layer-desc">Pricing, performance de campañas y ROI medible por marca.</div>
+      <div class="layer-tools">OPS · Reporting · Metrics</div>
+    </div>
+    <div class="layer-card">
+      <div class="layer-num">06</div>
+      <div class="layer-name">TECHNOLOGY INFRA</div>
+      <div class="layer-desc">Labs propietarios, APIs, automatización y arquitectura del ecosistema.</div>
+      <div class="layer-tools">Vercel · Supabase · GitHub</div>
+    </div>
+    <div class="layer-card" style="border-top:2px solid rgba(0,255,209,0.5);">
+      <div class="layer-num">07</div>
+      <div class="layer-name">AI INTELLIGENCE</div>
+      <div class="layer-desc">Selección de modelos, prompt engineering, orquestación y despliegue de agentes.</div>
+      <div class="layer-tools">Claude · HeyGen · Kling · APIs</div>
+    </div>
+  </div>
+  <div class="layers-note">MOTOR — La capa 07 AI Intelligence no es un servicio adicional: es el sistema operativo que hace posibles las otras seis. Cada lab, cada agente, cada output del ecosistema corre sobre arquitectura AI diseñada, no adoptada.</div>
+</div>
+
+<!-- 02 — PALETA -->
+<div class="section">
+  <div class="section-title">02 — PALETA · VOID SYSTEM</div>
+  <div class="palette-grid">
+    <div class="swatch" style="background:#080808;"><span class="swatch-name" style="color:rgba(242,240,236,0.5);">Void</span><span class="swatch-hex" style="color:rgba(242,240,236,0.3);">#080808</span></div>
+    <div class="swatch" style="background:#0F0F0F;"><span class="swatch-name" style="color:rgba(242,240,236,0.5);">Carbon</span><span class="swatch-hex" style="color:rgba(242,240,236,0.3);">#0F0F0F</span></div>
+    <div class="swatch" style="background:#1A1A1A;border:1px solid rgba(242,240,236,0.05);"><span class="swatch-name" style="color:rgba(242,240,236,0.5);">Graphite</span><span class="swatch-hex" style="color:rgba(242,240,236,0.3);">#1A1A1A</span></div>
+    <div class="swatch" style="background:#F2F0EC;"><span class="swatch-name" style="color:#080808;">Chalk</span><span class="swatch-hex" style="color:rgba(0,0,0,0.5);">#F2F0EC</span></div>
+    <div class="swatch" style="background:#00FFD1;"><span class="swatch-name" style="color:#080808;">Cyan</span><span class="swatch-hex" style="color:rgba(0,0,0,0.5);">#00FFD1</span></div>
+  </div>
+  <div style="font-size:10px;color:var(--chalk-42);line-height:1.9;">
+    <strong style="color:var(--chalk);">Cyan #00FFD1</strong> — único acento. Uso: borde footer, chevron "<span class="chev" style="font-size:10px;">&gt;</span>" (blinking), highlights, ICR text, tags.<br>
+    <strong style="color:var(--chalk);">Graphite #1A1A1A</strong> — color exclusivo de "STUDIO" en el logotype sobre fondos oscuros. Elegante y sutil.<br>
+    Nunca usar cyan como background dominante ni en cuerpos de texto largos.
+  </div>
+</div>
+
+<!-- 03 — TIPOGRAFÍA -->
+<div class="section">
+  <div class="section-title">03 — TIPOGRAFÍA</div>
+  <div class="type-row">
+    <div class="type-item">
+      <div><div class="type-var">--font-d</div><div class="meta-value" style="font-size:10px;">Display</div></div>
+      <div>
+        <span class="lt-logotype" style="font-size:32px;"><span class="lt-un">UNREAL</span><span class="lt-chevron">&gt;</span><span class="lt-ille">ILLE</span><span class="lt-studio">STUDIO</span></span>
+      </div>
+    </div>
+    <div class="type-item">
+      <div><div class="type-var">--font-m</div><div class="meta-value" style="font-size:10px;">Mono</div></div>
+      <div style="font-family:'Space Mono',monospace;font-size:13px;color:var(--chalk-72);">Space Mono · schema_version: 1.2 · brandId: unrlvlStudio</div>
+    </div>
+    <div class="type-item">
+      <div><div class="type-var">--font-b</div><div class="meta-value" style="font-size:10px;">Body</div></div>
+      <div style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:14px;color:var(--chalk-72);">"Cada output. Sin excepción." — Libre Baskerville Italic</div>
+    </div>
+  </div>
+</div>
+
+<!-- 04 — NOMBRE DE MARCA -->
+<div class="section">
+  <div class="section-title">04 — NOMBRE · CONSTRUCCIÓN CORRECTA</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+    <div>
+      <div class="meta-label" style="margin-bottom:12px;">Forma correcta</div>
+      <div style="display:flex;align-items:baseline;margin-bottom:16px;">
+        <span class="lt-logotype" style="font-size:52px;"><span class="lt-un">UNREAL</span><span class="lt-chevron">&gt;</span><span class="lt-ille">ILLE</span><span class="lt-studio">STUDIO</span></span>
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.32em;color:var(--graphite);margin-left:12px;vertical-align:baseline;">STUDIO</span>
+      </div>
+      <div style="font-size:10px;color:var(--chalk-42);line-height:1.7;">
+        El chevron "<span class="chev" style="font-size:10px;">&gt;</span>" es parte del nombre — no es un separador tipográfico.<br>
+        <strong style="color:var(--cyan);">REGLA PERMANENTE:</strong> el chevron SIEMPRE blinking en todos los outputs. Sin excepción.<br>
+        STUDIO: Bebas Neue · <strong style="color:var(--chalk);">Graphite #1A1A1A</strong> · misma línea base · siempre más pequeño.
+      </div>
+    </div>
+    <div>
+      <div class="meta-label" style="margin-bottom:12px;">Variantes permitidas</div>
+      <div style="font-size:11px;color:var(--chalk-42);line-height:2.1;">
+        <div>
+          <span class="lt-logotype size-inline" style="font-size:18px;"><span class="lt-un">UNREAL</span><span class="lt-chevron">&gt;</span><span class="lt-ille">ILLE</span></span>
+          <span style="font-family:'Bebas Neue',sans-serif;color:var(--graphite);font-size:10px;letter-spacing:0.26em;vertical-align:baseline;margin-left:6px;">STUDIO</span>
+          <span style="color:var(--chalk-42);font-size:9px;margin-left:6px;">— forma completa</span>
+        </div>
+        <div>• <span style="color:var(--chalk);">Unreal<span class="chev" style="font-size:11px;">&gt;</span>ille Studio</span> — mixedcase en prosa</div>
+        <div>• <span style="color:var(--chalk-42);">unrealvillestudio.com</span> — sin chevron, solo URLs y handles</div>
+        <div style="margin-top:8px;color:#FF4444;font-size:10px;">✗ UnrealVille · Unreal Ille · UNREALILLE — nunca</div>
+        <div style="color:#FF4444;font-size:10px;">✗ ">" sin blinking · STUDIO en chalk o cyan — nunca</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 05 — FOOTER ESTÁNDAR -->
+<div class="section">
+  <div class="section-title">05 — FOOTER ESTÁNDAR · MODELO OBLIGATORIO v1.2</div>
+  <div class="footer-spec">
+    <div class="footer-spec-label">Especificación de aplicación</div>
+    <p class="footer-spec-note">El footer estándar aplica a <strong>todos los outputs</strong> — propios y para clientes, internos y externos. Firma que certifica el Industrial Consistency Standard. <strong>Signature siempre en inglés. Logo cliente izquierda · rights centro · signature derecha. Chevron en firma: blinking permanente.</strong></p>
+    <p class="footer-spec-note" style="border-left:2px solid var(--cyan);padding-left:10px;margin-top:10px;"><strong style="color:var(--cyan);">REGLA GENERAL — OUTPUTS PARA CLIENTES:</strong> En todo documento, presentación, reporte o deliverable generado <em>para un cliente</em> (no destinado al público general), la columna izquierda del footer lleva <strong>el logotipo del cliente</strong> — nunca el de Unreal&gt;ille Studio. La Col 3 (signature "Designed &amp; Developed by Unreal&gt;ille Studio") permanece siempre sin alteración. Esta regla aplica sin excepción: brand books, estrategias, decks, guías, reportes, propuestas y cualquier output entregable al cliente.</p>
+    <div style="font-size:8px;letter-spacing:0.18em;text-transform:uppercase;color:var(--chalk-42);margin-bottom:8px;">Preview del modelo</div>
+    <div class="footer-preview">
+      <div class="fp-brand">
+        <div class="fp-brand-name">[Client<span class="fp-chev">&gt;</span>Logo]</div>
+        <div class="fp-brand-sub">[Client descriptor]</div>
+      </div>
+      <div class="fp-copy">
+        <div class="fp-copy-line">© 2026 [Brand Name] — [Document Title]</div>
+        <div class="fp-copy-line">[Document type] · [Distribution note]</div>
+      </div>
+      <div class="fp-credit">
+        <div class="fp-sig">
+          <span class="sig-prefix">Designed &amp; Developed by&nbsp;</span>
+          <span class="sig-name">Unreal</span><span class="sig-chev">&gt;</span><span class="sig-name">ille</span>
+          <span style="font-family:'Bebas Neue',sans-serif;font-size:8px;letter-spacing:0.24em;color:var(--graphite);margin-left:4px;vertical-align:baseline;">Studio</span>
+        </div>
+        <div class="fp-addr">unrealvillestudio.com &nbsp;·&nbsp; North Miami, FL 33181</div>
+      </div>
+    </div>
+    <div class="footer-spec-rules">
+      <div class="footer-rule"><div class="footer-rule-label">Borde superior</div><div class="footer-rule-val">Línea sólida <code>2px</code> en <code>#00FFD1</code>. Siempre. Sin excepción.</div></div>
+      <div class="footer-rule"><div class="footer-rule-label">Background</div><div class="footer-rule-val"><code>#0F0F0F</code> (--carbon). Independiente del bg del documento.</div></div>
+      <div class="footer-rule"><div class="footer-rule-label">Col 1 · Logo cliente</div><div class="footer-rule-val">Wordmark del cliente + sub-descriptor. En outputs propios: logotype de Unrealville con chevron blinking.</div></div>
+      <div class="footer-rule"><div class="footer-rule-label">Col 2 · Rights</div><div class="footer-rule-val">© [año] [marca] — [título] · [tipo] · [distribución]. Centrado.</div></div>
+      <div class="footer-rule"><div class="footer-rule-label">Col 3 · Signature</div><div class="footer-rule-val">Siempre en inglés: "Designed &amp; Developed by Unreal<span class="chev" style="font-size:9px;">&gt;</span>ille Studio". Bebas Neue.</div></div>
+      <div class="footer-rule"><div class="footer-rule-label">STUDIO en signature</div><div class="footer-rule-val">Bebas Neue · <code>#1A1A1A</code> · baseline-aligned · más pequeño que el logotype principal.</div></div>
+      <div class="footer-rule" style="border-color:var(--cyan);grid-column:1/-1;"><div class="footer-rule-label" style="color:var(--cyan);">Regla de oro — outputs para cliente</div><div class="footer-rule-val"><strong style="color:var(--chalk);">Col 1 = logo del cliente siempre.</strong> En cualquier output generado para un cliente (brand book, deck, guía, reporte, propuesta), la columna izquierda lleva el wordmark + sub-descriptor del cliente. Nunca el logo de Unreal&gt;ille en ese slot. La signature de Col 3 ("Designed &amp; Developed by Unreal&gt;ille Studio") es invariable en todos los casos.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 06 — ICR -->
+<div class="section">
+  <div class="section-title">06 — ICR · INDUSTRIAL CONSISTENCY READY <span style="color:rgba(0,255,209,0.4);font-size:9px;margin-left:8px;">QA LAYER</span></div>
+  <div style="background:var(--graphite);padding:28px;">
+    <div class="icr-v2-eyebrow">QA LAYER · AUTOMATED · PRE-GENERATION</div>
+    <div class="icr-v2-title">INDUSTRIAL CONSISTENCY READY</div>
+    <div class="icr-v2-desc">
+      Proceso automatizado de verificación que se ejecuta <em>ANTES</em> de que cualquier output sea generado.<br>
+      Valida que el contenido cumpla los parámetros de <strong>marca, tono, formato y estándar</strong> definidos para cada contexto — usando el Blueprint como fuente de verdad y el ADN de la marca como filtro.<br><br>
+      No es un sello editorial. No es una etiqueta decorativa. Es una capa activa de control de calidad que el ecosistema ejecuta en cada output, de cada marca, en cada canal. <strong>Sin excepción.</strong>
+    </div>
+    <div class="icr-v2-tags">
+      <div class="icr-v2-tag">BRAND DNA · VERIFIED</div>
+      <div class="icr-v2-tag">PARAMETERS · CHECKED</div>
+      <div class="icr-v2-tag">OUTPUT · CLEARED</div>
+    </div>
+    <div class="icr-v2-rule">REGLA DE USO — Módulo editorial independiente del footer estándar (§05). Activar en portadas de documentos estratégicos, páginas de cierre y presentaciones de alto nivel. No reemplaza el footer de tres columnas.</div>
+  </div>
+</div>
+
+<!-- 07 — PORTAFOLIO ACTIVO -->
+<div class="section">
+  <div class="section-title">07 — ECOSISTEMA · PORTAFOLIO ACTIVO</div>
+  <div class="clients-grid">
+    <div class="client-card">
+      <div class="client-label">Personal Brand · Miami, FL</div>
+      <div class="client-name">Patricia Osorio · Personal</div>
+      <div class="client-loc">Miami, Florida · USA</div>
+    </div>
+    <div class="client-card">
+      <div class="client-label">Personal Brand · Miami, FL</div>
+      <div class="client-name">Patricia Osorio · Comunidad</div>
+      <div class="client-loc">Miami, Florida · USA</div>
+    </div>
+    <div class="client-card">
+      <div class="client-label">Personal Brand · Miami, FL</div>
+      <div class="client-name">Patricia Osorio · Vizos Salon</div>
+      <div class="client-loc">Miami, Florida · USA</div>
+    </div>
+    <div class="client-card">
+      <div class="client-label">Brand · South &amp; Central Florida</div>
+      <div class="client-name">Neurone SCFlorida</div>
+      <div class="client-loc">South &amp; Central Florida · USA</div>
+    </div>
+    <div class="client-card">
+      <div class="client-label">Brand · Panamá</div>
+      <div class="client-name">ForumPHs</div>
+      <div class="client-loc">Panamá</div>
+    </div>
+    <div class="client-card">
+      <div class="client-label">Brand · Miami + España</div>
+      <div class="client-name">Vizos Cosmetics</div>
+      <div class="client-loc">Miami, FL · España</div>
+    </div>
+    <div class="client-card">
+      <div class="client-label">Brand · Alicante, España</div>
+      <div class="client-name">Diamond Details</div>
+      <div class="client-loc">Alicante, España</div>
+    </div>
+    <div class="client-card">
+      <div class="client-label">Brand · Alicante, España</div>
+      <div class="client-name">D7 Herbal</div>
+      <div class="client-loc">Alicante, España</div>
+    </div>
+    <div class="client-card">
+      <div class="client-label">Brand · España</div>
+      <div class="client-name">Vivosé Mask</div>
+      <div class="client-loc">España</div>
+    </div>
+    <div class="client-card more">
+      <div class="client-more-text">...y otras más en desarrollo</div>
+    </div>
+  </div>
+</div>
+
+<!-- 08 — DO / DON'T -->
+<div class="section">
+  <div class="section-title">08 — DO / DON'T</div>
+  <div class="dos-grid">
+    <div class="do-card">
+      <div class="do-label">✓ Do</div>
+      <div class="do-item">UNREAL<span class="chev" style="font-size:11px;">&gt;</span>ILLE con chevron blinking — siempre, sin excepción</div>
+      <div class="do-item">STUDIO: Graphite #1A1A1A · Bebas Neue · baseline-aligned · siempre más pequeño</div>
+      <div class="do-item">Footer de 3 columnas con línea cyan en todos los outputs</div>
+      <div class="do-item">Cyan #00FFD1 solo como acento puntual</div>
+      <div class="do-item">Posicionamiento afirmativo: "Brand Intelligence Infrastructure"</div>
+      <div class="do-item">ICR module solo en contextos editoriales que lo justifican</div>
+      <div class="do-item">Language: en/FL primario · es/FL secundario — sin spanglish</div>
+    </div>
+    <div class="dont-card">
+      <div class="dont-label">✗ Don't</div>
+      <div class="dont-item">Escribir ">" en el logotype sin animación blinking</div>
+      <div class="dont-item">STUDIO en chalk, cyan o cualquier color que no sea #1A1A1A</div>
+      <div class="dont-item">STUDIO en línea separada o desalineado de la base del logotype</div>
+      <div class="dont-item">Footer sin línea cyan superior de 2px</div>
+      <div class="dont-item">Llamar a Unrealville Studio "agencia" en ningún output</div>
+      <div class="dont-item">Posicionamiento defensivo ("no somos...") — usar siempre afirmativo</div>
+      <div class="dont-item">Spanglish — en/FL o es/FL, nunca mezcla</div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /page -->
+
+<footer class="standard">
+  <div class="footer-col-left">
+    <div style="display:flex;align-items:baseline;">
+      <span class="lt-logotype size-footer"><span class="lt-un">UNREAL</span><span class="lt-chevron">&gt;</span><span class="lt-ille">ILLE</span><span class="lt-studio">STUDIO</span></span>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:9px;letter-spacing:0.28em;color:var(--graphite);margin-left:8px;vertical-align:baseline;">STUDIO</span>
+    </div>
+    <div class="f-addr">Brand Intelligence Infrastructure</div>
+  </div>
+  <div class="footer-col-center">
+    <div class="f-rights">BP_BRAND_UnrealilleStudio_v1.2 · 2026-03-31</div>
+    <div class="f-rights">© 2026 Unrealville Studio — BluePrints · All rights reserved</div>
+  </div>
+  <div class="footer-col-right">
+    <div class="f-sig">
+      <span class="f-by">Designed &amp; Developed by&nbsp;</span>
+      <span class="f-name">Unreal</span><span class="f-chev">&gt;</span><span class="f-name">ille</span>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:8px;letter-spacing:0.24em;color:var(--graphite);margin-left:5px;vertical-align:baseline;">Studio</span>
+    </div>
+    <div class="f-addr">unrealvillestudio.com &nbsp;·&nbsp; North Miami, FL 33181</div>
+  </div>
+</footer>
+
+</body>
+</html>
