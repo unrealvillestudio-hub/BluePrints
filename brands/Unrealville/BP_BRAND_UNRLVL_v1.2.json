@@ -1,0 +1,237 @@
+{
+  "id": "brand_unrlvl_studio",
+  "schema_version": "BP_BRAND_1.3",
+  "brandId": "UNRLVL",
+  "displayName": "Unreal>ille Studio",
+  "tagline": "Built different.",
+  "created": "2026-03-22",
+  "updated": "2026-04-10",
+  "version": "1.2",
+  "status": "active",
+  "brand_identity": {
+    "type": "agency_inhouse",
+    "hq": "12951 Biscayne Blvd · North Miami, FL 33181",
+    "hq_note": "Co-located with Vizos Cosmetics",
+    "territory": "North Miami, FL (operated remotely from Spain/Panama)",
+    "language_primary": "es",
+    "language_secondary": "en",
+    "model": [
+      "B2B_inhouse"
+    ],
+    "audience": "Internal — Sam + PO + operators",
+    "public_facing": false
+  },
+  "logotype": {
+    "format": "css_pure",
+    "font_family": "Bebas Neue",
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap",
+    "markup": "<span class=\"lt-logotype\"><span class=\"lt-un\">UNREAL</span><span class=\"lt-chevron\">></span><span class=\"lt-ille\">ILLE</span><span class=\"lt-studio\">STUDIO</span></span>",
+    "chevron": {
+      "character": ">",
+      "color": "#00FFD1",
+      "class": "lt-chevron",
+      "blink": true,
+      "blink_rule": "ALWAYS blinking in every context — no exceptions. Not on hover, not on active — permanently blinking.",
+      "animation_name": "prompt-blink",
+      "animation_method": "CSS keyframes (HTML/CSS context) + SMIL animate (SVG favicon)",
+      "css_keyframes": "@keyframes prompt-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }",
+      "css_class_rule": ".lt-chevron { color: #00FFD1; animation: prompt-blink 1.1s step-end infinite; display: inline-block; transform: scaleY(1.45) scaleX(0.72); transform-origin: center; letter-spacing: 0; margin: 0 -0.01em; }",
+      "transform": "scaleY(1.45) scaleX(0.72)",
+      "transform_origin": "center",
+      "deprecated_names": [
+        "chevron-blink",
+        "chev-listen"
+      ]
+    },
+    "studio_suffix": {
+      "text": "STUDIO",
+      "class": "lt-studio",
+      "color": "rgba(242,240,236,0.32)",
+      "rule": "MUST be visually much darker/dimmer than UNREAL>ILLE — never same weight or color. 0.32 opacity max.",
+      "font_size": "0.72em of logotype wrapper",
+      "letter_spacing": "0.14em",
+      "margin_left": "0.18em"
+    },
+    "css_complete": "\n/* ── UNRLVL Logotype — copy this block exactly ── */\n@keyframes prompt-blink {\n  0%, 49% { opacity: 1; }\n  50%, 100% { opacity: 0; }\n}\n.lt-logotype {\n  font-family: 'Bebas Neue', sans-serif;\n  letter-spacing: 0.04em;\n  line-height: 1;\n  white-space: nowrap;\n}\n.lt-un, .lt-ille {\n  color: #F2F0EC;\n}\n.lt-chevron {\n  color: #00FFD1;\n  animation: prompt-blink 1.1s step-end infinite;\n  display: inline-block;\n  transform: scaleY(1.45) scaleX(0.72);\n  transform-origin: center;\n  letter-spacing: 0;\n  margin: 0 -0.01em;\n}\n.lt-studio {\n  color: rgba(242,240,236,0.32);\n  font-size: 0.72em;\n  letter-spacing: 0.14em;\n  margin-left: 0.18em;\n}\n/* Sizes */\n.lt-logotype.size-nav    { font-size: 20px; }\n.lt-logotype.size-footer { font-size: 28px; }\n.lt-logotype.size-inline { font-size: 16px; }\n"
+  },
+  "color_palette": {
+    "primary": {
+      "void": {
+        "hex": "#080808",
+        "role": "page background"
+      },
+      "carbon": {
+        "hex": "#0F0F0F",
+        "role": "surface default"
+      },
+      "graphite": {
+        "hex": "#1A1A1A",
+        "role": "surface elevated"
+      }
+    },
+    "text": {
+      "chalk": {
+        "hex": "#F2F0EC",
+        "role": "primary text"
+      },
+      "chalk_72": {
+        "rgba": "rgba(242,240,236,0.72)",
+        "role": "secondary text"
+      },
+      "chalk_42": {
+        "rgba": "rgba(242,240,236,0.42)",
+        "role": "muted / STUDIO label"
+      },
+      "chalk_12": {
+        "rgba": "rgba(242,240,236,0.12)",
+        "role": "borders light"
+      },
+      "chalk_06": {
+        "rgba": "rgba(242,240,236,0.06)",
+        "role": "borders subtle / nav separator"
+      }
+    },
+    "accent": {
+      "cyan": {
+        "hex": "#00FFD1",
+        "role": "primary accent — chevron, CTAs, highlights"
+      },
+      "cyan_20": {
+        "rgba": "rgba(0,255,209,0.20)",
+        "role": "hover states, badge borders"
+      },
+      "cyan_08": {
+        "rgba": "rgba(0,255,209,0.08)",
+        "role": "badge backgrounds, subtle fills"
+      }
+    }
+  },
+  "typography": {
+    "display": {
+      "family": "Bebas Neue",
+      "source": "Google Fonts",
+      "usage": "Logotype, section headers, hero titles"
+    },
+    "mono": {
+      "family": "Space Mono",
+      "weights": [
+        "400",
+        "700"
+      ],
+      "usage": "Labels, metadata, tags, badges, code, nav metadata, footer credits"
+    },
+    "body": {
+      "family": "Libre Baskerville",
+      "weights": [
+        "400 regular",
+        "400 italic"
+      ],
+      "usage": "Long-form body copy, editorial text"
+    },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap"
+  },
+  "footer": {
+    "version": "1.2",
+    "rule": "Standard footer applies to ALL outputs — own and client, internal and external.",
+    "border_top": "2px solid #00FFD1 — always, no exceptions.",
+    "background": "#0F0F0F — independent of document background.",
+    "grid": "3 columns",
+    "col_1": {
+      "label": "Client Logo / Own Logo",
+      "rule_own_outputs": "Unrealville logotype (.lt-logotype size-footer) with blinking chevron.",
+      "rule_client_outputs": "CLIENT logo + sub-descriptor — NEVER Unrealville logo in this slot.",
+      "golden_rule": "In any deliverable generated FOR a client (brand book, deck, guide, report, proposal), Col 1 = client logo. Always. No exceptions."
+    },
+    "col_2": {
+      "label": "Rights",
+      "format": "© [year] [Brand] — [Document Title] · [type] · [distribution]",
+      "alignment": "center"
+    },
+    "col_3": {
+      "label": "Signature",
+      "text": "Designed & Developed by Unreal>ille Studio",
+      "language": "Always in English — invariable.",
+      "font": "Bebas Neue"
+    },
+    "address_line": "unrealvillestudio.com · North Miami, FL 33181"
+  },
+  "document_composition": {
+    "standard_html_doc": {
+      "nav": {
+        "position": "top",
+        "left": "logotype (font-size 20px — .lt-logotype.size-nav)",
+        "right": "document title + metadata in Space Mono",
+        "border": "1px solid chalk_06",
+        "bg": "rgba(8,8,8,0.96)"
+      },
+      "footer": {
+        "position": "bottom",
+        "left": "logotype large (.lt-logotype.size-footer 28px) + ICR badge below",
+        "right": "credits block in Space Mono uppercase chalk_42 with cyan highlight",
+        "border_top": "2px solid #00FFD1"
+      }
+    },
+    "icr_badge": {
+      "markup": "<span class=\"icr-badge\"><span class=\"icr-dot\"></span>ICR Standard Active</span>",
+      "description": "Animated pulse dot + Space Mono label. Applied to all ICR-compliant document footers.",
+      "rule": "MANDATORY in footer of every document output — no exceptions.",
+      "placement": "Footer — always. Center or alongside footer credits."
+    }
+  },
+  "assets": {
+    "path_base": "brands/Unrealville/assets/",
+    "favicon": {
+      "file": "UNRLVL_Favicon.svg",
+      "path": "brands/Unrealville/assets/UNRLVL_Favicon.svg",
+      "status": "active — corrected 2026-04-10",
+      "spec": "SVG — chevron > in #00FFD1, transparent background, prompt-blink 1.1s step-end",
+      "animation": "prompt-blink 1.1s step-end infinite (CSS) + SMIL for favicon context",
+      "embed_method": "base64 data URI — embed in <head> of EVERY HTML output",
+      "rule": "REQUIRED in every HTML document output — no exceptions"
+    },
+    "logo_dark": {
+      "file": "UNRLVL_Logo_drk.svg",
+      "path": "brands/Unrealville/assets/UNRLVL_Logo_drk.svg",
+      "bg": "transparent",
+      "text_fill": "#1A1A1A",
+      "use_on": "light backgrounds",
+      "status": "corrected 2026-04-10 — chevron #00FFD1, bg transparent, blink embedded"
+    },
+    "logo_light": {
+      "file": "UNRLVL_Logo_lght.svg",
+      "path": "brands/Unrealville/assets/UNRLVL_Logo_lght.svg",
+      "bg": "transparent",
+      "text_fill": "#F2F0EC",
+      "use_on": "dark backgrounds",
+      "status": "corrected 2026-04-10"
+    },
+    "logotype_png": {
+      "file": "UNRLVL_logotype_chrk.png",
+      "path": "brands/Unrealville/assets/UNRLVL_logotype_chrk.png",
+      "alpha": true,
+      "note": "Chalk version — reference only. SVG preferred."
+    }
+  },
+  "output_standards": {
+    "_mandatory_checklist": "Claude MUST verify all items before delivering any output",
+    "every_html_output": [
+      "favicon <link> tag in <head> — first element, before stylesheets",
+      "@keyframes prompt-blink in <style> (NOT chevron-blink, NOT chev-listen — deprecated)",
+      ".lt-chevron class with animation prompt-blink 1.1s step-end applied",
+      ".lt-studio class with color rgba(242,240,236,0.32) — visually much dimmer than main logotype",
+      "ICR badge visible in footer",
+      ".lt-logotype.size-nav in header (20px)",
+      ".lt-logotype.size-footer in footer (28px)",
+      "Footer: Col1=own logo OR client logo (see footer.golden_rule), Col2=rights, Col3=signature EN"
+    ]
+  },
+  "repo": {
+    "blueprints_repo": "unrealvillestudio-hub/BluePrints",
+    "path": "brands/Unrealville/",
+    "json_file": "brands/Unrealville/BP_BRAND_UNRLVL_v1.2.json",
+    "html_es": "brands/Unrealville/BP_BRAND_UnrealilleStudio_v1_2.html",
+    "html_en": "brands/Unrealville/BP_BRAND_UnrealilleStudio_v1_2_EN.html",
+    "assets_path": "brands/Unrealville/assets/",
+    "note": "HTML docs and JSON blueprint go in brands/Unrealville/ root. SVG/PNG assets go in brands/Unrealville/assets/. Do NOT store HTML documents inside assets/."
+  }
+}
