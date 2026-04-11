@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "schema": "unrlvl-brand-v1.2",
+    "brand_id": "unrealville-studio",
+    "brand_slug": "Unrealville",
+    "type": "studio",
+    "version": "1.2",
+    "last_updated": "2026-04-10",
+    "managed_by": "Claude / Unreal>ille Context System",
+    "repo_path": "brands/Unrealville/"
+  },
+
+  "identity": {
+    "name": "Unreal>ille Studio",
+    "name_display": "UNREAL>ILLE STUDIO",
+    "name_logotype": "UNREAL>ILLE",
+    "name_studio_suffix": "STUDIO",
+    "chevron": ">",
+    "tagline": "Not for everyone.",
+    "brand_type": "Creative Studio — Brand Intelligence & Industrial Consistency",
+    "language_default": "en",
+    "languages_supported": ["en", "es"]
+  },
+
+  "contact": {
+    "web": "unrealvillestudio.com",
+    "web_status": "LIVE — 2026-04-10",
+    "hq": {
+      "address": "12951 Biscayne Blvd",
+      "city": "North Miami",
+      "state": "FL",
+      "zip": "33181",
+      "country": "USA",
+      "display": "12951 Biscayne Blvd · North Miami, FL 33181",
+      "note": "Co-located with Vizos Cosmetics"
+    }
+  },
+
+  "colors": {
+    "cyan": {
+      "hex": "#00FFD1",
+      "rgb": "0, 255, 209",
+      "role": "Primary accent — THE only accent color. Chevron, footer border, ICR text, highlights, tags, blink animation.",
+      "variants": {
+        "cyan_20": "rgba(0,255,209,0.20)",
+        "cyan_08": "rgba(0,255,209,0.08)",
+        "cyan_03": "rgba(0,255,209,0.03)"
+      }
+    },
+    "carbon": { "hex": "#0F0F0F", "role": "Primary background. Footer background always." },
+    "graphite": { "hex": "#1A1A1A", "role": "Secondary background. STUDIO suffix color." },
+    "chalk": { "hex": "#F2F0EC", "role": "Primary text on dark. Light logo fill." },
+    "chalk_42": { "hex": "rgba(242,240,236,0.42)", "role": "Secondary/muted text." },
+    "chalk_06": { "hex": "rgba(242,240,236,0.06)", "role": "Subtle borders." },
+    "error": { "hex": "#FF4444", "role": "Don'ts, errors only." }
+  },
+
+  "typography": {
+    "display": { "family": "Bebas Neue", "source": "Google Fonts", "role": "Logotype, headings, STUDIO suffix, section titles, signature." },
+    "mono": { "family": "Space Mono", "source": "Google Fonts", "role": "Labels, metadata, tags, badges, code, footer credits." },
+    "body": { "family": "Libre Baskerville", "source": "Google Fonts", "role": "Long-form body copy, editorial text." },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap"
+  },
+
+  "logotype": {
+    "markup": "<span class=\"lt-logotype\"><span class=\"lt-un\">UNREAL</span><span class=\"lt-chevron\">></span><span class=\"lt-ille\">ILLE</span><span class=\"lt-studio\">STUDIO</span></span>",
+    "chevron_color": "#00FFD1",
+    "chevron_animation": "prompt-blink 1.1s step-end infinite",
+    "chevron_transform": "scaleY(1.45) scaleX(0.72)",
+    "studio_color": "rgba(242,240,236,0.32)",
+    "studio_rule": "Always visually dimmer than UNREAL>ILLE — 0.32 opacity max.",
+    "deprecated_animations": ["chevron-blink", "chev-listen"],
+    "css_complete": "@keyframes prompt-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }\n.lt-logotype { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.04em; line-height: 1; white-space: nowrap; }\n.lt-un, .lt-ille { color: #F2F0EC; }\n.lt-chevron { color: #00FFD1; animation: prompt-blink 1.1s step-end infinite; display: inline-block; transform: scaleY(1.45) scaleX(0.72); transform-origin: center; letter-spacing: 0; margin: 0 -0.01em; }\n.lt-studio { color: rgba(242,240,236,0.32); font-size: 0.72em; letter-spacing: 0.14em; margin-left: 0.18em; }\n.lt-logotype.size-nav { font-size: 20px; }\n.lt-logotype.size-footer { font-size: 28px; }\n.lt-logotype.size-inline { font-size: 16px; }"
+  },
+
+  "footer": {
+    "version": "1.2",
+    "rule": "Applies to ALL outputs — own and client, internal and external.",
+    "border_top": "2px solid #00FFD1 — always, no exceptions.",
+    "background": "#0F0F0F — independent of document background.",
+    "grid": "3 columns",
+    "col_1": {
+      "rule_own_outputs": "Unrealville logotype (.lt-logotype size-footer) with blinking chevron.",
+      "rule_client_outputs": "CLIENT logo + sub-descriptor — NEVER Unrealville logo in this slot.",
+      "golden_rule": "In any deliverable FOR a client: Col 1 = client logo. Always. No exceptions."
+    },
+    "col_2": { "format": "© [year] [Brand] — [Document Title] · [type] · [distribution]", "alignment": "center" },
+    "col_3": { "text": "Designed & Developed by Unreal>ille Studio", "language": "Always in English.", "font": "Bebas Neue" },
+    "address_line": "unrealvillestudio.com · North Miami, FL 33181"
+  },
+
+  "assets": {
+    "path_base": "brands/Unrealville/assets/",
+    "logo_dark": { "file": "UNRLVL_Logo_drk.svg", "bg": "transparent", "text_fill": "#1A1A1A", "use_on": "light backgrounds" },
+    "logo_light": { "file": "UNRLVL_Logo_lght.svg", "bg": "transparent", "text_fill": "#F2F0EC", "use_on": "dark backgrounds" },
+    "favicon": { "file": "UNRLVL_Favicon.svg", "bg": "transparent", "note": "Chevron only. prompt-blink embedded." }
+  },
+
+  "repo": {
+    "blueprints_repo": "unrealvillestudio-hub/BluePrints",
+    "path": "brands/Unrealville/",
+    "assets_path": "brands/Unrealville/assets/"
+  }
+}

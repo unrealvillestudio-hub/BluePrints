@@ -1,0 +1,99 @@
+{
+  "_meta": {
+    "schema": "unrlvl-brand-v1.0",
+    "brand_id": "neurone-scf",
+    "brand_slug": "NeuroneSCF",
+    "type": "brand",
+    "version": "1.0",
+    "last_updated": "2026-04-11",
+    "managed_by": "Claude / Unreal>ille Context System",
+    "repo_path": "brands/NeuroneSCF/"
+  },
+
+  "identity": {
+    "name": "Neurone South & Central Florida",
+    "name_short": "Neurone SCF",
+    "name_handle": "neuronescflorida",
+    "brand_type": "Professional Hair Care — B2B + B2C Distribution",
+    "language_default": "es-FL",
+    "languages_supported": ["es-FL", "en"]
+  },
+
+  "contact": {
+    "web": "neuronescflorida.com",
+    "email_aliases": {
+      "admin": "admin@neuronescflorida.com",
+      "ig": "ig@neuronescflorida.com",
+      "waba": "waba@neuronescflorida.com",
+      "tiktok": "tiktok@neuronescflorida.com",
+      "ads": "ads@neuronescflorida.com",
+      "support": "support@neuronescflorida.com",
+      "hello": "hello@neuronescflorida.com"
+    },
+    "market": "South & Central Florida, USA",
+    "operator": "Patricia Osorio",
+    "ops_manager": "Laura Rodriguez"
+  },
+
+  "social_media": {
+    "instagram": "@neuronescflorida",
+    "facebook_page": "Neurone South & Central Florida",
+    "whatsapp_business": "T-Mobile number — activo",
+    "tiktok": "diferido — pendiente dirección comercial",
+    "meta_bm_status": "parcialmente configurado — completar info empresa"
+  },
+
+  "ecommerce": {
+    "platform": "Shopify Basic",
+    "domain": "neuronescflorida.com",
+    "status": "active",
+    "monthly_cost": "$39",
+    "products_count": 44,
+    "pricing_doc": "brands/NeuroneSCF/assets/brand/Neurone_Pricing_v7.xlsx"
+  },
+
+  "assets": {
+    "path_base": "brands/NeuroneSCF/assets/",
+    "brand": {
+      "path": "brands/NeuroneSCF/assets/brand/",
+      "files": [
+        "logo_neurone_blue.png",
+        "logo_neurone_dark.png",
+        "logo_neurone_white.png",
+        "aro_curve.png",
+        "aro_degradado.png",
+        "Neurone_Pricing_v7.xlsx",
+        "neurone_pricing_analysis_v1.html"
+      ]
+    },
+    "products": {
+      "path": "brands/NeuroneSCF/assets/products/",
+      "count": 44,
+      "subfolders": ["alpha_dark", "dark_versions"],
+      "note": "BP_PRODUCT JSONs en /products/ raíz del repo"
+    }
+  },
+
+  "supabase": {
+    "project_id": "amlvyycfepwhiindxgzw",
+    "brand_id_in_db": "NeuroneSCF",
+    "tables_populated": ["brands", "humanize_profiles", "brand_goals", "brand_personas", "geomix"],
+    "tables_pending": ["brand_copy_profiles"]
+  },
+
+  "data_completeness": {
+    "humanize": "✅ DONE",
+    "goals": "✅ DONE",
+    "personas": "✅ DONE",
+    "geomix": "✅ DONE",
+    "copy_profile": "❌ PENDIENTE",
+    "shopify_prices": "❌ PENDIENTE"
+  },
+
+  "repo": {
+    "blueprints_repo": "unrealvillestudio-hub/BluePrints",
+    "path": "brands/NeuroneSCF/",
+    "bp_brand_json": "brands/NeuroneSCF/BP_BRAND_NeuroneSCF_v1.0.json",
+    "assets_path": "brands/NeuroneSCF/assets/"
+  }
+}
