@@ -1,0 +1,196 @@
+{
+  "_meta": {
+    "schema": "BP_BRAND_1.0",
+    "brand_id": "PatriciaOsorioConectando",
+    "display_name": "Patricia Osorio · Conectando",
+    "version": "1.0",
+    "status": "DEFINITIVO",
+    "approved_by": "Patricia Osorio",
+    "approved_date": "2026-04-16",
+    "created_by": "UNRLVL Claude",
+    "supabase_id": "PatriciaOsorioConectando",
+    "html_asset": "BluePrints/brands/PatriciaOsorioConectando/BP_BRAND_PatriciaOsorio_Conectando_v1.html",
+    "context_doc": "brands/PatriciaOsorioConectando/BP_Brand_Context.md"
+  },
+  "identity": {
+    "name": "Patricia Osorio · Conectando",
+    "wordmark": "Patricia Osorio",
+    "subtitle": "Conectando",
+    "tagline": "Lo que ves es lo que hay. Siempre.",
+    "concept": "Espacio personal de Patricia Osorio. No es sobre su profesión ni sobre cabello — es sobre ella como mujer: empática, auténtica, sin filtros. Comunidad para mujeres hispanas en Miami y LATAM.",
+    "brand_type": "personal_brand_community",
+    "market": "Miami, FL + LATAM hispano",
+    "language": "es-FL",
+    "channels": ["Instagram", "TikTok", "Blog / Newsletter", "Videopodcast"]
+  },
+  "logo_system": {
+    "wordmark_font": "Pinyon Script",
+    "wordmark_font_url": "https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap",
+    "wordmark_color_dark": "#F5EAD0",
+    "wordmark_color_light": "#0A0A0A",
+    "subtitle_font": "Montserrat",
+    "subtitle_weight": 200,
+    "subtitle_letter_spacing": "0.52em",
+    "subtitle_text_transform": "uppercase",
+    "subtitle_color_dark": "#C49A3C",
+    "subtitle_color_light": "#8A6820",
+    "lockup_rule": "Wordmark siempre arriba, Conectando siempre debajo. Nunca al lado. Nunca compite. Nunca solo Conectando sin la firma.",
+    "clear_space": "Equivalente a la altura de la P de Patricia en cada lado",
+    "standalone_signature": "Patricia Osorio sola es válida como firma de cierre. Conectando solo NO es válido."
+  },
+  "palette": {
+    "primary": [
+      { "name": "Negro Profundo", "hex": "#0A0A0A", "role": "fondo_principal", "usage": "Fondo principal, fondos de video" },
+      { "name": "Carbón Cálido", "hex": "#1C1A16", "role": "superficie", "usage": "Superficies, cards, stories" },
+      { "name": "Dorado PO", "hex": "#C49A3C", "role": "acento_principal", "usage": "Acento principal, Conectando, highlights" },
+      { "name": "Crema PO", "hex": "#F5EAD0", "role": "texto_principal", "usage": "Texto principal, firma sobre oscuro" }
+    ],
+    "secondary": [
+      { "name": "Dorado Claro", "hex": "#E2BC6E", "role": "highlight", "usage": "Highlights, detalles luminosos" },
+      { "name": "Dorado Profundo", "hex": "#8A6820", "role": "acento_claro", "usage": "Accents sobre fondos claros" },
+      { "name": "Ivory", "hex": "#FBF7EF", "role": "fondo_claro", "usage": "Fondos claros — máx 30% del feed" },
+      { "name": "Crema Cálida", "hex": "#EFE0C0", "role": "fondo_stories_claro", "usage": "Stories claras" }
+    ],
+    "combinations": {
+      "primary_dark": { "background": "#0A0A0A", "text": "#F5EAD0", "accent": "#C49A3C" },
+      "secondary_dark": { "background": "#1C1A16", "text": "#F5EAD0", "accent": "#C49A3C" },
+      "light": { "background": "#FBF7EF", "text": "#0A0A0A", "accent": "#8A6820" }
+    },
+    "palette_story": "Nace de Patricia: negro (mundo peluquero) + dorado (su cabello, su energía) + crema (su piel, su claridad)"
+  },
+  "typography": {
+    "wordmark": {
+      "family": "Pinyon Script",
+      "style": "cursive",
+      "weight": 400,
+      "usage": "Firma personal — solo el nombre Patricia Osorio. Nunca para body text."
+    },
+    "subtitle": {
+      "family": "Montserrat",
+      "weight": 200,
+      "letter_spacing": "0.52em",
+      "text_transform": "uppercase",
+      "usage": "Conectando + labels"
+    },
+    "headline": {
+      "family": "Cormorant Garamond",
+      "weight": 400,
+      "usage": "Títulos blog, podcast, quotes"
+    },
+    "pull_quote": {
+      "family": "Cormorant Garamond",
+      "style": "italic",
+      "weight": 300,
+      "usage": "Frases destacadas en posts"
+    },
+    "body": {
+      "family": "DM Sans",
+      "weight": 400,
+      "usage": "Captions largas, blog, texto corrido"
+    },
+    "metadata": {
+      "family": "Space Mono",
+      "weight": 400,
+      "letter_spacing": "0.22em",
+      "text_transform": "uppercase",
+      "usage": "Episodio, fecha, categoría"
+    },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap"
+  },
+  "content_pillars": [
+    {
+      "id": 1,
+      "name": "Mujer Real",
+      "description": "Lo que no se dice en los feeds perfectos. Inseguridades, contradicciones, días sin ganas. Sin editar.",
+      "tags": ["Autenticidad", "Vulnerabilidad"],
+      "frequency": "principal"
+    },
+    {
+      "id": 2,
+      "name": "Energía & Ritmo",
+      "description": "Cómo se sostiene la energía cuando el trabajo no para. Rutinas, límites, lo que recarga. No autoayuda — experiencia real.",
+      "tags": ["Bienestar", "Ritmo propio"],
+      "frequency": "principal"
+    },
+    {
+      "id": 3,
+      "name": "Conectadas",
+      "description": "Las mujeres que admira, que inspiran. Entrevistas, colaboraciones, conversaciones reales sin guión.",
+      "tags": ["Comunidad", "Sororidad"],
+      "frequency": "principal"
+    },
+    {
+      "id": 4,
+      "name": "Miami & Raíces",
+      "description": "La latina en USA. El acento que no se borra. El orgullo de donde vienes y lo que construyes.",
+      "tags": ["Identidad", "Miami"],
+      "frequency": "principal"
+    },
+    {
+      "id": 5,
+      "name": "La Vida Profesional",
+      "description": "Ocasionalmente — solo cuando hay algo real que decir. La experiencia de construir algo propio siendo mujer. NUNCA para vender.",
+      "tags": ["Emprendimiento", "Honestidad"],
+      "frequency": "ocasional",
+      "note": "El cabello y la profesión son el CONTEXTO — no el tema"
+    }
+  ],
+  "voice_tone": {
+    "essence": "Lo que ves es lo que hay. Siempre.",
+    "yes": [
+      "Directa, sin adornos innecesarios",
+      "Primera persona siempre: yo, me pasó, aprendí",
+      "Cálida sin ser empalagosa — cercana pero con criterio",
+      "Spanglish natural cuando sale solo, no forzado",
+      "Humor real — si le da risa, lo dice",
+      "Vulnerable cuando es verdad, no como estrategia de engagement",
+      "Opina. Tiene postura. No es neutral en lo que le importa"
+    ],
+    "no": [
+      "Motivational content de manual: ¡Tú puedes!",
+      "Explicaciones técnicas de colorimetría o productos",
+      "Contenido de ventas disfrazado de lifestyle",
+      "Perfección visual fabricada — backdrops inventados",
+      "Frases que suenan bien pero no dicen nada",
+      "Publicar por obligación — sin nada real, no se publica",
+      "Compararse con otras. No hay competencia aquí"
+    ],
+    "example_no": "El éxito está en ti. Solo tienes que creer que puedes y el universo conspirará a tu favor. ✨💪",
+    "example_yes": "Hay días que no tengo ganas de nada. Y lo acepto. No todo tiene que ser productivo. A veces simplemente existir ya es suficiente."
+  },
+  "photography": {
+    "style": "Natural y auténtica",
+    "lighting": "Cálida — dorada, natural. No estudios blancos fríos.",
+    "environments": "Entornos reales: salón, casa, Miami. No backdrops inventados.",
+    "preferred": "Risa real > pose perfecta. Movimiento es bueno.",
+    "avoid": "Perfección fabricada, fondos artificiales, iluminación fría"
+  },
+  "social_media": {
+    "aesthetic_primary": "dark",
+    "aesthetic_secondary": "light (máx 30% del feed)",
+    "cadence": {
+      "instagram": "3 posts genuinos por semana — calidad sobre cantidad",
+      "tiktok": "Orgánico, sin calendario fijo",
+      "blog_newsletter": "Cuando hay algo real que decir. Sin calendario.",
+      "videopodcast": "Quincenal o mensual — sostenible a largo plazo"
+    },
+    "formats": {
+      "post_feed": { "ratio": "1:1", "theme": "dark primary / light secondary" },
+      "story": { "ratio": "9:16", "theme": "dark primary / warm cream secondary" },
+      "podcast_thumbnail": { "ratio": "16:9", "theme": "dark with gold accent bar" },
+      "blog_header": { "ratio": "wide", "theme": "dark primary / ivory secondary" }
+    }
+  },
+  "icp": {
+    "description": "Mujeres hispanas — Miami + LATAM",
+    "age_range": "28-52 años",
+    "psychographic": "Mujeres que buscan conexión auténtica, no contenido perfecto. Latinas en USA con identidad fuerte. Mujeres que trabajan, cuidan, construyen y a veces se cansan.",
+    "what_resonates": "Alguien que habla sin filtros, que se equivoca, que no finge. Una voz que dice lo que todas piensan pero no dicen."
+  },
+  "related_brands": [
+    { "id": "PatriciaOsorioPersonal", "relationship": "misma persona — marca personal lifestyle" },
+    { "id": "PatriciaOsorioComunidad", "relationship": "misma persona — comunidad capilar profesional" },
+    { "id": "PatriciaOsorioVizosSalon", "relationship": "misma persona — Vizos Salon profesional" },
+    { "id": "NeuroneSCF", "relationship": "distribuidora autorizada — profesional, no se mezcla con Conectando" }
+  ]
+}
