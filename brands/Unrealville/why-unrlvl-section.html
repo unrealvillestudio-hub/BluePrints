@@ -1,0 +1,262 @@
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION: WHY UNRLVL — historia del nombre + firma Lucian Sael
+     INSERTAR: justo antes de <section id="select"> en index.html y es/index.html
+     ═══════════════════════════════════════════════════════════════ -->
+
+<style>
+#why-unrlvl {
+  padding: 140px 48px;
+  background: var(--carbon);
+  border-top: 1px solid var(--chalk-06);
+  position: relative;
+  overflow: hidden;
+}
+#why-unrlvl::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(0,255,209,.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  max-width: 1040px;
+  margin: 0 auto;
+  position: relative;
+}
+.why-left {
+  position: sticky;
+  top: 120px;
+}
+.why-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.why-eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--cyan);
+  flex-shrink: 0;
+}
+.why-headline {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 6vw, 80px);
+  line-height: .9;
+  letter-spacing: .01em;
+  margin-bottom: 28px;
+}
+.why-headline .ac { color: var(--cyan); }
+.why-sub {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--chalk-72);
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
+.why-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--chalk-42);
+  border: 1px solid var(--chalk-06);
+  padding: 8px 16px;
+  border-radius: 2px;
+}
+.why-badge .badge-dot {
+  width: 5px;
+  height: 5px;
+  background: var(--cyan);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+.why-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.why-quote-block {
+  background: var(--graphite);
+  border: 1px solid var(--chalk-06);
+  padding: 36px 40px;
+  position: relative;
+  transition: border-color .3s ease;
+}
+.why-quote-block:hover {
+  border-color: var(--cyan-20);
+}
+.why-quote-block::before {
+  content: '"';
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  font-family: var(--font-display);
+  font-size: 72px;
+  line-height: 1;
+  color: var(--cyan);
+  opacity: .12;
+}
+.why-quote-text {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-style: italic;
+  color: var(--chalk-72);
+  line-height: 1.75;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+.why-quote-text strong {
+  color: var(--chalk);
+  font-style: normal;
+}
+.why-quote-text em.cyan {
+  color: var(--cyan);
+  font-style: italic;
+}
+.why-signature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 20px;
+  border-top: 1px solid var(--chalk-06);
+}
+.why-sig-avatar {
+  width: 36px;
+  height: 36px;
+  background: var(--carbon);
+  border: 1px solid var(--cyan-20);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--cyan);
+  flex-shrink: 0;
+  letter-spacing: .04em;
+}
+.why-sig-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.why-sig-name {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--chalk);
+  font-weight: 700;
+}
+.why-sig-role {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--chalk-42);
+}
+.why-divider {
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan-20), transparent);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #why-unrlvl { padding: 80px 24px; }
+  .why-grid { grid-template-columns: 1fr; gap: 48px; }
+  .why-left { position: static; }
+}
+</style>
+
+<section id="why-unrlvl">
+  <div class="why-grid">
+
+    <div class="why-left">
+      <div class="why-eyebrow reveal">Brand Intelligence Infrastructure</div>
+      <h2 class="why-headline reveal">WHY<br><span class="ac">UNREAL</span><br><span class="ac">></span>ILLE</h2>
+      <p class="why-sub reveal">The name was never a coincidence. It was a statement — made at a specific moment, about a specific argument we were tired of losing.</p>
+      <div class="why-badge reveal">
+        <span class="badge-dot"></span>
+        Lucian Sael · Founder
+      </div>
+    </div>
+
+    <div class="why-right">
+
+      <div class="why-quote-block reveal">
+        <p class="why-quote-text">
+          "When we started building AI-powered brand systems, the pushback was always the same: <strong>'but that's not real.'</strong> People called it artificial. Fake. A shortcut. They were so focused on the word <em class="cyan">'artificial'</em> that they missed the only word that mattered."
+        </p>
+        <div class="why-signature">
+          <div class="why-sig-avatar">LS</div>
+          <div class="why-sig-text">
+            <span class="why-sig-name">Lucian Sael</span>
+            <span class="why-sig-role">Founder · Unreal>ille Studio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-divider"></div>
+
+      <div class="why-quote-block reveal">
+        <p class="why-quote-text">
+          "Think about it: there is no greater proof of human intelligence than the creation of what they call <em class="cyan">'artificial intelligence.'</em> We built something that learns, creates, adapts — and the argument was that it wasn't real? <strong>Nothing has ever been more real.</strong> That's not artificial. That's the most human thing we've ever made."
+        </p>
+        <div class="why-signature">
+          <div class="why-sig-avatar">LS</div>
+          <div class="why-sig-text">
+            <span class="why-sig-name">Lucian Sael</span>
+            <span class="why-sig-role">Founder · Unreal>ille Studio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-divider"></div>
+
+      <div class="why-quote-block reveal">
+        <p class="why-quote-text">
+          "So we named ourselves <strong>UNREAL>ILLE</strong> — sarcastically, defiantly. We took their word and made it ours. We are the <em class="cyan">unreal</em> ones. The ones doing what they said couldn't be done. And every time someone questions the name, we ask them one thing: <strong>how unreal do our results look to you?</strong>"
+        </p>
+        <div class="why-signature">
+          <div class="why-sig-avatar">LS</div>
+          <div class="why-sig-text">
+            <span class="why-sig-name">Lucian Sael</span>
+            <span class="why-sig-role">Founder · Unreal>ille Studio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-divider"></div>
+
+      <div class="why-quote-block reveal" style="border-color: var(--cyan-20); background: rgba(0,255,209,.025);">
+        <p class="why-quote-text">
+          "Brand Intelligence Infrastructure is not a category that existed before we built it. It's what happens when you stop treating brand as decoration and start treating it as <em class="cyan">operating architecture.</em> The chevron <strong>></strong> in our name isn't a logo choice — it's a direction. Forward. Always."
+        </p>
+        <div class="why-signature">
+          <div class="why-sig-avatar">LS</div>
+          <div class="why-sig-text">
+            <span class="why-sig-name">Lucian Sael</span>
+            <span class="why-sig-role">Founder · Unreal>ille Studio</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
