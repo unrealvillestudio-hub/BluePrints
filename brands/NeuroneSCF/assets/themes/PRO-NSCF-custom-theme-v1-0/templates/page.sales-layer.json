@@ -1,0 +1,12 @@
+{
+  "layout": "theme.liquid",
+  "sections": {
+    "nc-sales-layer": {
+      "type": "nc-sales-layer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "nc-sales-layer"
+  ]
+}

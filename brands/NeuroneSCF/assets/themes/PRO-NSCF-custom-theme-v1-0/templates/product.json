@@ -1,0 +1,12 @@
+{
+  "layout": "theme.liquid",
+  "sections": {
+    "nc-product": {
+      "type": "nc-product-detail",
+      "settings": {}
+    }
+  },
+  "order": [
+    "nc-product"
+  ]
+}

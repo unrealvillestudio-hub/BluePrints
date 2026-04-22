@@ -1,0 +1,318 @@
+<style>
+.shero-section {
+  background: linear-gradient(135deg, #F8FAFB 0%, #e8f4f8 100%);
+  position: relative;
+  overflow: hidden;
+  padding: clamp(60px, 8vw, 120px) 0;
+}
+
+.shero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 5vw, 80px);
+  position: relative;
+  z-index: 2;
+}
+
+.shero-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #0076A8;
+  color: #F8FAFB;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+
+.shero-headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+  color: #0A0D14;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.shero-subheadline {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: clamp(18px, 2.5vw, 24px);
+  color: #0076A8;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  max-width: 600px;
+  font-weight: 400;
+}
+
+.shero-rg-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 56px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.shero-cta-group {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.shero-cta-primary {
+  background: #C4622D;
+  color: #F8FAFB;
+  padding: 16px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 2px solid #C4622D;
+}
+
+.shero-cta-primary:hover {
+  background: #a5511f;
+  border-color: #a5511f;
+  transform: translateY(-2px);
+}
+
+.shero-cta-secondary {
+  background: transparent;
+  color: #0076A8;
+  padding: 16px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid #0076A8;
+  transition: all 0.3s ease;
+}
+
+.shero-cta-secondary:hover {
+  background: #0076A8;
+  color: #F8FAFB;
+  transform: translateY(-2px);
+}
+
+.shero-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.shero-product-item {
+  background: #F8FAFB;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(10, 13, 20, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.shero-product-item:hover {
+  transform: translateY(-4px);
+}
+
+.shero-product-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.shero-product-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0A0D14;
+  margin-bottom: 4px;
+}
+
+.shero-product-type {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 12px;
+  color: #0076A8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.shero-trust-strip {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(0, 118, 168, 0.2);
+}
+
+.shero-trust-item {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 14px;
+  color: #0076A8;
+  font-weight: 400;
+  text-align: center;
+}
+
+.shero-tagline-bg {
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%) rotate(90deg);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120px;
+  font-weight: 900;
+  color: rgba(0, 118, 168, 0.03);
+  z-index: 1;
+  white-space: nowrap;
+}
+
+@media(max-width: 860px) {
+  .shero-rg-2 {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .shero-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .shero-cta-group {
+    flex-direction: column;
+  }
+  
+  .shero-trust-strip {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .shero-tagline-bg {
+    display: none;
+  }
+}
+
+@media(max-width: 480px) {
+  .shero-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<section class="shero-section">
+  <div class="shero-container">
+    <div class="shero-rg-2">
+      <div class="shero-content">
+        <div class="shero-badge">Colección Moisture</div>
+        
+        <h1 class="shero-headline">
+          El cabello hidratado que Miami se merece
+        </h1>
+        
+        <p class="shero-subheadline">
+          Nano Tribología Capilar formulada específicamente para el clima húmedo del sur de Florida. Hidratación profunda sin el peso.
+        </p>
+        
+        <div class="shero-cta-group">
+          <a href="{{ section.settings.primary_cta_url }}" class="shero-cta-primary">
+            Ver productos Moisture
+          </a>
+          <a href="{{ section.settings.secondary_cta_url }}" class="shero-cta-secondary">
+            Soy profesional → Portal Pro
+          </a>
+        </div>
+      </div>
+      
+      <div class="shero-products-showcase">
+        <div class="shero-products-grid">
+          <div class="shero-product-item">
+            {% if section.settings.product_image_1 %}
+              <img src="{{ section.settings.product_image_1 | image_url: width: 200 }}" alt="DY Fazza" class="shero-product-image">
+            {% endif %}
+            <div class="shero-product-name">DY Fazza</div>
+            <div class="shero-product-type">Hidratante Diario</div>
+          </div>
+          
+          <div class="shero-product-item">
+            {% if section.settings.product_image_2 %}
+              <img src="{{ section.settings.product_image_2 | image_url: width: 200 }}" alt="Humit Mask" class="shero-product-image">
+            {% endif %}
+            <div class="shero-product-name">Humit Mask</div>
+            <div class="shero-product-type">Mascarilla Intensiva</div>
+          </div>
+          
+          <div class="shero-product-item">
+            {% if section.settings.product_image_3 %}
+              <img src="{{ section.settings.product_image_3 | image_url: width: 200 }}" alt="Humit Shampoo" class="shero-product-image">
+            {% endif %}
+            <div class="shero-product-name">Humit Shampoo 1L</div>
+            <div class="shero-product-type">Limpieza Hidratante</div>
+          </div>
+          
+          <div class="shero-product-item">
+            {% if section.settings.product_image_4 %}
+              <img src="{{ section.settings.product_image_4 | image_url: width: 200 }}" alt="Hydra Serum NSE" class="shero-product-image">
+            {% endif %}
+            <div class="shero-product-name">Hydra Serum NSE</div>
+            <div class="shero-product-type">Suero Activo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="shero-trust-strip">
+      <div class="shero-trust-item">Sin sulfatos agresivos</div>
+      <div class="shero-trust-item">Formulado para Miami</div>
+      <div class="shero-trust-item">Entrega mismo día South FL</div>
+    </div>
+  </div>
+  
+  <div class="shero-tagline-bg">
+    La ciencia capilar que Miami necesitaba
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Moisture Hero",
+  "settings": [
+    {
+      "type": "url",
+      "id": "primary_cta_url",
+      "label": "URL CTA Primario"
+    },
+    {
+      "type": "url",
+      "id": "secondary_cta_url",
+      "label": "URL Portal Profesional"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image_1",
+      "label": "Imagen DY Fazza"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image_2",
+      "label": "Imagen Humit Mask"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image_3",
+      "label": "Imagen Humit Shampoo"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image_4",
+      "label": "Imagen Hydra Serum NSE"
+    }
+  ]
+}
+{% endschema %}

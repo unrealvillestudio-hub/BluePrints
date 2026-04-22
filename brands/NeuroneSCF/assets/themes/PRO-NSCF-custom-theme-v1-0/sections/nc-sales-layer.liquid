@@ -1,0 +1,18 @@
+<div class="nc-sales-layer-section" style="width:100%;">
+  {{ section.settings.content }}
+</div>
+
+{% schema %}
+{
+  "name": "NC Sales Layer",
+  "settings": [
+    {
+      "type": "html",
+      "id": "content",
+      "label": "Contenido HTML",
+      "info": "Pega aquí el HTML generado por WebLab SalesLayer. Incluye estilos inline."
+    }
+  ],
+  "presets": [{ "name": "NC Sales Layer" }]
+}
+{% endschema %}

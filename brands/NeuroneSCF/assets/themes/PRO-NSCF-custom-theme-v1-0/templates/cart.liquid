@@ -1,0 +1,86 @@
+{% layout 'theme' %}
+
+<section class="nc-section">
+  <div class="nc-container" style="max-width:860px;">
+    <h1 class="nc-h1" style="margin-bottom:40px;">Tu Carrito</h1>
+
+    {% if cart.item_count == 0 %}
+      <div style="text-align:center;padding:80px 0;">
+        <svg width="48" height="48" fill="none" stroke="var(--nc-navy-glow)" stroke-width="1.2" viewBox="0 0 24 24" style="margin:0 auto 20px;display:block;opacity:.5">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <p style="font-family:var(--nc-font-head);font-size:1.5rem;color:var(--nc-text-muted);letter-spacing:.08em;margin-bottom:8px;">Carrito Vacío</p>
+        <p style="color:var(--nc-text-muted);font-size:.88rem;margin-bottom:28px;">Agrega productos para continuar</p>
+        <a href="/collections/all" class="nc-btn nc-btn-primary nc-btn-lg">Ver Catálogo</a>
+      </div>
+
+    {% else %}
+      <form action="/cart" method="post">
+        <!-- Items -->
+        <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--nc-border);border-radius:var(--nc-radius-lg);overflow:hidden;margin-bottom:24px;">
+          {% for item in cart.items %}
+            <div style="display:grid;grid-template-columns:80px 1fr auto;gap:20px;align-items:center;padding:20px;border-bottom:1px solid var(--nc-border);">
+              <!-- Image -->
+              <a href="{{ item.url }}" style="display:block;border-radius:var(--nc-radius);overflow:hidden;border:1px solid var(--nc-border);">
+                <img src="{{ item.featured_image | image_url: width: 160 }}" alt="{{ item.title }}" width="80" height="80" style="width:80px;height:80px;object-fit:cover;">
+              </a>
+              <!-- Info -->
+              <div>
+                <a href="{{ item.url }}" style="font-family:var(--nc-font-body);font-size:.9rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--nc-white);">{{ item.product_title }}</a>
+                {% unless item.variant_title == 'Default Title' %}
+                  <p style="font-size:.78rem;color:var(--nc-text-muted);margin-top:2px;">{{ item.variant_title }}</p>
+                {% endunless %}
+                <p style="font-family:var(--nc-font-head);font-size:1.1rem;color:var(--nc-navy-glow);margin-top:6px;">{{ item.final_line_price | money }}</p>
+              </div>
+              <!-- Qty + Remove -->
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:12px;">
+                <div class="nc-quantity" style="border-color:var(--nc-border);">
+                  <button type="button" class="nc-qty-btn" onclick="ncCartUpdate('{{ item.key }}', {{ item.quantity | minus: 1 }})">−</button>
+                  <span style="width:40px;text-align:center;color:var(--nc-white);font-size:.9rem;">{{ item.quantity }}</span>
+                  <button type="button" class="nc-qty-btn" onclick="ncCartUpdate('{{ item.key }}', {{ item.quantity | plus: 1 }})">+</button>
+                </div>
+                <button type="button" onclick="ncCartUpdate('{{ item.key }}', 0)" style="font-family:var(--nc-font-label);font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--nc-text-muted);background:transparent;cursor:pointer;border:none;padding:0;transition:color .15s;" onmouseover="this.style.color='#f87171'" onmouseout="this.style.color='var(--nc-text-muted)'">Eliminar</button>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <!-- Summary -->
+        <div style="display:grid;grid-template-columns:1fr 340px;gap:24px;align-items:start;">
+          <div>
+            <div style="padding:20px;background:var(--nc-bg-card);border:1px solid var(--nc-border);border-radius:var(--nc-radius-lg);">
+              <p class="nc-filter-title" style="margin-bottom:12px;">Nota del pedido</p>
+              <textarea name="note" rows="3" placeholder="Instrucciones especiales (opcional)" style="width:100%;background:var(--nc-bg);border:1px solid var(--nc-border);border-radius:var(--nc-radius);padding:10px 14px;color:var(--nc-text);font-family:var(--nc-font-body);font-size:.85rem;resize:none;transition:border-color .15s;" onfocus="this.style.borderColor='var(--nc-navy)'" onblur="this.style.borderColor='var(--nc-border)'">{{ cart.note }}</textarea>
+            </div>
+          </div>
+          <div style="padding:24px;background:var(--nc-bg-card);border:1px solid var(--nc-navy-border);border-radius:var(--nc-radius-lg);position:sticky;top:calc(var(--nc-header-h)+24px);">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+              <span style="font-family:var(--nc-font-label);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--nc-text-muted);">Subtotal</span>
+              <span style="font-family:var(--nc-font-head);font-size:1.6rem;color:var(--nc-white);">{{ cart.total_price | money }}</span>
+            </div>
+            <p style="font-size:.75rem;color:var(--nc-text-muted);margin-bottom:20px;">Impuestos y envío calculados al finalizar compra.</p>
+            <a href="/checkout" class="nc-btn nc-btn-primary nc-btn-full nc-btn-lg" style="margin-bottom:10px;display:flex;">
+              Finalizar Compra
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="/collections/all" class="nc-btn nc-btn-outline nc-btn-full" style="display:flex;">Seguir Comprando</a>
+          </div>
+        </div>
+      </form>
+    {% endif %}
+  </div>
+</section>
+
+<script>
+function ncCartUpdate(key, qty) {
+  fetch('/cart/change.js', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ id: key, quantity: qty })
+  }).then(() => location.reload());
+}
+</script>

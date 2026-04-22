@@ -1,0 +1,97 @@
+{
+  "general": {
+    "search": {
+      "placeholder": "Buscar productos..."
+    },
+    "newsletter_form_placeholder": "Tu dirección de email",
+    "password_page_password_label": "Contraseña",
+    "password_page_password_placeholder": "Tu contraseña",
+    "password_page_login_form_submit": "Entrar",
+    "password_page_signup_form_email_label": "Email",
+    "password_page_signup_form_submit": "Notificarme",
+    "password_page_password_button": "Iniciar sesión con contraseña"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Agregar al Carrito",
+      "sold_out": "Agotado",
+      "unavailable": "No disponible",
+      "quantity": "Cantidad",
+      "regular_price": "Precio regular",
+      "sale_price": "Precio de oferta",
+      "unit_price_separator": "por"
+    },
+    "facets": {
+      "filters": "Filtros",
+      "clear_all": "Limpiar filtros",
+      "sort_by_label": "Ordenar por:",
+      "sort_options": {
+        "manual": "Destacados",
+        "best-selling": "Más vendidos",
+        "title-ascending": "A-Z",
+        "title-descending": "Z-A",
+        "price-ascending": "Precio: menor a mayor",
+        "price-descending": "Precio: mayor a menor",
+        "created-ascending": "Más antiguos",
+        "created-descending": "Más recientes"
+      }
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Carrito",
+      "empty": "Tu carrito está vacío",
+      "note": "Nota del pedido (opcional)",
+      "subtotal": "Subtotal",
+      "taxes_shipping": "Impuestos y envío calculados al finalizar compra"
+    },
+    "label": {
+      "continue_shopping": "Seguir Comprando",
+      "checkout": "Finalizar Compra",
+      "remove": "Eliminar",
+      "close": "Cerrar"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_matches": "Ningún producto coincide con la búsqueda."
+    }
+  },
+  "customer": {
+    "login": {
+      "title": "Iniciar Sesión",
+      "email": "Email",
+      "password": "Contraseña",
+      "submit": "Iniciar Sesión",
+      "forgot_password": "¿Olvidaste tu contraseña?",
+      "create_account": "Crear Cuenta"
+    },
+    "register": {
+      "title": "Crear Cuenta",
+      "first_name": "Nombre",
+      "last_name": "Apellido",
+      "email": "Email",
+      "password": "Contraseña",
+      "submit": "Crear Cuenta"
+    },
+    "account": {
+      "title": "Mi Cuenta",
+      "orders": "Pedidos",
+      "details": "Datos de cuenta"
+    },
+    "orders": {
+      "title": "Historial de Pedidos",
+      "order_number": "Pedido #",
+      "date": "Fecha",
+      "payment_status": "Pago",
+      "fulfillment_status": "Estado",
+      "total": "Total"
+    }
+  },
+  "accessibility": {
+    "skip_to_content": "Saltar al contenido",
+    "close": "Cerrar",
+    "open": "Abrir",
+    "open_media": "Abrir media"
+  }
+}

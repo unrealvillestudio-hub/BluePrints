@@ -1,0 +1,55 @@
+<section class="nc-section">
+  <div class="nc-container" style="max-width:{{ section.settings.max_width | default: '840px' }}">
+    {%- if section.settings.show_title -%}
+      <h1 class="nc-h1" style="margin-bottom:32px;">{{ page.title }}</h1>
+      <div class="nc-divider-line"></div>
+    {%- endif -%}
+    <div class="nc-page-content">
+      {{ page.content }}
+    </div>
+  </div>
+</section>
+
+<style>
+  .nc-page-content h1, .nc-page-content h2, .nc-page-content h3 {
+    font-family: var(--nc-font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--nc-white);
+    margin: 32px 0 16px;
+    line-height: 1.1;
+  }
+  .nc-page-content h1 { font-size: clamp(2rem, 4vw, 3.2rem); }
+  .nc-page-content h2 { font-size: clamp(1.4rem, 3vw, 2.2rem); }
+  .nc-page-content h3 { font-size: 1.2rem; }
+  .nc-page-content p { font-size: 0.95rem; line-height: 1.8; color: var(--nc-text); margin-bottom: 18px; }
+  .nc-page-content a { color: var(--nc-navy-glow); text-decoration: underline; }
+  .nc-page-content a:hover { color: var(--nc-white); }
+  .nc-page-content ul, .nc-page-content ol { padding-left: 20px; color: var(--nc-text); font-size: 0.92rem; margin-bottom: 18px; }
+  .nc-page-content li { margin-bottom: 8px; line-height: 1.65; }
+  .nc-page-content img { border-radius: var(--nc-radius-lg); margin: 24px 0; border: 1px solid var(--nc-border); }
+  .nc-page-content table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+  .nc-page-content th { background: var(--nc-bg-elevated); border: 1px solid var(--nc-border); padding: 10px 14px; font-family: var(--nc-font-label); font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--nc-white); text-align: left; }
+  .nc-page-content td { border: 1px solid var(--nc-border); padding: 10px 14px; font-size: 0.88rem; color: var(--nc-text); }
+  .nc-page-content tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .nc-page-content blockquote { border-left: 3px solid var(--nc-navy); padding: 12px 20px; background: var(--nc-navy-dim); border-radius: 0 var(--nc-radius) var(--nc-radius) 0; margin: 24px 0; font-style: italic; color: var(--nc-text); }
+</style>
+
+{% schema %}
+{
+  "name": "NC Page Content",
+  "settings": [
+    { "type": "checkbox", "id": "show_title", "label": "Mostrar título de página", "default": true },
+    { "type": "select", "id": "max_width", "label": "Ancho máximo del contenido",
+      "options": [
+        { "value": "640px", "label": "Estrecho (640px)" },
+        { "value": "840px", "label": "Medio (840px)" },
+        { "value": "1080px", "label": "Ancho (1080px)" },
+        { "value": "100%", "label": "Completo" }
+      ],
+      "default": "840px"
+    }
+  ],
+  "presets": [{ "name": "NC Page Content" }]
+}
+{% endschema %}

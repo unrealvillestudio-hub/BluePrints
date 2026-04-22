@@ -1,0 +1,14 @@
+{
+  "layout": "theme.liquid",
+  "sections": {
+    "nc-collection": {
+      "type": "nc-collection-page",
+      "settings": {
+        "products_per_page": 24
+      }
+    }
+  },
+  "order": [
+    "nc-collection"
+  ]
+}

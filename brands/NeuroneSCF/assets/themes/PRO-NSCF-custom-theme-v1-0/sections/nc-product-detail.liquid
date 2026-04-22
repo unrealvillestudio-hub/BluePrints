@@ -1,0 +1,340 @@
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign product_form_id = 'nc-product-form-' | append: product.id -%}
+
+<!-- BREADCRUMBS -->
+<div class="nc-container">
+  <nav class="nc-breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span class="sep">›</span>
+    {%- if collection -%}
+      <a href="{{ collection.url }}">{{ collection.title }}</a>
+      <span class="sep">›</span>
+    {%- endif -%}
+    <span class="current">{{ product.title }}</span>
+  </nav>
+</div>
+
+<!-- PRODUCT MAIN -->
+<section class="nc-section">
+  <div class="nc-container">
+    <div class="nc-product-layout">
+
+      <!-- GALLERY -->
+      <div class="nc-product-gallery">
+        <div class="nc-gallery-main">
+          {%- if product.featured_image -%}
+            <img
+              id="nc-gallery-main-img"
+              src="{{ product.featured_image | image_url: width: 900 }}"
+              alt="{{ product.featured_image.alt | default: product.title | escape }}"
+              width="900"
+              loading="eager"
+              fetchpriority="high"
+            >
+          {%- else -%}
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;min-height:400px;">
+              <span style="font-family:var(--nc-font-head);font-size:5rem;color:var(--nc-navy);opacity:.2;">NC</span>
+            </div>
+          {%- endif -%}
+        </div>
+
+        {%- if product.images.size > 1 -%}
+          <div class="nc-gallery-thumbs">
+            {%- for image in product.images -%}
+              <div
+                class="nc-gallery-thumb{% if forloop.first %} active{% endif %}"
+                data-src="{{ image | image_url: width: 900 }}"
+                data-alt="{{ image.alt | default: product.title | escape }}"
+                role="button"
+                tabindex="0"
+                aria-label="Imagen {{ forloop.index }}"
+              >
+                <img
+                  src="{{ image | image_url: width: 144 }}"
+                  alt="{{ image.alt | default: product.title | escape }}"
+                  loading="lazy"
+                  width="72"
+                  height="72"
+                >
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <!-- INFO -->
+      <div class="nc-product-info">
+        {%- if collection -%}
+          <a href="{{ collection.url }}" class="nc-product-collection-link">
+            ← {{ collection.title }}
+          </a>
+        {%- endif -%}
+
+        {%- if product.tags contains 'b2b' or product.tags contains 'pro-salon' -%}
+          <div class="nc-pro-badge" style="margin-bottom:14px;">
+            <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            Producto Profesional
+          </div>
+        {%- endif -%}
+
+        <h1 class="nc-product-title">{{ product.title }}</h1>
+
+        {%- if product.description contains '<!--subtitle-->' -%}
+          {%- assign subtitle = product.description | split: '<!--subtitle-->' | last | split: '<!--/subtitle-->' | first -%}
+          <p class="nc-product-subtitle">{{ subtitle }}</p>
+        {%- elsif product.metafields.neurone.subcollection -%}
+          <p class="nc-product-subtitle">{{ product.metafields.neurone.subcollection }}</p>
+        {%- endif -%}
+
+        <!-- PRICE -->
+        <div class="nc-product-price-block">
+          <span class="nc-product-price" id="nc-price-display">
+            {{ current_variant.price | money }}
+          </span>
+          {%- if current_variant.compare_at_price > current_variant.price -%}
+            <span class="nc-price-compare">{{ current_variant.compare_at_price | money }}</span>
+            <span class="nc-badge-sale" style="font-family:var(--nc-font-label);font-size:.6rem;letter-spacing:.12em;padding:3px 8px;border-radius:2px;background:rgba(180,30,30,.85);color:white;">
+              Ahorro {{ current_variant.compare_at_price | minus: current_variant.price | money }}
+            </span>
+          {%- endif -%}
+        </div>
+
+        <!-- PRODUCT FORM -->
+        {%- form 'product', product, id: product_form_id, data-product-form: '' -%}
+
+          <input type="hidden" name="id" value="{{ current_variant.id }}" id="nc-variant-id">
+
+          <!-- VARIANTS -->
+          {%- unless product.has_only_default_variant -%}
+            <div class="nc-product-variants">
+              {%- for option in product.options_with_values -%}
+                <div style="margin-bottom:16px;">
+                  <div class="nc-variant-label">
+                    <span>{{ option.name }}</span>
+                    <span id="nc-selected-{{ option.position }}" style="color:var(--nc-white);">
+                      {{ option.selected_value }}
+                    </span>
+                  </div>
+                  <div class="nc-variant-options">
+                    {%- for value in option.values -%}
+                      <button
+                        type="button"
+                        class="nc-variant-btn{% if option.selected_value == value %} selected{% endif %}"
+                        data-option="{{ option.position }}"
+                        data-value="{{ value | escape }}"
+                        onclick="ncSelectVariant(this)"
+                      >
+                        {{ value }}
+                      </button>
+                    {%- endfor -%}
+                  </div>
+                </div>
+              {%- endfor -%}
+            </div>
+          {%- endunless -%}
+
+          <!-- QUANTITY + ADD TO CART -->
+          <div class="nc-quantity-row">
+            <div class="nc-quantity">
+              <button type="button" class="nc-qty-btn" data-qty-minus aria-label="Reducir cantidad">−</button>
+              <input class="nc-qty-input" type="number" name="quantity" value="1" min="1" max="99" aria-label="Cantidad">
+              <button type="button" class="nc-qty-btn" data-qty-plus aria-label="Aumentar cantidad">+</button>
+            </div>
+
+            {%- if current_variant.available -%}
+              <button
+                type="submit"
+                name="add"
+                class="nc-btn nc-btn-primary nc-add-to-cart"
+                data-add-to-cart-btn
+              >
+                Agregar al Carrito
+              </button>
+            {%- else -%}
+              <button type="button" class="nc-btn nc-btn-outline nc-add-to-cart" disabled style="opacity:.5;cursor:not-allowed;">
+                Agotado
+              </button>
+            {%- endif -%}
+          </div>
+
+          <!-- FORMAT / SIZE INFO -->
+          {%- if product.metafields.neurone.format != blank or product.metafields.neurone.size != blank -%}
+            <p style="font-family:var(--nc-font-label);font-size:.62rem;letter-spacing:.15em;color:var(--nc-text-muted);margin-bottom:16px;">
+              {%- if product.metafields.neurone.format != blank -%}
+                Formato: {{ product.metafields.neurone.format }}
+              {%- endif -%}
+              {%- if product.metafields.neurone.size != blank -%}
+                &nbsp;·&nbsp; {{ product.metafields.neurone.size }}
+              {%- endif -%}
+            </p>
+          {%- endif -%}
+
+        {%- endform -%}
+
+        <!-- BENEFITS -->
+        {%- if product.metafields.neurone.benefit_claims != blank -%}
+          <div class="nc-product-benefits">
+            <div class="nc-filter-title" style="margin-bottom:14px;">Beneficios Clave</div>
+            {%- assign claims = product.metafields.neurone.benefit_claims | split: ' | ' -%}
+            {%- for claim in claims -%}
+              <div class="nc-benefit-item">
+                <div class="nc-benefit-icon">
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                <p class="nc-benefit-text">{{ claim }}</p>
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+
+        <!-- SHIPPING / TRUST -->
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:20px;padding:16px;background:var(--nc-bg-card);border:1px solid var(--nc-border);border-radius:var(--nc-radius);">
+          <div class="nc-trust-item">
+            <svg class="nc-trust-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+            <span class="nc-trust-text">Envío rápido · South &amp; Central Florida</span>
+          </div>
+          <div class="nc-trust-item">
+            <svg class="nc-trust-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span class="nc-trust-text">Producto profesional · Grado salón</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT TABS -->
+    <div class="nc-product-tabs" style="margin-top:64px;">
+      <div class="nc-tabs-nav">
+        <button class="nc-tab-btn active" data-tab="nc-tab-desc">Descripción</button>
+        {%- if product.metafields.neurone.key_ingredients != blank -%}
+          <button class="nc-tab-btn" data-tab="nc-tab-ingredients">Ingredientes</button>
+        {%- endif -%}
+        <button class="nc-tab-btn" data-tab="nc-tab-how">Cómo Usar</button>
+        <button class="nc-tab-btn" data-tab="nc-tab-shipping">Envío</button>
+      </div>
+
+      <div id="nc-tab-desc" class="nc-tab-panel active">
+        <div style="max-width:800px;">
+          {{ product.description }}
+        </div>
+      </div>
+
+      {%- if product.metafields.neurone.key_ingredients != blank -%}
+        <div id="nc-tab-ingredients" class="nc-tab-panel">
+          <div style="max-width:800px;">
+            <p><strong style="color:var(--nc-white);">Ingredientes Clave:</strong></p>
+            <p>{{ product.metafields.neurone.key_ingredients }}</p>
+          </div>
+        </div>
+      {%- endif -%}
+
+      <div id="nc-tab-how" class="nc-tab-panel">
+        <div style="max-width:800px;">
+          <p>Aplicar sobre cabello húmedo o seco según el producto. Para mejores resultados, seguir las instrucciones específicas de cada tratamiento. Consultar con un profesional para protocolos avanzados.</p>
+          <p style="margin-top:16px;">¿Tienes dudas? <a href="https://wa.me/{{ shop.metafields.neurone.whatsapp }}" style="color:var(--nc-navy-glow)">Contáctanos por WhatsApp</a> y te asesoramos.</p>
+        </div>
+      </div>
+
+      <div id="nc-tab-shipping" class="nc-tab-panel">
+        <div style="max-width:800px;">
+          <p><strong style="color:var(--nc-white);">Zona de entrega:</strong> South &amp; Central Florida</p>
+          <p>Envío gratis en pedidos superiores a $75. Tiempo de entrega estimado: 2-5 días hábiles dentro del área de cobertura.</p>
+          <p style="margin-top:16px;"><strong style="color:var(--nc-white);">Pedidos al por mayor:</strong> Contactar a través del <a href="/pages/pro-portal" style="color:var(--nc-navy-glow)">Portal Profesional</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RELATED PRODUCTS -->
+    {%- if product.collections.first.products.size > 1 -%}
+      <div style="margin-top:80px;">
+        <div class="nc-section-head">
+          <h2 class="nc-h2" style="font-size:clamp(1.4rem,3vw,2rem);">También de {{ product.collections.first.title }}</h2>
+        </div>
+        <div class="nc-product-grid">
+          {%- for related in product.collections.first.products limit: 4 -%}
+            {%- unless related.id == product.id -%}
+              {%- render 'nc-product-card', product: related -%}
+            {%- endunless -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+<!-- VARIANT SELECTION JS -->
+<script>
+  // Mapa de variantes para selección dinámica
+  var ncProductVariants = {{ product.variants | json }};
+
+  function ncSelectVariant(btn) {
+    var optionPos = btn.dataset.option;
+    var optionValue = btn.dataset.value;
+
+    // Update UI de la opción
+    var siblings = btn.parentElement.querySelectorAll('.nc-variant-btn');
+    siblings.forEach(function(s) { s.classList.remove('selected'); });
+    btn.classList.add('selected');
+
+    // Actualizar label selected
+    var labelEl = document.getElementById('nc-selected-' + optionPos);
+    if (labelEl) labelEl.textContent = optionValue;
+
+    // Encontrar variante que matchea todas las opciones seleccionadas
+    var selected = {};
+    document.querySelectorAll('.nc-variant-btn.selected').forEach(function(b) {
+      selected[parseInt(b.dataset.option)] = b.dataset.value;
+    });
+
+    var matchedVariant = ncProductVariants.find(function(v) {
+      return v.options.every(function(opt, idx) {
+        return !selected[idx + 1] || selected[idx + 1] === opt;
+      });
+    });
+
+    if (matchedVariant) {
+      // Update hidden input
+      var idInput = document.getElementById('nc-variant-id');
+      if (idInput) idInput.value = matchedVariant.id;
+
+      // Update precio
+      var priceEl = document.getElementById('nc-price-display');
+      if (priceEl) {
+        priceEl.textContent = '$' + (matchedVariant.price / 100).toFixed(2);
+      }
+
+      // Update imagen si la variante tiene imagen
+      if (matchedVariant.featured_image) {
+        var mainImg = document.getElementById('nc-gallery-main-img');
+        if (mainImg) {
+          mainImg.src = matchedVariant.featured_image.src;
+        }
+      }
+
+      // Update botón
+      var addBtn = document.querySelector('[data-add-to-cart-btn]');
+      if (addBtn) {
+        addBtn.disabled = !matchedVariant.available;
+        addBtn.textContent = matchedVariant.available ? 'Agregar al Carrito' : 'Agotado';
+      }
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "NC Product Detail",
+  "settings": [
+    { "type": "checkbox", "id": "show_vendor",      "label": "Mostrar marca",          "default": false },
+    { "type": "checkbox", "id": "show_sku",         "label": "Mostrar SKU",            "default": false },
+    { "type": "checkbox", "id": "enable_zoom",      "label": "Activar zoom en imagen", "default": true }
+  ],
+  "presets": [{ "name": "NC Product Detail" }]
+}
+{% endschema %}

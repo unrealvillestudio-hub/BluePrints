@@ -1,0 +1,76 @@
+{%- assign default_variant = product.selected_or_first_available_variant -%}
+<div class="nc-product-card nc-reveal">
+  <div class="nc-product-card-img">
+
+    {%- if badge != blank -%}
+      <span class="nc-product-card-badge nc-badge-new">{{ badge }}</span>
+    {%- elsif product.tags contains 'new' -%}
+      <span class="nc-product-card-badge nc-badge-new">Nuevo</span>
+    {%- elsif product.tags contains 'b2b' or product.tags contains 'pro-salon' -%}
+      <span class="nc-product-card-badge nc-badge-pro">Pro</span>
+    {%- elsif product.compare_at_price > product.price -%}
+      <span class="nc-product-card-badge nc-badge-sale">
+        -{{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | round }}%
+      </span>
+    {%- endif -%}
+
+    {%- if product.featured_image -%}
+      <a href="{{ product.url }}">
+        <img
+          src="{{ product.featured_image | image_url: width: 540 }}"
+          alt="{{ product.featured_image.alt | default: product.title | escape }}"
+          loading="lazy"
+          width="540"
+          height="540"
+        >
+      </a>
+    {%- else -%}
+      <a href="{{ product.url }}" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;aspect-ratio:1/1;background:var(--nc-bg-elevated);">
+        <span style="font-family:var(--nc-font-head);font-size:3rem;color:var(--nc-navy);opacity:.3;">NC</span>
+      </a>
+    {%- endif -%}
+
+    {%- if default_variant.available -%}
+      <div class="nc-product-card-quick">
+        <button
+          class="nc-btn nc-btn-primary nc-btn-full"
+          data-quick-add="{{ default_variant.id }}"
+          style="padding:10px 14px;font-size:.6rem;"
+        >
+          Agregar
+        </button>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div class="nc-product-card-body">
+    {%- assign col_tag = product.tags | where: "contains", "collection_" | first -%}
+    <div class="nc-product-card-collection">
+      {{- product.type | default: product.collections.first.title -}}
+    </div>
+
+    <a href="{{ product.url }}">
+      <h3 class="nc-product-card-name">{{ product.title }}</h3>
+    </a>
+
+    {%- if product.description != blank -%}
+      <p class="nc-product-card-desc">{{ product.description | strip_html }}</p>
+    {%- endif -%}
+
+    <div class="nc-product-card-footer">
+      <div>
+        {%- if product.compare_at_price > product.price -%}
+          <span class="nc-price-compare">{{ product.compare_at_price | money }}</span>
+        {%- endif -%}
+        <span class="nc-price">{{ product.price | money }}</span>
+      </div>
+
+      <a href="{{ product.url }}" class="nc-btn nc-btn-outline" style="padding:8px 14px;font-size:.6rem;">
+        Ver
+        <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

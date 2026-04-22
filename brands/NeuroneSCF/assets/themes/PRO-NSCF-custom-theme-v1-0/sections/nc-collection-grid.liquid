@@ -1,0 +1,102 @@
+<section class="nc-section">
+  <div class="nc-container">
+    <div class="nc-section-head">
+      <div>
+        <span class="nc-eyebrow">{{ section.settings.eyebrow | default: "Líneas de Tratamiento" }}</span>
+        <h2 class="nc-h2">{{ section.settings.title | default: "Encuentra Tu Solución" }}</h2>
+      </div>
+      <a href="/collections/all" class="nc-btn nc-btn-ghost" style="flex-shrink:0;">
+        Todo el Catálogo
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nc-collections-grid">
+      {%- for block in section.blocks -%}
+        {%- assign col = block.settings -%}
+        <a href="{{ col.url | default: '/collections/' | append: col.handle }}" class="nc-collection-card nc-reveal" style="animation-delay:{{ forloop.index0 | times: 0.08 }}s">
+          {%- if col.image != blank -%}
+            <img
+              src="{{ col.image | image_url: width: 600 }}"
+              alt="{{ col.name }}"
+              loading="lazy"
+              width="600"
+            >
+          {%- elsif col.collection != blank -%}
+            {%- assign c = collections[col.collection] -%}
+            {%- if c.image -%}
+              <img src="{{ c.image | image_url: width: 600 }}" alt="{{ c.title }}" loading="lazy" width="600">
+            {%- endif -%}
+          {%- endif -%}
+          <div class="nc-collection-card-overlay"></div>
+          <div class="nc-collection-card-label">
+            {%- if col.badge != blank -%}
+              <span class="nc-badge-new" style="font-family:var(--nc-font-label);font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;padding:3px 7px;border-radius:2px;background:var(--nc-navy);color:white;display:inline-block;margin-bottom:6px;">{{ col.badge }}</span>
+            {%- endif -%}
+            <div class="nc-collection-card-name">{{ col.name | default: c.title }}</div>
+            {%- assign c_real = collections[col.collection] -%}
+            {%- if c_real -%}
+              <div class="nc-collection-card-count">{{ c_real.all_products_count }} producto{% if c_real.all_products_count != 1 %}s{% endif %}</div>
+            {%- elsif col.count != blank -%}
+              <div class="nc-collection-card-count">{{ col.count }}</div>
+            {%- endif -%}
+          </div>
+        </a>
+      {%- endfor -%}
+
+      {%- if section.blocks.size == 0 -%}
+        <!-- Default blocks si no hay configuración -->
+        {%- assign default_cols = "Moisture,restore,Restore,restore,Styling,styling,Color Rescue,color-rescue,Scalp,scalp" | split: "," -%}
+        {%- for i in (0..4) -%}
+          {%- assign n = i | times: 2 -%}
+          {%- assign n1 = n | plus: 1 -%}
+          {%- assign name = default_cols[n] -%}
+          {%- assign handle = default_cols[n1] -%}
+          {%- assign c = collections[handle] -%}
+          <a href="/collections/{{ handle }}" class="nc-collection-card nc-reveal" style="transition-delay:{{ forloop.index0 | times: 80 }}ms">
+            {%- if c.image -%}
+              <img src="{{ c.image | image_url: width: 600 }}" alt="{{ name }}" loading="lazy">
+            {%- else -%}
+              <div style="width:100%;height:100%;background:var(--nc-bg-elevated);display:flex;align-items:center;justify-content:center;">
+                <span style="font-family:var(--nc-font-head);font-size:2rem;color:var(--nc-navy);opacity:.4;letter-spacing:.1em;">{{ name | upcase | slice: 0, 2 }}</span>
+              </div>
+            {%- endif -%}
+            <div class="nc-collection-card-overlay"></div>
+            <div class="nc-collection-card-label">
+              <div class="nc-collection-card-name">{{ name }}</div>
+              {%- if c -%}<div class="nc-collection-card-count">{{ c.all_products_count }} productos</div>{%- endif -%}
+            </div>
+          </a>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "NC Collection Grid",
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Colección",
+      "settings": [
+        { "type": "collection", "id": "collection", "label": "Colección de Shopify" },
+        { "type": "image_picker", "id": "image", "label": "Imagen personalizada (opcional)" },
+        { "type": "text", "id": "name", "label": "Nombre mostrado" },
+        { "type": "url", "id": "url", "label": "URL" },
+        { "type": "text", "id": "badge", "label": "Badge (ej: Nuevo)" },
+        { "type": "text", "id": "count", "label": "Texto bajo el nombre (ej: 8 productos)" }
+      ]
+    }
+  ],
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Líneas de Tratamiento" },
+    { "type": "text", "id": "title", "label": "Título", "default": "Encuentra Tu Solución" }
+  ],
+  "presets": [{ "name": "NC Collection Grid" }],
+  "max_blocks": 6
+}
+{% endschema %}

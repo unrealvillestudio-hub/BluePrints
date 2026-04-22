@@ -1,0 +1,15 @@
+{
+  "layout": "theme.liquid",
+  "sections": {
+    "nc-page": {
+      "type": "nc-page-content",
+      "settings": {
+        "show_title": true,
+        "max_width": "840px"
+      }
+    }
+  },
+  "order": [
+    "nc-page"
+  ]
+}

@@ -1,0 +1,57 @@
+<section class="nc-section">
+  <div class="nc-container">
+    <div class="nc-section-head">
+      <div>
+        <span class="nc-eyebrow">{{ section.settings.eyebrow | default: "Más Vendidos" }}</span>
+        <h2 class="nc-h2">{{ section.settings.title | default: "Productos Destacados" }}</h2>
+      </div>
+      {%- if section.settings.view_all_url != blank -%}
+        <a href="{{ section.settings.view_all_url }}" class="nc-btn nc-btn-ghost" style="flex-shrink:0;">
+          Ver Todos
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      {%- endif -%}
+    </div>
+
+    <div class="nc-product-grid">
+      {%- for block in section.blocks -%}
+        {%- assign product = all_products[block.settings.product] -%}
+        {%- if product != blank -%}
+          {%- render 'nc-product-card', product: product, badge: block.settings.badge -%}
+        {%- endif -%}
+      {%- else -%}
+        <!-- Fallback: mostrar productos de la colección featured -->
+        {%- assign featured = collections['featured'] | default: collections['all'] -%}
+        {%- assign per_row = section.settings.products_per_row | default: 4 -%}
+        {%- for product in featured.products limit: per_row -%}
+          {%- render 'nc-product-card', product: product -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "NC Featured Products",
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Producto",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Producto" },
+        { "type": "text", "id": "badge", "label": "Badge (ej: Nuevo, Pro, -20%)" }
+      ]
+    }
+  ],
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Más Vendidos" },
+    { "type": "text", "id": "title", "label": "Título", "default": "Productos Destacados" },
+    { "type": "url", "id": "view_all_url", "label": "URL Ver Todos" }
+  ],
+  "presets": [{ "name": "NC Featured Products" }],
+  "max_blocks": 8
+}
+{% endschema %}

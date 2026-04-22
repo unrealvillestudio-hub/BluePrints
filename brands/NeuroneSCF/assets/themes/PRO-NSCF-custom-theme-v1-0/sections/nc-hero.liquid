@@ -1,0 +1,89 @@
+<section class="nc-hero">
+  <div class="nc-hero-bg"></div>
+  <div class="nc-hero-grid"></div>
+
+  <div class="nc-hero-content">
+    <div class="nc-hero-text">
+      <span class="nc-eyebrow">{{ section.settings.eyebrow | default: "Neurocosmética · Nano Tribología Capilar" }}</span>
+
+      <h1 class="nc-hero-title nc-reveal">
+        {{ section.settings.headline | default: "Cuando el" }}
+        <em>{{ section.settings.headline_accent | default: "Cabello" }}</em>
+        {{ section.settings.headline_end | default: "No Puede Esperar" }}
+      </h1>
+
+      <p class="nc-hero-body nc-reveal nc-reveal-delay-1">
+        {{ section.settings.subheadline | default: "Formulaciones de grado profesional desarrolladas con tecnología de Nano Tribología. Sin excusas, sin parches. El cabello que mereces — ya." }}
+      </p>
+
+      <div class="nc-hero-actions nc-reveal nc-reveal-delay-2">
+        <a href="{{ section.settings.cta_url | default: '/collections/all' }}" class="nc-btn nc-btn-primary nc-btn-lg">
+          {{ section.settings.cta_text | default: "Ver Catálogo" }}
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="{{ section.settings.cta2_url | default: '/pages/la-ciencia' }}" class="nc-btn nc-btn-outline">
+          {{ section.settings.cta2_text | default: "La Ciencia" }}
+        </a>
+      </div>
+
+      <div class="nc-hero-stats nc-reveal nc-reveal-delay-3">
+        <div>
+          <span class="nc-stat-num">39+</span>
+          <span class="nc-stat-label">Productos</span>
+        </div>
+        <div>
+          <span class="nc-stat-num">6</span>
+          <span class="nc-stat-label">Líneas</span>
+        </div>
+        <div>
+          <span class="nc-stat-num">Pro</span>
+          <span class="nc-stat-label">Portal B2B</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nc-hero-media">
+      <div class="nc-hero-glow-ring"></div>
+      <div class="nc-hero-glow-ring"></div>
+      {%- if section.settings.hero_image != blank -%}
+        <img
+          class="nc-hero-product-img"
+          src="{{ section.settings.hero_image | image_url: width: 840 }}"
+          alt="{{ section.settings.hero_image.alt | default: 'Neurone Cosmética' }}"
+          width="420"
+          loading="eager"
+          fetchpriority="high"
+        >
+      {%- else -%}
+        <!-- Placeholder visual cuando no hay imagen -->
+        <div style="width:340px;height:400px;display:flex;align-items:center;justify-content:center;position:relative;z-index:2;">
+          <div style="text-align:center;">
+            <div style="font-family:var(--nc-font-head);font-size:5rem;color:var(--nc-navy);opacity:.3;letter-spacing:.1em;line-height:1;">NC</div>
+            <div class="nc-label" style="margin-top:12px;">Neurone Cosmética</div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "NC Hero",
+  "settings": [
+    { "type": "image_picker", "id": "hero_image", "label": "Imagen hero (producto destacado)" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Neurocosmética · Nano Tribología Capilar" },
+    { "type": "text", "id": "headline", "label": "Headline parte 1", "default": "Cuando el" },
+    { "type": "text", "id": "headline_accent", "label": "Headline acento (azul)", "default": "Cabello" },
+    { "type": "text", "id": "headline_end", "label": "Headline parte final", "default": "No Puede Esperar" },
+    { "type": "textarea", "id": "subheadline", "label": "Subtítulo" },
+    { "type": "text", "id": "cta_text", "label": "CTA principal", "default": "Ver Catálogo" },
+    { "type": "url", "id": "cta_url", "label": "CTA principal URL" },
+    { "type": "text", "id": "cta2_text", "label": "CTA secundario", "default": "La Ciencia" },
+    { "type": "url", "id": "cta2_url", "label": "CTA secundario URL" }
+  ],
+  "presets": [{ "name": "NC Hero" }]
+}
+{% endschema %}

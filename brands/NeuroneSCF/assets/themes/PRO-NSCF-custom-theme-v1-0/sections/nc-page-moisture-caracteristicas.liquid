@@ -1,0 +1,218 @@
+<style>
+.scaract-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px clamp(24px, 5vw, 80px);
+  background: #F8FAFB;
+}
+
+.scaract-eyebrow {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #C4622D;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.scaract-rg-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 40px;
+}
+
+.scaract-diferenciador {
+  background: #FFFFFF;
+  padding: 32px 24px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(10, 13, 20, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.scaract-diferenciador:hover {
+  transform: translateY(-4px);
+}
+
+.scaract-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 20px;
+  fill: #0076A8;
+}
+
+.scaract-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0A0D14;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.scaract-texto {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0A0D14;
+  opacity: 0.8;
+}
+
+@media (max-width: 860px) {
+  .scaract-rg-auto {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .scaract-section {
+    padding: 60px clamp(24px, 5vw, 80px);
+  }
+  
+  .scaract-diferenciador {
+    padding: 24px 20px;
+  }
+  
+  .scaract-titulo {
+    font-size: 16px;
+  }
+  
+  .scaract-texto {
+    font-size: 15px;
+  }
+}
+</style>
+
+<section class="scaract-section">
+  <div class="scaract-eyebrow">{{ section.settings.eyebrow_text }}</div>
+  
+  <div class="scaract-rg-auto">
+    <div class="scaract-diferenciador">
+      <svg class="scaract-icon" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        <circle cx="12" cy="8" r="2"/>
+        <path d="M8 14h8v2H8z"/>
+      </svg>
+      <h3 class="scaract-titulo">{{ section.settings.diff1_titulo }}</h3>
+      <p class="scaract-texto">{{ section.settings.diff1_texto }}</p>
+    </div>
+    
+    <div class="scaract-diferenciador">
+      <svg class="scaract-icon" viewBox="0 0 24 24">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        <path d="M17 8h-1V6c0-2.76-2.24-5-5-5S6 3.24 6 6v2H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2z"/>
+      </svg>
+      <h3 class="scaract-titulo">{{ section.settings.diff2_titulo }}</h3>
+      <p class="scaract-texto">{{ section.settings.diff2_texto }}</p>
+    </div>
+    
+    <div class="scaract-diferenciador">
+      <svg class="scaract-icon" viewBox="0 0 24 24">
+        <path d="M9 11H7v9a2 2 0 002 2h8a2 2 0 002-2V9a2 2 0 00-2-2h-1V6a5 5 0 00-10 0v5z"/>
+        <circle cx="12" cy="15.5" r="1.5"/>
+        <path d="M12 10v4"/>
+      </svg>
+      <h3 class="scaract-titulo">{{ section.settings.diff3_titulo }}</h3>
+      <p class="scaract-texto">{{ section.settings.diff3_texto }}</p>
+    </div>
+    
+    <div class="scaract-diferenciador">
+      <svg class="scaract-icon" viewBox="0 0 24 24">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+        <circle cx="12" cy="9" r="2.5"/>
+        <path d="M12 22l-8-8h16l-8 8z"/>
+      </svg>
+      <h3 class="scaract-titulo">{{ section.settings.diff4_titulo }}</h3>
+      <p class="scaract-texto">{{ section.settings.diff4_texto }}</p>
+    </div>
+    
+    <div class="scaract-diferenciador">
+      <svg class="scaract-icon" viewBox="0 0 24 24">
+        <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.95-2.05l-1.42 1.42C8.1 19.85 10.45 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/>
+        <path d="M12 8v5l4.25 2.52.77-1.28L13 12V8z"/>
+      </svg>
+      <h3 class="scaract-titulo">{{ section.settings.diff5_titulo }}</h3>
+      <p class="scaract-texto">{{ section.settings.diff5_texto }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Moisture Características",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Eyebrow Text",
+      "default": "Por qué Moisture funciona donde otros fallan"
+    },
+    {
+      "type": "text",
+      "id": "diff1_titulo",
+      "label": "Diferenciador 1 - Título",
+      "default": "Nano Tribología Capilar"
+    },
+    {
+      "type": "textarea",
+      "id": "diff1_texto",
+      "label": "Diferenciador 1 - Texto",
+      "default": "Tecnología de fricción molecular que penetra hasta la médula capilar. No recubre, restaura."
+    },
+    {
+      "type": "text",
+      "id": "diff2_titulo",
+      "label": "Diferenciador 2 - Título",
+      "default": "Formulado para humedad extrema de Miami"
+    },
+    {
+      "type": "textarea",
+      "id": "diff2_texto",
+      "label": "Diferenciador 2 - Texto",
+      "default": "Diseñado específicamente para el clima subtropical. Funciona con la humedad, no contra ella."
+    },
+    {
+      "type": "text",
+      "id": "diff3_titulo",
+      "label": "Diferenciador 3 - Título",
+      "default": "Sin silicones — resultados reales"
+    },
+    {
+      "type": "textarea",
+      "id": "diff3_texto",
+      "label": "Diferenciador 3 - Texto",
+      "default": "No recubrimiento temporal. Hidratación real que mejora la estructura capilar permanentemente."
+    },
+    {
+      "type": "text",
+      "id": "diff4_titulo",
+      "label": "Diferenciador 4 - Título",
+      "default": "Exclusivo South & Central Miami"
+    },
+    {
+      "type": "textarea",
+      "id": "diff4_texto",
+      "label": "Diferenciador 4 - Texto",
+      "default": "Distribución selectiva. No en Amazon. No en beauty supply genérico. Solo donde importa."
+    },
+    {
+      "type": "text",
+      "id": "diff5_titulo",
+      "label": "Diferenciador 5 - Título",
+      "default": "Entrega mismo día"
+    },
+    {
+      "type": "textarea",
+      "id": "diff5_texto",
+      "label": "Diferenciador 5 - Texto",
+      "default": "Inventario local Miami. Tu cabello no puede esperar. Nosotros tampoco."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Moisture Características"
+    }
+  ]
+}
+{% endschema %}

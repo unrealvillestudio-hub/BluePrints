@@ -1,0 +1,351 @@
+<style>
+.sctafinal {
+  background: linear-gradient(135deg, #0076A8 0%, #0A0D14 100%);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.sctafinal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.sctafinal-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.sctafinal-content {
+  text-align: center;
+  color: #F8FAFB;
+}
+
+.sctafinal-urgency {
+  display: inline-block;
+  background: rgba(248,250,251,0.1);
+  border: 1px solid rgba(248,250,251,0.2);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.02); opacity: 0.9; }
+}
+
+.sctafinal-headline {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(10,13,20,0.3);
+}
+
+.sctafinal-subheadline {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sctafinal-stats {
+  display: grid;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.sctafinal-rg-3 { grid-template-columns: repeat(3, 1fr); }
+.sctafinal-rg-1 { grid-template-columns: 1fr; }
+
+.sctafinal-stat {
+  text-align: center;
+}
+
+.sctafinal-stat-number {
+  display: block;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+  background: linear-gradient(45deg, #F8FAFB, rgba(248,250,251,0.7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sctafinal-stat-text {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sctafinal-actions {
+  margin-bottom: 40px;
+}
+
+.sctafinal-btn-primary {
+  display: inline-block;
+  background: #F8FAFB;
+  color: #0A0D14;
+  padding: 18px 48px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(248,250,251,0.2);
+  margin-bottom: 24px;
+}
+
+.sctafinal-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(248,250,251,0.3);
+  color: #0A0D14;
+}
+
+.sctafinal-pro-nudge {
+  background: rgba(248,250,251,0.05);
+  border: 1px solid rgba(248,250,251,0.1);
+  padding: 20px 32px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  backdrop-filter: blur(10px);
+}
+
+.sctafinal-pro-text {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.sctafinal-pro-link {
+  color: #F8FAFB;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.sctafinal-pro-link:hover {
+  opacity: 0.8;
+}
+
+.sctafinal-scarcity {
+  font-size: 14px;
+  opacity: 0.8;
+  font-style: italic;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .sctafinal {
+    padding: 60px 0;
+  }
+  
+  .sctafinal-rg-3 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .sctafinal-stat-number {
+    font-size: 36px;
+  }
+  
+  .sctafinal-btn-primary {
+    width: 100%;
+    padding: 16px 32px;
+  }
+  
+  .sctafinal-pro-nudge {
+    padding: 16px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sctafinal-container {
+    padding: 0 16px;
+  }
+  
+  .sctafinal-urgency {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+</style>
+
+<div class="sctafinal">
+  <div class="sctafinal-container">
+    <div class="sctafinal-content">
+      
+      <div class="sctafinal-urgency">
+        {{ section.settings.urgency_badge }}
+      </div>
+      
+      <h2 class="sctafinal-headline">
+        {{ section.settings.headline }}
+      </h2>
+      
+      <p class="sctafinal-subheadline">
+        {{ section.settings.subheadline }}
+      </p>
+      
+      <div class="sctafinal-stats sctafinal-rg-3">
+        <div class="sctafinal-stat">
+          <span class="sctafinal-stat-number">{{ section.settings.stat1_number }}</span>
+          <span class="sctafinal-stat-text">{{ section.settings.stat1_text }}</span>
+        </div>
+        <div class="sctafinal-stat">
+          <span class="sctafinal-stat-number">{{ section.settings.stat2_number }}</span>
+          <span class="sctafinal-stat-text">{{ section.settings.stat2_text }}</span>
+        </div>
+        <div class="sctafinal-stat">
+          <span class="sctafinal-stat-number">{{ section.settings.stat3_number }}</span>
+          <span class="sctafinal-stat-text">{{ section.settings.stat3_text }}</span>
+        </div>
+      </div>
+      
+      <div class="sctafinal-actions">
+        <a href="{{ section.settings.cta_url }}" class="sctafinal-btn-primary">
+          {{ section.settings.cta_text }}
+        </a>
+      </div>
+      
+      {% if section.settings.show_pro_nudge %}
+      <div class="sctafinal-pro-nudge">
+        <p class="sctafinal-pro-text">{{ section.settings.pro_message }}</p>
+        <a href="{{ section.settings.pro_url }}" class="sctafinal-pro-link">{{ section.settings.pro_link_text }}</a>
+      </div>
+      {% endif %}
+      
+      <p class="sctafinal-scarcity">
+        {{ section.settings.scarcity_message }}
+      </p>
+      
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Moisture CTA Final",
+  "settings": [
+    {
+      "type": "text",
+      "id": "urgency_badge",
+      "label": "Badge de Urgencia",
+      "default": "Stock Limitado • Distribución Exclusiva Miami"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Título Principal",
+      "default": "Cabello Seco Se Convierte en Hidratación Profesional"
+    },
+    {
+      "type": "textarea",
+      "id": "subheadline",
+      "label": "Subtítulo",
+      "default": "La colección Moisture elimina la sequedad extrema y crea cabello suave y manejable que tus clientes notarán desde el primer uso."
+    },
+    {
+      "type": "text",
+      "id": "stat1_number",
+      "label": "Estadística 1 - Número",
+      "default": "500+"
+    },
+    {
+      "type": "text",
+      "id": "stat1_text",
+      "label": "Estadística 1 - Texto",
+      "default": "Salones de Miami"
+    },
+    {
+      "type": "text",
+      "id": "stat2_number",
+      "label": "Estadística 2 - Número",
+      "default": "72H"
+    },
+    {
+      "type": "text",
+      "id": "stat2_text",
+      "label": "Estadística 2 - Texto",
+      "default": "Hidratación Activa"
+    },
+    {
+      "type": "text",
+      "id": "stat3_number",
+      "label": "Estadística 3 - Número",
+      "default": "98%"
+    },
+    {
+      "type": "text",
+      "id": "stat3_text",
+      "label": "Estadística 3 - Texto",
+      "default": "Menos Quiebre"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Texto CTA Principal",
+      "default": "Comprar Colección Moisture"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "URL CTA Principal"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pro_nudge",
+      "label": "Mostrar Nudge Profesional",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "pro_message",
+      "label": "Mensaje Profesional",
+      "default": "¿Colorista o Salón? Accede a precios profesionales y entrega prioritaria."
+    },
+    {
+      "type": "text",
+      "id": "pro_link_text",
+      "label": "Texto Link Profesional",
+      "default": "Acceder a Portal Pro"
+    },
+    {
+      "type": "url",
+      "id": "pro_url",
+      "label": "URL Portal Profesional"
+    },
+    {
+      "type": "textarea",
+      "id": "scarcity_message",
+      "label": "Mensaje de Escasez",
+      "default": "Inventario local en Miami. No esperamos stock de otros estados. Cantidad limitada disponible."
+    }
+  ]
+}
+{% endschema %}
