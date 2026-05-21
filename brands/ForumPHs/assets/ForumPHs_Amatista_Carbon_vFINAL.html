@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForumPHs · Amatista Carbon · Sistema Final</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cinzel:wght@400;600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:#080810;font-family:'DM Sans',sans-serif;color:#fff;min-height:100vh;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-thumb{background:#2a2a3a;}
+
+:root{
+  --am:#5C3472;--am-d:#3A1F4A;--am-l:#EAD9F5;
+  --terra:#C4622D;
+  --carbon:#1C2233;--carbon-d:#0E1018;
+  --ink:#1A1612;--stone:#6B6460;--dust:#B8B0A8;
+  --parch:#F0EDE8;
+}
+
+.wrap{max-width:1100px;margin:0 auto;padding:56px 64px 100px;}
+
+/* ─── WORDMARK SYSTEM ───
+   "Forum" + "PH" → same font-size (cap heights align)
+   "s" → same font-size, lowercase (x-height aligns with "orum")
+   Result: Forum+PH all caps-height, s at x-height
+*/
+.wm{display:inline-flex;align-items:baseline;gap:0;line-height:1;}
+.wm .f {font-family:'EB Garamond',serif;font-weight:400;letter-spacing:0.01em;}
+.wm .ph{font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:0.06em;}
+.wm .s {font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:0.04em;}
+/* All three parts share the SAME font-size — the system handles proportions naturally */
+.wm-xl .f,.wm-xl .ph,.wm-xl .s{font-size:54px;}
+.wm-lg .f,.wm-lg .ph,.wm-lg .s{font-size:36px;}
+.wm-md .f,.wm-md .ph,.wm-md .s{font-size:26px;}
+.wm-sm .f,.wm-sm .ph,.wm-sm .s{font-size:18px;}
+.wm-xs .f,.wm-xs .ph,.wm-xs .s{font-size:13px;}
+.wm-xxs .f,.wm-xxs .ph,.wm-xxs .s{font-size:10px;}
+/* color combos */
+.on-dark .f{color:#fff;} .on-dark .ph{color:var(--terra);} .on-dark .s{color:var(--terra);}
+.on-tint .f{color:var(--am-d);} .on-tint .ph{color:var(--terra);} .on-tint .s{color:var(--terra);}
+
+/* HERO */
+.hero{padding:52px 64px 46px;border-bottom:1px solid rgba(255,255,255,0.05);position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;right:-60px;top:-60px;width:420px;height:420px;
+  background:radial-gradient(circle,var(--am) 0%,transparent 65%);opacity:0.14;pointer-events:none;}
+.eyebrow{font-family:'Cormorant Garamond',serif;font-size:11px;font-weight:300;
+  letter-spacing:0.28em;color:rgba(255,255,255,0.22);margin-bottom:22px;text-transform:capitalize;}
+.hero-sub{font-family:'EB Garamond',serif;font-size:17px;font-style:italic;color:rgba(255,255,255,0.3);margin:12px 0 6px;}
+.hero-body{font-size:12px;color:rgba(255,255,255,0.28);line-height:1.8;max-width:480px;}
+
+/* SECTION LABEL */
+.slbl{font-family:'Cinzel',serif;font-size:8px;letter-spacing:0.3em;color:rgba(255,255,255,0.18);margin-bottom:12px;}
+
+/* PALETTE */
+.pal-strip{display:grid;grid-template-columns:2fr 2fr 2fr 1fr 1fr 1fr 1fr 2fr;gap:3px;height:82px;border-radius:8px;overflow:hidden;margin-bottom:3px;}
+.pc{display:flex;flex-direction:column;justify-content:flex-end;padding:9px 11px;}
+.pc-n{font-size:7.5px;font-weight:600;letter-spacing:0.04em;line-height:1.3;}
+.pc-h{font-size:7px;font-family:monospace;opacity:0.6;}
+.pal-roles{display:grid;grid-template-columns:2fr 2fr 2fr 1fr 1fr 1fr 1fr 2fr;gap:3px;margin-bottom:52px;}
+.pr{font-size:8px;color:rgba(255,255,255,0.2);padding:4px 0;letter-spacing:0.06em;}
+
+/* WORDMARK GRID */
+.wm-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:3px;margin-bottom:52px;border-radius:8px;overflow:hidden;}
+.wm-box{padding:34px 28px;display:flex;flex-direction:column;justify-content:space-between;min-height:152px;}
+.wm-badge{font-family:'Cinzel',serif;font-size:7.5px;letter-spacing:0.18em;opacity:0.38;margin-bottom:20px;}
+.wm-note{font-size:9px;opacity:0.28;margin-top:10px;letter-spacing:0.04em;}
+
+/* ─── TYPOGRAPHY SECTION ─── */
+.type-2col{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-bottom:3px;}
+.type-card{padding:36px 32px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.05);}
+.type-card:first-child{border-radius:8px 0 0 0;}
+.type-card:last-child{border-radius:0 8px 0 0;}
+.tc-role{font-family:'Cinzel',serif;font-size:8px;letter-spacing:0.2em;color:rgba(255,255,255,0.2);margin-bottom:10px;}
+.tc-tag{display:inline-block;padding:3px 10px;border-radius:2px;font-size:8px;font-weight:600;
+  letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px;}
+.tc-sub{font-size:11px;color:rgba(255,255,255,0.28);line-height:1.8;margin-bottom:18px;}
+.tc-specimen{font-size:12px;color:rgba(255,255,255,0.3);line-height:1.9;}
+
+/* Cormorant showcase — full width */
+.cormorant-card{background:rgba(255,255,255,0.015);border:1px solid rgba(255,255,255,0.05);
+  border-radius:0;padding:40px 44px;margin-bottom:3px;display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:center;}
+.corm-left{}
+.corm-display{font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:300;
+  color:rgba(255,255,255,0.06);line-height:1;margin-bottom:-14px;}
+.corm-name{font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:400;color:#fff;line-height:1.1;margin-bottom:8px;}
+.corm-it{font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;font-weight:300;
+  color:rgba(255,255,255,0.35);margin-bottom:20px;}
+.corm-abc{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:300;
+  color:rgba(255,255,255,0.25);line-height:2;letter-spacing:0.08em;}
+.corm-right{}
+.corm-tag{display:inline-block;padding:4px 12px;border-radius:2px;font-size:8px;font-weight:600;
+  letter-spacing:0.12em;background:rgba(92,52,114,0.2);color:var(--am);margin-bottom:16px;}
+.corm-desc{font-size:12px;color:rgba(255,255,255,0.35);line-height:1.9;margin-bottom:20px;}
+.corm-uses{display:flex;flex-direction:column;gap:8px;}
+.corm-use{display:flex;align-items:flex-start;gap:10px;}
+.corm-use-dot{width:4px;height:4px;border-radius:50%;background:var(--am);margin-top:6px;flex-shrink:0;}
+.corm-use-txt{font-size:11px;color:rgba(255,255,255,0.3);line-height:1.7;}
+.corm-use-txt strong{color:rgba(255,255,255,0.6);font-weight:500;}
+
+/* Type scale rows */
+.type-scale{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-bottom:3px;}
+.ts-box{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);padding:24px 26px;}
+.ts-box.first{border-radius:0 0 0 0;}
+.ts-box.last{border-radius:0 0 8px 0;}
+.ts-role{font-family:'Cinzel',serif;font-size:7.5px;letter-spacing:0.2em;color:rgba(255,255,255,0.2);margin-bottom:14px;}
+.ts-sample{margin-bottom:10px;}
+.ts-meta{font-size:9.5px;color:rgba(255,255,255,0.2);line-height:1.7;font-family:monospace;}
+
+/* Cinzel note */
+.cinzel-row{background:rgba(92,52,114,0.08);border:1px solid rgba(92,52,114,0.18);
+  border-radius:0 0 8px 8px;padding:20px 24px;display:flex;align-items:center;gap:24px;margin-bottom:52px;}
+.cinzel-sample{font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.28em;color:rgba(255,255,255,0.28);white-space:nowrap;}
+.cinzel-desc{font-size:11.5px;color:rgba(255,255,255,0.3);line-height:1.75;}
+.cinzel-desc strong{color:rgba(255,255,255,0.6);font-weight:500;}
+
+/* EMAIL */
+.email-wrap{border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.06);margin-bottom:52px;}
+.e-chrome{background:#111118;padding:10px 18px;display:flex;align-items:center;gap:6px;border-bottom:1px solid rgba(255,255,255,0.05);}
+.e-dot{width:9px;height:9px;border-radius:50%;}
+.e-addr{font-size:9px;font-family:monospace;color:rgba(255,255,255,0.18);margin-left:10px;}
+.e-window{display:grid;grid-template-columns:210px 1fr;}
+.e-sidebar{background:rgba(0,0,0,0.35);padding:18px 14px;border-right:1px solid rgba(255,255,255,0.04);}
+.e-sb-hdr{font-size:8.5px;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.28);margin-bottom:14px;}
+.e-folder{padding:6px 10px;border-radius:3px;font-size:10px;color:rgba(255,255,255,0.3);margin-bottom:2px;}
+.e-folder.on{background:rgba(92,52,114,0.22);color:rgba(255,255,255,0.75);}
+.e-body{background:#16161E;}
+.e-hdr{padding:14px 22px;border-bottom:1px solid rgba(255,255,255,0.05);display:flex;justify-content:space-between;align-items:center;}
+.e-from{display:flex;align-items:center;gap:10px;}
+.e-av{width:30px;height:30px;border-radius:50%;background:var(--am-d);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:rgba(255,255,255,0.85);flex-shrink:0;}
+.e-fn{font-size:12px;font-weight:600;color:rgba(255,255,255,0.82);}
+.e-fa{font-size:9.5px;color:rgba(255,255,255,0.28);}
+.e-date{font-size:9.5px;color:rgba(255,255,255,0.22);}
+/* top Carbon */
+.e-top{padding:28px 30px 24px;background:var(--carbon);}
+.e-top-wm{margin-bottom:18px;}
+.e-subj{font-family:'EB Garamond',serif;font-size:22px;color:#fff;line-height:1.3;margin-bottom:6px;}
+.e-pre{font-size:10.5px;color:rgba(255,255,255,0.38);line-height:1.65;}
+.e-div{height:3px;background:var(--am);}
+.e-main{padding:26px 30px;background:#F8F5F2;}
+.e-saludo{font-size:13px;color:var(--ink);margin-bottom:12px;line-height:1.7;}
+.e-txt{font-size:11.5px;color:#4A4440;line-height:1.9;margin-bottom:18px;}
+.e-kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;margin-bottom:20px;}
+.e-kpi{padding:14px;text-align:center;background:#F0ECF8;}
+.e-kpi-n{font-family:'EB Garamond',serif;font-size:28px;color:var(--am);margin-bottom:2px;}
+.e-kpi-l{font-size:8.5px;letter-spacing:0.1em;color:#888;text-transform:uppercase;}
+.e-cta-row{display:flex;justify-content:center;}
+.e-cta{display:inline-block;padding:11px 26px;background:var(--am);color:#fff;border-radius:3px;font-size:10.5px;font-weight:700;letter-spacing:0.1em;}
+/* FIRMA sobre Tint */
+.e-sig{background:var(--am-l);padding:20px 30px;border-top:1px solid rgba(92,52,114,0.1);}
+.e-sig-inner{display:flex;align-items:flex-start;gap:12px;}
+.e-sig-bar{width:3px;border-radius:2px;align-self:stretch;background:var(--terra);flex-shrink:0;}
+.e-sig-name{font-size:13px;font-weight:600;color:var(--am);margin-bottom:1px;}
+.e-sig-title{font-size:10px;color:var(--stone);margin-bottom:8px;}
+.e-sig-sep{font-size:10px;color:var(--stone);margin-left:5px;}
+.e-sig-contact{font-size:10px;color:var(--stone);}
+/* FOOTER */
+.e-footer{background:#E4D6F0;padding:14px 30px;display:flex;justify-content:space-between;align-items:center;}
+.e-footer-txt{font-size:8.5px;color:#9080A0;letter-spacing:0.04em;}
+
+/* RATIONALE */
+.rat-grid{display:grid;grid-template-columns:1fr 250px;gap:3px;}
+.rat-box{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:0 0 0 8px;padding:28px 30px;}
+.rat-title{font-family:'Cinzel',serif;font-size:8px;letter-spacing:0.22em;color:rgba(255,255,255,0.18);margin-bottom:18px;}
+.rat-item{display:flex;gap:12px;margin-bottom:12px;}
+.rat-ic{width:26px;height:26px;border-radius:50%;background:rgba(92,52,114,0.2);color:var(--am);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;}
+.rat-t{font-size:11.5px;color:rgba(255,255,255,0.38);line-height:1.78;}
+.rat-t strong{color:rgba(255,255,255,0.7);font-weight:500;}
+.sw-tower{border-radius:0 0 8px 0;overflow:hidden;display:flex;flex-direction:column;}
+.sw-top{background:var(--am);padding:24px;display:flex;flex-direction:column;justify-content:space-between;min-height:110px;}
+.sw-n{font-family:'EB Garamond',serif;font-size:60px;font-weight:400;color:rgba(255,255,255,0.12);line-height:1;}
+.sw-lbl{font-family:'Cinzel',serif;font-size:8.5px;letter-spacing:0.18em;color:rgba(255,255,255,0.5);}
+.sw-h{font-size:9.5px;font-family:monospace;color:rgba(255,255,255,0.28);margin-top:3px;}
+.sw-shades{display:grid;grid-template-columns:1fr 1fr;gap:2px;}
+.sw-s{padding:11px 13px;}
+.sw-sl{font-size:8px;letter-spacing:0.08em;opacity:0.5;margin-bottom:3px;}
+.sw-sh{font-size:9px;font-family:monospace;opacity:0.4;}
+
+@media(max-width:860px){
+  .hero,.wrap{padding:28px 20px 60px;}
+  .pal-strip,.pal-roles,.type-2col,.type-scale,.wm-grid,.e-window,.rat-grid,.cormorant-card{grid-template-columns:1fr!important;}
+  .e-kpis{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO — Cormorant Garamond eyebrow -->
+<div class="hero">
+  <div class="eyebrow">Propuesta de Paleta · Amatista Carbon · ForumPHs · 2026</div>
+  <!-- WORDMARK: Forum+PH mismo tamaño, s = x-height de orum -->
+  <div class="wm wm-xl on-dark" style="margin-bottom:12px;">
+    <span class="f">Forum</span><span class="ph">PH</span><span class="s">s</span>
+  </div>
+  <div class="hero-sub">"Forum" + "PH" a la misma altura · "s" a la altura de "orum"</div>
+  <p class="hero-body">Carbon ancla la tecnología. Amatista eleva la jerarquía institucional. Terra mantiene el ADN humano de ForumPHs.</p>
+</div>
+
+<div class="wrap">
+
+<!-- ── 1. PALETA ── -->
+<div class="slbl">Paleta Completa</div>
+<div class="pal-strip">
+  <div class="pc" style="background:#5C3472;"><div class="pc-n">Amatista</div><div class="pc-h">#5C3472</div></div>
+  <div class="pc" style="background:#C4622D;"><div class="pc-n">Forum Terra</div><div class="pc-h">#C4622D</div></div>
+  <div class="pc" style="background:#1C2233;"><div class="pc-n" style="color:rgba(255,255,255,0.55);">Carbon</div><div class="pc-h" style="color:rgba(255,255,255,0.35);">#1C2233</div></div>
+  <div class="pc" style="background:#1A1612;"><div class="pc-n" style="color:rgba(255,255,255,0.4);">Ink</div><div class="pc-h" style="color:rgba(255,255,255,0.28);">#1A1612</div></div>
+  <div class="pc" style="background:#6B6460;"><div class="pc-n" style="color:rgba(255,255,255,0.5);">Stone</div><div class="pc-h" style="color:rgba(255,255,255,0.35);">#6B6460</div></div>
+  <div class="pc" style="background:#B8B0A8;"><div class="pc-n" style="color:rgba(0,0,0,0.4);">Dust</div><div class="pc-h" style="color:rgba(0,0,0,0.28);">#B8B0A8</div></div>
+  <div class="pc" style="background:#F0EDE8;border:1px solid #ddd8d0;"><div class="pc-n" style="color:rgba(0,0,0,0.3);">Parchment</div><div class="pc-h" style="color:rgba(0,0,0,0.22);">#F0EDE8</div></div>
+  <div class="pc" style="background:#EAD9F5;"><div class="pc-n" style="color:rgba(92,52,114,0.6);">Amat. Tint</div><div class="pc-h" style="color:rgba(92,52,114,0.4);">#EAD9F5</div></div>
+</div>
+<div class="pal-roles">
+  <div class="pr" style="color:#5C3472;font-weight:600;">Primario</div>
+  <div class="pr" style="color:#C4622D;">Acento · Terra</div>
+  <div class="pr" style="color:#4A5888;font-weight:600;">Base · Fondo</div>
+  <div class="pr">Texto</div><div class="pr">Texto sec.</div>
+  <div class="pr">Sutil</div><div class="pr">Fondo doc.</div>
+  <div class="pr" style="color:#5C3472;">Tint · Firma</div>
+</div>
+
+<!-- ── 2. WORDMARK VARIANTES ── -->
+<div class="slbl">Wordmark · Variantes</div>
+<div class="wm-grid">
+  <div class="wm-box" style="background:#0E1018;">
+    <div class="wm-badge">Sobre Carbon Profundo</div>
+    <div>
+      <div class="wm wm-lg on-dark"><span class="f">Forum</span><span class="ph">PH</span><span class="s">s</span></div>
+      <div class="wm-note">Apps · UI · Headers digitales</div>
+    </div>
+  </div>
+  <div class="wm-box" style="background:#1C2233;">
+    <div class="wm-badge">Sobre Carbon</div>
+    <div>
+      <div class="wm wm-lg on-dark"><span class="f">Forum</span><span class="ph">PH</span><span class="s">s</span></div>
+      <div class="wm-note">Documentos · Emails · Portadas</div>
+    </div>
+  </div>
+  <div class="wm-box" style="background:#5C3472;">
+    <div class="wm-badge">Sobre Amatista</div>
+    <div>
+      <div class="wm wm-lg on-dark"><span class="f">Forum</span><span class="ph">PH</span><span class="s">s</span></div>
+      <div class="wm-note">Materiales premium · Eventos</div>
+    </div>
+  </div>
+  <div class="wm-box" style="background:#EAD9F5;border:1px solid rgba(92,52,114,0.1);">
+    <div class="wm-badge" style="color:rgba(58,31,74,0.38);">Sobre Tint</div>
+    <div>
+      <div class="wm wm-lg on-tint"><span class="f">Forum</span><span class="ph">PH</span><span class="s">s</span></div>
+      <div class="wm-note" style="color:rgba(58,31,74,0.28);">Firma email · Fondos claros</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── 3. TIPOGRAFÍAS ── -->
+<div class="slbl">Sistema Tipográfico · 4 Voces</div>
+
+<!-- Cormorant Garamond — NUEVA INCORPORACIÓN — fullwidth showcase -->
+<div class="cormorant-card" style="border-radius:8px 8px 0 0;">
+  <div class="corm-left">
+    <div class="corm-display">Cc</div>
+    <div class="corm-name">Cormorant Garamond</div>
+    <div class="corm-it">Display · Editorial · Alta distinción</div>
+    <div class="corm-abc">
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+      abcdefghijklmnopqrstuvwxyz · 0123456789<br>
+      Light 300 · Regular 400 · Medium 500 · Italic
+    </div>
+  </div>
+  <div class="corm-right">
+    <span class="corm-tag">NUEVA · EYEBROWS · DISPLAY ESPECIAL</span>
+    <p class="corm-desc">La tipografía identificada en tu propuesta. Cormorant Garamond es una serif de alto contraste diseñada para uso display a gran escala — fina, elegante, con proporciones de imprenta del siglo XVI. Donde EB Garamond es institucional y trabajadora, Cormorant es ceremonial y excepcional.</p>
+    <div class="corm-uses">
+      <div class="corm-use"><div class="corm-use-dot"></div><div class="corm-use-txt"><strong>Eyebrows y créditos</strong> — la línea "Propuesta de Paleta · Amatista Carbon · 2026" que viste en el preview</div></div>
+      <div class="corm-use"><div class="corm-use-dot"></div><div class="corm-use-txt"><strong>Portadas de actas y reportes</strong> — el nombre del PH a 60px+ en Light</div></div>
+      <div class="corm-use"><div class="corm-use-dot"></div><div class="corm-use-txt"><strong>Citas textuales y testimonios</strong> — en itálica Light sobre fondo claro</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- EB Garamond + DM Sans side by side -->
+<div class="type-2col">
+  <div class="type-card">
+    <div class="tc-role">Tipografía Principal · Identidad</div>
+    <span class="tc-tag" style="background:rgba(92,52,114,0.2);color:var(--am);">Logotipo "Forum" · Titulares · KPIs</span>
+    <div style="font-family:'EB Garamond',serif;font-size:44px;font-weight:400;color:#fff;line-height:1;margin-bottom:4px;">EB Garamond</div>
+    <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;color:rgba(255,255,255,0.3);margin-bottom:14px;">"Tu PH, en orden. Siempre."</div>
+    <p class="tc-sub">La voz institucional. Serif clásica con calidez histórica. Es "Forum" en el logotipo, los titulares de portadas y los números grandes de KPIs en documentos y emails.</p>
+    <div class="tc-specimen" style="font-family:'EB Garamond',serif;font-size:12.5px;">
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+      abcdefghijklmnopqrstuvwxyz · 0123456789<br>
+      <em>Cursiva para subtítulos editoriales y citas</em>
+    </div>
+  </div>
+  <div class="type-card">
+    <div class="tc-role">Tipografía Funcional · Sistema</div>
+    <span class="tc-tag" style="background:rgba(196,98,45,0.18);color:var(--terra);">Logotipo "PHs" · UI · Cuerpo · Datos</span>
+    <div style="font-family:'DM Sans',sans-serif;font-size:42px;font-weight:300;color:#fff;line-height:1;margin-bottom:4px;">DM Sans</div>
+    <div style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:400;color:rgba(255,255,255,0.3);margin-bottom:14px;">SLA · 99.8% · $4,200/mes · Quórum 51%</div>
+    <p class="tc-sub">La precisión tecnológica. Sans-serif de ingeniería óptica, legible a cualquier tamaño. Es "PHs" en el logotipo, todos los cuerpos de texto, labels, tablas y CTAs.</p>
+    <div class="tc-specimen" style="font-family:'DM Sans',sans-serif;">
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+      abcdefghijklmnopqrstuvwxyz · 0123456789<br>
+      Light 300 · Regular 400 · Medium 500 · Bold 700
+    </div>
+  </div>
+</div>
+
+<!-- Scale rows -->
+<div class="type-scale">
+  <div class="ts-box">
+    <div class="ts-role">Logotipo · ForumPHs</div>
+    <div class="ts-sample">
+      <div class="wm wm-md on-dark"><span class="f">Forum</span><span class="ph">PH</span><span class="s">s</span></div>
+    </div>
+    <div class="ts-meta">
+      "Forum" → EB Garamond 400<br>
+      "PH" → DM Sans 700 (mismo px)<br>
+      "s" → DM Sans 700 (mismo px)<br>
+      Forum=#fff · PH+s=Terra
+    </div>
+  </div>
+  <div class="ts-box">
+    <div class="ts-role">Titulares · EB Garamond</div>
+    <div class="ts-sample">
+      <div style="font-family:'EB Garamond',serif;font-size:26px;color:#fff;line-height:1.2;margin-bottom:5px;">PH Venezia Tower</div>
+      <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;color:rgba(255,255,255,0.35);">Informe de Gestión · 2026</div>
+    </div>
+    <div class="ts-meta">
+      28–52px · portadas y actas<br>
+      Itálica para subtítulos<br>
+      Color #fff sobre oscuro
+    </div>
+  </div>
+  <div class="ts-box">
+    <div class="ts-role">Display Especial · Cormorant</div>
+    <div class="ts-sample">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:300;letter-spacing:0.22em;color:rgba(255,255,255,0.28);margin-bottom:6px;">PROPUESTA DE PALETA · 2026</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;color:rgba(255,255,255,0.6);line-height:1.2;">PH Los Álamos</div>
+    </div>
+    <div class="ts-meta">
+      Eyebrows: 300 · 10–12px · tracking alto<br>
+      Display: 300–400 · 48px+<br>
+      Nombre del PH en portadas
+    </div>
+  </div>
+</div>
+<div class="type-scale" style="margin-bottom:0;margin-top:3px;">
+  <div class="ts-box">
+    <div class="ts-role">Subtítulos · DM Sans</div>
+    <div class="ts-sample">
+      <div style="font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:#fff;margin-bottom:5px;">Informe de Gestión</div>
+      <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,0.4);">PH Venezia Tower · Marzo 2026</div>
+    </div>
+    <div class="ts-meta">
+      DM Sans 600 · 14–18px<br>
+      Encabezados de sección<br>
+      Metadatos en 400 · 11–12px
+    </div>
+  </div>
+  <div class="ts-box">
+    <div class="ts-role">KPIs · Números Grandes</div>
+    <div class="ts-sample" style="display:flex;gap:22px;align-items:flex-end;">
+      <div style="text-align:center;">
+        <div style="font-family:'EB Garamond',serif;font-size:42px;color:var(--am);line-height:1;">7%</div>
+        <div style="font-size:8px;color:rgba(255,255,255,0.22);letter-spacing:0.1em;text-transform:uppercase;margin-top:2px;">Morosidad</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:'EB Garamond',serif;font-size:42px;color:var(--terra);line-height:1;">10</div>
+        <div style="font-size:8px;color:rgba(255,255,255,0.22);letter-spacing:0.1em;text-transform:uppercase;margin-top:2px;">Años</div>
+      </div>
+    </div>
+    <div class="ts-meta">
+      EB Garamond 400 · 32–48px<br>
+      Labels: DM Sans 400 · 9px<br>
+      Números en color Amatista/Terra
+    </div>
+  </div>
+  <div class="ts-box">
+    <div class="ts-role">Etiquetas · Cinzel</div>
+    <div class="ts-sample" style="display:flex;flex-direction:column;gap:8px;">
+      <div style="font-family:'Cinzel',serif;font-size:8px;letter-spacing:0.3em;color:rgba(255,255,255,0.25);">PALETA COMPLETA</div>
+      <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.22em;color:var(--am);">PRIMARIO INSTITUCIONAL</div>
+      <div style="font-family:'Cinzel',serif;font-size:8px;letter-spacing:0.26em;color:var(--terra);">ACENTO · TERRA</div>
+    </div>
+    <div class="ts-meta">
+      Cinzel 400–600 · 7.5–10px<br>
+      SOLO etiquetas y badges<br>
+      Siempre versalitas + tracking
+    </div>
+  </div>
+</div>
+
+<!-- Hierarchy summary -->
+<div class="cinzel-row">
+  <div style="flex-shrink:0;display:flex;flex-direction:column;gap:8px;">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:11px;font-weight:300;letter-spacing:0.22em;color:rgba(255,255,255,0.28);">Cormorant</div>
+    <div style="font-family:'EB Garamond',serif;font-size:18px;font-weight:400;color:rgba(255,255,255,0.45);">EB Garamond</div>
+    <div style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:400;color:rgba(255,255,255,0.4);">DM Sans</div>
+    <div style="font-family:'Cinzel',serif;font-size:8px;letter-spacing:0.26em;color:rgba(255,255,255,0.22);">CINZEL</div>
+  </div>
+  <div class="cinzel-desc">Las <strong>4 voces tipográficas del sistema</strong> tienen roles exclusivos y no se solapan. <strong>Cormorant</strong> → eyebrows, portadas especiales y nombre del PH en display grande. <strong>EB Garamond</strong> → logotipo "Forum", titulares y números KPI. <strong>DM Sans</strong> → logotipo "PHs", cuerpo, UI y datos. <strong>Cinzel</strong> → únicamente etiquetas de sección y badges. Cada voz tiene un registro de tamaño, peso y contexto propio.</div>
+</div>
+
+<!-- ── 4. EMAIL ── -->
+<div class="slbl">Email Corporativo</div>
+<div class="email-wrap">
+  <div class="e-chrome">
+    <div class="e-dot" style="background:#FF5F57;"></div>
+    <div class="e-dot" style="background:#FFBD2E;margin-left:4px;"></div>
+    <div class="e-dot" style="background:#28C840;margin-left:4px;"></div>
+    <div class="e-addr">ivette@forumphs.com</div>
+  </div>
+  <div class="e-window">
+    <div class="e-sidebar">
+      <div class="e-sb-hdr">FORUMPHS MAIL</div>
+      <div class="e-folder on">Bandeja de entrada</div>
+      <div class="e-folder">Enviados</div>
+      <div class="e-folder">Borradores</div>
+      <div class="e-folder">Contratos</div>
+      <div class="e-folder">Archivados</div>
+    </div>
+    <div class="e-body">
+      <div class="e-hdr">
+        <div class="e-from">
+          <div class="e-av">IF</div>
+          <div>
+            <div class="e-fn">Ivette Flores · ForumPHs</div>
+            <div class="e-fa">ivette@forumphs.com → juntadirectiva@phvenezia.com</div>
+          </div>
+        </div>
+        <div class="e-date">Hoy, 9:14 am</div>
+      </div>
+      <!-- header Carbon -->
+      <div class="e-top">
+        <div class="e-top-wm">
+          <div class="wm wm-md on-dark"><span class="f">Forum</span><span class="ph">PH</span><span class="s">s</span></div>
+        </div>
+        <div class="e-subj">Informe de Gestión · PH Venezia Tower · Marzo 2026</div>
+        <div class="e-pre">Resumen ejecutivo de actividad, métricas SLA y estado financiero del período.</div>
+      </div>
+      <div class="e-div"></div>
+      <div class="e-main">
+        <div class="e-saludo">Estimada Junta Directiva,</div>
+        <div class="e-txt">Adjuntamos el resumen ejecutivo del período correspondiente. Los indicadores clave del mes se presentan a continuación para su revisión y aprobación formal en la próxima sesión.</div>
+        <div class="e-kpis">
+          <div class="e-kpi"><div class="e-kpi-n">7%</div><div class="e-kpi-l">Morosidad</div></div>
+          <div class="e-kpi"><div class="e-kpi-n">99.8%</div><div class="e-kpi-l">SLA Cumplido</div></div>
+          <div class="e-kpi"><div class="e-kpi-n">3</div><div class="e-kpi-l">Resoluciones</div></div>
+        </div>
+        <div class="e-cta-row"><span class="e-cta">Ver Reporte Completo</span></div>
+      </div>
+      <!-- FIRMA sobre Tint -->
+      <div class="e-sig">
+        <div class="e-sig-inner">
+          <div class="e-sig-bar"></div>
+          <div>
+            <div class="e-sig-name">Ivette Flores</div>
+            <div class="e-sig-title">Abogada · General Manager · ForumPHs</div>
+            <!-- wordmark firma: Forum Amatista, PHs Terra -->
+            <div style="display:flex;align-items:baseline;margin-bottom:4px;">
+              <div class="wm wm-sm on-tint"><span class="f">Forum</span><span class="ph">PH</span><span class="s">s</span></div>
+              <span class="e-sig-sep">· Administración de Propiedad Horizontal · Panamá</span>
+            </div>
+            <div class="e-sig-contact">forumphs.com · ivette@forumphs.com · +507</div>
+          </div>
+        </div>
+      </div>
+      <div class="e-footer">
+        <div class="wm wm-xxs" style="opacity:0.35;">
+          <span class="f" style="color:var(--am-d);font-family:'EB Garamond',serif;">Forum</span>
+          <span class="ph" style="color:var(--terra);font-family:'DM Sans',sans-serif;font-weight:700;">PH</span>
+          <span class="s"  style="color:var(--terra);font-family:'DM Sans',sans-serif;font-weight:700;">s</span>
+        </div>
+        <div class="e-footer-txt">forumphs.com · Panamá · © 2026 ForumPHs</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── 5. RATIONALE ── -->
+<div class="slbl">Decisiones de Diseño</div>
+<div class="rat-grid">
+  <div class="rat-box">
+    <div class="rat-title">Cada Decisión Cromática y Tipográfica</div>
+    <div class="rat-item">
+      <div class="rat-ic">✦</div>
+      <div class="rat-t"><strong>Forum+PH al mismo tamaño.</strong> "F" y "PH" comparten la misma altura de caja alta. "s" queda a la misma altura que "orum". El logotipo tiene una sola línea de referencia, no una jerarquía interna.</div>
+    </div>
+    <div class="rat-item">
+      <div class="rat-ic">◈</div>
+      <div class="rat-t"><strong>Firma sobre Tint.</strong> "Ivette Flores" y "Forum" en Amatista #5C3472. Todo el texto de apoyo en Stone #6B6460 — neutral y profesional. Barra vertical y "PHs" en Terra — coherencia directa con el logotipo.</div>
+    </div>
+    <div class="rat-item">
+      <div class="rat-ic">◎</div>
+      <div class="rat-t"><strong>Cormorant Garamond como cuarta voz.</strong> La tipografía que identificaste en el preview. Se usa exclusivamente en eyebrows de alta distinción, nombres de PH en portadas a gran escala y citas textuales — nunca en cuerpo ni UI.</div>
+    </div>
+    <div class="rat-item">
+      <div class="rat-ic">⬡</div>
+      <div class="rat-t"><strong>4 voces, 4 roles únicos.</strong> Cormorant = ceremonia. EB Garamond = institución. DM Sans = tecnología. Cinzel = estructura. Ninguna invade el territorio de la otra. El sistema es coherente a cualquier escala.</div>
+    </div>
+  </div>
+  <div class="sw-tower">
+    <div class="sw-top">
+      <div class="sw-n">A</div>
+      <div><div class="sw-lbl">Amatista · Primario</div><div class="sw-h">#5C3472</div></div>
+    </div>
+    <div class="sw-shades">
+      <div class="sw-s" style="background:#3A1F4A;"><div class="sw-sl" style="color:rgba(255,255,255,0.4);">Deep</div><div class="sw-sh" style="color:rgba(255,255,255,0.28);">#3A1F4A</div></div>
+      <div class="sw-s" style="background:#EAD9F5;"><div class="sw-sl" style="color:rgba(92,52,114,0.45);">Tint · Firma</div><div class="sw-sh" style="color:rgba(92,52,114,0.35);">#EAD9F5</div></div>
+      <div class="sw-s" style="background:#C4622D;"><div class="sw-sl" style="color:rgba(255,255,255,0.45);">Terra · PHs</div><div class="sw-sh" style="color:rgba(255,255,255,0.3);">#C4622D</div></div>
+      <div class="sw-s" style="background:#1C2233;"><div class="sw-sl" style="color:rgba(255,255,255,0.3);">Carbon</div><div class="sw-sh" style="color:rgba(255,255,255,0.22);">#1C2233</div></div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /wrap -->
+</body>
+</html>
