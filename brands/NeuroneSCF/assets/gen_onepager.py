@@ -23,8 +23,10 @@ def b64(path):
 
 
 # ── load images ──────────────────────────────────────────────────────────────
+LOGOS = os.path.join(BRAND, "NeuroneSCF")
 print("Loading images…")
-logo_w     = b64(os.path.join(BRAND, "logo_neurone_white.png"))
+logo_w     = b64(os.path.join(LOGOS, "NSCF_Logo_WT_TC.png"))   # white+alpha, dark bg
+logo_cy    = b64(os.path.join(LOGOS, "NSCF_Logo_CY_TC.png"))   # color+alpha, light bg
 
 dk_tinte   = b64(os.path.join(DARK,  "NCOLOR_dark.png"))
 dk_shampoo = b64(os.path.join(ALPHA, "HUMIT_SH_1L_alpha.png"))
@@ -119,10 +121,18 @@ def pc_cell(src, name, price, note):
     )
 
 
-def logo_tag(h=40):
-    if logo_w:
-        return f'<img src="{logo_w}" style="height:{h}px;" alt="Neurone SCF">'
-    return '<span style="font-size:18px;font-weight:700;color:#F8FAFB;letter-spacing:2px;">NEURONE SCF</span>'
+def logo_tag(h=40, use_color=False):
+    src = (logo_cy if use_color else logo_w) or logo_cy or logo_w
+    if src:
+        return f'<img src="{src}" style="height:{h}px;" alt="Neurone South &amp; Central FL">'
+    return '<span style="font-size:14px;font-weight:700;color:#F8FAFB;">NEURONE<br><span style="font-size:7px;letter-spacing:3px;color:#B8892A;">SOUTH &amp; CENTRAL FL</span></span>'
+
+
+def logo_ftr(h=28, use_color=False):
+    src = (logo_cy if use_color else logo_w) or logo_cy or logo_w
+    if src:
+        return f'<img src="{src}" style="height:{h}px;opacity:.9;" alt="Neurone South &amp; Central FL">'
+    return ''
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -269,7 +279,7 @@ def footer_html():
 </div>
 
 <div class="ftr">
-  <div class="fb">Neurone SCF</div>
+  <div class="fb">{logo_ftr()}</div>
   <div class="fc">
     <span>WhatsApp · Patricia / +1 (305) 748-9101</span>
     <span>Email / hello-pro@neuronescflorida.com</span>

@@ -25,8 +25,11 @@ def b64(path):
     return f"data:{mime};base64,{data}"
 
 
+LOGOS    = BRAND / "NeuroneSCF"
+
 print("── Loading images ──────────────────────────────────────────")
-logo_w   = b64(BRAND / "logo_neurone_white.png")
+logo_w   = b64(LOGOS / "NSCF_Logo_WT_TC.png")   # white + alpha → dark backgrounds
+logo_cy  = b64(LOGOS / "NSCF_Logo_CY_TC.png")   # color + alpha → light backgrounds
 tinte    = b64(PROD  / "NCOLOR.png")
 shampoo  = b64(ALPHA / "HUMIT_SH_1L_alpha.png")
 mask     = b64(ALPHA / "humitmask_400_web_alpha.png")
@@ -431,11 +434,21 @@ def kitd():
 
 
 # ── FULL HTML ─────────────────────────────────────────────────────────────────
-logo_img = (
-    f'<img src="{logo_w}" style="height:42px;" alt="Neurone SCF">'
+# Header: white logo on dark bg
+logo_hdr = (
+    f'<img src="{logo_w}" style="height:44px;" alt="Neurone South &amp; Central FL">'
     if logo_w else
-    '<span style="font-size:20px;font-weight:700;letter-spacing:2px;'
-    'color:#F8FAFB;">NEURONE SCF</span>'
+    f'<img src="{logo_cy}" style="height:44px;filter:brightness(10);" alt="Neurone South &amp; Central FL">'
+    if logo_cy else
+    '<span style="font-size:16px;font-weight:700;letter-spacing:1px;color:#F8FAFB;">NEURONE<br>'
+    '<span style="font-size:9px;color:#B8892A;letter-spacing:3px;">SOUTH &amp; CENTRAL FL</span></span>'
+)
+# Footer: white logo, smaller
+logo_ftr = (
+    f'<img src="{logo_w}" style="height:30px;opacity:.9;" alt="Neurone South &amp; Central FL">'
+    if logo_w else
+    f'<img src="{logo_cy}" style="height:30px;filter:brightness(10);opacity:.9;" alt="">'
+    if logo_cy else ''
 )
 
 html = f"""<!DOCTYPE html>
@@ -449,7 +462,7 @@ html = f"""<!DOCTYPE html>
 <!-- HEADER -->
 <div class="hdr">
   <div class="hl">
-    {logo_img}
+    {logo_hdr}
   </div>
   <div class="hr">
     <span class="bpro">Professional Channel</span>
@@ -496,7 +509,7 @@ html = f"""<!DOCTYPE html>
 
 <!-- FOOTER -->
 <div class="ftr">
-  <div class="fb">Neurone SCF</div>
+  <div class="fb">{logo_ftr}</div>
   <div class="fc">
     <span>WhatsApp · Patricia / +1 (305) 748-9101</span>
     <span>hello-pro@neuronescflorida.com</span>
