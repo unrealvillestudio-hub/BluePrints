@@ -434,20 +434,15 @@ def kitd():
 
 
 # ── FULL HTML ─────────────────────────────────────────────────────────────────
-# Header: white logo on dark bg
+# Header + Footer: color logo (CY = cyan/color, transparent bg)
 logo_hdr = (
-    f'<img src="{logo_w}" style="height:44px;" alt="Neurone South &amp; Central FL">'
-    if logo_w else
-    f'<img src="{logo_cy}" style="height:44px;filter:brightness(10);" alt="Neurone South &amp; Central FL">'
+    f'<img src="{logo_cy}" style="height:44px;" alt="Neurone South &amp; Central FL">'
     if logo_cy else
     '<span style="font-size:16px;font-weight:700;letter-spacing:1px;color:#F8FAFB;">NEURONE<br>'
     '<span style="font-size:9px;color:#B8892A;letter-spacing:3px;">SOUTH &amp; CENTRAL FL</span></span>'
 )
-# Footer: white logo, smaller
 logo_ftr = (
-    f'<img src="{logo_w}" style="height:30px;opacity:.9;" alt="Neurone South &amp; Central FL">'
-    if logo_w else
-    f'<img src="{logo_cy}" style="height:30px;filter:brightness(10);opacity:.9;" alt="">'
+    f'<img src="{logo_cy}" style="height:30px;" alt="Neurone South &amp; Central FL">'
     if logo_cy else ''
 )
 

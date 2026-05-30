@@ -121,17 +121,17 @@ def pc_cell(src, name, price, note):
     )
 
 
-def logo_tag(h=40, use_color=False):
-    src = (logo_cy if use_color else logo_w) or logo_cy or logo_w
-    if src:
-        return f'<img src="{src}" style="height:{h}px;" alt="Neurone South &amp; Central FL">'
+def logo_tag(h=40):
+    """Always use the color (CY) logo — NSCF_Logo_CY_TC.png"""
+    if logo_cy:
+        return f'<img src="{logo_cy}" style="height:{h}px;" alt="Neurone South &amp; Central FL">'
     return '<span style="font-size:14px;font-weight:700;color:#F8FAFB;">NEURONE<br><span style="font-size:7px;letter-spacing:3px;color:#B8892A;">SOUTH &amp; CENTRAL FL</span></span>'
 
 
-def logo_ftr(h=28, use_color=False):
-    src = (logo_cy if use_color else logo_w) or logo_cy or logo_w
-    if src:
-        return f'<img src="{src}" style="height:{h}px;opacity:.9;" alt="Neurone South &amp; Central FL">'
+def logo_ftr(h=28):
+    """Always use the color (CY) logo — NSCF_Logo_CY_TC.png"""
+    if logo_cy:
+        return f'<img src="{logo_cy}" style="height:{h}px;" alt="Neurone South &amp; Central FL">'
     return ''
 
 
