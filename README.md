@@ -1,6 +1,6 @@
-# BluePrints — Unreal>ille Studio
+# BluePrints — Unrealville Studio
 
-Repositorio de custodia de todos los Blueprints y assets del ecosistema Unreal>ille Studio.
+Repositorio de custodia de todos los Blueprints y assets del ecosistema Unrealville Studio.
 
 **Contexto completo del ecosistema:** [`CoreProject/CONTEXT.md`](https://github.com/unrealvillestudio-hub/CoreProject/blob/main/CONTEXT.md)
 
@@ -72,7 +72,7 @@ assets/
 
 - BP_BRAND para Vizos Cosmetics
 - BP_BRAND para D7Herbal
-- Logos PNG en curvas + alpha para Unreal>ille Studio (Sam pendiente)
+- Logos PNG en curvas + alpha para Unrealville Studio (Sam pendiente)
 
 ---
 

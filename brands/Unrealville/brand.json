@@ -6,14 +6,14 @@
     "type": "studio",
     "version": "1.2",
     "last_updated": "2026-04-10",
-    "managed_by": "Claude / Unreal>ille Context System",
+    "managed_by": "Claude / Unrealville Context System",
     "repo_path": "brands/Unrealville/"
   },
 
   "identity": {
-    "name": "Unreal>ille Studio",
-    "name_display": "UNREAL>ILLE STUDIO",
-    "name_logotype": "UNREAL>ILLE",
+    "name": "Unrealville Studio",
+    "name_display": ">UNREALVILLE STUDIO",
+    "name_logotype": ">UNREALVILLE",
     "name_studio_suffix": "STUDIO",
     "chevron": ">",
     "tagline": "Not for everyone.",
@@ -48,7 +48,7 @@
       }
     },
     "carbon": { "hex": "#0F0F0F", "role": "Primary background. Footer background always." },
-    "graphite": { "hex": "#1A1A1A", "role": "Secondary background. STUDIO suffix color." },
+    "graphite": { "hex": "#1A1A1A", "role": "Secondary background / surface elevated. NUNCA para STUDIO (usa chalk 0.32)." },
     "chalk": { "hex": "#F2F0EC", "role": "Primary text on dark. Light logo fill." },
     "chalk_42": { "hex": "rgba(242,240,236,0.42)", "role": "Secondary/muted text." },
     "chalk_06": { "hex": "rgba(242,240,236,0.06)", "role": "Subtle borders." },
@@ -63,14 +63,14 @@
   },
 
   "logotype": {
-    "markup": "<span class=\"lt-logotype\"><span class=\"lt-un\">UNREAL</span><span class=\"lt-chevron\">></span><span class=\"lt-ille\">ILLE</span><span class=\"lt-studio\">STUDIO</span></span>",
+    "markup": "<span class=\"lt-logotype\"><span class=\"lt-chevron\">></span><span class=\"lt-un\">UNREALVILLE</span><span class=\"lt-studio\">STUDIO</span></span>",
     "chevron_color": "#00FFD1",
     "chevron_animation": "prompt-blink 1.1s step-end infinite",
     "chevron_transform": "scaleY(1.45) scaleX(0.72)",
     "studio_color": "rgba(242,240,236,0.32)",
-    "studio_rule": "Always visually dimmer than UNREAL>ILLE — 0.32 opacity max.",
+    "studio_rule": "Always visually dimmer than >UNREALVILLE — 0.32 opacity max.",
     "deprecated_animations": ["chevron-blink", "chev-listen"],
-    "css_complete": "@keyframes prompt-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }\n.lt-logotype { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.04em; line-height: 1; white-space: nowrap; }\n.lt-un, .lt-ille { color: #F2F0EC; }\n.lt-chevron { color: #00FFD1; animation: prompt-blink 1.1s step-end infinite; display: inline-block; transform: scaleY(1.45) scaleX(0.72); transform-origin: center; letter-spacing: 0; margin: 0 -0.01em; }\n.lt-studio { color: rgba(242,240,236,0.32); font-size: 0.72em; letter-spacing: 0.14em; margin-left: 0.18em; }\n.lt-logotype.size-nav { font-size: 20px; }\n.lt-logotype.size-footer { font-size: 28px; }\n.lt-logotype.size-inline { font-size: 16px; }"
+    "css_complete": "@keyframes prompt-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }\n.lt-logotype { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.04em; line-height: 1; white-space: nowrap; }\n.lt-un { color: #F2F0EC; }\n.lt-chevron { color: #00FFD1; animation: prompt-blink 1.1s step-end infinite; display: inline-block; transform: scaleY(1.45) scaleX(0.72); transform-origin: center; letter-spacing: 0; margin-right: 0.02em; }\n.lt-studio { color: rgba(242,240,236,0.32); font-size: 0.72em; letter-spacing: 0.14em; margin-left: 0.18em; }\n.lt-logotype.size-nav { font-size: 20px; }\n.lt-logotype.size-footer { font-size: 28px; }\n.lt-logotype.size-inline { font-size: 16px; }"
   },
 
   "footer": {
@@ -85,7 +85,7 @@
       "golden_rule": "In any deliverable FOR a client: Col 1 = client logo. Always. No exceptions."
     },
     "col_2": { "format": "© [year] [Brand] — [Document Title] · [type] · [distribution]", "alignment": "center" },
-    "col_3": { "text": "Designed & Developed by Unreal>ille Studio", "language": "Always in English.", "font": "Bebas Neue" },
+    "col_3": { "text": "Designed & Developed by Unrealville Studio", "language": "Always in English.", "font": "Bebas Neue" },
     "address_line": "unrealvillestudio.com · North Miami, FL 33181"
   },
 
