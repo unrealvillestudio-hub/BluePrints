@@ -216,14 +216,18 @@
       "file": "lucien-sael-logo-dark.svg",
       "path": "brands/LucienSael/assets/lucien-sael-logo-dark.svg",
       "spec": "SVG 320×96 — Lucien en #EDE8DF recto, Sael en #D4622A itálica, Cormorant Garamond 300, letter-spacing .12em",
-      "context": "fondos oscuros — uso primario"
+      "context": "fondos oscuros — uso primario",
+      "format_note": "SVG de contornos (path). Sin texto vivo, sin @import, sin dependencia de fuente."
     },
     "logo_light": {
       "file": "lucien-sael-logo-light.svg",
       "path": "brands/LucienSael/assets/lucien-sael-logo-light.svg",
       "spec": "SVG 320×96 — variante para fondo claro: Lucien en carbon, Sael en ember",
-      "context": "fondos claros — uso poco frecuente"
+      "context": "fondos claros — uso poco frecuente",
+      "format_note": "SVG de contornos (path). Sin texto vivo, sin @import, sin dependencia de fuente."
     },
+    "_render_rule": "CONTORNOS, NO TEXTO VIVO. Los dos SVG están vectorizados: el trazado de cada letra es un path, y el archivo no referencia ninguna tipografía. Quien los regenere con texto vivo y la familia Cormorant Garamond estará ROMPIENDO el activo, no mejorándolo: un SVG que depende de una webfont no la carga cuando se usa como img ni como background-image, y la marca sale en la fuente de reserva (Georgia). El documento canónico de v1.0 sí trae los SVG con texto vivo y @import de Google Fonts adentro — eso sirve para ilustrar dentro del propio documento, no para el activo distribuible. Es el mismo defecto de @import que se corrigió en el tema de NeuroneSCF, incrustado esta vez en el activo de marca.",
+    "_derivation": "Vectorizados desde la geometría del documento canónico, no rediseñados: font-size 44, letter-spacing .12em, x=2, líneas base 39 y 80 sobre viewBox 0 0 320 96, con Cormorant Garamond Light 300 recta para Lucien e itálica para Sael. El trazado ocupa 149 de los 320 del viewBox, así que el espacio de respiro de clear_space se mantiene.",
     "_pending": "Falta favicon. UNRLVL usa un SVG del chevron embebido como data URI en cada salida HTML; Lucien no tiene equivalente definido."
   },
   "repo": {
