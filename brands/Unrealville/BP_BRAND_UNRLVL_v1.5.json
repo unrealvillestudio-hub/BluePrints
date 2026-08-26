@@ -1,0 +1,427 @@
+{
+  "id": "brand_unrlvl_studio",
+  "schema_version": "BP_BRAND_1.3",
+  "brand_id": "UnrealvilleStudio",
+  "brand_slug": "Unrealville",
+  "brandId_aliases": {
+    "_note": "Sinónimos del mismo brand_id canónico, NO fuentes en conflicto. Ninguno se migra y ninguno se toca por barrido de grafía.",
+    "canonical": "UnrealvilleStudio",
+    "slug": "Unrealville",
+    "shorthand": "UNRLVL",
+    "legacy_html": "unrlvlStudio",
+    "record_id": "brand_unrlvl_studio"
+  },
+  "displayName": ">UNREALVILLE studio",
+  "prose_form": "Unrealville Studio",
+  "tagline": "Not for everyone.",
+  "created": "2026-03-22",
+  "updated": "2026-08-26",
+  "version": "1.5",
+  "status": "active",
+  "changelog_v1_5": {
+    "date": "2026-08-26",
+    "decided_by": "Sam",
+    "changes": [
+      "COHERENCIA DE LA FORMA: los tres campos que todavía declaraban el sufijo en versalitas pasan a minúscula — logotype.studio_suffix.text, footer.col_3.text y logotype.allowed_variants.full_lockup. En v1.4 la minúscula había entrado solo en displayName, correct_form y markup, de modo que el archivo se contradecía a sí mismo: un implementador podía leer la forma vigente y la derogada en el mismo documento. footer.col_3.text es el más caro de los tres, porque es exactamente la firma que se replica en los sitios del ecosistema.",
+      "MOVIMIENTO REDUCIDO: css_complete suma @media (prefers-reduced-motion: reduce) con animation: none para .lt-chevron. La regla va DENTRO del bloque y no junto a él, porque el campo ordena copiarlo exactamente: un canon que manda copiar un bloque incompleto fabrica el mismo defecto en cada implementación futura."
+    ],
+    "unchanged": "Paleta, tipografía, chevron, tamaños, reglas de color y la estructura del markup quedan como en v1.4. changelog_v1_3 y source_of_truth.divergence_history no se tocan: son registro histórico y describen decisiones pasadas, no la forma vigente. Los STUDIO de color_palette (graphite.role, chalk_32.role y rules) tampoco: nombran el rótulo de color, no la grafía de la marca. logotype.forbidden_forms conserva sus dos menciones porque describen formas prohibidas, no la correcta.",
+    "supersedes": "1.4"
+  },
+  "changelog_v1_4": {
+    "date": "2026-08-26",
+    "decided_by": "Sam",
+    "changes": [
+      "GRAFÍA: el sufijo pasa a minúscula — >UNREALVILLE studio. La forma STUDIO en versalitas queda DEROGADA. El sufijo es un descriptor, no una segunda mitad del nombre: en mayúsculas compite con >UNREALVILLE por el mismo peso visual y el bloque se lee como dos palabras de igual jerarquía en vez de un nombre con su descriptor.",
+      "ALTURA: studio se alinea a la LÍNEA BASE de >UNREALVILLE. No es superíndice, no es segunda línea. La regla ya existía en v1.3 (`vertical-align: baseline` en `css_complete`); v1.4 no la cambia, la confirma como parte de la forma canónica.",
+      "MARKUP: `<span class=\"lt-studio\">studio</span>` — el texto del span cambia de caja. Ni la clase ni la estructura del logotipo se tocan: una hoja de estilos que ya implementaba v1.3 sigue siendo válida."
+    ],
+    "unchanged": "Paleta, tipografía, chevron, tamaños y reglas de color quedan exactamente como en v1.3. El único cambio de forma es la caja del sufijo.",
+    "supersedes": "1.3"
+  },
+  "changelog_v1_3": {
+    "date": "2026-08-07",
+    "decided_by": "Sam",
+    "changes": [
+      "GRAFÍA: el chevron pasa al frente — >UNREALVILLE. La forma anterior UNREAL>ILLE queda DEROGADA: el chevron ocupaba el lugar de la v, de modo que el nombre escrito no contenía su propia pronunciación y se leía sistemáticamente como error de tecleo.",
+      "HQ: North Miami, FL 33181 (co-ubicado con Vizos Cosmetics). Resuelve la contradicción con el HTML v1.2, que decía Hollywood, FL 33021.",
+      "TAGLINE: 'Not for everyone.' Resuelve la contradicción con el JSON v1.2, que decía 'Built different.'",
+      "STUDIO: chalk 32% rgba(242,240,236,0.32) confirmado como único valor. El HTML v1.2 usaba graphite #1A1A1A, que es MÁS OSCURO que el fondo carbon #0F0F0F y por eso no contrasta.",
+      "IDENTIFICADORES: brand_id canónico UnrealvilleStudio, alineado con el resto del ecosistema (NeuroneSCF, ForumPHs). UNRLVL, unrlvlStudio y brand_unrlvl_studio quedan como sinónimos declarados.",
+      "REGLA MARKDOWN nueva: el chevron abre blockquote al inicio de renglón.",
+      "FUENTE ÚNICA: este JSON manda. El HTML se regenera desde aquí, no se edita en paralelo. Motivo: v1.2 JSON y v1.2 HTML divergieron en cuatro datos duros por edición manual paralela."
+    ]
+  },
+  "source_of_truth": {
+    "_rule": "Este JSON es la FUENTE. Los HTML (es/en) son RENDER y se regeneran desde aquí. Nunca se editan en paralelo.",
+    "precedent": "Mismo principio que ecosystem.json → ecosystem.md en unrlvl-context.",
+    "divergence_history": "v1.2 JSON y v1.2 HTML divergieron en HQ, tagline, color de STUDIO y schema_version por edición manual paralela. Corregido en v1.3."
+  },
+  "brand_identity": {
+    "type": "agency_inhouse",
+    "category": "Brand Intelligence Infrastructure",
+    "hq": "12951 Biscayne Blvd · North Miami, FL 33181",
+    "hq_note": "Co-located with Vizos Cosmetics",
+    "territory": "North Miami, FL (operated remotely from Spain/Panama)",
+    "operations": "Florida · LATAM · España",
+    "language_primary": "es",
+    "language_secondary": "en",
+    "model": [
+      "B2B_inhouse"
+    ],
+    "audience": "Internal — Sam + PO + operators",
+    "public_facing": false,
+    "definition": "Unrealville Studio is a Brand Intelligence Infrastructure — a proprietary intelligence and production ecosystem built to transform a brand's DNA into real competitive advantage and autonomous operation.",
+    "core_differentiator": "Seven intelligence layers, one integrated ecosystem, your brand's DNA at the center. What agencies produce in weeks, Unrealville generates in hours — with industrial consistency and without losing the brand's soul.",
+    "never": "Calling Unrealville Studio an 'agency' in any output."
+  },
+  "intelligence_layers": {
+    "_note": "Migrado desde el HTML v1.2 §01, donde vivía sin equivalente en JSON.",
+    "01": {
+      "name": "BRAND INTELLIGENCE",
+      "scope": "DNA, Blueprint, voice, identity and brand consistency.",
+      "stack": [
+        "Blueprint",
+        "CopyLab",
+        "Onboarding"
+      ]
+    },
+    "02": {
+      "name": "MARKETING INTELLIGENCE",
+      "scope": "Copy, content, campaigns, channels and active agents.",
+      "stack": [
+        "CopyLab",
+        "SocialLab",
+        "AgentLab"
+      ]
+    },
+    "03": {
+      "name": "BUSINESS INTELLIGENCE",
+      "scope": "Market signals, data, analytics and continuous feedback loops.",
+      "stack": [
+        "SignalLab",
+        "Supabase",
+        "OPS"
+      ]
+    },
+    "04": {
+      "name": "MEDIA INTELLIGENCE",
+      "scope": "Visual, audiovisual and voice production with brand DNA.",
+      "stack": [
+        "ImageLab",
+        "VideoLab",
+        "VoiceLab"
+      ]
+    },
+    "05": {
+      "name": "FINANCE INTELLIGENCE",
+      "scope": "Pricing, campaign performance and measurable ROI per brand.",
+      "stack": [
+        "OPS",
+        "Reporting",
+        "Metrics"
+      ]
+    },
+    "06": {
+      "name": "TECHNOLOGY INFRA",
+      "scope": "Proprietary labs, APIs, automation and ecosystem architecture.",
+      "stack": [
+        "Vercel",
+        "Supabase",
+        "GitHub"
+      ]
+    },
+    "07": {
+      "name": "AI INTELLIGENCE",
+      "scope": "Model selection, prompt engineering, orchestration and agent deployment.",
+      "stack": [
+        "Claude",
+        "HeyGen",
+        "Kling",
+        "APIs"
+      ],
+      "engine_note": "Layer 07 is not an add-on service: it is the operating system that makes the other six possible. Every lab, every agent, every ecosystem output runs on AI architecture that is designed, not just adopted."
+    }
+  },
+  "logotype": {
+    "format": "css_pure",
+    "font_family": "Bebas Neue",
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap",
+    "correct_form": ">UNREALVILLE studio",
+    "markup": "<span class=\"lt-logotype\"><span class=\"lt-chevron\">></span><span class=\"lt-un\">UNREALVILLE</span><span class=\"lt-studio\">studio</span></span>",
+    "derogated_forms": {
+      "_since": "2026-08-07 (v1.3)",
+      "forms": [
+        "UNREAL>ILLE",
+        "Unreal>ille",
+        "Unreal>ille Studio"
+      ],
+      "reason": "El chevron ocupaba el lugar de la v. El nombre escrito no contenía su propia pronunciación y se leía como error de tecleo — incluso por agentes del propio ecosistema.",
+      "status": "DEROGADAS — forma histórica únicamente. No se usan en ningún output nuevo."
+    },
+    "forbidden_forms": [
+      "UnrealVille",
+      "Unreal Ville",
+      "UNREALVILLE sin chevron en logotipo",
+      ">UNREALVILLE_STUDIO (el underscore lo convierte en identificador, no en marca)",
+      ">unrealville_studio",
+      "\">\" sin parpadeo",
+      "STUDIO en chalk pleno, cyan o graphite"
+    ],
+    "allowed_variants": {
+      "full_lockup": ">UNREALVILLE studio — logotipo, header, footer, firma",
+      "prose": "Unrealville Studio — mixedcase en prosa, SIN chevron",
+      "urls_handles": "unrealvillestudio.com — sin chevron, solo URLs y handles"
+    },
+    "chevron": {
+      "character": ">",
+      "position": "leading",
+      "position_rule": "El chevron ENCABEZA el nombre. Es el prompt que apunta a la marca — nunca intercalado. El nombre lleva su propia v: UNREALVILLE.",
+      "color": "#00FFD1",
+      "class": "lt-chevron",
+      "blink": true,
+      "blink_rule": "ALWAYS blinking in every context — no exceptions. Not on hover, not on active — permanently blinking.",
+      "animation_name": "prompt-blink",
+      "animation_method": "CSS keyframes (HTML/CSS context) + SMIL animate (SVG favicon)",
+      "css_keyframes": "@keyframes prompt-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }",
+      "css_class_rule": ".lt-chevron { color: #00FFD1; animation: prompt-blink 1.1s step-end infinite; display: inline-block; transform: scaleY(1.45) scaleX(0.72); transform-origin: center; letter-spacing: 0; margin-right: 0.02em; }",
+      "transform": "scaleY(1.45) scaleX(0.72)",
+      "transform_origin": "center",
+      "deprecated_names": [
+        "chevron-blink",
+        "chev-listen"
+      ]
+    },
+    "markdown_rule": {
+      "_critical": "El ecosistema completo de context files es Markdown.",
+      "problem": "\">\" abre sintaxis de blockquote al inicio de renglón.",
+      "rule": "Escribir la marca INLINE dentro de la línea.",
+      "escape": "Si por composición debe abrir renglón: \\>UNREALVILLE",
+      "backslash_warning": "El backslash es escape DE ARCHIVO, NUNCA parte del nombre. Jamás aparece en superficies renderizadas: HTML, PDF, imagen, social. Un agente que vea \\> en un context file NO debe interpretarlo como grafía canónica."
+    },
+    "studio_suffix": {
+      "text": "studio",
+      "class": "lt-studio",
+      "color": "rgba(242,240,236,0.32)",
+      "color_rule": "Chalk translúcido al 32%. NUNCA graphite #1A1A1A: es más oscuro que el fondo carbon #0F0F0F y no contrasta.",
+      "rule": "MUST be visually much dimmer than >UNREALVILLE — never same weight or color. 0.32 opacity max.",
+      "font_size": "0.72em of logotype wrapper",
+      "letter_spacing": "0.14em",
+      "margin_left": "0.18em",
+      "vertical_align": "baseline",
+      "baseline_rule": "Alineado a la línea base de UNREALVILLE, siempre más pequeño. No superíndice, no segunda línea."
+    },
+    "css_complete": "\n/* ── UNRLVL Logotype v1.5 — chevron leading, studio en minúscula, movimiento reducido — copy this block exactly ── */\n@keyframes prompt-blink {\n  0%, 49% { opacity: 1; }\n  50%, 100% { opacity: 0; }\n}\n.lt-logotype {\n  font-family: 'Bebas Neue', sans-serif;\n  letter-spacing: 0.04em;\n  line-height: 1;\n  white-space: nowrap;\n}\n.lt-un {\n  color: #F2F0EC;\n}\n.lt-chevron {\n  color: #00FFD1;\n  animation: prompt-blink 1.1s step-end infinite;\n  display: inline-block;\n  transform: scaleY(1.45) scaleX(0.72);\n  transform-origin: center;\n  letter-spacing: 0;\n  margin-right: 0.02em;\n}\n.lt-studio {\n  color: rgba(242,240,236,0.32);\n  font-size: 0.72em;\n  letter-spacing: 0.14em;\n  margin-left: 0.18em;\n  vertical-align: baseline;\n}\n/* Sizes */\n.lt-logotype.size-nav    { font-size: 20px; }\n.lt-logotype.size-footer { font-size: 28px; }\n.lt-logotype.size-inline { font-size: 16px; }\n/* Movimiento reducido: el chevron deja de parpadear para quien lo pidió a nivel de\n   sistema. Va DENTRO de este bloque a propósito — el campo ordena copiarlo tal cual,\n   así que una regla que viviera fuera se omitiría en cada implementación. */\n@media (prefers-reduced-motion: reduce) {\n  .lt-chevron { animation: none; }\n}\n"
+  },
+  "color_palette": {
+    "_system": "VOID SYSTEM",
+    "primary": {
+      "void": {
+        "hex": "#080808",
+        "role": "page background"
+      },
+      "carbon": {
+        "hex": "#0F0F0F",
+        "role": "surface default"
+      },
+      "graphite": {
+        "hex": "#1A1A1A",
+        "role": "surface elevated — NOT for STUDIO text"
+      }
+    },
+    "text": {
+      "chalk": {
+        "hex": "#F2F0EC",
+        "role": "primary text"
+      },
+      "chalk_72": {
+        "rgba": "rgba(242,240,236,0.72)",
+        "role": "secondary text"
+      },
+      "chalk_42": {
+        "rgba": "rgba(242,240,236,0.42)",
+        "role": "muted"
+      },
+      "chalk_32": {
+        "rgba": "rgba(242,240,236,0.32)",
+        "role": "STUDIO label — exclusive"
+      },
+      "chalk_12": {
+        "rgba": "rgba(242,240,236,0.12)",
+        "role": "borders light"
+      },
+      "chalk_06": {
+        "rgba": "rgba(242,240,236,0.06)",
+        "role": "borders subtle / nav separator"
+      }
+    },
+    "accent": {
+      "cyan": {
+        "hex": "#00FFD1",
+        "role": "sole accent — chevron, footer border, ICR text, tags, highlights"
+      },
+      "cyan_20": {
+        "rgba": "rgba(0,255,209,0.20)",
+        "role": "hover states, badge borders"
+      },
+      "cyan_08": {
+        "rgba": "rgba(0,255,209,0.08)",
+        "role": "badge backgrounds, subtle fills"
+      }
+    },
+    "rules": [
+      "Cyan #00FFD1 is the SOLE accent.",
+      "Never use cyan as a dominant background or in long body text.",
+      "STUDIO uses chalk_32 exclusively — never graphite, never full chalk, never cyan."
+    ]
+  },
+  "typography": {
+    "display": {
+      "family": "Bebas Neue",
+      "source": "Google Fonts",
+      "usage": "Logotype, section headers, hero titles"
+    },
+    "mono": {
+      "family": "Space Mono",
+      "weights": [
+        "400",
+        "700"
+      ],
+      "usage": "Labels, metadata, tags, badges, code, nav metadata, footer credits"
+    },
+    "body": {
+      "family": "Libre Baskerville",
+      "weights": [
+        "400 regular",
+        "400 italic"
+      ],
+      "usage": "Long-form body copy, editorial text"
+    },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap"
+  },
+  "footer": {
+    "version": "1.3",
+    "rule": "Standard footer applies to ALL outputs — own and client, internal and external. Signature certifying the Industrial Consistency Standard.",
+    "border_top": "2px solid #00FFD1 — always, no exceptions.",
+    "background": "#0F0F0F — independent of document background.",
+    "grid": "3 columns",
+    "col_1": {
+      "label": "Client Logo / Own Logo",
+      "rule_own_outputs": "Unrealville logotype (.lt-logotype size-footer) with blinking chevron.",
+      "rule_client_outputs": "CLIENT logo + sub-descriptor — NEVER Unrealville logo in this slot.",
+      "chevron_warning": "El chevron es NUESTRO, no del cliente. Nunca se aplica al logo del cliente ni a su placeholder.",
+      "golden_rule": "In any deliverable generated FOR a client (brand book, deck, guide, report, proposal), Col 1 = client logo. Always. No exceptions."
+    },
+    "col_2": {
+      "label": "Rights",
+      "format": "© [year] [Brand] — [Document Title] · [type] · [distribution]",
+      "alignment": "center"
+    },
+    "col_3": {
+      "label": "Signature",
+      "text": "Designed & Developed by >UNREALVILLE studio",
+      "language": "Always in English — invariable.",
+      "font": "Bebas Neue",
+      "chevron": "Permanent blinking in signature.",
+      "studio_treatment": "Bebas Neue · rgba(242,240,236,0.32) · baseline-aligned · smaller than the main logotype."
+    },
+    "address_line": "unrealvillestudio.com · North Miami, FL 33181"
+  },
+  "document_composition": {
+    "standard_html_doc": {
+      "nav": {
+        "position": "top",
+        "left": "logotype (font-size 20px — .lt-logotype.size-nav)",
+        "right": "document title + metadata in Space Mono",
+        "border": "1px solid chalk_06",
+        "bg": "rgba(8,8,8,0.96)"
+      },
+      "footer": {
+        "position": "bottom",
+        "left": "logotype large (.lt-logotype.size-footer 28px) + ICR badge below",
+        "right": "credits block in Space Mono uppercase chalk_42 with cyan highlight",
+        "border_top": "2px solid #00FFD1"
+      }
+    },
+    "icr_badge": {
+      "markup": "<span class=\"icr-badge\"><span class=\"icr-dot\"></span>ICR Standard Active</span>",
+      "description": "Animated pulse dot + Space Mono label. Applied to all ICR-compliant document footers.",
+      "rule": "MANDATORY in footer of every document output — no exceptions.",
+      "placement": "Footer — always. Center or alongside footer credits."
+    }
+  },
+  "icr": {
+    "_name": "INDUSTRIAL CONSISTENCY READY",
+    "_type": "QA LAYER · AUTOMATED · PRE-GENERATION",
+    "definition": "Automated verification process that runs BEFORE any output is generated. Validates that content meets the parameters of brand, tone, format and standard defined for each context — using the Blueprint as source of truth and the brand's DNA as filter.",
+    "not": "Not an editorial stamp. Not a decorative label. It is an active quality control layer that the ecosystem runs on every output, of every brand, on every channel. No exceptions.",
+    "stages": [
+      "BRAND DNA · VERIFIED",
+      "PARAMETERS · CHECKED",
+      "OUTPUT · CLEARED"
+    ],
+    "usage_rule": "Independent editorial module from the standard footer. Activate on covers of strategic documents."
+  },
+  "assets": {
+    "path_base": "brands/Unrealville/assets/",
+    "_v1_3_note": "Los SVG y el PNG contienen la grafía anterior UNREAL>ILLE y deben regenerarse con el chevron al frente. Pendiente al 2026-08-07.",
+    "favicon": {
+      "file": "UNRLVL_Favicon.svg",
+      "path": "brands/Unrealville/assets/UNRLVL_Favicon.svg",
+      "status": "active — chevron solo, no requiere regeneración por el cambio de grafía",
+      "spec": "SVG — chevron > in #00FFD1, transparent background, prompt-blink 1.1s step-end",
+      "animation": "prompt-blink 1.1s step-end infinite (CSS) + SMIL for favicon context",
+      "embed_method": "base64 data URI — embed in <head> of EVERY HTML output",
+      "rule": "REQUIRED in every HTML document output — no exceptions"
+    },
+    "logo_dark": {
+      "file": "UNRLVL_Logo_drk.svg",
+      "path": "brands/Unrealville/assets/UNRLVL_Logo_drk.svg",
+      "bg": "transparent",
+      "text_fill": "#1A1A1A",
+      "use_on": "light backgrounds",
+      "status": "PENDIENTE REGENERACIÓN v1.3 — contiene la grafía derogada"
+    },
+    "logo_light": {
+      "file": "UNRLVL_Logo_lght.svg",
+      "path": "brands/Unrealville/assets/UNRLVL_Logo_lght.svg",
+      "bg": "transparent",
+      "text_fill": "#F2F0EC",
+      "use_on": "dark backgrounds",
+      "status": "PENDIENTE REGENERACIÓN v1.3 — contiene la grafía derogada"
+    },
+    "logotype_png": {
+      "file": "UNRLVL_logotype_chrk.png",
+      "path": "brands/Unrealville/assets/UNRLVL_logotype_chrk.png",
+      "alpha": true,
+      "note": "Chalk version — reference only. SVG preferred.",
+      "status": "PENDIENTE REGENERACIÓN v1.3 — contiene la grafía derogada"
+    }
+  },
+  "output_standards": {
+    "_mandatory_checklist": "Claude MUST verify all items before delivering any output",
+    "every_html_output": [
+      "favicon <link> tag in <head> — first element, before stylesheets",
+      "@keyframes prompt-blink in <style> (NOT chevron-blink, NOT chev-listen — deprecated)",
+      ".lt-chevron class LEADING the name, with animation prompt-blink 1.1s step-end applied",
+      ".lt-studio class with color rgba(242,240,236,0.32) — visually much dimmer, baseline-aligned",
+      "ICR badge visible in footer",
+      ".lt-logotype.size-nav in header (20px)",
+      ".lt-logotype.size-footer in footer (28px)",
+      "Footer: Col1=own logo OR client logo (see footer.golden_rule), Col2=rights, Col3=signature EN",
+      "NO derogated form UNREAL>ILLE anywhere in the output"
+    ]
+  },
+  "repo": {
+    "blueprints_repo": "unrealvillestudio-hub/BluePrints",
+    "path": "brands/Unrealville/",
+    "json_file": "brands/Unrealville/BP_BRAND_UNRLVL_v1.3.json",
+    "html_es": "brands/Unrealville/BP_BRAND_UnrealvilleStudio_v1_3.html",
+    "html_en": "brands/Unrealville/BP_BRAND_UnrealvilleStudio_v1_3_EN.html",
+    "assets_path": "brands/Unrealville/assets/",
+    "_filename_note": "Los HTML v1.2 se llamaban 'UnrealilleStudio' — el mismo defecto de la v ausente. Renombrados a 'UnrealvilleStudio' en v1.3.",
+    "website_repo": "unrealvillestudio-hub/CoreProject",
+    "website_note": "unrealvillestudio.com. Requiere barrido de grafía propio: markup del logotipo, @keyframes prompt-blink, <title> y meta de Open Graph.",
+    "note": "HTML docs and JSON blueprint go in brands/Unrealville/ root. SVG/PNG assets go in brands/Unrealville/assets/. Do NOT store HTML documents inside assets/."
+  }
+}
