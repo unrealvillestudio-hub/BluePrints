@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucien Sael — Brand Identity System v1.0</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+
+/* ════════════════════════════════════════
+   LUCIEN SAEL — BRAND IDENTITY SYSTEM v1.0
+   Canonical reference · Do not edit manually
+   ════════════════════════════════════════ */
+
+:root {
+  /* ── PALETTE ── */
+  --obsidian:  #0D0D0B;
+  --carbon:    #1C1C1A;
+  --smoke:     #2E2E2B;
+  --ash:       #4A4A45;
+  --bone:      #EDE8DF;
+  --parchment: #C4BDB0;
+  --ember:     #D4622A;
+  --gold:      #B8922A;
+
+  --ember-20:  rgba(212,98,42,.20);
+  --ember-08:  rgba(212,98,42,.08);
+  --ember-04:  rgba(212,98,42,.04);
+  --gold-20:   rgba(184,146,42,.20);
+  --gold-08:   rgba(184,146,42,.08);
+  --bone-60:   rgba(237,232,223,.60);
+  --bone-30:   rgba(237,232,223,.30);
+  --bone-12:   rgba(237,232,223,.12);
+  --bone-06:   rgba(237,232,223,.06);
+
+  /* ── TYPOGRAPHY ── */
+  --fd: 'Cormorant Garamond', Georgia, serif;
+  --fb: 'Crimson Pro', Georgia, serif;
+  --fm: 'JetBrains Mono', monospace;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background: var(--obsidian);
+  color: var(--bone);
+  font-family: var(--fb);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── LAYOUT ── */
+.page { max-width: 1100px; margin: 0 auto; padding: 72px 48px; }
+.section { margin-bottom: 96px; }
+.section-label {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .38em;
+  text-transform: uppercase; color: var(--ember);
+  display: flex; align-items: center; gap: 12px; margin-bottom: 40px;
+}
+.section-label::before { content: ''; width: 24px; height: 1px; background: var(--ember); }
+.divider { border: none; border-top: 1px solid var(--bone-06); margin: 72px 0; }
+.rule-ember { border: none; border-top: 2px solid var(--ember); margin: 0; }
+
+/* ── COVER ── */
+.cover {
+  min-height: 60vh; display: flex; flex-direction: column;
+  justify-content: flex-end; padding-bottom: 72px;
+  border-bottom: 1px solid var(--bone-06); margin-bottom: 96px;
+  position: relative; overflow: hidden;
+}
+.cover-bg {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 20% 80%, rgba(212,98,42,.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+.cover-stamp {
+  font-family: var(--fd); font-size: clamp(120px, 20vw, 260px);
+  font-weight: 300; font-style: italic;
+  color: var(--bone); opacity: .025; line-height: .85;
+  position: absolute; top: 20px; right: 0; letter-spacing: -.02em;
+  pointer-events: none; user-select: none;
+}
+.cover-meta {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .32em;
+  text-transform: uppercase; color: var(--parchment); margin-bottom: 24px;
+  display: flex; align-items: center; gap: 16px;
+}
+.cover-meta .dot { width: 4px; height: 4px; background: var(--ember); border-radius: 50%; }
+.cover-title {
+  font-family: var(--fd); font-size: clamp(48px, 7vw, 96px);
+  font-weight: 300; line-height: .9; letter-spacing: .02em;
+  margin-bottom: 28px;
+}
+.cover-title .em { color: var(--ember); font-style: italic; }
+.cover-sub {
+  font-family: var(--fb); font-size: 18px; font-style: italic; font-weight: 300;
+  color: var(--bone-60); line-height: 1.65; max-width: 560px;
+}
+.cover-tag {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 32px;
+  font-family: var(--fm); font-size: 8px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--ember); border: 1px solid var(--ember-20);
+  background: var(--ember-04); padding: 6px 14px;
+}
+
+/* ── PALETTE SECTION ── */
+.palette-row {
+  display: grid; grid-template-columns: repeat(8, 1fr);
+  gap: 2px; margin-bottom: 32px;
+}
+.swatch {
+  aspect-ratio: 1; display: flex; flex-direction: column;
+  justify-content: flex-end; padding: 10px 12px;
+  position: relative; overflow: hidden;
+}
+.swatch::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.45) 0%, transparent 55%);
+}
+.sw-name {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .14em;
+  text-transform: uppercase; font-weight: 700;
+  position: relative; z-index: 1; margin-bottom: 2px;
+}
+.sw-hex {
+  font-family: var(--fm); font-size: 9px; letter-spacing: .1em;
+  position: relative; z-index: 1; opacity: .65;
+}
+.swatch.on-dark .sw-name, .swatch.on-dark .sw-hex { color: var(--bone); }
+.swatch.on-light .sw-name, .swatch.on-light .sw-hex { color: var(--obsidian); }
+
+.token-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+.token-row {
+  background: var(--carbon); border: 1px solid var(--bone-06);
+  padding: 16px 20px; display: flex; align-items: center; gap: 16px;
+}
+.token-dot { width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0; }
+.token-info { flex: 1; }
+.token-name {
+  font-family: var(--fm); font-size: 9px; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--bone); font-weight: 700;
+}
+.token-hex {
+  font-family: var(--fm); font-size: 9px; letter-spacing: .1em; color: var(--parchment);
+}
+.token-desc {
+  font-family: var(--fb); font-size: 13px; font-style: italic; font-weight: 300;
+  color: var(--bone-60); line-height: 1.5;
+}
+
+/* ── TYPOGRAPHY SECTION ── */
+.type-stack { display: flex; flex-direction: column; gap: 2px; }
+.type-block {
+  background: var(--carbon); border: 1px solid var(--bone-06); padding: 36px 40px;
+}
+.type-meta {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .28em;
+  text-transform: uppercase; color: var(--ember); margin-bottom: 20px;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+.type-meta .badge {
+  background: var(--ember); color: var(--obsidian); padding: 2px 8px; font-size: 7px;
+}
+.type-sample-display {
+  font-family: var(--fd); font-weight: 300; line-height: .9;
+  color: var(--bone); margin-bottom: 16px;
+}
+.type-sample-body {
+  font-family: var(--fb); font-weight: 300; font-style: italic;
+  color: var(--bone-60); line-height: 1.75;
+}
+.type-sample-body strong { color: var(--bone); font-style: normal; font-weight: 400; }
+.type-sample-body em.e { color: var(--ember); }
+.type-sample-mono {
+  font-family: var(--fm); font-weight: 400; color: var(--parchment); line-height: 2;
+}
+.type-rules {
+  margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--bone-06);
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+}
+.type-rule-item {
+  font-family: var(--fm); font-size: 9px; letter-spacing: .12em; color: var(--ash); line-height: 2;
+}
+.type-rule-item span { color: var(--parchment); display: block; }
+
+/* ── LOGOTYPE SECTION ── */
+.logotype-showcase {
+  background: var(--carbon); border: 1px solid var(--bone-06);
+  padding: 56px 64px; margin-bottom: 2px;
+  display: flex; align-items: center; justify-content: center;
+}
+/* CANONICAL LOGOTYPE — OPTION D (stacked) */
+.lt-canonical {
+  font-family: var(--fd); font-weight: 300; letter-spacing: .12em;
+  line-height: .88; text-align: left;
+}
+.lt-canonical .first { display: block; color: var(--bone); }
+.lt-canonical .last  { display: block; color: var(--ember); font-style: italic; }
+
+.logotype-sizes {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
+}
+.lt-size-block {
+  background: var(--smoke); border: 1px solid var(--bone-06); padding: 24px 28px;
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between;
+  gap: 16px;
+}
+.lt-size-tag {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--parchment);
+}
+.lt-usage {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .14em;
+  color: var(--ash); line-height: 1.8;
+}
+.lt-usage span { color: var(--parchment); display: block; }
+
+.logotype-rules { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 2px; }
+.lt-rule {
+  background: var(--carbon); border: 1px solid var(--bone-06); padding: 24px 28px;
+}
+.lt-rule-title {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--ember); margin-bottom: 12px;
+}
+.lt-rule-body {
+  font-family: var(--fb); font-size: 14px; font-style: italic; font-weight: 300;
+  color: var(--bone-60); line-height: 1.65;
+}
+.lt-rule-body strong { color: var(--bone); font-style: normal; font-weight: 400; }
+.lt-dont {
+  background: var(--carbon); border: 1px solid rgba(200,53,42,.15); padding: 24px 28px;
+  position: relative;
+}
+.lt-dont::before {
+  content: '✗'; position: absolute; top: 12px; right: 16px;
+  font-family: var(--fm); font-size: 10px; color: rgba(200,53,42,.5);
+}
+.lt-dont-title {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .22em;
+  text-transform: uppercase; color: rgba(200,53,42,.6); margin-bottom: 12px;
+}
+.lt-dont-body {
+  font-family: var(--fb); font-size: 14px; font-style: italic; font-weight: 300;
+  color: var(--bone-30); line-height: 1.65;
+}
+
+/* ── SIGNATURE SECTION ── */
+.sig-showcase { display: flex; flex-direction: column; gap: 2px; }
+.sig-block {
+  background: var(--carbon); border: 1px solid var(--bone-06); padding: 36px 40px;
+}
+.sig-context {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .28em;
+  text-transform: uppercase; color: var(--ember); margin-bottom: 24px;
+}
+
+/* Web footer signature */
+.sig-web {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;
+}
+.sig-web-left {}
+.sig-web-name {
+  font-family: var(--fd); font-size: 26px; font-weight: 300; letter-spacing: .1em;
+  line-height: .88; margin-bottom: 6px;
+}
+.sig-web-name .first { display: block; color: var(--bone); }
+.sig-web-name .last  { display: block; color: var(--ember); font-style: italic; }
+.sig-web-phrase {
+  font-family: var(--fb); font-size: 14px; font-style: italic; font-weight: 300;
+  color: var(--parchment); margin-top: 8px;
+}
+.sig-web-right {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--ash); text-align: right; line-height: 2.2;
+}
+.sig-web-right span { color: var(--parchment); display: block; }
+
+/* Blog post byline */
+.sig-blog { border-top: 2px solid var(--ember); padding-top: 28px; }
+.sig-blog-name {
+  font-family: var(--fd); font-size: 22px; font-weight: 300; letter-spacing: .1em;
+  margin-bottom: 6px;
+}
+.sig-blog-name .first { color: var(--bone); }
+.sig-blog-name .last  { color: var(--ember); font-style: italic; }
+.sig-blog-phrase {
+  font-family: var(--fb); font-size: 15px; font-style: italic; font-weight: 300;
+  color: var(--parchment);
+}
+
+/* Inline compact */
+.sig-inline {
+  font-family: var(--fm); font-size: 10px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--parchment);
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.sig-inline .name { color: var(--bone); }
+.sig-inline .name .last { color: var(--ember); }
+.sig-inline .sep { color: var(--ash); }
+
+/* Quote attribution */
+.sig-quote {
+  font-family: var(--fm); font-size: 9px; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--parchment);
+  display: flex; align-items: center; gap: 12px;
+}
+.sig-quote::before { content: '—'; color: var(--ash); }
+.sig-quote .name { color: var(--bone); }
+.sig-quote .name em { color: var(--ember); font-style: italic; font-family: var(--fd); font-size: 13px; }
+.sig-quote .sep { color: var(--ash); }
+.sig-quote .place { color: var(--ash); }
+
+/* ── USAGE RULES ── */
+.rules-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; }
+.rule-block {
+  background: var(--carbon); border: 1px solid var(--bone-06); padding: 28px 32px;
+}
+.rule-block.do { border-color: rgba(184,146,42,.2); }
+.rule-block.dont { border-color: rgba(200,53,42,.15); }
+.rule-title {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .26em; text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.rule-block.note  .rule-title { color: var(--ember); }
+.rule-block.do    .rule-title { color: var(--gold); }
+.rule-block.dont  .rule-title { color: rgba(200,53,42,.7); }
+.rule-body {
+  font-family: var(--fb); font-size: 14px; font-style: italic; font-weight: 300;
+  color: var(--bone-60); line-height: 1.7;
+}
+.rule-body strong { color: var(--bone); font-style: normal; font-weight: 400; }
+.rule-body em.e { color: var(--ember); }
+.rule-body em.g { color: var(--gold); }
+
+/* ── CSS REFERENCE ── */
+.code-block {
+  background: var(--smoke); border: 1px solid var(--bone-06);
+  padding: 36px 40px; font-family: var(--fm); font-size: 11px;
+  line-height: 2.2; color: var(--parchment);
+}
+.code-block .cm { color: var(--ash); font-style: italic; }
+.code-block .vr { color: var(--ember); }
+.code-block .vl { color: var(--bone); }
+.code-block .section-comment {
+  color: var(--gold); font-weight: 700; margin-top: 8px; display: block;
+}
+
+/* ── FOOTER ── */
+.doc-footer {
+  border-top: 2px solid var(--ember); padding-top: 40px; margin-top: 96px;
+  display: flex; align-items: flex-end; justify-content: space-between;
+}
+.doc-footer-name {
+  font-family: var(--fd); font-size: 32px; font-weight: 300; letter-spacing: .1em; line-height: .88;
+}
+.doc-footer-name .first { display: block; color: var(--bone); }
+.doc-footer-name .last  { display: block; color: var(--ember); font-style: italic; }
+.doc-footer-phrase {
+  font-family: var(--fb); font-size: 15px; font-style: italic; color: var(--parchment); margin-top: 10px;
+}
+.doc-footer-meta {
+  font-family: var(--fm); font-size: 8px; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--ash); text-align: right; line-height: 2.4;
+}
+.doc-footer-meta span { color: var(--parchment); }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- ── COVER ── -->
+<div class="cover">
+  <div class="cover-bg"></div>
+  <div class="cover-stamp">LS</div>
+  <div class="cover-meta">
+    <span class="dot"></span>
+    <span>Brand Identity System</span>
+    <span style="color:var(--ash)">·</span>
+    <span>v1.0</span>
+    <span style="color:var(--ash)">·</span>
+    <span>2026</span>
+  </div>
+  <h1 class="cover-title">
+    Lucien<br><span class="em">Sael</span>
+  </h1>
+  <p class="cover-sub">A canonical reference for the visual and verbal identity of Lucien Sael. Palette, typography, logotype, signature, and rules of use. Maintained as the single source of truth.</p>
+  <div class="cover-tag">luciensael.com · Independent Identity</div>
+</div>
+
+<!-- ── PALETTE ── -->
+<div class="section">
+  <div class="section-label">01 — Color Palette</div>
+
+  <div class="palette-row">
+    <div class="swatch on-dark" style="background:#0D0D0B;">
+      <div class="sw-name">Obsidian</div>
+      <div class="sw-hex">#0D0D0B</div>
+    </div>
+    <div class="swatch on-dark" style="background:#1C1C1A;">
+      <div class="sw-name">Carbon</div>
+      <div class="sw-hex">#1C1C1A</div>
+    </div>
+    <div class="swatch on-dark" style="background:#2E2E2B;">
+      <div class="sw-name">Smoke</div>
+      <div class="sw-hex">#2E2E2B</div>
+    </div>
+    <div class="swatch on-dark" style="background:#4A4A45;">
+      <div class="sw-name">Ash</div>
+      <div class="sw-hex">#4A4A45</div>
+    </div>
+    <div class="swatch on-light" style="background:#EDE8DF;">
+      <div class="sw-name">Bone</div>
+      <div class="sw-hex">#EDE8DF</div>
+    </div>
+    <div class="swatch on-light" style="background:#C4BDB0;">
+      <div class="sw-name">Parchment</div>
+      <div class="sw-hex">#C4BDB0</div>
+    </div>
+    <div class="swatch on-dark" style="background:#D4622A;">
+      <div class="sw-name">Ember</div>
+      <div class="sw-hex">#D4622A</div>
+    </div>
+    <div class="swatch on-dark" style="background:#B8922A;">
+      <div class="sw-name">Gold</div>
+      <div class="sw-hex">#B8922A</div>
+    </div>
+  </div>
+
+  <div class="token-grid">
+    <div class="token-row">
+      <div class="token-dot" style="background:#0D0D0B;border:1px solid #2E2E2B;"></div>
+      <div class="token-info">
+        <div class="token-name">--obsidian <span class="token-hex">#0D0D0B</span></div>
+        <div class="token-desc">Page background. The void beneath everything.</div>
+      </div>
+    </div>
+    <div class="token-row">
+      <div class="token-dot" style="background:#1C1C1A;border:1px solid #2E2E2B;"></div>
+      <div class="token-info">
+        <div class="token-name">--carbon <span class="token-hex">#1C1C1A</span></div>
+        <div class="token-desc">Primary surface. Warm, not cold. Experience compressed.</div>
+      </div>
+    </div>
+    <div class="token-row">
+      <div class="token-dot" style="background:#2E2E2B;border:1px solid #4A4A45;"></div>
+      <div class="token-info">
+        <div class="token-name">--smoke <span class="token-hex">#2E2E2B</span></div>
+        <div class="token-desc">Elevated surface. Cards, hover states, code blocks.</div>
+      </div>
+    </div>
+    <div class="token-row">
+      <div class="token-dot" style="background:#4A4A45;"></div>
+      <div class="token-info">
+        <div class="token-name">--ash <span class="token-hex">#4A4A45</span></div>
+        <div class="token-desc">Borders, dividers. What remains after intensity.</div>
+      </div>
+    </div>
+    <div class="token-row">
+      <div class="token-dot" style="background:#EDE8DF;"></div>
+      <div class="token-info">
+        <div class="token-name">--bone <span class="token-hex">#EDE8DF</span></div>
+        <div class="token-desc">Primary text. Warm white — not clinical, not pure.</div>
+      </div>
+    </div>
+    <div class="token-row">
+      <div class="token-dot" style="background:#C4BDB0;"></div>
+      <div class="token-info">
+        <div class="token-name">--parchment <span class="token-hex">#C4BDB0</span></div>
+        <div class="token-desc">Secondary text. A page that has been read many times.</div>
+      </div>
+    </div>
+    <div class="token-row" style="border-color:var(--ember-20);">
+      <div class="token-dot" style="background:#D4622A;"></div>
+      <div class="token-info">
+        <div class="token-name">--ember <span class="token-hex">#D4622A</span></div>
+        <div class="token-desc">Primary accent. Fire that has been burning long enough to know what it's doing.</div>
+      </div>
+    </div>
+    <div class="token-row" style="border-color:var(--gold-20);">
+      <div class="token-dot" style="background:#B8922A;"></div>
+      <div class="token-info">
+        <div class="token-name">--gold <span class="token-hex">#B8922A</span></div>
+        <div class="token-desc">Secondary accent. Earned authority. What stays after the fire.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ── TYPOGRAPHY ── -->
+<div class="section">
+  <div class="section-label">02 — Typography System</div>
+  <div class="type-stack">
+
+    <div class="type-block">
+      <div class="type-meta">
+        <span class="badge">DISPLAY · LOGOTYPE · HEADLINES</span>
+        Cormorant Garamond
+      </div>
+      <div class="type-sample-display" style="font-size:clamp(40px,6vw,80px);">
+        I build worlds.<br>Some of them survive.
+      </div>
+      <div class="type-sample-display" style="font-size:clamp(24px,3vw,40px); margin-top:16px; font-style:italic; color:var(--bone-60);">
+        Thought in motion, always.
+      </div>
+      <div class="type-rules">
+        <div class="type-rule-item">
+          Family<span>Cormorant Garamond</span>
+          Source<span>Google Fonts</span>
+        </div>
+        <div class="type-rule-item">
+          Weights<span>300 · 300i · 600i</span>
+          Use<span>Headlines, logotype, quotes</span>
+        </div>
+        <div class="type-rule-item">
+          Tracking<span>.01em to .12em</span>
+          Leading<span>.88 to 1.1 (display)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="type-block">
+      <div class="type-meta">
+        <span class="badge">BODY · EDITORIAL · BLOG</span>
+        Crimson Pro
+      </div>
+      <p class="type-sample-body" style="font-size:clamp(15px,1.5vw,19px); max-width:680px;">
+        They called it artificial. We called it inevitable. The only thing artificial about it was the argument — made by people who confused <em class="e">the tool with the threat.</em> <strong>Brand Intelligence Infrastructure is not a category that existed before we built it.</strong> We built it because nothing else fit what we were actually doing.
+      </p>
+      <div class="type-rules">
+        <div class="type-rule-item">
+          Family<span>Crimson Pro</span>
+          Source<span>Google Fonts</span>
+        </div>
+        <div class="type-rule-item">
+          Weights<span>300 · 300i · 400 · 400i · 600i</span>
+          Use<span>Body, blog posts, long-form</span>
+        </div>
+        <div class="type-rule-item">
+          Size<span>15–19px body · 13–15px small</span>
+          Leading<span>1.65–1.8</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="type-block">
+      <div class="type-meta">
+        <span class="badge">SYSTEM · LABELS · METADATA</span>
+        JetBrains Mono
+      </div>
+      <div class="type-sample-mono" style="font-size:11px;">
+        LUCIEN SAEL · FOUNDER · NORTH MIAMI, FL<br>
+        Brand Identity System · v1.0 · 2026<br>
+        luciensael.com · I build worlds. Some of them survive.<br>
+        <span style="color:var(--ember);">--ember: #D4622A</span> · <span style="color:var(--gold);">--gold: #B8922A</span>
+      </div>
+      <div class="type-rules">
+        <div class="type-rule-item">
+          Family<span>JetBrains Mono</span>
+          Source<span>Google Fonts</span>
+        </div>
+        <div class="type-rule-item">
+          Weights<span>300 · 400 · 700</span>
+          Use<span>Labels, tags, metadata, nav, code</span>
+        </div>
+        <div class="type-rule-item">
+          Size<span>8–11px labels · 12–13px code</span>
+          Tracking<span>.14em to .38em</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ── LOGOTYPE ── -->
+<div class="section">
+  <div class="section-label">03 — Logotype</div>
+
+  <!-- CANONICAL -->
+  <div class="logotype-showcase" style="margin-bottom:2px;">
+    <div style="text-align:center;">
+      <div style="font-family:var(--fm);font-size:8px;letter-spacing:.28em;text-transform:uppercase;color:var(--parchment);margin-bottom:40px;text-align:center;">Canonical · Large · SVG inline</div>
+      <div style="display:inline-block;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" width="280" height="84" role="img" aria-label="Lucien Sael" style="display:block;overflow:visible;">
+          <defs><style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;display=block');.ls{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:44px;letter-spacing:0.12em;}</style></defs>
+          <text class="ls" font-style="normal" fill="#EDE8DF" x="2" y="39">Lucien</text>
+          <text class="ls" font-style="italic"  fill="#D4622A" x="2" y="80">Sael</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIZES -->
+  <div class="logotype-sizes" style="margin-bottom:2px;">
+    <div class="lt-size-block">
+      <div class="lt-size-tag">Nav · 130×41px</div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" width="130" height="41" role="img" aria-label="Lucien Sael" style="display:block;overflow:visible;">
+          <defs><style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;display=block');.ls{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:28px;letter-spacing:0.12em;}</style></defs>
+          <text class="ls" font-style="normal" fill="#EDE8DF" x="2" y="25">Lucien</text>
+          <text class="ls" font-style="italic"  fill="#D4622A" x="2" y="51">Sael</text>
+        </svg>
+      <div class="lt-usage">Context: <span>Navigation, header</span></div>
+    </div>
+    <div class="lt-size-block">
+      <div class="lt-size-tag">Footer · 168×53px</div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" width="168" height="53" role="img" aria-label="Lucien Sael" style="display:block;overflow:visible;">
+          <defs><style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;display=block');.ls{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:36px;letter-spacing:0.12em;}</style></defs>
+          <text class="ls" font-style="normal" fill="#EDE8DF" x="2" y="32">Lucien</text>
+          <text class="ls" font-style="italic"  fill="#D4622A" x="2" y="66">Sael</text>
+        </svg>
+      <div class="lt-usage">Context: <span>Footer, large inline</span></div>
+    </div>
+    <div class="lt-size-block">
+      <div class="lt-size-tag">Inline · 96×30px (min)</div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" width="96" height="30" role="img" aria-label="Lucien Sael" style="display:block;overflow:visible;">
+          <defs><style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;display=block');.ls{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:22px;letter-spacing:0.12em;}</style></defs>
+          <text class="ls" font-style="normal" fill="#EDE8DF" x="2" y="19">Lucien</text>
+          <text class="ls" font-style="italic"  fill="#D4622A" x="2" y="40">Sael</text>
+        </svg>
+      <div class="lt-usage">Context: <span>Bylines, tags, small contexts</span></div>
+    </div>
+    <div class="lt-size-block" style="background:var(--bone);border-color:transparent;">
+      <div class="lt-size-tag" style="color:var(--ash);">On light · SVG variant</div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" width="130" height="41" role="img" aria-label="Lucien Sael" style="display:block;overflow:visible;">
+          <defs><style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;display=block');.lsl{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:28px;letter-spacing:0.12em;}</style></defs>
+          <text class="lsl" font-style="normal" fill="#1C1C1A" x="2" y="25">Lucien</text>
+          <text class="lsl" font-style="italic"  fill="#D4622A" x="2" y="51">Sael</text>
+        </svg>
+      <div class="lt-usage" style="color:var(--ash);">Context: <span style="color:var(--carbon);">Light backgrounds (rare)</span></div>
+    </div>
+  </div>
+
+  <!-- RULES -->
+  <div class="logotype-rules">
+    <div class="lt-rule">
+      <div class="lt-rule-title">Construction</div>
+      <p class="lt-rule-body">
+        <strong>Cormorant Garamond 300.</strong> "Lucien" in bone, upright. "Sael" in ember, italic. Stacked vertically. Letter-spacing .12em. Line-height .88. The first name grounds. The surname fires.
+      </p>
+    </div>
+    <div class="lt-rule">
+      <div class="lt-rule-title">Color rule</div>
+      <p class="lt-rule-body">
+        Ember on dark backgrounds (primary). On light backgrounds: carbon upright + ember italic. <strong>Gold is never used in the logotype</strong> — it belongs to secondary accents only.
+      </p>
+    </div>
+    <div class="lt-rule">
+      <div class="lt-rule-title">Minimum size</div>
+      <p class="lt-rule-body">
+        <strong>16px minimum</strong> in digital. Below that, use the inline variant: "Lucien Sael" in a single line, no stacking, tracking .08em.
+      </p>
+    </div>
+    <div class="lt-rule">
+      <div class="lt-rule-title">Clear space</div>
+      <p class="lt-rule-body">
+        Minimum clear space: <strong>1× the cap-height</strong> of "Lucien" on all sides. The logotype breathes — it does not crowd.
+      </p>
+    </div>
+    <div class="lt-dont">
+      <div class="lt-dont-title">Never — stretching or condensing</div>
+      <p class="lt-dont-body">The logotype is never scaled non-proportionally. The relationship between Lucien and Sael is fixed.</p>
+    </div>
+    <div class="lt-dont">
+      <div class="lt-dont-title">Never — "Sael" in a color other than ember or carbon</div>
+      <p class="lt-dont-body">Not gold, not parchment, not bone. The surname is always ember (dark BG) or carbon (light BG).</p>
+    </div>
+    <div class="lt-dont">
+      <div class="lt-dont-title">Never — "Lucien" italic</div>
+      <p class="lt-dont-body">Only "Sael" is italic. "Lucien" is always upright. The asymmetry is the point.</p>
+    </div>
+    <div class="lt-dont">
+      <div class="lt-dont-title">Never — adding tagline to logotype</div>
+      <p class="lt-dont-body">"I build worlds. Some of them survive." is the signature phrase — it lives below, separated. Never inside or attached to the logotype mark.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ── SIGNATURE ── -->
+<div class="section">
+  <div class="section-label">04 — Signature & Footer</div>
+
+  <div class="sig-showcase">
+
+    <div class="sig-block">
+      <div class="sig-context">Web Footer — primary</div>
+      <div class="sig-web">
+        <div class="sig-web-left">
+          <div class="sig-web-name">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" width="104" height="33" role="img" aria-label="Lucien Sael" style="display:block;overflow:visible;">
+              <defs><style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;display=block');.ls-sig{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:26px;letter-spacing:0.12em;}</style></defs>
+              <text class="ls-sig" font-style="normal" fill="#EDE8DF" x="2" y="23">Lucien</text>
+              <text class="ls-sig" font-style="italic"  fill="#D4622A" x="2" y="47">Sael</text>
+            </svg>
+          </div>
+          <div class="sig-web-phrase">I build worlds. Some of them survive.</div>
+        </div>
+        <div class="sig-web-right">
+          <span>luciensael.com</span>
+          <span>North Miami, FL</span>
+          <span>© 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sig-block">
+      <div class="sig-context">Blog Post Byline — editorial</div>
+      <div class="sig-blog">
+        <div class="sig-blog-name">
+          <span class="first">Lucien </span><span class="last">Sael</span>
+        </div>
+        <div class="sig-blog-phrase">I build worlds. Some of them survive.</div>
+      </div>
+    </div>
+
+    <div class="sig-block">
+      <div class="sig-context">Quote Attribution — standalone quotes</div>
+      <div class="sig-quote">
+        <span class="name">Lucien <em>Sael</em></span>
+        <span class="sep">·</span>
+        <span class="place">North Miami</span>
+      </div>
+    </div>
+
+    <div class="sig-block">
+      <div class="sig-context">Compact Inline — email, small contexts</div>
+      <div class="sig-inline">
+        <span class="name">Lucien <span class="last">Sael</span></span>
+        <span class="sep">·</span>
+        <span>I build worlds. Some of them survive.</span>
+        <span class="sep">·</span>
+        <span>luciensael.com</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2px;background:var(--carbon);border:1px solid var(--bone-06);border-left:2px solid var(--ember);padding:24px 28px;">
+    <div style="font-family:var(--fm);font-size:8px;letter-spacing:.28em;text-transform:uppercase;color:var(--ember);margin-bottom:14px;">The phrase — rules</div>
+    <p style="font-family:var(--fb);font-size:15px;font-style:italic;font-weight:300;color:var(--bone-60);line-height:1.75;max-width:680px;">
+      <strong style="color:var(--bone);font-style:normal;">"I build worlds. Some of them survive."</strong> is Lucien's permanent signature phrase. It replaces any professional title or descriptor. It is never attributed to a company, never qualified with context, and never changed. It appears in Crimson Pro italic, in parchment, below the logotype or name. It is the only thing that needs to be said.
+    </p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ── USAGE RULES ── -->
+<div class="section">
+  <div class="section-label">05 — Rules of Use</div>
+  <div class="rules-grid">
+    <div class="rule-block note">
+      <div class="rule-title">Voice</div>
+      <p class="rule-body">First person, always. Direct, never corporate. Opinions stated as positions, not suggestions. <em class="e">The tone is someone who has stopped asking for permission.</em></p>
+    </div>
+    <div class="rule-block do">
+      <div class="rule-title">Do — Colors</div>
+      <p class="rule-body"><em class="g">Ember for the single most important element</em> per view. Gold for secondary emphasis. Bone for text. Parchment for supporting text. Carbon for surfaces.</p>
+    </div>
+    <div class="rule-block dont">
+      <div class="rule-title">Never — Colors</div>
+      <p class="rule-body">Never use cyan, pure white, or any blue. <strong>Those are UNRLVL's world.</strong> Lucien's world is ember, gold, and carbon. The two identities are related but never interchangeable.</p>
+    </div>
+    <div class="rule-block note">
+      <div class="rule-title">Relationship to UNRLVL</div>
+      <p class="rule-body">Lucien Sael is the <em class="e">person</em>. Unreal>ille Studio is one of his <em class="e">worlds</em>. The site mentions UNRLVL as a project — never as an affiliation or employer. Lucien is larger than any one world he builds.</p>
+    </div>
+    <div class="rule-block do">
+      <div class="rule-title">Do — Typography</div>
+      <p class="rule-body"><strong>Cormorant Garamond</strong> for anything that commands attention. <em class="g">Crimson Pro</em> for anything that needs to be read. JetBrains Mono for anything that needs to be precise.</p>
+    </div>
+    <div class="rule-block dont">
+      <div class="rule-title">Never — Typography</div>
+      <p class="rule-body">No system fonts. No sans-serif in editorial contexts. No Bebas Neue (UNRLVL). No Space Mono (UNRLVL). <strong>The typographic world of Lucien is entirely different from the studio.</strong></p>
+    </div>
+    <div class="rule-block note">
+      <div class="rule-title">Content language</div>
+      <p class="rule-body">English first, always. Spanish when the subject demands it or the audience is specifically LATAM. <em class="e">No regional Spanish.</em> International only — no Spain, no Mexico, no Argentina. Neutral.</p>
+    </div>
+    <div class="rule-block do">
+      <div class="rule-title">Do — Signature phrase</div>
+      <p class="rule-body">"I build worlds. Some of them survive." appears in every footer, every byline, every email. It is the one constant. <em class="g">It never changes.</em> It requires no explanation.</p>
+    </div>
+    <div class="rule-block dont">
+      <div class="rule-title">Never — Titles or roles</div>
+      <p class="rule-body">Never "CEO", "Founder", "Strategist", "Consultant". <strong>The phrase replaces all titles.</strong> If context requires, "builder" or "operator" — lowercase, as descriptors, not titles.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ── CSS REFERENCE ── -->
+<div class="section">
+  <div class="section-label">06 — CSS Variables · Production Reference</div>
+  <div class="code-block">
+<span class="cm">/* ════════════════════════════════════════════════</span><br>
+<span class="cm">   LUCIEN SAEL — Brand Identity System v1.0</span><br>
+<span class="cm">   luciensael.com · canonical CSS reference</span><br>
+<span class="cm">   ════════════════════════════════════════════════ */</span><br><br>
+:root {<br>
+<br>
+<span class="section-comment">  /* ── PALETTE ── */</span><br>
+&nbsp;&nbsp;<span class="vr">--obsidian</span>:  <span class="vl">#0D0D0B</span>;&nbsp;&nbsp;<span class="cm">/* page background */</span><br>
+&nbsp;&nbsp;<span class="vr">--carbon</span>:    <span class="vl">#1C1C1A</span>;&nbsp;&nbsp;<span class="cm">/* primary surface */</span><br>
+&nbsp;&nbsp;<span class="vr">--smoke</span>:     <span class="vl">#2E2E2B</span>;&nbsp;&nbsp;<span class="cm">/* elevated surface */</span><br>
+&nbsp;&nbsp;<span class="vr">--ash</span>:       <span class="vl">#4A4A45</span>;&nbsp;&nbsp;<span class="cm">/* borders, dividers */</span><br>
+&nbsp;&nbsp;<span class="vr">--bone</span>:      <span class="vl">#EDE8DF</span>;&nbsp;&nbsp;<span class="cm">/* primary text */</span><br>
+&nbsp;&nbsp;<span class="vr">--parchment</span>: <span class="vl">#C4BDB0</span>;&nbsp;&nbsp;<span class="cm">/* secondary text */</span><br>
+&nbsp;&nbsp;<span class="vr">--ember</span>:     <span class="vl">#D4622A</span>;&nbsp;&nbsp;<span class="cm">/* primary accent — the push */</span><br>
+&nbsp;&nbsp;<span class="vr">--gold</span>:      <span class="vl">#B8922A</span>;&nbsp;&nbsp;<span class="cm">/* secondary accent — earned authority */</span><br>
+<br>
+<span class="section-comment">  /* ── ALPHA VARIANTS ── */</span><br>
+&nbsp;&nbsp;<span class="vr">--ember-20</span>:  <span class="vl">rgba(212,98,42,.20)</span>;<br>
+&nbsp;&nbsp;<span class="vr">--ember-08</span>:  <span class="vl">rgba(212,98,42,.08)</span>;<br>
+&nbsp;&nbsp;<span class="vr">--ember-04</span>:  <span class="vl">rgba(212,98,42,.04)</span>;<br>
+&nbsp;&nbsp;<span class="vr">--gold-20</span>:   <span class="vl">rgba(184,146,42,.20)</span>;<br>
+&nbsp;&nbsp;<span class="vr">--gold-08</span>:   <span class="vl">rgba(184,146,42,.08)</span>;<br>
+&nbsp;&nbsp;<span class="vr">--bone-60</span>:   <span class="vl">rgba(237,232,223,.60)</span>;<br>
+&nbsp;&nbsp;<span class="vr">--bone-30</span>:   <span class="vl">rgba(237,232,223,.30)</span>;<br>
+&nbsp;&nbsp;<span class="vr">--bone-12</span>:   <span class="vl">rgba(237,232,223,.12)</span>;<br>
+&nbsp;&nbsp;<span class="vr">--bone-06</span>:   <span class="vl">rgba(237,232,223,.06)</span>;<br>
+<br>
+<span class="section-comment">  /* ── TYPOGRAPHY ── */</span><br>
+&nbsp;&nbsp;<span class="vr">--fd</span>: <span class="vl">'Cormorant Garamond', Georgia, serif</span>;&nbsp;&nbsp;<span class="cm">/* display */</span><br>
+&nbsp;&nbsp;<span class="vr">--fb</span>: <span class="vl">'Crimson Pro', Georgia, serif</span>;&nbsp;&nbsp;<span class="cm">/* body editorial */</span><br>
+&nbsp;&nbsp;<span class="vr">--fm</span>: <span class="vl">'JetBrains Mono', monospace</span>;&nbsp;&nbsp;<span class="cm">/* system labels */</span><br>
+<br>
+}<br><br>
+<span class="section-comment">/* ── GOOGLE FONTS IMPORT ── */</span><br>
+<span class="cm">/* @import url('https://fonts.googleapis.com/css2?</span><br>
+<span class="cm">&nbsp;&nbsp;family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,400;1,600&</span><br>
+<span class="cm">&nbsp;&nbsp;family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&</span><br>
+<span class="cm">&nbsp;&nbsp;family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300&</span><br>
+<span class="cm">&nbsp;&nbsp;display=swap'); */</span>
+  </div>
+</div>
+
+<!-- ── DOCUMENT FOOTER ── -->
+<div class="doc-footer">
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" width="168" height="53" role="img" aria-label="Lucien Sael" style="display:block;overflow:visible;">
+          <defs><style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;display=block');.ls{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:36px;letter-spacing:0.12em;}</style></defs>
+          <text class="ls" font-style="normal" fill="#EDE8DF" x="2" y="32">Lucien</text>
+          <text class="ls" font-style="italic"  fill="#D4622A" x="2" y="66">Sael</text>
+        </svg>
+    <div class="doc-footer-phrase" style="font-family:'Crimson Pro',Georgia,serif;font-size:14px;font-style:italic;color:#C4BDB0;margin-top:10px;">I build worlds. Some of them survive.</div>
+  </div>
+  <div class="doc-footer-meta">
+    Brand Identity System <span>v1.0</span><br>
+    Canonical reference · <span>2026</span><br>
+    luciensael.com
+  </div>
+</div>
+
+</div><!-- /page -->
+</body>
+</html>
