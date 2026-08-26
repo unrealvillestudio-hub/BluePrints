@@ -1,0 +1,236 @@
+{
+  "id": "brand_lucien_sael",
+  "schema_version": "BP_BRAND_1.3",
+  "brand_id": "LucienSael",
+  "brand_slug": "LucienSael",
+  "brandId_aliases": {
+    "_note": "Sinónimos del mismo brand_id canónico, NO fuentes en conflicto. Ninguno se migra y ninguno se toca por barrido.",
+    "canonical": "LucienSael",
+    "slug": "LucienSael",
+    "prose": "Lucien Sael",
+    "domain": "luciensael.com",
+    "record_id": "brand_lucien_sael"
+  },
+  "displayName": "Lucien Sael",
+  "prose_form": "Lucien Sael",
+  "tagline": "I build worlds. Some of them survive.",
+  "created": "2026-08-26",
+  "updated": "2026-08-26",
+  "version": "1.0",
+  "status": "active",
+  "source_of_truth": {
+    "origin": "lucien-sael-brand-identity-v1.html — Brand Identity System v1.0, entregado por Sam el 2026-08-26",
+    "rule": "Este JSON es la forma legible por máquina del mismo sistema. Si el HTML y el JSON discrepan, se corrigen LOS DOS: no hay fuente secundaria.",
+    "derivation_note": "Los tokens NO se derivaron del render del sitio: salen del documento canónico. luciensael.com se alinea a este BP, nunca al revés."
+  },
+  "brand_identity": {
+    "type": "personal_brand",
+    "category": "Builder · Thinker · Operator",
+    "territory": "North Miami, FL",
+    "language_primary": "en",
+    "language_secondary": "es",
+    "language_rule": "English first, always. Spanish when the subject demands it or the audience is specifically LATAM. Español neutro internacional — sin regionalismos de España, México ni Argentina.",
+    "audience": "Public — operators, builders, founders",
+    "public_facing": true,
+    "relationship_to_unrlvl": {
+      "rule": "Lucien Sael es la PERSONA. Unrealville Studio es uno de sus MUNDOS.",
+      "detail": "El sitio menciona a UNRLVL como proyecto — nunca como afiliación ni como empleador. Lucien es más grande que cualquiera de los mundos que construye.",
+      "separation": "Las dos identidades están relacionadas y NUNCA son intercambiables."
+    },
+    "never": [
+      "Títulos o roles: nunca CEO, Founder, Strategist, Consultant. La frase de firma reemplaza todo título.",
+      "Si el contexto exige un descriptor: builder u operator, en minúscula, como descriptor y no como título.",
+      "Geolocalización en firma ni cuerpo de piezas sociales — ver brand_voice_genome lucien_social, que es más restrictivo que este BP para ese canal."
+    ]
+  },
+  "signature_phrase": {
+    "text": "I build worlds. Some of them survive.",
+    "rule": "Es la firma permanente de Lucien. Reemplaza cualquier título o descriptor profesional.",
+    "constraints": [
+      "Nunca se atribuye a una empresa.",
+      "Nunca se califica con contexto.",
+      "Nunca se cambia.",
+      "Nunca va dentro ni pegada al logotipo: vive debajo, separada."
+    ],
+    "render": "Crimson Pro itálica, en parchment, debajo del logotipo o del nombre.",
+    "appears_in": ["web footer", "blog byline", "email", "compact inline"]
+  },
+  "logotype": {
+    "format": "svg_inline",
+    "font_family": "Cormorant Garamond",
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&display=block",
+    "correct_form": "Lucien / Sael — apilado en dos líneas",
+    "construction": {
+      "weight": "Cormorant Garamond 300",
+      "first_name": "Lucien — bone, recto (upright)",
+      "last_name": "Sael — ember, itálica",
+      "stacking": "vertical, dos líneas",
+      "letter_spacing": ".12em",
+      "line_height": ".88",
+      "rationale": "El nombre de pila asienta. El apellido enciende. La asimetría es el punto."
+    },
+    "color_rule": {
+      "on_dark": "Lucien en bone + Sael en ember — uso primario",
+      "on_light": "Lucien en carbon + Sael en ember",
+      "gold_never": "Gold NUNCA se usa en el logotipo. Pertenece solo a acentos secundarios."
+    },
+    "sizes": {
+      "canonical_large": "SVG inline, 320×96",
+      "nav": "130×41px — navegación, header",
+      "footer": "168×53px — footer, inline grande",
+      "inline_min": "96×30px — bylines, tags, contextos pequeños",
+      "minimum": "16px mínimo en digital. Por debajo, usar la variante inline: Lucien Sael en una sola línea, sin apilar, tracking .08em."
+    },
+    "clear_space": "Mínimo 1× la altura de mayúscula de Lucien en los cuatro lados. El logotipo respira, no se agolpa.",
+    "forbidden_forms": [
+      "Estirar o condensar — nunca se escala de forma no proporcional; la relación entre Lucien y Sael es fija.",
+      "Sael en cualquier color que no sea ember (fondo oscuro) o carbon (fondo claro). Ni gold, ni parchment, ni bone.",
+      "Lucien en itálica — solo Sael es itálica; Lucien va siempre recto.",
+      "Añadir la frase de firma dentro o pegada al logotipo."
+    ]
+  },
+  "color_palette": {
+    "_system": "EMBER SYSTEM",
+    "primary": {
+      "obsidian": { "hex": "#0D0D0B", "role": "page background — el vacío bajo todo" },
+      "carbon": { "hex": "#1C1C1A", "role": "superficie primaria — cálida, no fría" },
+      "smoke": { "hex": "#2E2E2B", "role": "superficie elevada — tarjetas, hover, bloques de código" },
+      "ash": { "hex": "#4A4A45", "role": "bordes y divisores — lo que queda tras la intensidad" }
+    },
+    "text": {
+      "bone": { "hex": "#EDE8DF", "role": "texto primario — blanco cálido, ni clínico ni puro" },
+      "parchment": { "hex": "#C4BDB0", "role": "texto secundario — una página leída muchas veces" },
+      "bone_60": { "rgba": "rgba(237,232,223,.60)" },
+      "bone_30": { "rgba": "rgba(237,232,223,.30)" },
+      "bone_12": { "rgba": "rgba(237,232,223,.12)", "role": "bordes claros" },
+      "bone_06": { "rgba": "rgba(237,232,223,.06)", "role": "bordes sutiles" }
+    },
+    "accent": {
+      "ember": { "hex": "#D4622A", "role": "acento primario — el empuje" },
+      "gold": { "hex": "#B8922A", "role": "acento secundario — autoridad ganada, lo que queda tras el fuego" },
+      "ember_20": { "rgba": "rgba(212,98,42,.20)" },
+      "ember_08": { "rgba": "rgba(212,98,42,.08)" },
+      "ember_04": { "rgba": "rgba(212,98,42,.04)" },
+      "gold_20": { "rgba": "rgba(184,146,42,.20)" },
+      "gold_08": { "rgba": "rgba(184,146,42,.08)" }
+    },
+    "rules": [
+      "Ember para el elemento más importante de cada vista — uno solo.",
+      "Gold para énfasis secundario. Bone para texto. Parchment para texto de apoyo. Carbon para superficies.",
+      "NUNCA cian, blanco puro ni ningún azul. Ese es el mundo de UNRLVL.",
+      "El mundo de Lucien es ember, gold y carbon."
+    ]
+  },
+  "typography": {
+    "display": {
+      "family": "Cormorant Garamond",
+      "source": "Google Fonts",
+      "weights": ["300", "300i", "600i"],
+      "usage": "Logotipo, titulares, citas — todo lo que reclama atención",
+      "tracking": ".01em a .12em",
+      "leading": ".88 a 1.1 (display)"
+    },
+    "body": {
+      "family": "Crimson Pro",
+      "source": "Google Fonts",
+      "weights": ["300", "300i", "400", "400i", "600i"],
+      "usage": "Cuerpo, artículos de blog, formato largo — todo lo que necesita leerse",
+      "size": "15–19px cuerpo · 13–15px pequeño",
+      "leading": "1.65–1.8"
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "source": "Google Fonts",
+      "weights": ["300", "400", "700"],
+      "usage": "Etiquetas, tags, metadatos, navegación, código — todo lo que necesita ser preciso",
+      "size": "8–11px etiquetas · 12–13px código",
+      "tracking": ".14em a .38em"
+    },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300&display=swap",
+    "forbidden": [
+      "Fuentes de sistema.",
+      "Sans-serif en contextos editoriales.",
+      "Bebas Neue — es de UNRLVL.",
+      "Space Mono — es de UNRLVL."
+    ],
+    "rule": "El mundo tipográfico de Lucien es enteramente distinto al del estudio."
+  },
+  "signature_and_footer": {
+    "web_footer": {
+      "composition": "logotipo apilado + frase de firma + luciensael.com + North Miami, FL + © año",
+      "context": "primario"
+    },
+    "blog_byline": { "composition": "logotipo + frase de firma", "context": "editorial" },
+    "quote_attribution": { "composition": "Lucien Sael · North Miami", "context": "citas sueltas" },
+    "compact_inline": { "composition": "Lucien Sael · frase de firma · luciensael.com", "context": "email, contextos pequeños" }
+  },
+  "voice_rules": {
+    "person": "Primera persona, siempre.",
+    "register": "Directo, nunca corporativo. Opiniones enunciadas como posiciones, no como sugerencias.",
+    "tone": "Alguien que dejó de pedir permiso.",
+    "_pointer": "La voz operativa vive en public.brand_voice_genome — lucien_editorial y lucien_social. Este bloque es el eje de identidad; el genoma es el instrumento de generación y manda en runtime."
+  },
+  "css_variables": {
+    "_note": "Referencia de producción, canónica.",
+    "--obsidian": "#0D0D0B",
+    "--carbon": "#1C1C1A",
+    "--smoke": "#2E2E2B",
+    "--ash": "#4A4A45",
+    "--bone": "#EDE8DF",
+    "--parchment": "#C4BDB0",
+    "--ember": "#D4622A",
+    "--gold": "#B8922A",
+    "--ember-20": "rgba(212,98,42,.20)",
+    "--ember-08": "rgba(212,98,42,.08)",
+    "--ember-04": "rgba(212,98,42,.04)",
+    "--gold-20": "rgba(184,146,42,.20)",
+    "--gold-08": "rgba(184,146,42,.08)",
+    "--bone-60": "rgba(237,232,223,.60)",
+    "--bone-30": "rgba(237,232,223,.30)",
+    "--bone-12": "rgba(237,232,223,.12)",
+    "--bone-06": "rgba(237,232,223,.06)",
+    "--fd": "'Cormorant Garamond', Georgia, serif",
+    "--fb": "'Crimson Pro', Georgia, serif",
+    "--fm": "'JetBrains Mono', monospace"
+  },
+  "publish_channel_theme": {
+    "_note": "Mapeo a los tokens de intel.brand_publish_channels.config.theme, que consume api/_theme.js del renderizador unrlvl-blog. Sembrado el 2026-08-26.",
+    "bg": "#0D0D0B",
+    "surface_1": "#1C1C1A",
+    "surface_2": "#2E2E2B",
+    "text": "#EDE8DF",
+    "text_2": "#C4BDB0",
+    "text_3": "#4A4A45",
+    "line": "rgba(237,232,223,0.12)",
+    "line_soft": "rgba(237,232,223,0.06)",
+    "accent": "#D4622A",
+    "accent_2": "rgba(212,98,42,0.20)",
+    "warn": "#B8922A",
+    "font_display": "Cormorant Garamond",
+    "font_serif": "Crimson Pro",
+    "font_sans": "JetBrains Mono"
+  },
+  "assets": {
+    "path_base": "brands/LucienSael/assets/",
+    "logo_dark": {
+      "file": "lucien-sael-logo-dark.svg",
+      "path": "brands/LucienSael/assets/lucien-sael-logo-dark.svg",
+      "spec": "SVG 320×96 — Lucien en #EDE8DF recto, Sael en #D4622A itálica, Cormorant Garamond 300, letter-spacing .12em",
+      "context": "fondos oscuros — uso primario"
+    },
+    "logo_light": {
+      "file": "lucien-sael-logo-light.svg",
+      "path": "brands/LucienSael/assets/lucien-sael-logo-light.svg",
+      "spec": "SVG 320×96 — variante para fondo claro: Lucien en carbon, Sael en ember",
+      "context": "fondos claros — uso poco frecuente"
+    },
+    "_pending": "Falta favicon. UNRLVL usa un SVG del chevron embebido como data URI en cada salida HTML; Lucien no tiene equivalente definido."
+  },
+  "repo": {
+    "blueprints_repo": "unrealvillestudio-hub/BluePrints",
+    "path": "brands/LucienSael/",
+    "json_file": "brands/LucienSael/BP_BRAND_LucienSael_v1.0.json",
+    "html_en": "brands/LucienSael/BP_BRAND_LucienSael_v1.0.html",
+    "assets_path": "brands/LucienSael/assets/"
+  }
+}
