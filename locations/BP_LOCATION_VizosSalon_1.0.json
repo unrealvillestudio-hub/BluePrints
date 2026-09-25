@@ -74,7 +74,9 @@
             "contexto real del salón",
             "contenido 'detrás del salón'",
             "social content de comunidad local"
-          ]
+          ],
+          "asset_path_anterior_2026_09_25": "locations/assets/VizosSalon/vs_exterior_wide_01.jpeg",
+          "asset_path": "locations/assets/VizosSalon/vs_exterior_wide_01.jpeg"
         },
         {
           "ref_id": "Z1_002",
@@ -84,7 +86,9 @@
           "best_use": [
             "detalle de vecindario del salón",
             "contexto de strip comercial activo"
-          ]
+          ],
+          "asset_path_anterior_2026_09_25": "locations/assets/VizosSalon/vs_exterior_facade_01.jpeg",
+          "asset_path": "locations/assets/VizosSalon/vs_exterior_facade_01.jpeg"
         },
         {
           "ref_id": "Z1_003",
@@ -94,7 +98,9 @@
           "best_use": [
             "fondo para copy de localización",
             "geo-anchor visual del negocio"
-          ]
+          ],
+          "asset_path_anterior_2026_09_25": "locations/assets/VizosSalon/vs_exterior_facade_02.jpeg",
+          "asset_path": "locations/assets/VizosSalon/vs_exterior_facade_02.jpeg"
         },
         {
           "ref_id": "Z1_004",
@@ -103,7 +109,10 @@
           "orientation": "landscape",
           "best_use": [
             "variante de Z1_002 para A/B en contenido"
-          ]
+          ],
+          "asset_path_anterior_2026_09_25": "locations/assets/VizosSalon/vs_exterior_facade_03.jpeg",
+          "asset_path": null,
+          "nota_2026_09_25": "Sin foto propia: el archivo que tenía asignado (vs_exterior_facade_03) mostraba el bulevar y hoy es vs_context_street_01 (ref Z2_001)."
         }
       ]
     },
@@ -148,7 +157,9 @@
             "establishing shot barrio",
             "b-roll de contexto 'estamos en Miami'",
             "contenido de negocio local auténtico"
-          ]
+          ],
+          "asset_path_anterior_2026_09_25": "locations/assets/VizosSalon/vs_context_street_01.jpeg",
+          "asset_path": "locations/assets/VizosSalon/vs_context_street_01.jpeg"
         },
         {
           "ref_id": "Z2_002",
@@ -158,7 +169,9 @@
           "best_use": [
             "perspectiva del bulevar",
             "b-roll de llegada al negocio"
-          ]
+          ],
+          "asset_path_anterior_2026_09_25": "locations/assets/VizosSalon/vs_context_boulevard_01.jpeg",
+          "asset_path": "locations/assets/VizosSalon/vs_context_boulevard_01.jpeg"
         },
         {
           "ref_id": "Z2_003",
@@ -168,7 +181,9 @@
           "best_use": [
             "contexto edificio de oficinas adyacente",
             "referencia de zona de clientes profesionales"
-          ]
+          ],
+          "asset_path_anterior_2026_09_25": "locations/assets/VizosSalon/vs_context_building_01.jpeg",
+          "asset_path": "locations/assets/VizosSalon/vs_context_building_01.jpeg"
         },
         {
           "ref_id": "Z2_004",
@@ -178,7 +193,9 @@
           "best_use": [
             "establishing shot completo del bloque comercial",
             "contexto inmobiliario del área"
-          ]
+          ],
+          "asset_path_anterior_2026_09_25": "locations/assets/VizosSalon/vs_context_building_02.jpeg",
+          "asset_path": "locations/assets/VizosSalon/vs_context_building_02.jpeg"
         }
       ]
     },
@@ -196,7 +213,9 @@
           "best_use": [
             "fondo neutro South Florida suburban",
             "contexto de actividad comercial sin protagonismo"
-          ]
+          ],
+          "asset_path_anterior_2026_09_25": "locations/assets/VizosSalon/vs_context_street_01.jpeg",
+          "asset_path": "locations/assets/VizosSalon/vs_context_street_02.jpeg"
         }
       ]
     },
@@ -234,6 +253,85 @@
         ]
       },
       "zones_detail": {
+        "makeup_station": {
+          "description": "Hollywood mirror grande (blanco con bombillas), escritorio negro, Mac/teclado blanco, silla directora cobre-negro, ring light, poinsettia roja, rosas rosas. Zona más fotogénica del salón — luz intensa y controlada.",
+          "files": [
+            "vs_int_makeup_station_01.jpeg",
+            "vs_int_makeup_station_02.jpeg",
+            "vs_int_makeup_station_03.jpeg"
+          ]
+        },
+        "styling_area": {
+          "description": "Sillas hidráulicas negras/grises en fila, espejo plateado de pie, carrito de herramientas negro, ring lights, secadores de casco. Zona de trabajo activo.",
+          "files": [
+            "vs_int_styling_area_01.jpeg",
+            "vs_int_styling_area_02.jpeg",
+            "vs_int_styling_area_03.jpeg",
+            "vs_int_styling_area_04.jpeg",
+            "vs_int_styling_area_05.jpeg",
+            "vs_int_styling_area_06.jpeg",
+            "vs_int_styling_area_07.jpeg"
+          ]
+        },
+        "wash_area": {
+          "description": "Sillas de lavado plateadas futuristas (forma angular art-deco), cuencos blancos cerámicos, productos en la pared. Zona muy fotogénica por el diseño industrial-premium de las sillas.",
+          "files": [
+            "vs_int_wash_area_01.jpeg",
+            "vs_int_wash_area_02.jpeg",
+            "vs_int_wash_area_03.jpeg",
+            "vs_int_wash_area_04.jpeg"
+          ]
+        },
+        "lounge": {
+          "description": "Butacas azules capitoné con tachones blancos, barra cortesía (Nespresso, dispensador agua, copas, bambú, sansevieria, áloe). Espacio de espera premium.",
+          "files": [
+            "vs_int_lounge_01.jpeg",
+            "vs_int_lounge_02.jpeg",
+            "vs_int_lounge_03.jpeg",
+            "vs_int_lounge_04.jpeg"
+          ]
+        },
+        "corridor": {
+          "description": "Pasillo principal hacia la entrada acristalada: estación de maquillaje con espejo de bombillas a un lado. Las vitrinas del fondo pueden mostrar letras (BROWS/NAILS/HAIR).",
+          "files": [
+            "vs_int_corridor_01.jpeg",
+            "vs_int_corridor_02.jpeg"
+          ]
+        },
+        "nails_area": {
+          "description": "Zona de uñas: pared de esmaltes de colores, mesas de manicura y sillones de pedicura. Sin letreros legibles en primer plano.",
+          "files": [
+            "vs_int_nails_area_01.jpeg",
+            "vs_int_nails_area_02.jpeg"
+          ]
+        },
+        "reception": {
+          "description": "Recepción y espera: sofá de piel negro con mesa redonda, mostrador de recepción; al fondo, estaciones de uñas. Hay pequeños carteles rosas: evitar como fondo de imagen sin texto.",
+          "files": [
+            "vs_int_reception_01.jpeg",
+            "vs_int_reception_02.jpeg"
+          ]
+        },
+        "floor_detail": {
+          "description": "Suelo de porcelanato imitación madera gris claro — textura limpia y premium. Útil como elemento de composición o de detalle.",
+          "files": [
+            "vs_int_floor_detail_01.jpeg"
+          ]
+        }
+      },
+      "reference_photos": {
+        "path": "locations/assets/VizosSalon/interior/",
+        "total": 25,
+        "alpha_processed": false,
+        "note": "Fotos de interior/ambiente — alpha removal no aplica. 2026-09-25: 28 → 25 (3 duplicados exactos eliminados) y renombrado por contenido; ver rename_log_2026_09_25."
+      },
+      "suggested_compositions_imagelab": [
+        "PO (alpha) + vs_int_makeup_station_02 — 'en el espejo del salón', luz Hollywood",
+        "PO (alpha) + vs_int_lounge_01 — sentada en butaca azul, cliente recibida",
+        "PO (alpha) + vs_int_wash_area_03 — lavando el cabello a una clienta",
+        "PO (alpha) + vs_int_styling_area_07 — de pie en la zona de peinado, profesional en su territorio"
+      ],
+      "zones_detail_anterior_2026_09_25": {
         "makeup_station": {
           "description": "Hollywood mirror grande (blanco con bombillas), escritorio negro, Mac/teclado blanco, silla directora cobre-negro, ring light, poinsettia roja, rosas rosas. Zona más fotogénica del salón — luz intensa y controlada.",
           "files": [
@@ -293,13 +391,7 @@
           ]
         }
       },
-      "reference_photos": {
-        "path": "locations/assets/VizosSalon/interior/",
-        "total": 28,
-        "alpha_processed": false,
-        "note": "Fotos de interior/ambiente — alpha removal no aplica."
-      },
-      "suggested_compositions_imagelab": [
+      "suggested_compositions_imagelab_anterior_2026_09_25": [
         "PO (alpha) + vs_int_makeup_station_01 — 'en el espejo del salón', luz Hollywood",
         "PO (alpha) + vs_int_lounge_01 — sentada en butaca azul, cliente recibida",
         "PO (alpha) + vs_int_corridor_05 — de pie en el pasillo mirando hacia la entrada",
@@ -385,5 +477,48 @@
     "equipment": "smartphone (WhatsApp source)",
     "notes": "Tomas en mano desde la acera y el parking. Luz de tarde-mediodía directa. Sin tripié. Útil para composición directa o como referencias de escena. No requieren recorte de fondo."
   },
-  "notes": "Zona Yod eliminada: letrero no corresponde al salón de PO (letrero anterior no reemplazado aún por Vizos)"
+  "notes": "Zona Yod eliminada: letrero no corresponde al salón de PO (letrero anterior no reemplazado aún por Vizos) || 2026-09-25: renombrado por contenido de interior y exterior, 3 duplicados eliminados, zonas nails_area y reception añadidas; rename_log_2026_09_25 conserva los nombres anteriores.",
+  "rename_log_2026_09_25": {
+    "motivo": "Los nombres no correspondían a lo que mostraba cada foto (p. ej. vs_int_makeup_station_01 era el lavacabezas; vs_exterior_facade_01 era el bulevar). Renombrado por contenido, verificado imagen por imagen por CC y aprobado por Sam el 2026-09-25.",
+    "interior": {
+      "vs_int_corridor_01.jpeg": "vs_int_lounge_01.jpeg",
+      "vs_int_lounge_04.jpeg": "ELIMINADO — duplicado byte a byte",
+      "vs_int_wash_area_01.jpeg": "vs_int_lounge_02.jpeg",
+      "vs_int_wash_area_02.jpeg": "vs_int_lounge_03.jpeg",
+      "vs_int_wash_area_04.jpeg": "vs_int_lounge_04.jpeg",
+      "vs_int_corridor_02.jpeg": "vs_int_makeup_station_01.jpeg",
+      "vs_int_corridor_07.jpeg": "ELIMINADO — duplicado byte a byte",
+      "vs_int_corridor_03.jpeg": "vs_int_makeup_station_02.jpeg",
+      "vs_int_corridor_08.jpeg": "vs_int_makeup_station_03.jpeg",
+      "vs_int_makeup_station_01.jpeg": "vs_int_wash_area_01.jpeg",
+      "vs_int_makeup_station_02.jpeg": "vs_int_wash_area_02.jpeg",
+      "vs_int_wide_02.jpeg": "vs_int_wash_area_03.jpeg",
+      "vs_int_wide_01.jpeg": "vs_int_wash_area_04.jpeg",
+      "vs_int_corridor_04.jpeg": "vs_int_styling_area_01.jpeg",
+      "vs_int_lounge_01.jpeg": "vs_int_styling_area_02.jpeg",
+      "vs_int_wash_area_03.jpeg": "vs_int_styling_area_03.jpeg",
+      "vs_int_wash_area_05.jpeg": "vs_int_styling_area_04.jpeg",
+      "vs_int_wash_area_06.jpeg": "vs_int_styling_area_05.jpeg",
+      "vs_int_wide_03.jpeg": "vs_int_styling_area_06.jpeg",
+      "vs_int_wide_04.jpeg": "vs_int_styling_area_07.jpeg",
+      "vs_int_corridor_06.jpeg": "vs_int_corridor_01.jpeg",
+      "vs_int_lounge_03.jpeg": "ELIMINADO — duplicado byte a byte",
+      "vs_int_lounge_02.jpeg": "vs_int_corridor_02.jpeg",
+      "vs_int_corridor_05.jpeg": "vs_int_nails_area_01.jpeg",
+      "vs_int_floor_detail_02.jpeg": "vs_int_nails_area_02.jpeg",
+      "vs_int_makeup_station_03.jpeg": "vs_int_reception_01.jpeg",
+      "vs_int_wide_05.jpeg": "vs_int_reception_02.jpeg",
+      "vs_int_floor_detail_01.jpeg": "vs_int_floor_detail_01.jpeg"
+    },
+    "exterior": {
+      "vs_context_boulevard_01.jpeg": "vs_exterior_wide_01.jpeg",
+      "vs_context_building_02.jpeg": "vs_exterior_facade_01.jpeg",
+      "vs_context_street_01.jpeg": "vs_exterior_facade_02.jpeg",
+      "vs_exterior_facade_01.jpeg": "vs_context_boulevard_01.jpeg",
+      "vs_exterior_facade_02.jpeg": "vs_context_building_01.jpeg",
+      "vs_context_building_01.jpeg": "vs_context_building_02.jpeg",
+      "vs_exterior_facade_03.jpeg": "vs_context_street_01.jpeg",
+      "vs_exterior_wide_01.jpeg": "vs_context_street_02.jpeg"
+    }
+  }
 }
