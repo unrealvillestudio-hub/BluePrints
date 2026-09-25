@@ -16,7 +16,7 @@
   ],
   "imagelab": {
     "description": "Mujer latina profesional, 35-45 años, cabello rubio/castaño impecablemente trabajado. Contexto Vizos Salón Miami — sillones blancos, espejos iluminados, ambiente premium.",
-    "style": "editorial_clean, Miami daylight, warm tones, beauty professional, luxury salon",
+    "style": "editorial_clean, Miami daylight, true-to-life neutral color, no sepia, no amber color cast, beauty professional, luxury salon",
     "realism_level": "editorial_clean",
     "skin_detail": "realistic",
     "film_look": "digital_clean",
@@ -215,6 +215,6 @@
     }
   },
   "created": "2026-03-06",
-  "last_updated": "2026-03-07",
-  "version_notes": "v1.0 — generado desde análisis de audio Biscayne_Blvd_6.m4a + conocimiento personal de Sam. PENDIENTE: nueva muestra de audio en modo profesional activo (~3 min) para calibrar voicelab con mayor precisión. Audio actual refleja modo personal-íntimo, no modo salón."
+  "last_updated": "2026-09-25",
+  "version_notes": "2026-09-25: imagelab.style — «warm tones» sustituido por color neutro (causa medida del tinte sepia en todas las imágenes de NeuroneSCF; aprobado por Sam, unrlvl-iid-functions#236). Valor anterior: «editorial_clean, Miami daylight, warm tones, beauty professional, luxury salon». || v1.0 — generado desde análisis de audio Biscayne_Blvd_6.m4a + conocimiento personal de Sam. PENDIENTE: nueva muestra de audio en modo profesional activo (~3 min) para calibrar voicelab con mayor precisión. Audio actual refleja modo personal-íntimo, no modo salón."
 }

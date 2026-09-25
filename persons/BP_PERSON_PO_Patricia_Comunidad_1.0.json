@@ -17,7 +17,7 @@
   ],
   "imagelab": {
     "description": "Mujer latina profesional, 35-45 años, look más relajado que en modo salón — mismo nivel de cuidado personal pero contexto más casual. Entornos urbanos Miami, eventos, networking.",
-    "style": "candid lifestyle, Miami urban, warm tones, authentic community vibe",
+    "style": "candid lifestyle, Miami urban, true-to-life neutral color, no sepia, no amber color cast, authentic community vibe",
     "realism_level": "editorial_clean",
     "skin_detail": "realistic",
     "film_look": "digital_warm",
@@ -221,6 +221,6 @@
     }
   },
   "created": "2026-03-06",
-  "last_updated": "2026-03-07",
-  "version_notes": "v1.0 — generado desde análisis de audio Biscayne_Blvd_6.m4a + conocimiento personal de Sam. Este modo es el más cercano al audio de referencia — PO en estado conversacional sin preparación de presentación formal."
+  "last_updated": "2026-09-25",
+  "version_notes": "2026-09-25: imagelab.style — «warm tones» sustituido por color neutro (causa medida del tinte sepia en todas las imágenes de NeuroneSCF; aprobado por Sam, unrlvl-iid-functions#236). Valor anterior: «candid lifestyle, Miami urban, warm tones, authentic community vibe». || v1.0 — generado desde análisis de audio Biscayne_Blvd_6.m4a + conocimiento personal de Sam. Este modo es el más cercano al audio de referencia — PO en estado conversacional sin preparación de presentación formal."
 }
