@@ -1,0 +1,66 @@
+{
+  "schema_version": "BP_PERSON_1.0",
+  "id": "lucien_sael",
+  "brandId": "LucienSael",
+  "displayName": "Lucien Sael",
+  "role_default": "BOTH",
+  "status": "active",
+  "cross_brand_accessible": false,
+  "cross_brand_note": "Persona sintética permanente: fundador público de Unrealville Studio y voz editorial de LucienSael. No se presta a otras marcas.",
+  "expertise": "brand intelligence, estrategia, infraestructura de marca, sistemas editoriales",
+  "compliance_notes": "Sin logos visibles. Nunca sonriendo en retrato. Monocromático absoluto en vestuario.",
+  "compatible_archetypes": [
+    "single_talking_head",
+    "studio_setup",
+    "street_interview"
+  ],
+  "aliases": [
+    "Lucien",
+    "Lucien Sael"
+  ],
+  "imagelab": {
+    "description": "Man in his early-to-mid 40s (apparent 40-46). Deliberately ambiguous ethnic origin: slight Slavic cheekbones, olive-warm skin, angular jaw, dark grey-green eyes, direct calm gaze without warmth. Dark brown-black hair, natural texture, not styled. Slim-athletic build. Natural skin texture, visible pores, micro-asymmetry, not retouched. Wardrobe strictly monochromatic black or deep charcoal: tailored dark shirt open 1-2 buttons (never a turtleneck), structured dark blazer, straight-cut dark trousers, black leather or technical sneakers. Permanent accessories: Movado Museum watch with black dial, chrome index and integrated steel bracelet; two symmetric white gold micro ear pins with 0.03ct diamonds; thin white gold chain 1.2mm with a geometric white gold pendant set with a dark stone (black spinel, dark ruby or deep amethyst). No rings, no other jewelry, no logos.",
+    "style": "editorial portrait, monochromatic, controlled directional light",
+    "realism_level": "photorealistic, editorial, high-end commercial photography standard",
+    "skin_detail": "natural skin texture, visible pores, micro-asymmetry — real not retouched",
+    "film_look": "Leica M11 aesthetic, Kodak Vision3 500T color science, slight cinematic grain",
+    "lens_preset": "85mm f/1.4 equivalent",
+    "depth_of_field": "shallow — subject sharp, background architecturally soft",
+    "has_reference_photos": true,
+    "reference_photos_path": "persons/assets/LS/",
+    "location_preferred": null,
+    "photo_index": {
+      "face_references": [
+        "persons/assets/LS/ls_reference_01.jpg"
+      ],
+      "originals_do_not_use_as_reference": [
+        "persons/assets/LS/ls_reference_01_original.jpg"
+      ]
+    },
+    "reference_notes": "ls_reference_01.jpg es la imagen aprobada por Sam el 2026-09-25 con el letrero «OFERTA / TERMINA EN / 0 HORAS» retirado (inpainting sólo sobre el fondo, el rostro y el vestuario intactos): una referencia con texto invita al generador a copiarlo. El original se conserva como registro y NO se usa como referencia. Es una imagen generada, no el master shot de la fase 1 del BP_Brand_Person_id; el LoRA sigue pendiente."
+  },
+  "videolab": {
+    "archetype_preference": [
+      "single_talking_head"
+    ],
+    "energy_level": "low-medium",
+    "pacing": "lento-medio, pausas con propósito",
+    "color_grade": "desaturated monochrome, neutral"
+  },
+  "voicelab": {
+    "voice_id": "pendiente",
+    "voice_platform": "ElevenLabs — design from scratch",
+    "language": "en-US",
+    "emotion_base": "calm-authoritative",
+    "speed": 0.88,
+    "script_style": "oraciones declarativas cortas"
+  },
+  "humanize": {},
+  "source_documents": [
+    "unrlvl-context/brands/LucienSael/BP_Brand_Person_id.md (v1.0, 2026-04-29) — canon del personaje",
+    "public.brands id=LucienSael — imagelab_*"
+  ],
+  "created": "2026-09-25",
+  "last_updated": "2026-09-25",
+  "version_notes": "1.0 (2026-09-25): primera versión JSON. Destilada del BP_Brand_Person_id.md sin reinterpretar el canon, y con la primera referencia visual aprobada por Sam."
+}
