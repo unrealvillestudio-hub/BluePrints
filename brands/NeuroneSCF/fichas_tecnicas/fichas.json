@@ -1,0 +1,4881 @@
+{
+ "_fuente": "Ficha única de producto de NeuroneSCF (public.product_blueprints + product_presentations). Sin precios: el precio vive en la tienda.",
+ "climas": {
+  "calor_humedo_florida": {
+   "es": "Calor húmedo · Florida",
+   "en": "Hot & humid · Florida",
+   "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+   "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+  }
+ },
+ "fichas": [
+  {
+   "sku": "L015",
+   "nombre": "Total Violet Shampoo",
+   "linea": "Color_Rescue",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "El rubio y las canas se ven más amarillos bajo el sol de Florida, y ese tono cálido se nota en cada foto. Total Violet Shampoo lo corrige desde el lavado: su pigmento violeta apaga el amarillo y devuelve la luz platinada, sin dejar la hebra áspera. Termina con un cabello suave, fácil de peinar y con brillo.",
+    "en": "Blonde and gray hair turn more yellow under the Florida sun, and that warm cast shows up in every photo. Total Violet Shampoo corrects it right in the wash: its violet pigment cancels out yellow and brings back a cool platinum light without leaving strands rough. Hair ends up soft, easy to comb and glossy."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El sol constante acelera el tono amarillo en rubios y canas; un lavado matizador frecuente lo mantiene a raya.",
+     "en": "Constant sun speeds up yellowing in blonde and gray hair; regular toning washes keep it in check."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "reflejos amarillos en rubios y canas",
+    "rubio opaco",
+    "mantenimiento de tonos platinados"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Adiós al amarillo, hola platino",
+     "en": "Goodbye brass, hello platinum"
+    },
+    "entradilla": {
+     "es": "El shampoo matizador que devuelve la luz fría a tu rubio y a tus canas, aunque el sol de Florida insista en amarillearlos.",
+     "en": "The toning shampoo that brings cool light back to blonde and gray hair, no matter how hard the Florida sun pushes toward yellow."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "neutraliza los reflejos amarillos",
+     "devuelve la luz platinada",
+     "no reseca la fibra",
+     "suavidad y brillo"
+    ],
+    "en": [
+     "neutralizes yellow tones",
+     "brings back cool platinum light",
+     "won't dry out the strand",
+     "softness and shine"
+    ]
+   },
+   "rituals": [
+    "Blonde Guard",
+    "Blonde Guard Plus",
+    "Perfect Blonde",
+    "Perfect Blonde Plus"
+   ],
+   "modo_de_uso": {
+    "es": "Con el cabello mojado, masajea una dosis pequeña por todo el largo. Déjalo trabajar entre 2 y 3 minutos y retíralo con agua.",
+    "en": "On wet hair, massage a small dose through the lengths. Let it work for 2–3 minutes, then rinse it out."
+   },
+   "rango_ph": "3.5-4.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados",
+    "afirmar que aclara el cabello"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "L014",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "L015",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "L016",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "L024",
+   "nombre": "Dyfensor Sulfate Free Shampoo",
+   "linea": "Color_Rescue",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un lavado sin sulfatos, pensado para quien invirtió en su color. Limpia con suavidad, sin irritar el cuero cabelludo ni arrastrar sus aceites naturales, y deja una capa protectora sobre la cutícula dañada. El resultado: color que conserva su intensidad por más tiempo y menos encrespamiento. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "A sulfate-free wash for anyone who has invested in their color. It cleanses gently, without irritating the scalp or stripping its natural oils, and leaves a protective layer over damaged cuticle. The result: color that keeps its intensity longer, and less frizz. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Con calor se suda y se lava más seguido; un shampoo sin sulfatos permite lavar a diario sin desgastar el tinte.",
+     "en": "Heat means more sweat and more frequent washing; a sulfate-free shampoo lets you wash daily without wearing down your color."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello teñido que pierde color",
+    "cuero cabelludo sensible",
+    "encrespamiento"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Lava a diario sin gastar tu color",
+     "en": "Wash daily without washing out your color"
+    },
+    "entradilla": {
+     "es": "Limpieza sin sulfatos para quien invirtió en su tinte y vive en un clima que obliga a lavar más seguido.",
+     "en": "Sulfate-free cleansing for anyone who invested in their color and lives where the climate means washing more often."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "sin sulfatos",
+     "limpieza suave sin irritar",
+     "ayuda a conservar el color",
+     "reduce el encrespamiento"
+    ],
+    "en": [
+     "sulfate-free",
+     "gentle, non-irritating cleanse",
+     "helps preserve color",
+     "reduces frizz"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Con el cabello mojado, masajea una dosis pequeña. Déjalo trabajar entre 2 y 3 minutos y retíralo con agua.",
+    "en": "On wet hair, massage in a small dose. Let it work for 2–3 minutes, then rinse it out."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que trata afecciones del cuero cabelludo",
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "L023",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "L024",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "L025",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "L028",
+   "nombre": "Plattina Shampoo",
+   "linea": "Color_Rescue",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un shampoo matizador de pigmento oscuro para canas y cabello platinado. Neutraliza el amarillo que opaca las canas y las deja suaves y en un gris luminoso. También realza el brillo del cabello negro y ayuda a que el rubio decolorado se mantenga frío. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "A dark-pigment toning shampoo for gray and platinum hair. It neutralizes the yellow that dulls gray hair, leaving it soft and a luminous silver. It also boosts shine in black hair and helps bleached blonde stay cool-toned. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El sol amarillea las canas; alternarlo en la rutina recupera el gris limpio.",
+     "en": "Sun yellows gray hair; working it into your routine brings back a clean silver."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "canas amarillentas",
+    "cabello platinado que se torna amarillo",
+    "cabello negro sin brillo"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Canas plateadas, no amarillas",
+     "en": "Silver, not yellow"
+    },
+    "entradilla": {
+     "es": "Su pigmento oscuro limpia el tono amarillento de las canas y del cabello platinado, y realza el brillo del cabello negro.",
+     "en": "Its dark pigment clears the yellow cast from gray and platinum hair, and boosts shine in black hair."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "neutraliza el tono amarillento",
+     "canas suaves y en tono platino",
+     "intensifica el brillo del cabello negro"
+    ],
+    "en": [
+     "neutralizes yellowing",
+     "soft, silver-toned gray hair",
+     "boosts shine in black hair"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Con el cabello mojado, masajea una dosis pequeña. Dale 5 minutos de acción y retíralo con agua.",
+    "en": "On wet hair, massage in a small dose. Give it 5 minutes to work, then rinse it out."
+   },
+   "rango_ph": "4.0-5.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": []
+  },
+  {
+   "sku": "S006",
+   "nombre": "Dyfensor Hair Restructuring Serum",
+   "linea": "Color_Rescue",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Unas gotas que cuidan tu inversión en color. Su mezcla de aminoácidos rellena las zonas dañadas de la fibra y ayuda a que el tinte dure más frente a los lavados frecuentes, el sol y el calor de secador y plancha. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "A few drops that protect your color investment. Its amino-acid blend fills in damaged areas of the fiber and helps dye last longer through frequent washing, sun, and blow-dryer or flat-iron heat. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Sol intenso y lavados diarios son los dos grandes ladrones del color en Florida; este sérum trabaja contra ambos.",
+     "en": "Intense sun and daily washing are the two big color thieves in Florida; this serum works against both."
+    }
+   ],
+   "activos": [
+    {
+     "es": "aminoácidos",
+     "en": "amino acids"
+    }
+   ],
+   "problemas": [
+    "color que se desvanece",
+    "cabello teñido dañado",
+    "daño por calor"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Tu inversión en color, protegida",
+     "en": "Your color investment, protected"
+    },
+    "entradilla": {
+     "es": "Unas gotas de aminoácidos que ayudan a que el tinte aguante el sol, el calor y los lavados de todos los días.",
+     "en": "A few drops of amino acids that help color stand up to sun, heat and everyday washing."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "prolonga la duración del color",
+     "recubre las zonas dañadas",
+     "sin enjuague"
+    ],
+    "en": [
+     "extends color life",
+     "fills in damaged areas",
+     "no rinsing"
+    ]
+   },
+   "rituals": [
+    "S.O.S Rescue System",
+    "Hydra Boost"
+   ],
+   "modo_de_uso": {
+    "es": "Después del lavado y el acondicionador, con el cabello todavía húmedo, reparte entre 2 y 3 gotas en cada sección; usa más o menos según el largo y la densidad. Se queda puesto.",
+    "en": "After washing and conditioning, while hair is still damp, work 2–3 drops into each section; adjust to length and density. Leave it in."
+   },
+   "rango_ph": "3.5-4.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "S006",
+     "tamano": "25 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "T038",
+   "nombre": "Total Violet Mask",
+   "linea": "Color_Rescue",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "La mascarilla que complementa a Total Violet Shampoo. Corrige el amarillo en rubios y canas mientras hidrata, desenreda y repara la fibra decolorada. La puedes usar como acondicionador rápido o como tratamiento más largo cuando el cabello lo pide. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "The mask that pairs with Total Violet Shampoo. It corrects yellow tones in blonde and gray hair while hydrating, detangling and repairing lightened strands. Use it as a quick conditioner or as a longer treatment when your hair needs it. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El rubio decolorado se reseca más con sol y sal; esta mascarilla corrige el tono y devuelve la hidratación en el mismo paso.",
+     "en": "Bleached blonde dries out faster with sun and salt; this mask corrects tone and restores moisture in the same step."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "reflejos amarillos en rubios y canas",
+    "rubio reseco",
+    "cabello decolorado maltratado"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Rubio frío, cabello hidratado",
+     "en": "Cool blonde, hydrated hair"
+    },
+    "entradilla": {
+     "es": "Corrige el amarillo mientras repara la fibra decolorada: rápida como acondicionador o intensa como tratamiento.",
+     "en": "Corrects yellow tones while repairing lightened hair: quick as a conditioner or intensive as a treatment."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "neutraliza los reflejos amarillos",
+     "hidrata, nutre y desenreda",
+     "doble uso: acondicionador o mascarilla"
+    ],
+    "en": [
+     "neutralizes yellow tones",
+     "hydrates, nourishes and detangles",
+     "two ways to use: conditioner or mask"
+    ]
+   },
+   "rituals": [
+    "Blonde Guard",
+    "Blonde Guard Plus",
+    "Perfect Blonde",
+    "Perfect Blonde Plus"
+   ],
+   "modo_de_uso": {
+    "es": "Primero, lava con Total Violet Shampoo. Modo rápido: reparte en medios y puntas, masajea y retira con agua a los 1–2 minutos. Modo tratamiento: con el cabello recién lavado y húmedo, empieza por las zonas más castigadas y déjala 15–20 minutos antes de retirarla.",
+    "en": "Wash first with Total Violet Shampoo. Quick mode: work through mid-lengths and ends, massage, and rinse after 1–2 minutes. Treatment mode: on clean, damp hair, start where the damage is worst and leave it on 15–20 minutes before rinsing."
+   },
+   "rango_ph": "3.5-4.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T037",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "T038",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "T043-T057",
+   "nombre": "Revenant Color",
+   "linea": "Color_Rescue",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Una mascarilla nutritiva con color semipermanente para devolverle intensidad al tono que ya tienes y avivar los reflejos, con un acabado sedoso. Sus tonos se pueden combinar para ajustar el matiz exacto; en casa, una vez por semana reactiva el color entre visitas al salón.",
+    "en": "A nourishing mask with semi-permanent color that brings back the intensity of the shade you already have and revives highlights, with a silky finish. Shades can be mixed to fine-tune the exact tone; at home, once a week refreshes color between salon visits."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El sol desvanece los reflejos cobrizos, violetas y oscuros antes de tiempo; una pasada semanal los recupera.",
+     "en": "Sun fades copper, violet and dark tones early; a weekly pass brings them back."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "color que pierde intensidad",
+    "reflejos apagados",
+    "corrección de matices"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Tu color, recién salido del salón",
+     "en": "Your color, fresh from the salon"
+    },
+    "entradilla": {
+     "es": "Una mascarilla nutritiva con pigmento que devuelve la intensidad a tu tono entre visitas al colorista.",
+     "en": "A nourishing pigment mask that brings your shade's intensity back between colorist visits."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "realza el tono existente",
+     "intensifica los reflejos",
+     "tonos mezclables",
+     "acabado sedoso y luminoso"
+    ],
+    "en": [
+     "revives your current shade",
+     "intensifies highlights",
+     "mixable shades",
+     "silky, luminous finish"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Con el cabello lavado y húmedo, trabaja por secciones delgadas; puedes usar las manos o bol y pincel. Deja actuar 5, 10 o 15 minutos según cuánta intensidad buscas, y retira con agua. Para mantener el color en casa: una vez por semana.",
+    "en": "On washed, damp hair, work in thin sections, by hand or with a bowl and brush. Leave it 5, 10 or 15 minutes depending on how much intensity you want, then rinse. To keep color up at home: once a week."
+   },
+   "rango_ph": "3.5-4.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que cubre canas",
+    "afirmar que es un tinte permanente"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T044",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T048",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T050",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T056",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T057",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "T062",
+   "nombre": "DY Fazza Color",
+   "linea": "Color_Rescue",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "La versión de DY Fazza para cabello teñido. Dos fases en un spray sin enjuague: la fase oleosa forma un escudo contra el sol, el calor y los químicos y controla el frizz; la fase acuosa lleva vitaminas, aminoácidos, proteínas y oligosacáridos que devuelven hidratación, cuerpo y fuerza. Tu color dura más y se ve más vivo. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "The DY Fazza version for color-treated hair. Two phases in a leave-in spray: the oil phase forms a shield against sun, heat and chemical processes and controls frizz; the water phase carries vitamins, amino acids, proteins and oligosaccharides that restore moisture, body and strength. Your color lasts longer and looks brighter. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Protege el tinte del sol y controla el frizz de la humedad en un solo paso, antes de salir de casa.",
+     "en": "It shields color from the sun and tames humidity frizz in one step, before you head out."
+    }
+   ],
+   "activos": [
+    {
+     "es": "vitaminas",
+     "en": "vitamins"
+    },
+    {
+     "es": "aminoácidos",
+     "en": "amino acids"
+    },
+    {
+     "es": "proteínas",
+     "en": "proteins"
+    },
+    {
+     "es": "oligosacáridos",
+     "en": "oligosaccharides"
+    }
+   ],
+   "problemas": [
+    "cabello teñido reseco",
+    "frizz",
+    "daño por calor",
+    "daño por sol"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Color protegido, frizz bajo control",
+     "en": "Color protected, frizz under control"
+    },
+    "entradilla": {
+     "es": "El bifásico sin enjuague para cabello teñido que Patricia Osorio eligió para cinco de sus rituales para el clima de la Florida.",
+     "en": "The two-phase leave-in for color-treated hair that Patricia Osorio chose for five of her Florida-climate rituals."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "conserva el color",
+     "hidrata y desenreda",
+     "protege del calor y del sol",
+     "controla el frizz"
+    ],
+    "en": [
+     "helps preserve color",
+     "hydrates and detangles",
+     "protects from heat and sun",
+     "controls frizz"
+    ]
+   },
+   "rituals": [
+    "Restore Therapy",
+    "Restore Therapy Plus",
+    "Restore & Shield",
+    "Blonde Guard",
+    "Blonde Guard Plus"
+   ],
+   "modo_de_uso": {
+    "es": "Agita el envase hasta que las dos fases se unan. Rocía con el cabello recién lavado y apenas húmedo; no se enjuaga. Luego peina como quieras.",
+    "en": "Shake the bottle until both phases blend. Mist over clean, barely damp hair; no rinsing. Then style however you like."
+   },
+   "rango_ph": "2.8-3.1",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T064",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "T061",
+     "tamano": "200 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T062",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "L013",
+   "nombre": "Humit Shampoo",
+   "linea": "Moisture",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un shampoo de hidratación intensa para cabello seco o maltratado. Atrae y retiene la humedad dentro de la fibra, acondiciona desde el lavado y deja el cabello más manejable, brillante y con el frizz bajo control. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "An intensely hydrating shampoo for dry or damaged hair. It draws in and holds moisture inside the fiber, conditions from the very first wash and leaves hair more manageable, shiny and with frizz under control. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Paradoja de Florida: afuera sobra humedad y adentro el aire acondicionado seca el cabello. Hidratarlo por dentro es lo que evita que busque la humedad del aire y se encrespe.",
+     "en": "The Florida paradox: there is too much humidity outside while indoor air conditioning dries hair out. Hydrating it from within keeps it from pulling moisture from the air and frizzing."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello seco",
+    "cabello deshidratado",
+    "frizz"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Hidratación que empieza en el lavado",
+     "en": "Hydration that starts in the shower"
+    },
+    "entradilla": {
+     "es": "Un shampoo que retiene la humedad dentro de la fibra, para que tu cabello no la busque en el aire húmedo de Florida.",
+     "en": "A shampoo that keeps moisture inside the fiber, so your hair doesn't go looking for it in Florida's humid air."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "alta hidratación",
+     "reduce el frizz",
+     "mejora la manejabilidad",
+     "brillo y suavidad"
+    ],
+    "en": [
+     "intense hydration",
+     "reduces frizz",
+     "more manageable hair",
+     "shine and softness"
+    ]
+   },
+   "rituals": [
+    "Moisture Recovery",
+    "Moisture Recovery Plus",
+    "Moisture & Shine"
+   ],
+   "modo_de_uso": {
+    "es": "Con el cabello mojado, masajea una dosis pequeña. Déjalo trabajar entre 3 y 5 minutos y retíralo con agua.",
+    "en": "On wet hair, massage in a small dose. Let it work for 3–5 minutes, then rinse it out."
+   },
+   "rango_ph": "5.5-6.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "L017",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "L013",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "L019",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "S005",
+   "nombre": "Hyaloneurine Face & Hair Serum",
+   "linea": "Moisture",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un sérum de doble uso, para cabello y rostro, con elastina, colágeno y ácido hialurónico. En el cabello devuelve brillo, suavidad y vitalidad; en la piel aporta luminosidad. Bastan unas gotas. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "A dual-use serum for hair and face with elastin, collagen and hyaluronic acid. On hair it restores shine, softness and vitality; on skin it adds radiance. A few drops are all it takes. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El contraste entre el calor de afuera y el aire acondicionado deshidrata cabello y piel a la vez; un solo sérum atiende ambos.",
+     "en": "Moving between outdoor heat and indoor air conditioning dehydrates hair and skin at the same time; one serum takes care of both."
+    }
+   ],
+   "activos": [
+    {
+     "es": "ácido hialurónico",
+     "en": "hyaluronic acid"
+    },
+    {
+     "es": "colágeno",
+     "en": "collagen"
+    },
+    {
+     "es": "elastina",
+     "en": "elastin"
+    }
+   ],
+   "problemas": [
+    "cabello opaco y sin vitalidad",
+    "cabello maduro",
+    "sequedad"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Un sérum, dos usos: cabello y rostro",
+     "en": "One serum, two uses: hair and face"
+    },
+    "entradilla": {
+     "es": "Ácido hialurónico, colágeno y elastina para devolver luz y suavidad cuando el calor de afuera y el aire acondicionado deshidratan.",
+     "en": "Hyaluronic acid, collagen and elastin to restore glow and softness when outdoor heat and indoor AC dehydrate you."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "uso en cabello y rostro",
+     "luminosidad y suavidad",
+     "con elastina, colágeno y ácido hialurónico"
+    ],
+    "en": [
+     "for hair and face",
+     "radiance and softness",
+     "elastin, collagen and hyaluronic acid"
+    ]
+   },
+   "rituals": [
+    "S.O.S Rescue System",
+    "Hydra Boost"
+   ],
+   "modo_de_uso": {
+    "es": "Cabello: después del lavado y el acondicionador, con el cabello húmedo, reparte entre 2 y 3 gotas por sección según el largo y la densidad; se queda puesto. Rostro: sobre la piel limpia y un poco húmeda, entre 2 y 3 gotas en círculos, hasta que la piel lo absorba.",
+    "en": "Hair: after washing and conditioning, on damp hair, work 2–3 drops into each section depending on length and density; leave it in. Face: on clean, slightly damp skin, 2–3 drops in circular motions until fully absorbed."
+   },
+   "rango_ph": "5.5-6.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que elimina arrugas",
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "S005",
+     "tamano": "50 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "T029",
+   "nombre": "DY Fazza",
+   "linea": "Moisture",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "El spray bifásico sin enjuague que no falta en un clima como el de Florida. La fase oleosa protege del sol, del calor del secador y de los procesos químicos, controla el frizz y da brillo; la fase acuosa aporta vitaminas, aminoácidos, proteínas y oligosacáridos para devolver hidratación, cuerpo y fuerza. Además desenreda y da flexibilidad, para que el cabello se quiebre menos. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "The two-phase leave-in spray you want on hand in a climate like Florida's. The oil phase protects against sun, blow-dryer heat and chemical processes, controls frizz and adds shine; the water phase delivers vitamins, amino acids, proteins and oligosaccharides to restore moisture, body and strength. It also detangles and adds flexibility, so hair breaks less. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Sol, humedad y secador en la misma mañana: un solo spray cubre los tres frentes antes de salir.",
+     "en": "Sun, humidity and a blow-dryer in the same morning: one spray covers all three before you leave."
+    }
+   ],
+   "activos": [
+    {
+     "es": "vitaminas",
+     "en": "vitamins"
+    },
+    {
+     "es": "aminoácidos",
+     "en": "amino acids"
+    },
+    {
+     "es": "proteínas",
+     "en": "proteins"
+    },
+    {
+     "es": "oligosacáridos",
+     "en": "oligosaccharides"
+    }
+   ],
+   "problemas": [
+    "cabello seco",
+    "frizz",
+    "quiebre",
+    "daño por calor",
+    "daño por sol"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Tu escudo contra sol, humedad y calor",
+     "en": "Your shield against sun, humidity and heat"
+    },
+    "entradilla": {
+     "es": "El bifásico sin enjuague que Patricia Osorio eligió para cuatro de sus rituales para el clima de la Florida.",
+     "en": "The two-phase leave-in Patricia Osorio chose for four of her Florida-climate rituals."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "hidrata y desenreda",
+     "ayuda a evitar el quiebre",
+     "protege del calor y del sol",
+     "controla el frizz"
+    ],
+    "en": [
+     "hydrates and detangles",
+     "helps prevent breakage",
+     "protects from heat and sun",
+     "controls frizz"
+    ]
+   },
+   "rituals": [
+    "Moisture Recovery",
+    "Moisture Recovery Plus",
+    "Moisture & Shine",
+    "S.O.S Rescue System"
+   ],
+   "modo_de_uso": {
+    "es": "Agita el envase hasta que las dos fases se unan. Rocía con el cabello recién lavado y apenas húmedo; no se enjuaga. Luego peina como quieras.",
+    "en": "Shake the bottle until both phases blend. Mist over clean, barely damp hair; no rinsing. Then style however you like."
+   },
+   "rango_ph": "2.8-3.1",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T028",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "T030",
+     "tamano": "200 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T029",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "T035",
+   "nombre": "Humit Mask",
+   "linea": "Moisture",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "La mascarilla de hidratación profunda de la línea Moisture. Vitaminas, proteínas, polisacáridos y aminoácidos: con esa combinación repone la humedad del cabello seco y maltratado y lo deja suave, manejable y con brillo por más tiempo. Úsala rápida como acondicionador o déjala más tiempo como tratamiento.",
+    "en": "The deep-hydration mask of the Moisture line. Vitamins, proteins, polysaccharides and amino acids: with that blend it replenishes moisture in dry, damaged hair and leaves it soft, manageable and shiny for longer. Use it quickly as a conditioner or leave it on longer as a treatment."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Un cabello bien hidratado no absorbe la humedad del aire: por eso hidratar es la primera defensa contra el frizz en Florida.",
+     "en": "Well-hydrated hair doesn't soak up moisture from the air, which is why hydration is the first defense against frizz in Florida."
+    }
+   ],
+   "activos": [
+    {
+     "es": "aminoácidos",
+     "en": "amino acids"
+    },
+    {
+     "es": "polisacáridos",
+     "en": "polysaccharides"
+    },
+    {
+     "es": "proteínas",
+     "en": "proteins"
+    },
+    {
+     "es": "vitaminas",
+     "en": "vitamins"
+    }
+   ],
+   "problemas": [
+    "cabello seco",
+    "cabello maltratado",
+    "falta de manejabilidad"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Hidratación profunda que se queda",
+     "en": "Deep hydration that stays"
+    },
+    "entradilla": {
+     "es": "La mascarilla de la línea Moisture: un cabello bien hidratado no absorbe la humedad del aire, y por eso no se encrespa.",
+     "en": "The Moisture line mask: well-hydrated hair doesn't soak up humidity, and that's why it doesn't frizz."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "alta hidratación",
+     "doble uso: acondicionador o mascarilla",
+     "suavidad y brillo"
+    ],
+    "en": [
+     "intense hydration",
+     "two ways to use: conditioner or mask",
+     "softness and shine"
+    ]
+   },
+   "rituals": [
+    "Moisture Recovery",
+    "Moisture Recovery Plus",
+    "Moisture & Shine"
+   ],
+   "modo_de_uso": {
+    "es": "Modo rápido: después del shampoo, reparte en medios y puntas, masajea y retira con agua a los 1–2 minutos. Modo tratamiento: con el cabello recién lavado y húmedo, empieza por las zonas más castigadas y déjala 15–20 minutos antes de retirarla.",
+    "en": "Quick mode: after shampooing, work through mid-lengths and ends, massage, and rinse after 1–2 minutes. Treatment mode: on clean, damp hair, start where the damage is worst and leave it on 15–20 minutes before rinsing."
+   },
+   "rango_ph": "3.5-4.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T034",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "T035",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T036",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "C090-C179",
+   "nombre": "Neurone Color",
+   "linea": "Pro_Salon",
+   "tipo": "producto",
+   "uso": "profesional",
+   "descripcion": {
+    "es": "Coloración permanente en crema para el salón. Su tecnología de nanotribología equilibra la lubricación de la fibra durante el servicio, para que el color entre en la fibra dañándola lo mínimo, y su proteína de quinoa (cisteína, isoleucina y treonina) protege el córtex y alarga la vida del color. Cubre canas y trabaja con toda la carta de tonos.",
+    "en": "Permanent cream color for the salon. Its nanotribology technology balances fiber lubrication during the service so color enters the fiber with minimal harm, and its quinoa protein (cysteine, isoleucine and threonine) protects the cortex and extends color life. It covers gray and works across the full shade chart."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "En un mercado de sol intenso, la duración del color es lo que el cliente nota entre visitas.",
+     "en": "In a high-sun market, color longevity is what the client notices between visits."
+    }
+   ],
+   "activos": [
+    {
+     "es": "proteína de quinoa",
+     "en": "quinoa protein"
+    },
+    {
+     "es": "cisteína",
+     "en": "cysteine"
+    },
+    {
+     "es": "isoleucina",
+     "en": "isoleucine"
+    },
+    {
+     "es": "treonina",
+     "en": "threonine"
+    }
+   ],
+   "problemas": [
+    "cobertura de canas",
+    "coloración permanente en salón",
+    "daño durante la coloración"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Color permanente con ciencia de salón",
+     "en": "Permanent color, salon science"
+    },
+    "entradilla": {
+     "es": "Nanotribología y proteína de quinoa para que el color entre con el menor daño y dure más.",
+     "en": "Nanotribology and quinoa protein so color goes in with minimal damage and lasts longer."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "cobertura de canas",
+     "color duradero",
+     "menor daño durante la coloración"
+    ],
+    "en": [
+     "gray coverage",
+     "long-lasting color",
+     "less damage during coloring"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Uso profesional. Proporción 1 : 1½ (color : Neuroxide) en bol no metálico, hasta lograr una crema uniforme; se aplica en seco, sin lavar. Primera coloración: arranca en la nuca por medios y puntas, espera 15 min, pasa a raíces y suma 30 min. Retoque: solo el crecimiento, 45 min. Canas resistentes: mitad tono elegido y mitad su natural equivalente, con Neuroxide 20 vol., 45–60 min. Retira solo con agua.",
+    "en": "Professional use. Ratio 1 : 1½ (color : Neuroxide) in a non-metal bowl until smooth and even; apply to dry, unwashed hair. First-time color: start at the nape on mid-lengths and ends, wait 15 min, move to the roots and add 30 min. Touch-up: regrowth only, 45 min. Resistant gray: half chosen shade, half its natural equivalent, with Neuroxide 20 vol., 45–60 min. Rinse with water only."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Los tintes para el cabello pueden provocar reacciones alérgicas graves: haz siempre una prueba de sensibilidad previa.",
+     "No se usa en menores de 16 años.",
+     "No lo apliques si hay erupción en el rostro, un cuero cabelludo lastimado, irritado o sensible, o si alguna vez hubo reacción a un tatuaje temporal de henna negra, que aumenta el riesgo de alergia.",
+     "Protege los ojos y guárdalo donde los niños no lleguen."
+    ],
+    "en": [
+     "Any hair dye may trigger a serious allergy: always do a sensitivity test first.",
+     "Not for use on anyone under 16.",
+     "Don't apply if there is a facial rash, a sensitive, irritated or broken scalp, or any past reaction to a temporary black-henna tattoo, which raises allergy risk.",
+     "Keep out of the eyes and out of children's reach."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados",
+    "venta o recomendación de uso en casa sin profesional"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "C090",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C091",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C092",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C093",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C094",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C095",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C096",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C097",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C098",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C099",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C100",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C101",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C102",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C103",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C106",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C107",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C108",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C109",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C110",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C112",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C113",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C114",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C115",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C116",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C117",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C122",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C124",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C126",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C128",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C129",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C130",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C131",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C132",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C134",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C135",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C137",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C138",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C139",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C140",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C141",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C142",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C143",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C154",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C181",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C183",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C155",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "C156",
+     "tamano": "90 ml",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "C166-C178",
+   "nombre": "Fanzi Mix",
+   "linea": "Pro_Salon",
+   "tipo": "producto",
+   "uso": "profesional",
+   "descripcion": {
+    "es": "Color de fantasía semipermanente y acondicionador, sin peróxido ni amoníaco, para tonos vivos que duran. Los tonos no se contaminan entre sí al enjuagar, lo que permite trabajar varios colores en una misma cabeza, y con Tone Down Neutral se consiguen pasteles. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "Conditioning semi-permanent fantasy color, with no peroxide or ammonia, for vivid shades that last. Shades don't bleed into each other when rinsed, so you can work several colors on one head, and Tone Down Neutral creates pastels. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [],
+   "activos": [],
+   "problemas": [
+    "colores de fantasía",
+    "tonos pastel",
+    "efecto arcoíris"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Fantasía que no se mezcla al enjuagar",
+     "en": "Fantasy shades that don't bleed"
+    },
+    "entradilla": {
+     "es": "Color semipermanente sin peróxido ni amoníaco, para trabajar varios tonos en una misma cabeza.",
+     "en": "Semi-permanent color with no peroxide or ammonia, to work several shades on one head."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "sin peróxido ni amoníaco",
+     "tonos mezclables",
+     "los tonos no se manchan entre sí"
+    ],
+    "en": [
+     "no peroxide or ammonia",
+     "mixable shades",
+     "shades don't bleed into each other"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Uso profesional. Trabaja sobre cabello limpio y seco, ya aclarado al nivel que pide el tono. Deposita en secciones finas, sin barrer el producto, y deja actuar 20–30 min. Para pasteles: aclara hasta nivel 10 y tiñe Tone Down Neutral con unas gotas del tono elegido.",
+    "en": "Professional use. Work on clean, dry hair already lightened to the level the shade calls for. Deposit in fine sections without sweeping the product, and process 20–30 min. For pastels: lift to level 10 and tint Tone Down Neutral with some drops of the chosen shade."
+   },
+   "rango_ph": "3.5-3.7",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que funciona sin decoloración previa"
+   ],
+   "componentes": [],
+   "presentaciones": []
+  },
+  {
+   "sku": "C180",
+   "nombre": "Total Violet Ink",
+   "linea": "Pro_Salon",
+   "tipo": "producto",
+   "uso": "profesional",
+   "descripcion": {
+    "es": "Pigmento violeta concentrado para el colorista. Elimina el naranja y el amarillo en rubios claros a extra claros y da luz al platino. Se dosifica en gotas dentro del producto que ya vas a usar: tinte, decolorante, shampoo, mascarilla o gel.",
+    "en": "Concentrated violet pigment for the colorist. It removes orange and yellow in light to extra-light blondes and brightens platinum. Dose it by the drop into the product you're already using: color, lightener, shampoo, mask or gel."
+   },
+   "contextos": [],
+   "activos": [],
+   "problemas": [
+    "reflejos naranjas o amarillos",
+    "rubios platinados"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Violeta puro, en gotas",
+     "en": "Pure violet, by the drop"
+    },
+    "entradilla": {
+     "es": "Pigmento concentrado para borrar el naranja y el amarillo y dar luz al platino.",
+     "en": "Concentrated pigment to erase orange and yellow and brighten platinum."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "pigmento violeta puro concentrado",
+     "compatible con otros productos"
+    ],
+    "en": [
+     "pure concentrated violet pigment",
+     "compatible with other products"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Uso profesional. Dosifica por gotas dentro del producto que vas a aplicar, controla el tiempo según la intensidad buscada y enjuaga. Si lo aplicas directo sobre el cabello, usa guantes.",
+    "en": "Professional use. Dose by the drop into the product you're applying, time it to the intensity you're after, and rinse. If applying straight onto hair, wear gloves."
+   },
+   "rango_ph": "3.0-4.0",
+   "precauciones": {
+    "es": [
+     "Usa guantes.",
+     "Protege los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Wear gloves.",
+     "Keep out of the eyes.",
+     "Store out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": []
+  },
+  {
+   "sku": "D003",
+   "nombre": "Plattina White",
+   "linea": "Pro_Salon",
+   "tipo": "producto",
+   "uso": "profesional",
+   "descripcion": {
+    "es": "Decolorante en polvo sin volatilidad, con tecnología de nanotribología para una mejor lubricación de la fibra durante el aclarado y pigmentos que contrarrestan el amarillo. Diseñado para el trabajo diario del salón.",
+    "en": "Dust-free lightening powder with nanotribology technology for better fiber lubrication during lightening, plus pigments that counteract yellow. Built for everyday salon work."
+   },
+   "contextos": [],
+   "activos": [],
+   "problemas": [
+    "decoloración en salón",
+    "reflejos amarillos al aclarar"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Aclarado con control",
+     "en": "Lightening with control"
+    },
+    "entradilla": {
+     "es": "Decolorante sin volatilidad, con nanotribología y pigmentos que contrarrestan el amarillo.",
+     "en": "Dust-free lightener with nanotribology and pigments that counteract yellow."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "no volátil",
+     "neutraliza los reflejos amarillos",
+     "tecnología de nanotribología capilar"
+    ],
+    "en": [
+     "dust-free",
+     "neutralizes yellow tones",
+     "nanotribology technology"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Uso profesional. Proporción 1 : 3: 30 g de polvo por 90 mL de Neuroxide (20, 30 o 40 vol. según el aclarado buscado). Mezcla y aplica al momento; lo que sobre se descarta. Guantes, bol no metálico y pincel plástico. El tiempo depende del nivel objetivo y del estado del cabello.",
+    "en": "Professional use. Ratio 1 : 3: 30 g of powder to 90 mL of Neuroxide (20, 30 or 40 vol. depending on the lift needed). Mix and apply right away; discard leftovers. Gloves, non-metal bowl and plastic brush. Timing depends on target level and hair condition."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Contiene persulfatos, que pueden dañar cabello y cuero cabelludo: haz una prueba de sensibilidad antes de usarlo.",
+     "Nunca cerca de cejas ni pestañas: el riesgo es la ceguera.",
+     "Protege los ojos y guárdalo donde los niños no lleguen.",
+     "Ante cualquier reacción, suspende el uso y consulta a un médico.",
+     "Mantén bolsa y envase bien cerrados, lejos del calor y de productos inflamables, en un sitio fresco, seco y con ventilación."
+    ],
+    "en": [
+     "Contains persulfates, which can damage hair and scalp: do a sensitivity test first.",
+     "Never near eyebrows or eyelashes: the risk is blindness.",
+     "Keep out of the eyes and out of children's reach.",
+     "If any reaction occurs, stop and see a doctor.",
+     "Keep the bag and container tightly closed, away from heat and flammable products, in a cool, ventilated, dry place."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que no daña el cabello",
+    "venta o recomendación de uso en casa sin profesional"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "D004",
+     "tamano": "800 g",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "D006",
+   "nombre": "Pro Filus",
+   "linea": "Pro_Salon",
+   "tipo": "producto",
+   "uso": "profesional",
+   "descripcion": {
+    "es": "El aditivo que protege la fibra cuando hay que aclarar cabello muy procesado. Reduce la rotura y preserva la integridad del cabello sin alargar el proceso. Con extracto de propóleo y cera de abejas, aporta suavidad y brillo y reduce la estática y el encrespamiento.",
+    "en": "The additive that protects the fiber when you need to lighten heavily processed hair. It reduces breakage and preserves hair integrity without extending processing time. With propolis extract and beeswax, it adds softness and shine and reduces static and frizz."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Menos encrespamiento después de la decoloración, algo que en clima húmedo se nota de inmediato.",
+     "en": "Less frizz after lightening, which shows right away in a humid climate."
+    }
+   ],
+   "activos": [
+    {
+     "es": "extracto de propóleo",
+     "en": "propolis extract"
+    },
+    {
+     "es": "cera de abejas",
+     "en": "beeswax"
+    }
+   ],
+   "problemas": [
+    "rotura durante la decoloración",
+    "cabello muy procesado"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Aclara sin romper",
+     "en": "Lighten without breaking"
+    },
+    "entradilla": {
+     "es": "El aditivo que protege la fibra cuando el cabello ya viene muy procesado.",
+     "en": "The additive that protects the fiber when hair is already heavily processed."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "protege la fibra durante el aclarado",
+     "reduce la rotura",
+     "no alarga el tiempo de proceso"
+    ],
+    "en": [
+     "protects the fiber during lightening",
+     "reduces breakage",
+     "doesn't extend processing time"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Uso profesional. A la mezcla de decoloración (Plattina White (30 g) + 90 mL de Neuroxide de 20, 30 o 40 vol.) súmale una medida de Pro Filus, que equivale a 2 g. Aplica al momento y descarta el sobrante. Guantes, bol no metálico y pincel plástico.",
+    "en": "Professional use. To the lightening mix (30 g Plattina White + 90 mL Neuroxide 20, 30 or 40 vol.), add one measure of Pro Filus, equal to 2 g. Apply right away and discard leftovers. Gloves, non-metal bowl and plastic brush."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Protege los ojos y guárdalo donde los niños no lleguen.",
+     "Si notas cualquier reacción, deja de usarlo.",
+     "Mantén bolsa y envase bien cerrados, lejos del calor y de productos inflamables, en un sitio fresco, seco y con ventilación."
+    ],
+    "en": [
+     "Keep out of the eyes and out of children's reach.",
+     "Should any reaction appear, stop using it.",
+     "Keep the bag and container tightly closed, away from heat and flammable products, in a cool, ventilated, dry place."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que evita todo daño"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "D006",
+     "tamano": "200 g",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "D008",
+   "nombre": "Regress Color Remover Kit",
+   "linea": "Pro_Salon",
+   "tipo": "producto",
+   "uso": "profesional",
+   "descripcion": {
+    "es": "Sistema de dos componentes para retirar el tinte de oxidación sin alterar tu tono natural. No lleva amoníaco, decolorante ni formaldehído y deja el cabello acondicionado.",
+    "en": "Two-part system to remove oxidative color without touching the hair's natural color. No ammonia, lightener or formaldehyde, and hair is left conditioned."
+   },
+   "contextos": [],
+   "activos": [],
+   "problemas": [
+    "retirar tinte de oxidación",
+    "corrección de color"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Retira el tinte, conserva tu tono",
+     "en": "Remove the dye, keep your natural tone"
+    },
+    "entradilla": {
+     "es": "Sistema de dos fases para quitar el color de oxidación sin amoníaco, decolorante ni formaldehído.",
+     "en": "Two-phase system to remove oxidative color with no ammonia, lightener or formaldehyde."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "retira el tinte de oxidación",
+     "no afecta el color natural",
+     "sin amoníaco, decolorante ni formaldehído"
+    ],
+    "en": [
+     "removes oxidative color",
+     "doesn't affect natural color",
+     "no ammonia, lightener or formaldehyde"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Uso profesional. 1) Dos lavados con Depura Shampoo y agua caliente, sin frotar el cuero cabelludo; seca por completo. 2) En bol de vidrio o plástico, Regress 1 y Regress 2 a partes iguales. 3) Aplica de inmediato sobre el cabello seco, en particiones de ½ a 1 cm, con un pincel limpio y sin restos químicos. Satura bien cada partición y no peines.",
+    "en": "Professional use. 1) Two washes with Depura Shampoo and hot water, without scrubbing the scalp; dry completely. 2) In a glass or plastic bowl, equal parts Regress 1 and Regress 2. 3) Apply immediately to dry hair in ½–1 cm partings, with a clean brush free of chemical residue. Saturate each parting well and don't comb."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Protege la ropa: puede mancharla.",
+     "No lo mezcles con peróxido de hidrógeno.",
+     "No lo uses sobre piel irritada o con heridas.",
+     "No sirve sobre colores metálicos o con henna (puede romper la hebra) ni sobre tintes directos de fantasía, que no son de oxidación.",
+     "Prueba primero en un mechón; si el resultado es bueno, continúa.",
+     "Antes del servicio, lava con Depura Shampoo."
+    ],
+    "en": [
+     "Protect clothing: it can stain.",
+     "Don't mix it with hydrogen peroxide.",
+     "Don't use it on irritated or broken skin.",
+     "Not for metallic or henna colors (it can break the strand) or for direct fantasy dyes, which are not oxidative.",
+     "Test on a strand first; if the result is good, continue.",
+     "Wash hair beforehand with Depura Shampoo."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que retira colores directos o de fantasía"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "D008",
+     "tamano": "200 ml",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "P006-P010",
+   "nombre": "Neuroxide Cream Developer",
+   "linea": "Pro_Salon",
+   "tipo": "producto",
+   "uso": "profesional",
+   "descripcion": {
+    "es": "Oxidante en crema estabilizado en cinco volúmenes (5, 10, 20, 30 y 40). Acompaña al color y al decolorante con buen acondicionamiento, facilita la entrada del pigmento con el menor daño a la cutícula y reduce la irritación del cuero cabelludo.",
+    "en": "Stabilized cream developer in five volumes (5, 10, 20, 30 and 40). It supports color and lightener with good conditioning, helps pigment penetrate with the least cuticle damage and reduces scalp irritation."
+   },
+   "contextos": [],
+   "activos": [],
+   "problemas": [
+    "coloración y decoloración en salón"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "El oxidante que acompaña a tu color",
+     "en": "The developer that backs your color"
+    },
+    "entradilla": {
+     "es": "Cinco volúmenes estabilizados que acondicionan mientras el color o el decolorante trabajan.",
+     "en": "Five stabilized volumes that condition while color or lightener works."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "estabilizado",
+     "acondiciona durante el proceso",
+     "menor irritación del cuero cabelludo"
+    ],
+    "en": [
+     "stabilized",
+     "conditions during processing",
+     "less scalp irritation"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Uso profesional. Combínalo con color o decolorante en un bol no metálico y limpio hasta que la mezcla sea uniforme. Con Neurone Color, 1 : 1½. Referencia: 5 vol. solo deposita; 10 vol. levanta hasta medio tono; 20 vol. levanta un tono y es el estándar para canas; 30 vol. levanta dos; 40 vol. levanta tres.",
+    "en": "Professional use. Combine with color or lightener in a clean, non-metal bowl until the mix is even. With Neurone Color, 1 : 1½. Reference: 5 vol. deposits only; 10 vol. lifts up to half a level; 20 vol. lifts one level and is the gray-coverage standard; 30 vol. lifts two; 40 vol. lifts three."
+   },
+   "rango_ph": "2.8-3.1",
+   "precauciones": {
+    "es": [
+     "Contiene peróxido de hidrógeno: irrita la piel y, cerca de cejas o pestañas, puede provocar ceguera.",
+     "No lo apliques sobre cuero cabelludo irritado.",
+     "Puede estropear el cabello muy maltratado o teñido con colores metálicos.",
+     "Usa guantes y protege los ojos; si llega a ellos, enjuaga con mucha agua y busca atención médica.",
+     "Conserva el envase tapado, a la sombra y en un sitio fresco, donde los niños no lleguen."
+    ],
+    "en": [
+     "Contains hydrogen peroxide: it irritates skin and, near eyebrows or eyelashes, may lead to blindness.",
+     "Don't apply to an irritated scalp.",
+     "It may harm hair that is badly damaged or colored with metallic dyes.",
+     "Wear gloves and keep out of the eyes; if contact occurs, flush with lots of water and get medical care.",
+     "Keep it capped, somewhere cool and shaded, where children can't reach it."
+    ]
+   },
+   "no_afirmar": [
+    "venta o recomendación de uso en casa sin profesional"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "P006",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "P007",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "P008",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "P009",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "P010",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "P013-P014",
+   "nombre": "Density Proff",
+   "linea": "Pro_Salon",
+   "tipo": "producto",
+   "uso": "profesional",
+   "descripcion": {
+    "es": "Oxidante cremoso y denso, en 20 y 30 volúmenes. Su cuerpo espeso da control en aplicaciones de precisión, potencia el aclarado y ayuda a fijar el pigmento.",
+    "en": "High-density cream developer in 20 and 30 volume. Its thick body gives control in precision applications, boosts lift and helps lock in pigment."
+   },
+   "contextos": [],
+   "activos": [],
+   "problemas": [
+    "aplicaciones de precisión en salón",
+    "decoloración y coloración"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Densidad para la precisión",
+     "en": "Density for precision"
+    },
+    "entradilla": {
+     "es": "Oxidante espeso en 20 y 30 volúmenes para aplicaciones que no admiten corrimientos.",
+     "en": "Thick developer in 20 and 30 volume for applications that can't afford to run."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "alta densidad",
+     "mayor precisión",
+     "mejor fijación del pigmento"
+    ],
+    "en": [
+     "high density",
+     "more precision",
+     "better pigment hold"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Uso profesional. Combínalo con color o decolorante en un bol no metálico y limpio hasta que la mezcla sea uniforme, y aplica según el servicio.",
+    "en": "Professional use. Combine with color or lightener in a clean, non-metal bowl until the mix is even, and apply as the service requires."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Contiene peróxido de hidrógeno: irrita la piel y, cerca de cejas o pestañas, puede provocar ceguera.",
+     "No lo apliques sobre cuero cabelludo irritado; si aparece irritación, suspende el uso.",
+     "Puede estropear el cabello muy maltratado o teñido con colores metálicos.",
+     "Usa guantes y protege los ojos; si llega a ellos, enjuaga con mucha agua y busca atención médica.",
+     "Conserva el envase tapado, a la sombra y en un sitio fresco; ábrelo lejos de la cara. Que los niños no lleguen a él."
+    ],
+    "en": [
+     "Contains hydrogen peroxide: it irritates skin and, near eyebrows or eyelashes, may lead to blindness.",
+     "Don't apply to an irritated scalp; if irritation appears, stop using it.",
+     "It may harm hair that is badly damaged or colored with metallic dyes.",
+     "Wear gloves and keep out of the eyes; if contact occurs, flush with lots of water and get medical care.",
+     "Keep it capped, somewhere cool and shaded; open it facing away from you. Where children can't reach it."
+    ]
+   },
+   "no_afirmar": [
+    "venta o recomendación de uso en casa sin profesional"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "P013",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    },
+    {
+     "codigo": "P014",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "L029",
+   "nombre": "Kerasin HB Shampoo",
+   "linea": "Restore",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "El lavado reparador para cabello que ya pasó por mucho: decoloración, alisado, tinte, plancha. Con biotina, queratina y ácido hialurónico de bajo peso molecular, que llegan al interior de la fibra y la dejan fuerte, lubricada y protegida. Cabello más resistente, manejable y con brillo desde el lavado. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "The repairing wash for hair that has been through a lot: bleaching, straightening, color, flat irons. With low-molecular-weight biotin, keratin and hyaluronic acid, which reach inside the fiber and leave it strong, lubricated and protected. Stronger, more manageable, shinier hair from the wash on. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El cabello dañado es el que más se encrespa con la humedad; repararlo es el primer paso para controlarlo.",
+     "en": "Damaged hair is the hair that frizzes most in humidity; repairing it is the first step to controlling it."
+    }
+   ],
+   "activos": [
+    {
+     "es": "ácido hialurónico",
+     "en": "hyaluronic acid"
+    },
+    {
+     "es": "queratina",
+     "en": "keratin"
+    },
+    {
+     "es": "biotina",
+     "en": "biotin"
+    }
+   ],
+   "problemas": [
+    "cabello dañado",
+    "cabello sobreprocesado",
+    "daño químico",
+    "daño por calor"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Reparación desde el primer lavado",
+     "en": "Repair from the very first wash"
+    },
+    "entradilla": {
+     "es": "El shampoo reconstructor con el que empiezan los rituales Restore y S.O.S de Patricia Osorio.",
+     "en": "The rebuilding shampoo that opens Patricia Osorio's Restore and S.O.S rituals."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "repara desde el interior de la fibra",
+     "con biotina, queratina y ácido hialurónico",
+     "cabello fuerte, manejable y con brillo"
+    ],
+    "en": [
+     "repairs inside the fiber",
+     "biotin, keratin and hyaluronic acid",
+     "strong, manageable, shiny hair"
+    ]
+   },
+   "rituals": [
+    "Restore Therapy",
+    "Restore Therapy Plus",
+    "Restore & Shield",
+    "S.O.S Rescue System"
+   ],
+   "modo_de_uso": {
+    "es": "Con el cabello mojado, masajea una dosis pequeña. Déjalo trabajar entre 2 y 3 minutos y retíralo con agua.",
+    "en": "On wet hair, massage in a small dose. Let it work for 2–3 minutes, then rinse it out."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "L050",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "L029",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "L030",
+     "tamano": "1 L",
+     "canal": "sin venta en tienda hoy"
+    }
+   ]
+  },
+  {
+   "sku": "T026",
+   "nombre": "Velvety Control",
+   "linea": "Restore",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un tratamiento nutritivo sin enjuague, de textura aterciopelada, para cualquier tipo de cabello. No deja sensación grasa: desenreda, suaviza, da brillo y hace el cabello más fácil de manejar. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "A velvety leave-in nourishing treatment for every hair type. No greasy feel: it detangles, softens, adds shine and makes hair easier to handle. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Ligero para el calor, sin peso ni grasa, y con control del volumen que la humedad dispara.",
+     "en": "Light enough for the heat, with no weight or grease, and control over the volume humidity triggers."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello difícil de desenredar",
+    "falta de suavidad",
+    "frizz"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Suavidad aterciopelada, cero peso",
+     "en": "Velvety softness, zero weight"
+    },
+    "entradilla": {
+     "es": "El sin enjuague que Patricia Osorio eligió para controlar el volumen del rubio en sus rituales Perfect Blonde.",
+     "en": "The leave-in Patricia Osorio chose to tame blonde volume in her Perfect Blonde rituals."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "sin enjuague",
+     "sin sensación grasa",
+     "desenreda y da brillo"
+    ],
+    "en": [
+     "no rinsing",
+     "no greasy feel",
+     "detangles and adds shine"
+    ]
+   },
+   "rituals": [
+    "Perfect Blonde",
+    "Perfect Blonde Plus"
+   ],
+   "modo_de_uso": {
+    "es": "Con el cabello recién lavado y húmedo, reparte una dosis pequeña en medios y puntas. Se queda puesto; después peina como quieras.",
+    "en": "On clean, damp hair, spread a small dose through mid-lengths and ends. Leave it in; then style however you like."
+   },
+   "rango_ph": "3.0-4.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T025",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "T026",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T027",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "T058",
+   "nombre": "Kerasin HB Mask",
+   "linea": "Restore",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "La mascarilla reconstructora de la línea Restore. Proteínas, biotina, queratina y ácido hialurónico que fortalecen el cabello que sufrió químicos y calor, lo nutren a fondo, mejoran su textura y le devuelven la elasticidad. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "The rebuilding mask of the Restore line. Proteins, biotin, keratin and hyaluronic acid that strengthen hair that has been through chemicals and heat, nourish it deeply, improve its texture and restore its elasticity. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Sol, sal y plancha diaria se acumulan; una mascarilla reconstructora semanal compensa ese desgaste.",
+     "en": "Sun, salt and daily flat-ironing add up; a weekly rebuilding mask offsets that wear."
+    }
+   ],
+   "activos": [
+    {
+     "es": "ácido hialurónico",
+     "en": "hyaluronic acid"
+    },
+    {
+     "es": "queratina",
+     "en": "keratin"
+    },
+    {
+     "es": "biotina",
+     "en": "biotin"
+    },
+    {
+     "es": "proteínas",
+     "en": "proteins"
+    }
+   ],
+   "problemas": [
+    "cabello dañado",
+    "cabello quebradizo",
+    "pérdida de elasticidad",
+    "daño químico",
+    "daño por calor"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Reconstruye lo que el calor se llevó",
+     "en": "Rebuild what heat took away"
+    },
+    "entradilla": {
+     "es": "La mascarilla que sostiene los rituales Restore y S.O.S de Patricia Osorio para el cabello que el clima y la plancha castigan.",
+     "en": "The mask at the heart of Patricia Osorio's Restore and S.O.S rituals, for hair worn down by climate and flat irons."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "fortalece y repara",
+     "devuelve la elasticidad",
+     "mejora la textura"
+    ],
+    "en": [
+     "strengthens and repairs",
+     "restores elasticity",
+     "improves texture"
+    ]
+   },
+   "rituals": [
+    "Restore Therapy",
+    "Restore Therapy Plus",
+    "Restore & Shield",
+    "S.O.S Rescue System"
+   ],
+   "modo_de_uso": {
+    "es": "Mejor si lavas antes con Kerasin HB Shampoo. Reparte en medios y puntas con el cabello húmedo, espera un mínimo de 5 minutos y retira con agua.",
+    "en": "Best after washing with Kerasin HB Shampoo. Work through mid-lengths and ends on damp hair, wait at least 5 minutes, then rinse."
+   },
+   "rango_ph": "3.5-4.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T065",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "T058",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T060",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "T059",
+   "nombre": "Kerasin HB Leave-In",
+   "linea": "Restore",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "El paso final sin enjuague de la línea Restore. Biotina, queratina y ácido hialurónico en fórmula ligera: el cabello dañado gana fuerza, textura y elasticidad. Ligero y sin grasa, facilita el peinado y controla el frizz.",
+    "en": "The leave-in final step of the Restore line. Biotin, keratin and hyaluronic acid in a light formula: damaged hair gains strength, texture and elasticity. Light and non-greasy, it makes styling easier and controls frizz."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Control del frizz sin peso, que es lo que pide el cabello dañado en un día húmedo.",
+     "en": "Frizz control without weight, which is what damaged hair needs on a humid day."
+    }
+   ],
+   "activos": [
+    {
+     "es": "ácido hialurónico",
+     "en": "hyaluronic acid"
+    },
+    {
+     "es": "queratina",
+     "en": "keratin"
+    },
+    {
+     "es": "biotina",
+     "en": "biotin"
+    }
+   ],
+   "problemas": [
+    "cabello dañado",
+    "frizz",
+    "pérdida de elasticidad"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "El cierre ligero de la reparación",
+     "en": "The lightweight finish to repair"
+    },
+    "entradilla": {
+     "es": "Fuerza, textura y control del frizz sin peso, para terminar la rutina Kerasin HB.",
+     "en": "Strength, texture and frizz control without weight, to finish the Kerasin HB routine."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "sin enjuague",
+     "controla el frizz",
+     "devuelve la elasticidad",
+     "textura ligera"
+    ],
+    "en": [
+     "no rinsing",
+     "controls frizz",
+     "restores elasticity",
+     "lightweight texture"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Como cierre de la rutina Kerasin HB (shampoo y mascarilla). Reparte en medios y puntas, con el cabello húmedo o seco. Se queda puesto; después peina como quieras.",
+    "en": "As the finish to the Kerasin HB routine (shampoo and mask). Spread through mid-lengths and ends, with hair damp or dry. Leave it in; then style however you like."
+   },
+   "rango_ph": "3.0-4.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T059",
+     "tamano": "100 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "T109",
+   "nombre": "Green 100",
+   "linea": "Restore",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un sérum 100 % de origen vegetal, sin siliconas y biodegradable, para el cabello más seco, poroso o procesado. Sella la cutícula, se absorbe rápido, controla el frizz, protege el color y facilita el paso de secador y plancha.",
+    "en": "A 100% plant-origin, silicone-free, biodegradable serum for the driest, most porous or processed hair. It seals the cuticle, absorbs quickly, controls frizz, protects color and helps the blow-dryer and flat iron glide."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El cabello poroso es el que más humedad absorbe; sellar la cutícula es lo que lo mantiene en su sitio.",
+     "en": "Porous hair absorbs the most humidity; sealing the cuticle is what keeps it in place."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello extremadamente seco",
+    "cabello poroso",
+    "cabello procesado químicamente",
+    "frizz"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "100 % vegetal para el cabello más seco",
+     "en": "100% plant-based for the driest hair"
+    },
+    "entradilla": {
+     "es": "Sella la cutícula del cabello poroso, el que más humedad absorbe: el paso de sellado del ritual S.O.S de Patricia Osorio.",
+     "en": "It seals the cuticle of porous hair, the kind that absorbs the most humidity: the sealing step in Patricia Osorio's S.O.S ritual."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "100 % de origen vegetal",
+     "libre de siliconas",
+     "biodegradable",
+     "sella la cutícula",
+     "protege el color"
+    ],
+    "en": [
+     "100% plant origin",
+     "silicone-free",
+     "biodegradable",
+     "seals the cuticle",
+     "protects color"
+    ]
+   },
+   "rituals": [
+    "S.O.S Rescue System"
+   ],
+   "modo_de_uso": {
+    "es": "Unas gotas sobre el cabello húmedo o seco. Se queda puesto; después peina como quieras.",
+    "en": "A few drops with hair damp or dry. Leave it in; then style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T109",
+     "tamano": "25 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "A003",
+   "nombre": "Melanin Anti G",
+   "linea": "Scalp",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Una loción de uso diario con tecnología de péptidos para el cuero cabelludo. Está pensada para ayudar a frenar la pérdida de melanina en el folículo, algo que se aprecia en el cabello nuevo, y ayudan a protegerlo del debilitamiento.",
+    "en": "A daily peptide-technology lotion for the scalp. Its ingredients help reduce melanin loss in the follicle, noticeable in new growth, and help protect it from weakening."
+   },
+   "contextos": [],
+   "activos": [
+    {
+     "es": "péptidos",
+     "en": "peptides"
+    }
+   ],
+   "problemas": [
+    "canas",
+    "cuidado del cuero cabelludo"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Cuidado diario para el cuero cabelludo",
+     "en": "Daily scalp care"
+    },
+    "entradilla": {
+     "es": "Una loción con tecnología de péptidos pensada para ayudar a frenar la pérdida de melanina en el folículo.",
+     "en": "A peptide-technology lotion designed to help slow melanin loss in the follicle."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "uso diario",
+     "tecnología de péptidos",
+     "contribuye a reducir la pérdida de melanina"
+    ],
+    "en": [
+     "daily use",
+     "peptide technology",
+     "helps slow melanin loss"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Tras el lavado con tu shampoo Neurone, aplica una dosis pequeña directamente en el cuero cabelludo y masajea hasta que se absorba. Se queda puesta. Para potenciarla, sigue con Neurone Dherma Roller.",
+    "en": "After washing with your Neurone shampoo, apply a small dose right onto the scalp, massaging it in until absorbed. Leave it in. To boost it, follow with Neurone Dherma Roller."
+   },
+   "rango_ph": "6.5-7.5",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que revierte, elimina o cura las canas",
+    "afirmar que es un tratamiento médico",
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": []
+  },
+  {
+   "sku": "L021",
+   "nombre": "Depura Shampoo",
+   "linea": "Scalp",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un lavado de limpieza profunda con carbón activado. Se lleva el exceso de grasa, los restos de producto y la suciedad del cuero cabelludo, y lo deja fresco y oxigenado para que el cabello crezca en un entorno sano. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "A deep-cleansing wash with activated charcoal. It removes excess oil, product buildup and impurities from the scalp, leaving it fresh and clear so hair grows in a healthy environment. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Calor y sudor aumentan la grasa y la acumulación de producto; una limpieza profunda periódica devuelve la ligereza.",
+     "en": "Heat and sweat increase oil and product buildup; a periodic deep cleanse brings back lightness."
+    }
+   ],
+   "activos": [
+    {
+     "es": "carbón activado",
+     "en": "activated charcoal"
+    }
+   ],
+   "problemas": [
+    "cuero cabelludo graso",
+    "acumulación de residuos",
+    "limpieza profunda"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Limpieza profunda, cuero cabelludo ligero",
+     "en": "Deep clean, lighter scalp"
+    },
+    "entradilla": {
+     "es": "Carbón activado para llevarse la grasa y los restos de producto que el calor y el sudor acumulan.",
+     "en": "Activated charcoal to lift the oil and product buildup that heat and sweat leave behind."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "limpieza profunda con carbón activado",
+     "ayuda a controlar la grasa",
+     "elimina residuos e impurezas"
+    ],
+    "en": [
+     "deep cleanse with activated charcoal",
+     "helps control oil",
+     "removes buildup and impurities"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Con el cabello mojado, masajea una dosis pequeña. Déjalo trabajar entre 2 y 3 minutos y retíralo con agua.",
+    "en": "On wet hair, massage in a small dose. Let it work for 2–3 minutes, then rinse it out."
+   },
+   "rango_ph": "6.5-7.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que elimina bacterias o trata afecciones del cuero cabelludo",
+    "afirmar que aumenta el grosor del cabello",
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "L020",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "L021",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "L022",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "L026",
+   "nombre": "Menthol Ice Shampoo",
+   "linea": "Scalp",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un shampoo refrescante con inositol, arginina, proteínas vegetales, biofermento de zinc y derivados de la menta. Retira la grasa y las impurezas, activa la circulación del cuero cabelludo y deja el cabello con más cuerpo y una sensación fresca que dura. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "A refreshing shampoo with inositol, arginine, plant proteins, zinc ferment and mint derivatives. It clears away oil and impurities, gets scalp circulation going and leaves hair with more body and a lasting cool feel. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "La sensación fresca del mentol es un alivio después de un día de calor.",
+     "en": "The cooling menthol feel is a relief after a hot day."
+    }
+   ],
+   "activos": [
+    {
+     "es": "arginina",
+     "en": "arginine"
+    },
+    {
+     "es": "inositol",
+     "en": "inositol"
+    },
+    {
+     "es": "proteínas vegetales",
+     "en": "plant proteins"
+    },
+    {
+     "es": "biofermento de zinc",
+     "en": "zinc ferment"
+    },
+    {
+     "es": "derivados de la menta",
+     "en": "mint derivatives"
+    }
+   ],
+   "problemas": [
+    "cuero cabelludo graso",
+    "falta de volumen",
+    "sensación de frescura"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Frescura que se siente",
+     "en": "Freshness you can feel"
+    },
+    "entradilla": {
+     "es": "El shampoo de menta que activa el cuero cabelludo y lo alivia después de un día de calor.",
+     "en": "The mint shampoo that wakes up your scalp and cools it down after a hot day."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "efecto refrescante",
+     "retira impurezas y grasa",
+     "volumen y fuerza"
+    ],
+    "en": [
+     "cooling effect",
+     "removes impurities and oil",
+     "volume and strength"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Con el cabello mojado, masajea una dosis pequeña. Déjalo trabajar entre 2 y 3 minutos y retíralo con agua.",
+    "en": "On wet hair, massage in a small dose. Let it work for 2–3 minutes, then rinse it out."
+   },
+   "rango_ph": "6.5-7.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que hace crecer el cabello",
+    "afirmar que elimina o previene la caspa",
+    "afirmar que es un tratamiento médico"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "L026",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "L010",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "L033",
+   "nombre": "Capissen Shampoo",
+   "linea": "Scalp",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un shampoo de uso diario para quien nota que el cabello se cae más de lo normal. Péptidos y extractos naturales ayudan a prevenir la caída, a mejorar la densidad y a fortalecer e hidratar el cabello. Funciona mejor junto con Capissen Lotion.",
+    "en": "A daily shampoo for anyone noticing more shedding than usual. Its peptide technology and natural extracts help prevent hair fall, improve density, and strengthen and hydrate hair. Works best alongside Capissen Lotion."
+   },
+   "contextos": [],
+   "activos": [
+    {
+     "es": "péptidos",
+     "en": "peptides"
+    },
+    {
+     "es": "extractos de origen natural",
+     "en": "natural-origin extracts"
+    }
+   ],
+   "problemas": [
+    "caída del cabello",
+    "cabello fino",
+    "falta de densidad"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Cuando el cabello se cae más de lo normal",
+     "en": "When you're shedding more than usual"
+    },
+    "entradilla": {
+     "es": "Un shampoo diario con péptidos que ayuda a prevenir la caída y a fortalecer el cabello.",
+     "en": "A daily peptide shampoo that helps prevent hair fall and strengthen hair."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "uso diario",
+     "tecnología de péptidos",
+     "ayuda a prevenir la caída",
+     "fortalece el cabello"
+    ],
+    "en": [
+     "daily use",
+     "peptide technology",
+     "helps prevent hair fall",
+     "strengthens hair"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Con el cabello mojado, masajea una dosis pequeña. Déjalo trabajar entre 3 y 5 minutos y retíralo con agua. Completa la rutina con Capissen Lotion.",
+    "en": "On wet hair, massage in a small dose. Let it work for 3–5 minutes, then rinse it out. Complete the routine with Capissen Lotion."
+   },
+   "rango_ph": "6.5-7.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que detiene, cura o revierte la caída",
+    "afirmar que hace crecer el cabello",
+    "afirmar que trata la alopecia",
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "L033",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "PR041",
+   "nombre": "Derma Roller",
+   "linea": "Scalp",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un roller con microagujas de titanio para la rutina de cuero cabelludo. Ayuda a retirar la piel muerta y prepara la zona para que Capissen Lotion se absorba mejor.",
+    "en": "A titanium microneedle roller for your scalp routine. It helps remove dead skin and preps the area so Capissen Lotion absorbs better."
+   },
+   "contextos": [],
+   "activos": [],
+   "problemas": [
+    "cabello que se adelgaza",
+    "absorción de tratamientos para el cuero cabelludo"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Prepara el cuero cabelludo",
+     "en": "Prep your scalp"
+    },
+    "entradilla": {
+     "es": "Microagujas de titanio para que Capissen Lotion se absorba mejor.",
+     "en": "Titanium microneedles so Capissen Lotion absorbs better."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "microagujas de titanio",
+     "mejora la absorción de Capissen Lotion"
+    ],
+    "en": [
+     "titanium microneedles",
+     "improves Capissen Lotion absorption"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Antes de estrenarlo, desinfecta el cabezal sumergiéndolo entre 5 y 8 minutos en alcohol al 75 %, y repítelo antes de cada uso. Aplica Capissen Lotion con un masaje suave. Rueda con poca presión desde la línea frontal hacia la nuca, entre 5 y 10 pasadas por zona, alternando vertical, horizontal y diagonal. Un uso al día como máximo y no más de tres por semana. No lo uses sobre piel sensible, heridas, acné activo, eccema o quemaduras de sol, ni si tienes alergia a metales.",
+    "en": "Before first use, disinfect the head by soaking it 5–8 minutes in 75% alcohol, and repeat before every use. Apply Capissen Lotion with a gentle massage. Roll lightly from the front hairline toward the nape, 5–10 passes per area, alternating vertical, horizontal and diagonal. At most once a day and no more than three times a week. Don't use on sensitive skin, wounds, active acne, eczema or sunburn, or if you're allergic to metals."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Desinfecta el cabezal antes de cada uso.",
+     "Es de uso personal: no lo compartas.",
+     "No lo uses más de lo indicado.",
+     "Si la piel responde con sensibilidad, consulta a un médico.",
+     "Después de usarlo, vuelve a guardarlo en su estuche y donde los niños no lleguen."
+    ],
+    "en": [
+     "Disinfect the head before every use.",
+     "It is for personal use: don't share it.",
+     "Don't use it more than directed.",
+     "If your skin reacts with sensitivity, see a doctor.",
+     "Store it in its case after each use and out of children's reach."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que detiene o cura la caída",
+    "afirmar que hace crecer el cabello",
+    "afirmar que es un dispositivo médico"
+   ],
+   "componentes": [],
+   "presentaciones": []
+  },
+  {
+   "sku": "T067",
+   "nombre": "Capissen Lotion",
+   "linea": "Scalp",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "La loción diaria sin enjuague de la rutina Capissen. Con tecnología de péptidos y extractos naturales, ayuda a frenar la caída antes de tiempo, mejora la densidad y fortalece el cabello.",
+    "en": "The daily leave-in lotion of the Capissen routine. With peptide technology and natural extracts, it helps delay premature hair fall, improves density and strengthens hair."
+   },
+   "contextos": [],
+   "activos": [
+    {
+     "es": "péptidos",
+     "en": "peptides"
+    },
+    {
+     "es": "extractos de origen natural",
+     "en": "natural-origin extracts"
+    }
+   ],
+   "problemas": [
+    "caída del cabello",
+    "cabello fino",
+    "falta de densidad"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Constancia diaria para tu densidad",
+     "en": "Daily consistency for fuller hair"
+    },
+    "entradilla": {
+     "es": "La loción sin enjuague de la rutina Capissen, con péptidos y extractos naturales.",
+     "en": "The leave-in lotion of the Capissen routine, with peptides and natural extracts."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "uso diario",
+     "sin enjuague",
+     "ayuda a frenar la caída antes de tiempo",
+     "fortalece el cabello"
+    ],
+    "en": [
+     "daily use",
+     "no rinsing",
+     "helps slow premature hair fall",
+     "strengthens hair"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Tras el lavado con Capissen Shampoo, aplica una dosis pequeña directamente en el cuero cabelludo y masajea hasta que se absorba. Sigue con Neurone Dherma Roller. Se queda puesta. Todos los días.",
+    "en": "Once you've washed with Capissen Shampoo, put a small dose straight on the scalp, massaging it in until absorbed. Follow with Neurone Dherma Roller. Leave it in. Every day."
+   },
+   "rango_ph": "5.5-7.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que detiene, cura o revierte la caída",
+    "afirmar que hace crecer el cabello",
+    "afirmar que trata la alopecia",
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T067",
+     "tamano": "100 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "E006",
+   "nombre": "Controller",
+   "linea": "Styling",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Cera en gel de fijación extrema para peinados que tienen que durar todo el día y resistir la humedad. Sirve para diseños marcados o para domar el cabello más rebelde, y su complejo de aminoácidos cuida la fibra. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "Extreme-hold gel wax for styles that must last all day and stand up to humidity. Great for defined designs or taming the most unruly hair, with an amino-acid complex that cares for the fiber. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Un peinado que resiste la humedad es la diferencia entre salir peinado y llegar peinado.",
+     "en": "A style that resists humidity is the difference between leaving styled and arriving styled."
+    }
+   ],
+   "activos": [
+    {
+     "es": "complejo de aminoácidos",
+     "en": "amino-acid complex"
+    }
+   ],
+   "problemas": [
+    "peinados que no duran",
+    "humedad",
+    "cabello rebelde"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Fijación que no se rinde a la humedad",
+     "en": "Hold that won't give in to humidity"
+    },
+    "entradilla": {
+     "es": "Cera en gel de fijación extrema para peinados que tienen que llegar intactos.",
+     "en": "Extreme-hold gel wax for styles that need to arrive intact."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "fijación máxima",
+     "resistente a la humedad",
+     "se reactiva con agua"
+    ],
+    "en": [
+     "extreme hold",
+     "humidity-resistant",
+     "reactivates with water"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Trabaja con el cabello recién lavado y húmedo. Una vez hecho el peinado, no vuelvas a pasar el peine; si quieres cambiarlo, humedécelo para reactivar el producto. Sale con un lavado de shampoo.",
+    "en": "Work into clean, damp hair. Once styled, don't comb through again; to restyle, dampen it to reactivate the product. It washes out with shampoo."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "E006",
+     "tamano": "300 g",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "E007",
+   "nombre": "Molding Toner",
+   "linea": "Styling",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Una crema-gel que peina, moldea y define rizos mientras matiza hacia el platino. Da cuerpo, volumen y brillo, y en canas deja un plateado luminoso. Con complejo de aminoácidos. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "A cream-gel that styles, shapes and defines curls while toning toward platinum. It adds body, volume and shine, and gives gray hair a luminous silver. With an amino-acid complex. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Peinado y matiz en un solo paso, para canas que el sol tiende a amarillear.",
+     "en": "Styling and toning in one step, for gray hair the sun tends to yellow."
+    }
+   ],
+   "activos": [
+    {
+     "es": "complejo de aminoácidos",
+     "en": "amino-acid complex"
+    }
+   ],
+   "problemas": [
+    "canas amarillentas",
+    "definición de rizos",
+    "falta de volumen"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Peina y matiza en un paso",
+     "en": "Style and tone in one step"
+    },
+    "entradilla": {
+     "es": "Crema-gel que define y lleva las canas hacia un plateado luminoso.",
+     "en": "A cream-gel that defines and shifts gray hair toward a luminous silver."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "peina y matiza a la vez",
+     "platino luminoso en canas",
+     "cuerpo, volumen y brillo"
+    ],
+    "en": [
+     "styles and tones at once",
+     "luminous silver on gray hair",
+     "body, volume and shine"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Con el cabello recién lavado y apenas húmedo, trabaja la forma: peina, moldea o define el rizo. Se queda puesto.",
+    "en": "On clean, barely damp hair, build the shape: shape the style or define curls. Leave it in."
+   },
+   "rango_ph": "6.5-7.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "E007",
+     "tamano": "300 g",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "E008",
+   "nombre": "Geometry Gel",
+   "linea": "Styling",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Gel líquido para rizos que peina y acondiciona a la vez. Define con efecto resorte, controla el frizz y da una fijación flexible con memoria, sin dejar el rizo rígido. Con complejo de aminoácidos. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "Liquid curl gel that styles and conditions at once. It defines with a springy effect, controls frizz and gives a flexible hold with memory, without leaving curls stiff. With an amino-acid complex. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Los rizos pierden la forma con la humedad; una fijación con memoria los devuelve a su sitio.",
+     "en": "Curls lose shape in humidity; a hold with memory brings them back into place."
+    }
+   ],
+   "activos": [
+    {
+     "es": "complejo de aminoácidos",
+     "en": "amino-acid complex"
+    }
+   ],
+   "problemas": [
+    "rizos sin definición",
+    "frizz en cabello rizado"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Rizos con memoria",
+     "en": "Curls with memory"
+    },
+    "entradilla": {
+     "es": "Gel líquido que define con efecto resorte y controla el frizz de la humedad.",
+     "en": "A liquid gel that defines with spring and controls humidity frizz."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "define los rizos",
+     "fijación flexible con efecto memoria",
+     "controla el frizz"
+    ],
+    "en": [
+     "defines curls",
+     "flexible hold with memory",
+     "controls frizz"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Frota una dosis pequeña entre las palmas, repártela sobre el cabello apenas húmedo y peina.",
+    "en": "Rub a small dose between your palms, spread it over barely damp hair and style."
+   },
+   "rango_ph": "5.0-7.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "E010",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "E008",
+     "tamano": "400 ml",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "E012",
+   "nombre": "Geometry Cream",
+   "linea": "Styling",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Crema para definir rizos que peina y acondiciona a la vez. Marca el rizo con efecto resorte, controla el frizz y aporta brillo y textura. Enriquecida con aminoácidos. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "Curl-defining cream that styles and conditions at once. It shapes curls with a springy effect, controls frizz and adds shine and texture. Enriched with amino acids. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Definición y control del frizz para rizos que viven en un clima húmedo.",
+     "en": "Definition and frizz control for curls that live in a humid climate."
+    }
+   ],
+   "activos": [
+    {
+     "es": "aminoácidos",
+     "en": "amino acids"
+    }
+   ],
+   "problemas": [
+    "rizos sin definición",
+    "frizz en cabello rizado"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Definición cremosa para tus rizos",
+     "en": "Creamy definition for your curls"
+    },
+    "entradilla": {
+     "es": "Crema que marca el rizo, controla el frizz y aporta brillo y textura.",
+     "en": "A cream that shapes curls, controls frizz and adds shine and texture."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "define los rizos",
+     "controla el frizz",
+     "brillo y textura"
+    ],
+    "en": [
+     "defines curls",
+     "controls frizz",
+     "shine and texture"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Frota una dosis pequeña entre las palmas y repártela sobre el cabello apenas húmedo. Después peina como quieras.",
+    "en": "Rub a small dose between your palms and spread it over barely damp hair. Then style however you like."
+   },
+   "rango_ph": "3.0-4.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "E012",
+     "tamano": "400 ml",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "E016",
+   "nombre": "Licra Web",
+   "linea": "Styling",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Pasta de textura con efecto telaraña y fijación ligera. Sus hilos elásticos y cremosos dan cuerpo, volumen y definición a cortes y peinados con movimiento.",
+    "en": "Web-effect texturizing paste with light hold. Its stretchy, creamy strands add body, volume and definition to cuts and styles with movement."
+   },
+   "contextos": [],
+   "activos": [],
+   "problemas": [
+    "falta de textura",
+    "falta de volumen"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Textura con efecto telaraña",
+     "en": "Web-effect texture"
+    },
+    "entradilla": {
+     "es": "Pasta de fijación ligera para cortes y peinados con movimiento.",
+     "en": "Light-hold paste for cuts and styles with movement."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "efecto telaraña",
+     "fijación ligera",
+     "textura y volumen"
+    ],
+    "en": [
+     "web effect",
+     "light hold",
+     "texture and volume"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Toma un poco en los dedos, abre y cierra las manos varias veces hasta que se formen los hilos, y llévalo al cabello para darle forma.",
+    "en": "Take a little on your fingers, open and close your hands a few times until strands form, then work it into hair to shape it."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "E016",
+     "tamano": "70 gr",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "E017",
+   "nombre": "Resplander Shine",
+   "linea": "Styling",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "El spray de brillo del toque final. Deja el cabello luminoso e hidratado, incluso si está dañado, con una fórmula ligera que no engrasa y da sedosidad.",
+    "en": "The finishing-touch shine spray. It leaves hair luminous and hydrated, even when damaged, with a light, non-greasy formula that adds silkiness."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Brillo sin peso, que en calor no deja el cabello pegado ni graso.",
+     "en": "Weightless shine that won't leave hair sticky or greasy in the heat."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello opaco",
+    "acabado sin brillo"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "El brillo final, sin peso",
+     "en": "The finishing shine, without weight"
+    },
+    "entradilla": {
+     "es": "El spray con el que Patricia Osorio cierra su ritual Moisture & Shine.",
+     "en": "The spray Patricia Osorio uses to finish her Moisture & Shine ritual."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "brillo inmediato",
+     "fórmula ligera y no grasa",
+     "sedosidad"
+    ],
+    "en": [
+     "instant shine",
+     "light, non-greasy formula",
+     "silkiness"
+    ]
+   },
+   "rituals": [
+    "Moisture & Shine"
+   ],
+   "modo_de_uso": {
+    "es": "Ya con el peinado hecho y el cabello seco, rocía de forma pareja a unos 30 cm.",
+    "en": "Once your style is done and hair is dry, mist evenly from about 30 cm (12 in) away."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "E017",
+     "tamano": "100 ml",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "T032",
+   "nombre": "Neurona Gloss",
+   "linea": "Styling",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "El sérum de brillo que sella la cutícula: controla el frizz, previene las puntas abiertas y deja el cabello luminoso, flexible y suave. Además protege del calor de las herramientas y lleva filtro solar. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "The shine serum that seals the cuticle: it controls frizz, helps prevent split ends and leaves hair luminous, flexible and soft. It also protects against heat-tool damage and includes a sun filter. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Frizz, calor y sol en una sola aplicación: el último paso antes de salir a la calle en Florida.",
+     "en": "Frizz, heat and sun in a single application: the last step before stepping out in Florida."
+    }
+   ],
+   "activos": [
+    {
+     "es": "filtro solar",
+     "en": "sun filter"
+    }
+   ],
+   "problemas": [
+    "frizz",
+    "puntas abiertas",
+    "daño por calor",
+    "daño por sol",
+    "cabello sin brillo"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "El último paso antes de salir",
+     "en": "The last step before you step out"
+    },
+    "entradilla": {
+     "es": "Sella, da brillo y protege del calor y del sol: por eso Patricia Osorio lo eligió para cinco de sus rituales.",
+     "en": "It seals, adds shine and protects from heat and sun, which is why Patricia Osorio chose it for five of her rituals."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "brillo y luminosidad",
+     "sella la cutícula",
+     "protector térmico",
+     "con filtro solar"
+    ],
+    "en": [
+     "shine and radiance",
+     "seals the cuticle",
+     "heat protectant",
+     "with sun filter"
+    ]
+   },
+   "rituals": [
+    "Moisture Recovery Plus",
+    "Restore Therapy Plus",
+    "Blonde Guard Plus",
+    "Perfect Blonde Plus",
+    "S.O.S Rescue System"
+   ],
+   "modo_de_uso": {
+    "es": "Unas gotas en el cabello, esté húmedo o seco; luego peina como quieras.",
+    "en": "A few drops with hair damp or dry, then style however you like."
+   },
+   "rango_ph": "6.5-7.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar un factor de protección solar (SPF) concreto",
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T031",
+     "tamano": "50 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T032",
+     "tamano": "100 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "T040",
+   "nombre": "Lisothermic",
+   "linea": "Styling",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Crema protectora para quien alisa con plancha o secador todos los días. Reduce el daño del calor, mejora el estado de la cutícula después del alisado y ayuda a que el liso dure más. También funciona como crema para peinar. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "Protective cream for anyone who straightens with a flat iron or blow-dryer every day. It reduces heat damage, improves the cuticle after straightening and helps smoothness last longer. It also works as a styling cream. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "En clima húmedo el liso se pierde rápido; proteger la cutícula ayuda a que dure más.",
+     "en": "In a humid climate straightened hair reverts fast; protecting the cuticle helps it last longer."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "daño por calor",
+    "alisado con plancha",
+    "uso frecuente del secador"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Liso que dura en clima húmedo",
+     "en": "Smooth that lasts in humid weather"
+    },
+    "entradilla": {
+     "es": "Protección térmica para quien alisa todos los días y quiere que el liso aguante.",
+     "en": "Heat protection for daily straighteners who want smoothness to hold."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "alta protección térmica",
+     "liso y suave por más tiempo",
+     "también como crema para peinar"
+    ],
+    "en": [
+     "high heat protection",
+     "smooth and soft for longer",
+     "doubles as a styling cream"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Frota una dosis pequeña entre las palmas y repártela con el cabello recién lavado y húmedo. No se enjuaga. Después alisa o peina con tu plancha o secador.",
+    "en": "Rub a small dose between your palms and spread it over clean, damp hair. Leave it in. Then straighten or style with your heat tool of choice."
+   },
+   "rango_ph": "6.5-7.0",
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "afirmar que alisa de forma permanente",
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T039",
+     "tamano": "50 ml",
+     "canal": "sin venta en tienda hoy"
+    },
+    {
+     "codigo": "T040",
+     "tamano": "400 ml",
+     "canal": "tienda retail"
+    },
+    {
+     "codigo": "T041",
+     "tamano": "1 L",
+     "canal": "tienda PRO"
+    }
+   ]
+  },
+  {
+   "sku": "T042",
+   "nombre": "Thermo Dual",
+   "linea": "Styling",
+   "tipo": "producto",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Protección térmica con doble función: te cuida del calor de secador y plancha y, al mismo tiempo, usa ese calor para que su tratamiento penetre. Protege y repara la cutícula y acondiciona sin apelmazar, con suavidad y brillo. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.",
+    "en": "Dual-action heat protectant: it guards against blow-dryer and flat-iron heat and also uses that heat to drive its treatment in. It protects and repairs the cuticle and conditions without weighing hair down, for softness and shine. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Si en Florida hay que volver a pasar la plancha por la humedad, cada pasada necesita protección.",
+     "en": "If Florida humidity means going over your hair with the iron again, every pass needs protection."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "daño por calor",
+    "uso frecuente de plancha o secador"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Protege y trata con cada pasada",
+     "en": "Protect and treat with every pass"
+    },
+    "entradilla": {
+     "es": "El protector térmico con el que Patricia Osorio cierra su ritual Restore & Shield.",
+     "en": "The heat protectant Patricia Osorio uses to finish her Restore & Shield ritual."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "doble acción: protege y trata",
+     "el calor de la herramienta impulsa su tratamiento",
+     "no deja el cabello pesado ni graso"
+    ],
+    "en": [
+     "dual action: protects and treats",
+     "heat drives its treatment in",
+     "doesn't weigh hair down"
+    ]
+   },
+   "rituals": [
+    "Restore & Shield"
+   ],
+   "modo_de_uso": {
+    "es": "Rocía antes de que el secador o la plancha toquen el cabello, y peina como quieras.",
+    "en": "Mist on before the blow-dryer or flat iron touches your hair, then style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {
+    "es": [
+     "Que el producto no llegue a los ojos.",
+     "Guárdalo donde los niños no lo alcancen.",
+     "Si notas cualquier reacción, deja de usarlo."
+    ],
+    "en": [
+     "Keep the product out of your eyes.",
+     "Store it out of children's reach.",
+     "Should any reaction appear, stop using it."
+    ]
+   },
+   "no_afirmar": [
+    "resultados absolutos o garantizados"
+   ],
+   "componentes": [],
+   "presentaciones": [
+    {
+     "codigo": "T042",
+     "tamano": "200 ml",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-101",
+   "nombre": "Moisture Recovery",
+   "linea": "Moisture",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. Tu cabello en el clima de Florida necesita hidratación de verdad, no solo control. Moisture Recovery reúne en un ritual de tres pasos el shampoo y la mascarilla Humit con DY Fazza: hidratan la fibra por dentro, devuelven suavidad y brillo y dejan una barrera contra el calor y la humedad.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. Your hair in Florida's climate needs real hydration, not just control. Moisture Recovery brings together Humit shampoo and mask with DY Fazza in a three-step ritual: they hydrate the fiber from within, restore softness and shine and leave a barrier against heat and humidity."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El ritual base para el frizz de la humedad: hidratar por dentro para que el cabello no busque la humedad del aire.",
+     "en": "The core ritual for humidity frizz: hydrate from within so hair doesn't pull moisture from the air."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello seco",
+    "cabello deshidratado",
+    "frizz",
+    "calor y humedad"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Hidratación diseñada para el clima de la Florida",
+     "en": "Hydration designed for Florida's climate"
+    },
+    "entradilla": {
+     "es": "El ritual de tres pasos que Patricia Osorio creó para el cabello seco que vive entre la humedad de afuera y el aire acondicionado de adentro.",
+     "en": "The three-step ritual Patricia Osorio created for dry hair living between outdoor humidity and indoor AC."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "hidratación profunda desde el interior",
+     "reduce el frizz",
+     "aporta brillo y manejabilidad",
+     "protege del calor y la humedad de Florida"
+    ],
+    "en": [
+     "deep hydration from within",
+     "reduces frizz",
+     "shine and manageability",
+     "a barrier against heat and humidity"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Humit Shampoo: masaje suave y 3–5 minutos de acción; retira con agua. 2. Humit Mask en medios y puntas: 1–2 minutos si es tu acondicionador del día o 15–20 si quieres un tratamiento; retira con agua. 3. Agita DY Fazza y rocíalo sobre el cabello apenas húmedo; no se enjuaga. Peina como quieras.",
+    "en": "1. Wash with Humit Shampoo: gentle massage and 3–5 minutes of contact; rinse. 2. Humit Mask on mid-lengths and ends: 1–2 minutes as your everyday conditioner or 15–20 as a treatment; rinse. 3. Shake DY Fazza and mist over barely damp hair; no rinsing. Style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L013",
+     "nombre": "Humit Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T035",
+     "nombre": "Humit Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T030",
+     "nombre": "DY Fazza",
+     "tamano": "200 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-101",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-101P",
+   "nombre": "Moisture Recovery Plus",
+   "linea": "Moisture",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. Para cuando la sequedad ya es crónica por calor, químicos o deshidratación. Moisture Recovery Plus suma Neurona Gloss al ritual Humit: cuatro pasos que reponen la humedad, fortalecen la fibra y sellan la cutícula para que el resultado dure.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. For when dryness has become chronic from heat, chemical services or dehydration. Moisture Recovery Plus adds Neurona Gloss to the Humit ritual: four steps that replenish moisture, strengthen the fiber and seal the cuticle so results last."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El sellado final con Neurona Gloss es el que sostiene la hidratación frente a la humedad del día.",
+     "en": "The final Neurona Gloss seal is what holds hydration in against the day's humidity."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello muy seco",
+    "cabello procesado químicamente",
+    "deshidratación crónica",
+    "frizz"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Para cuando la sequedad ya es crónica",
+     "en": "For when dryness has become chronic"
+    },
+    "entradilla": {
+     "es": "Patricia Osorio sumó Neurona Gloss al ritual Humit para sellar la hidratación contra la humedad de la Florida.",
+     "en": "Patricia Osorio added Neurona Gloss to the Humit ritual to seal hydration in against Florida humidity."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "hidratación profunda de 4 pasos",
+     "fortalece y restaura la fibra",
+     "sella la cutícula",
+     "brillo espejo con Neurona Gloss"
+    ],
+    "en": [
+     "four-step deep hydration",
+     "strengthens the fiber",
+     "seals the cuticle",
+     "mirror shine with Neurona Gloss"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Humit Shampoo: masaje suave y 3–5 minutos de acción; retira con agua. 2. Humit Mask en medios y puntas: 1–2 minutos como acondicionador o 15–20 como tratamiento; retira con agua. 3. Agita DY Fazza y rocíalo sobre el cabello apenas húmedo; no se enjuaga. 4. Cierra con unas gotas de Neurona Gloss, en húmedo o en seco. Peina como quieras.",
+    "en": "1. Wash with Humit Shampoo: gentle massage and 3–5 minutes of contact; rinse. 2. Humit Mask on mid-lengths and ends: 1–2 minutes as a conditioner or 15–20 as a treatment; rinse. 3. Shake DY Fazza and mist over barely damp hair; no rinsing. 4. Finish with a few drops of Neurona Gloss, with hair damp or dry. Style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L013",
+     "nombre": "Humit Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T035",
+     "nombre": "Humit Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T030",
+     "nombre": "DY Fazza",
+     "tamano": "200 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T031",
+     "nombre": "Neurona Gloss",
+     "tamano": "50 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-101P",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-101T",
+   "nombre": "Moisture & Shine",
+   "linea": "Moisture",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. Hidratación profunda con un final de brillo que se ve desde cualquier ángulo. Moisture & Shine combina el ritual Humit con Resplander Shine: cabello que se siente sano y además lo refleja.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. Deep hydration with a shine finish you can see from every angle. Moisture & Shine pairs the Humit ritual with Resplander Shine: hair that feels healthy and shows it."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Brillo sin peso para un clima donde todo lo pesado se vuelve grasa.",
+     "en": "Weightless shine for a climate where anything heavy turns greasy."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello seco",
+    "cabello opaco",
+    "frizz"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Hidratación con brillo de salón",
+     "en": "Hydration with salon shine"
+    },
+    "entradilla": {
+     "es": "El ritual Humit de Patricia Osorio con un final de Resplander Shine: brillo sin peso para el calor de la Florida.",
+     "en": "Patricia Osorio's Humit ritual with a Resplander Shine finish: weightless shine for Florida heat."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "hidratación profunda",
+     "acabado brillante de salón",
+     "luminosidad desde cualquier ángulo",
+     "frizz controlado"
+    ],
+    "en": [
+     "deep hydration",
+     "salon-level shine",
+     "frizz under control"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Humit Shampoo: masaje suave y 3–5 minutos de acción; retira con agua. 2. Humit Mask en medios y puntas: 1–2 minutos como acondicionador o 15–20 como tratamiento; retira con agua. 3. Agita DY Fazza, rocíalo sobre el cabello apenas húmedo, sin enjuagar, y peina. 4. Con el peinado listo y el cabello seco, termina con Resplander Shine rociado de forma pareja a unos 30 cm.",
+    "en": "1. Wash with Humit Shampoo: gentle massage and 3–5 minutes of contact; rinse. 2. Humit Mask on mid-lengths and ends: 1–2 minutes as a conditioner or 15–20 as a treatment; rinse. 3. Shake DY Fazza, mist over barely damp hair, no rinsing, and style. 4. With your style done and hair dry, finish with Resplander Shine misted evenly from about 30 cm (12 in)."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L013",
+     "nombre": "Humit Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T035",
+     "nombre": "Humit Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T030",
+     "nombre": "DY Fazza",
+     "tamano": "200 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "E017",
+     "nombre": "Resplander Shine",
+     "tamano": "100 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-101T",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-102",
+   "nombre": "Restore Therapy",
+   "linea": "Restore",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. Cuando el calor, los químicos o el día a día ya dejaron marca, hace falta reconstruir. Restore Therapy reúne el shampoo y la mascarilla Kerasin HB con DY Fazza Color: fortalecen la fibra y devuelven suavidad y brillo sin descuidar el color.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. When heat, chemical services or everyday wear have left their mark, it's time to rebuild. Restore Therapy brings together Kerasin HB shampoo and mask with DY Fazza Color: they strengthen the fiber and restore softness and shine while caring for your color."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Reconstruye lo que el sol y la plancha desgastan, y el último paso protege el color del sol.",
+     "en": "It rebuilds what sun and flat irons wear down, and the last step shields color from the sun."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello dañado",
+    "cabello quebradizo",
+    "daño químico",
+    "daño por calor",
+    "cabello teñido"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Reconstrucción diseñada para el clima de la Florida",
+     "en": "Rebuilding designed for Florida's climate"
+    },
+    "entradilla": {
+     "es": "El ritual de Patricia Osorio para el cabello que el sol, la plancha y los químicos desgastaron, y que protege el color al final.",
+     "en": "Patricia Osorio's ritual for hair worn down by sun, flat irons and chemical services, finishing with color protection."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "repara la fibra dañada con keratina y biotina",
+     "fortalece desde el interior",
+     "nutre y aporta elasticidad",
+     "brillo y suavidad desde el primer uso"
+    ],
+    "en": [
+     "rebuilds damaged fiber",
+     "strengthens from within",
+     "nourishes and restores elasticity",
+     "shine and softness"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Kerasin HB Shampoo: masaje suave y 2–3 minutos de acción; retira con agua. 2. Kerasin HB Mask en medios y puntas, mínimo 5 minutos; retira con agua. 3. Agita DY Fazza Color y rocíalo sobre el cabello apenas húmedo; no se enjuaga. Peina como quieras.",
+    "en": "1. Wash with Kerasin HB Shampoo: gentle massage and 2–3 minutes of contact; rinse. 2. Kerasin HB Mask on mid-lengths and ends, at least 5 minutes; rinse. 3. Shake DY Fazza Color and mist over barely damp hair; no rinsing. Style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L029",
+     "nombre": "Kerasin HB Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T058",
+     "nombre": "Kerasin HB Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T061",
+     "nombre": "DY Fazza Color",
+     "tamano": "200 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-102",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-102P",
+   "nombre": "Restore Therapy Plus",
+   "linea": "Restore",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. Para el cabello con daño severo. Restore Therapy Plus añade Neurona Gloss al ritual Kerasin HB para sellar cada hebra después de la reconstrucción y retener lo que el tratamiento aportó.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. For severely damaged hair. Restore Therapy Plus adds Neurona Gloss to the Kerasin HB ritual to seal every strand after rebuilding and lock in what the treatment delivered."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El cabello muy dañado es el más vulnerable a la humedad; sellarlo es parte de la reparación.",
+     "en": "Severely damaged hair is the most vulnerable to humidity; sealing it is part of the repair."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "daño severo",
+    "cabello decolorado",
+    "cabello sobreprocesado",
+    "cabello poroso"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Para el cabello que ya pasó por todo",
+     "en": "For hair that has been through everything"
+    },
+    "entradilla": {
+     "es": "Patricia Osorio sumó Neurona Gloss al ritual Kerasin HB para sellar cada hebra después de reconstruirla.",
+     "en": "Patricia Osorio added Neurona Gloss to the Kerasin HB ritual to seal every strand after rebuilding it."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "reconstrucción activa de 4 pasos",
+     "keratina y biotina desde el primer paso",
+     "sella la reparación con Neurona Gloss",
+     "máximo brillo y suavidad post-tratamiento"
+    ],
+    "en": [
+     "four-step active rebuilding",
+     "keratin and biotin from step one",
+     "seals the repair with Neurona Gloss",
+     "maximum shine and softness"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Kerasin HB Shampoo: masaje suave y 2–3 minutos de acción; retira con agua. 2. Kerasin HB Mask en medios y puntas, mínimo 5 minutos; retira con agua. 3. Agita DY Fazza Color y rocíalo sobre el cabello apenas húmedo; no se enjuaga. 4. Cierra con unas gotas de Neurona Gloss, en húmedo o en seco. Peina como quieras.",
+    "en": "1. Wash with Kerasin HB Shampoo: gentle massage and 2–3 minutes of contact; rinse. 2. Kerasin HB Mask on mid-lengths and ends, at least 5 minutes; rinse. 3. Shake DY Fazza Color and mist over barely damp hair; no rinsing. 4. Finish with a few drops of Neurona Gloss, with hair damp or dry. Style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L029",
+     "nombre": "Kerasin HB Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T058",
+     "nombre": "Kerasin HB Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T061",
+     "nombre": "DY Fazza Color",
+     "tamano": "200 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T031",
+     "nombre": "Neurona Gloss",
+     "tamano": "50 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-102P",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-102T",
+   "nombre": "Restore & Shield",
+   "linea": "Restore",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. Reparar y proteger en el mismo ritual. Restore & Shield combina el sistema Kerasin HB con Thermo Dual, el protector térmico que sella la reparación y frena el daño de las próximas pasadas de calor.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. Repair and protect in the same ritual. Restore & Shield combines the Kerasin HB system with Thermo Dual, the heat protectant that seals the repair and holds off damage from your next rounds of heat."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Pensado para quien repite plancha o secador porque la humedad deshace el peinado.",
+     "en": "Made for anyone who re-irons or re-blow-dries because humidity undoes their style."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello dañado",
+    "daño por calor",
+    "uso frecuente de plancha o secador",
+    "cabello decolorado"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Repara hoy, protege mañana",
+     "en": "Repair today, protect tomorrow"
+    },
+    "entradilla": {
+     "es": "Patricia Osorio diseñó este ritual para quien repasa la plancha porque la humedad de la Florida deshace el peinado.",
+     "en": "Patricia Osorio designed this ritual for anyone who re-irons because Florida humidity undoes their style."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "repara la fibra dañada",
+     "protege del calor extremo con Thermo Dual",
+     "doble acción: tratamiento y protección",
+     "previene daño futuro"
+    ],
+    "en": [
+     "repairs damaged fiber",
+     "protects from extreme heat with Thermo Dual",
+     "treatment and protection in one",
+     "helps prevent future damage"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Kerasin HB Shampoo: masaje suave y 2–3 minutos de acción; retira con agua. 2. Kerasin HB Mask en medios y puntas, mínimo 5 minutos; retira con agua. 3. Agita DY Fazza Color y rocíalo sobre el cabello apenas húmedo; no se enjuaga. 4. Antes del secador o la plancha, rocía Thermo Dual y peina como quieras.",
+    "en": "1. Wash with Kerasin HB Shampoo: gentle massage and 2–3 minutes of contact; rinse. 2. Kerasin HB Mask on mid-lengths and ends, at least 5 minutes; rinse. 3. Shake DY Fazza Color and mist over barely damp hair; no rinsing. 4. Before the blow-dryer or flat iron, mist on Thermo Dual and style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L029",
+     "nombre": "Kerasin HB Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T058",
+     "nombre": "Kerasin HB Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T061",
+     "nombre": "DY Fazza Color",
+     "tamano": "200 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T042",
+     "nombre": "Thermo Dual",
+     "tamano": "200 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-102T",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-103",
+   "nombre": "Blonde Guard",
+   "linea": "Color_Rescue",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. El rubio tiene sus propias reglas, y bajo el sol de Florida más. Blonde Guard reúne Total Violet Shampoo, Total Violet Mask y DY Fazza Color en un ritual semanal que corrige el tono, nutre la fibra decolorada y potencia el brillo.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. Blonde plays by its own rules, especially under the Florida sun. Blonde Guard brings together Total Violet Shampoo, Total Violet Mask and DY Fazza Color in a weekly ritual that corrects tone, nourishes lightened hair and boosts shine."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Corrige el amarillo que acelera el sol y protege el color al terminar.",
+     "en": "It corrects the yellowing the sun speeds up and protects color at the end."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "reflejos amarillos en rubios",
+    "rubio decolorado reseco",
+    "mantenimiento del color"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "El ritual del rubio bajo el sol de la Florida",
+     "en": "The blonde ritual for the Florida sun"
+    },
+    "entradilla": {
+     "es": "Patricia Osorio lo diseñó para corregir el amarillo que el sol acelera y proteger el color en el mismo ritual semanal.",
+     "en": "Patricia Osorio designed it to correct the brassiness the sun speeds up and protect color in the same weekly ritual."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "neutraliza visos amarillos y brassy",
+     "nutre la fibra decolorada",
+     "potencia el brillo del rubio",
+     "prolonga la duración del color"
+    ],
+    "en": [
+     "neutralizes yellow and brassy tones",
+     "nourishes lightened hair",
+     "boosts blonde shine",
+     "extends color life"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Total Violet Shampoo: masaje suave y 2–3 minutos de acción; retira con agua. 2. Total Violet Mask en medios y puntas: 1–2 minutos como acondicionador o 15–20 como tratamiento; retira con agua. 3. Agita DY Fazza Color y rocíalo sobre el cabello apenas húmedo; no se enjuaga. Peina como quieras.",
+    "en": "1. Wash with Total Violet Shampoo: gentle massage and 2–3 minutes of contact; rinse. 2. Total Violet Mask on mid-lengths and ends: 1–2 minutes as a conditioner or 15–20 as a treatment; rinse. 3. Shake DY Fazza Color and mist over barely damp hair; no rinsing. Style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L015",
+     "nombre": "Total Violet Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T038",
+     "nombre": "Total Violet Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T062",
+     "nombre": "DY Fazza Color",
+     "tamano": "400 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-103",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-103P",
+   "nombre": "Blonde Guard Plus",
+   "linea": "Color_Rescue",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. Blonde Guard Plus lleva el ritual del rubio un paso más allá: al sistema que corrige el tono y nutre le suma Neurona Gloss, que sella cada hebra y multiplica la luz del rubio.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. Blonde Guard Plus takes the blonde ritual one step further: to the tone-correcting, nourishing system it adds Neurona Gloss, which seals every strand and amplifies blonde's light."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Sella el rubio contra la humedad y lo protege del sol en el último paso.",
+     "en": "It seals blonde against humidity and protects it from the sun in the final step."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "reflejos amarillos en rubios",
+    "rubio sin brillo",
+    "rubio decolorado reseco"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Rubio completo, del lavado al brillo",
+     "en": "Complete blonde care, from wash to shine"
+    },
+    "entradilla": {
+     "es": "Patricia Osorio sumó Neurona Gloss a Blonde Guard para sellar el rubio contra la humedad.",
+     "en": "Patricia Osorio added Neurona Gloss to Blonde Guard to seal blonde against humidity."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "corrección de tono completa",
+     "nutrición profunda de la fibra decolorada",
+     "brillo espejo con Neurona Gloss",
+     "color vibrante y duradero"
+    ],
+    "en": [
+     "complete tone correction",
+     "deep nourishment for lightened hair",
+     "mirror shine with Neurona Gloss",
+     "vibrant, lasting color"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Total Violet Shampoo: masaje suave y 2–3 minutos de acción; retira con agua. 2. Total Violet Mask en medios y puntas: 1–2 minutos como acondicionador o 15–20 como tratamiento; retira con agua. 3. Agita DY Fazza Color y rocíalo sobre el cabello apenas húmedo; no se enjuaga. 4. Cierra con unas gotas de Neurona Gloss, en húmedo o en seco. Peina como quieras.",
+    "en": "1. Wash with Total Violet Shampoo: gentle massage and 2–3 minutes of contact; rinse. 2. Total Violet Mask on mid-lengths and ends: 1–2 minutes as a conditioner or 15–20 as a treatment; rinse. 3. Shake DY Fazza Color and mist over barely damp hair; no rinsing. 4. Finish with a few drops of Neurona Gloss, with hair damp or dry. Style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L015",
+     "nombre": "Total Violet Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T038",
+     "nombre": "Total Violet Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T062",
+     "nombre": "DY Fazza Color",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T031",
+     "nombre": "Neurona Gloss",
+     "tamano": "50 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-103P",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-103V",
+   "nombre": "Perfect Blonde",
+   "linea": "Color_Rescue",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. El rubio platino y el frío no solo se mantienen: se controlan. Perfect Blonde reúne Total Violet Shampoo, Total Violet Mask y Velvety Control en un ritual que corrige el tono, nutre y controla el volumen y el frizz al mismo tiempo.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. Platinum and cool blondes don't just need maintenance; they need control. Perfect Blonde brings together Total Violet Shampoo, Total Violet Mask and Velvety Control in a ritual that corrects tone, nourishes and controls volume and frizz at the same time."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Pensado para el rubio frío que se esponja con la humedad.",
+     "en": "Made for cool blondes that puff up in humidity."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "reflejos amarillos en rubios platinados",
+    "frizz",
+    "exceso de volumen en clima húmedo"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Rubio frío que no se esponja",
+     "en": "Cool blonde that doesn't puff up"
+    },
+    "entradilla": {
+     "es": "El ritual de Patricia Osorio para el platino que la humedad de la Florida desordena.",
+     "en": "Patricia Osorio's ritual for the platinum that Florida humidity throws out of place."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "neutraliza visos amarillos",
+     "controla el frizz y el volumen",
+     "nutre la fibra platinada",
+     "rubio frío controlado en clima húmedo"
+    ],
+    "en": [
+     "neutralizes yellow tones",
+     "controls frizz and volume",
+     "nourishes platinum hair",
+     "cool blonde under control in humid weather"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Total Violet Shampoo: masaje suave y 2–3 minutos de acción; retira con agua. 2. Total Violet Mask en medios y puntas: 1–2 minutos como acondicionador o 15–20 como tratamiento; retira con agua. 3. Una dosis pequeña de Velvety Control en medios y puntas, con el cabello recién lavado y húmedo; no se enjuaga. Peina como quieras.",
+    "en": "1. Wash with Total Violet Shampoo: gentle massage and 2–3 minutes of contact; rinse. 2. Total Violet Mask on mid-lengths and ends: 1–2 minutes as a conditioner or 15–20 as a treatment; rinse. 3. A small dose of Velvety Control through mid-lengths and ends on clean, damp hair; no rinsing. Style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L015",
+     "nombre": "Total Violet Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T038",
+     "nombre": "Total Violet Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T026",
+     "nombre": "Velvety Control",
+     "tamano": "400 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-103V",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-103VP",
+   "nombre": "Perfect Blonde Plus",
+   "linea": "Color_Rescue",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. Perfect Blonde Plus completa el ritual del rubio liso con Neurona Gloss, que sella y cierra el ciclo: un rubio frío, liso y controlado, con una luminosidad que se nota.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. Perfect Blonde Plus completes the smooth-blonde ritual with Neurona Gloss, which seals and closes the cycle: a cool, smooth, controlled blonde with luminosity you can see."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "El control del frizz de Velvety Control más el sellado de Neurona Gloss, para que el liso aguante la humedad.",
+     "en": "Velvety Control's frizz control plus Neurona Gloss's seal, so smooth blonde holds up to humidity."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "reflejos amarillos en rubios platinados",
+    "frizz",
+    "rubio sin brillo"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Todo lo que tu rubio necesita, y el brillo",
+     "en": "Everything your blonde needs, plus the gloss"
+    },
+    "entradilla": {
+     "es": "Patricia Osorio cerró el ritual Perfect Blonde con Neurona Gloss para un rubio liso que aguanta la humedad.",
+     "en": "Patricia Osorio finished the Perfect Blonde ritual with Neurona Gloss for smooth blonde that holds up to humidity."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "neutraliza tono y controla el frizz",
+     "rubio liso y frío duradero",
+     "sella con Neurona Gloss para luminosidad espejo",
+     "sistema completo de 4 pasos para el rubio"
+    ],
+    "en": [
+     "tone correction plus frizz control",
+     "smooth, cool, lasting blonde",
+     "seals with Neurona Gloss",
+     "a complete four-step blonde system"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Total Violet Shampoo: masaje suave y 2–3 minutos de acción; retira con agua. 2. Total Violet Mask en medios y puntas: 1–2 minutos como acondicionador o 15–20 como tratamiento; retira con agua. 3. Velvety Control en medios y puntas, con el cabello recién lavado y húmedo; no se enjuaga. 4. Cierra con unas gotas de Neurona Gloss. Peina como quieras.",
+    "en": "1. Wash with Total Violet Shampoo: gentle massage and 2–3 minutes of contact; rinse. 2. Total Violet Mask on mid-lengths and ends: 1–2 minutes as a conditioner or 15–20 as a treatment; rinse. 3. Velvety Control through mid-lengths and ends on clean, damp hair; no rinsing. 4. Finish with a few drops of Neurona Gloss. Style however you like."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L015",
+     "nombre": "Total Violet Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T038",
+     "nombre": "Total Violet Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T026",
+     "nombre": "Velvety Control",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T031",
+     "nombre": "Neurona Gloss",
+     "tamano": "50 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-103VP",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-104",
+   "nombre": "S.O.S Rescue System",
+   "linea": "Restore",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. S.O.S Rescue System es el programa intensivo de siete productos para el cabello con daño severo: limpieza reparadora con Kerasin HB, reconstrucción con Kerasin HB Mask, protección del color con Dyfensor Serum, hidratación con el ácido hialurónico de Hyaloneurine, sellado de la cutícula con Green 100, hidratación sin enjuague con DY Fazza y brillo final con Neurona Gloss.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. S.O.S Rescue System is the intensive seven-product program for severely damaged hair: repairing cleanse with Kerasin HB, rebuilding with Kerasin HB Mask, color protection with Dyfensor Serum, hydration from Hyaloneurine's hyaluronic acid, cuticle sealing with Green 100, leave-in hydration with DY Fazza and a final shine with Neurona Gloss."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Para el cabello que acumula sol, sal, calor y químicos: cada paso atiende uno de esos frentes.",
+     "en": "For hair that has taken on sun, salt, heat and chemical services: each step covers one of those fronts."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "daño severo",
+    "cabello decolorado",
+    "cabello sobreprocesado",
+    "cabello extremadamente seco",
+    "cabello poroso",
+    "cabello quebradizo"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "El rescate completo, en siete pasos",
+     "en": "The complete rescue, in seven steps"
+    },
+    "entradilla": {
+     "es": "El programa intensivo que Patricia Osorio diseñó para el cabello con daño severo que acumula sol, sal, calor y químicos.",
+     "en": "The intensive program Patricia Osorio designed for severely damaged hair that has taken on sun, salt, heat and chemical services."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "programa intensivo de 7 pasos",
+     "reconstrucción con queratina y ácido hialurónico",
+     "hidratación sin enjuague",
+     "sellado final con Neurona Gloss"
+    ],
+    "en": [
+     "intensive seven-step program",
+     "rebuilding with keratin and hyaluronic acid",
+     "leave-in hydration",
+     "final seal with Neurona Gloss"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "1. Lava con Kerasin HB Shampoo: masaje suave y 2–3 minutos de acción; retira con agua. 2. Kerasin HB Mask en medios y puntas, mínimo 5 minutos; retira con agua. 3. Con el cabello húmedo, reparte Dyfensor Serum y Hyaloneurine: entre 2 y 3 gotas de cada uno por sección. 4. Agita DY Fazza y rocíalo sobre el cabello apenas húmedo. 5. Sella con unas gotas de Green 100. 6. Termina con Neurona Gloss y peina como quieras. Del paso 3 en adelante, nada se enjuaga.",
+    "en": "1. Wash with Kerasin HB Shampoo: gentle massage and 2–3 minutes of contact; rinse. 2. Kerasin HB Mask on mid-lengths and ends, at least 5 minutes; rinse. 3. On damp hair, work in Dyfensor Serum and Hyaloneurine: 2–3 drops of each per section. 4. Shake DY Fazza and mist over barely damp hair. 5. Seal with a few drops of Green 100. 6. Finish with Neurona Gloss and style however you like. From step 3 on, nothing gets rinsed."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "L029",
+     "nombre": "Kerasin HB Shampoo",
+     "tamano": "400 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "T058",
+     "nombre": "Kerasin HB Mask",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "S006",
+     "nombre": "Dyfensor Serum",
+     "tamano": "25 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "S005",
+     "nombre": "Hyaloneurine Face & Hair",
+     "tamano": "50 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T109",
+     "nombre": "Green 100",
+     "tamano": "25 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T029",
+     "nombre": "DY Fazza",
+     "tamano": "400 ml",
+     "rol": "complement"
+    },
+    {
+     "codigo": "T032",
+     "nombre": "Neurona Gloss",
+     "tamano": "100 ml",
+     "rol": "finisher"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-104",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  },
+  {
+   "sku": "NSCF-KT-SDUO",
+   "nombre": "Hydra Boost",
+   "linea": "Moisture",
+   "tipo": "kit",
+   "uso": "consumidor",
+   "descripcion": {
+    "es": "Un ritual diseñado por Patricia Osorio para el clima de la Florida. La hidratación del cabello tiene dos caras: la de afuera, que da suavidad y brillo al momento, y la de adentro, que fortalece la fibra y evita que pierda humedad. Hydra Boost atiende las dos: el ácido hialurónico de Hyaloneurine hidrata a fondo y Dyfensor protege la fibra de las agresiones externas.",
+    "en": "A ritual designed by Patricia Osorio for Florida's climate. Hair hydration has two sides: the outer one, for instant softness and shine, and the inner one, which strengthens the fiber and keeps it from losing moisture. Hydra Boost covers both: Hyaloneurine's hyaluronic acid hydrates deeply and Dyfensor protects the fiber from external damage."
+   },
+   "contextos": [
+    {
+     "contexto": "calor_humedo_florida",
+     "nombre": {
+      "es": "Calor húmedo · Florida",
+      "en": "Hot & humid · Florida",
+      "rasgos_es": "humedad alta todo el año, sol intenso, calor, lluvias de verano, aire acondicionado en interiores, piscina y mar",
+      "rasgos_en": "year-round high humidity, intense sun, heat, summer rain, indoor air conditioning, pools and ocean"
+     },
+     "es": "Dos sérums ligeros, sin peso, para el contraste entre calor exterior y aire acondicionado.",
+     "en": "Two light, weightless serums for the swing between outdoor heat and indoor air conditioning."
+    }
+   ],
+   "activos": [],
+   "problemas": [
+    "cabello seco",
+    "cabello procesado químicamente",
+    "cabello maduro",
+    "color que se desvanece"
+   ],
+   "gancho": {
+    "titular": {
+     "es": "Dos sérums, hidratación por dentro y por fuera",
+     "en": "Two serums, hydration inside and out"
+    },
+    "entradilla": {
+     "es": "El dúo que Patricia Osorio armó para el contraste entre el calor de afuera y el aire acondicionado de adentro.",
+     "en": "The duo Patricia Osorio put together for the swing between outdoor heat and indoor air conditioning."
+    }
+   },
+   "beneficios": {
+    "es": [
+     "hidratación profunda con ácido hialurónico",
+     "nutre y reestructura la hebra",
+     "favorece la suavidad y el brillo",
+     "contribuye a prevenir la pérdida de humedad"
+    ],
+    "en": [
+     "deep hydration with hyaluronic acid",
+     "nourishes and restructures the strand",
+     "softness and shine",
+     "helps prevent moisture loss"
+    ]
+   },
+   "rituals": [],
+   "modo_de_uso": {
+    "es": "Después del lavado y el acondicionador, con el cabello húmedo, reparte por sección entre 2 y 3 gotas de Hyaloneurine y otras 2–3 de Dyfensor Serum, según el largo y la densidad. Se quedan puestos. Hyaloneurine también sirve para el rostro: 2–3 gotas sobre la piel limpia, con movimientos circulares.",
+    "en": "After washing and conditioning, on damp hair, work 2–3 drops of Hyaloneurine and another 2–3 of Dyfensor Serum into each section, depending on length and density. Leave them in. Hyaloneurine also works on the face: 2–3 drops on clean skin, in circular motions."
+   },
+   "rango_ph": null,
+   "precauciones": {},
+   "no_afirmar": [],
+   "componentes": [
+    {
+     "codigo": "S005",
+     "nombre": "Hyaloneurine Face & Hair",
+     "tamano": "50 ml",
+     "rol": "anchor"
+    },
+    {
+     "codigo": "S006",
+     "nombre": "Dyfensor Serum",
+     "tamano": "25 ml",
+     "rol": "complement"
+    }
+   ],
+   "presentaciones": [
+    {
+     "codigo": "NSCF-KT-SDUO",
+     "tamano": "kit",
+     "canal": "tienda retail"
+    }
+   ]
+  }
+ ]
+}
