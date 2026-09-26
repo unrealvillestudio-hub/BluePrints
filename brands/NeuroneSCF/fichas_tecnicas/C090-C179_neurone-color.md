@@ -2,9 +2,18 @@
 
 `C090-C179` · Línea **Pro_Salon** · Producto · Uso profesional
 
+> **Color permanente con ciencia de salón**  
+> Nanotribología y proteína de quinoa para que el color entre con el menor daño y dure más.
+
 ## Qué es
 
 Coloración permanente en crema para el salón. Su tecnología de nanotribología equilibra la lubricación de la fibra durante el servicio, para que el color entre en la fibra dañándola lo mínimo, y su proteína de quinoa (cisteína, isoleucina y treonina) protege el córtex y alarga la vida del color. Cubre canas y trabaja con toda la carta de tonos.
+
+## Beneficios
+
+- cobertura de canas
+- color duradero
+- menor daño durante la coloración
 
 ## Tu cabello en el clima de Florida
 
@@ -88,7 +97,12 @@ Uso profesional. Proporción 1 : 1½ (color : Neuroxide) en bol no metálico, ha
 
 ## English
 
+> **Permanent color, salon science**  
+> Nanotribology and quinoa protein so color goes in with minimal damage and lasts longer.
+
 Permanent cream color for the salon. Its nanotribology technology balances fiber lubrication during the service so color enters the fiber with minimal harm, and its quinoa protein (cysteine, isoleucine and threonine) protects the cortex and extends color life. It covers gray and works across the full shade chart.
+
+**Benefits.** gray coverage; long-lasting color; less damage during coloring.
 
 **Hot & humid · Florida.** In a high-sun market, color longevity is what the client notices between visits.
 

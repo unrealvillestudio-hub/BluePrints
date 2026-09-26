@@ -2,9 +2,27 @@
 
 `T038` · Línea **Color_Rescue** · Producto · Uso consumidor
 
+> **Rubio frío, cabello hidratado**  
+> Corrige el amarillo mientras repara la fibra decolorada: rápida como acondicionador o intensa como tratamiento.
+
 ## Qué es
 
-La mascarilla que complementa a Total Violet Shampoo. Corrige el amarillo en rubios y canas mientras hidrata, desenreda y repara la fibra decolorada. La puedes usar como acondicionador rápido o como tratamiento más largo cuando el cabello lo pide.
+La mascarilla que complementa a Total Violet Shampoo. Corrige el amarillo en rubios y canas mientras hidrata, desenreda y repara la fibra decolorada. La puedes usar como acondicionador rápido o como tratamiento más largo cuando el cabello lo pide. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.
+
+## Beneficios
+
+- neutraliza los reflejos amarillos
+- hidrata, nutre y desenreda
+- doble uso: acondicionador o mascarilla
+
+## Parte de los Rituals & Kits de Patricia Osorio
+
+Este producto ha sido elegido para ser parte de los Rituals & Kits que Patricia Osorio diseñó para el cabello en el clima de la Florida:
+
+- Blonde Guard
+- Blonde Guard Plus
+- Perfect Blonde
+- Perfect Blonde Plus
 
 ## Tu cabello en el clima de Florida
 
@@ -37,7 +55,12 @@ Primero, lava con Total Violet Shampoo. Modo rápido: reparte en medios y puntas
 
 ## English
 
-The mask that pairs with Total Violet Shampoo. It corrects yellow tones in blonde and gray hair while hydrating, detangling and repairing lightened strands. Use it as a quick conditioner or as a longer treatment when your hair needs it.
+> **Cool blonde, hydrated hair**  
+> Corrects yellow tones while repairing lightened hair: quick as a conditioner or intensive as a treatment.
+
+The mask that pairs with Total Violet Shampoo. It corrects yellow tones in blonde and gray hair while hydrating, detangling and repairing lightened strands. Use it as a quick conditioner or as a longer treatment when your hair needs it. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too.
+
+**Benefits.** neutralizes yellow tones; hydrates, nourishes and detangles; two ways to use: conditioner or mask.
 
 **Hot & humid · Florida.** Bleached blonde dries out faster with sun and salt; this mask corrects tone and restores moisture in the same step.
 

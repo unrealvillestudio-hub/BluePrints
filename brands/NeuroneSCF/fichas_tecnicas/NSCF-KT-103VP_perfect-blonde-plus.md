@@ -2,9 +2,19 @@
 
 `NSCF-KT-103VP` · Línea **Color_Rescue** · Kit · Uso consumidor
 
+> **Todo lo que tu rubio necesita, y el brillo**  
+> Patricia Osorio cerró el ritual Perfect Blonde con Neurona Gloss para un rubio liso que aguanta la humedad.
+
 ## Qué es
 
-Perfect Blonde Plus completa el ritual del rubio liso con Neurona Gloss, que sella y cierra el ciclo: un rubio frío, liso y controlado, con una luminosidad que se nota.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. Perfect Blonde Plus completa el ritual del rubio liso con Neurona Gloss, que sella y cierra el ciclo: un rubio frío, liso y controlado, con una luminosidad que se nota.
+
+## Beneficios
+
+- neutraliza tono y controla el frizz
+- rubio liso y frío duradero
+- sella con Neurona Gloss para luminosidad espejo
+- sistema completo de 4 pasos para el rubio
 
 ## Tu cabello en el clima de Florida
 
@@ -31,7 +41,12 @@ El control del frizz de Velvety Control más el sellado de Neurona Gloss, para q
 
 ## English
 
-Perfect Blonde Plus completes the smooth-blonde ritual with Neurona Gloss, which seals and closes the cycle: a cool, smooth, controlled blonde with luminosity you can see.
+> **Everything your blonde needs, plus the gloss**  
+> Patricia Osorio finished the Perfect Blonde ritual with Neurona Gloss for smooth blonde that holds up to humidity.
+
+A ritual designed by Patricia Osorio for Florida's climate. Perfect Blonde Plus completes the smooth-blonde ritual with Neurona Gloss, which seals and closes the cycle: a cool, smooth, controlled blonde with luminosity you can see.
+
+**Benefits.** tone correction plus frizz control; smooth, cool, lasting blonde; seals with Neurona Gloss; a complete four-step blonde system.
 
 **Hot & humid · Florida.** Velvety Control's frizz control plus Neurona Gloss's seal, so smooth blonde holds up to humidity.
 

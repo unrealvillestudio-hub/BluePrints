@@ -2,9 +2,19 @@
 
 `NSCF-KT-103` · Línea **Color_Rescue** · Kit · Uso consumidor
 
+> **El ritual del rubio bajo el sol de la Florida**  
+> Patricia Osorio lo diseñó para corregir el amarillo que el sol acelera y proteger el color en el mismo ritual semanal.
+
 ## Qué es
 
-El rubio tiene sus propias reglas, y bajo el sol de Florida más. Blonde Guard reúne Total Violet Shampoo, Total Violet Mask y DY Fazza Color en un ritual semanal que corrige el tono, nutre la fibra decolorada y potencia el brillo.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. El rubio tiene sus propias reglas, y bajo el sol de Florida más. Blonde Guard reúne Total Violet Shampoo, Total Violet Mask y DY Fazza Color en un ritual semanal que corrige el tono, nutre la fibra decolorada y potencia el brillo.
+
+## Beneficios
+
+- neutraliza visos amarillos y brassy
+- nutre la fibra decolorada
+- potencia el brillo del rubio
+- prolonga la duración del color
 
 ## Tu cabello en el clima de Florida
 
@@ -30,7 +40,12 @@ Corrige el amarillo que acelera el sol y protege el color al terminar.
 
 ## English
 
-Blonde plays by its own rules, especially under the Florida sun. Blonde Guard brings together Total Violet Shampoo, Total Violet Mask and DY Fazza Color in a weekly ritual that corrects tone, nourishes lightened hair and boosts shine.
+> **The blonde ritual for the Florida sun**  
+> Patricia Osorio designed it to correct the brassiness the sun speeds up and protect color in the same weekly ritual.
+
+A ritual designed by Patricia Osorio for Florida's climate. Blonde plays by its own rules, especially under the Florida sun. Blonde Guard brings together Total Violet Shampoo, Total Violet Mask and DY Fazza Color in a weekly ritual that corrects tone, nourishes lightened hair and boosts shine.
+
+**Benefits.** neutralizes yellow and brassy tones; nourishes lightened hair; boosts blonde shine; extends color life.
 
 **Hot & humid · Florida.** It corrects the yellowing the sun speeds up and protects color at the end.
 

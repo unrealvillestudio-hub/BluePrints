@@ -2,9 +2,17 @@
 
 `C180` · Línea **Pro_Salon** · Producto · Uso profesional
 
+> **Violeta puro, en gotas**  
+> Pigmento concentrado para borrar el naranja y el amarillo y dar luz al platino.
+
 ## Qué es
 
 Pigmento violeta concentrado para el colorista. Elimina el naranja y el amarillo en rubios claros a extra claros y da luz al platino. Se dosifica en gotas dentro del producto que ya vas a usar: tinte, decolorante, shampoo, mascarilla o gel.
+
+## Beneficios
+
+- pigmento violeta puro concentrado
+- compatible con otros productos
 
 ## Qué atiende
 
@@ -31,7 +39,12 @@ Uso profesional. Dosifica por gotas dentro del producto que vas a aplicar, contr
 
 ## English
 
+> **Pure violet, by the drop**  
+> Concentrated pigment to erase orange and yellow and brighten platinum.
+
 Concentrated violet pigment for the colorist. It removes orange and yellow in light to extra-light blondes and brightens platinum. Dose it by the drop into the product you're already using: color, lightener, shampoo, mask or gel.
+
+**Benefits.** pure concentrated violet pigment; compatible with other products.
 
 **Directions.** Professional use. Dose by the drop into the product you're applying, time it to the intensity you're after, and rinse. If applying straight onto hair, wear gloves.
 

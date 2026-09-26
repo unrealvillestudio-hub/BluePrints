@@ -2,9 +2,18 @@
 
 `A003` · Línea **Scalp** · Producto · Uso consumidor
 
+> **Cuidado diario para el cuero cabelludo**  
+> Una loción con tecnología de péptidos pensada para ayudar a frenar la pérdida de melanina en el folículo.
+
 ## Qué es
 
 Una loción de uso diario con tecnología de péptidos para el cuero cabelludo. Está pensada para ayudar a frenar la pérdida de melanina en el folículo, algo que se aprecia en el cabello nuevo, y ayudan a protegerlo del debilitamiento.
+
+## Beneficios
+
+- uso diario
+- tecnología de péptidos
+- contribuye a reducir la pérdida de melanina
 
 ## Activos
 
@@ -34,7 +43,12 @@ Tras el lavado con tu shampoo Neurone, aplica una dosis pequeña directamente en
 
 ## English
 
+> **Daily scalp care**  
+> A peptide-technology lotion designed to help slow melanin loss in the follicle.
+
 A daily peptide-technology lotion for the scalp. Its ingredients help reduce melanin loss in the follicle, noticeable in new growth, and help protect it from weakening.
+
+**Benefits.** daily use; peptide technology; helps slow melanin loss.
 
 **Directions.** After washing with your Neurone shampoo, apply a small dose right onto the scalp, massaging it in until absorbed. Leave it in. To boost it, follow with Neurone Dherma Roller.
 

@@ -25,6 +25,16 @@ el esquema, y su catálogo está en `fichas.json → climas`.
 **Regla:** nunca se afirma que un producto fue formulado para un clima; se explica por qué funciona
 en él.
 
+**Los kits sí están diseñados para el clima de la Florida.** Los 12 Rituals & Kits son el diseño de
+Patricia Osorio para el cabello en ese clima, y cada ficha de kit lo dice. Cada producto que forma
+parte de uno o más kits lo indica en «Parte de los Rituals & Kits de Patricia Osorio».
+
+## El gancho de cada ficha
+
+Cada ficha abre con un **titular** y una **entradilla** (ES y EN, escritos por separado): el
+beneficio para quien compra, primero; la ciencia detrás, después. Es el mismo texto que la tienda
+muestra encima de «Presentación».
+
 ## Lo que nunca va aquí
 
 - **Precios.** El precio vive en la tienda y se lee en vivo. Cada presentación apunta a su variante

@@ -2,9 +2,18 @@
 
 `E006` · Línea **Styling** · Producto · Uso consumidor
 
+> **Fijación que no se rinde a la humedad**  
+> Cera en gel de fijación extrema para peinados que tienen que llegar intactos.
+
 ## Qué es
 
-Cera en gel de fijación extrema para peinados que tienen que durar todo el día y resistir la humedad. Sirve para diseños marcados o para domar el cabello más rebelde, y su complejo de aminoácidos cuida la fibra.
+Cera en gel de fijación extrema para peinados que tienen que durar todo el día y resistir la humedad. Sirve para diseños marcados o para domar el cabello más rebelde, y su complejo de aminoácidos cuida la fibra. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.
+
+## Beneficios
+
+- fijación máxima
+- resistente a la humedad
+- se reactiva con agua
 
 ## Tu cabello en el clima de Florida
 
@@ -38,7 +47,12 @@ Trabaja con el cabello recién lavado y húmedo. Una vez hecho el peinado, no vu
 
 ## English
 
-Extreme-hold gel wax for styles that must last all day and stand up to humidity. Great for defined designs or taming the most unruly hair, with an amino-acid complex that cares for the fiber.
+> **Hold that won't give in to humidity**  
+> Extreme-hold gel wax for styles that need to arrive intact.
+
+Extreme-hold gel wax for styles that must last all day and stand up to humidity. Great for defined designs or taming the most unruly hair, with an amino-acid complex that cares for the fiber. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too.
+
+**Benefits.** extreme hold; humidity-resistant; reactivates with water.
 
 **Hot & humid · Florida.** A style that resists humidity is the difference between leaving styled and arriving styled.
 

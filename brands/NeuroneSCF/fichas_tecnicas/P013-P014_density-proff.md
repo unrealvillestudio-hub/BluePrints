@@ -2,9 +2,18 @@
 
 `P013-P014` · Línea **Pro_Salon** · Producto · Uso profesional
 
+> **Densidad para la precisión**  
+> Oxidante espeso en 20 y 30 volúmenes para aplicaciones que no admiten corrimientos.
+
 ## Qué es
 
 Oxidante cremoso y denso, en 20 y 30 volúmenes. Su cuerpo espeso da control en aplicaciones de precisión, potencia el aclarado y ayuda a fijar el pigmento.
+
+## Beneficios
+
+- alta densidad
+- mayor precisión
+- mejor fijación del pigmento
 
 ## Qué atiende
 
@@ -32,7 +41,12 @@ Uso profesional. Combínalo con color o decolorante en un bol no metálico y lim
 
 ## English
 
+> **Density for precision**  
+> Thick developer in 20 and 30 volume for applications that can't afford to run.
+
 High-density cream developer in 20 and 30 volume. Its thick body gives control in precision applications, boosts lift and helps lock in pigment.
+
+**Benefits.** high density; more precision; better pigment hold.
 
 **Directions.** Professional use. Combine with color or lightener in a clean, non-metal bowl until the mix is even, and apply as the service requires.
 

@@ -2,9 +2,18 @@
 
 `T040` · Línea **Styling** · Producto · Uso consumidor
 
+> **Liso que dura en clima húmedo**  
+> Protección térmica para quien alisa todos los días y quiere que el liso aguante.
+
 ## Qué es
 
-Crema protectora para quien alisa con plancha o secador todos los días. Reduce el daño del calor, mejora el estado de la cutícula después del alisado y ayuda a que el liso dure más. También funciona como crema para peinar.
+Crema protectora para quien alisa con plancha o secador todos los días. Reduce el daño del calor, mejora el estado de la cutícula después del alisado y ayuda a que el liso dure más. También funciona como crema para peinar. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.
+
+## Beneficios
+
+- alta protección térmica
+- liso y suave por más tiempo
+- también como crema para peinar
 
 ## Tu cabello en el clima de Florida
 
@@ -38,7 +47,12 @@ Frota una dosis pequeña entre las palmas y repártela con el cabello recién la
 
 ## English
 
-Protective cream for anyone who straightens with a flat iron or blow-dryer every day. It reduces heat damage, improves the cuticle after straightening and helps smoothness last longer. It also works as a styling cream.
+> **Smooth that lasts in humid weather**  
+> Heat protection for daily straighteners who want smoothness to hold.
+
+Protective cream for anyone who straightens with a flat iron or blow-dryer every day. It reduces heat damage, improves the cuticle after straightening and helps smoothness last longer. It also works as a styling cream. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too.
+
+**Benefits.** high heat protection; smooth and soft for longer; doubles as a styling cream.
 
 **Hot & humid · Florida.** In a humid climate straightened hair reverts fast; protecting the cuticle helps it last longer.
 

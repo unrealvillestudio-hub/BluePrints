@@ -2,9 +2,19 @@
 
 `NSCF-KT-102P` · Línea **Restore** · Kit · Uso consumidor
 
+> **Para el cabello que ya pasó por todo**  
+> Patricia Osorio sumó Neurona Gloss al ritual Kerasin HB para sellar cada hebra después de reconstruirla.
+
 ## Qué es
 
-Para el cabello con daño severo. Restore Therapy Plus añade Neurona Gloss al ritual Kerasin HB para sellar cada hebra después de la reconstrucción y retener lo que el tratamiento aportó.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. Para el cabello con daño severo. Restore Therapy Plus añade Neurona Gloss al ritual Kerasin HB para sellar cada hebra después de la reconstrucción y retener lo que el tratamiento aportó.
+
+## Beneficios
+
+- reconstrucción activa de 4 pasos
+- keratina y biotina desde el primer paso
+- sella la reparación con Neurona Gloss
+- máximo brillo y suavidad post-tratamiento
 
 ## Tu cabello en el clima de Florida
 
@@ -32,7 +42,12 @@ El cabello muy dañado es el más vulnerable a la humedad; sellarlo es parte de 
 
 ## English
 
-For severely damaged hair. Restore Therapy Plus adds Neurona Gloss to the Kerasin HB ritual to seal every strand after rebuilding and lock in what the treatment delivered.
+> **For hair that has been through everything**  
+> Patricia Osorio added Neurona Gloss to the Kerasin HB ritual to seal every strand after rebuilding it.
+
+A ritual designed by Patricia Osorio for Florida's climate. For severely damaged hair. Restore Therapy Plus adds Neurona Gloss to the Kerasin HB ritual to seal every strand after rebuilding and lock in what the treatment delivered.
+
+**Benefits.** four-step active rebuilding; keratin and biotin from step one; seals the repair with Neurona Gloss; maximum shine and softness.
 
 **Hot & humid · Florida.** Severely damaged hair is the most vulnerable to humidity; sealing it is part of the repair.
 

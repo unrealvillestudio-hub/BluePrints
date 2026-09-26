@@ -2,9 +2,19 @@
 
 `T059` · Línea **Restore** · Producto · Uso consumidor
 
+> **El cierre ligero de la reparación**  
+> Fuerza, textura y control del frizz sin peso, para terminar la rutina Kerasin HB.
+
 ## Qué es
 
 El paso final sin enjuague de la línea Restore. Biotina, queratina y ácido hialurónico en fórmula ligera: el cabello dañado gana fuerza, textura y elasticidad. Ligero y sin grasa, facilita el peinado y controla el frizz.
+
+## Beneficios
+
+- sin enjuague
+- controla el frizz
+- devuelve la elasticidad
+- textura ligera
 
 ## Tu cabello en el clima de Florida
 
@@ -42,7 +52,12 @@ Como cierre de la rutina Kerasin HB (shampoo y mascarilla). Reparte en medios y 
 
 ## English
 
+> **The lightweight finish to repair**  
+> Strength, texture and frizz control without weight, to finish the Kerasin HB routine.
+
 The leave-in final step of the Restore line. Biotin, keratin and hyaluronic acid in a light formula: damaged hair gains strength, texture and elasticity. Light and non-greasy, it makes styling easier and controls frizz.
+
+**Benefits.** no rinsing; controls frizz; restores elasticity; lightweight texture.
 
 **Hot & humid · Florida.** Frizz control without weight, which is what damaged hair needs on a humid day.
 

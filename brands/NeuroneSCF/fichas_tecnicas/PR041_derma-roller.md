@@ -2,9 +2,17 @@
 
 `PR041` · Línea **Scalp** · Producto · Uso consumidor
 
+> **Prepara el cuero cabelludo**  
+> Microagujas de titanio para que Capissen Lotion se absorba mejor.
+
 ## Qué es
 
 Un roller con microagujas de titanio para la rutina de cuero cabelludo. Ayuda a retirar la piel muerta y prepara la zona para que Capissen Lotion se absorba mejor.
+
+## Beneficios
+
+- microagujas de titanio
+- mejora la absorción de Capissen Lotion
 
 ## Qué atiende
 
@@ -30,7 +38,12 @@ Antes de estrenarlo, desinfecta el cabezal sumergiéndolo entre 5 y 8 minutos en
 
 ## English
 
+> **Prep your scalp**  
+> Titanium microneedles so Capissen Lotion absorbs better.
+
 A titanium microneedle roller for your scalp routine. It helps remove dead skin and preps the area so Capissen Lotion absorbs better.
+
+**Benefits.** titanium microneedles; improves Capissen Lotion absorption.
 
 **Directions.** Before first use, disinfect the head by soaking it 5–8 minutes in 75% alcohol, and repeat before every use. Apply Capissen Lotion with a gentle massage. Roll lightly from the front hairline toward the nape, 5–10 passes per area, alternating vertical, horizontal and diagonal. At most once a day and no more than three times a week. Don't use on sensitive skin, wounds, active acne, eczema or sunburn, or if you're allergic to metals.
 

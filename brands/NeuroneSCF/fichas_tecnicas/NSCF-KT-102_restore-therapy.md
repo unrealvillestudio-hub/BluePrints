@@ -2,9 +2,19 @@
 
 `NSCF-KT-102` · Línea **Restore** · Kit · Uso consumidor
 
+> **Reconstrucción diseñada para el clima de la Florida**  
+> El ritual de Patricia Osorio para el cabello que el sol, la plancha y los químicos desgastaron, y que protege el color al final.
+
 ## Qué es
 
-Cuando el calor, los químicos o el día a día ya dejaron marca, hace falta reconstruir. Restore Therapy reúne el shampoo y la mascarilla Kerasin HB con DY Fazza Color: fortalecen la fibra y devuelven suavidad y brillo sin descuidar el color.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. Cuando el calor, los químicos o el día a día ya dejaron marca, hace falta reconstruir. Restore Therapy reúne el shampoo y la mascarilla Kerasin HB con DY Fazza Color: fortalecen la fibra y devuelven suavidad y brillo sin descuidar el color.
+
+## Beneficios
+
+- repara la fibra dañada con keratina y biotina
+- fortalece desde el interior
+- nutre y aporta elasticidad
+- brillo y suavidad desde el primer uso
 
 ## Tu cabello en el clima de Florida
 
@@ -32,7 +42,12 @@ Reconstruye lo que el sol y la plancha desgastan, y el último paso protege el c
 
 ## English
 
-When heat, chemical services or everyday wear have left their mark, it's time to rebuild. Restore Therapy brings together Kerasin HB shampoo and mask with DY Fazza Color: they strengthen the fiber and restore softness and shine while caring for your color.
+> **Rebuilding designed for Florida's climate**  
+> Patricia Osorio's ritual for hair worn down by sun, flat irons and chemical services, finishing with color protection.
+
+A ritual designed by Patricia Osorio for Florida's climate. When heat, chemical services or everyday wear have left their mark, it's time to rebuild. Restore Therapy brings together Kerasin HB shampoo and mask with DY Fazza Color: they strengthen the fiber and restore softness and shine while caring for your color.
+
+**Benefits.** rebuilds damaged fiber; strengthens from within; nourishes and restores elasticity; shine and softness.
 
 **Hot & humid · Florida.** It rebuilds what sun and flat irons wear down, and the last step shields color from the sun.
 

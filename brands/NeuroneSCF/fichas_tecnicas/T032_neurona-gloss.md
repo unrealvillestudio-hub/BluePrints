@@ -2,9 +2,29 @@
 
 `T032` · Línea **Styling** · Producto · Uso consumidor
 
+> **El último paso antes de salir**  
+> Sella, da brillo y protege del calor y del sol: por eso Patricia Osorio lo eligió para cinco de sus rituales.
+
 ## Qué es
 
-El sérum de brillo que sella la cutícula: controla el frizz, previene las puntas abiertas y deja el cabello luminoso, flexible y suave. Además protege del calor de las herramientas y lleva filtro solar.
+El sérum de brillo que sella la cutícula: controla el frizz, previene las puntas abiertas y deja el cabello luminoso, flexible y suave. Además protege del calor de las herramientas y lleva filtro solar. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.
+
+## Beneficios
+
+- brillo y luminosidad
+- sella la cutícula
+- protector térmico
+- con filtro solar
+
+## Parte de los Rituals & Kits de Patricia Osorio
+
+Este producto ha sido elegido para ser parte de los Rituals & Kits que Patricia Osorio diseñó para el cabello en el clima de la Florida:
+
+- Moisture Recovery Plus
+- Restore Therapy Plus
+- Blonde Guard Plus
+- Perfect Blonde Plus
+- S.O.S Rescue System
 
 ## Tu cabello en el clima de Florida
 
@@ -43,7 +63,12 @@ Unas gotas en el cabello, esté húmedo o seco; luego peina como quieras.
 
 ## English
 
-The shine serum that seals the cuticle: it controls frizz, helps prevent split ends and leaves hair luminous, flexible and soft. It also protects against heat-tool damage and includes a sun filter.
+> **The last step before you step out**  
+> It seals, adds shine and protects from heat and sun, which is why Patricia Osorio chose it for five of her rituals.
+
+The shine serum that seals the cuticle: it controls frizz, helps prevent split ends and leaves hair luminous, flexible and soft. It also protects against heat-tool damage and includes a sun filter. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too.
+
+**Benefits.** shine and radiance; seals the cuticle; heat protectant; with sun filter.
 
 **Hot & humid · Florida.** Frizz, heat and sun in a single application: the last step before stepping out in Florida.
 

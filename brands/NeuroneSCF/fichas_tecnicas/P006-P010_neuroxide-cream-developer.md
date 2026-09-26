@@ -2,9 +2,18 @@
 
 `P006-P010` · Línea **Pro_Salon** · Producto · Uso profesional
 
+> **El oxidante que acompaña a tu color**  
+> Cinco volúmenes estabilizados que acondicionan mientras el color o el decolorante trabajan.
+
 ## Qué es
 
 Oxidante en crema estabilizado en cinco volúmenes (5, 10, 20, 30 y 40). Acompaña al color y al decolorante con buen acondicionamiento, facilita la entrada del pigmento con el menor daño a la cutícula y reduce la irritación del cuero cabelludo.
+
+## Beneficios
+
+- estabilizado
+- acondiciona durante el proceso
+- menor irritación del cuero cabelludo
 
 ## Qué atiende
 
@@ -36,7 +45,12 @@ Uso profesional. Combínalo con color o decolorante en un bol no metálico y lim
 
 ## English
 
+> **The developer that backs your color**  
+> Five stabilized volumes that condition while color or lightener works.
+
 Stabilized cream developer in five volumes (5, 10, 20, 30 and 40). It supports color and lightener with good conditioning, helps pigment penetrate with the least cuticle damage and reduces scalp irritation.
+
+**Benefits.** stabilized; conditions during processing; less scalp irritation.
 
 **Directions.** Professional use. Combine with color or lightener in a clean, non-metal bowl until the mix is even. With Neurone Color, 1 : 1½. Reference: 5 vol. deposits only; 10 vol. lifts up to half a level; 20 vol. lifts one level and is the gray-coverage standard; 30 vol. lifts two; 40 vol. lifts three.
 

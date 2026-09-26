@@ -2,9 +2,18 @@
 
 `D003` · Línea **Pro_Salon** · Producto · Uso profesional
 
+> **Aclarado con control**  
+> Decolorante sin volatilidad, con nanotribología y pigmentos que contrarrestan el amarillo.
+
 ## Qué es
 
 Decolorante en polvo sin volatilidad, con tecnología de nanotribología para una mejor lubricación de la fibra durante el aclarado y pigmentos que contrarrestan el amarillo. Diseñado para el trabajo diario del salón.
+
+## Beneficios
+
+- no volátil
+- neutraliza los reflejos amarillos
+- tecnología de nanotribología capilar
 
 ## Qué atiende
 
@@ -31,7 +40,12 @@ Uso profesional. Proporción 1 : 3: 30 g de polvo por 90 mL de Neuroxide (20, 30
 
 ## English
 
+> **Lightening with control**  
+> Dust-free lightener with nanotribology and pigments that counteract yellow.
+
 Dust-free lightening powder with nanotribology technology for better fiber lubrication during lightening, plus pigments that counteract yellow. Built for everyday salon work.
+
+**Benefits.** dust-free; neutralizes yellow tones; nanotribology technology.
 
 **Directions.** Professional use. Ratio 1 : 3: 30 g of powder to 90 mL of Neuroxide (20, 30 or 40 vol. depending on the lift needed). Mix and apply right away; discard leftovers. Gloves, non-metal bowl and plastic brush. Timing depends on target level and hair condition.
 

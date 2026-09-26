@@ -2,9 +2,19 @@
 
 `NSCF-KT-101T` · Línea **Moisture** · Kit · Uso consumidor
 
+> **Hidratación con brillo de salón**  
+> El ritual Humit de Patricia Osorio con un final de Resplander Shine: brillo sin peso para el calor de la Florida.
+
 ## Qué es
 
-Hidratación profunda con un final de brillo que se ve desde cualquier ángulo. Moisture & Shine combina el ritual Humit con Resplander Shine: cabello que se siente sano y además lo refleja.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. Hidratación profunda con un final de brillo que se ve desde cualquier ángulo. Moisture & Shine combina el ritual Humit con Resplander Shine: cabello que se siente sano y además lo refleja.
+
+## Beneficios
+
+- hidratación profunda
+- acabado brillante de salón
+- luminosidad desde cualquier ángulo
+- frizz controlado
 
 ## Tu cabello en el clima de Florida
 
@@ -31,7 +41,12 @@ Brillo sin peso para un clima donde todo lo pesado se vuelve grasa.
 
 ## English
 
-Deep hydration with a shine finish you can see from every angle. Moisture & Shine pairs the Humit ritual with Resplander Shine: hair that feels healthy and shows it.
+> **Hydration with salon shine**  
+> Patricia Osorio's Humit ritual with a Resplander Shine finish: weightless shine for Florida heat.
+
+A ritual designed by Patricia Osorio for Florida's climate. Deep hydration with a shine finish you can see from every angle. Moisture & Shine pairs the Humit ritual with Resplander Shine: hair that feels healthy and shows it.
+
+**Benefits.** deep hydration; salon-level shine; frizz under control.
 
 **Hot & humid · Florida.** Weightless shine for a climate where anything heavy turns greasy.
 

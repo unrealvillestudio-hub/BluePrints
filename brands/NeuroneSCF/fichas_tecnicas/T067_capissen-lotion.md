@@ -2,9 +2,19 @@
 
 `T067` · Línea **Scalp** · Producto · Uso consumidor
 
+> **Constancia diaria para tu densidad**  
+> La loción sin enjuague de la rutina Capissen, con péptidos y extractos naturales.
+
 ## Qué es
 
 La loción diaria sin enjuague de la rutina Capissen. Con tecnología de péptidos y extractos naturales, ayuda a frenar la caída antes de tiempo, mejora la densidad y fortalece el cabello.
+
+## Beneficios
+
+- uso diario
+- sin enjuague
+- ayuda a frenar la caída antes de tiempo
+- fortalece el cabello
 
 ## Activos
 
@@ -37,7 +47,12 @@ Tras el lavado con Capissen Shampoo, aplica una dosis pequeña directamente en e
 
 ## English
 
+> **Daily consistency for fuller hair**  
+> The leave-in lotion of the Capissen routine, with peptides and natural extracts.
+
 The daily leave-in lotion of the Capissen routine. With peptide technology and natural extracts, it helps delay premature hair fall, improves density and strengthens hair.
+
+**Benefits.** daily use; no rinsing; helps slow premature hair fall; strengthens hair.
 
 **Directions.** Once you've washed with Capissen Shampoo, put a small dose straight on the scalp, massaging it in until absorbed. Follow with Neurone Dherma Roller. Leave it in. Every day.
 

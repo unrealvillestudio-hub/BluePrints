@@ -2,9 +2,25 @@
 
 `S005` · Línea **Moisture** · Producto · Uso consumidor
 
+> **Un sérum, dos usos: cabello y rostro**  
+> Ácido hialurónico, colágeno y elastina para devolver luz y suavidad cuando el calor de afuera y el aire acondicionado deshidratan.
+
 ## Qué es
 
-Un sérum de doble uso, para cabello y rostro, con elastina, colágeno y ácido hialurónico. En el cabello devuelve brillo, suavidad y vitalidad; en la piel aporta luminosidad. Bastan unas gotas.
+Un sérum de doble uso, para cabello y rostro, con elastina, colágeno y ácido hialurónico. En el cabello devuelve brillo, suavidad y vitalidad; en la piel aporta luminosidad. Bastan unas gotas. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.
+
+## Beneficios
+
+- uso en cabello y rostro
+- luminosidad y suavidad
+- con elastina, colágeno y ácido hialurónico
+
+## Parte de los Rituals & Kits de Patricia Osorio
+
+Este producto ha sido elegido para ser parte de los Rituals & Kits que Patricia Osorio diseñó para el cabello en el clima de la Florida:
+
+- S.O.S Rescue System
+- Hydra Boost
 
 ## Tu cabello en el clima de Florida
 
@@ -42,7 +58,12 @@ Cabello: después del lavado y el acondicionador, con el cabello húmedo, repart
 
 ## English
 
-A dual-use serum for hair and face with elastin, collagen and hyaluronic acid. On hair it restores shine, softness and vitality; on skin it adds radiance. A few drops are all it takes.
+> **One serum, two uses: hair and face**  
+> Hyaluronic acid, collagen and elastin to restore glow and softness when outdoor heat and indoor AC dehydrate you.
+
+A dual-use serum for hair and face with elastin, collagen and hyaluronic acid. On hair it restores shine, softness and vitality; on skin it adds radiance. A few drops are all it takes. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too.
+
+**Benefits.** for hair and face; radiance and softness; elastin, collagen and hyaluronic acid.
 
 **Hot & humid · Florida.** Moving between outdoor heat and indoor air conditioning dehydrates hair and skin at the same time; one serum takes care of both.
 

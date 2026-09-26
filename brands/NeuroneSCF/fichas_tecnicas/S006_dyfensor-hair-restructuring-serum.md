@@ -2,9 +2,25 @@
 
 `S006` · Línea **Color_Rescue** · Producto · Uso consumidor
 
+> **Tu inversión en color, protegida**  
+> Unas gotas de aminoácidos que ayudan a que el tinte aguante el sol, el calor y los lavados de todos los días.
+
 ## Qué es
 
-Unas gotas que cuidan tu inversión en color. Su mezcla de aminoácidos rellena las zonas dañadas de la fibra y ayuda a que el tinte dure más frente a los lavados frecuentes, el sol y el calor de secador y plancha.
+Unas gotas que cuidan tu inversión en color. Su mezcla de aminoácidos rellena las zonas dañadas de la fibra y ayuda a que el tinte dure más frente a los lavados frecuentes, el sol y el calor de secador y plancha. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.
+
+## Beneficios
+
+- prolonga la duración del color
+- recubre las zonas dañadas
+- sin enjuague
+
+## Parte de los Rituals & Kits de Patricia Osorio
+
+Este producto ha sido elegido para ser parte de los Rituals & Kits que Patricia Osorio diseñó para el cabello en el clima de la Florida:
+
+- S.O.S Rescue System
+- Hydra Boost
 
 ## Tu cabello en el clima de Florida
 
@@ -40,7 +56,12 @@ Después del lavado y el acondicionador, con el cabello todavía húmedo, repart
 
 ## English
 
-A few drops that protect your color investment. Its amino-acid blend fills in damaged areas of the fiber and helps dye last longer through frequent washing, sun, and blow-dryer or flat-iron heat.
+> **Your color investment, protected**  
+> A few drops of amino acids that help color stand up to sun, heat and everyday washing.
+
+A few drops that protect your color investment. Its amino-acid blend fills in damaged areas of the fiber and helps dye last longer through frequent washing, sun, and blow-dryer or flat-iron heat. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too.
+
+**Benefits.** extends color life; fills in damaged areas; no rinsing.
 
 **Hot & humid · Florida.** Intense sun and daily washing are the two big color thieves in Florida; this serum works against both.
 

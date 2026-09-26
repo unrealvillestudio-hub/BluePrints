@@ -2,9 +2,19 @@
 
 `NSCF-KT-103P` · Línea **Color_Rescue** · Kit · Uso consumidor
 
+> **Rubio completo, del lavado al brillo**  
+> Patricia Osorio sumó Neurona Gloss a Blonde Guard para sellar el rubio contra la humedad.
+
 ## Qué es
 
-Blonde Guard Plus lleva el ritual del rubio un paso más allá: al sistema que corrige el tono y nutre le suma Neurona Gloss, que sella cada hebra y multiplica la luz del rubio.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. Blonde Guard Plus lleva el ritual del rubio un paso más allá: al sistema que corrige el tono y nutre le suma Neurona Gloss, que sella cada hebra y multiplica la luz del rubio.
+
+## Beneficios
+
+- corrección de tono completa
+- nutrición profunda de la fibra decolorada
+- brillo espejo con Neurona Gloss
+- color vibrante y duradero
 
 ## Tu cabello en el clima de Florida
 
@@ -31,7 +41,12 @@ Sella el rubio contra la humedad y lo protege del sol en el último paso.
 
 ## English
 
-Blonde Guard Plus takes the blonde ritual one step further: to the tone-correcting, nourishing system it adds Neurona Gloss, which seals every strand and amplifies blonde's light.
+> **Complete blonde care, from wash to shine**  
+> Patricia Osorio added Neurona Gloss to Blonde Guard to seal blonde against humidity.
+
+A ritual designed by Patricia Osorio for Florida's climate. Blonde Guard Plus takes the blonde ritual one step further: to the tone-correcting, nourishing system it adds Neurona Gloss, which seals every strand and amplifies blonde's light.
+
+**Benefits.** complete tone correction; deep nourishment for lightened hair; mirror shine with Neurona Gloss; vibrant, lasting color.
 
 **Hot & humid · Florida.** It seals blonde against humidity and protects it from the sun in the final step.
 

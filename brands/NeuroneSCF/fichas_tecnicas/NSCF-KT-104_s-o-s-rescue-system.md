@@ -2,9 +2,19 @@
 
 `NSCF-KT-104` · Línea **Restore** · Kit · Uso consumidor
 
+> **El rescate completo, en siete pasos**  
+> El programa intensivo que Patricia Osorio diseñó para el cabello con daño severo que acumula sol, sal, calor y químicos.
+
 ## Qué es
 
-S.O.S Rescue System es el programa intensivo de siete productos para el cabello con daño severo: limpieza reparadora con Kerasin HB, reconstrucción con Kerasin HB Mask, protección del color con Dyfensor Serum, hidratación con el ácido hialurónico de Hyaloneurine, sellado de la cutícula con Green 100, hidratación sin enjuague con DY Fazza y brillo final con Neurona Gloss.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. S.O.S Rescue System es el programa intensivo de siete productos para el cabello con daño severo: limpieza reparadora con Kerasin HB, reconstrucción con Kerasin HB Mask, protección del color con Dyfensor Serum, hidratación con el ácido hialurónico de Hyaloneurine, sellado de la cutícula con Green 100, hidratación sin enjuague con DY Fazza y brillo final con Neurona Gloss.
+
+## Beneficios
+
+- programa intensivo de 7 pasos
+- reconstrucción con queratina y ácido hialurónico
+- hidratación sin enjuague
+- sellado final con Neurona Gloss
 
 ## Tu cabello en el clima de Florida
 
@@ -37,7 +47,12 @@ Para el cabello que acumula sol, sal, calor y químicos: cada paso atiende uno d
 
 ## English
 
-S.O.S Rescue System is the intensive seven-product program for severely damaged hair: repairing cleanse with Kerasin HB, rebuilding with Kerasin HB Mask, color protection with Dyfensor Serum, hydration from Hyaloneurine's hyaluronic acid, cuticle sealing with Green 100, leave-in hydration with DY Fazza and a final shine with Neurona Gloss.
+> **The complete rescue, in seven steps**  
+> The intensive program Patricia Osorio designed for severely damaged hair that has taken on sun, salt, heat and chemical services.
+
+A ritual designed by Patricia Osorio for Florida's climate. S.O.S Rescue System is the intensive seven-product program for severely damaged hair: repairing cleanse with Kerasin HB, rebuilding with Kerasin HB Mask, color protection with Dyfensor Serum, hydration from Hyaloneurine's hyaluronic acid, cuticle sealing with Green 100, leave-in hydration with DY Fazza and a final shine with Neurona Gloss.
+
+**Benefits.** intensive seven-step program; rebuilding with keratin and hyaluronic acid; leave-in hydration; final seal with Neurona Gloss.
 
 **Hot & humid · Florida.** For hair that has taken on sun, salt, heat and chemical services: each step covers one of those fronts.
 

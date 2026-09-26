@@ -2,9 +2,19 @@
 
 `L024` · Línea **Color_Rescue** · Producto · Uso consumidor
 
+> **Lava a diario sin gastar tu color**  
+> Limpieza sin sulfatos para quien invirtió en su tinte y vive en un clima que obliga a lavar más seguido.
+
 ## Qué es
 
-Un lavado sin sulfatos, pensado para quien invirtió en su color. Limpia con suavidad, sin irritar el cuero cabelludo ni arrastrar sus aceites naturales, y deja una capa protectora sobre la cutícula dañada. El resultado: color que conserva su intensidad por más tiempo y menos encrespamiento.
+Un lavado sin sulfatos, pensado para quien invirtió en su color. Limpia con suavidad, sin irritar el cuero cabelludo ni arrastrar sus aceites naturales, y deja una capa protectora sobre la cutícula dañada. El resultado: color que conserva su intensidad por más tiempo y menos encrespamiento. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.
+
+## Beneficios
+
+- sin sulfatos
+- limpieza suave sin irritar
+- ayuda a conservar el color
+- reduce el encrespamiento
 
 ## Tu cabello en el clima de Florida
 
@@ -36,7 +46,12 @@ Con el cabello mojado, masajea una dosis pequeña. Déjalo trabajar entre 2 y 3 
 
 ## English
 
-A sulfate-free wash for anyone who has invested in their color. It cleanses gently, without irritating the scalp or stripping its natural oils, and leaves a protective layer over damaged cuticle. The result: color that keeps its intensity longer, and less frizz.
+> **Wash daily without washing out your color**  
+> Sulfate-free cleansing for anyone who invested in their color and lives where the climate means washing more often.
+
+A sulfate-free wash for anyone who has invested in their color. It cleanses gently, without irritating the scalp or stripping its natural oils, and leaves a protective layer over damaged cuticle. The result: color that keeps its intensity longer, and less frizz. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too.
+
+**Benefits.** sulfate-free; gentle, non-irritating cleanse; helps preserve color; reduces frizz.
 
 **Hot & humid · Florida.** Heat means more sweat and more frequent washing; a sulfate-free shampoo lets you wash daily without wearing down your color.
 

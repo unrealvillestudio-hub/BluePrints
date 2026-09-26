@@ -2,9 +2,19 @@
 
 `NSCF-KT-101P` · Línea **Moisture** · Kit · Uso consumidor
 
+> **Para cuando la sequedad ya es crónica**  
+> Patricia Osorio sumó Neurona Gloss al ritual Humit para sellar la hidratación contra la humedad de la Florida.
+
 ## Qué es
 
-Para cuando la sequedad ya es crónica por calor, químicos o deshidratación. Moisture Recovery Plus suma Neurona Gloss al ritual Humit: cuatro pasos que reponen la humedad, fortalecen la fibra y sellan la cutícula para que el resultado dure.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. Para cuando la sequedad ya es crónica por calor, químicos o deshidratación. Moisture Recovery Plus suma Neurona Gloss al ritual Humit: cuatro pasos que reponen la humedad, fortalecen la fibra y sellan la cutícula para que el resultado dure.
+
+## Beneficios
+
+- hidratación profunda de 4 pasos
+- fortalece y restaura la fibra
+- sella la cutícula
+- brillo espejo con Neurona Gloss
 
 ## Tu cabello en el clima de Florida
 
@@ -32,7 +42,12 @@ El sellado final con Neurona Gloss es el que sostiene la hidratación frente a l
 
 ## English
 
-For when dryness has become chronic from heat, chemical services or dehydration. Moisture Recovery Plus adds Neurona Gloss to the Humit ritual: four steps that replenish moisture, strengthen the fiber and seal the cuticle so results last.
+> **For when dryness has become chronic**  
+> Patricia Osorio added Neurona Gloss to the Humit ritual to seal hydration in against Florida humidity.
+
+A ritual designed by Patricia Osorio for Florida's climate. For when dryness has become chronic from heat, chemical services or dehydration. Moisture Recovery Plus adds Neurona Gloss to the Humit ritual: four steps that replenish moisture, strengthen the fiber and seal the cuticle so results last.
+
+**Benefits.** four-step deep hydration; strengthens the fiber; seals the cuticle; mirror shine with Neurona Gloss.
 
 **Hot & humid · Florida.** The final Neurona Gloss seal is what holds hydration in against the day's humidity.
 

@@ -2,9 +2,18 @@
 
 `D006` · Línea **Pro_Salon** · Producto · Uso profesional
 
+> **Aclara sin romper**  
+> El aditivo que protege la fibra cuando el cabello ya viene muy procesado.
+
 ## Qué es
 
 El aditivo que protege la fibra cuando hay que aclarar cabello muy procesado. Reduce la rotura y preserva la integridad del cabello sin alargar el proceso. Con extracto de propóleo y cera de abejas, aporta suavidad y brillo y reduce la estática y el encrespamiento.
+
+## Beneficios
+
+- protege la fibra durante el aclarado
+- reduce la rotura
+- no alarga el tiempo de proceso
 
 ## Tu cabello en el clima de Florida
 
@@ -38,7 +47,12 @@ Uso profesional. A la mezcla de decoloración (Plattina White (30 g) + 90 mL de 
 
 ## English
 
+> **Lighten without breaking**  
+> The additive that protects the fiber when hair is already heavily processed.
+
 The additive that protects the fiber when you need to lighten heavily processed hair. It reduces breakage and preserves hair integrity without extending processing time. With propolis extract and beeswax, it adds softness and shine and reduces static and frizz.
+
+**Benefits.** protects the fiber during lightening; reduces breakage; doesn't extend processing time.
 
 **Hot & humid · Florida.** Less frizz after lightening, which shows right away in a humid climate.
 

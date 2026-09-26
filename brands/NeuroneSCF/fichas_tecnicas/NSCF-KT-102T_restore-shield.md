@@ -2,9 +2,19 @@
 
 `NSCF-KT-102T` · Línea **Restore** · Kit · Uso consumidor
 
+> **Repara hoy, protege mañana**  
+> Patricia Osorio diseñó este ritual para quien repasa la plancha porque la humedad de la Florida deshace el peinado.
+
 ## Qué es
 
-Reparar y proteger en el mismo ritual. Restore & Shield combina el sistema Kerasin HB con Thermo Dual, el protector térmico que sella la reparación y frena el daño de las próximas pasadas de calor.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. Reparar y proteger en el mismo ritual. Restore & Shield combina el sistema Kerasin HB con Thermo Dual, el protector térmico que sella la reparación y frena el daño de las próximas pasadas de calor.
+
+## Beneficios
+
+- repara la fibra dañada
+- protege del calor extremo con Thermo Dual
+- doble acción: tratamiento y protección
+- previene daño futuro
 
 ## Tu cabello en el clima de Florida
 
@@ -32,7 +42,12 @@ Pensado para quien repite plancha o secador porque la humedad deshace el peinado
 
 ## English
 
-Repair and protect in the same ritual. Restore & Shield combines the Kerasin HB system with Thermo Dual, the heat protectant that seals the repair and holds off damage from your next rounds of heat.
+> **Repair today, protect tomorrow**  
+> Patricia Osorio designed this ritual for anyone who re-irons because Florida humidity undoes their style.
+
+A ritual designed by Patricia Osorio for Florida's climate. Repair and protect in the same ritual. Restore & Shield combines the Kerasin HB system with Thermo Dual, the heat protectant that seals the repair and holds off damage from your next rounds of heat.
+
+**Benefits.** repairs damaged fiber; protects from extreme heat with Thermo Dual; treatment and protection in one; helps prevent future damage.
 
 **Hot & humid · Florida.** Made for anyone who re-irons or re-blow-dries because humidity undoes their style.
 

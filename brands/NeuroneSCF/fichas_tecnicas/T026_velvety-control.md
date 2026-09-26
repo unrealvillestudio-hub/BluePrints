@@ -2,9 +2,25 @@
 
 `T026` · Línea **Restore** · Producto · Uso consumidor
 
+> **Suavidad aterciopelada, cero peso**  
+> El sin enjuague que Patricia Osorio eligió para controlar el volumen del rubio en sus rituales Perfect Blonde.
+
 ## Qué es
 
-Un tratamiento nutritivo sin enjuague, de textura aterciopelada, para cualquier tipo de cabello. No deja sensación grasa: desenreda, suaviza, da brillo y hace el cabello más fácil de manejar.
+Un tratamiento nutritivo sin enjuague, de textura aterciopelada, para cualquier tipo de cabello. No deja sensación grasa: desenreda, suaviza, da brillo y hace el cabello más fácil de manejar. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.
+
+## Beneficios
+
+- sin enjuague
+- sin sensación grasa
+- desenreda y da brillo
+
+## Parte de los Rituals & Kits de Patricia Osorio
+
+Este producto ha sido elegido para ser parte de los Rituals & Kits que Patricia Osorio diseñó para el cabello en el clima de la Florida:
+
+- Perfect Blonde
+- Perfect Blonde Plus
 
 ## Tu cabello en el clima de Florida
 
@@ -38,7 +54,12 @@ Con el cabello recién lavado y húmedo, reparte una dosis pequeña en medios y 
 
 ## English
 
-A velvety leave-in nourishing treatment for every hair type. No greasy feel: it detangles, softens, adds shine and makes hair easier to handle.
+> **Velvety softness, zero weight**  
+> The leave-in Patricia Osorio chose to tame blonde volume in her Perfect Blonde rituals.
+
+A velvety leave-in nourishing treatment for every hair type. No greasy feel: it detangles, softens, adds shine and makes hair easier to handle. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too.
+
+**Benefits.** no rinsing; no greasy feel; detangles and adds shine.
 
 **Hot & humid · Florida.** Light enough for the heat, with no weight or grease, and control over the volume humidity triggers.
 

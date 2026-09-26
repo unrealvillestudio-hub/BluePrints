@@ -2,9 +2,18 @@
 
 `E008` · Línea **Styling** · Producto · Uso consumidor
 
+> **Rizos con memoria**  
+> Gel líquido que define con efecto resorte y controla el frizz de la humedad.
+
 ## Qué es
 
-Gel líquido para rizos que peina y acondiciona a la vez. Define con efecto resorte, controla el frizz y da una fijación flexible con memoria, sin dejar el rizo rígido. Con complejo de aminoácidos.
+Gel líquido para rizos que peina y acondiciona a la vez. Define con efecto resorte, controla el frizz y da una fijación flexible con memoria, sin dejar el rizo rígido. Con complejo de aminoácidos. Con activos neurocosméticos: la ciencia Neurone para que el cuidado también se sienta.
+
+## Beneficios
+
+- define los rizos
+- fijación flexible con efecto memoria
+- controla el frizz
 
 ## Tu cabello en el clima de Florida
 
@@ -40,7 +49,12 @@ Frota una dosis pequeña entre las palmas, repártela sobre el cabello apenas h�
 
 ## English
 
-Liquid curl gel that styles and conditions at once. It defines with a springy effect, controls frizz and gives a flexible hold with memory, without leaving curls stiff. With an amino-acid complex.
+> **Curls with memory**  
+> A liquid gel that defines with spring and controls humidity frizz.
+
+Liquid curl gel that styles and conditions at once. It defines with a springy effect, controls frizz and gives a flexible hold with memory, without leaving curls stiff. With an amino-acid complex. Made with neurocosmetic actives: Neurone science designed so care is something you can feel, too.
+
+**Benefits.** defines curls; flexible hold with memory; controls frizz.
 
 **Hot & humid · Florida.** Curls lose shape in humidity; a hold with memory brings them back into place.
 

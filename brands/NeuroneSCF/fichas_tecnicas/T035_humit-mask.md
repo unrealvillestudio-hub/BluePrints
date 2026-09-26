@@ -2,9 +2,26 @@
 
 `T035` · Línea **Moisture** · Producto · Uso consumidor
 
+> **Hidratación profunda que se queda**  
+> La mascarilla de la línea Moisture: un cabello bien hidratado no absorbe la humedad del aire, y por eso no se encrespa.
+
 ## Qué es
 
-La mascarilla de hidratación profunda de la línea Moisture. Vitaminas, proteínas, polisacáridos y aminoácidos: con esa combinación repone la humedad del cabello seco y maltratado y lo dejan suave, manejable y con brillo por más tiempo. Úsala rápida como acondicionador o déjala más tiempo como tratamiento.
+La mascarilla de hidratación profunda de la línea Moisture. Vitaminas, proteínas, polisacáridos y aminoácidos: con esa combinación repone la humedad del cabello seco y maltratado y lo deja suave, manejable y con brillo por más tiempo. Úsala rápida como acondicionador o déjala más tiempo como tratamiento.
+
+## Beneficios
+
+- alta hidratación
+- doble uso: acondicionador o mascarilla
+- suavidad y brillo
+
+## Parte de los Rituals & Kits de Patricia Osorio
+
+Este producto ha sido elegido para ser parte de los Rituals & Kits que Patricia Osorio diseñó para el cabello en el clima de la Florida:
+
+- Moisture Recovery
+- Moisture Recovery Plus
+- Moisture & Shine
 
 ## Tu cabello en el clima de Florida
 
@@ -45,7 +62,12 @@ Modo rápido: después del shampoo, reparte en medios y puntas, masajea y retira
 
 ## English
 
-The deep-hydration mask of the Moisture line. Vitamins, proteins, polysaccharides and amino acids: with that blend it replenishes moisture in dry, damaged hair and leave it soft, manageable and shiny for longer. Use it quickly as a conditioner or leave it on longer as a treatment.
+> **Deep hydration that stays**  
+> The Moisture line mask: well-hydrated hair doesn't soak up humidity, and that's why it doesn't frizz.
+
+The deep-hydration mask of the Moisture line. Vitamins, proteins, polysaccharides and amino acids: with that blend it replenishes moisture in dry, damaged hair and leaves it soft, manageable and shiny for longer. Use it quickly as a conditioner or leave it on longer as a treatment.
+
+**Benefits.** intense hydration; two ways to use: conditioner or mask; softness and shine.
 
 **Hot & humid · Florida.** Well-hydrated hair doesn't soak up moisture from the air, which is why hydration is the first defense against frizz in Florida.
 

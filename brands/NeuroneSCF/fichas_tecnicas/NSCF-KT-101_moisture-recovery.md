@@ -2,9 +2,19 @@
 
 `NSCF-KT-101` · Línea **Moisture** · Kit · Uso consumidor
 
+> **Hidratación diseñada para el clima de la Florida**  
+> El ritual de tres pasos que Patricia Osorio creó para el cabello seco que vive entre la humedad de afuera y el aire acondicionado de adentro.
+
 ## Qué es
 
-Tu cabello en el clima de Florida necesita hidratación de verdad, no solo control. Moisture Recovery reúne en un ritual de tres pasos el shampoo y la mascarilla Humit con DY Fazza: hidratan la fibra por dentro, devuelven suavidad y brillo y dejan una barrera contra el calor y la humedad.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. Tu cabello en el clima de Florida necesita hidratación de verdad, no solo control. Moisture Recovery reúne en un ritual de tres pasos el shampoo y la mascarilla Humit con DY Fazza: hidratan la fibra por dentro, devuelven suavidad y brillo y dejan una barrera contra el calor y la humedad.
+
+## Beneficios
+
+- hidratación profunda desde el interior
+- reduce el frizz
+- aporta brillo y manejabilidad
+- protege del calor y la humedad de Florida
 
 ## Tu cabello en el clima de Florida
 
@@ -31,7 +41,12 @@ El ritual base para el frizz de la humedad: hidratar por dentro para que el cabe
 
 ## English
 
-Your hair in Florida's climate needs real hydration, not just control. Moisture Recovery brings together Humit shampoo and mask with DY Fazza in a three-step ritual: they hydrate the fiber from within, restore softness and shine and leave a barrier against heat and humidity.
+> **Hydration designed for Florida's climate**  
+> The three-step ritual Patricia Osorio created for dry hair living between outdoor humidity and indoor AC.
+
+A ritual designed by Patricia Osorio for Florida's climate. Your hair in Florida's climate needs real hydration, not just control. Moisture Recovery brings together Humit shampoo and mask with DY Fazza in a three-step ritual: they hydrate the fiber from within, restore softness and shine and leave a barrier against heat and humidity.
+
+**Benefits.** deep hydration from within; reduces frizz; shine and manageability; a barrier against heat and humidity.
 
 **Hot & humid · Florida.** The core ritual for humidity frizz: hydrate from within so hair doesn't pull moisture from the air.
 

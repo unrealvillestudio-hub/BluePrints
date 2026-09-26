@@ -2,9 +2,19 @@
 
 `NSCF-KT-103V` · Línea **Color_Rescue** · Kit · Uso consumidor
 
+> **Rubio frío que no se esponja**  
+> El ritual de Patricia Osorio para el platino que la humedad de la Florida desordena.
+
 ## Qué es
 
-El rubio platino y el frío no solo se mantienen: se controlan. Perfect Blonde reúne Total Violet Shampoo, Total Violet Mask y Velvety Control en un ritual que corrige el tono, nutre y controla el volumen y el frizz al mismo tiempo.
+Un ritual diseñado por Patricia Osorio para el clima de la Florida. El rubio platino y el frío no solo se mantienen: se controlan. Perfect Blonde reúne Total Violet Shampoo, Total Violet Mask y Velvety Control en un ritual que corrige el tono, nutre y controla el volumen y el frizz al mismo tiempo.
+
+## Beneficios
+
+- neutraliza visos amarillos
+- controla el frizz y el volumen
+- nutre la fibra platinada
+- rubio frío controlado en clima húmedo
 
 ## Tu cabello en el clima de Florida
 
@@ -30,7 +40,12 @@ Pensado para el rubio frío que se esponja con la humedad.
 
 ## English
 
-Platinum and cool blondes don't just need maintenance; they need control. Perfect Blonde brings together Total Violet Shampoo, Total Violet Mask and Velvety Control in a ritual that corrects tone, nourishes and controls volume and frizz at the same time.
+> **Cool blonde that doesn't puff up**  
+> Patricia Osorio's ritual for the platinum that Florida humidity throws out of place.
+
+A ritual designed by Patricia Osorio for Florida's climate. Platinum and cool blondes don't just need maintenance; they need control. Perfect Blonde brings together Total Violet Shampoo, Total Violet Mask and Velvety Control in a ritual that corrects tone, nourishes and controls volume and frizz at the same time.
+
+**Benefits.** neutralizes yellow tones; controls frizz and volume; nourishes platinum hair; cool blonde under control in humid weather.
 
 **Hot & humid · Florida.** Made for cool blondes that puff up in humidity.
 
